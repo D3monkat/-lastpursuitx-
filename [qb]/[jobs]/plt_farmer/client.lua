@@ -1277,5 +1277,5 @@ function AddVehiclePlate(vehicle)
 	TriggerServerEvent('garage:addKeys', GetVehicleNumberPlateText(vehicle))
 	TriggerServerEvent("plateEveryone",GetVehicleNumberPlateText(vehicle))
 	TriggerEvent("vehiclekeys:client:SetOwner", string.gsub(GetVehicleNumberPlateText(vehicle), '^%s*(.-)%s*$', '%1'))
-	--exports["LegacyFuel"]:SetFuel(SumoCar, 99.9)
+	--exports["cdn-fuel"]:SetFuel(SumoCar, 99.9)
 end

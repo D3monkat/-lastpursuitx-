@@ -32,7 +32,7 @@ Config.Chat = "none" -- "none", "okok", "codem"
 -- you can add custom weather system in client/open/cl_weather.lua
 Config.WeatherScript = "none" -- "none", "cd_easytime"
 
--- legacy is for legacyfuel
+-- legacy is for cdn-fuel
 -- ps is for ps-fuel
 -- ox is for ox-fuel
 -- cdn is for cdn-fuel

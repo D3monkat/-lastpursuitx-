@@ -90,9 +90,9 @@ RegisterNetEvent("snipe-menu:client:refuelVehicle", function()
         local ped = PlayerPedId()
         local vehicle = GetVehiclePedIsIn(ped, false)
         if vehicle ~= 0 then
-            -- exports["LegacyFuel"]:SetFuel(vehicle, 100.0)
+            -- exports["cdn-fuel"]:SetFuel(vehicle, 100.0)
             if Config.Fuel == "legacy" then
-                exports["LegacyFuel"]:SetFuel(vehicle, 100.0)
+                exports["cdn-fuel"]:SetFuel(vehicle, 100.0)
             elseif Config.Fuel == "ps" then
                 exports["ps-fuel"]:SetFuel(vehicle, 100.0)
             elseif Config.Fuel == "ox" then

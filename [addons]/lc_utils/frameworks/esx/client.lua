@@ -53,8 +53,8 @@ function Utils.Framework.setVehicleFuel(vehicle, plate, model, fuel)
 		error("ps-fuel not available for ESX")
 	elseif Config.custom_scripts_compatibility.fuel == "cdn-fuel" then
 		error("cdn-fuel not available for ESX")
-	elseif Config.custom_scripts_compatibility.fuel == "LegacyFuel" then
-		exports['LegacyFuel']:SetFuel(vehicle, fuel)
+	elseif Config.custom_scripts_compatibility.fuel == "cdn-fuel" then
+		exports['cdn-fuel']:SetFuel(vehicle, fuel)
 	elseif Config.custom_scripts_compatibility.fuel == "default" then
 		SetVehicleFuelLevel(vehicle, fuel + 0.0)
 	else

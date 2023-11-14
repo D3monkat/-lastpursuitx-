@@ -51,10 +51,10 @@ function Utils.Framework.setVehicleFuel(vehicle, plate, model, fuel)
 		exports['ps-fuel']:SetFuel(vehicle, fuel)
 	elseif Config.custom_scripts_compatibility.fuel == "cdn-fuel" then
 		exports['cdn-fuel']:SetFuel(vehicle, fuel)
-	elseif Config.custom_scripts_compatibility.fuel == "LegacyFuel" then
-		exports['LegacyFuel']:SetFuel(vehicle, fuel)
+	elseif Config.custom_scripts_compatibility.fuel == "cdn-fuel" then
+		exports['cdn-fuel']:SetFuel(vehicle, fuel)
 	elseif Config.custom_scripts_compatibility.fuel == "default" then
-		exports['LegacyFuel']:SetFuel(vehicle, fuel)
+		exports['cdn-fuel']:SetFuel(vehicle, fuel)
 	else
 		Utils.CustomScripts.setVehicleFuel(vehicle, plate, model, fuel)
 	end
