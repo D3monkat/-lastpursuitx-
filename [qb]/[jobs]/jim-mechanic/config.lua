@@ -5,16 +5,16 @@ Config = {
 
 		img = "qb-inventory/html/images/", 	-- Set this to the directory for your inventory image files
 											-- "ox_inventory/web/images/", "qb-inventory/html/images", "lj-inventory/html/images"
-		Inv = "qb",  				-- "qb", "ox", "qs"
-		Menu = "qb",  				-- "qb", "ox"
-		Notify = "qb",				-- "qb", "ox"
-		ProgressBar = "qb", 		-- "qb", "ox"
+		Inv = "ox",  				-- "qb", "ox", "qs"
+		Menu = "ox",  				-- "qb", "ox"
+		Notify = "ox",				-- "qb", "ox"
+		ProgressBar = "ox", 		-- "qb", "ox"
 
 		JimShops = false, 			-- If using my free script jim-shops, enable this to use it with the mechanic item stores.
 
 		distkph = false, 			-- Set to false to read distance travelled in Miles.
 
-		RenewedBanking = false, 	-- This is used for manualrepair benches, enable to use
+		RenewedBanking = true, 	-- This is used for manualrepair benches, enable to use
 	},
 	Main = { -- Main variables
 		isVehicleOwned = false, 	-- Keep this true if you only want changes to be made to owned vehicles
