@@ -1,0 +1,83 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+         <script src="nui://game/ui/jquery.js" type="text/javascript"></script> 
+        <link rel="stylesheet" href="style.css" type="text/css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.min.js" type="text/javascript"></script> 
+      <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script> 
+        <script src="app.js" type="text/javascript"></script> 
+<!--        <script src="app.js" ></script> -->
+    </head>
+
+    <body>
+        <div class="notify-container"></div>
+        <div id="persist-container">     <img class='persist-icon'src='img/inform.svg'>  <div id="persist-text"></div> </div> 
+        <div id="button-container">
+             <div class="topContainer">
+                 <div class="topContainerLeft">
+                    <div class="top-title" id = "topTitle" > PLT Lumberjack JOBS </div>
+                </div>
+                 <div class="topContainerRight">
+                    <svg id = "close-button" class="close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M312.1 375c9.369 9.369 9.369 24.57 0 33.94s-24.57 9.369-33.94 0L160 289.9l-119 119c-9.369 9.369-24.57 9.369-33.94 0s-9.369-24.57 0-33.94L126.1 256L7.027 136.1c-9.369-9.369-9.369-24.57 0-33.94s24.57-9.369 33.94 0L160 222.1l119-119c9.369-9.369 24.57-9.369 33.94 0s9.369 24.57 0 33.94L193.9 256L312.1 375z"/></svg>
+                </div> 
+                
+            </div> 
+             <div class="botContainer">
+                <div class="buttons clotheButton unselectable"  id="button-job-outfit">
+                    <div class="jobOutfitText" id = "jobOutfitTopText" > İş Kıyafeti Giy</div> 
+                    <img class ="jobOutfitImg" src="img/joboutfit.png"> 
+               </div>
+                <div class="buttons jobButton selectable"  id="button-cuttting">
+                    <div class="topText" id = "cutttingTopText"> AĞAÇ KESİM İŞLERİ</div>
+                    <img class ="jobImg" src="img/cutting.png"> 
+                    <div class="jobCont">
+                        <div class="earning"> 
+                            <div class="moneyText" id = "cutttingMoneyText">Her bir ağaç</div>
+                            <div class="money"id = "cutttingMoney">1000$</div>
+                        </div> 
+                     <div class="comment comment2" id = "cutttingComment" >Motorlu testere ile bir ağaç kes ve kesilmiş odunlar kepçeli ile standa taşı.</div>
+                    </div> 
+                </div>
+                <div class="buttons clotheButton selectable"id="button-daily-outfit">
+                    <img class ="dailyOutfitImg" src="img/dailyoutfit.png"> 
+                    <div class="dailyOutfitText" id = "dailyOutfitTopText" >Günlük Kıyafetini Giy</div> 
+                </div> 
+                <div class="buttons jobButton unselectable"  id="button-stacking">
+                     <div class="topText" id = "stackingTopText" > Kereste Paleti Taşıma</div>
+                    <img class ="jobImg" src="img/stacking.png"> 
+                    <div class="jobCont">
+                        <div class="earning"> 
+                            <div class="moneyText"id = "stackingMoney2Text">Forklift Park Etme</div>
+                            <div class="money"id = "stackingMoney2">250$</div>
+                        </div>
+                        <div class="earning"> 
+                            <div class="moneyText"id = "stackingMoney1Text">Kereste Istifle</div>
+                            <div class="money"id = "stackingMoney1">500$</div>
+                        </div>
+                        <div class="comment" id = "stackingComment"  > Kereste paletlerini boş dorselere yerlerştir veya forklifti uygun dorseye parket.</div>
+                    </div> 
+                </div>
+                <div class="buttons jobButton selectable"  id="button-delivery">
+                    <div class="topText" id = "deliveryTopText" > İnşaata Keserte Teslimatı</div>
+                    <img class ="jobImg" src="img/delivery.png"> 
+                    <div class="jobCont">
+                        <div class="earning"> 
+                            <div class="moneyText"id = "deliveryMoney2Text">Benzin Giderleri</div>
+                            <div class="money"id = "deliveryMoney2">15000 & 90000$</div>
+                        </div>
+                        <div class="earning"> 
+                            <div class="moneyText"id = "deliveryMoney1Text">Kereste Teslimi </div>
+                            <div class="money"id = "deliveryMoney1">10000$</div>
+                        </div>
+                        <div class="comment"id = "deliveryComment"> tır ila bir inşaata gidip keresteleri teslim et.</div>
+                    </div> 
+                </div> 
+            </div> 
+            <div class="bottomContainer selectableCancel" id="button-cancel-job">
+                Mesleği İptal Et &nbsp;
+            </div>
+        </div> 
+    </body>
+</html>

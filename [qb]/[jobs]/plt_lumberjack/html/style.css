@@ -1,0 +1,464 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+
+
+@font-face {
+    font-family: 'pricedow';
+    src: url('pricedow.ttf');
+}
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url('Raleway-Regular.ttf');
+}
+@font-face {
+    font-family: 'Raleway-ExtraBold';
+    src: url('Raleway-ExtraBold.ttf');
+}
+
+
+html {
+    --button-left:1vw;
+    --button-right:0vw;
+    --button-top:1vw;
+    --button-bottom:-1.0vw;
+    --button-intersection:0.5vw;
+    --button-clothe: 0.5vw;
+
+    --general-border: 0.075vw solid rgba(255, 255, 255, 0.99);
+
+    --general-text-color:rgb(255, 255, 255);
+
+
+    --persist-background:rgb(0, 0, 0,0.7);
+    --notfiy-background:rgb(0, 0, 0,0.7);
+    --ui-backgroud : rgba(117, 117, 117, 0.8);
+    --ui-backgroud : rgba(77, 77, 77, 0.7);
+    --ui-top-background : rgb(0, 0, 0,0.75);
+    --buttons-background: rgb(0, 0, 0,0.5);
+    --button-title-background :rgb(0, 0, 0,0.5);
+
+}
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+}
+#button-container {
+    display: none;
+    width: 43.0vw;     
+    height: min-content;      
+    margin: auto;
+    background-color: var(--ui-backgroud);
+    border-top-left-radius: 0.5vw;
+    border-top-right-radius: 0.5vw;
+}
+
+#persist-container {
+    display: none;
+    position: absolute; 
+    bottom: 1vw;
+    max-width: 53vw;
+    align-items: center;  
+    border-radius :  0.50vw;
+    background-color: var(--persist-background);
+}
+.notify-container {
+    width: fit-content;
+    margin-top: -10vw;
+    max-width: 25%;
+    position: fixed;
+    right: 0.1%; 
+    display: flex;
+    float: right;
+    flex-flow: column-reverse wrap-reverse;
+}
+.notification {
+    display: flex;
+    max-width: 25vw;
+    margin: 0.25vw;
+    align-items: center;    
+    font-size: 0.8vw;
+    border-top-left-radius :  0.50vw;
+    border-bottom-left-radius :  0.50vw;
+    background-color: var(--notfiy-background);
+}  
+.topContainer{
+    width: 100.0%;
+    height: 3vw;
+    background-color:var(--ui-top-background);
+    border-top-left-radius: 0.5vw;
+    border-top-right-radius: 0.5vw;
+}
+.botContainer{
+    width: 100%;
+    height:28vw;
+}
+.bottomContainer{
+    width: 40.0%;
+    margin-left: 60.0%;
+    height: 1.65vw;
+    padding-top: 0.50vw;
+    text-align: right;
+    overflow: hidden;
+
+
+}
+.topContainerLeft{
+    width:85%;
+    height: 100%;
+    float: left;
+    margin-left: 7.5%;
+}
+.topContainerRight{
+    width: 7.5%;
+    height: 100%;
+    float: right;
+}
+.top-title{
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.close-icon {
+    fill: rgb(255, 255, 255);
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    margin-top: -0.1vw; 
+}
+.close-icon:hover {
+    fill: rgb(255, 0, 0);
+    opacity: 1;
+}
+.close-icon:active {
+    width: 50%;
+    height: 50%;
+    margin-top:17.5%;
+    margin-left:25%;
+}
+.buttons{
+    height: 47%;
+    float:left; 
+    background-color: var(--buttons-background);
+    border-radius: 0.5vw;
+
+}
+.jobButton{
+    width: 48%;
+}
+.topText{
+    padding: 0.5vw;
+    height: 10.0%;
+    overflow: hidden;
+    text-align: center;
+    background-color: var(--button-title-background);
+    border-top-left-radius: 0.5vw;
+    border-top-right-radius: 0.5vw;
+}
+.jobImg{
+    height: 87%;
+    width: 65%;
+    float: left;
+}
+.jobCont{
+    height: 75%;
+    width: 30%;
+    float: right;
+    margin-right: 3%;
+    margin-top: 2.5%;
+    display: flex;
+    flex-flow: column-reverse wrap-reverse;  
+}
+.comment{
+    width: 115%;
+    overflow: hidden;
+    text-align: right; 
+     margin-bottom: auto;  
+
+}
+.earning{
+    width: 155%;
+    height: 20%; 
+    text-align: right;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 10%; 
+}
+.moneyText{
+    overflow: hidden;
+    margin: 1%;
+    margin-top: 0%;
+    height: 35%;
+}
+.money{
+    overflow: hidden;
+    margin: 1%;
+    height: 65%;
+}
+.dailyOutfitImg{
+    height: 100%;
+    width: 50%;
+    float: left;
+    margin-left: 17.5%;
+}
+.jobOutfitImg{
+    height: 100%;
+    width: 50%;
+    float: right;
+    margin-right: 17.5%;
+}
+.dailyOutfitText {
+    height: 100%;
+    width: 14%;
+    padding-right: 3%;
+    float: right;
+    writing-mode: vertical-rl;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+     background-color: var(--button-title-background); 
+     border-top-right-radius: 0.50vw;  
+     border-bottom-right-radius: 0.50vw;  
+/*     border-radius: 0.50vw; */
+    
+
+}
+.jobOutfitText {
+    height: 100%;
+    width: 14%;
+    padding-right: 3%;
+    float: left;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    background-color: var(--button-title-background); 
+    border-top-right-radius: 0.50vw;  
+    border-bottom-right-radius: 0.50vw;  
+
+}
+
+
+.selectable{
+    opacity: 0.9;
+
+}
+.unselectable {
+    opacity: 0.3;
+ }
+.selectable .topText ,  .selectable .dailyOutfitText ,  .selectable .jobOutfitText {
+
+}
+.unselectable .topText, .unselectable .dailyOutfitText, .unselectable .jobOutfitText{
+
+ }
+
+.selectable:hover{
+     /* box-shadow: 0vw 0vw 0.25vw 0.1vw rgba(0, 255, 0,0.9) inset;  */ 
+    /*  background-color: rgb(0, 0, 0,0.65); */
+     opacity: 1.0;
+     box-shadow: 0vw 0vw 0.25vw 0.1vw white;
+}
+.unselectable:hover{
+/*     box-shadow: 0vw 0vw 5vw 1vw rgba(255, 0, 0,0.4) inset;  */
+opacity: 0.1;
+}
+.selectable:hover .topText {
+/*     color: green; */
+}
+.selectable:hover .dailyOutfitText{
+/*     color: green; */
+}
+.selectable:hover .jobOutfitText{
+/*     color: green; */
+}
+.unselectable:hover .topText {
+/*     color: red; */
+}
+.unselectable:hover .dailyOutfitText{
+/*     color: red; */
+}
+.unselectable:hover .jobOutfitText{
+/*     color: red; */
+}
+.selectableCancel{
+ /*    background: linear-gradient(rgba(0,0,0,0.0), rgba(150,0,0,0.5)); */
+  /*   background-image: var(--button-top-background); */
+  background-image:linear-gradient(to left, rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0));
+
+}
+
+.selectableCancel:hover{
+    background-image:linear-gradient(to left,  rgba(0, 0, 0, 1.0),rgba(0, 0, 0, 0.0));
+    color: red;
+}
+.unselectableCancel{
+    opacity: 0.2;
+}
+.unselectableCancel:hover {
+    opacity: 0.01;
+}
+.notifyIcon{
+    padding: 1.0vw;
+    height: 1vw;
+    width: 1vw;
+    align-items: center;
+   
+}
+.notifyText{
+    padding: 0.75vw;
+    padding-left: 0vw;
+    align-items: center;
+}
+
+
+.persist-icon{
+    padding: 1.0vw;
+    height: 1vw;
+    width: 1vw;
+    align-items: center;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(57deg) brightness(102%) contrast(102%);
+    
+}
+#persist-text{
+
+    padding: 0.75vw;
+    padding-left: 0vw;
+    align-items: center;
+}
+
+
+.successIcon{
+   filter: invert(47%) sepia(67%) saturate(2833%) hue-rotate(88deg) brightness(113%) contrast(117%);
+}
+.informIcon{
+    filter: invert(46%) sepia(60%) saturate(3297%) hue-rotate(192deg) brightness(100%) contrast(102%);
+}
+.warningIcon{
+    filter: invert(91%) sepia(69%) saturate(1177%) hue-rotate(356deg) brightness(105%) contrast(106%);
+}
+.errorIcon{
+    filter: invert(12%) sepia(67%) saturate(6467%) hue-rotate(1deg) brightness(85%) contrast(116%);
+
+}
+#button-cuttting{
+    width: 20vw;
+    height: 12.5vw;
+    margin-left: var(--button-intersection);
+    margin-right: var(--button-intersection);
+    margin-top: var(--button-top);
+    margin-bottom: var(--button-intersection);
+}
+#button-stacking{
+    width: 20vw;
+    height: 12.5vw;
+    margin-left: var(--button-left);
+    margin-right: var(--button-intersection);
+    margin-top: var(--button-intersection);
+    margin-bottom: var(--button-bottom);
+}
+#button-delivery{
+    width: 20vw;
+    height: 12.5vw;
+    margin-left: var(--button-intersection);
+    margin-right: var(--button-right);
+    margin-top: var(--button-intersection);
+    margin-bottom: var(--button-bottom);
+}
+#button-job-outfit{
+    width: 9.5vw;
+    height: 12.5vw;
+    margin-left: var(--button-left);
+    margin-right: var(--button-clothe);
+    margin-top: var(--button-top);
+    margin-bottom: var(--button-intersection);
+}
+#button-daily-outfit{
+    width: 9.5vw;
+    height: 12.5vw;
+    margin-left: var(--button-clothe);
+    margin-right: var(--button-right);
+    margin-top: var(--button-top);
+    margin-bottom: var(--button-intersection);
+}
+
+/*  #button-cuttting{
+    background-image: url("img/backcutting.png");
+}
+#button-stacking{
+    background-image: url("img/backstacking.png");
+}
+#button-delivery{
+    background-image: url("img/backdelivery.png");
+}
+#button-job-outfit{
+    background-image: url("img/backjoboutfit.png");
+}
+#button-daily-outfit{
+    background-image: url("img/backdailyoutfit.png");
+} */
+/* #button-cancel-job{
+    background-image: url("img/backcanceljob.png");
+}  */
+
+
+body {
+    font-family: Raleway-Regular;
+    color: var(--general-text-color);
+}
+#persist-container {
+    font-size: 0.9vw;
+}
+.notification {
+    font-size: 0.8vw;
+}
+.top-title{
+    font-family: pricedow; 
+    font-size: 3vw;
+}
+.topText{
+    font-size:1.0vw;
+    font-family:    Raleway-ExtraBold; 
+}
+.clotheButton {
+    font-size:0.8vw;
+    font-family: Raleway-ExtraBold; 
+}
+.comment{
+    font-size: 0.6vw; 
+}
+.moneyText{
+    font-size: 0.6vw; 
+}
+.money{
+    font-size: 0.8vw; 
+}
+.bottomContainer {
+    font-size:1.0vw;
+    font-family:    Raleway-ExtraBold; 
+}
+
+
+
+
