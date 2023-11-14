@@ -1,0 +1,53 @@
+Loc = {}
+Loc["en"] = {
+    error = {
+        ["someone_sitting"] = "Someone is already sitting there..",
+        ["not_cloked_in"] = "Not clocked in!",
+        ["cancelled"] = "Cancelled",
+        ["no_correct_ingredients"] = "You don't have the correct ingredients",
+        ["in_way"] = " in the way",
+    },
+    success = {
+        ["washed_hands"] = "You've washed your hands!",
+        ["retrieved"] = "Retrieved ",
+        ["marked"] = "Job Vehicle Marked on Map",
+    },
+    mark = {
+        ["veh_mark"] = "Job Vehicle",
+    },
+    targetinfo = {
+        ["open_shelves"] = "Open Shelves",
+        ["open_fridge"] = "Open Freezer",
+        ["open_storage"] = "Open Storage",
+        ["open_tray"] = "Open Tray",
+        ["wash_hands"] = "Wash Your Hands",
+        ["charge"] = "Charge Customer",
+        ["toggle_duty"] = "Toggle Duty",
+        ["open_bossmenu"] = "Open Bossmenu",
+        ["job_veh"] = "Job Vehicles",
+        ["sit"] = "Sit Down",
+    },
+    menu = {
+        ["prepare_drinks"] = "Prepare Drinks",
+        ["header_coffee"] = "Coffee Menu",
+        ["header_drink"] = "Drinks Menu",
+        ["header_chop"] = "Chopping Board",
+        ["use_chop"] = "Use Chopping Board",
+        ["grab_bag"] = "Grab Empty Bag",
+        ["header_grill"] = "Grill",
+        ["use_grill"] = "Use Grill",
+        ["header_deepfryer"] = "Deep Fryer",
+        ["use_deepfryer"] = "Use Deep Fryer",
+        ["prepare_food"] = "Prepare Food",
+        ["close"] = "Close",
+        ["back"] = "Back",
+    },
+    progressbar = {
+        ["progress_washing"] = "Washing hands",
+        ["progress_pour"] = "Pouring",
+        ["progress_drink"] = "Drinking",
+        ["progress_eat"] = "Eating",
+        ["progress_make"] = "Making",
+        ["progress_grab"] = "Grabbing",
+    },
+}
