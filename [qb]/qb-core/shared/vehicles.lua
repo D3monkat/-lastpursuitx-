@@ -723,7 +723,48 @@ local Vehicles = {
     { model = 'openwheel2',    name = 'DR1',                           brand = 'Declasse',        price = 100000,  category = 'openwheel',      type = 'automobile', shop = 'none' },
     { model = 'openwheel1',    name = 'BR8',                           brand = 'Benefactor',      price = 100000,  category = 'openwheel',      type = 'automobile', shop = 'none' },
     { model = 'formula2',      name = 'R88',                           brand = 'Ocelot',          price = 100000,  category = 'openwheel',      type = 'automobile', shop = 'none' },
-    { model = 'formula',       name = 'PR4',                           brand = 'Progen',          price = 100000,  category = 'openwheel',      type = 'automobile', shop = 'none' },
+    { model = 'formula',       name = 'PR4',                           brand = 'Progen',          price = 100000,  category = 'openwheel',      type = 'automobile', shop = 'none' }, 
+
+    --- Emergency 
+    {model = 'emsambulance', name = 'emsambulance', brand = Emergency, price = 150000, category = 'Emergency', type = 'automobile', shop = 'pdm'}, 
+    {model = 'emscharger', name = 'emscharger', brand = Emergency, price = 150000, category = 'Emergency', type = 'automobile', shop = 'pdm'}, 
+    {model = 'emsexplorer', name = 'emsexplorer', brand = Emergency, price = 150000, category = 'Emergency', type = 'automobile', shop = 'pdm'}, 
+    {model = 'emsraptor', name = 'emsraptor', brand = Emergency, price = 150000, category = 'Emergency', type = 'automobile', shop = 'pdm'}, 
+    {model = 'emstahoe21', name = 'emstahoe21', brand = Emergency, price = 150000, category = 'Emergency', type = 'automobile', shop = 'pdm'}, 
+    {model = 'polbike', name = 'polbike', brand = Emergency, price = 150000, category = 'Emergency', type = 'automobile', shop = 'pdm'}, 
+    {model = 'polbike2', name = 'polbike2', brand = Emergency, price = 150000, category = 'Emergency', type = 'automobile', shop = 'pdm'}, 
+    {model = 'polbike3', name = 'polbike3', brand = Emergency, price = 150000, category = 'Emergency', type = 'automobile', shop = 'pdm'}, 
+    {model = 'polcamaro', name = 'polcamaro', brand = Emergency, price = 150000, category = 'Emergency', type = 'automobile', shop = 'pdm'}, 
+    {model = 'polchallenger', name = 'polchallenger', brand = Emergency, price = 150000, category = 'Emergency', type = 'automobile', shop = 'pdm'}, 
+    {model = 'polcharger', name = 'polcharger', brand = Emergency, price = 150000, category = 'Emergency', type = 'automobile', shop = 'pdm'}, 
+    {model = 'polcharger14', name = 'polcharger14', brand = Emergency, price = 150000, category = 'Emergency', type = 'automobile', shop = 'pdm'}, 
+    {model = 'poldurango', name = 'poldurango', brand = Emergency, price = 150000, category = 'Emergency', type = 'automobile', shop = 'pdm'}, 
+    {model = 'polexplorer', name = 'polexplorer', brand = Emergency, price = 150000, category = 'Emergency', type = 'automobile', shop = 'pdm'}, 
+    {model = 'polgt4rs', name = 'polgt4rs', brand = Emergency, price = 150000, category = 'Emergency', type = 'automobile', shop = 'pdm'}, 
+    {model = 'polmache', name = 'polmache', brand = Emergency, price = 150000, category = 'Emergency', type = 'automobile', shop = 'pdm'}, 
+    {model = 'polmustang', name = 'polmustang', brand = Emergency, price = 150000, category = 'Emergency', type = 'automobile', shop = 'pdm'}, 
+    {model = 'polmustang24', name = 'polmustang24', brand = Emergency, price = 150000, category = 'Emergency', type = 'automobile', shop = 'pdm'}, 
+    {model = 'polram', name = 'polram', brand = Emergency, price = 150000, category = 'Emergency', type = 'automobile', shop = 'pdm'}, 
+    {model = 'polraptor', name = 'polraptor', brand = Emergency, price = 150000, category = 'Emergency', type = 'automobile', shop = 'pdm'}, 
+    {model = 'polsilverado', name = 'polsilverado', brand = Emergency, price = 150000, category = 'Emergency', type = 'automobile', shop = 'pdm'}, 
+    {model = 'poltahoe', name = 'poltahoe', brand = Emergency, price = 150000, category = 'Emergency', type = 'automobile', shop = 'pdm'}, 
+    {model = 'poltahoe21', name = 'poltahoe21', brand = Emergency, price = 150000, category = 'Emergency', type = 'automobile', shop = 'pdm'}, 
+    {model = 'poltaurus', name = 'poltaurus', brand = Emergency, price = 150000, category = 'Emergency', type = 'automobile', shop = 'pdm'}, 
+    {model = 'polvette', name = 'polvette', brand = Emergency, price = 150000, category = 'Emergency', type = 'automobile', shop = 'pdm'}, 
+    {model = 'polvictoria', name = 'polvictoria', brand = Emergency, price = 150000, category = 'Emergency', type = 'automobile', shop = 'pdm'}, 
+
+    --- Farm
+    {model = 'baletrailer', name = 'baletrailer', brand = Farm, price = 150000, category = 'Farm', type = 'automobile', shop = 'pdm'}, 
+    {model = 'forklift', name = 'forklift', brand = Farm, price = 150000, category = 'Farm', type = 'automobile', shop = 'pdm'}, 
+    {model = 'jcb', name = 'jcb', brand = Farm, price = 150000, category = 'Farm', type = 'automobile', shop = 'pdm'}, 
+    {model = 'pltpacker', name = 'pltpacker', brand = Farm, price = 150000, category = 'Farm', type = 'automobile', shop = 'pdm'}, 
+    {model = 'pltphantom', name = 'pltphantom', brand = Farm, price = 150000, category = 'Farm', type = 'automobile', shop = 'pdm'}, 
+    {model = 'pltphantom3', name = 'pltphantom3', brand = Farm, price = 150000, category = 'Farm', type = 'automobile', shop = 'pdm'}, 
+    {model = 'plttrflat', name = 'plttrflat', brand = Farm, price = 150000, category = 'Farm', type = 'automobile', shop = 'pdm'}, 
+    {model = 'tractor3', name = 'tractor3', brand = Farm, price = 150000, category = 'Farm', type = 'automobile', shop = 'pdm'}, 
+
+
+
 }
 
 for i = 1, #Vehicles do
