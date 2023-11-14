@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Garage</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap-4.5.2.css" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="stylesheet" href="css/json-menu-stylesheet.css" />
+  </head>
+  <body>
+    <div id="largeGarage" class="container-fluid">
+      <div id="header" class="jumbotron bg-dark text-light pb-3 pt-2 shadow">
+        <div class="row">
+          <div class="col-6" style="line-height: 1">
+            <h4 class="display-4">
+              <strong id="carName"></strong>,
+              <small
+                id="carMake"
+                style="line-height: 0.5"
+                class="text-muted lead text-uppercase"
+              ></small>
+            </h4>
+          </div>
+          <div class="col-3 text-right my-auto">
+            <h6>
+              <span id="classBadge" class="badge badge-warning"></span>
+              <span id="priceBadge" class="badge badge-success"></span>
+              <span
+                id="milesBadge"
+                class="badge badge-warning"
+                data-units="km"
+              ></span>
+              <span id="plateBadge" class="badge badge-secondary"></span>
+            </h6>
+          </div>
+          <div class="col-3 align-self-center text-right">
+            <img
+              id="textLogo"
+              src="images/logos/import_1.png"
+              class="img-fluid"
+              style="max-height: 96px"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <small id="garageLocation" class="text-muted"></small>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-6">
+            <h4 class="lead" data-locale="INSIDE_UPGRADES">Vehicle upgrades</h4>
+            <div class="row">
+              <div class="col-6">
+                <small class="text-muted" data-locale="INSIDE_UPGRADES_ENGINE"
+                  >Engine</small
+                >
+                <div class="progress bg-secondary">
+                  <div
+                    id="engineBar"
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0%"
+                  ></div>
+                </div>
+              </div>
+              <div class="col-6">
+                <small class="text-muted" data-locale="INSIDE_UPGRADES_BRAKES"
+                  >Brakes</small
+                >
+                <div class="progress bg-secondary">
+                  <div
+                    id="brakesBar"
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <small
+                  class="text-muted"
+                  data-locale="INSIDE_UPGRADES_SUSPENSION"
+                  >Suspension</small
+                >
+                <div class="progress bg-secondary">
+                  <div
+                    id="suspensionBar"
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0%"
+                  ></div>
+                </div>
+              </div>
+              <div class="col-6">
+                <small
+                  class="text-muted"
+                  data-locale="INSIDE_UPGRADES_TRANSMISSION"
+                  >Transmission</small
+                >
+                <div class="progress bg-secondary">
+                  <div
+                    id="transmissionBar"
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <small class="text-muted" data-locale="INSIDE_UPGRADES_TURBO"
+                  >Turbo</small
+                >
+                <div class="progress bg-secondary">
+                  <div
+                    id="turboBar"
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row">
+              <div class="col">
+                <h4 class="lead" data-locale="INSIDE_STATS">
+                  Vehicle statistics & health
+                </h4>
+                <div class="row">
+                  <div class="col-4">
+                    <small
+                      class="text-muted"
+                      data-locale="INSIDE_STATS_HANDLING"
+                      >Handling</small
+                    >
+                    <div class="progress bg-secondary">
+                      <div
+                        id="handlingBar"
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 0%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <small
+                      class="text-muted"
+                      data-locale="INSIDE_STATS_ACCELERATION"
+                      >Acceleration</small
+                    >
+                    <div class="progress bg-secondary">
+                      <div
+                        id="accelerationBar"
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 0%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <small class="text-muted" data-locale="INSIDE_STATS_BRAKES"
+                      >Brakes</small
+                    >
+                    <div class="progress bg-secondary">
+                      <div
+                        id="brakesBar2"
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 0%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="row">
+                  <div class="col-4">
+                    <small class="text-muted" data-locale="INSIDE_STATS_BODY"
+                      >Body health</small
+                    >
+                    <div class="progress bg-secondary">
+                      <div
+                        id="bodyBar"
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 0%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <small class="text-muted" data-locale="INSIDE_STATS_ENGINE"
+                      >Engine health</small
+                    >
+                    <div class="progress bg-secondary">
+                      <div
+                        id="engineHealthBar"
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 0%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <small class="text-muted" data-locale="INSIDE_STATS_FUEL"
+                      >Fuel level</small
+                    >
+                    <div class="progress bg-secondary">
+                      <div
+                        id="fuelBar"
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 0%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-8">
+                <small class="text-muted" data-locale="INSIDE_STATS_SPEED"
+                  >Speed</small
+                >
+                <div class="progress bg-secondary">
+                  <div
+                    id="speedBar"
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0%"
+                  ></div>
+                </div>
+              </div>
+              <div class="col-4">
+                <small class="text-muted" data-locale="INSIDE_STATS_SCORE"
+                  >Overall score</small
+                >
+                <span
+                  id="overall"
+                  class="w-100 badge badge-info"
+                  style="vertical-align: top !important"
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="mb-1" />
+        <div class="row">
+          <div
+            id="bigAlert"
+            class="alert alert-danger w-100"
+            role="alert"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <div id="keys-animation-wrapper">
+      <div id="keyMenu" class="container-fluid p2 json-menu">
+        <div id="keyLoadingContainer" class="w-100 text-center">
+          <div id="keysLoading" class="spinner-border text-light text-center" role="status"></div>
+          <span data-locale="LOADING" class="sr-only">Loading...</span>
+        </div>
+      </div>
+    </div>
+    <div id="sg-animation-wrapper">
+      <div id="smallGarage" class="container-fluid p-2 json-menu">
+        <div id="loadingContainer" class="w-100 text-center">
+          <div
+            id="smallGarageLoading"
+            class="spinner-border text-light text-center"
+            role="status"
+          >
+            <span data-locale="LOADING" class="sr-only">Loading...</span>
+          </div>
+        </div>
+        <div id="smallGarageContainer" class="list-group shadow"></div>
+      </div>
+    </div>
+
+    <div id="impoundGarage" class="container-fluid p-2 json-menu"></div>
+    <div id="impoundSelection" class="container-fluid p-2 json-menu"></div>
+    <div
+      id="garageAlert"
+      class="w-25 text-center p-3 text-light flashdanger shadow"
+    >
+      <svg
+        width="1em"
+        height="1em"
+        viewBox="0 0 16 16"
+        class="bi bi-exclamation-circle-fill"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+        />
+      </svg>
+      <span id="gaMessage"></span>
+    </div>
+    <div
+      id="keyAlert"
+      class="w-25 text-center p-3 text-light flashdanger shadow"
+    >
+      <svg
+        width="1em"
+        height="1em"
+        viewBox="0 0 16 16"
+        class="bi bi-exclamation-circle-fill"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+        />
+      </svg>
+      <span id="kaMessage"></span>
+    </div>
+    <div id="transferModal" class="modal fade" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header border-0">
+            <h5
+              data-locale="TRANSFER_TITLE"
+              id="cd-garage-transfer-title"
+              class="modal-title"
+            >
+              Transfer vehicle
+            </h5>
+            <button
+              type="button"
+              class="text-light close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body border-0">
+            <div class="form-group form-row">
+              <div class="col">
+                <label data-locale="TRANSFER_TYPE" id="cd-garage-transfer-switch">
+                  Transfer to: 
+                </label>
+              </div>
+              <div class="col"><select class="custom-select custom-select-sm" id="transfer-select">
+                <option id="transfer-select-option-player" selected value="0" data-locale="TRANSFER">Player</option>
+                <option id="transfer-select-option-garage" value="1">Garage</option>
+              </select></div>
+            </div>
+            <div id="transfer-to-player" class="form-group">
+              <label
+                data-locale="TRANSFER_TO"
+                id="cd-garage-transfer-to"
+                for="exampleInputEmail1"
+                >Player ID</label
+              >
+              <input
+                type="number"
+                min="0"
+                max="1000"
+                class="form-control"
+                id="playerid"
+              />
+              <small
+                data-locale="TRANSFER_DESCRIPTION"
+                id="cd-garage-transfer-description "
+                class="form-text text-muted"
+                >Input the ID of the person you are transfering this vehicle
+                to.</small
+              >
+            </div>
+            <div id="transfer-to-garage" class="form-group">
+              <label
+                data-locale="TRANSFER_TO"
+                id="cd-garage-transfer-to"
+                for="exampleInputEmail1"
+                >Garage</label
+              >
+              <span id="transfer-price" class="badge badge-warning float-right">$123</span>
+              <select class="custom-select custom-select-sm" id="transfer-select-garage-list">
+                <option selected value="A">Garage A</option>
+                <option value="B">Garage B</option>
+                <option value="C">Garage C</option>
+              </select>
+              <small
+                data-locale="TRANSFER_DESCRIPTION_GARAGE"
+                id="cd-garage-transfer-description "
+                class="form-text text-muted"
+                >Select the garage you are transfering this vehicle to</small
+              >
+            </div>
+            <hr />
+          </div>
+          <div class="modal-footer border-0">
+            <div class="messageContainer w-100">
+              <div class="alert alert-primary" role="alert"></div>
+            </div>
+            <div class="modalLoading w-100 text-center">
+              <div class="spinner-border text-light" role="status">
+                <span data-locale="LOADING" class="sr-only">Loading...</span>
+              </div>
+            </div>
+            <button
+              data-locale="TRANSFER_CLOSE"
+              id="closeTransfer"
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              data-locale="TRANSFER_SUBMIT"
+              id="submitTransfer"
+              type="button"
+              class="btn btn-success"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="input-plate-wrapper">
+      <div id="input-plate-body">
+        <div id="input-plate-header" class="lead">
+          Input your plate: 
+        </div>
+        <hr>
+        <input type="text" class="form-control" min="1" max="8" placeholder="ABC123"/>
+        <div class="small text-muted">
+          The plate can have a maximum of 8 characters. You can include whitespaces to customise it.
+        </div>
+        <div class="input-plate-footer mt-3 float-right">
+          <button class="btn btn-success">Submit</button>
+        </div>
+      </div>
+    </div>
+    <div id="create-impound-wrapper" class="">
+      <div id="create-impound">
+        <div id="create-impound-header" class="p-2">
+          Impound a vehicle
+          <button type="button" class="close text-white" aria-label="Close" onclick="hideCreateImpound()">
+            <span aria-hidden="true" class="small">&times;</span>
+          </button>
+        </div>
+        <div id="create-impound-body" class="p-3">
+          <form class="needs-validation">
+            <div class="form-group">
+              <label for="ci-impound-select">Select impound</label>
+              <select class="custom-select" id="ci-impound-select">
+                <option value="1">Car garage</option>
+              </select>
+              <small class="text-muted">The vehicle will be transported to this impound</small>
+            </div>
+            <div class="form-group" style="position: relative;">
+              <label for="ci-impound-description">Description</label>
+              <textarea class="form-control" id="ci-impound-description" rows="4" reqired min="16" max="280"></textarea>
+              <div id="writeLimit-text" class="text-muted small"></div>
+              <small class="text-muted">Describe the reason for impounding the vehicle</small>
+            </div>
+            <div class="form-group">
+              <label for="ci-impound-time">Impound for</label>
+              <select class="custom-select" id="ci-impound-time">
+                <option value="0">0 hours - Can take out instantly</option>
+                <option value="1" selected>1 hour</option>
+                <option value="2">2 hours</option>
+                <option value="3">3 hours</option>
+                <option value="4">4 hours</option>
+                <option value="5">5 hours</option>
+                <option value="6">6 hours</option>
+                <option value="7">7 hours</option>
+                <option value="8">8 hours</option>
+                <option value="9">9 hours</option>
+                <option value="10">10 hours</option>
+                <option value="11">11 hours</option>
+                <option value="12">12 hours</option>
+                <option value="13">13 hours</option>
+                <option value="14">14 hours</option>
+                <option value="15">15 hours</option>
+                <option value="16">16 hours</option>
+                <option value="17">17 hours</option>
+                <option value="18">18 hours</option>
+                <option value="19">19 hours</option>
+                <option value="20">20 hours</option>
+                <option value="21">21 hours</option>
+                <option value="22">22 hours</option>
+                <option value="23">23 hours</option>
+                <option value="24">24 hours / 1 day</option>
+                <option value="48">48 hours / 2 days</option>
+                <option value="72">72 hours / 3 days</option>
+                <option value="96">96 hours / 4 days</option>
+                <option value="120">120 hours / 5 days</option>
+                <option value="144">144 hours / 6 days</option>
+                <option value="168">168 hours / 7 days</option>
+              </select>
+              <small class="text-muted">People will not be able to retrieve the vehicle until the date/time selected</small>
+            </div>
+            <div class="form-group">
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="ci-impound-personal">
+                <label class="custom-control-label" for="ci-impound-personal">Allow personal un-impound</label>
+              </div>
+              <small class="text-muted">This will allow citizens to retrieve their vehicles by paying a fee once the impound timer expires</small>
+            </div>
+          </form>
+        </div>
+        <div id="create-impound-footer" class="p-2 d-flex align-items-center">
+          <div id="ci-footer-message" class="small flex-fill">
+          </div>
+          <button class="btn btn-success btn-sm mr-1" onclick="createImpound()">Send to impound</button>
+          <button class="btn btn-outline-secondary btn-sm" onclick="hideCreateImpound()">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <div id="action-bar-wrapper">
+      <div id="action-bar" class="bar shadow">
+        <div id="action-bar-text" class="bar-text"></div>
+        <div id="action-bar-target" class="bar-target"></div>
+        <div id="action-bar-block" class="bar-block"></div>
+      </div>
+    </div>
+    <script src="../configs/locales_ui.js"></script>
+    <script src="js/vehicles.js"></script>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/popper-1.16.1.js"></script>
+    <script src="js/bootstrap-4.5.2.js"></script>
+    <script src="js/JSONmenu.js"></script>
+    <script src="js/writeLimit.js"></script>
+    <script src="js/doorLock.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

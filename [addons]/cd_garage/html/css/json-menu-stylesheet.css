@@ -1,0 +1,104 @@
+:root{
+    --json-menu-background:#1f1f1fff;
+    --json-menu-item:#3d3d3dff;
+    --json-menu-item-hover:#333333ff;
+
+    --json-menu-text: #ffffff;
+    --json-menu-text-alert:#FB3640;
+    --json-menu-text-success:#23CE6B;
+    --json-menu-text-warning:#EECF6D;
+    --json-menu-text-muted:#666666ff;
+
+    --json-menu-link:#3772FF;
+
+    --davys-grey: #474747ff;
+
+}
+.json-menu{
+    color:var(--json-menu-text)!important;
+    padding:.35rem!important;
+    background: var(--json-menu-background)!important;
+    border-radius: .25rem!important;
+}
+.json-menu > a{
+    background-color: var(--json-menu-link);
+}
+.json-menu > hr{
+    border-top: var(--dim-gray);
+}
+.json-menu-header{
+    background-color:var(--json-menu-item-hover)!important;
+    padding:1rem;
+    border-top-left-radius: .25rem!important;
+    border-top-right-radius: .25rem!important;
+}
+.json-item-header{
+    background-color: var(--json-menu-item)!important;
+}
+.json-item-header:hover{
+    background-color: var(--json-menu-item-hover)!important;
+}
+.json-item{
+    background-color: var(--json-menu-item)!important;
+}   
+.json-item-footer{
+    background-color: inherit;
+}
+.json-menu-footer{
+    font-size:80%;
+    color:var(--json-menu-text-muted);
+    padding:0.5rem;
+
+    position: relative;
+
+}
+.json-item-flash {
+    background:linear-gradient(45deg, var(--json-menu-item), 70%, var(--json-menu-text-alert));
+    background-size:200% 200%;
+    border:0;
+    animation: json-menu-flash 1s ease infinite;
+}
+.json-text-success{
+    color:var(--json-menu-text-success)
+}
+.json-text-alert{
+    color:var(--json-menu-text-alert);
+}
+.json-text-warning{
+    color:var(--json-menu-text-warning);
+}
+.json-menu-list{
+    background-color:var(--json-menu-item-hover)!important;
+    max-height:calc(80vh - 98px);
+    overflow-y:scroll;
+    border-top-left-radius: 0px!important;
+    border-top-right-radius: 0px!important;
+
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+@keyframes json-menu-flash {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/* Scrollbar */
+.json-menu-list::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+	background-color:  #333333ff;
+}
+
+.json-menu-list::-webkit-scrollbar
+{
+    width: 8px;
+    background-color: #333333ff;
+    border-bottom-right-radius: .25rem!important;
+}
+
+.json-menu-list::-webkit-scrollbar-thumb{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.1);
+	background-color: var(--json-menu-text-muted);
+}

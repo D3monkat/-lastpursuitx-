@@ -1,0 +1,311 @@
+html, body{
+    background-color:transparent!important;
+    width:100%;
+    height:100%;
+    user-select: none;
+
+    -webkit-font-smoothing: antialiased;
+}
+#largeGarage {
+    width: 50%;
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translateX(-50%);
+}
+#largeGarage > .jumbotron {
+    /* background-color:rgba(0,0,0,0.5)!important; */
+}
+#manuf_image{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);   
+    height:100%;                                         
+}
+#manuf_image > img {
+    height:100%;
+}
+#impoundSelection{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    max-width:25%; 
+    max-height:70%;
+    overflow-y: auto;
+    display:none;
+}
+#smallGarage{
+    position:absolute;
+    top:50.5%;
+    left:50.5%;
+    -webkit-transform: translateX(-50%) translateY(calc(-50% - .1px));
+    transform: translateX(-50%) translateY(calc(-50% - .1px));
+    max-width:25%;
+    max-height:80%;
+    overflow-y: hidden;
+    display:none;
+}
+#keyMenu{
+    position:absolute;
+    top:50.5%;
+    left:50.5%;
+    -webkit-transform: translateX(-50%) translateY(calc(-50% - .1px));
+    transform: translateX(-50%) translateY(calc(-50% - .1px));
+    max-width:25%;
+    max-height:80%;
+    overflow-y: hidden;
+    display:none;
+}
+#impoundGarage{
+    position:absolute;
+    top:50.5%;
+    left:50.5%;
+    -webkit-transform: translateX(-50%) translateY(calc(-50% - .1px));
+    transform: translateX(-50%) translateY(calc(-50% - .1px));
+    max-width:25%;
+    max-height:80%;
+    overflow-y: hidden;
+    display:none;
+}
+
+/* .smallGarageItem:hover, .impoundItem:hover, .garageSelectionItem:hover{
+    background-color:#2e3338!important;
+} */
+.scrollbar::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 2px;
+	background-color: #F5F5F5;
+}
+
+.scrollbar::-webkit-scrollbar
+{
+	width: 12px;
+    background-color: #F5F5F5;
+    border-radius:2px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb
+{
+	border-radius: 2px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #999;
+}
+.messageContainer{
+    display:none;
+}
+.modalLoading{
+    display:none;
+}
+.card-header{
+    background-color:rgba(0,0,0,0);
+}
+#impoundSelectionContainer{
+    display:none;
+}
+.flashdanger {
+    background:linear-gradient(45deg, #343a40, 70%,#dc3545);
+    background-size:200% 200%;
+    border:0;
+    animation: flashdanger 1s ease infinite;
+
+}
+@keyframes flashdanger {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+#header{
+    border-top-left-radius: 0!important;
+    border-top-right-radius: 0!important;
+}
+#bigAlert{
+    display:none;
+}
+#garageAlert, #keyAlert{
+    display:none;
+    background-color: #3d3d3dff;
+    border-radius: .25rem;
+
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+#carModel,#carName, .impoundItem, .smallGarageItem{
+    text-transform: capitalize;
+} 
+.smallGarageItem{
+    display: flex;
+    align-items: center;
+}
+#carModel{
+    flex-grow: 0.1;
+}
+#impoundCivNotification{
+    display:none;
+}
+#input-plate-wrapper{
+    width:100%;
+    height: 100%;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input-plate-body{
+    display:none;
+
+    padding:1rem;
+
+    background-color: rgba(31, 31, 31, 0.9);
+    color:white;
+
+    border-radius: .3rem;
+    
+    min-width: 500px;
+}
+#transfer-to-garage{
+    display:none;
+}
+
+#create-impound-wrapper{
+    width:100%;
+    height:100%;
+
+    position: absolute;
+    top:0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9000;
+
+    background-color: rgba(0,0,0,.3);
+
+    color:white;
+
+    display:none;
+}
+#create-impound{
+    width:33.33%;
+    max-height:90%;
+
+    border-radius: .3rem;
+
+    background-color:#1f1f1fff;
+
+    display:none;
+}
+
+#create-impound-header{
+    background-color:#3d3d3dff;
+}
+
+#create-impound-body{
+    background-color: #474747ff;
+}
+#writeLimit-text{
+    position: absolute;
+    bottom: 2rem;
+    right:.5rem;
+}
+#ci-impound-description{
+    resize: none;
+}
+#action-bar-wrapper{
+    position:absolute;
+    top:0;
+    width:100%;
+    height:100%;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#action-bar{
+    display:none;
+}
+.bar {
+    width: 500px;
+    height: 32px;
+
+    border: 0.5rem solid #1f1f1fff;
+    position: relative;
+
+    background-color: #333333ff;
+
+    border-radius: 0.3rem;
+
+    overflow: hidden;
+}
+.bar-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    /* mix-blend-mode: exclusion; */
+    font-size: 12px;
+    font-variant: small-caps;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+
+    user-select: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+    z-index:100;
+}
+
+.bar-target {
+    position: absolute;
+    width: 100px;
+    height: 100%;
+  
+    background-color: #6eeb83;
+  
+    left: 30%;
+ 
+    z-index:98;
+  }
+  .bar-block {
+    position: absolute;
+    width: 10px;
+    height: 100%;
+  
+    transition: 0.1s linear;
+    
+    background-color: #fb3640;
+
+    z-index:99;
+  }
+
+  .shake{
+      animation: shake 0.7s;
+      animation-iteration-count: infinite;
+  }
+  /* w3schools sample */
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  .vehicleLocation{
+    align-self: end;
+    text-align: right;
+    flex-grow: 4;
+  }
