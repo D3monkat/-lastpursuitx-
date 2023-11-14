@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Police Dispatch</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <script src="js/libraries/moment.js"></script>
+  </head>
+  <body>
+    <div id="toastContainer" class="container-fluid p-0">
+      <div
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+        data-autohide="false"
+      >
+        <div class="toast-header bg-dark pl-0 pr-0">
+          <div
+            class="col-3 p-0 pl-1"
+            style="display: flex; align-items: center"
+          >
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 16 16"
+              class="bi bi-info-circle-fill"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+              /></svg
+            >&nbsp;
+            <strong id="count" class="mr-auto">0/0</strong>
+          </div>
+          <div class="col-6 text-center p-0">
+            <small id="time" class="text-muted"></small>
+          </div>
+          &nbsp;
+          <div
+            class="col-3 text-right p-0 pr-1"
+            style="
+              display: flex;
+              align-items: center;
+              flex-direction: row-reverse;
+            "
+          >
+            &nbsp;
+            <strong id="responding">0</strong>
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 16 16"
+              class="bi bi-brightness-alt-high-fill"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4 11a4 4 0 1 1 8 0 .5.5 0 0 1-.5.5h-7A.5.5 0 0 1 4 11zm4-8a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm8 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zM4.464 7.464a.5.5 0 0 1-.707 0L2.343 6.05a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div id="body" class="toast-body text-center text-light" style=" padding-bottom:0.2rem !important;">
+          <h5 id="title" data-locale="cd_dispatch_small_title">
+            No dispatch calls
+          </h5>
+          <p id="message" class="mb-1"></p>
+        </div>
+        <div id="distance" class="toast-distance text-center">
+        </div>
+        <div id="commands" class="w-100">
+          <div
+            id="buttonGroup"
+            class="btn-group btn-group-sm w-100"
+            role="group"
+          >
+            <button type="button" class="btn btn-dark">
+              <kbd
+                ><svg
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-arrow-left-short"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"
+                  /></svg
+              ></kbd>
+              <span data-locale="cd_dispatch_small_previous">Previous</span>
+            </button>
+            <button type="button" class="btn btn-dark">
+              <kbd>G</kbd>
+              <span data-locale="cd_dispatch_small_respond">Respond</span>
+            </button>
+            <button type="button" class="btn btn-dark">
+              <kbd
+                ><svg
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-arrow-right-short"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  /></svg
+              ></kbd>
+              <span data-locale="cd_dispatch_small_next">Next</span>
+            </button>
+          </div>
+        </div>
+        <div
+          id="modeChange"
+          data-locale="cd_dispatch_small_mode"
+          class="alert alert-danger text-small pt-1 pb-1 m-0"
+          role="alert"
+        >
+          Press right click to return to normal mode.
+        </div>
+      </div>
+    </div>
+    <div id="mainRow" class="row h-100">
+      <div id="refreshBar">
+        <div class="card text-white p-1">
+          <div class="card-body text-center p-2">
+            <button
+              id="showRefreshBar"
+              type="button"
+              class="btn btn-outline-secondary btn-sm"
+              data-locale="cd_dispatch_main_show_refresh_bar"
+            >
+              Show
+            </button>
+            <div
+              id="refreshBarButtonGroup"
+              class="btn-group w-100"
+              role="group"
+            >
+              <button
+                onclick="toggleVoiceActivity(false)"
+                id="openSettings"
+                data-toggle="modal"
+                data-target="#settingsModal"
+                type="button"
+                class="btn btn-outline-secondary btn-sm"
+              >
+                <svg
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-wrench"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M.102 2.223A3.004 3.004 0 0 0 3.78 5.897l6.341 6.252A3.003 3.003 0 0 0 13 16a3 3 0 1 0-.851-5.878L5.897 3.781A3.004 3.004 0 0 0 2.223.1l2.141 2.142L4 4l-1.757.364L.102 2.223zm13.37 9.019L13 11l-.471.242-.529.026-.287.445-.445.287-.026.529L11 13l.242.471.026.529.445.287.287.445.529.026L13 15l.471-.242.529-.026.287-.445.445-.287.026-.529L15 13l-.242-.471-.026-.529-.445-.287-.287-.445-.529-.026z"
+                  />
+                </svg>
+              </button>
+              <button
+                id="hideRefreshBar"
+                type="button"
+                class="btn btn-outline-secondary btn-sm"
+                data-locale="cd_dispatch_main_hide_refresh_bar"
+              >
+                Hide
+              </button>
+              <button
+                id="refreshButton"
+                type="button"
+                class="btn btn-outline-primary btn-sm"
+                data-toggle="tooltip"
+                data-placement="bottom"
+                title=""
+                data-locale="cd_dispatch_main_refresh"
+              >
+                Refresh blips
+              </button>
+              <button
+                id="refreshButtonLoader"
+                type="button"
+                class="btn btn-outline-primary btn-sm w-100"
+              >
+                <div
+                  class="spinner-grow text-light"
+                  style="width: 0.875rem; height: 0.875rem"
+                  role="status"
+                >
+                  <span class="sr-only">Loading...</span>
+                </div>
+              </button>
+              <button
+                id="dropdownHideLarge"
+                type="button"
+                class="btn btn-outline-danger btn-sm"
+                data-locale="cd_dispatch_main_close_refresh_bar"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+          <div class="card-footer p-0 text-center border-top-0">
+            <small id="playerInfoBar" class="text-light"></small>
+          </div>
+        </div>
+      </div>
+      <div id="mapCol" class="">
+        <div id="mapContainer">
+          <canvas id="map"></canvas>
+        </div>
+        <img id="imageDay" src="images/map_day.jpg" />
+        <img id="imageNight" src="images/map_night.jpg" />
+        <img id="pin" class="icons" src="images/placeholder.svg" />
+        <img id="pinSel" class="icons" src="images/placeholderchecked.svg" />
+        <img id="blue" class="icons" src="images/lspd.svg" />
+        <img id="orange" class="icons" src="images/bcso.svg" />
+        <img id="yellow" class="icons" src="images/sast.svg" />
+        <img id="red" class="icons" src="images/med.svg" />
+      </div>
+      <div id="dispatchLarge">
+        <div id="dispatchInfo" data-locale="cd_dispatch_notification_panel">Notification panel</div>
+        <div id="dispatchGroup" class="list-group scrollbar"></div>
+      </div>
+
+      <div id="radioChannels" class="small">
+        <div class="accordion" id="radioFieldsContainer">
+          <div class="card text-light" style="border: 0">
+            <div
+              id="radioChannelsHeader"
+              class="card-header"
+              data-locale="cd_dispatch_unit_list"
+            >
+              Unit list
+            </div>
+          </div>
+          <div id="radioFields" class="scrollbar">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="dropdown-menu dropdown-menu-sm bg-secondary text-light"
+      id="context-menu"
+    >
+    <a
+    id="dropdownAssignAll"
+    class="dropdown-item text-light small"
+    href="#"
+    data-locale="cd_dispatch_main_dropdown_assign_all"
+    >Assign every unit to call</a
+  >
+  <hr />
+ 
+    <a
+        id="dropdownRespond"
+        class="dropdown-item small disabled text-dark"
+        href="#"
+        data-locale="cd_dispatch_main_dropdown_respond"
+        >Respond to notification</a
+      >
+      <a
+        id="dropdownRemoveResponse"
+        class="dropdown-item small disabled text-dark"
+        href="#"
+        data-locale="cd_dispatch_main_dropdown_remove_response"
+        >Remove notification response</a
+      >
+      <hr />
+      <a
+        id="dropdownDeleteSingle"
+        class="dropdown-item text-light small"
+        href="#"
+        data-locale="cd_dispatch_main_dropdown_remove_notification"
+        >Remove this notification</a
+      >
+      <a
+        id="dropdownDeleteAll"
+        class="dropdown-item text-light small"
+        href="#"
+        data-locale="cd_dispatch_main_dropdown_remove_all"
+        >Remove all notifications</a
+      >
+      <hr />
+    </div>
+    <div
+      id="loadingCircle"
+      class="spinner-border text-primary"
+      role="status"
+      style="width: 5rem; height: 5rem"
+    >
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div id="settingsModal" class="modal fade" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-light">
+          <div class="modal-header" style="background-color:#212529 !important; border-bottom:rgba(0,0,0,0.5)">
+            <h5 class="modal-title" data-locale="cd_dispatch_main_modal_title">
+              Dispatch Settings
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true" class="text-light">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="background-color:rgba(56, 56, 56, 1) !important">
+            <div class="form-group">
+              <div class="form-group">
+                <label for="status-list" data-locale="cd_dispatch_settings_status">Status</label>
+                <select id="status-list" class="custom-select">
+                </select>
+                <small id="status-help" class="form-text text-muted" data-locale="cd_dispatch_settings_status_help">Select your current status.</small>
+              </div>
+            </div>
+            <hr />
+            <div class="form-group">
+              <label
+                for="exampleInputEmail1"
+                data-locale="cd_dispatch_main_modal_autodel"
+                >Auto delete after</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="adnr"
+                value="5"
+                min="1"
+                max="60"
+              />
+              <small
+                id="adHelp"
+                class="form-text text-muted"
+                data-locale="cd_dispatch_main_modal_autodel_desc"
+                >The amount of time needed to auto delete the notification. (In
+                minutes, 1-60)</small
+              >
+            </div>
+            <div class="form-group">
+              <label
+                for="exampleInputEmail1"
+                data-locale="cd_dispatch_main_modal_set_callsign"
+                >Update callsign</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="set-callsign"
+              />
+              <small
+                id="set-callsign-help"
+                class="form-text text-muted"
+                data-locale="cd_dispatch_main_modal_set_callsign_help"
+                >This callsign will be visible to all of the dispatch users</small
+              >
+            </div>
+            <div class="form-group">
+              <label
+                for="exampleInputEmail1"
+                data-locale="cd_dispatch_main_modal_assigned_vehicle"
+                >Assigned vehicle</label
+              >
+              <br>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="assigned_vehicle_none" name="assigned-vehicle" class="custom-control-input" value="foot" checked>
+                <label class="custom-control-label" for="assigned_vehicle_none" data-locale="cd_dispatch_main_modal_vehicle_foot">Foot</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="assigned_vehicle_car" name="assigned-vehicle" class="custom-control-input" value="car">
+                <label class="custom-control-label" for="assigned_vehicle_car"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="white" d="M19 20H5v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-9l2.513-6.702A2 2 0 0 1 6.386 4h11.228a2 2 0 0 1 1.873 1.298L22 12v9a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-1zM4.136 12h15.728l-2.25-6H6.386l-2.25 6zM6.5 17a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm11 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg> <span data-locale="cd_dispatch_main_modal_vehicle_car"> Car</span></label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="assigned_vehicle_motorcycle" name="assigned-vehicle" class="custom-control-input" value="motorcycle">
+                <label class="custom-control-label" for="assigned_vehicle_motorcycle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path fill="white" d="M15.5 6.937A6.997 6.997 0 0 1 19 13v8h-4.17a3.001 3.001 0 0 1-5.66 0H5v-8a6.997 6.997 0 0 1 3.5-6.063A3.974 3.974 0 0 1 8.125 6H5V4h3.126a4.002 4.002 0 0 1 7.748 0H19v2h-3.126c-.085.33-.212.645-.373.937zM12 14a1 1 0 0 0-1 1v5a1 1 0 0 0 2 0v-5a1 1 0 0 0-1-1zm0-7a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg> <span data-locale="cd_dispatch_main_modal_vehicle_motorcycle"> Motorcycle</span></label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="assigned_vehicle_helicopter" name="assigned-vehicle" class="custom-control-input" value="helicopter">
+                <label class="custom-control-label" for="assigned_vehicle_helicopter"><svg width="24px" height="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> <g> <g> <path fill="white" d="M456.391,0H55.608c-9.219,0-16.699,7.363-16.699,16.588s7.48,16.699,16.699,16.699H239.3v33.892 c-18.786,2.424-33.399,18.342-33.399,37.776v37.296c-58.279,20.698-100.196,76.239-100.196,141.525v97.065 c0,29.348,23.874,53.23,53.229,53.23h4.941l-19.086,44.642h-22.385c-9.219,0-16.699,7.363-16.699,16.588S113.186,512,122.405,512 c1.998,0,48.098,0,66.797,0c9.219,0,16.699-7.475,16.699-16.699c0-9.225-7.48-16.588-16.699-16.588h-8.072l19.086-44.643h111.568 l19.086,44.643h-8.072c-9.219,0-16.699,7.363-16.699,16.588S313.579,512,322.798,512c2.035,0,48.012,0,66.797,0 c9.219,0,16.699-7.475,16.699-16.699c0-9.225-7.48-16.588-16.699-16.588H367.21l-19.086-44.643h4.941 c29.354,0,53.229-23.88,53.229-53.229v-97.064c0-65.286-41.916-120.827-100.196-141.525v-37.296 c0-19.435-14.613-35.354-33.399-37.776V33.287h183.692c9.219,0,16.699-7.475,16.699-16.699S465.61,0,456.391,0z M372.895,283.776 v50.209h-33.399V318.36c0-27.625-22.473-50.098-50.098-50.098c-27.625,0-50.098,22.473-50.098,50.098v15.626H139.105v-50.209 c0-64.455,52.436-116.895,116.895-116.895S372.895,219.323,372.895,283.776z"/> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
+                  <span data-locale="cd_dispatch_main_modal_vehicle_helicopter"> Helicopter</span></label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="assigned_vehicle_boat" name="assigned-vehicle" class="custom-control-input" value="boat">
+                <label class="custom-control-label" for="assigned_vehicle_boat">
+                  <svg id="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0, 0, 400,400"><g><path fill="white" d="M176.166 26.837 C 166.221 31.468,164.557 35.807,164.211 58.008 L 163.935 75.781 200.000 75.781 L 236.065 75.781 235.789 58.008 C 235.443 35.807,233.779 31.468,223.834 26.837 C 217.797 24.026,182.203 24.026,176.166 26.837 M84.784 99.266 C 79.542 100.830,79.724 99.251,79.705 143.217 C 79.688 180.662,79.765 182.895,81.055 182.522 C 81.807 182.305,108.889 175.229,141.238 166.798 L 200.053 151.470 258.816 166.790 C 291.135 175.216,318.193 182.291,318.945 182.514 C 320.235 182.895,320.312 180.668,320.312 143.385 C 320.312 99.301,320.491 100.774,314.959 99.238 C 311.353 98.236,88.144 98.263,84.784 99.266 M115.282 196.847 C 24.813 220.574,29.688 218.971,29.688 225.000 C 29.687 227.029,36.297 244.620,50.822 281.253 C 62.446 310.568,71.841 334.669,71.699 334.811 C 71.557 334.953,68.287 335.451,64.432 335.918 C 54.898 337.074,50.524 338.427,38.792 343.851 C 27.703 348.978,21.506 350.744,14.453 350.787 C 5.213 350.843,0.006 355.206,0.006 362.891 C 0.006 370.953,4.728 374.992,14.155 374.997 C 26.116 375.003,33.970 372.926,50.391 365.415 C 68.641 357.068,81.474 357.336,100.907 366.472 C 125.485 378.027,148.434 378.046,173.236 366.535 C 193.687 357.042,206.313 357.042,226.764 366.535 C 251.566 378.046,274.515 378.027,299.093 366.472 C 318.949 357.137,331.303 357.015,350.781 365.962 C 380.094 379.426,399.994 378.184,399.994 362.891 C 399.994 355.206,394.787 350.843,385.547 350.787 C 378.512 350.744,372.571 349.041,361.174 343.803 C 349.738 338.547,345.049 337.118,335.221 335.897 C 331.557 335.442,328.425 334.936,328.262 334.772 C 328.099 334.609,337.493 310.524,349.139 281.250 C 372.289 223.055,372.687 221.693,367.361 218.843 C 365.406 217.797,201.239 174.986,199.502 175.070 C 198.702 175.108,160.803 184.908,115.282 196.847 M255.806 221.916 C 285.484 229.673,310.573 236.547,311.561 237.193 C 317.899 241.336,317.837 251.667,311.448 255.853 C 307.211 258.629,306.119 258.416,252.192 244.290 L 200.087 230.640 147.895 244.290 C 93.882 258.416,92.789 258.629,88.552 255.853 C 81.890 251.487,82.191 240.650,89.080 236.868 C 91.575 235.499,196.525 207.955,199.556 207.874 C 200.815 207.840,226.128 214.159,255.806 221.916 " stroke="none" fill="#000000" fill-rule="evenodd"></path></g></svg>
+                  <span data-locale="cd_dispatch_main_modal_vehicle_boat"> Boat</span></label>
+              </div>
+              <small
+                id="set-callsign-help"
+                class="form-text text-muted"
+                data-locale="cd_dispatch_main_modal_set_callsign_help"
+                >This callsign will be visible to all of the dispatch users</small
+              >
+            </div>
+            <div class="form-group">
+              <label data-locale="cd_dispatch_main_modal_sound_control">Sound control</label>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="mute-sounds">
+                <label for="mute-sounds" class="custom-control-label" data-locale="cd_dispatch_main_modal_mute_sounds">Mute sounds</label>
+              </div>
+              <small class="form-text text-muted">
+                <span data-locale="cd_dispatch_main_modal_mute_sounds_description">This option will mute panic and notification sounds</span>
+              </small>
+            </div>
+            <div class="form-group">
+              <label
+                for="exampleInputEmail1"
+                data-locale="cd_dispatch_main_modal_enable_dispatcher"
+                >Enable dispatcher mode?</label
+              >
+              <br>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="dispatcherToggle">
+                <label class="custom-control-label" for="dispatcherToggle" data-locale="cd_dispatch_main_modal_toggle_button">Toggle dispatcher mode</label>
+              </div>
+              <small
+                id="set-callsign-help"
+                class="form-text text-muted"
+               
+                ><span data-locale="cd_dispatch_main_modal_dispatcher_status">Dispatcher mode is currently</span> <strong id="cd_dispatch_dispatcher_toggle" class="text-danger" data-locale="cd_dispatch_main_modal_dispatcher_status_disabled">disabled.</strong></small
+              >
+            </div>
+          </div>
+          <div class="modal-footer" style="background-color:#212529 !important; border-top:rgba(0,0,0,0.5)">
+            <button
+              id="saveSettings"
+              type="button"
+              class="btn btn-sm btn-success"
+              data-locale="cd_dispatch_main_modal_save"
+            >
+              Save changes
+            </button>
+            <button
+            type="button"
+            class="btn btn-sm btn-outline-secondary"
+            data-dismiss="modal"
+            data-locale="cd_dispatch_main_modal_close"
+          >
+            Close
+          </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="mapinfo">
+      <span id="mapinfo-reset" class="btn btn-sm btn-outline-light" onclick="resetMap()"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-arrow-counterclockwise"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z"
+          />
+          <path
+            d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z"
+          />
+        </svg>
+        <span data-locale="cd_dispatch_revert_map">Revert</span></span
+      >
+      <span id="mapinfo-zoomlevel">1x</span>
+    </div>
+    <div id="unit-contextmenu" class="bg-secondary">
+      <div class="ucm-item-disabled text-dark small d-flex align-items-center justify-content-center">
+        <span id="ucm-player"></span>&nbsp;&nbsp;<span class="badge badge-light" id="ucm-status"></span>
+      </div>
+      <hr/>
+      <div class="ucm-item text-light small" onclick="sendGPSRequest()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-compass-fill" viewBox="0 0 16 16">
+          <path d="M15.5 8.516a7.5 7.5 0 1 1-9.462-7.24A1 1 0 0 1 7 0h2a1 1 0 0 1 .962 1.276 7.503 7.503 0 0 1 5.538 7.24zm-3.61-3.905L6.94 7.439 4.11 12.39l4.95-2.828 2.828-4.95z"/>
+        </svg> <span data-locale="cd_dispatch_unit_dropdown_gps">Set GPS location</span>
+      </div>
+      <div class="ucm-item text-light small" onclick="setRadioChannel()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-broadcast-pin" viewBox="0 0 16 16">
+          <path d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707zm2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708zm5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708zm2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM6 8a2 2 0 1 1 2.5 1.937V15.5a.5.5 0 0 1-1 0V9.937A2 2 0 0 1 6 8z"/>
+        </svg> <span data-locale="cd_dispatch_unit_join_radio">Join Radio Channel</span>
+      </div>
+      <div class="ucm-item text-light small" onclick="setRadioChannel(null)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-octagon-fill" viewBox="0 0 16 16">
+          <path d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353L11.46.146zm-6.106 4.5L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z"/>
+        </svg><span data-locale="cd_dispatch_unit_leave_radio">Leave Radio Channel</span>
+      </div>
+    </div>
+    <script src="../configs/locales_ui.js"></script>
+    <script src="../configs/config_ui.js"></script>
+
+    <script src="js/libraries/jquery-3.5.1.min.js"></script>
+    <script src="js/libraries/popper.min.js"></script>
+    <script src="js/libraries/bootstrap.min.js"></script>
+    <script src="js/libraries/jquery-ui.min.js"></script>
+    
+    <script src="js/sounds.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/dragdrop.js"></script>
+    
+  </body>
+</html>

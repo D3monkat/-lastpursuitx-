@@ -1,0 +1,18 @@
+=====================================================
+panic_alert.wav
+-----------------------------------------------------
+Title: sw_school_pa_alert.wav
+Creator: jppi_Stu
+Source:  https://freesound.org/s/274682/ 
+License: https://creativecommons.org/licenses/by/3.0/
+=====================================================
+
+=====================================================
+notification.wav
+-----------------------------------------------------
+Title: Notification (8-bit) 1
+Creator: AndreWharn
+Source:  https://freesound.org/s/501207/
+License: https://creativecommons.org/licenses/by/3.0/
+* The original sound was trimmed in order to suit the needs of the resource
+=====================================================
