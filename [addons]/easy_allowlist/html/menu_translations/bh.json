@@ -1,0 +1,98 @@
+{
+    "allowlist_requests": "<i class=\"bi bi-question-octagon\"></i> Allowlist zahtjevi",
+    "allowlisted_players": "<i class=\"bi bi-door-open\"></i> Allowlistovani igraci",
+    "queue_priority": "<i class=\"bi bi-hourglass-split\"></i> Cekanje prioritet",
+    "reserved_slots": "<i class=\"bi bi-pie-chart\"></i> Rezervisani slotovi",
+    "settings": "<i class=\"bi bi-gear\"></i> Podesavanja",
+
+    "remove_allowlist": "Ukloni Allowlistu",
+
+    "identifiers": "Identifieri",
+    "steam_informations": "Steam informacije",
+    "discord_informations": "Discord informacije",
+    "nickname": "Nickname",
+    "steam_id": "Steam ID",
+    "discord_id": "Discord ID",
+    
+    "no_allowlist_requests": "Nema zahtjeva za allowlistu",
+    "no_allowlisted_players": "Nema allowlistanih igraca",
+
+    "queue": "Cekanje",
+    "minutes_to_reconnect_with_higher_priority": "Minute za reconnect za vvisi prioritet (primjer: ako igracu crash-a)",
+    "minutes": "Minute",
+    "priority_to_add_with_fast_reconnect": "Prioritet za dodati nakon reconnecta",
+
+    "no_queue_priorities": "Nema prioriteta na queue",
+    "edit_queue_priority": "Uredi prioritete za queue",
+    "create_queue_priority": "Kreiraj prioritet za queue",
+    "remove_queue_priority": "Ukloni prioritet za queue",
+
+    "priority": "Prioritet",
+    "new_queue_priority": "Novi queue prioritet",
+    "new_queue_priority_2": "Novi queue prioritet (vise = veci prioritet)",
+    "player_identifier": "Igracev identifier",
+    "choose_player": "Odaberi igraca",
+    "players_list": "Lista igraca",
+
+    "search_player": "Trazi igraca",
+    
+    "nickname_not_known_yet": "Nickname ce se update nakon sto se igrac prijavi",
+
+    "menu:not_allowed:you_are_not_allowed": "Nemas pristup ovom izborniku",
+    "menu:not_allowed:if_you_are_admin": "Ako si admin ovo moras kopirati u server.cfg",
+
+    "discord_roles": "Discord rolovi",
+    "choose_role": "Odaberi rol",
+    "search_role": "Pretraz rol",
+    "role_id": "Rol ID",
+    "discord_role": "Discord rol",
+    "role_name": "Rol ime",
+
+    "menu:settings:language": "Jezik",
+    "menu:settings:main_identifier": "Glavni identifier - Allowlist",
+    "menu:settings:ace_permission": "ACE permisija",
+    "menu:settings:discord_invite_link": "Discord invite link",
+    "menu:settings:discord_server_id": "Discord server ID",
+    "menu:settings:discord_allowlist_role_id": "Discord allowlist rol ID",
+    "menu:settings:discord_bot_token": "Discord bot token",
+    "menu:settings:server_banner_link": "Server banner link",
+
+    "create_reserved_slots": "Kreiraj rezervni slot",
+    "slots_amount": "Kolicina slotova",
+    "edit_reserved_slots": "Uredi rezervisane slotove",
+    "delete_reserved_slot": "Obrisi rezervisane slotove",
+
+    "menu:input_text:confirm": "Potvrdi",
+    "menu:input_text:close": "Zatvori",
+
+    "free_slots": "Slobodni slotovi",
+
+    "find_a_player": "Trazi igraca",
+
+    "enable_discord_roles_features": "Ukljuci Discord rol prednosti",
+    "enable_allowlist": "Ukljuci allowlistu",
+
+    "menu:datatable:lengthMenu": "Prikazi _MENU_ rezultat",
+    "menu:datatable:zeroRecords": "Nema rezultata",
+    "menu:datatable:info": "Prikaz _PAGE_ od _PAGES_",
+    "menu:datatable:infoEmpty": "Nema dostupnih rezultata",
+    "menu:datatable:infoFiltered": "(filtar od _MAX_ rezultata)",
+    "menu:datatable:search": "Pretrazi:",
+    "menu:datatable:next": "Dalje",
+    "menu:datatable:previous": "Predhodno",
+
+    "request_id": "Zahtjev ID",
+    "player_name": "Ime Igraca",
+    "identifier": "Identifier",
+    "date": "Datum",
+
+    "player_data": "Igracevi podaci",
+    "player": "Igrac",
+
+    "type": "Tip",
+
+    "name": "Ime",
+
+    "accept_request": "Prihvati zahtjev",
+    "deny_request": "Odbij zahtjev"
+}

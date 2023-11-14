@@ -1,0 +1,98 @@
+{
+    "allowlist_requests": "<i class=\"bi bi-question-octagon\"></i> Solicitudes permitidas",
+    "allowlisted_players": "<i class=\"bi bi-door-open\"></i> Jugadores permitidos",
+    "queue_priority": "<i class=\"bi bi-hourglass-split\"></i> Prioridad de cola",
+    "reserved_slots": "<i class=\"bi bi-pie-chart\"></i> Espacios reservadas",
+    "settings": "<i class=\"bi bi-gear\"></i> Ajustes",
+
+    "remove_allowlist": "Eliminar lista de permitidos",
+
+    "identifiers": "Identificadores",
+    "steam_informations": "Informacion de Steam",
+    "discord_informations": "Informacion de Discord",
+    "nickname": "Nickname",
+    "steam_id": "Steam ID",
+    "discord_id": "Discord ID",
+    
+    "no_allowlist_requests": "No Solicitudes permitidas",
+    "no_allowlisted_players": "No Jugadores permitidos",
+
+    "queue": "Cola",
+    "minutes_to_reconnect_with_higher_priority": "Minutos para volver a conectar con una prioridad más alta (example: if player crashes)",
+    "minutes": "Minutos",
+    "priority_to_add_with_fast_reconnect": "Prioridad para agregar con rconexion rapida",
+
+    "no_queue_priorities": "Sin prioridades de cola",
+    "edit_queue_priority": "Editar Prioridad de cola",
+    "create_queue_priority": "Crear Prioridad de cola",
+    "remove_queue_priority": "Remover Prioridad de cola",
+
+    "priority": "Prioridad",
+    "new_queue_priority": "Nuevo Prioridad de cola",
+    "new_queue_priority_2": "Nuevo Prioridad de cola (higher = more priority)",
+    "player_identifier": "Identificador de jugador",
+    "choose_player": "Elegir jugador",
+    "players_list": "Lista de Jugadores",
+
+    "search_player": "Buscar Jugador",
+    
+    "nickname_not_known_yet": "El Nickname se actualizara cuando el jugador inicie sesion",
+
+    "menu:not_allowed:you_are_not_allowed": "No estas permitido utilizar este menu.",
+    "menu:not_allowed:if_you_are_admin": "Si es un administrador de servidor, debe copiar y pegar el siguiente codigo en su servidor.cfg",
+
+    "discord_roles": "Discord roles",
+    "choose_role": "Elige role",
+    "search_role": "Buscar role",
+    "role_id": "Role ID",
+    "discord_role": "Discord role",
+    "role_name": "Nombre de role",
+
+    "menu:settings:language": "Idioma",
+    "menu:settings:main_identifier": "Identificador principal - lista permitida",
+    "menu:settings:ace_permission": "ACE permiso",
+    "menu:settings:discord_invite_link": "Enlace de invitacion de Discord",
+    "menu:settings:discord_server_id": "Discord server ID",
+    "menu:settings:discord_allowlist_role_id": "Discord allowlist role ID",
+    "menu:settings:discord_bot_token": "Discord bot token",
+    "menu:settings:server_banner_link": "Enlace de banner del servidor",
+
+    "create_reserved_slots": "Crear Espacios reservadas",
+    "slots_amount": "Cantidad de espacios",
+    "edit_reserved_slots": "Editar Espacios reservadas",
+    "delete_reserved_slot": "Eliminar espacio reservado",
+
+    "menu:input_text:confirm": "Confirmar",
+    "menu:input_text:close": "Cerrar",
+
+    "free_slots": "Espacios libres",
+
+    "find_a_player": "Encontrar un jugador",
+
+    "enable_discord_roles_features": "Habilitar las funciones de los roles de Discord",
+    "enable_allowlist": "Habilitar lista de permitidos",
+
+    "menu:datatable:lengthMenu": "Mostrar _MENU_ resultados",
+    "menu:datatable:zeroRecords": "No hay resultados",
+    "menu:datatable:info": "Mostrando _PAGE_ de _PAGES_",
+    "menu:datatable:infoEmpty": "No hay resultados disponibles",
+    "menu:datatable:infoFiltered": "(filtred from _MAX_ results)",
+    "menu:datatable:search": "Busqueda:",
+    "menu:datatable:next": "Siguiente",
+    "menu:datatable:previous": "Anterior",
+
+    "request_id": "Solicitud ID",
+    "player_name": "Nombre del jugador",
+    "identifier": "Identificador",
+    "date": "Fecha",
+
+    "player_data": "Datos del jugador",
+    "player": "Jugador",
+
+    "type": "Tipo",
+
+    "name": "Nombre",
+
+    "accept_request": "Aceptar solicitud",
+    "deny_request": "Denegar solicitud"
+}

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Easy Allowlist & Queue</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<!-- Script CSS -->
+	<link href="index.css" rel="stylesheet" type="text/css" />
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+	<!-- jQuery, then popper, then Bootstrap -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+		integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+	
+	<!-- Bootstrap icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+	<!-- Datatables -->
+	<link href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css" rel="stylesheet"/>
+	<link href="https://cdn.datatables.net/rowreorder/1.3.3/css/rowReorder.bootstrap5.min.css" rel="stylesheet"/>
+	 
+	<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+		
+	<!-- Chart.js -->
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js" integrity="sha256-bC3LCZCwKeehY6T4fFi9VfOU0gztUa+S4cnkIhVPZ5E=" crossorigin="anonymous"></script>
+
+    <!-- Notifications -->
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body style="background-color: transparent !important;" data-bs-theme="dark">
+    <div id="easy_allowlist" class="container-lg bg-dark position-absolute top-50 start-50 translate-middle rounded" style="display: none;">
+        <div id="main-bar" class="d-inline-block col-12 text-center" style="color: #20c997">
+			<button id="close-main-btn" type="button" class="btn-close float-end mt-2"></button>
+
+			<p id="easy-allowlist-label" class="fw-bold fs-1">Easy Allowlist & Queue - <span id="easy-allowlist-version" class="fw-bold fs-1"></span></p>
+		</div>
+
+        <div class="d-flex align-items-start my-2">
+			<div class="nav flex-column nav-pills me-3" role="tablist">
+				<button class="nav-link text-white active translatable" data-translation-id="allowlist_requests" data-is-default="1" id="allowlist-requests-tab" data-bs-toggle="pill" data-bs-target="#allowlist-requests-div" type="button" role="tab"><i class="bi bi-question-octagon"></i> Allowlist requests</button>
+				<button class="nav-link text-white translatable" data-translation-id="allowlisted_players" id="allowlisted-players-tab" data-bs-toggle="pill" data-bs-target="#allowlisted-players-div" type="button" role="tab"><i class="bi bi-door-open"></i> Allowlisted players</button>
+				<button class="nav-link text-white translatable" data-translation-id="queue_priority" id="queue-priority-tab" data-bs-toggle="pill" data-bs-target="#queue-priority-div" type="button" role="tab"><i class="bi bi-hourglass-split"></i> Queue priority</button>
+				<button class="nav-link text-white translatable" data-translation-id="current_queue" id="current-queue-tab" data-bs-toggle="pill" data-bs-target="#current-queue-div" type="button" role="tab"><i class="bi bi-hourglass-split"></i> Current queue</button>
+				<button class="nav-link text-white translatable" data-translation-id="reserved_slots" id="reserverd-slots-tab" data-bs-toggle="pill" data-bs-target="#reserved-slots-div" type="button" role="tab"><i class="bi bi-pie-chart"></i> Reserved slots</button>
+				<button class="nav-link text-white translatable" data-translation-id="settings" id="settings-tab" data-bs-toggle="pill" data-bs-target="#settings" type="button" role="tab"><i class="bi bi-gear"></i> Settings</button>
+			</div>
+
+            <div class="tab-content container">
+				<div class="tab-pane fade show active" data-is-default="1" id="allowlist-requests-div" role="tabpanel">
+					<table id="allowlist-requests" class="table table-hover fs-4">
+						<thead>
+							<tr>
+							  <th scope="col" class="translatable" data-translation-id="request_id">Request ID</th>
+							  <th scope="col" class="translatable" data-translation-id="player_name">Player Name</th>
+							  <th scope="col" class="translatable" data-translation-id="identifier">Identifier</th>
+							  <th scope="col" class="translatable" data-translation-id="date">Date</th>
+							</tr>
+						</thead>
+			
+						<tbody>
+			
+						</tbody>
+					</table>			
+				</div>
+
+				<div class="tab-pane fade" id="allowlisted-players-div" role="tabpanel" style="max-height:80vh; overflow-y:auto; overflow-x:hidden">
+					<table id="allowlisted-players" class="table table-hover fs-4">
+						<thead>
+							<tr>
+							  <th scope="col" class="translatable" data-translation-id="player_name">Player Name</th>
+							  <th scope="col" class="translatable" data-translation-id="identifier">Identifier</th>
+							  <th scope="col" class="translatable" data-translation-id="date">Date</th>
+							</tr>
+						</thead>
+			
+						<tbody>
+			
+						</tbody>
+					</table>
+				</div>
+
+				<div class="tab-pane fade" id="queue-priority-div" role="tabpanel">
+					<div class="d-inline-block col-12 my-2">
+						<button id="new-queue-priority" type="button" class="btn btn-success float-end col-2 translatable" data-translation-id="new_queue_priority">New queue priority</button>
+					</div>
+
+					<table id="queue-priorities" class="table table-hover fs-4">
+						<thead>
+							<tr>
+							  <th scope="col" class="translatable" data-translation-id="priority">Priority</th>
+							  <th scope="col" class="translatable" data-translation-id="name">Name</th>
+							  <th scope="col" class="translatable" data-translation-id="identifier">Identifier</th>
+							  <th scope="col" class="translatable" data-translation-id="type">Type</th>
+							</tr>
+						</thead>
+			
+						<tbody>
+			
+						</tbody>
+					</table>
+				</div>
+
+				<div class="tab-pane fade" id="current-queue-div" role="tabpanel">
+					<table id="current-queue" class="table table-hover fs-4">
+						<thead>
+							<tr>
+							  <th scope="col" class="translatable" data-translation-id="position">Position</th>
+							  <th scope="col" class="translatable" data-translation-id="priority">Priority</th>
+							  <th scope="col" class="translatable" data-translation-id="name">Name</th>
+							</tr>
+						</thead>
+			
+						<tbody>
+			
+						</tbody>
+					</table>
+				</div>
+
+				<div class="tab-pane fade" id="reserved-slots-div" role="tabpanel">
+					<button id="create-reserved-slots-btn" type="button" class="btn btn-success translatable float-end" data-translation-id="create_reserved_slots">Create reserved slots</button>
+					<canvas id="reserved-slots" style="max-height: 70vh"></canvas>
+				</div>
+
+				<form class="tab-pane fade needs-validation" id="settings" role="tabpanel" novalidate>
+					<div class="container my-2" style="max-height: 60vh; overflow-y: auto">
+                        <div class="mb-2">
+							<p class="text-center translatable fs-3" data-translation-id="menu:settings:language">Language</p>
+	
+							<select class="form-select" id="settings_locale">
+								<option value="en">English</option>
+								<option value="it">Italiano</option>
+								<option value="de">Deutsch</option>
+								<option value="el">Ελληνικά</option>
+								<option value="bh">Bosanski</option>
+								<option value="es">Español</option>
+								<option value="fr">Français</option>
+								<option value="nl">Nederlandse</option>
+								<option value="pl">Polski</option>
+								<option value="cs">Česky</option>
+								<option value="hu">Magyar</option>
+							</select>
+						</div>
+
+                        <hr>
+
+						<div class="input-group my-1 fs-4">
+							<span class="input-group-text translatable" data-translation-id="menu:settings:ace_permission">ACE permission</span>
+							<input id="settings_acePermission" type="text" class="form-control" required>
+						</div>
+
+						<hr>
+
+						<div class="input-group my-1 fs-4">
+							<span class="input-group-text translatable" data-translation-id="menu:settings:server_banner_link">Server banner link</span>
+							<input id="settings_serverBanner" type="text" class="form-control">
+						</div>
+
+						<hr>
+
+						<div class="input-group my-1 fs-4">
+							<span class="input-group-text translatable" data-translation-id="menu:settings:discord_invite_link">Discord invite link</span>
+							<input id="settings_discordInvite" type="text" class="form-control" required>
+						</div>
+
+						<hr>
+
+						<div class="mb-2">
+							<p class="text-center translatable fs-3" data-translation-id="queue">Queue</p>
+	
+							<p class="text-center translatable fs-5" data-translation-id="minutes_to_reconnect_with_higher_priority">Minutes to reconnect with a higher priority (example: if player crashes)</p>
+
+							<div class="input-group my-1 fs-4">
+								<span class="input-group-text translatable" data-translation-id="minutes">Minutes</span>
+								<input id="fast_reconnect_minutes" type="number" class="form-control" required>
+
+								<span class="input-group-text translatable" data-translation-id="priority_to_add_with_fast_reconnect">Priority to add with fast reconnect</span>
+								<input id="fast_reconnect_priority_to_add" type="number" class="form-control" required>
+							</div>
+							
+							<p class="text-center translatable mt-5 fs-5" data-translation-id="minutes_before_connect">Minutes that must pass before players can connect after starting the server/script</p>
+
+							<div class="input-group my-1 fs-4">
+								<span class="input-group-text translatable" data-translation-id="minutes">Minutes</span>
+								<input id="minimum_minutes_after_start" type="number" class="form-control" required>
+							</div>
+						</div>
+
+						<hr>
+
+						<div class="form-check form-switch fs-3 my-2">
+							<input class="form-check-input" type="checkbox" role="switch" id="enable_discord_roles_features">
+							<label class="form-check-label translatable" data-translation-id="enable_discord_roles_features" for="enable_discord_roles_features">Enable Discord roles features</label>
+						</div>
+
+						<div class="input-group my-1 fs-4">
+							<span class="input-group-text translatable" data-translation-id="menu:settings:discord_server_id">Discord server ID</span>
+							<input id="settings_discordServerID" type="number" class="form-control" required>
+						</div>
+
+						<div class="input-group my-1 fs-4">
+							<span class="input-group-text translatable" data-translation-id="menu:settings:discord_bot_token">Discord bot token</span>
+							<input id="settings_discordBotToken" type="password" class="form-control" required>
+						</div>
+
+						<hr>
+
+						<div class="form-check form-switch fs-3 my-2">
+							<input class="form-check-input" type="checkbox" role="switch" id="enable_allowlist">
+							<label class="form-check-label translatable" data-translation-id="enable_allowlist" for="enable_allowlist">Enable allowlist</label>
+						</div>
+
+						<hr>
+
+						<div class="form-check form-switch fs-3 my-2">
+							<input class="form-check-input" type="checkbox" role="switch" id="show_allowlist_request_button">
+							<label class="form-check-label translatable" data-translation-id="show_allowlist_request_button" for="show_allowlist_request_button">Show "Send allowlist request" button</label>
+						</div>
+
+						<hr>
+
+						<div class="row my-1">
+							<div class="form-check col-6 fs-3 my-auto">
+								<input class="form-check-input" type="checkbox" value="" id="remove-whitelist-for-inactive-players-checkbox">
+								<label class="form-check-label" data-translation-id="menu:remove_allowlist_for_inactive_players">Remove allowlist for inactive players</label>
+							</div>
+
+							<div class="form-floating col-6">
+								<input type="number" min="1" class="form-control" id="remove-whitelist-for-inactive-players-days" placeholder="test">
+								<label class="ms-2" data-translation-id="menu:maximum_inactive_days_in_row">Maximum inactive days in row</label>
+							</div>
+						</div>
+
+						<hr>
+
+                        <div class="my-1">
+							<p class="text-center translatable fs-3" data-translation-id="menu:settings:main_identifier">Main identifier</p>
+	
+							<select class="form-select" id="settings_mainIdentifier">
+								<option value="discord">Discord</option>
+								<option value="steam">Steam</option>
+								<option value="license">Rockstar</option>
+							</select>
+						</div>
+
+						<hr>
+
+						<div class="input-group my-1 fs-4">
+							<span class="input-group-text translatable" data-translation-id="menu:settings:discord_allowlist_role_id">Discord allowlist role ID</span>
+							<input id="settings_discordAllowlistRole" type="number" class="form-control" required>
+							<button id="discord-allowlist-role-choose-btn" type="button" class="btn btn-secondary translatable" data-translation-id="choose_role">Choose role</button>
+						</div>
+
+						<hr>
+
+						<div>
+                            <p class="text-center fs-4 translatable" data-translation-id="menu:settings:discord_logs">Discord logs</p>
+    
+                            <div class="form-check form-switch fs-3 mb-2">
+                                <input class="form-check-input" type="checkbox" role="switch" id="enable-discord-logs">
+                                <label class="form-check-label translatable" data-translation-id="menu:settings:enable_discord_logs" for="enable-discord-logs">Enable discord logs</label>
+                            </div>
+    
+                            <p class="text-center fs-5 translatable" data-translation-id="menu:settings:discord_webhooks">Discord webhooks</p>
+    
+                            <div class="input-group mb-3">
+                                <span class="input-group-text translatable" data-translation-id="menu:settings:main_webhook">Main webhook</span>
+                                <input type="text" class="form-control" placeholder="https://discord.com/api/webhooks/USE_YOUR_WEBHOOK/YOUR_WEBHOOK" id="main-discord-webhook">
+                            </div>
+    
+                            <p class="text-center fs-5 translatable" data-translation-id="menu:settings:discord_specific_webhooks">Discord specific webhooks</p>
+    
+                            <div id="discord-specific-webhooks">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text translatable" data-translation-id="menu:settings:discord_webhook:allowlist_request">Allowlist Request</span>
+                                    <input type="text" class="form-control webhook" data-webhook-type="allowlist_request" placeholder="https://discord.com/api/webhooks/USE_YOUR_WEBHOOK/YOUR_WEBHOOK">
+                                </div>
+                            </div>
+                        </div>
+
+					</div>
+
+					<button type="submit" class="btn btn-success float-end">Apply changes</button>
+				</form>
+            </div>
+        </div>
+
+    </div>
+
+	<!-- Player Data Modal -->
+	<div class="modal fade" id="player-data-modal" tabindex="-1" role="dialog" style="z-index: 1070;">
+		<div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title translatable" data-translation-id="player_data">Player Data</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+				</div>
+				<div class="modal-body">
+
+					<div id="player-data-informations" class="row">
+						<div class="identifiers-data col">
+							<p class="fs-4 translatable" data-translation-id="identifiers"><i class="bi bi-card-list"></i> Identifiers</p>
+							<div class="player-identifiers">
+							
+							</div>
+						</div>
+	
+						<div class="steam-data col">
+							<p class="fs-4 translatable" data-translation-id="steam_informations"><i class="bi bi-steam"></i> Steam Informations</p>
+						
+							<span class="fw-bold translatable" data-translation-id="nickname">Nickname:</span>: <span class="fw-normal" id="steam-data-nickname"></span>
+							<br><br>
+							<span class="fw-bold translatable" data-translation-id="steam_id">Steam ID</span>: <span class="fw-normal" id="steam-data-steamid"></span>
+							<br>
+							<p class="fw-light link-primary" id="steam-data-url"></p>
+
+							<img id="steam-data-image">
+						</div>
+	
+						<div class="discord-data col">
+							<p class="fs-4 translatable" data-translation-id="discord_informations"><i class="bi bi-discord"></i> Discord informations</p>
+	
+							<span class="fw-bold translatable" data-translation-id="nickname">Nickname</span>: <span class="fw-normal" id="discord-data-nickname"></span>
+							<br><br>
+							<span class="fw-bold translatable" data-translation-id="discord_id">Discord ID</span>: <span class="fw-normal" id="discord-data-discordid"></span>
+							<br><br>
+							<img id="discord-data-image" src=${playerData?.discordData?.image}>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div id="player-data-options" class="me-auto">
+						<div class="data-option input-group" data-type="allowlistRequest">
+							<button id="accept-allowlist-btn" type="button" class="btn btn-success translatable" data-translation-id="accept_request">Accept request</button>
+							<button id="deny-allowlist-btn" type="button" class="btn btn-danger translatable" data-translation-id="deny_request">Deny request</button>
+						</div>
+						
+						<div class="data-option" data-type="allowlistedPlayer">
+							<button id="remove-allowlist-btn" type="button" class="btn btn-danger translatable" data-translation-id="remove_allowlist">Remove allowlist</button>
+						</div>
+
+						<div class="data-option input-group" data-type="queuePriority">
+							<button id="edit-queue-priority-btn" type="button" class="btn btn-secondary translatable" data-translation-id="edit_queue_priority">Edit queue priority</button>
+							<button id="remove-queue-priority-btn" type="button" class="btn btn-danger translatable" data-translation-id="remove_queue_priority">Remove queue priority</button>
+						</div>
+					</div>
+
+					<button type="button" class="btn btn-secondary translatable" data-translation-id="menu:input_text:close" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Edit queue priority dialog -->
+	<form class="modal fade needs-validation" id="edit-queue-priority-modal" tabindex="-1" role="dialog" style="z-index: 1070;" novalidate>
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title translatable" data-translation-id="edit_queue_priority">Edit queue priority</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+				</div>
+				<div class="modal-body">
+					<div class="form-floating mb-3">
+						<input type="number" class="form-control" id="queue-priority-input" placeholder="New queue priority" required>
+						<label for="queue-priority-input" class="translatable" data-translation-id="new_queue_priority_2">New queue priority (higher = more priority)</label>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary translatable" data-translation-id="menu:input_text:close" data-bs-dismiss="modal">Close</button>
+					<button type="submit" class="btn btn-primary translatable" data-translation-id="menu:input_text:confirm">Confirm</button>
+				</div>
+			</div>
+		</div>
+	</form>
+
+	<!-- Create queue priority modal -->
+	<form class="modal fade needs-validation" id="create-queue-priority-modal" tabindex="-1" role="dialog" style="z-index: 1070;" novalidate>
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title translatable" data-translation-id="create_queue_priority">Create queue priority</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+				</div>
+				<div class="modal-body">
+
+					<div class="fs-4 text-center mb-3">
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="queue-priority-type" value="player-identifier" checked>
+							<label class="form-check-label translatable" data-translation-id="player_identifier">Player identifier</label>
+						</div>
+						
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="queue-priority-type" value="discord-role">
+							<label class="form-check-label translatable" data-translation-id="discord_role">Discord role</label>
+						</div>
+					</div>
+
+					<div id="queue-priority-player-identifier-div" class="row g-2 row-cols-auto mb-3 align-items-center">
+						<div class="form-floating col-8">
+							<input type="text" class="form-control" id="create-queue-priority-player-identifier-input" placeholder="Player identifier" required>
+							<label for="create-queue-priority-player-identifier-input" class="translatable" data-translation-id="player_identifier">Player identifier</label>
+						</div>
+
+						<button id="new-queue-priority-choose-player-btn" type="button" class="btn btn-secondary col translatable" data-translation-id="choose_player">Choose player</button>	
+					</div>
+
+					<div id="queue-priority-discord-role-div" class="row g-2 row-cols-auto mb-3 align-items-center">
+						<div class="form-floating col-8">
+							<input type="text" class="form-control" id="create-queue-priority-discord-role-input" placeholder="Role ID" required>
+							<label for="create-queue-priority-discord-role-input" class="translatable" data-translation-id="role_id">Role ID</label>
+						</div>
+
+						<button id="new-queue-priority-choose-discord-role-btn" type="button" class="btn btn-secondary col translatable" data-translation-id="choose_role">Choose role</button>	
+					</div>
+
+					<div class="form-floating">
+						<input type="number" class="form-control" id="create-queue-priority-input" placeholder="Queue priority" required>
+						<label for="create-queue-priority-input" class="translatable" data-translation-id="new_queue_priority_2">New queue priority (higher = more priority)</label>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary translatable" data-translation-id="menu:input_text:close" data-bs-dismiss="modal">Close</button>
+					<button type="submit" class="btn btn-primary translatable" data-translation-id="menu:input_text:confirm">Confirm</button>
+				</div>
+			</div>
+		</div>
+	</form>
+
+	<!-- Create reserved slots modal -->
+	<form class="modal fade needs-validation" id="create-reserved-slots-modal" tabindex="-1" role="dialog" style="z-index: 1070;" novalidate>
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title translatable" data-translation-id="create_reserved_slots">Create reserved slots</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+				</div>
+				<div class="modal-body">
+					<div class="fs-4 text-center mb-3">
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="reserved-slots-type" value="player-identifier" checked>
+							<label class="form-check-label translatable" data-translation-id="player_identifier">Player identifier</label>
+						</div>
+						
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="reserved-slots-type" value="discord-role">
+							<label class="form-check-label translatable" data-translation-id="discord_role">Discord role</label>
+						</div>
+					</div>
+
+					<div id="reserved-slots-player-identifier-div" class="row g-2 row-cols-auto mb-3 align-items-center">
+						<div class="form-floating col-8">
+							<input type="text" class="form-control" id="create-reserved-slots-player-identifier-input" placeholder="Player identifier" required>
+							<label for="create-reserved-slots-player-identifier-input" class="translatable" data-translation-id="player_identifier">Player identifier</label>
+						</div>
+
+						<button id="new-reserved-slots-choose-player-btn" type="button" class="btn btn-secondary col translatable" data-translation-id="choose_player">Choose player</button>	
+					</div>
+
+					<div id="reserved-slots-discord-role-div">
+						<div class="row g-2 row-cols-auto mb-3 align-items-center">
+							<div class="form-floating col-8">
+								<input type="text" class="form-control" id="create-reserved-slots-discord-role-input" placeholder="Role ID" required>
+								<label for="create-reserved-slots-discord-role-input" class="translatable" data-translation-id="role_id">Role ID</label>
+							</div>
+
+							<button id="new-reserved-slots-choose-discord-role-btn" type="button" class="btn btn-secondary col translatable" data-translation-id="choose_role">Choose role</button>	
+						</div>
+
+						<div class="form-floating mb-3">
+							<input type="number" class="form-control" id="discord-role-reserved-slots-amount" placeholder="Slots amount" min=1 required>
+							<label for="discord-role-reserved-slots-amount" class="translatable" data-translation-id="slots_amount">Slots amount</label>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary translatable" data-translation-id="menu:input_text:close" data-bs-dismiss="modal">Close</button>
+					<button type="submit" class="btn btn-primary translatable" data-translation-id="menu:input_text:confirm">Confirm</button>
+				</div>
+			</div>
+		</div>
+	</form>
+	
+	<!-- Edit reserved slot modal -->
+	<form class="modal fade needs-validation" id="edit-reserved-slot-modal" tabindex="-1" role="dialog" style="z-index: 1070;" novalidate>
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title translatable" data-translation-id="edit_reserved_slots">Edit reserved slots</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+				</div>
+				<div class="modal-body">
+					<div id="edit-reserved-slots-amount-div" class="form-floating mb-3">
+						<input type="number" class="form-control" id="edit-reserved-slots-amount" placeholder="Slots amount" min=1 required>
+						<label for="edit-reserved-slots-amount" class="translatable" data-translation-id="slots_amount">Slots amount</label>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" id="delete-reserved-slot-btn" class="btn btn-danger me-auto translatable" data-translation-id="delete_reserved_slot" data-bs-dismiss="modal">Delete reserved slots</button>
+					<button type="button" class="btn btn-secondary translatable" data-translation-id="menu:input_text:close" data-bs-dismiss="modal">Close</button>
+					<button id="edit-reserved-slot-confirm-btn" type="submit" class="btn btn-primary translatable" data-translation-id="menu:input_text:confirm">Confirm</button>
+				</div>
+			</div>
+		</div>
+	</form>	
+
+    <!-- Players input dialog -->
+	<div class="modal fade" id="players-dialog-modal" tabindex="-1" role="dialog" style="z-index: 1070;">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title translatable" data-translation-id="players_list">Players List</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+				</div>
+				<div class="modal-body" style="max-height: 80vh; overflow-y: scroll">
+					<div class="input-group">
+						<span class="input-group-text translatable" data-translation-id="search_player">Search player</span>
+						<input id="input-players-search" type="text" class="form-control">
+					</div>
+
+					<ul id="players-list" class="list-group mt-2">
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Discord roles dialog -->
+	<div class="modal fade" id="discord-roles-dialog-modal" tabindex="-1" role="dialog" style="z-index: 1070;">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title translatable" data-translation-id="discord_roles">Discord roles</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+				</div>
+				<div class="modal-body" style="max-height: 80vh; overflow-y: scroll">
+					<div class="input-group">
+						<span class="input-group-text translatable" data-translation-id="search_role">Search role</span>
+						<input id="input-discord-roles-search" type="text" class="form-control">
+					</div>
+
+					<ul id="discord-roles-list" class="list-group mt-2">
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="index.js"></script>
+	<script src="../utils/dialogs/dialogs.js"></script>
+</body>
+
+</html>

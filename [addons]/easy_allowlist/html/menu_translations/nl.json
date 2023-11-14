@@ -1,0 +1,108 @@
+{
+    "allowlist_requests": "<i class=\"bi bi-question-octagon\"></i> Toestaand verzoeken",
+    "allowlisted_players": "<i class=\"bi bi-door-open\"></i> Toegestaan speler",
+    "queue_priority": "<i class=\"bi bi-hourglass-split\"></i> Wachtrijprioriteit",
+    "reserved_slots": "<i class=\"bi bi-pie-chart\"></i> Gereserveerde slots",
+    "settings": "<i class=\"bi bi-gear\"></i> Instellingen",
+
+    "remove_allowlist": "Verwijder Toestaanlijst",
+
+    "identifiers": "Identifiers",
+    "steam_informations": "Steam informations",
+    "discord_informations": "Discord informations",
+    "nickname": "Nickname",
+    "steam_id": "Steam ID",
+    "discord_id": "Discord ID",
+    
+    "no_allowlist_requests": "Geen toestaandlist verzoeken",
+    "no_allowlisted_players": "Niet toegestaan spelers",
+
+    "queue": "Queue",
+    "minutes_to_reconnect_with_higher_priority": "Minuten om opnieuw verbinding te maken met een hogere prioriteit (example: Als speler crasht)",
+    "minutes": "Minutes",
+    "priority_to_add_with_fast_reconnect": "Prioriteit om toe te voegen met snel opnieuw verbinden",
+
+    "no_queue_priorities": "Geen wachtrijprioriteiten",
+    "edit_queue_priority": "Wachtrijprioriteit bewerken ",
+    "create_queue_priority": "Creëer wachtrijprioriteit",
+    "remove_queue_priority": "Verwijder de wachtrijprioriteit",
+
+    "priority": "Prioriteit",
+    "new_queue_priority": "Nieuwe wachtrijprioriteit",
+    "new_queue_priority_2": "Nieuwe wachtrijprioriteit (hoger = Meer prioriteit)",
+    "player_identifier": "Speler identifier",
+    "choose_player": "Kies speler",
+    "players_list": "Spelerslijst",
+
+    "search_player": "Zoekspeler",
+    
+    "nickname_not_known_yet": "De bijnaam wordt bijgewerkt wanneer de speler zich aanmeldt",
+
+    "menu:not_allowed:you_are_not_allowed": "U mag dit menu niet gebruiken",
+    "menu:not_allowed:if_you_are_admin": "Als u een serverbeheerder bent, moet u de volgende code kopiëren in uw server.cfg plakken",
+
+    "discord_roles": "Discord roles",
+    "choose_role": "Choose role",
+    "search_role": "Search role",
+    "role_id": "Role ID",
+    "discord_role": "Discord role",
+    "role_name": "Role name",
+
+    "menu:settings:language": "Taal",
+    "menu:settings:main_identifier": "Main identifier - Allowlist",
+    "menu:settings:ace_permission": "ACE permission",
+    "menu:settings:discord_invite_link": "Discord invite link",
+    "menu:settings:discord_server_id": "Discord server ID",
+    "menu:settings:discord_allowlist_role_id": "Discord allowlist role ID",
+    "menu:settings:discord_bot_token": "Discord bot token",
+    "menu:settings:server_banner_link": "Server banner link",
+
+    "create_reserved_slots": "Maak gereserveerde slots",
+    "slots_amount": "Slots bedrag",
+    "edit_reserved_slots": "Reserveerde slots bewerken",
+    "delete_reserved_slot": "Verwijder gereserveerde slot",
+
+    "menu:input_text:confirm": "Bevestigen",
+    "menu:input_text:close": "Sluiten",
+
+    "free_slots": "open slots",
+
+    "find_a_player": "Zoek een speler",
+
+    "enable_discord_roles_features": "Schakel Discord Roles -functies in",
+    "enable_allowlist": "Schakel toestaand toe",
+
+    "menu:datatable:lengthMenu": "Toon _menu_ resultaten",
+    "menu:datatable:zeroRecords": "Geen resultaten",
+    "menu:datatable:info": "Tonen _page_ van _Pages_",
+    "menu:datatable:infoEmpty": "Geen resultaten beschikbaar",
+    "menu:datatable:infoFiltered": "(gefiltreerd uit _max_ resultaten)",
+    "menu:datatable:search": "Zoeken:",
+    "menu:datatable:next": "Volgende",
+    "menu:datatable:previous": "Vorig",
+
+    "request_id": "Request ID",
+    "player_name": "Player name",
+    "identifier": "Identifier",
+    "date": "Date",
+
+    "player_data": "Player data",
+    "player": "Player",
+
+    "type": "Type",
+
+    "name": "Name",
+
+    "accept_request": "Accepteer verzoek",
+    "deny_request": "Verzoek weigeren",
+
+    "show_allowlist_request_button": "Toon de knop 'Verzendlist verzoekverzoek'",
+
+    "menu:settings:enable_discord_logs": "Enable Discord logs",
+    "menu:settings:discord_webhooks": "Discord webhooks",
+    "menu:settings:main_webhook": "Main webhook",
+    "menu:settings:discord_specific_webhooks": "Discord specific webhooks",
+    "menu:settings:discord_webhook:allowlist_request": "Toestaan",
+
+    "minutes_before_connect": "Minuten die moeten voorbijgaan voordat spelers verbinding kunnen maken na het starten van de server/script"
+}

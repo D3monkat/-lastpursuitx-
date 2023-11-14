@@ -1,0 +1,115 @@
+{
+    "allowlist_requests": "<i class=\"bi bi-question-octagon\"></i> Allowlist requests",
+    "allowlisted_players": "<i class=\"bi bi-door-open\"></i> Allowlisted players",
+    "queue_priority": "<i class=\"bi bi-hourglass-split\"></i> Queue priority",
+    "current_queue": "<i class=\"bi bi-hourglass-bottom\"></i> Current queue",
+    "reserved_slots": "<i class=\"bi bi-pie-chart\"></i> Reserved slots",
+    "settings": "<i class=\"bi bi-gear\"></i> Settings",
+
+    "remove_allowlist": "Remove allowlist",
+
+    "identifiers": "Identifiers",
+    "steam_informations": "Steam informations",
+    "discord_informations": "Discord informations",
+    "nickname": "Nickname",
+    "steam_id": "Steam ID",
+    "discord_id": "Discord ID",
+    
+    "no_allowlist_requests": "No allowlist requests",
+    "no_allowlisted_players": "No allowlisted players",
+
+    "queue": "Queue",
+    "minutes_to_reconnect_with_higher_priority": "Minutes to reconnect with a higher priority (example: if player crashes)",
+    "minutes": "Minutes",
+    "priority_to_add_with_fast_reconnect": "Priority to add with fast reconnect",
+
+    "no_queue_priorities": "No queue priorities",
+    "edit_queue_priority": "Edit queue priority",
+    "create_queue_priority": "Create queue priority",
+    "remove_queue_priority": "Remove queue priority",
+
+    "priority": "Priority",
+    "new_queue_priority": "New queue priority",
+    "new_queue_priority_2": "New queue priority (higher = more priority)",
+    "player_identifier": "Player identifier",
+    "choose_player": "Choose player",
+    "players_list": "Players list",
+
+    "search_player": "Search player",
+    
+    "nickname_not_known_yet": "Nickname will be updated when the player logs in",
+
+    "menu:not_allowed:you_are_not_allowed": "You are not allowed to use this menu",
+    "menu:not_allowed:if_you_are_admin": "If you are a server admin, you have to copy paste the following code in your server.cfg",
+
+    "discord_roles": "Discord roles",
+    "choose_role": "Choose role",
+    "search_role": "Search role",
+    "role_id": "Role ID",
+    "discord_role": "Discord role",
+    "role_name": "Role name",
+
+    "menu:settings:language": "Language",
+    "menu:settings:main_identifier": "Main identifier - Allowlist",
+    "menu:settings:ace_permission": "ACE permission",
+    "menu:settings:discord_invite_link": "Discord invite link",
+    "menu:settings:discord_server_id": "Discord server ID",
+    "menu:settings:discord_allowlist_role_id": "Discord allowlist role ID",
+    "menu:settings:discord_bot_token": "Discord bot token",
+    "menu:settings:server_banner_link": "Server banner link",
+
+    "create_reserved_slots": "Create reserved slots",
+    "slots_amount": "Slots amount",
+    "edit_reserved_slots": "Edit reserved slots",
+    "delete_reserved_slot": "Delete reserved slot",
+
+    "menu:input_text:confirm": "Confirm",
+    "menu:input_text:close": "Close",
+
+    "free_slots": "Free slots",
+
+    "find_a_player": "Find a player",
+
+    "enable_discord_roles_features": "Enable Discord roles features",
+    "enable_allowlist": "Enable allowlist",
+
+    "menu:datatable:lengthMenu": "Show _MENU_ results",
+    "menu:datatable:zeroRecords": "No results",
+    "menu:datatable:info": "Showing _PAGE_ of _PAGES_",
+    "menu:datatable:infoEmpty": "No results available",
+    "menu:datatable:infoFiltered": "(filtred from _MAX_ results)",
+    "menu:datatable:search": "Search:",
+    "menu:datatable:next": "Next",
+    "menu:datatable:previous": "Previous",
+
+    "request_id": "Request ID",
+    "player_name": "Player name",
+    "identifier": "Identifier",
+    "date": "Date",
+
+    "player_data": "Player data",
+    "player": "Player",
+
+    "type": "Type",
+
+    "name": "Name",
+
+    "accept_request": "Accept request",
+    "deny_request": "Deny request",
+
+    "show_allowlist_request_button": "Show 'Send allowlist request' button",
+
+    "menu:settings:enable_discord_logs": "Enable Discord logs",
+    "menu:settings:discord_webhooks": "Discord webhooks",
+    "menu:settings:main_webhook": "Main webhook",
+    "menu:settings:discord_specific_webhooks": "Discord specific webhooks",
+    "menu:settings:discord_webhook:allowlist_request": "Allowlist request",
+    "menu:settings:discord_logs": "Discord logs",
+
+    "minutes_before_connect": "Minutes that must pass before players can connect after starting the server/script",
+    "menu:remove_allowlist_for_inactive_players": "Remove allowlist for inactive players",
+    "menu:maximum_inactive_days_in_row": "Maximum inactive days in row",
+    "menu:are_you_sure": "Are you sure ?",
+    "refresh_current_queue": "Refresh current queue",
+    "position": "Position"
+}

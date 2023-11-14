@@ -1,0 +1,98 @@
+{
+    "allowlist_requests": "<i class=\"bi bi-question-octagon\"></i> Αιτήματα Allowlist",
+    "allowlisted_players": "<i class=\"bi bi-door-open\"></i> Παίκτες με Allowlist",
+    "queue_priority": "<i class=\"bi bi-hourglass-split\"></i> Queue priority",
+    "reserved_slots": "<i class=\"bi bi-pie-chart\"></i> Δεσμευμένες θέσεις",
+    "settings": "<i class=\"bi bi-gear\"></i> Ρυθμίσεις",
+
+    "remove_allowlist": "Αφαίρεση allowlist",
+
+    "identifiers": "Αναγνωριστικά",
+    "steam_informations": "Πληροφορίες Steam",
+    "discord_informations": "Πληροφορίες Discord",
+    "nickname": "Ψευδώνυμο",
+    "steam_id": "Steam ID",
+    "discord_id": "Discord ID",
+    
+    "no_allowlist_requests": "Δεν υπάρχουν αιτήματα",
+    "no_allowlisted_players": "Δεν υπάρχουν allowlisted παίκτες",
+
+    "queue": "Queue",
+    "minutes_to_reconnect_with_higher_priority": "Λεπτά για επανασύνδεση με προτεραιότητα(παράδειγμα: εάν ο παίκτης φάει crash)",
+    "minutes": "Λεπτά",
+    "priority_to_add_with_fast_reconnect": "Προτεραιότητα για γρήγορη επανασύνδεση",
+
+    "no_queue_priorities": "Δεν υπάρχουν priorities",
+    "edit_queue_priority": "Επεξεργασία priority",
+    "create_queue_priority": "Δημιουργία priority",
+    "remove_queue_priority": "Αφαίρεση priority",
+
+    "priority": "Priority",
+    "new_queue_priority": "Νέο queue priority",
+    "new_queue_priority_2": "Νέο queue priority (υψηλότερο = περισσότερο priority)",
+    "player_identifier": "Αναγνωριστικό παίκτη",
+    "choose_player": "Επιλέξτε παίκτη",
+    "players_list": "Λίστα παικτών",
+
+    "search_player": "Αναζήτηση παίκτη",
+    
+    "nickname_not_known_yet": "Το ψευδώνυμο θα ενημερωθεί όταν συνδεθεί ο παίκτης",
+
+    "menu:not_allowed:you_are_not_allowed": "Δεν επιτρέπεται να χρησιμοποιήσετε αυτό το μενού",
+    "menu:not_allowed:if_you_are_admin": "Εάν είστε Admin, θα πρέπει να αντιγράψετε και να επικολλήσετε τον παρακάτω κώδικα στο δικό σας server.cfg",
+
+    "discord_roles": "Ρόλοι Discord",
+    "choose_role": "Επιλέξτε ρόλο",
+    "search_role": "Αναζήτηση Ρόλου",
+    "role_id": "ID Ρόλου",
+    "discord_role": "Ρόλος Discord",
+    "role_name": "Όνομα Ρόλου",
+
+    "menu:settings:language": "Γλώσσα",
+    "menu:settings:main_identifier": "Main identifier - Allowlist",
+    "menu:settings:ace_permission": "ACE permission",
+    "menu:settings:discord_invite_link": "Σύνδεσμος πρόσκλησης Discord",
+    "menu:settings:discord_server_id": "Αναγνωριστικό διακομιστή Discord",
+    "menu:settings:discord_allowlist_role_id": "Αναγνωριστικό ρόλου του Discord για allowlist",
+    "menu:settings:discord_bot_token": "Discord bot token",
+    "menu:settings:server_banner_link": "Σύνδεσμος banner διακομιστή",
+
+    "create_reserved_slots": "Δημιουργία δεσμευμένης θέσηςs",
+    "slots_amount": "Slots amount",
+    "edit_reserved_slots": "Επεξεργασία δεσμευμένων θέσεων",
+    "delete_reserved_slot": "Διαγραφή δεσμευμένης υποδοχής",
+
+    "menu:input_text:confirm": "Επιβεβαίωση",
+    "menu:input_text:close": "Κλείσιμο",
+
+    "free_slots": "Ελέυθερες Θέσης",
+
+    "find_a_player": "Βρείτε έναν παίκτη",
+
+    "enable_discord_roles_features": "Ενεργοποιήστε τις δυνατότητες ρόλων Discord",
+    "enable_allowlist": "Ενεργοποίηση allowlist",
+
+    "menu:datatable:lengthMenu": "Προβολή _MENU_ Αποτελέσματα",
+    "menu:datatable:zeroRecords": "Κανένα αποτέλεσμα",
+    "menu:datatable:info": "Επίδειξη _PAGE_ από _PAGES_",
+    "menu:datatable:infoEmpty": "Δεν υπάρχουν διαθέσιμα αποτελέσματα",
+    "menu:datatable:infoFiltered": "(filtred from _MAX_ results)",
+    "menu:datatable:search": "Αναζήτηση:",
+    "menu:datatable:next": "Επόμενο",
+    "menu:datatable:previous": "Προηγούμενο",
+
+    "request_id": "Αναγνωριστικό αιτήματος",
+    "player_name": "Ονομα παίκτη",
+    "identifier": "Αναγνωριστικό",
+    "date": "Ημερομηνία",
+
+    "player_data": "Δεδομένα παίκτη",
+    "player": "Παίκτης",
+
+    "type": "Τύπος",
+
+    "name": "Όνομα",
+
+    "accept_request": "Αποδοχή αιτήματος",
+    "deny_request": "Απόρριψη αιτήματος"
+}

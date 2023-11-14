@@ -1,0 +1,74 @@
+{
+    "allowlist_requests": "<i class=\"bi bi-question-octagon\"></i> Whitelist Anfragen",
+    "allowlisted_players": "<i class=\"bi bi-door-open\"></i> Gewhitelistete Spieler",
+    "queue_priority": "<i class=\"bi bi-hourglass-split\"></i> Warteschlangen Priorität",
+    "reserved_slots": "<i class=\"bi bi-pie-chart\"></i> Reservierte Slots",
+    "settings": "<i class=\"bi bi-gear\"></i> Einstellungen",
+
+    "remove_allowlist": "Whitelist aufheben",
+
+    "identifiers": "Identifiers",
+    "steam_informations": "Steam Daten",
+    "discord_informations": "Discord Daten",
+    "nickname": "Nutzername",
+    "steam_id": "Steam ID",
+    "discord_id": "Discord ID",
+    
+    "no_allowlist_requests": "Keine Whitelist Anfragen",
+    "no_allowlisted_players": "Keine Gewhitelisteten Spieler",
+
+    "queue": "Warteschlange",
+    "minutes_to_reconnect_with_higher_priority": "Minuten um mit einer hohen Priorität zu joinen (z.B. nach einem Spielabsturz)",
+    "minutes": "Minuten",
+    "priority_to_add_with_fast_reconnect": "Priorität nach einem schnellen Reconnect",
+
+    "no_queue_priorities": "Keine Warteschlangen Prioritäten",
+    "edit_queue_priority": "Warteschlangen Priorität bearbeiten",
+    "create_queue_priority": "Warteschlangen Priorität erstellen",
+    "remove_queue_priority": "Warteschlangen Priorität entfernen",
+
+    "priority": "Priorität",
+    "new_queue_priority": "Neue Warteschlangen Priorität",
+    "new_queue_priority_2": "Neue Warteschlangen Priorität ( Höher = Höhere Priorität)",
+    "player_identifier": "Spieler Identifier",
+    "choose_player": "Spieler auswählen",
+    "players_list": "Spieler Liste",
+
+    "search_player": "Spieler suchen",
+    
+    "nickname_not_known_yet": "Nutzername wird nach dem nächsten betreten aktualisiert",
+
+    "menu:not_allowed:you_are_not_allowed": "Du bist nicht dazu befugt dieses Menü zu nutzen!",
+    "menu:not_allowed:if_you_are_admin": "Falls du ein Serveradmin bist, so füge den folgenden Code in die server.cfg ein",
+
+    "discord_roles": "Discord Rollen",
+    "choose_role": "Rolle auswählen",
+    "search_role": "Rolle suchen",
+    "role_id": "Rollen ID",
+    "discord_role": "Discord Rolle",
+    "role_name": "Rollen Name",
+
+    "menu:settings:language": "Sprache",
+    "menu:settings:main_identifier": "Haupt Identifier - Whitelist",
+    "menu:settings:ace_permission": "ACE Berechtigung",
+    "menu:settings:discord_invite_link": "Discord Einladungslink",
+    "menu:settings:discord_server_id": "Discord Server ID",
+    "menu:settings:discord_allowlist_role_id": "Discord Whitelist Rang ID",
+    "menu:settings:discord_bot_token": "Discord Bot Token",
+    "menu:settings:server_banner_link": "Server Banner URL",
+
+    "create_reserved_slots": "Reservierte Slots erstellen",
+    "slots_amount": "Slots anzahl",
+    "edit_reserved_slots": "Reservierte Slots bearbeiten",
+    "delete_reserved_slot": "Reservierten Slot entfernen",
+
+    "menu:input_text:confirm": "Weiter",
+    "menu:input_text:close": "Schliessen",
+
+    "free_slots": "Freie Slots",
+
+    "find_a_player": "Spieler finden",
+
+    "enable_discord_roles_features": "Discord Rollen Funktion aktivieren",
+    "enable_allowlist": "Whitelist aktivieren"
+}

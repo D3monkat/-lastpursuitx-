@@ -1,0 +1,108 @@
+{
+    "allowlist_requests": "<i class=\"bi bi-question-octagon\"></i> Prośby whitelist",
+    "allowlisted_players": "<i class=\"bi bi-door-open\"></i> Gracze na whitelist",
+    "queue_priority": "<i class=\"bi bi-hourglass-split\"></i> Priorytet w kolejce",
+    "reserved_slots": "<i class=\"bi bi-pie-chart\"></i> Zarezerwój slot",
+    "settings": "<i class=\"bi bi-gear\"></i> Ustawienia",
+
+    "remove_allowlist": "Usuń z whitelist",
+
+    "identifiers": "Identifiers",
+    "steam_informations": "Informacje Steam",
+    "discord_informations": "Informacje Discord",
+    "nickname": "Nick",
+    "steam_id": "Steam ID",
+    "discord_id": "Discord ID",
+    
+    "no_allowlist_requests": "Brak próśb o whitelist",
+    "no_allowlisted_players": "Brak graczy na whitelist",
+
+    "queue": "Kolejka",
+    "minutes_to_reconnect_with_higher_priority": "Minuty na ponowne połączenie z wyższym priorytetem (przykład: w przypadku crasha gracza)",
+    "minutes": "Minuty",
+    "priority_to_add_with_fast_reconnect": "Priorytet dodawania z szybkim ponownym połączeniem",
+
+    "no_queue_priorities": "Brak priorytetów kolejki",
+    "edit_queue_priority": "Edytuj priorytet kolejki",
+    "create_queue_priority": "Utwórz priorytet kolejki",
+    "remove_queue_priority": "Usuń priorytet kolejki",
+
+    "priority": "Priorytet",
+    "new_queue_priority": "Nowy priorytet kolejki",
+    "new_queue_priority_2": "Nowy priorytet kolejki (wyższy = większy priorytet)",
+    "player_identifier": "Identifier Gracza",
+    "choose_player": "Wybierz gracza",
+    "players_list": "Lista graczy",
+
+    "search_player": "Wyszukaj graczy",
+    
+    "nickname_not_known_yet": "Pseudonim zostanie zaktualizowany, gdy gracz się zaloguje",
+
+    "menu:not_allowed:you_are_not_allowed": "Nie możesz korzystać z tego menu",
+    "menu:not_allowed:if_you_are_admin": "Jeśli jesteś administratorem serwera, musisz skopiować i wkleić następujący kod do pliku server.cfg",
+
+    "discord_roles": "Discord role",
+    "choose_role": "Wybierz role",
+    "search_role": "Wyszukaj role",
+    "role_id": "ID Roli",
+    "discord_role": "Role Discord",
+    "role_name": "Nazwa roli",
+
+    "menu:settings:language": "Język",
+    "menu:settings:main_identifier": "Główny identyfikator - Whitelist",
+    "menu:settings:ace_permission": "Permisje",
+    "menu:settings:discord_invite_link": "Zaproszenie na serwer discord",
+    "menu:settings:discord_server_id": "ID serwera Discord",
+    "menu:settings:discord_allowlist_role_id": "ID roli do whitelist",
+    "menu:settings:discord_bot_token": "Token bota Discord",
+    "menu:settings:server_banner_link": "Link do baneru serwera",
+
+    "create_reserved_slots": "Stwórz rezerwacje",
+    "slots_amount": "Ilość slotów",
+    "edit_reserved_slots": "Edytuj zarezerwowany slot",
+    "delete_reserved_slot": "Usuń zarezerwowany slot",
+
+    "menu:input_text:confirm": "Potwierdz",
+    "menu:input_text:close": "Zamknij",
+
+    "free_slots": "Wolne sloty",
+
+    "find_a_player": "Znajdz gracza",
+
+    "enable_discord_roles_features": "Włącz funkcje ról Discord",
+    "enable_allowlist": "Włącz whitelist",
+
+    "menu:datatable:lengthMenu": "Pokaż _MENU_ wyników",
+    "menu:datatable:zeroRecords": "Brak wyników",
+    "menu:datatable:info": "Pokazywanie _PAGE_ z _PAGES_",
+    "menu:datatable:infoEmpty": "Brak dostępnych wyników",
+    "menu:datatable:infoFiltered": "(Przefiltrowane z _MAX_ wyników)",
+    "menu:datatable:search": "Szukaj:",
+    "menu:datatable:next": "Nastepna",
+    "menu:datatable:previous": "Poprzedni",
+
+    "request_id": "ID prośby",
+    "player_name": "Nazwa gracza",
+    "identifier": "Identifier",
+    "date": "Data",
+
+    "player_data": "Dane gracza",
+    "player": "Gracz",
+
+    "type": "Typ",
+
+    "name": "Nazwa",
+
+    "accept_request": "Zakceptuj prośbe",
+    "deny_request": "Odrzuć prośbe",
+
+    "show_allowlist_request_button": "Pokaż przycisk „Wyślij prośbę o whitelist”",
+
+    "menu:settings:enable_discord_logs": "Włącz logi Discord",
+    "menu:settings:discord_webhooks": "Webhooki na Discordzie",
+    "menu:settings:main_webhook": "Główny webhook",
+    "menu:settings:discord_specific_webhooks": "Customowe webhooki na Discordzie",
+    "menu:settings:discord_webhook:allowlist_request": "Prośby whitelist",
+
+    "minutes_before_connect": "Minuty, które muszą minąć, zanim gracze będą mogli się połączyć po uruchomieniu serwera/skryptu"
+}
