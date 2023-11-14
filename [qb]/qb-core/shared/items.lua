@@ -384,4 +384,310 @@ QBShared.Items = {
     newscam                      = { name = 'newscam', label = 'News Camera', weight = 100, type = 'item', image = 'newscam.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A camera for the news' },
     newsmic                      = { name = 'newsmic', label = 'News Microphone', weight = 100, type = 'item', image = 'newsmic.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A microphone for the news' },
     newsbmic                     = { name = 'newsbmic', label = 'Boom Microphone', weight = 100, type = 'item', image = 'newsbmic.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = 'A Useable BoomMic' },
+
+
+    boar1 			 = {name = 'boar1',				label = 'Boar Carcass',			weight = 3000,    type = 'item',		image = 'boar1.png',      unique = false,		useable = false,	shouldClose = false,   combinable = nil,   description = ''},
+	boar2 			 = {name = 'boar2',				label = 'Boar Carcass',			weight = 3500,    type = 'item',		image = 'boar2.png',      unique = false,		useable = false,	shouldClose = false,   combinable = nil,   description = ''},
+	boar3 			 = {name = 'boar3',				label = 'Boar Carcass',			weight = 3800,    type = 'item',		image = 'boar3.png',      unique = false,		useable = false,	shouldClose = false,   combinable = nil,   description = ''},
+	boar4 			 = {name = 'boar4',				label = 'Boar Carcass',			weight = 4000,    type = 'item',		image = 'boar4.png',      unique = false,		useable = false,	shouldClose = false,   combinable = nil,   description = 'This looks like a protected boar.'},
+	deer1 			 = {name = 'deer1',				label = 'Deer Carcass',			weight = 3000,    type = 'item',		image = 'deer1.png',      unique = false,		useable = false,	shouldClose = false,   combinable = nil,   description = ''},
+	deer2 			 = {name = 'deer2',				label = 'Deer Carcass',			weight = 3500,    type = 'item',		image = 'deer2.png',      unique = false,		useable = false,	shouldClose = false,   combinable = nil,   description = ''},
+	deer3 			 = {name = 'deer3',				label = 'Deer Carcass',			weight = 3800,    type = 'item',		image = 'deer3.png',      unique = false,		useable = false,	shouldClose = false,   combinable = nil,   description = ''},
+	deer4 			 = {name = 'deer4',				label = 'Deer Carcass',			weight = 4000,    type = 'item',		image = 'deer4.png',      unique = false,		useable = false,	shouldClose = false,   combinable = nil,   description = 'This looks like a protected deer.'},
+	coyote1 		 = {name = 'coyote1',			label = 'Coyote Carcass',		weight = 3000,    type = 'item',		image = 'coyote1.png',      unique = false,		useable = false,	shouldClose = false,   combinable = nil,   description = ''},
+	coyote2 		 = {name = 'coyote2',			label = 'Coyote Carcass',		weight = 3500,    type = 'item',		image = 'coyote2.png',      unique = false,		useable = false,	shouldClose = false,   combinable = nil,   description = ''},
+	coyote3 		 = {name = 'coyote3',			label = 'Coyote Carcass',		weight = 3800,    type = 'item',		image = 'coyote3.png',      unique = false,		useable = false,	shouldClose = false,   combinable = nil,   description = ''},
+	coyote4 		 = {name = 'coyote4',			label = 'Coyote Carcass',		weight = 4000,    type = 'item',		image = 'coyote4.png',      unique = false,		useable = false,	shouldClose = false,   combinable = nil,   description = 'This looks like a protected coyote.'},
+	mtlion1 		 = {name = 'mtlion1',			label = 'Mountain Lion Carcass',		weight = 3000,    type = 'item',		image = 'mtlion1.png',      unique = false,		useable = false,	shouldClose = false,   combinable = nil,   description = ''},
+	mtlion2 		 = {name = 'mtlion2',			label = 'Mountain Lion Carcass',		weight = 3500,    type = 'item',		image = 'mtlion2.png',      unique = false,		useable = false,	shouldClose = false,   combinable = nil,   description = ''},
+	mtlion3 		 = {name = 'mtlion3',			label = 'Mountain Lion Carcass',		weight = 3800,    type = 'item',		image = 'mtlion3.png',      unique = false,		useable = false,	shouldClose = false,   combinable = nil,   description = ''},
+	mtlion4 		 = {name = 'mtlion4',			label = 'Mountain Lion Carcass',		weight = 4000,    type = 'item',		image = 'mtlion4.png',      unique = false,		useable = false,	shouldClose = false,   combinable = nil,   description = 'This looks like a protected mountain lion.'},
+	bigfoot 		 = {name = 'bigfoot',			label = 'Big Foot Carcass',				weight = 9000,    type = 'item',		image = 'bigfoot.png',      unique = false,		useable = false,	shouldClose = false,   combinable = nil,   description = 'A human in a costume??'},
+	huntingbait 	 = {name = 'huntingbait',		label = 'Animal Bait',			    	weight = 15,      type = 'item',		image = 'huntingbait.png',  unique = false,		useable = true,	    shouldClose = true,    combinable = nil,   description = ''},
+	hunterslogo 	 = {name = 'hunterslogo',		label = 'Hunters Logo',			    	weight = 1,    	  type = 'item',		image = 'hunterslogo.png',  unique = false,		useable = false,	shouldClose = true,    combinable = nil,   description = ''},
+	hunterlicense 	 = {name = 'hunterlicense',		label = 'Hunting License',			    	weight = 1,    	  type = 'item',		image = 'huntinglicense.png',  unique = true,		useable = true,	shouldClose = true,    combinable = nil,   description = ''},
+    heart 				 = {name = 'heart', 			  	  	label = 'Heart', 				weight = 1500, 		type = 'item', 		image = 'heart.png', 			unique = true, 		useable = true, 	shouldClose = true,	   combinable = nil,   description = ''},
+	lungs 				 = {name = 'lungs', 			  	  	label = 'Lungs', 				weight = 1500, 		type = 'item', 		image = 'lungs.png', 			unique = true, 		useable = true, 	shouldClose = true,	   combinable = nil,   description = ''},
+	brain 				 = {name = 'brain', 			  	  	label = 'Brain', 				weight = 1500, 		type = 'item', 		image = 'brain.png', 			unique = true, 		useable = true, 	shouldClose = true,	   combinable = nil,   description = ''},
+	intestines 			 = {name = 'intestines', 			  	label = 'Intestines', 			weight = 1500, 		type = 'item', 		image = 'intestines.png', 		unique = true, 		useable = true, 	shouldClose = true,	   combinable = nil,   description = ''},
+	kidneys 			 = {name = 'kidneys', 			  	  	label = 'Kidneys', 				weight = 1500, 		type = 'item', 		image = 'kidneys.png', 			unique = true, 		useable = true, 	shouldClose = true,	   combinable = nil,   description = ''},
+	stomach 			 = {name = 'stomach', 			  	  	label = 'Stomach', 				weight = 1500, 		type = 'item', 		image = 'stomach.png', 			unique = true, 		useable = true, 	shouldClose = true,	   combinable = nil,   description = ''},
+	liver 				 = {name = 'liver', 			  	  	label = 'Liver', 				weight = 1500, 		type = 'item', 		image = 'liver.png', 			unique = true, 		useable = true, 	shouldClose = true,	   combinable = nil,   description = ''},
+	humanmeat 			 = {name = 'humanmeat', 			  	label = 'Questionable Meat',	weight = 1500, 		type = 'item', 		image = 'humanmeat.png', 		unique = true, 		useable = true, 	shouldClose = true,	   combinable = nil,   description = ''},
+    knife 			     = {name = 'knife',				    label = 'Sharp Knife',			   	weight = 1500,    	type = 'item',		image = 'knife.png',         unique = true,		useable = true,	    shouldClose = true,    combinable = nil,   description = ''},
+
+    mechanic_tools =    {name = 'mechanic_tools',   label = 'Mechanic tools',		weight = 0, type = 'item',  image = 'mechanic_tools.png',   unique = true,  useable = true, shouldClose = true, description = 'Needed for vehicle repairs'},
+	toolbox =           {name = 'toolbox',          label = 'Toolbox',				weight = 0, type = 'item',  image = 'toolbox.png',          unique = true,  useable = true, shouldClose = true, description = 'Needed for Performance part removal'},
+	ducttape =          {name = 'ducttape',         label = 'Duct Tape',			weight = 0, type = 'item',  image = 'bodyrepair.png',       unique = true,  useable = true, shouldClose = true, description = 'Good for quick fixes'},
+	mechboard =         {name = 'mechboard',        label = 'Mechanic Sheet',		weight = 0, type = 'item',  image = 'mechboard.png',        unique = true,  useable = true, shouldClose = true, description = ''},
+
+	--Performance
+	turbo =             {name = 'turbo',            label = 'Supercharger Turbo',	weight = 0, type = 'item',  image = 'turbo.png',            unique = true,  useable = true, shouldClose = true, description = 'Who doesnt need a 65mm Turbo??'},
+	car_armor =          {name = 'car_armor',		label = 'Vehicle Armor',		weight = 0, type = 'item',  image = 'car_armour.png',           unique = true,  useable = true, shouldClose = true, description = ''},
+
+	nos =                {name = 'nos',				label = 'NOS Bottle',			weight = 0, type = 'item',  image = 'nos.png',              unique = true,  useable = true, shouldClose = true, description = 'A full bottle of NOS'},
+	noscan  =             {name = 'noscan',			label = 'Empty NOS Bottle',		weight = 0, type = 'item',  image = 'noscan.png',           unique = false, useable = true, shouldClose = true, description = 'An Empty bottle of NOS'},
+	noscolour   =          {name = 'noscolour',		label = 'NOS Colour Injector',	weight = 0, type = 'item',  image = 'noscolour.png', 		unique = false, useable = true, shouldClose = true, description = 'Make that purge spray'},
+
+	engine1 =            {name = 'engine1',			label = 'Tier 1 Engine',		weight = 0, type = 'item',  image = 'engine1.png',          unique = true,  useable = true, shouldClose = true, description = ''},
+	engine2 =            {name = 'engine2',			label = 'Tier 2 Engine',		weight = 0, type = 'item',  image = 'engine2.png',          unique = true,  useable = true, shouldClose = true, description = ''},
+	engine3 =            {name = 'engine3',			label = 'Tier 3 Engine',		weight = 0, type = 'item',  image = 'engine3.png',          unique = true,  useable = true, shouldClose = true, description = ''},
+	engine4 =            {name = 'engine4',			label = 'Tier 4 Engine',		weight = 0, type = 'item',  image = 'engine4.png',          unique = true,  useable = true, shouldClose = true, description = ''},
+	engine5 =            {name = 'engine5',			label = 'Tier 5 Engine',		weight = 0, type = 'item',  image = 'engine5.png',          unique = true,  useable = true, shouldClose = true, description = ''},
+
+	transmission1   =      {name = 'transmission1',    label = 'Tier 1 Transmission',	weight = 0, type = 'item',  image = 'transmission1.png',    unique = true,  useable = true, shouldClose = true, description = ''},
+	transmission2   =      {name = 'transmission2',	label = 'Tier 2 Transmission',	weight = 0, type = 'item',  image = 'transmission2.png',    unique = true,  useable = true, shouldClose = true, description = ''},
+	transmission3   =      {name = 'transmission3',    label = 'Tier 3 Transmission',	weight = 0, type = 'item',  image = 'transmission3.png',    unique = true,  useable = true, shouldClose = true, description = ''},
+	transmission4   =      {name = 'transmission4',	label = 'Tier 4 Transmission',	weight = 0, type = 'item',  image = 'transmission4.png',    unique = true,  useable = true, shouldClose = true, description = ''},
+
+	brakes1 =            {name = 'brakes1',			label = 'Tier 1 Brakes',		weight = 0, type = 'item',  image = 'brakes1.png',          unique = true,  useable = true, shouldClose = true, description = ''},
+	brakes2 =             {name = 'brakes2',			label = 'Tier 2 Brakes',		weight = 0, type = 'item',  image = 'brakes2.png',          unique = true,  useable = true, shouldClose = true, description = ''},
+	brakes3 =            {name = 'brakes3',			label = 'Tier 3 Brakes',		weight = 0, type = 'item',  image = 'brakes3.png',          unique = true,  useable = true, shouldClose = true, description = ''},
+
+	suspension1 =        {name = 'suspension1',		label = 'Tier 1 Suspension',	weight = 0, type = 'item',  image = 'suspension1.png',      unique = true,  useable = true, shouldClose = true, description = ''},
+	suspension2 =        {name = 'suspension2',		label = 'Tier 2 Suspension',	weight = 0, type = 'item',  image = 'suspension2.png',      unique = true,  useable = true, shouldClose = true, description = ''},
+	suspension3 =        {name = 'suspension3',		label = 'Tier 3 Suspension',	weight = 0, type = 'item',  image = 'suspension3.png',      unique = true,  useable = true, shouldClose = true, description = ''},
+	suspension4 =        {name = 'suspension4',		label = 'Tier 4 Suspension',	weight = 0, type = 'item',  image = 'suspension4.png',      unique = true,  useable = true, shouldClose = true, description = ''},
+	suspension5 =        {name = 'suspension5',		label = 'Tier 5 Suspension',	weight = 0, type = 'item',  image = 'suspension5.png',      unique = true,  useable = true, shouldClose = true, description = ''},
+
+	bprooftires =        {name = 'bprooftires',		label = 'Bulletproof Tires',	weight = 0, type = 'item',  image = 'bprooftires.png',      unique = true,  useable = true, shouldClose = true, description = ''},
+	drifttires =         {name = 'drifttires',		label = 'Drift Tires',			weight = 0, type = 'item',  image = 'drifttires.png',       unique = true,  useable = true, shouldClose = true, description = ''},
+
+	oilp1 =              {name = 'oilp1',			label = 'Tier 1 Oil Pump',		weight = 0, type = 'item',  image = 'oilp1.png',            unique = true,  useable = true, shouldClose = true, description = ''},
+	oilp2 =              {name = 'oilp2',			label = 'Tier 2 Oil Pump',		weight = 0, type = 'item',  image = 'oilp2.png',            unique = true,  useable = true, shouldClose = true, description = ''},
+	oilp3 =              {name = 'oilp3',			label = 'Tier 3 Oil Pump',		weight = 0, type = 'item',  image = 'oilp3.png',            unique = true,  useable = true, shouldClose = true, description = ''},
+
+	drives1 =            {name = 'drives1',			label = 'Tier 1 Drive Shaft',	weight = 0, type = 'item',  image = 'drives1.png',          unique = true,  useable = true, shouldClose = true, description = ''},
+	drives2 =            {name = 'drives2',			label = 'Tier 2 Drive Shaft',	weight = 0, type = 'item',  image = 'drives2.png',          unique = true,  useable = true, shouldClose = true, description = ''},
+	drives3 =            {name = 'drives3',			label = 'Tier 3 Drive Shaft',	weight = 0, type = 'item',  image = 'drives3.png',          unique = true,  useable = true, shouldClose = true, description = ''},
+
+	cylind1 =            {name = 'cylind1',			label = 'Tier 1 Cylinder Head',	weight = 0, type = 'item',  image = 'cylind1.png',          unique = true,  useable = true, shouldClose = true, description = ''},
+	cylind2 =            {name = 'cylind2',			label = 'Tier 2 Cylinder Head',	weight = 0, type = 'item',  image = 'cylind2.png',          unique = true,  useable = true, shouldClose = true, description = ''},
+	cylind3 =            {name = 'cylind3',			label = 'Tier 3 Cylinder Head',	weight = 0, type = 'item',  image = 'cylind3.png',          unique = true,  useable = true, shouldClose = true, description = ''},
+
+	cables1 =            {name = 'cables1',			label = 'Tier 1 Battery Cables',weight = 0, type = 'item',  image = 'cables1.png',          unique = true,  useable = true, shouldClose = true, description = ''},
+	cables2 =            {name = 'cables2',			label = 'Tier 2 Battery Cables',weight = 0, type = 'item',  image = 'cables2.png',          unique = true,  useable = true, shouldClose = true, description = ''},
+	cables3 =            {name = 'cables3',			label = 'Tier 3 Battery Cables',weight = 0, type = 'item',  image = 'cables3.png',          unique = true,  useable = true, shouldClose = true, description = ''},
+
+	fueltank1 =          {name = 'fueltank1',		label = 'Tier 1 Fuel Tank',     weight = 0, type = 'item',  image = 'fueltank1.png',        unique = true,  useable = true, shouldClose = true, description = ''},
+	fueltank2 =          {name = 'fueltank2',		label = 'Tier 2 Fuel Tank',     weight = 0, type = 'item',  image = 'fueltank2.png',        unique = true,  useable = true, shouldClose = true, description = ''},
+	fueltank3 =          {name = 'fueltank3',		label = 'Tier 3 Fuel Tank',     weight = 0, type = 'item',  image = 'fueltank3.png',        unique = true,  useable = true, shouldClose = true, description = ''},
+
+	antilag =            {name = 'antilag',		    label = 'AntiLag',              weight = 0, type = 'item',  image = 'antiLag.png',          unique = true,  useable = true, shouldClose = true, description = ''},
+
+	--Cosmetics
+	underglow_controller    =   {name = 'underglow_controller',label = 'Neon Controller',	weight = 0, type = 'item',  image = 'underglow_controller.png', unique = false, useable = true, shouldClose = true, description = 'RGB LED Vehicle Remote'},
+	headlights  =         {name = 'headlights',       label = 'Xenon Headlights',		weight = 0, type = 'item',  image = 'headlights.png',       unique = true, 	useable = true, shouldClose = true, description = '8k HID headlights'},
+
+	tint_supplies   =      {name = 'tint_supplies',    label = 'Tint Supplies',		weight = 0, type = 'item',  image = 'tint_supplies.png',    unique = false, useable = true, shouldClose = true, description = 'Supplies for window tinting'},
+
+	customplate =        {name = 'customplate',      label = 'Customized Plates',	weight = 0, type = 'item',  image = 'plate.png', 			unique = true,  useable = true, shouldClose = true, description = ''},
+	hood    =               {name = 'hood',             label = 'Vehicle Hood',			weight = 0, type = 'item',  image = 'hood.png', 			unique = true,  useable = true, shouldClose = true, description = ''},
+	roof    =               {name = 'roof',             label = 'Vehicle Roof',			weight = 0, type = 'item',  image = 'roof.png', 			unique = true,  useable = true, shouldClose = true, description = ''},
+	spoiler =            {name = 'spoiler',          label = 'Vehicle Spoiler',		weight = 0, type = 'item',  image = 'spoiler.png', 			unique = true,  useable = true, shouldClose = true, description = ''},
+	bumper  =             {name = 'bumper',           label = 'Vehicle Bumper',		weight = 0, type = 'item',  image = 'bumper.png', 			unique = true,  useable = true, shouldClose = true, description = ''},
+	skirts  =             {name = 'skirts',           label = 'Vehicle Skirts',		weight = 0, type = 'item',  image = 'skirts.png', 			unique = true,  useable = true, shouldClose = true, description = ''},
+	exhaust =            {name = 'exhaust',          label = 'Vehicle Exhaust',		weight = 0, type = 'item',  image = 'exhaust.png', 			unique = true,  useable = true, shouldClose = true, description = ''},
+	seat    =               {name = 'seat',             label = 'Seat Cosmetics',		weight = 0, type = 'item',  image = 'seat.png', 			unique = true,  useable = true, shouldClose = true, description = ''},
+	rollcage    =           {name = 'rollcage',         label = 'Roll Cage',			weight = 0, type = 'item',  image = 'rollcage.png', 		unique = true,  useable = true, shouldClose = true, description = ''},
+
+	rims    =               {name = 'rims',             label = 'Custom Wheel Rims',	weight = 0, type = 'item',  image = 'rims.png', 			unique = true,  useable = true, shouldClose = true, description = ''},
+
+	livery  =             {name = 'livery',           label = 'Livery Roll',			weight = 0, type = 'item',  image = 'livery.png', 			unique = true,  useable = true, shouldClose = true, description = ''},
+	paintcan    =           {name = 'paintcan',         label = 'Vehicle Spray Can',	weight = 0, type = 'item',  image = 'spraycan.png', 		unique = true,  useable = true, shouldClose = true, description = ''},
+	tires   =              {name = 'tires',            label = 'Drift Smoke Tires',	weight = 0, type = 'item',  image = 'tires.png', 	  		unique = true,  useable = true, shouldClose = true, description = ''},
+
+	horn    =               {name = 'horn',             label = 'Custom Vehicle Horn',	weight = 0, type = 'item',  image = 'horn.png', 			unique = true,  useable = true, shouldClose = true, description = ''},
+
+	internals =         {name = 'internals',        label = 'Internal Cosmetics',	weight = 0, type = 'item',  image = 'internals.png', 		unique = true,  useable = true, shouldClose = true, description = ''},
+	externals =         {name = 'externals',        label = 'Exterior Cosmetics',	weight = 0, type = 'item',  image = 'mirror.png', 			unique = true,  useable = true, shouldClose = true, description = ''},
+
+	--Repair Parts
+	newoil =            {name = 'newoil',           label = 'Car Oil',				weight = 0, type = 'item',  image = 'caroil.png',           unique = false, useable = false,shouldClose = false,description = ''},
+	sparkplugs  =         {name = 'sparkplugs',       label = 'Spark Plugs',			weight = 0, type = 'item',  image = 'sparkplugs.png',       unique = false, useable = false,shouldClose = false,description = ''},
+	carbattery  =         {name = 'carbattery',       label = 'Car Battery',			weight = 0, type = 'item',  image = 'carbattery.png',       unique = false, useable = false,shouldClose = false,description = ''},
+	axleparts   =          {name = 'axleparts',        label = 'Axle Parts',			weight = 0, type = 'item',  image = 'axleparts.png',        unique = false, useable = false,shouldClose = false,description = ''},
+	sparetire   =          {name = 'sparetire',        label = 'Spare Tire',			weight = 0, type = 'item',  image = 'sparetire.png',        unique = true,  useable = false,shouldClose = false,description = ''},
+    
+    --JIM-CATCAFE
+	bmochi 						= {name = 'bmochi',  	     			label = 'Blue Mochi',	 			weight = 100, 		type = 'item', 		image = 'mochiblue.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', hunger = math.random(40, 50) },
+	pmochi 						= {name = 'pmochi',  	     			label = 'Pink Mochi',	 			weight = 100, 		type = 'item', 		image = 'mochipink.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', hunger = math.random(40, 50) },
+	gmochi 						= {name = 'gmochi',  	     			label = 'Green Mochi',	 			weight = 100, 		type = 'item', 		image = 'mochigreen.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', hunger = math.random(40, 50) },
+	omochi 						= {name = 'omochi',  	     			label = 'Orange Mochi',	 			weight = 100, 		type = 'item', 		image = 'mochiorange.png',		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', hunger = math.random(40, 50) },
+
+	--Drinks
+	bobatea 					= {name = 'bobatea',  	     			label = 'Boba Tea',	 				weight = 100, 		type = 'item', 		image = 'bubbletea.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', thirst = math.random(40, 50) },
+	bbobatea 					= {name = 'bbobatea',  	     			label = 'Blue Boba Tea',	 		weight = 100, 		type = 'item', 		image = 'bubbleteablue.png',	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', thirst = math.random(40, 50) },
+	gbobatea 					= {name = 'gbobatea',  	     			label = 'Green Boba Tea',	 		weight = 100, 		type = 'item', 		image = 'bubbleteagreen.png', 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', thirst = math.random(40, 50) },
+	pbobatea 					= {name = 'pbobatea',  	     			label = 'Pink Boba Tea',	 		weight = 100, 		type = 'item', 		image = 'bubbleteapink.png', 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', thirst = math.random(40, 50) },
+	obobatea 					= {name = 'obobatea',  	     			label = 'Orange Boba Tea',	 		weight = 100, 		type = 'item', 		image = 'bubbleteaorange.png', 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', thirst = math.random(40, 50) },
+
+	nekolatte 					= {name = 'nekolatte',  	     		label = 'Neko Latte',	 			weight = 100, 		type = 'item', 		image = 'latte.png', 			unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', thirst = math.random(20, 30) },
+	catcoffee 					= {name = 'catcoffee',  	     		label = 'Cat Coffee',	 			weight = 100, 		type = 'item', 		image = 'catcoffee.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', thirst = math.random(20, 30) },
+
+	sake 						= {name = 'sake',  	     				label = 'Sake',	 					weight = 100, 		type = 'item', 		image = 'sake.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', thirst = math.random(40, 50) },
+
+	miso 						= {name = 'miso',  	    	 			label = 'Miso Soup',		 		weight = 100, 		type = 'item', 		image = 'miso.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', hunger = math.random(40, 50) },
+	cake 						= {name = 'cake',  	     				label = 'Strawberry Cake',	 		weight = 100, 		type = 'item', 		image = 'cake.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', hunger = math.random(40, 50) },
+	bento 						= {name = 'bento',  	     			label = 'Bento Box',		 		weight = 500, 		type = 'item', 		image = 'bento.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', hunger = math.random(40, 50) },
+
+	riceball 					= {name = 'riceball',  	     			label = 'Neko Onigiri',	 			weight = 100, 		type = 'item', 		image = 'catrice.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', hunger = math.random(40, 50) },
+
+	nekocookie 					= {name = 'nekocookie',  	     		label = 'Neko Cookie',	 			weight = 100, 		type = 'item', 		image = 'catcookie.png', 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', hunger = math.random(40, 50) },
+	nekodonut 					= {name = 'nekodonut',  	     		label = 'Neko Donut',	 			weight = 100, 		type = 'item', 		image = 'catdonut.png', 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', hunger = math.random(40, 50) },
+
+	--Ingredients
+	boba 						= {name = 'boba',  			     		label = 'Boba',	 					weight = 100, 		type = 'item', 		image = 'boba.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', hunger = math.random(40, 50) },
+	flour 						= {name = 'flour',  			     	label = 'Flour',					weight = 100, 		type = 'item', 		image = 'flour.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', hunger = math.random(40, 50) },
+	rice 						= {name = 'rice',  			     		label = 'Bowl of Rice',	 			weight = 100, 		type = 'item', 		image = 'rice.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', hunger = math.random(40, 50) },
+	sugar 						= {name = 'sugar',  			     	label = 'Sugar',	 				weight = 100, 		type = 'item', 		image = 'sugar.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', hunger = math.random(40, 50) },
+	nori 						= {name = 'nori',  			    	 	label = 'Nori',		 				weight = 100, 		type = 'item', 		image = 'nori.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '' },
+	blueberry 					= {name = 'blueberry',  			    label = 'Blueberry',		 		weight = 100, 		type = 'item', 		image = 'blueberry.png', 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', hunger = math.random(40, 50) },
+	strawberry 					= {name = 'strawberry',  			    label = 'Strawberry',		 		weight = 100, 		type = 'item', 		image = 'strawberry.png', 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', hunger = math.random(40, 50) },
+	orange 				 		= {name = 'orange',  	     			label = 'Orange',	 				weight = 200, 		type = 'item', 		image = 'orange.png', 		unique = false, 	useable = false, 	shouldClose = false,   	combinable = nil,   description = 'An Orange.' },
+	mint 						= {name = 'mint',  			    	 	label = 'Matcha',		 			weight = 100, 		type = 'item', 		image = 'matcha.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '' },
+	tofu 						= {name = 'tofu',  			    	 	label = 'Tofu',		 				weight = 100, 		type = 'item', 		image = 'tofu.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', hunger = math.random(40, 50) },
+
+	mocha 						= {name = 'mocha',  	     			label = 'Mocha Meow',	 			weight = 100, 		type = 'item', 		image = 'mochameow.png', 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', thirst = math.random(40, 50) },
+
+	cakepop 					= {name = 'cakepop',  	    	 		label = 'Cat Cake-Pop',		 		weight = 100, 		type = 'item', 		image = 'cakepop.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', hunger = math.random(40, 50) },
+	pancake 					= {name = 'pancake',  	     			label = 'PawCake',	 				weight = 100, 		type = 'item', 		image = 'pawcakes.png', 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', hunger = math.random(40, 50) },
+	pizza 						= {name = 'pizza',  	     			label = 'Kitty Pizza',		 		weight = 100, 		type = 'item', 		image = 'catpizza.png', 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', hunger = math.random(40, 50) },
+	purrito 					= {name = 'purrito',  	     			label = 'Purrito',	 				weight = 100, 		type = 'item', 		image = 'purrito.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', hunger = math.random(40, 50) },
+
+	noodlebowl 					= {name = 'noodlebowl',  	     		label = 'Bowl of Noodles',	 		weight = 100, 		type = 'item', 		image = 'noodlebowl.png', 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', hunger = math.random(40, 50) },
+	noodles 					= {name = 'noodles',  	     			label = 'Instant Noodles',	 		weight = 100, 		type = 'item', 		image = 'noodles.png', 		unique = false, 	useable = false, 	shouldClose = true,   	combinable = nil,   description = '' },
+	ramen						= {name = 'ramen',  	     			label = 'Bowl of Ramen',	 		weight = 100, 		type = 'item', 		image = 'ramen.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', hunger = math.random(40, 50) },
+    onion                       = {name = 'onion',                      label = 'Onion',                    weight = 500,       type = 'item',      image = 'burger-onion.png', unique = false,     useable = false,    shouldClose = false,    combinable = nil,    description = 'An onion'},
+
+-- Food
+tripleburger 		= {name = 'tripleburger',  	    label = 'The Triple Burger',		weight = 100,type = 'item',image = 'tripleburger.png', 		unique = false,useable = true,shouldClose = true,description = '', hunger = math.random(20, 30) },
+baconcheesemelt 	= {name = 'baconcheesemelt',  	label = 'Bacon-Triple Cheese Melt', weight = 100,type = 'item',image = 'baconcheesemelt.png',	unique = false,useable = true,shouldClose = true,description = '', hunger = math.random(20, 30) },
+chillidog 			= {name = 'chillidog',  	    label = 'Footlong Chili Dog',		weight = 100,type = 'item',image = 'chillidog.png', 		unique = false,useable = true,shouldClose = true,description = '', hunger = math.random(20, 30) },
+atomfries 			= {name = 'atomfries',  	    label = 'Atom Fries',				weight = 100,type = 'item',image = 'atomfries.png', 		unique = false,useable = true,shouldClose = true,description = '', hunger = math.random(20, 30) },
+
+chickenfillet 		= {name = 'chickenfillet',  	label = 'Chicken Fillets',			weight = 100,type = 'item',image = 'chickenbreasts.png', 	unique = false,useable = true,shouldClose = true,description = '', hunger = math.random(20, 30) },
+chickenhorn 		= {name = 'chickenhorn',  	    label = 'Chicken Hornstars',		weight = 100,type = 'item',image = 'chickhornstars.png', 	unique = false,useable = true,shouldClose = true,description = '', hunger = math.random(20, 30) },
+grilledchicken 		= {name = 'grilledchicken',  	label = 'Chicken Sandwich',			weight = 100,type = 'item',image = 'chickensandwich.png', 	unique = false,useable = true,shouldClose = true,description = '', hunger = math.random(20, 30) },
+chickensalad 		= {name = 'chickensalad',  	    label = 'Chicken Salad',			weight = 100,type = 'item',image = 'chickensalad.png', 		unique = false,useable = true,shouldClose = true,description = '', hunger = math.random(20, 30) },
+hunksohen 			= {name = 'hunksohen',  	    label = 'Hunk o Hen',				weight = 100,type = 'item',image = 'chickenthighs.png', 	unique = false,useable = true,shouldClose = true,description = '', hunger = math.random(20, 30) },
+
+chickentaco 		= {name = 'chickentaco',  	    label = 'Chicken Taco',				weight = 100,type = 'item',image = 'chickentaco.png', 		unique = false,useable = true,shouldClose = true,description = '', hunger = math.random(20, 30) },
+enchiladas 			= {name = 'enchiladas',  	    label = 'Breakfast Enchiladas',		weight = 100,type = 'item',image = 'enchi.png', 			unique = false,useable = true,shouldClose = true,description = '', hunger = math.random(20, 30) },
+gazpacho 			= {name = 'gazpacho',  	    	label = 'Guzpacho',					weight = 100,type = 'item',image = 'gazpacho.png', 			unique = false,useable = true,shouldClose = true,description = '', hunger = math.random(20, 30) },
+
+hornbreakfast 		= {name = 'hornbreakfast',  	label = 'Hornys Breakfast',		weight = 100,type = 'item',image = 'bangers.png', 			unique = false,useable = true,shouldClose = true,description = '', hunger = math.random(20, 30) },
+eggsbenedict 		= {name = 'eggsbenedict',  	    label = 'Eggs Benedict',			weight = 100,type = 'item',image = 'eggbene.png', 			unique = false,useable = true,shouldClose = true,description = '', hunger = math.random(20, 30) },
+hashbrowns 			= {name = 'hashbrowns',  	    label = 'Hash Browns',				weight = 100,type = 'item',image = 'hashbrown.png', 		unique = false,useable = true,shouldClose = true,description = '', hunger = math.random(20, 30) },
+sausages 			= {name = 'sausages',  	    	label = 'Sausages',					weight = 100,type = 'item',image = 'sausage.png', 			unique = false,useable = true,shouldClose = true,description = '', hunger = math.random(20, 30) },
+baconroll 			= {name = 'baconroll',  	    label = 'Bacon Roll',				weight = 100,type = 'item',image = 'baconroll.png', 		unique = false,useable = true,shouldClose = true,description = '', hunger = math.random(20, 30) },
+baconeggtoast 		= {name = 'baconeggtoast',  	label = 'Bacon & Egg on Toast',		weight = 100,type = 'item',image = 'baconegg.png', 			unique = false,useable = true,shouldClose = true,description = '', hunger = math.random(20, 30) },
+frenchtoast 		= {name = 'frenchtoast',  	    label = 'French Toast',				weight = 100,type = 'item',image = 'frenchtoast.png', 		unique = false,useable = true,shouldClose = true,description = '', hunger = math.random(20, 30) },
+frenchtoastbacon 	= {name = 'frenchtoastbacon',  	label = 'French Toast Bacon',		weight = 100,type = 'item',image = 'frenchbacon.png', 		unique = false,useable = true,shouldClose = true,description = '', hunger = math.random(20, 30) },
+
+hornburger 			= {name = 'hornburger',  	    label = 'HornBurger',				weight = 100,type = 'item',image = 'hornburger.png', 		unique = false,useable = true,shouldClose = true,description = '', hunger = math.random(20, 30) },
+dblhornburger 	 	= {name = 'dblhornburger',  	label = 'DBL HornBurger',			weight = 100,type = 'item',image = 'dblhornburger.png', 	unique = false,useable = true,shouldClose = true,description = '', hunger = math.random(20, 30) },
+baconhornburger 	= {name = 'baconhornburger',  	label = 'HornBurger Bacon',			weight = 100,type = 'item',image = 'baconburger.png', 		unique = false,useable = true,shouldClose = true,description = '', hunger = math.random(20, 30) },
+picklehornburger 	= {name = 'picklehornburger',  	label = 'HornBurger Pickle',		weight = 100,type = 'item',image = 'pickleburger.png', 		unique = false,useable = true,shouldClose = true,description = '', hunger = math.random(20, 30) },
+chickenhornburger 	= {name = 'chickenhornburger',  label = 'Chicken HornBurger',		weight = 100,type = 'item',image = 'chickenburger.png', 	unique = false,useable = true,shouldClose = true,description = '', hunger = math.random(20, 30) },
+dblchickenhornburger= {name = 'dblchickenhornburger',label = 'DBL Chicken HornBurger',	weight = 100,type = 'item',image = 'dblchickenburger.png', 	unique = false,useable = true,shouldClose = true,description = '', hunger = math.random(20, 30) },
+
+icecone 			= {name = 'icecone',  	    	label = 'Ice Cone',					weight = 100,type = 'item',image = 'cone.png', 				unique = false,useable = true,shouldClose = true,description = '', hunger = math.random(20, 30) },
+icenugget 			= {name = 'icenugget',  	    label = 'Ice Nugget',				weight = 100,type = 'item',image = 'icenugget.png', 		unique = false,useable = true,shouldClose = true,description = '', hunger = math.random(20, 30) },
+icecake 			= {name = 'icecake',  	    	label = 'Ice Cream Cake',			weight = 100,type = 'item',image = 'icecake.png', 			unique = false,useable = true,shouldClose = true,description = '', hunger = math.random(20, 30) },
+
+-- Desert
+creamyshake 		= {name = 'creamyshake',    	label = 'Extra Creamy Jumbo Shake',	weight = 100,type = 'item',image = 'atomshake.png',			unique = false,useable = true,shouldClose = true,description = '', hunger = math.random(20, 30) },
+-- Drinks
+atomsoda 			= {name = 'atomsoda',  	    	label = 'Atom Soda',				weight = 100,type = 'item',image = 'atomsoda.png', 			unique = false,useable = true,shouldClose = true,description = '', thirst = math.random(20, 30) },
+orangotang 			= {name = 'orangotang',  	    label = 'Bacon',					weight = 100,type = 'item',image = 'orangotang.png', 		unique = false,useable = true,shouldClose = true,description = '', thirst = math.random(20, 30) },
+raine 				= {name = 'raine',  	    	label = 'Raine',					weight = 100,type = 'item',image = 'raine.png', 			unique = false,useable = true,shouldClose = true,description = '', thirst = math.random(20, 30) },
+junkdrink 			= {name = 'junkdrink',  	    label = 'Junk',						weight = 100,type = 'item',image = 'junkdrink.png', 		unique = false,useable = true,shouldClose = true,description = '', thirst = math.random(20, 30) },
+
+-- Ingredients
+burgerpatty 		= {name = 'burgerpatty',		label = 'Patty',					weight = 100,type = 'item',image = 'burgerpatty.png', 		unique = false,useable = false,shouldClose = true,description = '', },
+breadslice 			= {name = 'breadslice',			label = 'Slice of Bread',			weight = 100,type = 'item',image = 'breadslice.png',		unique = false,useable = true,shouldClose = true,description = '',hunger = math.random(10, 20) },
+cheddar 			= {name = 'cheddar',  	    	label = 'Cheese',					weight = 100,type = 'item',image = 'cheddar.png', 			unique = false,useable = false,shouldClose = true,description = '', },
+lettuce 			= {name = 'lettuce',  	    	label = 'Lettuce',					weight = 100,type = 'item',image = 'lettuce.png', 			unique = false,useable = false,shouldClose = true,description = '', },
+tomato 				= {name = 'tomato',  	    	label = 'Tomato',					weight = 100,type = 'item',image = 'tomato.png', 			unique = false,useable = false,shouldClose = true,description = '', },
+burgerbun 			= {name = 'burgerbun',  	    label = 'Burger Bun',				weight = 100,type = 'item',image = 'burgerbun.png', 		unique = false,useable = false,shouldClose = true,description = '', },
+hotdogbun 			= {name = 'hotdogbun',  	    label = 'Hotdog Bun',				weight = 100,type = 'item',image = 'hotdogbun.png', 		unique = false,useable = false,shouldClose = true,description = '', },
+chillimince 		= {name = 'chillimince',  	    label = 'Chillimince',				weight = 100,type = 'item',image = 'chillimince.png', 		unique = false,useable = false,shouldClose = true,description = '', },
+butter 				= {name = 'butter',  	    	label = 'Butter',					weight = 100,type = 'item',image = 'farming_butter.png', 	unique = false,useable = false,shouldClose = true,description = '', },
+milk 				= {name = 'milk',  	    		label = 'Milk',						weight = 100,type = 'item',image = 'burger-milk.png', 		unique = false,useable = false,shouldClose = true,description = '',thirst = math.random(20, 30) },
+cream 				= {name = 'cream',  	    	label = 'Cream',					weight = 100,type = 'item',image = 'cream.png', 			unique = false,useable = false,shouldClose = true,description = '', },
+burgermeat 			= {name = 'burgermeat',  	    label = 'Burger Meat',				weight = 100,type = 'item',image = 'burgermeat.png', 		unique = false,useable = false,shouldClose = true,description = '', },
+hotdogmeat 			= {name = 'hotdogmeat',  	    label = 'Hotdog Meat',				weight = 100,type = 'item',image = 'hotdogmeat.png', 		unique = false,useable = false,shouldClose = true,description = '', },
+slicedtomato 		= {name = 'slicedtomato',  	    label = 'Sliced Tomato',			weight = 100,type = 'item',image = 'slicedtomato.png', 		unique = false,useable = false,shouldClose = true,description = '', },
+slicedpotato 		= {name = 'slicedpotato',  	    label = 'Sliced Potato',			weight = 100,type = 'item',image = 'burger-slicedpotato.png',unique = false,useable = false,shouldClose = true,description = '', },
+rawhotdog 			= {name = 'rawhotdog',  	    label = 'Raw Hotdog',				weight = 100,type = 'item',image = 'rawhotdog.png', 		unique = false,useable = false,shouldClose = true,description = '', },
+potato 				= {name = 'potato',  	    	label = 'Potato',					weight = 100,type = 'item',image = 'potato.png', 			unique = false,useable = false,shouldClose = true,description = '', },
+egg       			= {name = 'egg',            	label = 'Egg',       				weight = 100,type = 'item',image = 'farming_egg.png',   	unique = false,useable = false,shouldClose = true,description = '' },
+bacon 				= {name = 'bacon',  	    	label = 'Bacon',					weight = 100,type = 'item',image = 'bacon.png', 			unique = false,useable = false,shouldClose = true,description = '', },
+rawbacon 			= {name = 'rawbacon',  	    	label = 'Raw Bacon',				weight = 100,type = 'item',image = 'rawbacon.png', 			unique = false,useable = false,shouldClose = true,description = '', },
+rawsausage 			= {name = 'rawsausage',  	    label = 'Raw Sausages',				weight = 100,type = 'item',image = 'rawsausage.png', 		unique = false,useable = false,shouldClose = true,description = '', },
+pickle 						= {name = 'pickle',  	     			label = 'Pickle',	 		 		weight = 200, 		type = 'item', 		image = 'pickle.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = 'A jar of Pickles', hunger = math.random(40, 50) },
+
+--Jim-BeanMachine
+beancoffee 					= {name = 'beancoffee',  	    		label = 'Coffe Beans',				weight = 100, 		type = 'item', 		image = 'beancoffee.png', 		unique = false, 	useable = false, 	shouldClose = true,   	combinable = nil,   description = '', hunger = math.random(20, 30) },
+beandonut 					= {name = 'beandonut',  	    		label = 'Donut',					weight = 100, 		type = 'item', 		image = 'popdonut.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', hunger = math.random(20, 30) },
+rhinohorn 					= {name = 'rhinohorn',  	    		label = 'Rhino Horn',				weight = 100, 		type = 'item', 		image = 'rhinohorn.png', 		unique = false, 	useable = false, 	shouldClose = true,   	combinable = nil,   description = '' },
+oystershell 				= {name = 'oystershell',  	    		label = 'Oyster Shell',				weight = 100, 		type = 'item', 		image = 'oyster.png', 			unique = false, 	useable = false, 	shouldClose = true,   	combinable = nil,   description = '' },
+watermelon 					= {name = 'watermelon',  	    		label = 'WaterMelon Slice',			weight = 100, 		type = 'item', 		image = 'watermelon.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', hunger = math.random(20, 30), thirst = math.random(20, 30) },
+
+bigfruit 					= {name = 'bigfruit',  	    	 		label = 'The Big Fruit',		 	weight = 100, 		type = 'item', 		image = 'bigfruit.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', thirst = math.random(20, 30) },
+highnoon 					= {name = 'highnoon',  	    	 		label = 'Highnoon',		 			weight = 100, 		type = 'item', 		image = 'highnoon.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', thirst = math.random(20, 30) },
+speedball 					= {name = 'speedball',  	    	 	label = 'The SpeedBall',		 	weight = 100, 		type = 'item', 		image = 'speedball.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', thirst = math.random(20, 30) },
+gunkaccino 					= {name = 'gunkaccino',  	    	 	label = 'The Gunkaccino',		 	weight = 100, 		type = 'item', 		image = 'gunkaccino.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', thirst = math.random(20, 30) },
+bratte 						= {name = 'bratte',  	    	 		label = 'The Bratte',		 		weight = 100, 		type = 'item', 		image = 'bratte.png', 			unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', thirst = math.random(20, 30) },
+flusher 					= {name = 'flusher',  	    	 		label = 'The Flusher',		 		weight = 100, 		type = 'item', 		image = 'flusher.png', 			unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', thirst = math.random(20, 30) },
+ecocoffee 					= {name = 'ecocoffee',  	    	 	label = 'The Eco-ffee',		 		weight = 100, 		type = 'item', 		image = 'ecoffee.png', 			unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', thirst = math.random(20, 30) },
+caffeagra 					= {name = 'caffeagra',  	    	 	label = 'Caffeagra',		 		weight = 100, 		type = 'item', 		image = 'caffeagra.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', thirst = math.random(20, 30) },
+
+chocolate 				 	= {name = 'chocolate',  		     	label = 'Chocolate',	 			weight = 200, 		type = 'item', 		image = 'chocolate.png', 		unique = false, 	useable = true, 	shouldClose = false,   	combinable = nil,   description = 'Chocolate Bar', hunger = math.random(10, 20) },
+cheesecake 					= {name = 'cheesecake',  	    		label = 'Cheese Cake',				weight = 100, 		type = 'item', 		image = 'cheesecake.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', hunger = math.random(20, 30) },
+crisps 						= {name = 'crisps',  	    			label = 'Crisps',					weight = 100, 		type = 'item', 		image = 'chips.png', 			unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', hunger = math.random(20, 30) },
+sugar 						= {name = 'sugar',  			     	label = 'Sugar',	 				weight = 100, 		type = 'item', 		image = 'sugar.png', 			unique = false, 	useable = true, 	shouldClose = false,   	combinable = nil,   description = '', hunger = math.random(10, 20) },
+orange 				 		= {name = 'orange',  	     			label = 'Orange',	 				weight = 200, 		type = 'item', 		image = 'orange.png', 			unique = false, 	useable = false, 	shouldClose = false,   	combinable = nil,   description = 'An Orange.' },
+milk 						= {name = 'milk',						label = 'Milk',						weight = 300,		type = 'item',		image = 'burger-milk.png',		unique = false, 	useable = true,		shouldClose = true,		combinable = nil,	description = 'Carton of Milk', thirst = math.random(10, 20) },
+chickenbreast 				= {name = 'chickenbreast',  	    	label = 'Chicken Breast',			weight = 100, 		type = 'item', 		image = 'chickenbreast.png', 	unique = false, 	useable = true, 	shouldClose = false,   	combinable = nil,   description = '', hunger = math.random(10, 20) },
+
+sprunk 						= {name = 'sprunk',  	    	 		label = 'Sprunk',		 			weight = 100, 		type = 'item', 		image = 'sprunk.png', 			unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', thirst = math.random(20, 30) },
+sprunklight 				= {name = 'sprunklight',  	    	 	label = 'Sprunk Light',		 		weight = 100, 		type = 'item', 		image = 'sprunklight.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', thirst = math.random(20, 30) },
+ecola 						= {name = 'ecola',  	    	 		label = 'eCola',		 			weight = 100, 		type = 'item', 		image = 'ecola.png', 			unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', thirst = math.random(20, 30) },
+ecolalight 					= {name = 'ecolalight',  	    	 	label = 'eCola Light',		 		weight = 100, 		type = 'item', 		image = 'ecolalight.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = '', thirst = math.random(20, 30) },
+
+
+
+--BurgerShot
+potato 						 = {name = 'potato',					label = 'Potatoes',					weight = 500,		type = 'item',		image = 'potatoes.png',				unique = false, 	useable = false,	shouldClose = false,	combinable = nil,	description = 'Bag of Potatos'},
+slicedpotato 				 = {name = 'slicedpotato',				label = 'Sliced Potatoes',			weight = 500,		type = 'item',		image = 'burger-slicedpotato.png',	unique = false, 	useable = false,	shouldClose = false,	combinable = nil,	description = 'Sliced Potato'},
+slicedonion 				 = {name = 'slicedonion',				label = 'Sliced Onions',			weight = 500,		type = 'item',		image = 'burger-slicedonion.png',	unique = false, 	useable = false,	shouldClose = false,	combinable = nil,	description = 'Sliced Onion'},
+icecream 					 = {name = 'icecream',					label = 'Ice Cream',				weight = 500,		type = 'item',		image = 'burger-icecream.png',		unique = false, 	useable = false,	shouldClose = false,	combinable = nil,	description = 'Ice Cream.'},
+milk 						 = {name = 'milk',						label = 'Milk',						weight = 500,		type = 'item',		image = 'burger-milk.png',			unique = false, 	useable = true,		shouldClose = true,		combinable = nil,	description = 'Carton of Milk', thirst = math.random(35, 54) },
+lettuce 	 			 	 = {name = 'lettuce',       			label = 'Lettuce',	 				weight = 100, 		type = 'item', 		image = 'lettuce.png', 				unique = false, 	useable = false, 	shouldClose = false,   	combinable = nil,   description = 'Some big taco brother'},
+onion 						 = {name = 'onion',						label = 'Onion',					weight = 500,		type = 'item',		image = 'burger-onion.png',			unique = false, 	useable = false,	shouldClose = false,	combinable = nil,	description = 'An onion'},
+frozennugget 				 = {name = 'frozennugget',				label = 'Frozen Nuggets',			weight = 500,		type = 'item',		image = 'burger-frozennugget.png',	unique = false, 	useable = false,	shouldClose = false,	combinable = nil,	description = 'Bag of Frozen Nuggets'},
+cheddar 					 = {name = 'cheddar',					label = 'Cheddar Slice',			weight = 500,		type = 'item',		image = 'cheddar.png',				unique = false, 	useable = false,	shouldClose = false,	combinable = nil,	description = 'Slice of Cheese'},
+burgerbun 		 			 = {name = 'burgerbun',       		    label = 'Burger Bun',	 			weight = 100, 		type = 'item', 		image = 'burgerbun.png', 			unique = false, 	useable = false, 	shouldClose = false,    combinable = nil,   description = 'Some big burger brother'},
+burgerpatty 				 = {name = 'burgerpatty',				label = 'Burger Patty',				weight = 500,		type = 'item',		image = 'burgerpatty.png',			unique = false, 	useable = false,	shouldClose = false,	combinable = nil,	description = 'Raw Patty'},
+burgermeat 				 	 = {name = 'burgermeat',				label = 'Burger Meat',				weight = 500,		type = 'item',		image = 'burgermeat.png',			unique = false, 	useable = false,	shouldClose = false,	combinable = nil,	description = 'Cooked Burger Meat'},
+milkshake 					 = {name = 'milkshake',					label = 'Milkshake',				weight = 500,		type = 'item',		image = 'burger-milkshake.png',		unique = false, 	useable = true,		shouldClose = true,	 	combinable = nil,	description = 'BurgerShot Milkshake', thirst = math.random(35, 54) },
+shotnuggets 				 = {name = 'shotnuggets', 			  	label = 'Shot Nuggets', 			weight = 200, 		type = 'item', 		image = 'burger-shotnuggets.png', 	unique = false, 	useable = true, 	shouldClose = true,	   	combinable = nil,   description = 'Burgershot Nuggets', hunger = math.random(40, 50) },
+shotrings 				 	 = {name = 'shotrings', 			  	label = 'Ring Shots', 				weight = 200, 		type = 'item', 		image = 'burger-shotrings.png', 	unique = false, 	useable = true, 	shouldClose = true,	   	combinable = nil,   description = 'Burgershot Onion Rings', hunger = math.random(40, 50) },
+heartstopper 			 	 = {name = 'heartstopper',       		label = 'HeartStopper',	 			weight = 200, 		type = 'item', 		image = 'burger-heartstopper.png', 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = 'Heartstopper', hunger = math.random(50, 60) },
+shotfries 		 			 = {name = 'shotfries',       			label = 'Shot Fries',	 			weight = 200, 		type = 'item', 		image = 'burger-fries.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = 'Shot Fries', hunger = math.random(40, 50) },
+moneyshot 		 			 = {name = 'moneyshot',       			label = 'Money Shot',	 			weight = 200, 		type = 'item', 		image = 'burger-moneyshot.png', 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = 'Money Shot', hunger = math.random(40, 50) },
+meatfree 		 			 = {name = 'meatfree',       			label = 'Meat Free',	 			weight = 200, 		type = 'item', 		image = 'burger-meatfree.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = 'Meat Free', hunger = math.random(40, 50) },
+bleeder 		 			 = {name = 'bleeder',       			label = 'The Bleeder',	 			weight = 200, 		type = 'item', 		image = 'burger-bleeder.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = 'The Bleeder', hunger = math.random(40, 50) },
+bscoffee 		 			 = {name = 'bscoffee',       			label = 'BurgerShot Coffee',	 	weight = 200, 		type = 'item', 		image = 'burger-coffee.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = 'BurgerShot Coffee', thirst = math.random(35, 54) },
+bscoke 		 				 = {name = 'bscoke',       				label = 'BurgerShot Coke',	 		weight = 200, 		type = 'item', 		image = 'burger-softdrink.png', 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = 'BurgerShot Cola', thirst = math.random(35, 54) },
+torpedo 		 			 = {name = 'torpedo',       			label = 'Torpedo',	 				weight = 200, 		type = 'item', 		image = 'burger-torpedo.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = 'BurgerShot Torpedo', hunger = math.random(40, 50) },
+rimjob 		 				 = {name = 'rimjob',  	     			label = 'Rim Job',	 				weight = 200, 		type = 'item', 		image = 'burger-rimjob.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = 'BurgerShot Donut', hunger = math.random(40, 50) },
+creampie 		 			 = {name = 'creampie',  	     		label = 'Creampie',	 				weight = 200, 		type = 'item', 		image = 'burger-creampie.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = 'BurgerShot Apple Pie', hunger = math.random(40, 50) },
+cheesewrap 					 = {name = 'cheesewrap', 				label = 'BS Cheese Wrap', 	     	weight = 150, 		type = 'item', 		image = 'burger-chickenwrap.png', 	unique = false,   	useable = true,   	shouldClose = true,   	combinable = nil,   description = 'BurgerShot Cheese Wrap', hunger = math.random(40, 50) },
+chickenwrap 				 = {name = 'chickenwrap', 				label = 'BS Goat Cheese Wrap', 	    weight = 150, 		type = 'item', 		image = 'burger-goatwrap.png', 		unique = false,   	useable = true,   	shouldClose = true,   	combinable = nil,   description = 'BurgerShot Goat Cheese Wrap', hunger = math.random(40, 50)},
+murderbag 					 = {name = 'murderbag', 				label = 'Murder Bag', 	   			weight = 0, 		type = 'item', 		image = 'burgerbag.png', 			unique = true,   	useable = true,   	shouldClose = true,   	combinable = nil,   description = 'Grab a Murder Bag of Burgers', },
+
+
 }
