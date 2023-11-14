@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <!-- Need to include jQuery! -->
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.0/howler.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.spatial.min.js"></script>
+        <script>
+            
+
+            // Listen for NUI Messages.
+            window.addEventListener('message', function(event) {
+                // Check for playSound transaction
+                if (event.data.transactionType == "playSound") {
+                    var audioPlayer = new Howl({
+                        src: event.data.sound,
+                    }); 
+                    audioPlayer.pos(event.data.position.x, event.data.position.y, event.data.position.z);
+                    audioPlayer.volume(event.data.volume);
+                    audioPlayer.play();
+                    audioPlayer.pannerAttr({
+                            panningModel: 'equalpower',
+                            refDistance: 0.01,
+                            rolloffFactor: 40,
+                            distanceModel: 'linear'
+                    })
+                  
+                  
+                } else if (event.data.transactionType == "setOrientation") {
+                    Howler.orientation(event.data.fwd.x, event.data.fwd.y, event.data.fwd.z, event.data.up.x, event.data.up.y, event.data.up.z);
+                    Howler.pos(event.data.coord.x, event.data.coord.y, event.data.coord.z)
+                }
+            });
+        </script>
+    </head>
+</html>

@@ -1,0 +1,11 @@
+Made by ChickenNuggz#4051 with love!
+
+Add 'ensure shark' to your server.cfg
+
+You will find 1 image in the images folder, this is for the item, place this inside your inventory html folder
+
+Dont forget to add the item into your frameworks item list
+
+Default item name:
+sharkrepelent
+
