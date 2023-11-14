@@ -1,0 +1,112 @@
+-- Name: layout | 2023-03-30T19:03:50Z
+Laser.new(
+  {vector3(261.253, 215.997, 96.595), vector3(261.253, 215.998, 97.501), vector3(261.251, 215.993, 98.303)},
+  {vector3(258.163, 217.049, 96.558), vector3(258.16, 217.039, 97.491), vector3(258.15, 217.013, 98.161)},
+  {travelTimeBetweenTargets = {1.0, 1.0}, waitTimeAtTargets = {0.0, 0.0}, name = "layout"}
+)
+
+-- Name: left2 | 2023-03-30T19:20:48Z
+Laser.new(
+  {vector3(256.548, 217.695, 96.541), vector3(256.562, 217.736, 97.618), vector3(256.575, 217.77, 98.671)},
+  {vector3(253.49, 218.847, 96.474), vector3(253.472, 218.798, 97.54), vector3(253.472, 218.799, 98.388)},
+  {travelTimeBetweenTargets = {1.0, 1.0}, waitTimeAtTargets = {0.0, 0.0}, name = "left2"}
+)
+
+-- Name: left3 | 2023-03-30T19:21:19Z
+Laser.new(
+  {vector3(251.831, 219.375, 96.605), vector3(251.844, 219.412, 97.369), vector3(251.847, 219.418, 98.017)},
+  {vector3(248.791, 220.569, 96.557), vector3(248.787, 220.558, 97.349), vector3(248.77, 220.511, 98.008)},
+  {travelTimeBetweenTargets = {1.0, 1.0}, waitTimeAtTargets = {0.0, 0.0}, name = "left3"}
+)
+
+-- Name: left | 2023-03-30T19:21:55Z
+Laser.new(
+  {vector3(247.157, 221.165, 96.619), vector3(247.158, 221.167, 97.468), vector3(247.156, 221.161, 98.159)},
+  {vector3(244.115, 222.358, 96.659), vector3(244.094, 222.3, 97.385), vector3(244.098, 222.31, 98.053)},
+  {travelTimeBetweenTargets = {1.0, 1.0}, waitTimeAtTargets = {0.0, 0.0}, name = "left"}
+)
+
+-- Name: left-low | 2023-03-30T19:41:09Z
+Laser.new(
+  vector3(261.255, 216.003, 96.598),
+  {vector3(244.082, 222.266, 96.563)},
+  {travelTimeBetweenTargets = {1.0, 1.0}, waitTimeAtTargets = {0.0, 0.0}, randomTargetSelection = true, name = "left-low"}
+)
+
+-- Name: right-low | 2023-03-30T19:45:19Z
+Laser.new(
+  vector3(259.196, 224.972, 96.582),
+  {vector3(246.71, 229.487, 96.555)},
+  {travelTimeBetweenTargets = {1.0, 1.0}, waitTimeAtTargets = {0.0, 0.0}, randomTargetSelection = true, name = "right-low"}
+)
+
+-- Name: asd | 2023-03-30T19:57:24Z
+Laser.new(
+  vector3(259.2, 224.983, 96.614),
+  {vector3(246.688, 229.426, 96.656)},
+  {travelTimeBetweenTargets = {1.0, 1.0}, waitTimeAtTargets = {0.0, 0.0}, randomTargetSelection = true, name = "asd"}
+)
+
+-- Name: tasd | 2023-03-30T19:59:52Z
+Laser.new(
+  vector3(259.217, 225.028, 96.602),
+  {vector3(246.684, 229.415, 96.644)},
+  {travelTimeBetweenTargets = {1.0, 1.0}, waitTimeAtTargets = {0.0, 0.0}, randomTargetSelection = true, name = "tasd"}
+)
+
+-- Name: fuck | 2023-03-30T20:05:26Z
+Laser.new(
+  vector3(259.211, 225.013, 97.042),
+  {vector3(246.709, 229.485, 97.068)},
+  {travelTimeBetweenTargets = {1.0, 1.0}, waitTimeAtTargets = {0.0, 0.0}, randomTargetSelection = true, name = "fuck"}
+)
+
+-- Name: candrex | 2023-03-30T20:09:11Z
+Laser.new(
+  vector3(246.699, 229.456, 96.627),
+  {vector3(259.211, 225.014, 96.584)},
+  {travelTimeBetweenTargets = {1.0, 1.0}, waitTimeAtTargets = {0.0, 0.0}, randomTargetSelection = true, name = "candrex"}
+)
+
+-- Name: adnreas | 2023-03-30T20:11:08Z
+Laser.new(
+  vector3(246.723, 229.522, 97.594),
+  {vector3(254.507, 226.727, 97.733)},
+  {travelTimeBetweenTargets = {1.0, 1.0}, waitTimeAtTargets = {0.0, 0.0}, randomTargetSelection = true, name = "adnreas"}
+)
+
+-- Name: moving1 | 2023-03-31T05:35:52Z
+Laser.new(
+  {vector3(260.816, 224.337, 96.542), vector3(260.84, 224.403, 98.268)},
+  {vector3(263.875, 223.198, 96.564), vector3(263.886, 223.23, 98.191)},
+  {travelTimeBetweenTargets = {1.0, 1.0}, waitTimeAtTargets = {0.0, 0.0}, name = "moving1"}
+)
+
+-- Name: vault | 2023-03-31T05:54:48Z
+Laser.new(
+  vector3(239.342, 226.291, 96.392),
+  {vector3(240.475, 229.456, 96.493)},
+  {travelTimeBetweenTargets = {1.0, 1.0}, waitTimeAtTargets = {0.0, 0.0}, randomTargetSelection = true, name = "vault"}
+)
+
+-- Name: midsection | 2023-03-31T06:00:46Z
+Laser.new(
+  vector3(253.479, 221.145, 96.504),
+  {vector3(254.583, 224.321, 96.412)},
+  {travelTimeBetweenTargets = {1.0, 1.0}, waitTimeAtTargets = {0.0, 0.0}, randomTargetSelection = true, name = "midsection"}
+)
+
+-- Name: moving2 | 2023-03-31T06:06:48Z
+Laser.new(
+  {vector3(242.424, 222.797, 96.569), vector3(242.432, 222.817, 98.184)},
+  {vector3(239.375, 223.961, 96.573), vector3(239.372, 223.954, 98.282)},
+  {travelTimeBetweenTargets = {1.0, 1.0}, waitTimeAtTargets = {0.0, 0.0}, name = "moving2"}
+)
+
+-- Name: moving3 | 2023-03-31T06:09:07Z
+Laser.new(
+  {vector3(241.987, 231.139, 96.571), vector3(242.005, 231.188, 98.427)},
+  {vector3(245.13, 230.231, 96.564), vector3(245.119, 230.2, 98.306)},
+  {travelTimeBetweenTargets = {1.0, 1.0}, waitTimeAtTargets = {0.0, 0.0}, name = "moving3"}
+)
+
