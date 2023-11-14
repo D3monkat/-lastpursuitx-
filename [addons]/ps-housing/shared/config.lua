@@ -10,7 +10,7 @@ Config = {}
 Config.Target = "ox" -- "ox" or "qb"
 Config.Notify = "ox" -- "ox" or "qb"
 Config.Radial = "ox" -- "ox" or "qb"
-Config.Inventory = "qb" -- "ox" or "qb"
+Config.Inventory = "ox" -- "ox" or "qb"
 Config.Logs = "qb" -- "qb"
 
 -- Anyone provided with keys to a property has the ability to modify its furnishings.
@@ -29,7 +29,7 @@ end
 Config.EnableLogs = true
 
 -- Enables Dynamic Doors
-Config.DynamicDoors = false
+Config.DynamicDoors = true
 
 Config.PoliceJobNames = {  -- add multiple police jobs that are allowed to raid properties!
     "police",
@@ -44,7 +44,7 @@ Config.RaidTimer = 5  -- 5 minutes
 Config.RaidItem = "police_stormram"  -- The item required to raid a property
 
 -- If you are using ox_inventory, it is encouraged to use the consume property within data/items.lua and keeping this config option false
-Config.ConsumeRaidItem = false          -- Whether or not to consume the raid item upon successful entry.
+Config.ConsumeRaidItem = true          -- Whether or not to consume the raid item upon successful entry.
 
 Config.RealtorJobName = "realestate" -- Set your Real Estate job here
 
@@ -63,7 +63,7 @@ Config.Commissions = {
 }
 
 -- Set this value to false if you don't want to assign a starting apartment.
-Config.StartingApartment = true
+Config.StartingApartment = false
 
 Config.Apartments = {
     ["Integrity Way"] = {
