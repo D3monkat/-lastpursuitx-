@@ -1,0 +1,80 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Expert - Spawn Location</title>
+        <link rel="stylesheet" type="text/css" href="reset.css"> <!-- RESET CSS -->
+        <link rel="stylesheet" type="text/css" href="style.css"> <!-- STYLE CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+    <body>
+        <div class="container Stylecontainer" id="noselect">
+            <img src="./Map.png" class="MapStyle">
+
+            <div class="spawn-locations-new">
+                <!-- Locations auto generated -->
+            </div>
+
+            <div class="BtnBodyClass">
+                <div class="TextFoJSCode">Select a Location</div>
+                <div class="SelectLoc-Border-Btn"></div>
+
+                <div class="dropdown BTNStyleForSelect RedBTN">
+                    <div class="select">
+                        <span style="color: black;">HOUSES <i style="color: black;" class="fas fa-home"></i> </span>
+                        <i style="color: black;" class="fa fa-chevron-left"></i>
+                    </div>
+                    <input type="hidden" name="gender">
+                    <ul class="dropdown-menu"></ul>
+                </div>
+
+                <!-- <div class="BTNStyleForSelect RedBTN">HOUSES <i style="color: black;" class="fas fa-home"></i></div> -->
+                <div class="BTNStyleForSelect LastBTN" id="IconClassStyle" data-location="current" data-type="current" data-label="Last Location">Last Location <i style="color: black;" class="fas fa-map-marker-alt"></i></div>
+                <div class="BTNStyleForSelect GreenBTN">SPAWN <i style="color: black;" class="fas fa-map-marked-alt"></i></div>
+            </div>
+        </div>
+
+        <div class="AddCoord Stylecontainer">
+            <img src="./Map.png" class="MapStyle">
+            <div class="AddCoordBody">
+                <div class="StyleTextBTNN">Name:</div>
+                <input class="InputStule" id="VecName" type="text" placeholder="Name" style="width: 66.5%;">
+
+                <div class="StyleTextBTNN">label:</div>
+                <input class="InputStule" id="VecLabel" type="text" placeholder="Label" style="width: 70%;">
+
+                <div class="StyleTextBTNN">X:</div>
+                <input class="InputStule" id="VecX" type="number" placeholder="Vector X">
+
+                <div class="StyleTextBTNN">Y:</div>
+                <input class="InputStule" id="VecY" type="number" placeholder="Vector Y">
+
+                <div class="StyleTextBTNN">Z:</div>
+                <input class="InputStule" id="VecZ" type="number" placeholder="Vector Z">
+
+                <div class="StyleTextBTNN">H:</div>
+                <input class="InputStule" id="VecH" type="number" placeholder="Vector H">
+
+                <div class="StyleTextBTNN">Blip Top:</div>
+                <input class="InputStule" id="BlipTop" type="number" placeholder="Blip Top" style="width: 60.5%;">
+
+                <div class="StyleTextBTNN">Blip Left:</div>
+                <input class="InputStule" id="BlipLeft" type="number" placeholder="Blip Left" style="width: 60.5%;">
+                <div style="text-align: center;">
+                    <div class="BTNStyleForCopy ApartBTN">Copy For apartments <i style="color: black;" class="fas fa-building"></i></div>
+                    <div class="BTNStyleForCopy SpawnBTN">Copy For Spawn Location <i style="color: black;" class="fas fa-map-marker-alt"></i></div>
+                    <div class="BTNStyleForCopy CloseBTN">Close <i style="color: black;" class="fas fa-times"></i></div>
+                </div>
+            </div>
+            <div class="AddBlipForMap">
+            </div>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

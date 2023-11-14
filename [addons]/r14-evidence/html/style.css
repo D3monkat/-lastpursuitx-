@@ -1,0 +1,50 @@
+#corner1 {
+  position: relative;
+  display: none;
+  margin: 280px 1400px 0 0;
+  left: 10vh;
+  width: 485px;
+  height: 383px;
+  padding: 54px 17px 10px 144px;
+  background: url(images/corner.png);
+  portrait: url(images/corner.png);
+}
+
+#corner2 {
+  position: relative;
+  display: none;
+  margin: 280px 1400px 0 0;
+  left: 10vh;
+  width: 485px;
+  height: 383px;
+  padding: 54px 17px 10px 144px;
+  background: url(images/corner.png);
+  portrait: url(images/corner.png);
+  transform: rotate(90deg);
+}
+
+#corner3 {
+  position: relative;
+  display: none;
+  margin: 280px 1400px 0 0;
+  left: 10vh;
+  width: 485px;
+  height: 383px;
+  padding: 54px 17px 10px 144px;
+  background: url(images/corner.png);
+  portrait: url(images/corner.png);
+  transform: rotate(180deg);
+}
+
+#corner4 {
+  position: relative;
+  display: none;
+  margin: 280px 1400px 0 0;
+  left: 10vh;
+  width: 485px;
+  height: 383px;
+  padding: 54px 17px 10px 144px;
+  background: url(images/corner.png);
+  portrait: url(images/corner.png);
+  transform: rotate(270deg);
+}

@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.container {
+    font-family: 'Poppins', sans-serif;
+}
+
+.Stylecontainer{
+    display: block;
+    background: #266cb2;
+    width: 100%;
+    height: 100%;
+}
+
+.MapStyle{
+    height: 83%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+
+.selected {
+    color: #259900 !important;
+    transition: 0.15s;
+}
+.selected:hover {
+    color: #1b6d00 !important;
+}
+
+.spawn-locations-new{
+    width: 100%;
+    height: 100%;
+}
+
+.IconClassStyle{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: #fb3d3d;
+    font-size: 2.4vh;
+    text-shadow: 0px 2px 2px black;
+    transition: 0.15s;
+}
+
+.IconClassStyle:hover{
+    color: #bd2c2c;
+}
+
+.IconClassStyle2{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: #ffa42b;
+    font-size: 2.4vh;
+    text-shadow: 0px 2px 2px black;
+    transition: 0.15s;
+}
+
+.IconClassStyle2:hover{
+    color: #dd8d23;
+}
+
+.BtnBodyClass{
+    position: absolute;
+    display: block;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 20%;
+    background: #202731;
+    padding: 0.6% 0;
+    text-align: center;
+    box-shadow: 1px 1px 6px rgb(5, 5, 5);
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 1.8vh;
+    border-radius: 5px;
+}
+
+.BTNStyleForSelect{
+    display: inline-block;
+    border-radius: 10px;
+    color: black;
+    padding: 2%;
+    box-shadow: 1px 1px 6px rgba(5, 5, 5, 0.152);
+    transition: 0.25s;
+    font-weight: bold;
+    font-size: 1.4vh;
+}
+
+.GreenBTN{
+    background: #8ee074;
+}
+
+.GreenBTN:hover{
+    background: #6cac59;
+}
+
+.RedBTN{
+    background: #fed358;
+}
+
+.RedBTN:hover{
+    background: #d5af49;
+}
+
+.LastBTN{
+    background: #44cafa;
+}
+
+.LastBTN:hover{
+    background: #3aadd6;
+}
+
+.SelectLoc-Border-Btn{
+    margin: 4% 10%;
+    width: 80%;
+    border-bottom: 0.3vh solid rgb(255, 255, 255);
+}
+
+.AddCoord{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.AddCoordBody{
+    position: absolute;
+    display: block;
+    top: 5%;
+    left: 1%;
+    z-index: 1;
+    width: 15%;
+    background: #202731;
+    padding: 0.6%;
+    box-shadow: 1px 1px 6px rgb(5, 5, 5);
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 1.8vh;
+    border-radius: 5px;
+}
+
+.StyleTextBTNN{
+    display: inline;
+}
+
+.InputStule{
+    position: relative;
+    margin-left: 1%;
+    margin-bottom: 5%;
+    width: 82%;
+    border: none;
+    background: none;
+    outline: none;
+    text-indent: 1vh;
+    text-align: left;
+    line-height: 3.9vh;
+    font-size: 1.75vh;
+    overflow: hidden;
+    color: white;
+    border-bottom: .1vh solid #f5f5f5ad;
+    transition: 0.25s;
+}
+
+.InputStule:focus {
+    border-bottom: .1vh solid #8ee074;
+}
+
+.InputStule::-webkit-inner-spin-button {
+    display: none;
+}
+
+.AddBlipForMap{
+    width: 100%;
+    height: 100%;
+}
+
+.BTNStyleForCopy{
+    display: inline-block;
+    border-radius: 10px;
+    color: black;
+    padding: 2%;
+    margin: 1% 0;
+    box-shadow: 1px 1px 6px rgba(5, 5, 5, 0.152);
+    transition: 0.25s;
+    font-weight: bold;
+    font-size: 1.4vh;
+    width: 85%;
+}
+
+.ApartBTN{
+    background: #44cafa;
+}
+.ApartBTN:hover{
+    background: #3aaad3;
+}
+
+.SpawnBTN{
+    background: #8ee074;
+}
+.SpawnBTN:hover{
+    background: #6cac59;
+}
+
+.CloseBTN{
+    background: #f5a15b;
+}
+.CloseBTN:hover{
+    background: #c27e47;
+}
+
+.dropdown {
+    transition: all .5s ease;
+    outline: none;
+}
+
+.dropdown .select {
+    cursor: pointer;
+    display: block;
+}
+
+.dropdown .select > i {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    float: right;
+}
+
+.dropdown.active .select > i {
+    transform: rotate(-90deg)
+}
+
+.dropdown .dropdown-menu {
+    position: absolute;
+    background-color: #00000093;
+    padding-right: 2%;
+    max-width: 100%;
+    padding-top: 5%;
+    margin-left: -2%;
+    overflow: hidden;
+    display: none;
+    max-height: 420px;
+    overflow-y: auto;
+    z-index: 9
+}
+
+.dropdown .dropdown-menu li {
+    width: 100%;
+    text-align: left;
+    padding: 3%;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    border-bottom: .1vh solid #f5f5f5ad;
+}
+
+.dropdown .dropdown-menu {
+    list-style: none
+}
+
+.dropdown .dropdown-menu li:hover {
+    background-color: #2e2e2e;
+}
+
+.dropdown .dropdown-menu li:active {
+    background-color: #00000093;
+}
