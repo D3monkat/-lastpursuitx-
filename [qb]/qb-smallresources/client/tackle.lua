@@ -1,37 +1,30 @@
-local QBCore = exports['qb-core']:GetCoreObject()
-
-local function tackleAnim()
-    local ped = PlayerPedId()
-    if not HasAnimDictLoaded("swimming@first_person@diving") then
-        RequestAnimDict("swimming@first_person@diving")
-        while not HasAnimDictLoaded("swimming@first_person@diving") do
-            Wait(10)
+lib.addKeybind({
+    name = 'tackle',
+    description = 'Tackle',
+    defaultKey = 'E',
+    onReleased = function(self)
+    --     if cache.vehicle then return end
+ 	-- if QBX.PlayerData.metadata.ishandcuffed then return end
+	if IsPedSprinting(cache.ped) or IsPedRunning(cache.ped) then
+            local coords = GetEntityCoords(cache.ped)
+            local targetId, targetPed, _ = lib.getClosestPlayer(coords, 1.6, false)
+            if not targetPed then return end
+            if IsPedInAnyVehicle(targetPed, true) then return end
+            self:disable(true)
+            TriggerServerEvent('tackle:server:TacklePlayer', GetPlayerServerId(targetId))
+            lib.requestAnimDict('swimming@first_person@diving')
+            TaskPlayAnim(cache.ped, 'swimming@first_person@diving', 'dive_run_fwd_-45_loop', 3.0, 3.0, -1, 49, 0, false, false, false)
+            Wait(250)
+            ClearPedTasks(cache.ped)
+            SetPedToRagdoll(cache.ped, 150, 150, 0, 0, 0, 0)
+            RemoveAnimDict('swimming@first_person@diving')
+            SetTimeout(1000, function ()
+                self:disable(false)
+            end)
         end
     end
-    if IsEntityPlayingAnim(ped, "swimming@first_person@diving", "dive_run_fwd_-45_loop", 3) then
-        ClearPedTasksImmediately(ped)
-    else
-        TaskPlayAnim(ped, "swimming@first_person@diving", "dive_run_fwd_-45_loop", 3.0, 3.0, -1, 49, 0, false, false, false)
-        Wait(250)
-        ClearPedTasksImmediately(ped)
-        SetPedToRagdoll(ped, 150, 150, 0, false, false, false)
-    end
-end
-
-RegisterCommand('tackle', function()
-    local closestPlayer, distance = QBCore.Functions.GetClosestPlayer()
-    local ped = PlayerPedId()
-    if distance ~= -1 and distance < 2 and GetEntitySpeed(ped) > 2.5 and not IsPedInAnyVehicle(ped, false) and not QBCore.Functions.GetPlayerData().metadata.ishandcuffed and not IsPedRagdoll(ped) then
-        TriggerServerEvent("tackle:server:TacklePlayer", GetPlayerServerId(closestPlayer))
-        tackleAnim()
-    end
-end)
-
-RegisterKeyMapping('tackle', 'Tackle Someone', 'KEYBOARD', 'LMENU')
+})
 
 RegisterNetEvent('tackle:client:GetTackled', function()
-    SetPedToRagdoll(PlayerPedId(), math.random(1000, 6000), math.random(1000, 6000), 0, false, false, false)
-    TimerEnabled = true
-    Wait(1500)
-    TimerEnabled = false
+	SetPedToRagdoll(cache.ped, 7000, 7000, 0, 0, 0, 0)
 end)

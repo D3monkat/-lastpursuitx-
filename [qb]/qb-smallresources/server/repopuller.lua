@@ -32,4 +32,5 @@ end)
 
 QBCore.Commands.Add("devpull", 'Pull the repo to live', {}, false, function(source)
     PullRepo()
+    print('Repo has been pulled!')
 end, 'god')
