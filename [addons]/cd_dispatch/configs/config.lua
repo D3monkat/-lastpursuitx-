@@ -248,11 +248,11 @@ Config.PoliceAlerts = {
 
     --[[SPEEDTRAP CONFIG]]--
     SpeedTrap = {
-        ENABLE = true, ----Do you want speeding vehicles to alert police?
-        check_owner_for_fine = true, --Do you want players to only be fined in vehicles they own? (if enabled, players in stolen cars will not be fined).
+        ENABLE = false, ----Do you want speeding vehicles to alert police?
+        check_owner_for_fine = false, --Do you want players to only be fined in vehicles they own? (if enabled, players in stolen cars will not be fined).
 
         Blip = {
-            ENABLE = true, --Do you want speed traps to display on a players minimap?
+            ENABLE = false, --Do you want speed traps to display on a players minimap?
             sprite = 184, --Icon of the blip.
             scale = 0.7, --Size of the blip.
             colour = 0, --Colour of the blip.
@@ -264,17 +264,17 @@ Config.PoliceAlerts = {
             --coords: The location of the speed trap.
             --distance: The distance a player must be from the 'coords^' to alert the speed trap. 
             --speed_limit: The minimum speed to alert the speed trap (in MPH). 
-            --fine_amount: The amount the player will be fined (set to 0 to not fine a player).
-            [1] = {coords = vector3(1051.42, 331.11, 84.00), distance = 9, speed_limit = 150, fine_amount = 500 }, --LS Freeway.
-            [2] = {coords = vector3(544.43, -373.24, 33.14), distance = 9, speed_limit = 150, fine_amount = 5000 }, --Into Legion.
-            [3] = {coords = vector3(-2612.10, 2940.81, 16.67), distance = 15, speed_limit = 150, fine_amount = 1000 }, --Zancuda.
-            [4] = {coords = vector3(287.94, -517.44, 42.89), distance = 15, speed_limit = 100, fine_amount = 500 }, --Pillbox.
-            [5] = {coords = vector3(2792.73, 4407.68, 48.44), distance = 24, speed_limit = 150, fine_amount = 1000 }, --Sandy Freeway.
-            [6] = {coords = vector3(577.11, -1028.32, 37.07), distance = 15, speed_limit = 100, fine_amount = 1000 }, --Mission Row.
-            [7] = {coords = vector3(114.83, -797.89, 30.97), distance = 15, speed_limit = 100, fine_amount = 2000 }, --Legion Square.
-            [8] = {coords = vector3(74.33, -163.30, 54.67), distance = 15, speed_limit = 100, fine_amount = 4000 }, --Pink Cage.
-            [9] = {coords = vector3(28.19, -971.05, 28.96), distance = 15, speed_limit = 100, fine_amount = 1000 }, --PDM.
-            --[10] = {coords = vector3(0, 0, 0), distance = 15, speed_limit = 50, fine_amount = 1000 },
+            -- --fine_amount: The amount the player will be fined (set to 0 to not fine a player).
+            -- [1] = {coords = vector3(1051.42, 331.11, 84.00), distance = 9, speed_limit = 150, fine_amount = 500 }, --LS Freeway.
+            -- [2] = {coords = vector3(544.43, -373.24, 33.14), distance = 9, speed_limit = 150, fine_amount = 5000 }, --Into Legion.
+            -- [3] = {coords = vector3(-2612.10, 2940.81, 16.67), distance = 15, speed_limit = 150, fine_amount = 1000 }, --Zancuda.
+            -- [4] = {coords = vector3(287.94, -517.44, 42.89), distance = 15, speed_limit = 100, fine_amount = 500 }, --Pillbox.
+            -- [5] = {coords = vector3(2792.73, 4407.68, 48.44), distance = 24, speed_limit = 150, fine_amount = 1000 }, --Sandy Freeway.
+            -- [6] = {coords = vector3(577.11, -1028.32, 37.07), distance = 15, speed_limit = 100, fine_amount = 1000 }, --Mission Row.
+            -- [7] = {coords = vector3(114.83, -797.89, 30.97), distance = 15, speed_limit = 100, fine_amount = 2000 }, --Legion Square.
+            -- [8] = {coords = vector3(74.33, -163.30, 54.67), distance = 15, speed_limit = 100, fine_amount = 4000 }, --Pink Cage.
+            -- [9] = {coords = vector3(28.19, -971.05, 28.96), distance = 15, speed_limit = 100, fine_amount = 1000 }, --PDM.
+            -- --[10] = {coords = vector3(0, 0, 0), distance = 15, speed_limit = 50, fine_amount = 1000 },
         }
     },
 }
