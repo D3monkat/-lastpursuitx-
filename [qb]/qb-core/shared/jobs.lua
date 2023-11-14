@@ -25,6 +25,86 @@ QBShared.Jobs = {
 			['4'] = { name = 'Chief', isboss = true, payment = 150 },
 		},
 	},
+
+	beanmachine = {
+		label = 'Bean Machine',
+		defaultDuty = true,
+		grades = {
+            ['0'] = { name = 'Recruit', payment = 50 },
+			['1'] = { name = 'Novice', payment = 75 },
+			['2'] = { name = 'Experienced', payment = 100 },
+			['3'] = { name = 'Advanced', payment = 125 },
+			['4'] = { name = 'Manager', isboss = true, payment = 150 },
+        },
+	},
+	burgershot = {
+		label = 'BurgerShot',
+		defaultDuty = true,
+		offDutyPay = false,
+		grades = {
+            ['0'] = { name = 'Recruit', payment = 50 },
+			['1'] = { name = 'Novice', payment = 75 },
+			['2'] = { name = 'Experienced', payment = 100 },
+			['3'] = { name = 'Advanced', payment = 125 },
+			['4'] = { name = 'Manager', isboss = true, payment = 150 },
+        },
+	},
+
+	catcafe = {
+		label = 'Cat Cafe',
+		defaultDuty = true,
+		grades = {
+            ['0'] = { name = 'Recruit', payment = 50 },
+			['1'] = { name = 'Novice', payment = 75 },
+			['2'] = { name = 'Experienced', payment = 100 },
+			['3'] = { name = 'Advanced', payment = 125 },
+			['4'] = { name = 'Manager', isboss = true, payment = 150 },
+        },
+	},
+	upnatom = {
+		label = "Up n Atom",
+		defaultDuty = true,
+		grades = {
+            ['0'] = { name = 'Recruit', payment = 50 },
+			['1'] = { name = 'Novice', payment = 75 },
+			['2'] = { name = 'Experienced', payment = 100 },
+			['3'] = { name = 'Advanced', payment = 125 },
+			['4'] = { name = 'Manager', isboss = true, payment = 150 },
+        },
+	},
+	hornys = {
+		label = "Horny's",
+		defaultDuty = true,
+		grades = {
+            ['0'] = { name = 'Recruit', payment = 50 },
+			['1'] = { name = 'Novice', payment = 75 },
+			['2'] = { name = 'Experienced', payment = 100 },
+			['3'] = { name = 'Advanced', payment = 125 },
+			['4'] = { name = 'Manager', isboss = true, payment = 150 },
+        },
+	},
+	postop = {
+        label = 'PostOp',
+        defaultDuty = true,
+        offDutyPay = false,
+        grades = {
+            ['0'] = {
+                name = 'Driver',
+                payment = 50
+            },
+            ['1'] = {
+                name = 'Manager',
+                payment = 50
+            },
+            ['2'] = {
+                name = 'Boss',
+                isboss = true,
+                payment = 50
+            },
+        },
+    },
+
+
 	ambulance = {
 		label = 'EMS',
 		type = 'ems',
