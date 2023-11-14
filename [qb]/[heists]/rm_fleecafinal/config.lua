@@ -3,8 +3,8 @@ Config = {}
 
 Config['FleecaHeist'] = {
     ['framework'] = {
-        name = 'ESX', -- Only ESX or QB.
-        scriptName = 'es_extended', -- Framework script name work framework exports. (Example: qb-core or es_extended)
+        name = 'qb', -- Only ESX or QB.
+        scriptName = 'qb-core', -- Framework script name work framework exports. (Example: qb-core or es_extended)
         eventName = 'esx:getSharedObject', -- If your framework using trigger event for shared object, you can set in here.
     },
     ['bagClothesID'] = 45,

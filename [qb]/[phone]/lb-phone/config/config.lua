@@ -2,7 +2,7 @@ Config = {}
 Config.Debug = false -- Set to true to enable debug mode
 
 --[[ FRAMEWORK OPTIONS ]] --
-Config.Framework = "esx"
+Config.Framework = "qb"
 --[[
     Supported frameworks:
         * esx: es_extended, https://github.com/esx-framework/esx-legacy
@@ -137,7 +137,7 @@ Config.Valet = {}
 Config.Valet.Enabled = true -- allow players to get their vehicles from the phone
 Config.Valet.Price = 100 -- price to get your vehicle
 
-Config.HouseScript = "loaf_housing" --[[
+Config.HouseScript = "ps-housing" --[[
     The housing script you use on your server
     Supported:
         * loaf_housing - https://store.loaf-scripts.com/package/4310850
@@ -146,7 +146,7 @@ Config.HouseScript = "loaf_housing" --[[
 
 --[[ VOICE OPTIONS ]] --
 Config.Voice = {}
-Config.Voice.CallEffects = false -- enable call effects while on speaker mode? (NOTE: This may create sound-issues if you have too many submixes registered in your server)
+Config.Voice.CallEffects = true -- enable call effects while on speaker mode? (NOTE: This may create sound-issues if you have too many submixes registered in your server)
 Config.Voice.System = "pma"
 --[[
     Supported voice systems:
@@ -290,11 +290,11 @@ Config.MaxTransferAmount = 1000000 -- The maximum amount of money that can be tr
 Config.EnableMessagePay = true -- Allow players to pay other players via messages?
 Config.EnableVoiceMessages = true -- Allow players to send voice messages?
 
-Config.CityName = "Los Santos" -- The name that's being used in the weather app etc.
-Config.RealTime = true -- if true, the time will use real life time depending on where the user lives, if false, the time will be the ingame time.
+Config.CityName = "PursuitCity" -- The name that's being used in the weather app etc.
+Config.RealTime = false -- if true, the time will use real life time depending on where the user lives, if false, the time will be the ingame time.
 Config.CustomTime = false -- NOTE: disable Config.RealTime if using this. you can set this to a function that returns custom time, as a table: { hour = 0-24, minute = 0-60 }
 
-Config.EmailDomain = "lbphone.com"
+Config.EmailDomain = "Playhaven.net"
 
 Config.DeleteMessages = true -- allow players to delete messages in the messages app?
 
