@@ -32,5 +32,4 @@ end)
 
 QBCore.Commands.Add("devpull", 'Pull the repo to live', {}, false, function(source)
     PullRepo()
-    QBCore.Functions.Notify('pulled the stuff. dont spam this.', 'success', 5000)
 end, 'god')
