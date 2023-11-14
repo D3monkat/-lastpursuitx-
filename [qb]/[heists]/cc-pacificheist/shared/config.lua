@@ -6,8 +6,8 @@ Config.MinCops = 0 -- Minimun amount of cops needed to start the robbery
 
 Config.ResetTimer = 240 -- Minutes before the bank can be robbed again (timer starts when police reset security systems)
 
-Config.Doorlock = "qb" -- QB / OX
-Config.Inventory = "qb" -- QB / LJ / OX / CUSTOM (Add code in server/open.lua)
+Config.Doorlock = "ox" -- QB / OX
+Config.Inventory = "ox" -- QB / LJ / OX / CUSTOM (Add code in server/open.lua)
 
 Config.CoreName = "qb-core" -- Change the name of the core, if you've renamed qb-core
 Config.TargetName = "qb-target" -- Change the name of target, if you've renamed qb-target

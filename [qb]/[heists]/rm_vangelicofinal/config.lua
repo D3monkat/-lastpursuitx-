@@ -3,8 +3,8 @@ Config = {}
 
 Config['VangelicoHeist'] = {
     ['framework'] = {
-        name = 'ESX', -- Only ESX or QB.
-        scriptName = 'es_extended', -- Framework script name work framework exports. (Example: qb-core or es_extended)
+        name = 'qB', -- Only ESX or QB.
+        scriptName = 'qb-core', -- Framework script name work framework exports. (Example: qb-core or es_extended)
         eventName = 'esx:getSharedObject', -- If your framework using trigger event for shared object, you can set in here.
         targetScript = 'ox_target' -- Target script name (qtarget or qb-target or ox_target)
     },
