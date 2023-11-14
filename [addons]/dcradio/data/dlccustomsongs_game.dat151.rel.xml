@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dat151>
+    <Version value="6353781" />
+    <Items>
+        <Item type="RadioStationList" ntOffset="0">
+            <Name>radio_stations_dlc</Name>
+            <Stations>
+                <Item>radio_38_custom_station</Item>
+                <Item>radio_39_custom_station</Item>
+                <Item>radio_40_custom_station</Item>
+                <Item>radio_41_custom_station</Item>
+            </Stations>
+        </Item>
+        <Item type="RadioStation" ntOffset="0">
+            <Name>radio_38_custom_station</Name>
+            <Unk00 value="0xAA9009AA" />
+            <WheelPosition value="25000" />
+            <Unk02 value="0" />
+            <MusicGenre value="3" />
+            <RadioName>RADIO_38_CUSTOM</RadioName>
+            <Unk04 value="0" />
+            <MusicList>
+                <Item>customsongs_radiotrack01</Item>
+            </MusicList>
+        </Item>
+        <Item type="RadioStation" ntOffset="0">
+            <Name>radio_39_custom_station</Name>
+            <Unk00 value="0xAA9009AA" />
+            <WheelPosition value="26000" />
+            <Unk02 value="0" />
+            <MusicGenre value="3" />
+            <RadioName>RADIO_39_CUSTOM</RadioName>
+            <Unk04 value="0" />
+            <MusicList>
+                <Item>customsongs_radiotrack02</Item>
+            </MusicList>
+        </Item>
+        <Item type="RadioStation" ntOffset="0">
+            <Name>radio_40_custom_station</Name>
+            <Unk00 value="0xAA9009AA" />
+            <WheelPosition value="27000" />
+            <Unk02 value="0" />
+            <MusicGenre value="3" />
+            <RadioName>RADIO_40_CUSTOM</RadioName>
+            <Unk04 value="0" />
+            <MusicList>
+                <Item>customsongs_radiotrack03</Item>
+            </MusicList>
+        </Item>
+        <Item type="RadioStation" ntOffset="0">
+            <Name>radio_41_custom_station</Name>
+            <Unk00 value="0xAA9009AA" />
+            <WheelPosition value="28000" />
+            <Unk02 value="0" />
+            <MusicGenre value="3" />
+            <RadioName>RADIO_41_CUSTOM</RadioName>
+            <Unk04 value="0" />
+            <MusicList>
+                <Item>customsongs_radiotrack04</Item>
+            </MusicList>
+        </Item>
+        <Item type="RadioTrack" ntOffset="0">
+            <Name>customsongs_radiotrack01</Name>
+            <Unk00 value="0xAAAAAAA0" />
+            <TrackType value="2" />
+            <Unk01 value="0" />
+            <Unk02 value="0" />
+            <Unk03 value="10" />
+            <Unk04 value="0" />
+            <Unk05 value="0" />
+            <Unk06 value="0" />
+            <Unk07 value="0" />
+            <Unk08 value="0" />
+            <Unk09 value="0" />
+            <Unk10 value="0" />
+            <Unk11 value="0" />
+            <Unk12 value="0" />
+            <Unk13 value="0" />
+            <Unk14 value="0" />
+            <Unk15 value="0" />
+            <Unk16 value="0" />
+            <Tracks>
+                <Item>
+                    <Hash0 />
+                    <Hash1>chasethesun_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>getshaky_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>heroine_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>lalalala_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>lastminute_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>likeabaka_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>moveyourbody_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>muzikasefaremix_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>pushup_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>smhardstyle_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>theobananenbrot_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>wearethepeople_song</Hash1>
+                </Item>
+            </Tracks>
+        </Item>
+        <Item type="RadioTrack" ntOffset="0">
+            <Name>customsongs_radiotrack02</Name>
+            <Unk00 value="0xAAAAAAA0" />
+            <TrackType value="2" />
+            <Unk01 value="0" />
+            <Unk02 value="0" />
+            <Unk03 value="10" />
+            <Unk04 value="0" />
+            <Unk05 value="0" />
+            <Unk06 value="0" />
+            <Unk07 value="0" />
+            <Unk08 value="0" />
+            <Unk09 value="0" />
+            <Unk10 value="0" />
+            <Unk11 value="0" />
+            <Unk12 value="0" />
+            <Unk13 value="0" />
+            <Unk14 value="0" />
+            <Unk15 value="0" />
+            <Unk16 value="0" />
+            <Tracks>
+                <Item>
+                    <Hash0 />
+                    <Hash1>barbiegirl_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>notfair_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>worldholdon_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>californiadreamin_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>sexyback_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>layallyourlove_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>coldasice_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>babydonthurtme_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>swalla_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>gangstaparadise_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>bemylover_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>99luftballons_song</Hash1>
+                </Item>
+            </Tracks>
+        </Item>
+        <Item type="RadioTrack" ntOffset="0">
+            <Name>customsongs_radiotrack03</Name>
+            <Unk00 value="0xAAAAAAA0" />
+            <TrackType value="2" />
+            <Unk01 value="0" />
+            <Unk02 value="0" />
+            <Unk03 value="10" />
+            <Unk04 value="0" />
+            <Unk05 value="0" />
+            <Unk06 value="0" />
+            <Unk07 value="0" />
+            <Unk08 value="0" />
+            <Unk09 value="0" />
+            <Unk10 value="0" />
+            <Unk11 value="0" />
+            <Unk12 value="0" />
+            <Unk13 value="0" />
+            <Unk14 value="0" />
+            <Unk15 value="0" />
+            <Unk16 value="0" />
+            <Tracks>
+                <Item>
+                    <Hash0 />
+                    <Hash1>bornforthis_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>deeperlove_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>feelingstronger_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>incomplete_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>irememberu_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>lostforever_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>oneshot_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>pureaction_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>staymadukremix_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>thelights_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>timetravel_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>worldscollide_song</Hash1>
+                </Item>
+            </Tracks>
+        </Item>
+        <Item type="RadioTrack" ntOffset="0">
+            <Name>customsongs_radiotrack04</Name>
+            <Unk00 value="0xAAAAAAA0" />
+            <TrackType value="2" />
+            <Unk01 value="0" />
+            <Unk02 value="0" />
+            <Unk03 value="10" />
+            <Unk04 value="0" />
+            <Unk05 value="0" />
+            <Unk06 value="0" />
+            <Unk07 value="0" />
+            <Unk08 value="0" />
+            <Unk09 value="0" />
+            <Unk10 value="0" />
+            <Unk11 value="0" />
+            <Unk12 value="0" />
+            <Unk13 value="0" />
+            <Unk14 value="0" />
+            <Unk15 value="0" />
+            <Unk16 value="0" />
+            <Tracks>
+                <Item>
+                    <Hash0 />
+                    <Hash1>99luftballon_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>beatit_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>funkytown_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>holiday_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>layallyourloveonme_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>nevergonna_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>pumpupthejam_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>ruletheworld_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>smoothcriminal_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>stillstanding_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>sweetdreams_song</Hash1>
+                </Item>
+                <Item>
+                    <Hash0 />
+                    <Hash1>youspinme_song</Hash1>
+                </Item>
+            </Tracks>
+        </Item>
+    </Items>
+</Dat151>

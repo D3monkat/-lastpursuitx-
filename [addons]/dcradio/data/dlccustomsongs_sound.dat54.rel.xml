@@ -1,0 +1,1880 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dat54>
+ <Version value="6353779" />
+ <ContainerPaths>
+  <Item>songdirectory\chasethesun</Item>
+  <Item>songdirectory\getshaky</Item>
+  <Item>songdirectory\heroine</Item>
+  <Item>songdirectory\lalalala</Item>
+  <Item>songdirectory\lastminute</Item>
+  <Item>songdirectory\likeabaka</Item>
+  <Item>songdirectory\moveyourbody</Item>
+  <Item>songdirectory\muzikasefaremix</Item>
+  <Item>songdirectory\pushup</Item>
+  <Item>songdirectory\smhardstyle</Item>
+  <Item>songdirectory\theobananenbrot</Item>
+  <Item>songdirectory\wearethepeople</Item>
+  <Item>songdirectory\barbiegirl</Item>
+  <Item>songdirectory\notfair</Item>
+  <Item>songdirectory\worldholdon</Item>
+  <Item>songdirectory\californiadreamin</Item>
+  <Item>songdirectory\sexyback</Item>
+  <Item>songdirectory\layallyourlove</Item>
+  <Item>songdirectory\coldasice</Item>
+  <Item>songdirectory\babydonthurtme</Item>
+  <Item>songdirectory\swalla</Item>
+  <Item>songdirectory\gangstaparadise</Item>
+  <Item>songdirectory\bemylover</Item>
+  <Item>songdirectory\99luftballons</Item>
+  <Item>songdirectory\bornforthis</Item>
+  <Item>songdirectory\deeperlove</Item>
+  <Item>songdirectory\feelingstronger</Item>
+  <Item>songdirectory\incomplete</Item>
+  <Item>songdirectory\irememberu</Item>
+  <Item>songdirectory\lostforever</Item>
+  <Item>songdirectory\oneshot</Item>
+  <Item>songdirectory\pureaction</Item>
+  <Item>songdirectory\staymadukremix</Item>
+  <Item>songdirectory\thelights</Item>
+  <Item>songdirectory\timetravel</Item>
+  <Item>songdirectory\worldscollide</Item>
+  <Item>songdirectory\99luftballon</Item>
+  <Item>songdirectory\beatit</Item>
+  <Item>songdirectory\funkytown</Item>
+  <Item>songdirectory\holiday</Item>
+  <Item>songdirectory\layallyourloveonme</Item>
+  <Item>songdirectory\nevergonna</Item>
+  <Item>songdirectory\pumpupthejam</Item>
+  <Item>songdirectory\ruletheworld</Item>
+  <Item>songdirectory\smoothcriminal</Item>
+  <Item>songdirectory\stillstanding</Item>
+  <Item>songdirectory\sweetdreams</Item>
+  <Item>songdirectory\youspinme</Item>
+ </ContainerPaths>
+ <Items>
+  <Item type="StreamingSound">
+   <Name>chasethesun_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="211320" />
+   <ChildSounds>
+    <Item>chasethesun_left_simple</Item>
+    <Item>chasethesun_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>chasethesun_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/chasethesun</ContainerName>
+   <FileName>chasethesun_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>chasethesun_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/chasethesun</ContainerName>
+   <FileName>chasethesun_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>getshaky_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="237240" />
+   <ChildSounds>
+    <Item>getshaky_left_simple</Item>
+    <Item>getshaky_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>getshaky_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/getshaky</ContainerName>
+   <FileName>getshaky_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>getshaky_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/getshaky</ContainerName>
+   <FileName>getshaky_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>heroine_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="143088" />
+   <ChildSounds>
+    <Item>heroine_left_simple</Item>
+    <Item>heroine_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>heroine_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/heroine</ContainerName>
+   <FileName>heroine_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>heroine_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/heroine</ContainerName>
+   <FileName>heroine_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>lalalala_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="86160" />
+   <ChildSounds>
+    <Item>lalalala_left_simple</Item>
+    <Item>lalalala_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>lalalala_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/lalalala</ContainerName>
+   <FileName>lalalala_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>lalalala_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/lalalala</ContainerName>
+   <FileName>lalalala_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>lastminute_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="178608" />
+   <ChildSounds>
+    <Item>lastminute_left_simple</Item>
+    <Item>lastminute_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>lastminute_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/lastminute</ContainerName>
+   <FileName>lastminute_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>lastminute_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/lastminute</ContainerName>
+   <FileName>lastminute_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>likeabaka_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="92473" />
+   <ChildSounds>
+    <Item>likeabaka_left_simple</Item>
+    <Item>likeabaka_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>likeabaka_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/likeabaka</ContainerName>
+   <FileName>likeabaka_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>likeabaka_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/likeabaka</ContainerName>
+   <FileName>likeabaka_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>moveyourbody_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="404592" />
+   <ChildSounds>
+    <Item>moveyourbody_left_simple</Item>
+    <Item>moveyourbody_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>moveyourbody_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/moveyourbody</ContainerName>
+   <FileName>moveyourbody_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>moveyourbody_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/moveyourbody</ContainerName>
+   <FileName>moveyourbody_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>muzikasefaremix_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="158424" />
+   <ChildSounds>
+    <Item>muzikasefaremix_left_simple</Item>
+    <Item>muzikasefaremix_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>muzikasefaremix_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/muzikasefaremix</ContainerName>
+   <FileName>muzikasefaremix_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>muzikasefaremix_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/muzikasefaremix</ContainerName>
+   <FileName>muzikasefaremix_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>pushup_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="139344" />
+   <ChildSounds>
+    <Item>pushup_left_simple</Item>
+    <Item>pushup_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>pushup_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/pushup</ContainerName>
+   <FileName>pushup_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>pushup_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/pushup</ContainerName>
+   <FileName>pushup_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>smhardstyle_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="99024" />
+   <ChildSounds>
+    <Item>smhardstyle_left_simple</Item>
+    <Item>smhardstyle_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>smhardstyle_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/smhardstyle</ContainerName>
+   <FileName>smhardstyle_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>smhardstyle_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/smhardstyle</ContainerName>
+   <FileName>smhardstyle_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>theobananenbrot_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="109200" />
+   <ChildSounds>
+    <Item>theobananenbrot_left_simple</Item>
+    <Item>theobananenbrot_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>theobananenbrot_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/theobananenbrot</ContainerName>
+   <FileName>theobananenbrot_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>theobananenbrot_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/theobananenbrot</ContainerName>
+   <FileName>theobananenbrot_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>wearethepeople_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="236112" />
+   <ChildSounds>
+    <Item>wearethepeople_left_simple</Item>
+    <Item>wearethepeople_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>wearethepeople_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/wearethepeople</ContainerName>
+   <FileName>wearethepeople_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>wearethepeople_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/wearethepeople</ContainerName>
+   <FileName>wearethepeople_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>barbiegirl_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="155112" />
+   <ChildSounds>
+    <Item>barbiegirl_left_simple</Item>
+    <Item>barbiegirl_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>barbiegirl_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/barbiegirl</ContainerName>
+   <FileName>barbiegirl_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>barbiegirl_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/barbiegirl</ContainerName>
+   <FileName>barbiegirl_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>notfair_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="163080" />
+   <ChildSounds>
+    <Item>notfair_left_simple</Item>
+    <Item>notfair_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>notfair_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/notfair</ContainerName>
+   <FileName>notfair_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>notfair_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/notfair</ContainerName>
+   <FileName>notfair_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>worldholdon_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="178344" />
+   <ChildSounds>
+    <Item>worldholdon_left_simple</Item>
+    <Item>worldholdon_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>worldholdon_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/worldholdon</ContainerName>
+   <FileName>worldholdon_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>worldholdon_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/worldholdon</ContainerName>
+   <FileName>worldholdon_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>californiadreamin_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="186240" />
+   <ChildSounds>
+    <Item>californiadreamin_left_simple</Item>
+    <Item>californiadreamin_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>californiadreamin_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/californiadreamin</ContainerName>
+   <FileName>californiadreamin_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>californiadreamin_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/californiadreamin</ContainerName>
+   <FileName>californiadreamin_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>sexyback_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="156960" />
+   <ChildSounds>
+    <Item>sexyback_left_simple</Item>
+    <Item>sexyback_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>sexyback_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/sexyback</ContainerName>
+   <FileName>sexyback_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>sexyback_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/sexyback</ContainerName>
+   <FileName>sexyback_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>layallyourlove_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="204024" />
+   <ChildSounds>
+    <Item>layallyourlove_left_simple</Item>
+    <Item>layallyourlove_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>layallyourlove_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/layallyourlove</ContainerName>
+   <FileName>layallyourlove_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>layallyourlove_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/layallyourlove</ContainerName>
+   <FileName>layallyourlove_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>coldasice_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="137712" />
+   <ChildSounds>
+    <Item>coldasice_left_simple</Item>
+    <Item>coldasice_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>coldasice_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/coldasice</ContainerName>
+   <FileName>coldasice_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>coldasice_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/coldasice</ContainerName>
+   <FileName>coldasice_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>babydonthurtme_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="140064" />
+   <ChildSounds>
+    <Item>babydonthurtme_left_simple</Item>
+    <Item>babydonthurtme_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>babydonthurtme_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/babydonthurtme</ContainerName>
+   <FileName>babydonthurtme_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>babydonthurtme_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/babydonthurtme</ContainerName>
+   <FileName>babydonthurtme_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>swalla_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="151728" />
+   <ChildSounds>
+    <Item>swalla_left_simple</Item>
+    <Item>swalla_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>swalla_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/swalla</ContainerName>
+   <FileName>swalla_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>swalla_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/swalla</ContainerName>
+   <FileName>swalla_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>gangstaparadise_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="152784" />
+   <ChildSounds>
+    <Item>gangstaparadise_left_simple</Item>
+    <Item>gangstaparadise_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>gangstaparadise_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/gangstaparadise</ContainerName>
+   <FileName>gangstaparadise_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>gangstaparadise_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/gangstaparadise</ContainerName>
+   <FileName>gangstaparadise_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>bemylover_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="169561" />
+   <ChildSounds>
+    <Item>bemylover_left_simple</Item>
+    <Item>bemylover_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>bemylover_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/bemylover</ContainerName>
+   <FileName>bemylover_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>bemylover_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/bemylover</ContainerName>
+   <FileName>bemylover_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>99luftballons_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="126024" />
+   <ChildSounds>
+    <Item>99luftballons_left_simple</Item>
+    <Item>99luftballons_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>99luftballons_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/99luftballons</ContainerName>
+   <FileName>99luftballons_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>99luftballons_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/99luftballons</ContainerName>
+   <FileName>99luftballons_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>bornforthis_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="294478" />
+   <ChildSounds>
+    <Item>bornforthis_left_simple</Item>
+    <Item>bornforthis_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>bornforthis_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/bornforthis</ContainerName>
+   <FileName>bornforthis_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>bornforthis_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/bornforthis</ContainerName>
+   <FileName>bornforthis_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>deeperlove_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="240222" />
+   <ChildSounds>
+    <Item>deeperlove_left_simple</Item>
+    <Item>deeperlove_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>deeperlove_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/deeperlove</ContainerName>
+   <FileName>deeperlove_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>deeperlove_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/deeperlove</ContainerName>
+   <FileName>deeperlove_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>feelingstronger_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="252317" />
+   <ChildSounds>
+    <Item>feelingstronger_left_simple</Item>
+    <Item>feelingstronger_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>feelingstronger_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/feelingstronger</ContainerName>
+   <FileName>feelingstronger_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>feelingstronger_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/feelingstronger</ContainerName>
+   <FileName>feelingstronger_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>incomplete_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="275095" />
+   <ChildSounds>
+    <Item>incomplete_left_simple</Item>
+    <Item>incomplete_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>incomplete_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/incomplete</ContainerName>
+   <FileName>incomplete_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>incomplete_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/incomplete</ContainerName>
+   <FileName>incomplete_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>irememberu_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="246240" />
+   <ChildSounds>
+    <Item>irememberu_left_simple</Item>
+    <Item>irememberu_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>irememberu_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/irememberu</ContainerName>
+   <FileName>irememberu_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>irememberu_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/irememberu</ContainerName>
+   <FileName>irememberu_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>lostforever_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="357669" />
+   <ChildSounds>
+    <Item>lostforever_left_simple</Item>
+    <Item>lostforever_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>lostforever_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/lostforever</ContainerName>
+   <FileName>lostforever_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>lostforever_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/lostforever</ContainerName>
+   <FileName>lostforever_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>oneshot_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="178077" />
+   <ChildSounds>
+    <Item>oneshot_left_simple</Item>
+    <Item>oneshot_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>oneshot_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/oneshot</ContainerName>
+   <FileName>oneshot_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>oneshot_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/oneshot</ContainerName>
+   <FileName>oneshot_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>pureaction_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="202968" />
+   <ChildSounds>
+    <Item>pureaction_left_simple</Item>
+    <Item>pureaction_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>pureaction_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/pureaction</ContainerName>
+   <FileName>pureaction_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>pureaction_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/pureaction</ContainerName>
+   <FileName>pureaction_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>staymadukremix_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="225672" />
+   <ChildSounds>
+    <Item>staymadukremix_left_simple</Item>
+    <Item>staymadukremix_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>staymadukremix_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/staymadukremix</ContainerName>
+   <FileName>staymadukremix_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>staymadukremix_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/staymadukremix</ContainerName>
+   <FileName>staymadukremix_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>thelights_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="210227" />
+   <ChildSounds>
+    <Item>thelights_left_simple</Item>
+    <Item>thelights_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>thelights_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/thelights</ContainerName>
+   <FileName>thelights_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>thelights_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/thelights</ContainerName>
+   <FileName>thelights_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>timetravel_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="219089" />
+   <ChildSounds>
+    <Item>timetravel_left_simple</Item>
+    <Item>timetravel_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>timetravel_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/timetravel</ContainerName>
+   <FileName>timetravel_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>timetravel_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/timetravel</ContainerName>
+   <FileName>timetravel_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>worldscollide_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="216660" />
+   <ChildSounds>
+    <Item>worldscollide_left_simple</Item>
+    <Item>worldscollide_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>worldscollide_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/worldscollide</ContainerName>
+   <FileName>worldscollide_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>worldscollide_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/worldscollide</ContainerName>
+   <FileName>worldscollide_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>99luftballon_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="231504" />
+   <ChildSounds>
+    <Item>99luftballon_left_simple</Item>
+    <Item>99luftballon_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>99luftballon_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/99luftballon</ContainerName>
+   <FileName>99luftballon_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>99luftballon_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/99luftballon</ContainerName>
+   <FileName>99luftballon_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>beatit_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="258432" />
+   <ChildSounds>
+    <Item>beatit_left_simple</Item>
+    <Item>beatit_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>beatit_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/beatit</ContainerName>
+   <FileName>beatit_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>beatit_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/beatit</ContainerName>
+   <FileName>beatit_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>funkytown_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="245448" />
+   <ChildSounds>
+    <Item>funkytown_left_simple</Item>
+    <Item>funkytown_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>funkytown_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/funkytown</ContainerName>
+   <FileName>funkytown_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>funkytown_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/funkytown</ContainerName>
+   <FileName>funkytown_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>holiday_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="231600" />
+   <ChildSounds>
+    <Item>holiday_left_simple</Item>
+    <Item>holiday_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>holiday_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/holiday</ContainerName>
+   <FileName>holiday_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>holiday_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/holiday</ContainerName>
+   <FileName>holiday_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>layallyourloveonme_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="274512" />
+   <ChildSounds>
+    <Item>layallyourloveonme_left_simple</Item>
+    <Item>layallyourloveonme_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>layallyourloveonme_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/layallyourloveonme</ContainerName>
+   <FileName>layallyourloveonme_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>layallyourloveonme_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/layallyourloveonme</ContainerName>
+   <FileName>layallyourloveonme_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>nevergonna_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="213600" />
+   <ChildSounds>
+    <Item>nevergonna_left_simple</Item>
+    <Item>nevergonna_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>nevergonna_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/nevergonna</ContainerName>
+   <FileName>nevergonna_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>nevergonna_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/nevergonna</ContainerName>
+   <FileName>nevergonna_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>pumpupthejam_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="320352" />
+   <ChildSounds>
+    <Item>pumpupthejam_left_simple</Item>
+    <Item>pumpupthejam_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>pumpupthejam_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/pumpupthejam</ContainerName>
+   <FileName>pumpupthejam_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>pumpupthejam_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/pumpupthejam</ContainerName>
+   <FileName>pumpupthejam_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>ruletheworld_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="251520" />
+   <ChildSounds>
+    <Item>ruletheworld_left_simple</Item>
+    <Item>ruletheworld_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>ruletheworld_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/ruletheworld</ContainerName>
+   <FileName>ruletheworld_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>ruletheworld_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/ruletheworld</ContainerName>
+   <FileName>ruletheworld_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>smoothcriminal_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="257784" />
+   <ChildSounds>
+    <Item>smoothcriminal_left_simple</Item>
+    <Item>smoothcriminal_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>smoothcriminal_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/smoothcriminal</ContainerName>
+   <FileName>smoothcriminal_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>smoothcriminal_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/smoothcriminal</ContainerName>
+   <FileName>smoothcriminal_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>stillstanding_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="183480" />
+   <ChildSounds>
+    <Item>stillstanding_left_simple</Item>
+    <Item>stillstanding_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>stillstanding_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/stillstanding</ContainerName>
+   <FileName>stillstanding_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>stillstanding_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/stillstanding</ContainerName>
+   <FileName>stillstanding_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>sweetdreams_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="216960" />
+   <ChildSounds>
+    <Item>sweetdreams_left_simple</Item>
+    <Item>sweetdreams_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>sweetdreams_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/sweetdreams</ContainerName>
+   <FileName>sweetdreams_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>sweetdreams_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/sweetdreams</ContainerName>
+   <FileName>sweetdreams_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="StreamingSound">
+   <Name>youspinme_song</Name>
+   <Header>
+    <Flags value="0x0180C001" />
+    <Flags2 value="0xAA90AAAA" />
+    <DopplerFactor value="0" />
+    <Category>hash_45EB536F</Category>
+    <Unk20 value="0" />
+    <Unk21 value="1" />
+   </Header>
+   <Duration value="194088" />
+   <ChildSounds>
+    <Item>youspinme_left_simple</Item>
+    <Item>youspinme_right_simple</Item>
+   </ChildSounds>
+  </Item>
+  <Item type="SimpleSound">
+   <Name>youspinme_left_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="307" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/youspinme</ContainerName>
+   <FileName>youspinme_left</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+  <Item type="SimpleSound">
+   <Name>youspinme_right_simple</Name>
+   <Header>
+    <Flags value="0x00800040" />
+    <Pan value="53" />
+    <Unk20 value="0" />
+   </Header>
+   <ContainerName>songdirectory/youspinme</ContainerName>
+   <FileName>youspinme_right</FileName>
+   <WaveSlotNum value="0" />
+  </Item>
+ </Items>
+</Dat54>
