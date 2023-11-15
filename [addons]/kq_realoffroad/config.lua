@@ -182,6 +182,24 @@ Config.depthHandlingQuality = {
     }
 }
 
+
+-- Options to decrease traction when theres snow on the roads or the weather is snowy
+Config.snow = {
+    enabled = true,
+    tractionLoss = 30,
+
+    weathers = {
+        'XMAS',
+    },
+}
+
+-- Options to decrease traction when its raining
+Config.rain = {
+    enabled = true,
+    tractionLoss = 10,
+}
+
+
 -------------------------------------------------
 --- ROADSIDE SETTINGS
 -------------------------------------------------

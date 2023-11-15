@@ -65,6 +65,10 @@ if Config.debug then
                     Draw3DText(vehCoords, '~y~Zone: ' .. zoneHash)
                 end
 
+                if IsSnowy() then
+                    Draw3DText(vehCoords + vector3(0.0, 2.0, 0.0), '~w~Snowy')
+                end
+
                 Draw3DText(vehCoords + vector3(0.0, 0.0, -0.4), '~b~Traction: ' .. (CURRENT_TRACTION or 100))
 
                 local isBlacklistedArea, blacklistArea = IsInBlacklistedArea(veh)
@@ -93,6 +97,12 @@ if Config.debug then
             Citizen.Wait(sleep)
         end
     end)
+end
+
+function IsSnowy()
+    return UseCache('isSnowy', function()
+        return ContainsVehicleModel(Config.snow.weathers, GetNextWeatherTypeHashName()) or GetSnowLevel() > 0.1
+    end, 5000)
 end
 
 function GetNearestRoadDistance()
@@ -192,3 +202,9 @@ function IsBlacklisted(veh)
         return false
     end, 60000)
 end
+
+function GetCurrentDepth()
+    return CURRENT_DEPTH
+end
+
+exports('GetCurrentDepth', GetCurrentDepth);
