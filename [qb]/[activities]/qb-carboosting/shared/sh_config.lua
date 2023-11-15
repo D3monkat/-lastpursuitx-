@@ -9,12 +9,12 @@ Shared.NewCore = true -- Set to false if NOT using local QBCore = exports['qb-co
 Shared.CoreObject = 'QBCore' -- In case you've renamed your Framework
 
 --- Settings related to utils: notification, phone notification, ...
-Shared.Notify = 'qb' -- 'ox' for ox_lib or 'qb' for QBCore.Functions.Notify
-Shared.PhoneNotification = 'QBCore' -- 'QBCore' or 'GKS' or 'Qs' or 'lb-phone' or edit utils files for others
+Shared.Notify = 'ox' -- 'ox' for ox_lib or 'qb' for QBCore.Functions.Notify
+Shared.PhoneNotification = 'lb-phone' -- 'QBCore' or 'GKS' or 'Qs' or 'lb-phone' or edit utils files for others
 
-Shared.Inventory = 'qb' -- 'ox_inventory' or 'qb'
-Shared.Target = 'qb' -- 'ox' or 'qb'
-Shared.FuelScript = 'LegacyFuel' -- This is used for exports[Shared.FuelScript]:SetFuel(veh, 23.00), use ps-fuel if using Project Sloth version
+Shared.Inventory = 'ox_inventory' -- 'ox_inventory' or 'qb'
+Shared.Target = 'ox' -- 'ox' or 'qb'
+Shared.FuelScript = 'cdn-fuel' -- This is used for exports[Shared.FuelScript]:SetFuel(veh, 23.00), use ps-fuel if using Project Sloth version
 Shared.LaptopItem = 'boostinglaptop' -- Boostinglaptop item name
 
 Shared.PingInterval = 20 -- Time in seconds when a location ping is sent to the police
