@@ -32,30 +32,17 @@ QBShared.Jobs = {
         defaultDuty = true,
         offDutyPay = false,
         grades = {
-            -- ['0'] = { name = 'Cadet', payment = 200 },
-            -- ['1'] = { name = 'Deputy', payment = 450 },
-            -- ['2'] = { name = 'Senior Deputy', payment = 500 },
-            -- ['3'] = { name = 'Corporal', payment = 575 },
-            -- ['4'] = { name = 'Sergeant', payment = 650 },
-            -- ['5'] = { name = 'Lieutenant', payment = 725 },
-            -- ['6'] = { name = 'Captain', payment = 800, isboss = true, bankAuth = false },
-            -- ['7'] = { name = 'Major', payment = 875, isboss = true, bankAuth = true },
-	        -- ['8'] = { name = 'Chief Deputy', payment = 950, isboss = true, bankAuth = true },
-  	        -- ['9'] = { name = 'UnderSheriff', payment = 1025, isboss = true, bankAuth = true },
-            -- ['10'] = { name = 'Sheriff', payment = 1100, isboss = true, bankAuth = true },
 			['0'] = { name = 'Cadet', payment = 240 }, -- Base payment
-['1'] = { name = 'Deputy', payment = math.floor(240 * 1.07) }, -- Increase by 7%
-['2'] = { name = 'Senior Deputy', payment = math.floor(240 * (1.07 ^ 2)) }, -- Increase by 7% compounded
-['3'] = { name = 'Corporal', payment = math.floor(240 * (1.07 ^ 3)) },
-['4'] = { name = 'Sergeant', payment = math.floor(240 * (1.07 ^ 4)) },
-['5'] = { name = 'Lieutenant', payment = math.floor(240 * (1.07 ^ 5)) },
-['6'] = { name = 'Captain', payment = math.floor(240 * (1.07 ^ 6)), isboss = true, bankAuth = false },
-['7'] = { name = 'Major', payment = math.floor(240 * (1.07 ^ 7)), isboss = true, bankAuth = true },
-['8'] = { name = 'Chief Deputy', payment = math.floor(240 * (1.07 ^ 8)), isboss = true, bankAuth = true },
-['9'] = { name = 'UnderSheriff', payment = math.floor(240 * (1.07 ^ 9)), isboss = true, bankAuth = true },
-['10'] = { name = 'Sheriff', payment = math.floor(240 * (1.07 ^ 10)), isboss = true, bankAuth = true },
-
-            
+			['1'] = { name = 'Deputy', payment = 257 }, -- Increase by 7%
+			['2'] = { name = 'Senior Deputy', payment = 275 }, -- Increase by 7% compounded
+			['3'] = { name = 'Corporal', payment = 294 },
+			['4'] = { name = 'Sergeant', payment = 315 },
+			['5'] = { name = 'Lieutenant', payment = 337 },
+			['6'] = { name = 'Captain', payment = 361, isboss = true, bankAuth = false },
+			['7'] = { name = 'Major', payment = 386, isboss = true, bankAuth = true },
+			['8'] = { name = 'Chief Deputy', payment = 413, isboss = true, bankAuth = true },
+			['9'] = { name = 'UnderSheriff', payment = 442, isboss = true, bankAuth = true },
+			['10'] = { name = 'Sheriff', payment = 473, isboss = true, bankAuth = true },
         },
     },
 
@@ -65,28 +52,29 @@ QBShared.Jobs = {
 		defaultDuty = true,
 		offDutyPay = false,
 		grades = {
-			['0'] = { name = 'Cadet', payment = 240 }, -- $30/hour
-			['1'] = { name = 'Probationary Trooper', payment = 280 }, -- $35/hour
-			['2'] = { name = 'Trooper', payment = 320 }, -- $40/hour
-			['3'] = { name = 'Trooper II', payment = 360 }, -- $45/hour
-			['4'] = { name = 'Trooper III', payment = 400 }, -- $50/hour
-			['5'] = { name = 'Senior Trooper', payment = 440 }, -- $55/hour
-			['6'] = { name = 'Corporal', payment = 480 }, -- $60/hour
-			['7'] = { name = 'Senior Corporal', payment = 520 }, -- $65/hour
-			['8'] = { name = 'Sergeant', payment = 560 }, -- $70/hour
-			['9'] = { name = 'Staff Sergeant', payment = 600 }, -- $75/hour
-			['10'] = { name = 'First Sergeant', payment = 640 }, -- $80/hour
-			['11'] = { name = 'Sergeant First Class', payment = 680 }, -- $85/hour
-			['12'] = { name = 'Master Sergeant', payment = 720 }, -- $90/hour
-			['13'] = { name = 'Command Sergeant', payment = 760 }, -- $95/hour
-			['14'] = { name = 'Second Lieutenant', payment = 800 }, -- $100/hour
-			['15'] = { name = 'Lieutenant', payment = 840 }, -- $105/hour
-			['16'] = { name = 'Major', payment = 880 }, -- $110/hour
-			['17'] = { name = 'Lieutenant Colonel', payment = 920 }, -- $115/hour
-			['18'] = { name = 'Colonel', payment = 960 }, -- $120/hour
-			['19'] = { name = 'Deputy Commissioner', isboss = true, bankAuth = true, payment = 1000 }, -- $125/hour
-			['20'] = { name = 'Asst. Commissioner', isboss = true, bankAuth = true, payment = 1040 }, -- $130/hour
-			['21'] = { name = 'Commissioner', isboss = true, bankAuth = true, payment = 1080 }, -- $135/hour
+			['0'] = { name = 'Cadet', payment = 240 }, -- Base payment
+			['1'] = { name = 'Probationary Trooper', payment = 257 }, -- Increase by 7%
+			['2'] = { name = 'Trooper', payment = 275 }, -- Increase by 7% compounded
+			['3'] = { name = 'Trooper II', payment = 294 },
+			['4'] = { name = 'Trooper III', payment = 315 },
+			['5'] = { name = 'Senior Trooper', payment = 337 },
+			['6'] = { name = 'Corporal', payment = 361 },
+			['7'] = { name = 'Senior Corporal', payment = 386 },
+			['8'] = { name = 'Sergeant', payment = 413 },
+			['9'] = { name = 'Staff Sergeant', payment = 442 },
+			['10'] = { name = 'First Sergeant', payment = 473 },
+			['11'] = { name = 'Sergeant First Class', payment = 506 },
+			['12'] = { name = 'Master Sergeant', payment = 541 },
+			['13'] = { name = 'Command Sergeant', payment = 579 },
+			['14'] = { name = 'Second Lieutenant', payment = 619 },
+			['15'] = { name = 'Lieutenant', payment = 662 },
+			['16'] = { name = 'Major', payment = 708 },
+			['17'] = { name = 'Lieutenant Colonel', payment = 757 },
+			['18'] = { name = 'Colonel', payment = 810 },
+			['19'] = { name = 'Deputy Commissioner', payment = 867 },
+			['20'] = { name = 'Asst. Commissioner', payment = 928 },
+			['21'] = { name = 'Commissioner', payment = 993 },
+			
 			
 		},
 	},
