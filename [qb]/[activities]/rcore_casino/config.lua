@@ -1,6 +1,6 @@
 Config = {
     -- Map
-    MapType = 5, -- 1: for DLCiplLoader, 2: Gabz Casino, 3: NoPixel Casino, 4: k4mb1 casino, 5: GTA:O Interior (rcore_casino_interior), 6: Underground Casino PALETO
+    MapType = 4, -- 1: for DLCiplLoader, 2: Gabz Casino, 3: NoPixel Casino, 4: k4mb1 casino, 5: GTA:O Interior (rcore_casino_interior), 6: Underground Casino PALETO
 
     --[[
     Gabz Casino
@@ -20,7 +20,7 @@ Config = {
 
     -- Money Or Casino Chips? 
     MoneyInventoryItemName = nil, -- name of the money inventory item, set to nil, if you don't want to use inventory item as the money
-    UseOnlyMoney = false, -- set to true if you wanna disable using casino chips and use money instead
+    UseOnlyMoney = true, -- set to true if you wanna disable using casino chips and use money instead
     ExchangeRate = 1, -- set value of one casino chip, for example, set to 5, if 1 chip equals to 5$ (minimum: 0.1, rounded by 0.1, 0.5 or 1)
     ChipsInventoryItem = "casino_chips",
     UseBankMoney = false, -- cash or bank?
@@ -181,7 +181,7 @@ Framework = {
     -- ⚠️ For Standalone version docs visit https://documentation.rcore.cz/paid-resources/rcore_casino/standalone-version
     -- ⚠️ For Custom framework version docs visit https://documentation.rcore.cz/paid-resources/rcore_casino/custom-framework
 
-    Active = 5, -- Choose 1 for ESX, 2 for QBCore, 3 for Standalone, 4 for Custom, 5 for auto detect
+    Active = 2, -- Choose 1 for ESX, 2 for QBCore, 3 for Standalone, 4 for Custom, 5 for auto detect
     -- Please follow the installation tutorial: --
     -- https://documentation.rcore.cz/paid-resources/rcore_casino
 
