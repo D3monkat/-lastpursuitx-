@@ -689,5 +689,10 @@ cheesewrap 					 = {name = 'cheesewrap', 				label = 'BS Cheese Wrap', 	     	we
 chickenwrap 				 = {name = 'chickenwrap', 				label = 'BS Goat Cheese Wrap', 	    weight = 150, 		type = 'item', 		image = 'burger-goatwrap.png', 		unique = false,   	useable = true,   	shouldClose = true,   	combinable = nil,   description = 'BurgerShot Goat Cheese Wrap', hunger = math.random(40, 50)},
 murderbag 					 = {name = 'murderbag', 				label = 'Murder Bag', 	   			weight = 0, 		type = 'item', 		image = 'burgerbag.png', 			unique = true,   	useable = true,   	shouldClose = true,   	combinable = nil,   description = 'Grab a Murder Bag of Burgers', },
 
+-- Carboosting
+boostinglaptop 		 	 	 = {name = 'boostinglaptop',           		label = 'Boosting Laptop',	 		weight = 1000, 		type = 'item', 		image = 'boostinglaptop.png', 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = 'A laptop used for boosting contracts.'},
+boostingdisabler 		 	 = {name = 'boostingdisabler',           	label = 'Tracking Disabler',	 	weight = 1000, 		type = 'item', 		image = 'boostingdisabler.png', 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = 'This small tool can disable these pesky trackers.'},
+
+
 
 }

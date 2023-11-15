@@ -135,6 +135,8 @@ function QBCore.Player.CheckPlayerData(source, PlayerData)
     PlayerData.metadata['fingerprint'] = PlayerData.metadata['fingerprint'] or QBCore.Player.CreateFingerId()
     PlayerData.metadata['walletid'] = PlayerData.metadata['walletid'] or QBCore.Player.CreateWalletId()   
     PlayerData.metadata['fishingrep'] = PlayerData.metadata['fishingrep'] or 0 
+    PlayerData.metadata['boostingrep'] = PlayerData.metadata['boostingrep'] or 0
+PlayerData.metadata['boostingclass'] = PlayerData.metadata['boostingclass'] or 1
  PlayerData.metadata["communityservice"] = PlayerData.metadata["communityservice"] ~= nil and PlayerData.metadata["communityservice"] or 0
     PlayerData.metadata['jobrep'] = PlayerData.metadata['jobrep'] or {}
     PlayerData.metadata['jobrep']['tow'] = PlayerData.metadata['jobrep']['tow'] or 0

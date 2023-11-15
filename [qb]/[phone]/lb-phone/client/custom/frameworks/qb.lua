@@ -78,7 +78,7 @@ CreateThread(function()
         TriggerEvent("vehiclekeys:client:SetOwner", QB.Functions.GetPlate(vehicle))
 
         if GetResourceState("cdn-fuel") == "started" and vehicleData.fuel then
-            exports.cdn-fuel:SetFuel(vehicle, vehicleData.fuel)
+            exports['cdn-fuel']:SetFuel(vehicle, vehicleData.fuel)
         end
 
         SetModelAsNoLongerNeeded(model)
