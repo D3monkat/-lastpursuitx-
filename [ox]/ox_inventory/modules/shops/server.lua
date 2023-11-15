@@ -268,7 +268,16 @@ lib.callback.register('ox_inventory:buyItem', function(source, data)
 				if server.syncInventory then server.syncInventory(playerInv) end
 
 				local message = locale('purchased_for', count, fromItem.label, (currency == 'money' and locale('$') or math.groupdigits(price)), (currency == 'money' and math.groupdigits(price) or ' '..Items(currency).label))
-
+				if string.find(fromData.name, "WEAPON_") then
+					local serial = metadata.serial
+					local imageurl = ("https://cfx-nui-ox_inventory/web/images/%s.png"):format(fromData.name)
+					local notes = "Purchased from shop"
+					local owner = playerInv.owner
+					local weapClass = "Class"
+					local weapModel = fromData.name
+					
+					AddWeaponToMDT(serial, imageurl, notes, owner, weapClass, weapModel)
+				end
 				if server.loglevel > 0 then
 					if server.loglevel > 1 or fromData.price >= 500 then
 						lib.logger(playerInv.owner, 'buyItem', ('"%s" %s'):format(playerInv.label, message:lower()), ('shop:%s'):format(shop.label))
@@ -284,3 +293,18 @@ lib.callback.register('ox_inventory:buyItem', function(source, data)
 end)
 
 server.shops = Shops
+
+
+function AddWeaponToMDT(serial, imageurl, notes, owner, weapClass, weapModel)
+    Citizen.CreateThread(function()
+        Wait(500)
+
+        local success, result = pcall(function()
+            return exports['ps-mdt']:CreateWeaponInfo(serial, imageurl, notes, owner, weapClass, weapModel)
+        end)
+
+        if not success then
+            print("Unable to add weapon to MDT")
+        end
+    end)
+end
