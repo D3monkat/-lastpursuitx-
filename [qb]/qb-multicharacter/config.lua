@@ -1,5 +1,5 @@
 Config = {}
-Config.StartingApartment = true -- Enable/disable starting apartments (make sure to set default spawn coords)
+Config.StartingApartment = false -- Enable/disable starting apartments (make sure to set default spawn coords)
 Config.Interior = vector3(-814.89, 181.95, 76.85) -- Interior to load where characters are previewed
 Config.DefaultSpawn = vector3(-1035.71, -2731.87, 12.86) -- Default spawn coords if you have start apartments disabled
 Config.PedCoords = vector4(-216.46, -1038.94, 30.14, 69.9) -- Create preview ped at these coordinates
