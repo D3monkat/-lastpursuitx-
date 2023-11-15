@@ -80,29 +80,28 @@ RegisterNUICallback('getNotifyConfig', function(_, cb)
     cb(QBCore.Config.Notify)
 end)
 
-function QBCore.Functions.Notify(text, texttype, length)
+function QBCore.Functions.Notify(text, notifyType, duration, subTitle, notifyPosition, notifyStyle, notifyIcon, notifyIconColor)
+    local title, description
     if type(text) == "table" then
-        local ttext = text.text or 'Placeholder'
-        local caption = text.caption or 'Placeholder'
-        texttype = texttype or 'primary'
-        length = length or 5000
-        SendNUIMessage({
-            action = 'notify',
-            type = texttype,
-            length = length,
-            text = ttext,
-            caption = caption
-        })
+        title = text.text or 'Placeholder'
+        description = text.caption or nil
     else
-        texttype = texttype or 'primary'
-        length = length or 5000
-        SendNUIMessage({
-            action = 'notify',
-            type = texttype,
-            length = length,
-            text = text
-        })
+        title = text
+        description = subTitle
     end
+    local position = notifyPosition or QBConfig.NotifyPosition
+
+    lib.notify({
+        id = title,
+        title = title,
+        description = description,
+        duration = duration,
+        type = notifyType,
+        position = 'center-right',
+        style = notifyStyle,
+        icon = notifyIcon,
+        iconColor = notifyIconColor
+    })
 end
 
 function QBCore.Debug(resource, obj, depth)

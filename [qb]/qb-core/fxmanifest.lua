@@ -6,6 +6,7 @@ version '1.2.6'
 
 shared_scripts {
     'config.lua',
+    '@ox_lib/init.lua',
     'shared/locale.lua',
     'locale/en.lua',
     'locale/*.lua',
