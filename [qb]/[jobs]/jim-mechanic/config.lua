@@ -17,7 +17,7 @@ Config = {
 		RenewedBanking = true, 	-- This is used for manualrepair benches, enable to use
 	},
 	Main = { -- Main variables
-		isVehicleOwned = false, 	-- Keep this true if you only want changes to be made to owned vehicles
+		isVehicleOwned = true, 	-- Keep this true if you only want changes to be made to owned vehicles
 		ItemRequiresJob = true, 	-- Do the specfic items require the mechanic job?
 		JobLocationRequired = true, -- Are the mecahanics locked to specific locations?
 		LocationBlips = true, 		-- Enable to grab the blip locations from locations.lua
@@ -49,7 +49,7 @@ Config = {
 									-- Does not work if they "delete" it, eg. If your garage system doesn't remove the player from the car before parking
 	},
 	Harness = {
-		JobOnly = false,			-- Only allow job roles to add a Harness to vehicle
+		JobOnly = true,			-- Only allow job roles to add a Harness to vehicle
 		HarnessControl = true,		-- Enable harness AND seatbelt features of the script, requires edits to smallresources and hud scripts
 		seatbeltEasyLeave = true,	-- if true players can exit vehicled before removing seatbelt
 		harnessEasyLeave = true,	-- if true players can exit vehicled before removing harness
@@ -57,7 +57,7 @@ Config = {
 		progOn = true,				-- if true add a progressBar to buckle harness
 		progOff = true,				-- if true add a progressBar to unbuckle harness
 
-		seatbeltNotify = false,		-- if true, show a notification when seatbelt is put on or off
+		seatbeltNotify = true,		-- if true, show a notification when seatbelt is put on or off
 
 		timeOn = 3000,				-- Time for the progress bar to put on harness
 		timeOff = 2000,				-- Time for the progress bar to put on harness
@@ -144,11 +144,11 @@ Config = {
 									-- Lowering this will most likely add load on to the server database
 	},
 	Odometer = {
-		ShowOdo = true, 			-- Wether the distance is showed in car by default
+		ShowOdo = false, 			-- Wether the distance is showed in car by default
 		OdoLocation  = "bottom-right", 	-- Where the Odometer will show,
 										-- "left", "right", "top", "top-left", "top-right", "bottom", "bottom-left", "bottom-right"
-		OdoShowIcons = true, 		-- Enable this to allow the use of the warning icons on the odometer
-		OdoAlwaysShowIcons = true, 	-- Enable this to show the icons even when not damaged
+		OdoShowIcons = false, 		-- Enable this to allow the use of the warning icons on the odometer
+		OdoAlwaysShowIcons = false, 	-- Enable this to show the icons even when not damaged
 
 		OdoIconsToShow = {
 			["engine"] = true,
@@ -287,7 +287,7 @@ Config = {
 
 		EnableScreen = true, 		-- True adds screen effects while boosting
 
-		skillcheck = "qb-skillbar", -- When adding Nos to a vehicle there are three script options available
+		skillcheck = "ox_lib", -- When adding Nos to a vehicle there are three script options available
 									-- "qb-skillbar" "qb-lock" "ps-ui" "ox_lib"
 
 		explosiveFail = true, 		-- Better not fail that skill check. (1 in 10 chance of explosion)
