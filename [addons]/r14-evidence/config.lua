@@ -84,7 +84,7 @@ Config.Context = {
 
 Config.MDT = { -- this config sets up OPTIONAL photo upload to MDT systems/reports
     DRX = false, -- this uploads photos to DRX evidence & specific reports
-    PS = false, -- this uploads photos to ps-mdt reports
+    PS = true, -- this uploads photos to ps-mdt reports
 }
 
 Config.DB = { -- this config sets what table you are using to store vehicle evidence
@@ -209,7 +209,7 @@ regalonefour.github.io to insert the appropriate event triggers into your consum
 
 Config.Breathalyzer = {
     Enabled = true, -- set this to true if you want to use the breathalyzer events contained in this script (may require additional setup if not using qb-smallresources)
-    UsingESX = true, -- set this to true if you are using ESX and want to use the native ESX.setPlayerStatus function to set BAC
+    UsingESX = false, -- set this to true if you are using ESX and want to use the native ESX.setPlayerStatus function to set BAC
     EventTriggers = {
         [1] = {event = 'hypothetical_consumables:server:consumedrink', type = 'server', alocholArgPos = 2, alocholArgSubField = 'item', alcoholArgValue = 'margarita', cidArgPos = nil},
     },
@@ -467,7 +467,7 @@ alerts, and will need to modified to work with a thirdparty alert script!
 --]]----------------------------------------------------------------------------------------------------------
 
 Config.Alerts = { -- you can add custom code here to trigger your alert script
-    Active = true, -- set to false if you don't want to use these
+    Active = false, -- set to false if you don't want to use these
     Timeout = 10000, -- specify how long before the script will generate a second alert of that type
     ShotsFired = function() 
         if math.random(1, 100) > 50 then   
