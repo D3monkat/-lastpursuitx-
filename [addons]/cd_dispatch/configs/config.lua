@@ -60,7 +60,7 @@ Config.NotifyStatusChange = true --Do you want to notify player's when a player 
 
 Config.AllowedJobs = { --A list of jobs who are allowed to use this dispatch.
 --This will group different jobs together. Eg., so 2 jobs {'police', 'sheriff'} can both see can see each other on the large UI and the pause menu/mini-map blips.
-    [1] = {'police', }, --police group
+    [1] = {'police', 'bcso', 'sast' }, --police group
     [2] = {'ambulance', }, --ambulance group
     [3] = {'mechanic', }, --mechanic group
     -- [4] = {'1st_job', '2nd_job'}, --An example of 2 grouped jobs.
@@ -85,7 +85,7 @@ Config.PauseMenuBlips = {
     data_update_timer = 1, --(in seconds) How many seconds should the blip data from the server side be sent to the client side to be updated?
     blip_type = 'dynamic', --[ 'dynamic' / 'static' ] --Do you want blips to be static or dynamicly change depending on what a player has set their 'vehicle' to on the large UI settings.
     flashing_blips = true, --Do you want blips to flash when a player's vehicle has it's emergancy lights enabled?
-    bundle_blips = false, --Do you want to bundle the blips together so they do not spam the pause menu legend?
+    bundle_blips = true, --Do you want to bundle the blips together so they do not spam the pause menu legend?
     radiochannel_on_blips = true, --Do you want a players radio chanel to be displayed on blips?
     minimize_longdistance_blips = true, --Do you want long distance blips to be minimized(smaller size) on the mini-map instead of them being hidden?
     
@@ -123,7 +123,9 @@ Config.Dispatcher = {
     notify_activity = true, --Do you want players to be notified when a dispatcher comes online/goes offline? 
 
     Perms = { --A list of jobs and the minimum job grade for those who are allowed to use the dispatcher features.
-        ['police'] = 0,
+    ['police'] = 0,
+    ['bcso'] = 0,
+    ['sast'] = 0,
         ['ambulance'] = 0,
         ['mechanic'] = 0,
     },
@@ -153,8 +155,8 @@ Config.JobCallCommands = {
     --anonymous: Do you want this call to be anonymous? (does not show the callers name or phone number and uses radius blips).
     --job_table: The jobs who can see each others calls (you can add multiple).
     Civilian_Commands = {
-        { job_label = 'Police',         command = '911',        anonymous = false, 	job_table = {'police', } },
-        { job_label = 'Police',         command = '911a',       anonymous = true,   job_table = {'police', } },
+        { job_label = 'Police',         command = '911',        anonymous = false, 	job_table = {'police', 'bcso', 'sast' } },
+        { job_label = 'Police',         command = '911a',       anonymous = true,   job_table = {'police', 'bcso', 'sast' } },
         { job_label = 'Ambulance',      command = '911ems',     anonymous = false,	job_table = {'ambulance', } },
         { job_label = 'Mechanic',       command = 'mechanic',   anonymous = false,	job_table = {'mechanic', } },
         { job_label = 'Car dealer',     command = 'cardealer',  anonymous = false,	job_table = {'cardealer', } },
@@ -179,7 +181,7 @@ Config.PanicButton = {
     ENABLE = true, --Do you want to allow certain jobs to use the built in panic button?
     play_sound_in_distance = true, --Do you want the panic button sound to play to all nearby players?
     command = 'panic', --The chat command.
-    job_table = {'police', 'ambulance', } --A list of jobs who can use the panic button (every job in this list will be notified if a panic button is pressed).
+    job_table = {'police', 'ambulance', 'bcso', 'sast' } --A list of jobs who can use the panic button (every job in this list will be notified if a panic button is pressed).
 }
 
 
@@ -193,11 +195,11 @@ Config.PanicButton = {
 
 Config.PoliceAlerts = {
     ENABLE = true, --Do you want to use the built in police alerts?
-    police_jobs = {'police', }, --The jobs who will be notified from these police alerts.
+    police_jobs = {'police', 'bcso', 'sast' }, --The jobs who will be notified from these police alerts.
     whitelisted_jobs = {'police', 'ambulance', }, --These jobs will NOT trigger these police alerts.
     cooldown = 30, --(in seconds) This cooldown is to prevent alerts from being spammed by the same player.
     require_witness_peds = {
-        ENABLE = false, --Do you want police alerts only to be sent if a witness (npc ped) is in the area?
+        ENABLE = true, --Do you want police alerts only to be sent if a witness (npc ped) is in the area?
         distance = 100, --The distance to check for witnesses.
     },
 
