@@ -168,6 +168,8 @@ Config = {
 									-- if false, the repair option will always be available
 		Jobs = {
 			["police"] = 0, -- Job and Job Grade
+			["bcso"] = 0, -- Job and Job Grade
+			["sast"] = 0, -- Job and Job Grade
 			["ambulance"] = 0,
 			["mechanic"] = 0,
 		},
