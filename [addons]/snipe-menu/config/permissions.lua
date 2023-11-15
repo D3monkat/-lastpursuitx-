@@ -26,7 +26,7 @@ Config.GodRoles = {
 }
 
 Config.Permissions = {
-    ["license:6d3b6254a50416697dcaa91878e2eb03d9112302"] = "god", -- the role god, admin or mod should be the key from Config.GodRoles which means the values that are added in square brackets.
+    ["license:8ea7c586f8653071c23672da73b2f2095496c13b"] = "god", -- the role god, admin or mod should be the key from Config.GodRoles which means the values that are added in square brackets.
     ["fivem:1234"] = "god",
     ["steam:1234"] = "god",
     ["124584938326312"] = "god", -- discord roles (copy the role id and paste it here) (REQUIRES badger_discord_api)
