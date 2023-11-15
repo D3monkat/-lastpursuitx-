@@ -126,7 +126,7 @@ TennisCourts = {
         courtLength = 11.89,
 
         centerConstant = 0.097,
-        showBlip = true,
+        showBlip = false,
     },
     pbluff_1_green = {
         z = 10.64,
@@ -143,7 +143,7 @@ TennisCourts = {
         courtLength = 11.89,
 
         centerConstant = -0.097,
-        showBlip = true,
+        showBlip = false,
     },
     pbluff_2_blue = {
         z = 10.64,
@@ -207,7 +207,7 @@ TennisCourts = {
         courtLength = 11.89,
 
         centerConstant = 0.305,
-        showBlip = true,
+        showBlip = false,
     },
     rockf_b_2 = {
         z = 49.71,
@@ -284,7 +284,7 @@ TennisCourts = {
         courtLength = 11.95,
 
         centerConstant = 0.0,
-        showBlip = true,
+        showBlip = false,
     },
     richman_2 = {
         z = 58.58,
@@ -315,7 +315,7 @@ TennisCourts = {
         courtLength = 11.88,
 
         centerConstant = 0.0,
-        showBlip = true,
+        showBlip = false,
     },
     morningwood = {
         z = 48.23,
@@ -331,7 +331,7 @@ TennisCourts = {
         courtLength = 11.88,
 
         centerConstant = -0.095,
-        showBlip = true,
+        showBlip = false,
     },
     rockf_c_1 = {
         z = 65.759999999999,
@@ -347,7 +347,7 @@ TennisCourts = {
         courtLength = 11.88,
 
         centerConstant = -0.095,
-        showBlip = true,
+        showBlip = false,
     },
     rockf_c_2 = {
         z = 60.67,
@@ -408,7 +408,7 @@ TennisCourts = {
         courtLength = 11.93,
 
         centerConstant = 0.0,
-        showBlip = true,
+        showBlip = false,
     },
     alta_2 = {
         z = 52.79,
@@ -439,7 +439,7 @@ TennisCourts = {
         courtLength = 11.86,
 
         centerConstant = -0.02,
-        showBlip = true,
+        showBlip = false,
     },
     vespucci_1 = {
         z = 3.39,
@@ -455,7 +455,7 @@ TennisCourts = {
         courtLength = 11.90,
 
         centerConstant = -0.015,
-        showBlip = true,
+        showBlip = false,
     },
     vespucci_2 = {
         z = 3.39,
@@ -575,7 +575,7 @@ TennisCourts = {
         courtWidth = 8.0,
         courtLength = 11.89,
         centerConstant = 0.09,
-        showBlip = true,
+        showBlip = false,
     },
     rockford = {
         z = 101.709999,
@@ -590,7 +590,7 @@ TennisCourts = {
         courtWidth = 8.0,
         courtLength = 11.89,
         centerConstant = 0.09,
-        showBlip = true,
+        showBlip = false,
     },
 
     puerta = {
@@ -606,7 +606,7 @@ TennisCourts = {
         courtWidth = 8.0,
         courtLength = 11.89,
         centerConstant = 0.0,
-        showBlip = true,
+        showBlip = false,
     },
 
     
@@ -623,7 +623,7 @@ TennisCourts = {
     --     courtWidth = 8.0,
     --     courtLength = 11.89,
     --     centerConstant = 0.0,
-    --     showBlip = true,
+    --     showBlip = false,
     -- },
 
     
