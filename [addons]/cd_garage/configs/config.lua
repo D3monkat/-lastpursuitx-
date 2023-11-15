@@ -49,7 +49,7 @@ Config.FrameworkTriggers = {
 Config.PlateFormats = 'mixed' --[ 'trimmed' /  'with_spaces' / 'mixed' ] CHOOSE CAREFULLY! Read our documentation website for more info on this if you are unsure! [https://docs.codesign.pro/paid-scripts/garage#step-6-vehicle-plate-format].
 Config.UsingOnesync = true --Do you use OneSync legacy/infinity?
 Config.IdentifierType = 'license' --[ 'steamid' / 'license' ] Choose the identifier type that your server uses.
-Config.UseFrameworkDutySystem = false --Do you want to use your frameworks (esx/qbcore) built-in duty system?
+Config.UseFrameworkDutySystem = true --Do you want to use your frameworks (esx/qbcore) built-in duty system?
 Config.Debug = false --To enable debug prints.
 
 
@@ -122,7 +122,9 @@ Config.Impound = {
     chat_command = 'impound', --Customise the chat command to impound vehicles.
 
     Authorized_Jobs = { --Only jobs inside this table can impound vehicles or unimpound vehicles.
-        ['police'] = true,
+    ['police'] = true,
+    ['bcso'] = true,
+    ['sast'] = true,
         ['mechanic'] = true,
         --['add_more_here'] = true,
     },
@@ -211,7 +213,7 @@ Config.PropertyGarages = {
 
 
 Config.FakePlates = {
-    ENABLE = false, --Do you want to use the built in fake plate system?
+    ENABLE = true, --Do you want to use the built in fake plate system?
     item_name = 'fakeplate', --The name of the usable item to add a fake plate.
 
     RemovePlate = {
@@ -267,13 +269,13 @@ Config.VehicleKeys = {
     },
 
     Lockpick = {
-        ENABLE = true, --Do you want to use the vehicle lockpick system?
+        ENABLE = false, --Do you want to use the vehicle lockpick system?
         command = { --Do you want players to use a chat command to start lockpicking a vehicle?
-            ENABLE = true,
+            ENABLE = false,
             chat_command = 'lockpick' --Customise the chat command.
         },
         usable_item = { --Do you want players to use a usable item to lockpick a vehicle?
-            ENABLE = true,
+            ENABLE = false,
             item_name = 'lockpick' --The name of the usable item to start lockpicking a vehicle.
         }
     },
@@ -289,7 +291,7 @@ Config.VehicleKeys = {
 
 
 Config.Mileage = {
-    ENABLE = true, --Do you want to use the built in vehicle mileage system? The higher the miles the lower the vehicles max health will be. (or you can repurpose this for any other use).
+    ENABLE = false, --Do you want to use the built in vehicle mileage system? The higher the miles the lower the vehicles max health will be. (or you can repurpose this for any other use).
     chat_command = 'checkmiles', --Customise the chat command to check your vehicles miles and max health.
     mileage_multiplier = 1.0, --If you increase this number it will increase how fast vehicles gain miles. (decrease to lower).
     speed_metrics = 'miles', --(miles/kilometers) Choose what you want the mileage to display as.
@@ -403,10 +405,10 @@ Config.StaffPerms = {
 
 
 Config.InsideGarage = {
-    ENABLE = true, --Do you want to allow players to use the inside garage?
+    ENABLE = false, --Do you want to allow players to use the inside garage?
     only_showcars_inthisgarage = false, --Do you want the inside garage to only show the vehicles which are currently stored at that garage (eg., garage A).  (this works for inside garage only, even with this enabled all the cars will show in the outside UI).
     shell_z_axis = 30, --This is how low under the ground the garage shell will spawn, you could use math.random(10,50) to make it random each time so players dont see each other in their garage.
-    shell_time_script = 'easytime', --Choose which time script you are using so we can set the time when you enter the shell. [ 'easytime' / 'vsync' / 'qbcore' / 'other' ].
+    shell_time_script = 'qbcore', --Choose which time script you are using so we can set the time when you enter the shell. [ 'easytime' / 'vsync' / 'qbcore' / 'other' ].
     engines_on = false, --Do you want the vehicles engine will be turned on when you enter the inside garage?
     lights_on = false, --Do you want the vehicles headlights will be turned on when you enter the inside garage?
     use_spotlight = true, --Do you want the spotlight to shine on the closest vehicle?
@@ -489,7 +491,7 @@ Config.InsideGarage = {
 
 
 Config.JobVehicles = {
-    ENABLE = true, --Do you want players with defined jobs (below) to be able to use the garage ui to spawn job vehicles? (if disabled none of the options below will be used).
+    ENABLE = false, --Do you want players with defined jobs (below) to be able to use the garage ui to spawn job vehicles? (if disabled none of the options below will be used).
     choose_liverys = false, --Do you want players to be able to change liverys when they spawn a vehicle at a job garage?
     share_job_keys = false, --Do you want job vehicle keys to be automatically shared with other players with the same job? (requires you to be using the built in cd_garage keys feature).
 
@@ -594,7 +596,7 @@ Config.GangGarages = {
 --╚═════╝ ╚══════╝╚═╝╚═╝     ╚══════╝
 
 
-Config.Unique_Blips = true --Do you want each garage to be named by its unique id, for example: 'Garage A'? (If disabled all garages will be called 'Garage').
+Config.Unique_Blips = false --Do you want each garage to be named by its unique id, for example: 'Garage A'? (If disabled all garages will be called 'Garage').
 Config.Blip = { --You can find more info on blips here - https://docs.fivem.net/docs/game-references/blips.
     ['car'] = {
         sprite = 357, --Icon of the blip.
