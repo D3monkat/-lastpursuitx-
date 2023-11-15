@@ -109,7 +109,7 @@ return {
 		groups = {
 			['police'] = 0,
 			['bcso'] = 0,
-			['sast'] = 0
+			['sast'] = 0,
 		},
 		blip = {
 			id = 110, colour = 84, scale = 0.8
