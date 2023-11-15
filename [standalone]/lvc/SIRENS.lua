@@ -84,8 +84,8 @@ SIREN_ASSIGNMENTS = {
 	['LGUARD'] = { 1, 2, 3, 4, 11 },
 	--custom cars--
 	
-	--LSCSO--
-	['m11vic'] = { 15, 16, 17, 18, 19, },
+	--LSCSO--f
+	['tr_pdsilv'] = { 15, 16, 17, 18, 19, },
 	['m13explorer'] = { 15, 16, 17, 18, 19, },
 	['m14charger'] = { 15, 16, 17, 18, 19, },
 	['m15expedition'] = { 15, 16, 17, 18, 19, },
