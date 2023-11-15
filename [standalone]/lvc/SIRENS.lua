@@ -85,7 +85,7 @@ SIREN_ASSIGNMENTS = {
 	--custom cars--
 	
 	--LSCSO--f
-	['trpdsilv'] = { 15, 16, 17, 18, 19, },
+	-- ['trpdsilv'] = { 15, 16, 17, 18, 19, },
 	['m13explorer'] = { 15, 16, 17, 18, 19, },
 	['m14charger'] = { 15, 16, 17, 18, 19, },
 	['m15expedition'] = { 15, 16, 17, 18, 19, },
@@ -99,7 +99,7 @@ SIREN_ASSIGNMENTS = {
 	['m24stang'] = { 15, 16, 17, 18, 19, },
 		
 	--SAHP--
-	['18chargerc3'] = { 21, 22, 23, 24, },
+	['trpdsilv'] = { 21, 22, 23, 24, },
 	['11cvpic3'] = { 21, 22, 23, 24, },
 	['13capricec3'] = { 21, 22, 23, 24, },
 	['13fpiuc3'] = { 21, 22, 23, 24, },
