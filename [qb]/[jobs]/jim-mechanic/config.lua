@@ -176,7 +176,7 @@ Config = {
 		LockEmergency = true,  -- Enable this to lock make only "Emergency" (Class 18) vehicles to be used with the bench
 		Locations = {
 			{ coords = vec4(451.05, -973.19, 25.7, 180.0), prop = true, }, -- MRPD UNDERGROUND PARKING
-			{ coords = vector4(1842.3, 3692.29, 33.97, 207.51), prop = true, }, -- sspd
+			{ coords = vector4(1842.3, 3692.29, 33.97, 30.0), prop = true, }, -- sspd
 		},
 		CosmeticTable = { 			-- This controls what will appear in the emergency mech bench, "false" to hide it
 			["Repair" ] = true,
