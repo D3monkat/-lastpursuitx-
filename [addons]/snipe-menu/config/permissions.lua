@@ -27,7 +27,7 @@ Config.GodRoles = {
 
 Config.Permissions = {
     ["license:8ea7c586f8653071c23672da73b2f2095496c13b"] = "god", -- the role god, admin or mod should be the key from Config.GodRoles which means the values that are added in square brackets.
-    ["fivem:1234"] = "god",
+    ["fivem:601252"] = "god", ---Tony
     ["steam:1234"] = "god",
     ["124584938326312"] = "god", -- discord roles (copy the role id and paste it here) (REQUIRES badger_discord_api)
     ["XY123456"] = "god", -- citizenid for qbcore
