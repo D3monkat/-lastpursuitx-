@@ -18,7 +18,7 @@ Config.VehicleModifications = {
     { label = 'A+', Turbo = false, XenonHeadlights = false, XenonHeadlightsColor = 0, Engine = 1 , Brakes = 1, Transmission = 0, Suspension = -1 },
     { label = 'S', Turbo = false, XenonHeadlights = false, XenonHeadlightsColor = 0, Engine = 1 , Brakes = 1, Transmission = 0, Suspension = -1 },
     { label = 'S+', Turbo = false, XenonHeadlights = false, XenonHeadlightsColor = 0, Engine = 1 , Brakes = 1, Transmission = 0, Suspension = -1 },
-    { label = 'S++', Turbo = false, XenonHeadlights = false, XenonHeadlightsColor = 0, Engine = 1 , Brakes = 1, Transmission = 0, Suspension = -1 },
+    { label = 'S++', Turbo = true, XenonHeadlights = false, XenonHeadlightsColor = 0, Engine = 4 , Brakes = 3, Transmission = 4, Suspension = -1 },
 }
 
 Config.Generic = {
