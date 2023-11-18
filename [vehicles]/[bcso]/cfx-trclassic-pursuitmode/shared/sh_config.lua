@@ -5,7 +5,7 @@ Config.Hud = true                   -- Only enable if you are using PS hud or QB
 Config.HudName = 'ps-hud'           -- ps-hud for ps and qb-hud for qb
 Config.WebhookColour = 16711680
 
-Config.VehicleMaxSpeed = 185-- (148) Sets Vehicle Max Speed in MPH (value * 2.236936) (This is a vehicle limit for what the vehicle will top out at.)
+Config.VehicleMaxSpeed = 96.5 -- (148) Sets Vehicle Max Speed in MPH (value * 2.236936) (This is a vehicle limit for what the vehicle will top out at.)
 
 Config.GenericGear = {"C", "B", "A", "A+"} -- This is here so the resouce can tell what classes you wish to use for that class set 
 Config.InterceptorGear = {"C", "B", "A", "A+", "S", "S+", "S++"} -- Same as above (and below)
