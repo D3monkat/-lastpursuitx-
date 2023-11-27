@@ -3,17 +3,17 @@ print("^2Jim^7-^2CatCafe ^7v^41^7.^48^7.^46^5hotfix ^7- ^2CatCafe Script by ^1Ji
 Config = {
 	Debug = false, -- false to remove green boxes
 	Lan = "en",
-	img = "qb-inventory/html/images/", -- Change this to your inventory's name and image folder (SET TO "" IF YOU HAVE DOUBLE IMAGES)
+	img = "ox_inventory/web/images/", -- Change this to your inventory's name and image folder (SET TO "" IF YOU HAVE DOUBLE IMAGES)
 
 	PatHeal = 2, 			--how much you are healed by patting a cat, 2 hp seems resonable, enough not to be over powered and enough to draw people in.
 							--set to 0 if you don't want to use this
 	RelieveStress = 5,		-- How much stress relief per pat
 
 	Core = "qb-core", -- set this to your core folder
-	Inv = "qb", -- set to "ox" if using OX Inventory
-	Menu = "qb", -- set to "ox" if using ox_lib context menus
-	Notify = "qb",
-	ProgressBar = "qb", -- set to "ox" if using ox_lib progressbar
+	Inv = "ox", -- set to "ox" if using OX Inventory
+	Menu = "ox", -- set to "ox" if using ox_lib context menus
+	Notify = "ox",
+	ProgressBar = "ox", -- set to "ox" if using ox_lib progressbar
 
 	MultiCraft = true,
 	MultiCraftAmounts = { [1], [5], [10] },
