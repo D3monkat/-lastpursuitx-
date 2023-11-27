@@ -22,7 +22,7 @@ Config.ropeLength = 7
 Config.ropeSyncDuration = 10
 
 -- Max speed (in MPH) of vehicles which are towing or being towed (set to -1 to disable speed limiting)
-Config.maxTowingSpeed = -1
+Config.maxTowingSpeed = 900
 
 -- Whether we should disallow players from attaching ropes to locked vehicles
 -- (For example. To prevent them from stealing vehicles of other players)
