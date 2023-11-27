@@ -6,13 +6,13 @@ Config = {
 	--https://i.imgur.com/NIFOsYf.jpeg
 
 	Lan = "en", -- Pick your language here
-	img = "qb-inventory/html/images/", -- Change this to your inventory's name and image folder (SET TO "" IF YOU HAVE DOUBLE IMAGES)
+	img = "ox_inventory/web/images/", -- Change this to your inventory's name and image folder (SET TO "" IF YOU HAVE DOUBLE IMAGES)
 
 	Core = "qb-core", -- set this to your core folder
-	Inv = "qb", -- set to "ox" if using OX Inventory
-	Menu = "qb", -- set to "ox" if using OX Lib Context
-	Notify = "qb",
-	ProgressBar = "qb", -- set to "ox" if using ox_lib progressbar
+	Inv = "ox", -- set to "ox" if using OX Inventory
+	Menu = "ox", -- set to "ox" if using OX Lib Context
+	Notify = "ox",
+	ProgressBar = "ox", -- set to "ox" if using ox_lib progressbar
 
 	MultiCraft = true,
 	MultiCraftAmounts = { [1], [5], [10] },

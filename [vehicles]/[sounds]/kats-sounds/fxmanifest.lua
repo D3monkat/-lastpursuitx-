@@ -7,7 +7,9 @@ files {
 	'sfx/**/*.awc',
 	'sfx/**/*.awc',
   }
-  
+  data_file "AUDIO_GAMEDATA" "audioconfig/lg228nathemi64_game.dat"
+data_file "AUDIO_SOUNDDATA" "audioconfig/lg228nathemi64_sounds.dat"
+data_file "AUDIO_WAVEPACK" "sfx/dlc_lg228nathemi64"
   data_file "AUDIO_GAMEDATA" "audioconfig/lg227hemi64_game.dat"
   data_file "AUDIO_SOUNDDATA" "audioconfig/lg227hemi64_sounds.dat"
   data_file "AUDIO_WAVEPACK" "sfx/dlc_lg227hemi64"
