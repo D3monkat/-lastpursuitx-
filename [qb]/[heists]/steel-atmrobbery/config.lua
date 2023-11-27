@@ -30,7 +30,7 @@ Config.DrawText = '[E] Add The Rope to ATM | [X] Remove Rope'
 Config.DrawTextSide = 'left' -- Side of the drawtext
 
 -- ROPE
-Config.RopeItemName = "atmrope" -- Rope Item
+Config.RopeItemName = "c4" -- Rope Item
 Config.RopeItemCount = 1 -- how many removed rope you wanna when start
 
 -- TARGET
