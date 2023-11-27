@@ -113,6 +113,14 @@ return {
 		consume = 0
 	},
 
+	['atmrope'] = {
+		label = 'Paper Bag',
+		weight = 1,
+		stack = false,
+		close = false,
+		consume = 0
+	},
+
 	['identification'] = {
 		label = 'Identification',
 	},
