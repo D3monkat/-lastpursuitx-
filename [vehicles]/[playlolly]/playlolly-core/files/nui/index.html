@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playlolly Core</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/howler@2.2.3/dist/howler.core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+
+    <script src="js/notification/index.js" type="module"></script>
+    <script src="js/notification/drawtext.js"></script>
+    <script src="js/menu/index.js" defer></script>
+    <script src="js/progress/index.js" defer></script>
+
+    <script>
+        var audioPlayer = null;
+        window.addEventListener('message', function (event) {
+            if (event.data.action == "playSound") {
+                if (audioPlayer != null) {
+                    audioPlayer.stop();
+                }
+
+                audioPlayer = new Howl({
+                    src: ["./sounds/" + event.data.file + ".ogg"],
+                    volume: event.data.volume
+                });
+
+                audioPlayer.play();
+            } else if (event.data.action == "stopSound") {
+                audioPlayer.stop()
+            }
+        });
+    </script>
+
+    <link href="https://use.fontawesome.com/releases/v6.2.1/css/all.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/quasar@2.11.5/dist/quasar.prod.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/notification.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/progress.css">
+</head>
+
+<body>
+    <div id="q-app" style="min-height: 100vh"></div>
+
+    <div id="notification-container">
+        <div id="notification-text"></div>
+    </div>
+
+    <div id="menu-container">
+        <div id="menu-buttons"></div>
+    </div>
+
+    <div id="progress-container">
+        <div class="progress-labels">
+            <div id="progress-label"></div>
+        </div>
+
+        <div class="progress-bar-container">
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/quasar@2.11.5/dist/quasar.umd.prod.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/quasar@2.11.5/dist/icon-set/fontawesome-v6.umd.prod.js"></script>
+</body>
+
+</html>
