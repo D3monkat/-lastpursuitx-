@@ -1,0 +1,1 @@
+export const fetchNui=async(evName,data)=>{const resourceName=window.GetParentResourceName();const rawResp=await fetch(`https://${resourceName}/${evName}`,{body:JSON.stringify(data),headers:{"Content-Type":"application/json; charset=UTF8"},method:"POST"});return rawResp.json()};
