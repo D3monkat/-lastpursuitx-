@@ -716,6 +716,7 @@ cannabis = {name = 'cannabis', label = 'Cannabis', weight = 500, type = 'item', 
 green_gelato_cannabis = {name = 'green_gelato_cannabis', label = 'Green Gelato Cannabis', weight = 500, type = 'item', image = 'your_image.png', unique = false, useable = true, shouldClose = false, combinable = nil},
 opium = {name = 'opium', label = 'Opium', weight = 500, type = 'item', image = 'your_image.png', unique = false, useable = true, shouldClose = false, combinable = nil},
 cocaine = {name = 'cocaine', label = 'Cocaine', weight = 500, type = 'item', image = 'your_image.png', unique = false, useable = true, shouldClose = false, combinable = nil},
+atmrope = {name = 'atmrope', label = 'Steel lined rope', weight = 500, type = 'item', image = 'your_image.png', unique = false, useable = true, shouldClose = false, combinable = nil},
 
 
 }
