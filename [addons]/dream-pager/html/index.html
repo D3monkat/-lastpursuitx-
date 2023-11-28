@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dream-pager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="notification-container"></div>
+    <div class="pager-container" hidden>
+      <p id="pager-volume-display">50%</p>
+      <p id="pager-user"></p>
+      <input id="pager-volume" type="range" min="0" max="100" value="50">
+      <img class="pager" src="assets/pager.png" alt="Pager" draggable="false" />
+      <div class="pager-screen">
+        <form id="pager-form" class="pager-form">
+          <label class="sendToLabel" for="sendTo"> Send to:</label>
+          <select id="pager-select" id="sendTo" name="sendTo"></select>
+          <label class="messageLabel" for="message"> Message:</label>
+          <textarea id="pager-message" id="message" name="message" required></textarea>
+        </form>
+      </div>
+      <button form="pager-form" type="reset" class="pager-close"></button>
+      <button form="pager-form" type="submit" class="pager-submit"></button>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
