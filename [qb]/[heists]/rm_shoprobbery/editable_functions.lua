@@ -20,21 +20,25 @@ end)
 --This event send to all police players
 RegisterNetEvent('shoprobbery:client:policeAlert')
 AddEventHandler('shoprobbery:client:policeAlert', function(targetCoords)
-    TriggerEvent('qb-scoreboard:server:SetActivityBusy', "storerobbery", true)
-    exports["ps-dispatch"]:CustomAlert({
-        coords = vector3(targetCoords.x, targetCoords.y, targetCoords.z),
-        message = "Store Robbery",
-        dispatchCode = "10-90 - Store Robbery",
-        description = "Robbery in progress",
-        radius = 0,
-        sprite = 161,
-        priority = 2, -- priority
-        color = 2,
-        scale = 1.0,
-        length = 3,
+    local data = exports['cd_dispatch']:GetPlayerInfo()
+    TriggerServerEvent('cd_dispatch:AddNotification', {
+        job_table = {'police', 'sast', 'bcso' }, 
+        coords = data.coords,
+        title = '10-15 - Store Robbery',
+        message = 'A '..data.sex..' robbing a store at '..data.street, 
+        flash = 0,
+        unique_id = data.unique_id,
+        sound = 1,
+        blip = {
+            sprite = 431, 
+            scale = 1.2, 
+            colour = 3,
+            flashes = true, 
+            text = '911 - Store Robbery',
+            time = 5,
+            radius = 0,
+        }
     })
-    Wait(500)
-    TriggerEvent('qb-scoreboard:server:SetActivityBusy', "storerobbery", false)
     
     -- ShowNotification(Strings['police_alert'])
     -- local alpha = 250
