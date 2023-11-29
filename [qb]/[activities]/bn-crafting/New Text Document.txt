@@ -1,0 +1,26 @@
+## Stuff to add
+
+Custom Progressbar 
+
+```
+if Config.UseProgressbarSystem2 then
+     Config.ProgressbarSystem2('taking_bullets')
+end
+
+-- Config.ProgressBarSystem = If you want to use a progress-bar for the exercises you are doing, you can do so below.
+Config.UseProgressbarSystem2 = true
+Config.ProgressbarSystem2 = function(actionName, time)
+    exports['progressbar']:Progress({
+        name = "taking_bullets",
+        label = Lang:t('info.loading_bullets'),
+        duration = Config.ReloadTime,
+        canCancel = false,
+        controlDisables = {
+            disableMouse = false,
+            disableMovement = false,
+            disableCarMovement = false,
+            disableCombat = true,
+        }
+    })  -- Done
+end
+```

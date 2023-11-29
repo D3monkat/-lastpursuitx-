@@ -122,9 +122,11 @@ return {
 			{ name = 'WEAPON_CARBINERIFLE', price = 1000, metadata = { registered = true, }, license = 'weapon', grade = 3 },
 			{ name = 'WEAPON_STUNGUN', price = 500, metadata = { registered = true,} }
 		}, locations = {
-			vector3(482.69, -995.27, 30.69)
+			vector3(482.69, -995.27, 30.69),
+			vector3(1837.17, 3685.51, 34.19)
 		}, targets = {
 			{ loc = vector3(482.69, -995.27, 30.69), length = 0.5, width = 3.0, heading = 270.0, minZ = 30.5, maxZ = 32.0, distance = 6 }
+			{ loc = vector3(1837.17, 3685.51, 34.19), length = 0.5, width = 3.0, heading = 270.0, minZ = 33.5, maxZ = 36.0, distance = 6 }
 		}
 	},
 
