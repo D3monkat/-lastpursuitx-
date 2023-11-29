@@ -125,7 +125,7 @@ return {
 			vector3(482.69, -995.27, 30.69),
 			vector3(1837.17, 3685.51, 34.19)
 		}, targets = {
-			{ loc = vector3(482.69, -995.27, 30.69), length = 0.5, width = 3.0, heading = 270.0, minZ = 30.5, maxZ = 32.0, distance = 6 }
+			{ loc = vector3(482.69, -995.27, 30.69), length = 0.5, width = 3.0, heading = 270.0, minZ = 30.5, maxZ = 32.0, distance = 6 },
 			{ loc = vector3(1837.17, 3685.51, 34.19), length = 0.5, width = 3.0, heading = 270.0, minZ = 33.5, maxZ = 36.0, distance = 6 }
 		}
 	},
