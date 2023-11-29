@@ -83,7 +83,7 @@ Config = {
 			blip = vec3(120.27, -1038.09, 29.28), blipcolor = 56, blipsprite = 106, blipdisp = 6, blipscale = 0.7, blipcat = nil,
 		},
 		["beanunclejust"] = {
-			zoneEnable = true,
+			zoneEnable = false,
 			label = "Bean Machine(Vinewood)",
 			job = "beanmachine",
 			autoClock = { enter = false, exit = true, },
@@ -99,7 +99,7 @@ Config = {
 			blip = vec3(-629.63, 234.39, 81.88), blipcolor = 56, blipsprite = 106, blipdisp = 6, blipscale = 0.7, blipcat = nil,
 		},
 		["beanrflx"] = {
-			zoneEnable = true,
+			zoneEnable = false,
 			label = "Bean Machine(Legion)",
 			job = "beanmachine",
 			autoClock = { enter = false, exit = true, },
