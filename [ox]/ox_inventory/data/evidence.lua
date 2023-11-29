@@ -1,9 +1,9 @@
 return {
 	{
-		coords = vec3(458.97, -982.79, 30.68),
+		coords = vector3(472.62, -995.3, 26.27),
 		target = { -- qtarget support
 			name = 'mrpd_evidence', -- name of zone must be uniuqe
-			loc = vec3(459.07, -984.07, 30.69),
+			loc = vector3(472.62, -995.3, 26.27),
 			length = 1.4,
 			width = 3.2,
 			heading = 0,
