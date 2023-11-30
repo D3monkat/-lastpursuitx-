@@ -1,26 +1,26 @@
 -- Webhook for instapic posts, recommended to be a public channel
-INSTAPIC_WEBHOOK = "https://canary.discord.com/api/webhooks/"
+INSTAPIC_WEBHOOK = "https://discord.com/api/webhooks/1179595734471942146/-F3ZyJj4lNOvy-K_1UNqtpy4fhqKfn1OjLGl3t945ojE6KdUSqcnrz6QZcIvg8ujPwj3"
 -- Webhook for birdy posts, recommended to be a public channel
-BIRDY_WEBHOOK = "https://canary.discord.com/api/webhooks/"
+BIRDY_WEBHOOK = "https://discord.com/api/webhooks/1179595827027656866/dUixCnNSfodt4xlvsOHEb3t82XBMwwBj8ZYRLWaZhhwH-Rrsez6uUWIEVRDlCiiR9o4o"
 
 -- Discord webhook for server logs
 LOGS = {
-    Calls = "https://canary.discord.com/api/webhooks/", -- set to false to disable
-    Messages = "https://canary.discord.com/api/webhooks/",
-    InstaPic = "https://canary.discord.com/api/webhooks/",
-    Birdy = "https://canary.discord.com/api/webhooks/",
-    YellowPages = "https://canary.discord.com/api/webhooks/",
-    Marketplace = "https://canary.discord.com/api/webhooks/",
-    Mail = "https://canary.discord.com/api/webhooks/",
-    Wallet = "https://canary.discord.com/api/webhooks/",
-    DarkChat = "https://canary.discord.com/api/webhooks/",
-    Services = "https://canary.discord.com/api/webhooks/",
-    Crypto = "https://canary.discord.com/api/webhooks/",
-    Trendy = "https://canary.discord.com/api/webhooks/"
+    Calls = "false", -- set to false to disable
+    Messages = "false",
+    InstaPic = "false",
+    Birdy = "false",
+    YellowPages = "false",
+    Marketplace = "false",
+    Mail = "false",
+    Wallet = "false",
+    DarkChat = "false",
+    Services = "false",
+    Crypto = "false",
+    Trendy = "false"
 }
 
 API_KEYS = {
-    Video = "https://canary.discord.com/api/webhooks/",
-    Image = "https://canary.discord.com/api/webhooks/",
-    Audio = "https://canary.discord.com/api/webhooks/",
+    Video = "https://discord.com/api/webhooks/1166491884231868446/iImbWEZjKSNGmJ1ViBa7NbOr8diuybLajRlUHqh1e4AwtQF3sR5KTZA3Pn7NqdSyNwBr",
+    Image = "https://discord.com/api/webhooks/1166491884231868446/iImbWEZjKSNGmJ1ViBa7NbOr8diuybLajRlUHqh1e4AwtQF3sR5KTZA3Pn7NqdSyNwBr",
+    Audio = "https://discord.com/api/webhooks/1166491884231868446/iImbWEZjKSNGmJ1ViBa7NbOr8diuybLajRlUHqh1e4AwtQF3sR5KTZA3Pn7NqdSyNwBr",
 }
