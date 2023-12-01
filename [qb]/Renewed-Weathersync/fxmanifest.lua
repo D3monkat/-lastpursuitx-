@@ -5,19 +5,22 @@ use_fxv2_oal 'yes'
 
 name 'Renewed Weather Sync'
 author 'FjamZoo - Renewed Scripts'
-version '1.0.2'
+version '1.1.2'
 
 shared_scripts{
     '@ox_lib/init.lua',
 }
 
-client_script 'client/*.lua'
+client_scripts {
+    'client/*.lua',
+    'compatability/**/client.lua',
+}
 
 server_scripts {
     'server/time.lua',
     'server/weather.lua',
+    'compatability/**/server.lua',
 }
 
-file 'compatability/**/client.lua'
-
 provide 'qb-weathersync'
+provide 'cd_easytime'

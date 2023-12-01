@@ -6,9 +6,16 @@ local function resetWeatherParticles()
     if hadSnow then
         SetForceVehicleTrails(false)
         SetForcePedFootstepsTracks(false)
+        ReleaseNamedScriptAudioBank('ICE_FOOTSTEPS')
+        ReleaseNamedScriptAudioBank('SNOW_FOOTSTEPS')
         ForceSnowPass(false)
         WaterOverrideSetStrength(0.5)
         RemoveNamedPtfxAsset('core_snow')
+
+        if IsIplActive('alamo_ice') then
+            RemoveIpl('alamo_ice')
+        end
+
         hadSnow = false
     end
 end
@@ -21,7 +28,13 @@ local function setWeatherParticles()
         ForceSnowPass(true)
         SetForceVehicleTrails(true)
         SetForcePedFootstepsTracks(true)
+        RequestScriptAudioBank('ICE_FOOTSTEPS', false)
+        RequestScriptAudioBank('SNOW_FOOTSTEPS', false)
         WaterOverrideSetStrength(0.9)
+
+        if GetResourceState('nve_iced_alamo') ~= 'missing' then
+            RequestIpl('alamo_ice')
+        end
 
         hadSnow = true
     end
@@ -37,7 +50,7 @@ local function setWeather(forceSwap)
     end
 
     if serverWeather.windDirection then
-        SetWindDirection(math.rad(serverWeather.WindDirection))
+        SetWindDirection(math.rad(serverWeather.windDirection))
     end
 
     if serverWeather.windSpeed then
@@ -53,8 +66,8 @@ local function setWeather(forceSwap)
     end
 end
 
-AddStateBagChangeHandler('weather', nil, function(bagName, _, value)
-    if value and bagName == 'global' then
+AddStateBagChangeHandler('weather', 'global', function(_, _, value)
+    if value then
         serverWeather = value
 
         if playerState.syncWeather then
@@ -63,11 +76,12 @@ AddStateBagChangeHandler('weather', nil, function(bagName, _, value)
     end
 end)
 
-AddStateBagChangeHandler('blackOut', nil, function(bagName, _, value)
-    if value and bagName == 'global' then
+AddStateBagChangeHandler('blackOut', 'global', function(_, _, value)
+    if type(value) == 'boolean' then
         SetArtificialLightsState(value)
-        SetArtificialLightsStateAffectsVehicles(false)
     end
+
+    SetArtificialLightsStateAffectsVehicles(false)
 end)
 
 -- Some startup shit --
@@ -81,15 +95,14 @@ CreateThread(function ()
 end)
 
 AddStateBagChangeHandler('syncWeather', ('player:%s'):format(cache.serverId), function(_, _, value)
-    if value then
+    if not value then
         SetTimeout(0, function()
             while not playerState.syncWeather do
                 SetRainLevel(0.0)
-                SetWeatherTypePersist('CLEAR')
-                SetWeatherTypeNow('CLEAR')
-                SetWeatherTypeNowPersist('CLEAR')
-                NetworkOverrideClockTime(18, 0, 0)
-                Wait(5000)
+                SetWeatherTypePersist('EXTRASUNNY')
+                SetWeatherTypeNow('EXTRASUNNY')
+                SetWeatherTypeNowPersist('EXTRASUNNY')
+                Wait(2500)
             end
         end)
     else

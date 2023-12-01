@@ -3,20 +3,35 @@ local buildWeatherList = require 'server.weatherbuilder'
 local useScheduledWeather = require 'config.weather'.useScheduledWeather
 local weatherList = buildWeatherList()
 
+local overrideWeather = false
 
 -- weatherList executor --
+local function executeCurrentWeather()
+    local weather = weatherList[1]
+
+    if weather then
+        GlobalState.weather = weather
+    end
+
+    return weather
+end
+
 local function runWeatherList()
-    table.sort(weatherList, function (a, b)
-        return a.epochTime < b.epochTime
-    end)
+    local currentWeather = executeCurrentWeather()
 
-    for i = 1, #weatherList do
-        local currentWeather = weatherList[i]
+    while not overrideWeather do
 
-        if currentWeather then
-            GlobalState.weather = currentWeather
-            Wait(currentWeather.time * 60000)
+        if weatherList[1] then
+            currentWeather.time -= 1
+
+            if currentWeather.time <= 0 then
+                table.remove(weatherList, 1)
+                currentWeather = executeCurrentWeather()
+            end
+        else
+            currentWeather = executeCurrentWeather()
         end
+        Wait(60000)
     end
 end
 
@@ -33,6 +48,13 @@ lib.callback.register('Renewed-Weathersync:server:setWeatherType', function(sour
     if IsPlayerAceAllowed(source, 'command.weather') and weatherList[index] then
         weatherList[index].weather = weatherType
 
+        if index == 1 then
+            local currentWeather = weatherList[1]
+            currentWeather.weather = weatherType
+
+            GlobalState.weather = currentWeather
+        end
+
         return weatherType
     end
 
@@ -43,20 +65,7 @@ lib.callback.register('Renewed-Weathersync:server:setEventTime', function(source
     local weatherEvent = weatherList[index]
 
     if IsPlayerAceAllowed(source, 'command.weather') and weatherEvent then
-        local isMinus = eventTime < weatherEvent.time
-        local eventTimeEpoch = eventTime * 60
-
         weatherEvent.time = eventTime
-
-        -- Itterate through the queue behind the edited event and adjust the epoch timecycle
-        for i = index + 1, #weatherList do
-            local currentWeather = weatherList[i]
-            if isMinus then
-                currentWeather.epochTime -= eventTimeEpoch
-            else
-                currentWeather.epochTime += eventTimeEpoch
-            end
-        end
 
         return eventTime
     end
@@ -71,30 +80,18 @@ lib.addCommand('weather', {
     TriggerClientEvent('Renewed-Weather:client:viewWeatherInfo', source, weatherList)
 end)
 
-
 -- Scheduled restart --
 if useScheduledWeather then
-    local function forceSetWeather(weather)
-        for i = 1, #weatherList do
-            local event = weatherList[i]
-
-            if event then
-                event.weather = weather
-            end
-        end
-
-        GlobalState.weather = {
-            weather = weather
-        }
-    end
-
     AddEventHandler('txAdmin:events:scheduledRestart', function(eventData)
-        if eventData.secondsRemaining == 900 then -- 15 Minutes Remaining
-            forceSetWeather('OVERCAST')
-        elseif eventData.secondsRemaining == 600 then -- 10 Minutes Remaining
-            forceSetWeather('RAIN')
-        elseif eventData.secondsRemaining == 300 then -- 5 Minutes Remaining
-            forceSetWeather('THUNDER')
+        local secondsRemaining = eventData.secondsRemaining
+        local weather = secondsRemaining == 900 and 'OVERCAST' or secondsRemaining == 600 and 'RAIN' or secondsRemaining == 300 and 'THUNDER'
+
+        if weather then
+            overrideWeather = true
+            GlobalState.weather = {
+                weather = weather,
+                time = 9000000
+            }
         end
     end)
 end

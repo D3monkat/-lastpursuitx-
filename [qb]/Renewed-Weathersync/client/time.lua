@@ -3,8 +3,8 @@ local currentTime = GlobalState.currentTime
 local timeFrozen = GlobalState.freezeTime
 local playerState = LocalPlayer.state
 
-AddStateBagChangeHandler('currentTime', nil, function(bagName, _, value)
-    if bagName == 'global' and value and next(value) then
+AddStateBagChangeHandler('currentTime', 'global', function(_, _, value)
+    if value and next(value) then
 
         if playerState.syncWeather then
             NetworkOverrideClockTime(value.hour, value.minute, 0)
@@ -14,8 +14,8 @@ AddStateBagChangeHandler('currentTime', nil, function(bagName, _, value)
     end
 end)
 
-AddStateBagChangeHandler('timeScale', nil, function(bagName, _, value)
-    if bagName == 'global' and value then
+AddStateBagChangeHandler('timeScale', 'global', function(_, _, value)
+    if value then
 
         if playerState.syncWeather then
             NetworkOverrideClockMillisecondsPerGameMinute(value)
@@ -25,15 +25,12 @@ AddStateBagChangeHandler('timeScale', nil, function(bagName, _, value)
     end
 end)
 
-AddStateBagChangeHandler('freezeTime', nil, function(bagName, _, value)
-    if bagName == 'global' then
-
-        if playerState.syncWeather then
-            NetworkOverrideClockMillisecondsPerGameMinute(value and 99999999 or timeScale)
-        end
-
-        timeFrozen = value
+AddStateBagChangeHandler('freezeTime', 'global', function(_, _, value)
+    if playerState.syncWeather then
+        NetworkOverrideClockMillisecondsPerGameMinute(value and 99999999 or timeScale)
     end
+
+    timeFrozen = value
 end)
 
 NetworkOverrideClockMillisecondsPerGameMinute(timeScale)
@@ -49,6 +46,3 @@ AddStateBagChangeHandler('syncWeather', ('player:%s'):format(cache.serverId), fu
         NetworkOverrideClockTime(18, 0, 0)
     end
 end)
-
-
-require 'compatability.qb.client'
