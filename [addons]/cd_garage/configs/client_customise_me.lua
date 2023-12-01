@@ -317,7 +317,7 @@ end
 
 function SetFuel(vehicle, plate, fuel_level) --This gets triggered after you spawn your vehicle.
     if GetResourceState('cdn-fuel') == 'started' then
-        exports['LegacyFuel']:SetFuel(vehicle, fuel_level)
+        exports['cdn-fuel']:SetFuel(vehicle, fuel_level)
     
     elseif GetResourceState('esx-sna-fuel') == 'started' then
         exports['esx-sna-fuel']:SetFuel(vehicle, fuel_level)
