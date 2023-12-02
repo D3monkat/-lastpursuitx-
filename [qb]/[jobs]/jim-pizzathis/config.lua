@@ -7,12 +7,12 @@ Config = {
 	Lan = "en", -- Pick your language here
 	img = "qb-inventory/html/images/", -- Change this to your inventory's name and image folder (SET TO "" IF YOU HAVE DOUBLE IMAGES)
 
-	Inv = "qb", -- set to "ox" if using OX Inventory
-	Menu = "qb",
-	Notify = "qb",
-	ProgressBar = "qb",
+	Inv = "ox", -- set to "ox" if using OX Inventory
+	Menu = "ox",
+	Notify = "ox",
+	ProgressBar = "ox",
 
-	JimConsumables = false, -- Enable this to disable this scripts control of food/drink items
+	JimConsumables = true, -- Enable this to disable this scripts control of food/drink items
 	JimShop = false, -- If true shops will open in jim-shops
 
 	craftCam = true,		-- Disable this to stop crafting cameras

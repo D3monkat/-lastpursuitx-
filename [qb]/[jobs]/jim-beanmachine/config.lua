@@ -10,12 +10,12 @@ Config = {
 	img = "qb-inventory/html/images/", -- Change this to your inventory's name and image folder
 
 	Core = "qb-core", -- set this to your core folder
-	Inv = "qb", -- set to "ox" if using OX Inventory
-	Menu = "qb", -- set to "ox" if using ox_lib context menus
-	Notify = "qb",
-	ProgressBar = "qb", -- set to "ox" if using ox_lib progressbar
+	Inv = "ox", -- set to "ox" if using OX Inventory
+	Menu = "ox", -- set to "ox" if using ox_lib context menus
+	Notify = "ox",
+	ProgressBar = "ox", -- set to "ox" if using ox_lib progressbar
 
-	JimConsumables = false, -- Enable this to disable this scripts control of food/drink items
+	JimConsumables = true, -- Enable this to disable this scripts control of food/drink items
 	JimShop = false, -- If true shops will open in jim-shops
 
 	MultiCraft = true,

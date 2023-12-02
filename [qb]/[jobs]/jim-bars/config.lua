@@ -8,16 +8,16 @@ Config = {
 	Lan = "en",
 	img = "qb-inventory/html/images/", -- Change this to your inventory's name and image folder
 
-	Inv = "qb", -- set to "ox" if using OX Inventory
-	Menu = "qb", -- set to "ox" if using ox_lib context menus
-	Notify = "qb",
-	ProgressBar = "qb", -- set to "ox" if using ox_lib progressbar
+	Inv = "ox", -- set to "ox" if using OX Inventory
+	Menu = "ox", -- set to "ox" if using ox_lib context menus
+	Notify = "ox",
+	ProgressBar = "ox", -- set to "ox" if using ox_lib progressbar
 
 	MultiCraft = true,
 	MultiCraftAmounts = { [1], [5], [10] },
 
 	JimShop = false, -- Enable this to use jim-shops for buying ingredients
-	JimConsumables = false,
+	JimConsumables = true,
 
 	craftCam = true,		-- Disable this to stop crafting cameras
 

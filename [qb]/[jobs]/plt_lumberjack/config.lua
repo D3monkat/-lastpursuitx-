@@ -25,7 +25,7 @@ PLT.JobSettings = {
     },
 }
 PLT.Salaries = {
-    cutting = 5000,                  -- SET = (money), How much cash will be given for cutting one tree and delivering the logs. Estimated time this action will take: 5 mins
+    cutting = 2500,                  -- SET = (money), How much cash will be given for cutting one tree and delivering the logs. Estimated time this action will take: 5 mins
     stacking ={
         eachWoodPile = 1000,         -- SET = (money), How much cash will be given for loading one pallet of lumbers on to the trailer.Estimated time this action will take: 1 min
         eachForklift = 500,          -- SET = (money), How much cash will be given for parking one forklift on to the trailer. Estimated time this action will take: 15 sec or 45 sec.

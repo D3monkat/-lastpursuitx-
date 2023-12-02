@@ -4,8 +4,8 @@ Config.Debug = false
 
 Config.Core = 'qb-core'
 Config.Target = 'qb-target' -- ox or resource name (ex. 'qb-target' )
-Config.Fuel = 'qb-fuel' -- ox or resource name (ex. 'qb-fuel' )
-Config.Menu = 'qb-menu' -- 'ox' or resource name (ex. 'qb-menu')
+Config.Fuel = 'cdn-fuel' -- ox or resource name (ex. 'qb-fuel' )
+Config.Menu = 'ox' -- 'ox' or resource name (ex. 'qb-menu')
 
 Config.NotificationStyle = 'phone' -- 'phone' for Renewed's Phone notifications | 'qbcore' for standard qbcore notifications
 Config.TowTruck = 'flatbed' -- Tow truck model name

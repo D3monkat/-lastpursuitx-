@@ -7,15 +7,15 @@ Config = {
 	img = "qb-inventory/html/images/", -- Change this to your inventory's name and image folder (SET TO "" IF YOU HAVE DOUBLE IMAGES)
 
 	Core = "qb-core", -- set this to your core folder
-	Inv = "qb", -- set to "ox" if using OX Inventory
-	Menu = "qb", -- set to "ox" if using OX Lib Context
-	Notify = "qb",
-	ProgressBar = "qb", -- set to "ox" if using ox_lib progressbar
+	Inv = "ox", -- set to "ox" if using OX Inventory
+	Menu = "ox", -- set to "ox" if using OX Lib Context
+	Notify = "ox",
+	ProgressBar = "ox", -- set to "ox" if using ox_lib progressbar
 
 	MultiCraft = true,
 	MultiCraftAmounts = { [1], [5], [10] },
 
-	JimConsumables = false, -- Enable this to disable this scripts control of food/drink items
+	JimConsumables = true, -- Enable this to disable this scripts control of food/drink items
 	JimShop = false, 		-- Enable this to use jim-shops for buying ingredients
 
 	craftCam = true,		-- Disable this to stop crafting cameras
