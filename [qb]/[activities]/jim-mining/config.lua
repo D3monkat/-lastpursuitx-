@@ -69,7 +69,7 @@ Config = {
 	},
 
 ------------------------------------------------------------
-	OreSell = { -- List of ores you can sell to the buyer npc
+	OreSell = { -- List of ores you can sell to the buyer npc f
 		"goldingot",
 		"silveringot",
 		"copperore",
@@ -80,58 +80,58 @@ Config = {
 	},
 
 	SellingPrices = { -- Selling Prices
-		['copperore'] = 100,
-		['goldore'] = 100,
-		['silverore'] = 100,
-		['ironore'] = 100,
-		['carbon'] = 100,
-
-		['goldingot'] = 100,
-		['silveringot'] = 100,
-
-		['uncut_emerald'] = 100,
-		['uncut_ruby'] = 100,
-		['uncut_diamond'] = 100,
-		['uncut_sapphire'] = 100,
-
-		['emerald'] = 100,
-		['ruby'] = 100,
-		['diamond'] = 100,
-		['sapphire'] = 100,
-
-		['diamond_ring'] = 100,
-		['emerald_ring'] = 100,
-		['ruby_ring'] = 100,
-		['sapphire_ring'] = 100,
-		['diamond_ring_silver'] = 100,
-		['emerald_ring_silver'] = 100,
-		['ruby_ring_silver'] = 100,
-		['sapphire_ring_silver'] = 100,
-
-		['diamond_necklace'] = 100,
-		['emerald_necklace'] = 100,
-		['ruby_necklace'] = 100,
-		['sapphire_necklace'] = 100,
-		['diamond_necklace_silver'] = 100,
-		['emerald_necklace_silver'] = 100,
-		['ruby_necklace_silver'] = 100,
-		['sapphire_necklace_silver'] = 100,
-
-		['diamond_earring'] = 100,
-		['emerald_earring'] = 100,
-		['ruby_earring'] = 100,
-		['sapphire_earring'] = 100,
-		['diamond_earring_silver'] = 100,
-		['emerald_earring_silver'] = 100,
-		['ruby_earring_silver'] = 100,
-		['sapphire_earring_silver'] = 100,
-
-		['gold_ring'] = 100,
-		['goldchain'] = 100,
-		['goldearring'] = 100,
-		['silver_ring'] = 100,
-		['silverchain'] = 100,
-		['silverearring'] = 100,
+	['copperore'] = 250,
+	['goldore'] = 350,
+	['silverore'] = 450,
+	['ironore'] = 125,
+	['carbon'] = 25,
+	
+	['goldingot'] = 500,
+	['silveringot'] = 500,
+	
+	['uncut_emerald'] = 400,
+	['uncut_ruby'] = 450,
+	['uncut_diamond'] = 500,
+	['uncut_sapphire'] = 550,
+	
+	['emerald'] = 200,
+	['ruby'] = 250,
+	['diamond'] = 300,
+	['sapphire'] = 350,
+	
+	['diamond_ring'] = 400,
+	['emerald_ring'] = 850,
+	['ruby_ring'] = 700,
+	['sapphire_ring'] = 500,
+	['diamond_ring_silver'] = 450,
+	['emerald_ring_silver'] = 400,
+	['ruby_ring_silver'] = 500,
+	['sapphire_ring_silver'] = 400,
+	
+	['diamond_necklace'] = 250,
+	['emerald_necklace'] = 300,
+	['ruby_necklace'] = 350,
+	['sapphire_necklace'] = 400,
+	['diamond_necklace_silver'] = 350,
+	['emerald_necklace_silver'] = 400,
+	['ruby_necklace_silver'] = 450,
+	['sapphire_necklace_silver'] = 400,
+	
+	['diamond_earring'] = 400,
+	['emerald_earring'] = 450,
+	['ruby_earring'] = 500,
+	['sapphire_earring'] = 550,
+	['diamond_earring_silver'] = 450,
+	['emerald_earring_silver'] = 450,
+	['ruby_earring_silver'] = 450,
+	['sapphire_earring_silver'] = 400,
+	
+	['gold_ring'] = 550,
+	['goldchain'] = 550,
+	['goldearring'] = 200,
+	['silver_ring'] = 100,
+	['silverchain'] = 500,
+	['silverearring'] = 200,
 
 	},
 ------------------------------------------------------------
