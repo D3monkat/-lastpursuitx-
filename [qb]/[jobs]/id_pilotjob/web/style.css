@@ -1,0 +1,292 @@
+@import url('https://fonts.cdnfonts.com/css/akrobat');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	-webkit-user-drag: none;
+  	-khtml-user-drag: none;
+  	-moz-user-drag: none;
+  	-o-user-drag: none;
+}
+
+#pilot {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+}
+
+#background {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	left: 0vw;
+	top: 0vh;
+	overflow: visible;
+}
+
+#headertext {
+	left: 43.3333vw;
+	top: 12.5926vh;
+	position: absolute;
+	overflow: visible;
+	width: 13.3854vw;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Akrobat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 3.6979vw;
+	color: rgba(255,255,255,1);
+	text-transform: uppercase;
+}
+
+#availablelevel1 {
+	left: 16.5625vw;
+	top: 28.1296vh;
+	position: absolute;
+	overflow: visible;
+	background: white;
+	width: 18.6146vw;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Akrobat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.8958vw;
+	color: rgba(0,0,0,1);
+	text-transform: uppercase;
+}
+
+#availablelevel3 {
+	left: 61.875vw;
+	top: 28.1296vh;
+	position: absolute;
+	overflow: visible;
+	background: rgb(255,221,0);
+	width: 18.9271vw;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Akrobat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.8958vw;
+	color: rgba(0,0,0,1);
+	text-transform: uppercase;
+}
+
+#legalproduct {
+	left: 16.5625vw;
+	top: 33.5222vh;
+	position: absolute;
+	overflow: visible;
+	width: 12.1354vw;
+	white-space: nowrap;
+	line-height: 6.4815vh;
+	margin-top: -0.0463vh;
+	text-align: left;
+	font-family: Akrobat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 3.5937vw;
+	color: rgba(255,255,255,1);
+	text-transform: uppercase;
+}
+
+#illegalproduct {
+	left: 61.875vw;
+	top: 33.5222vh;
+	position: absolute;
+	overflow: visible;
+	width: 12.1354vw;
+	white-space: nowrap;
+	line-height: 6.4815vh;
+	margin-top: -0.0463vh;
+	text-align: left;
+	font-family: Akrobat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 3.5937vw;
+	color: rgba(255,221,0,1);
+	text-transform: uppercase;
+}
+
+#legaldescription {
+	left: 16.5625vw;
+	top: 48.7037vh;
+	position: absolute;
+	overflow: visible;
+	width: 22.5521vw;
+	height: 5.5556vh;
+	text-align: left;
+	font-family: Akrobat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.4063vw;
+	color: rgba(255,255,255,1);
+}
+
+#illegaldescription {
+	left: 61.875vw;
+	top: 48.7037vh;
+	position: absolute;
+	overflow: visible;
+	width: 22.5521vw;
+	height: 5.5556vh;
+	text-align: left;
+	font-family: Akrobat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.4063vw;
+	color: rgba(255,255,255,1);
+}
+
+#chooselegalflight {
+	left: 18.8104vw;
+	top: 62.4074vh;
+	position: absolute;
+	overflow: visible;
+	background: rgb(255,221,0);
+	width: 13.6563vw;
+	height: 7vh;
+	border-radius: 40px;
+	white-space: nowrap;
+	line-height: 6.5222vh;
+	margin-top: -0.0463vh;
+	text-align: center;
+	font-family: Akrobat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.1979vw;
+	color: rgba(0,0,0,1);
+	transition: .45s;
+	opacity: .95;
+	text-transform: uppercase;
+}
+
+#chooselegalflight:hover {
+	opacity: 1.0;
+	transform: scale(1.05);
+}
+
+#chooseillegalflight {
+	left: 64.4104vw;
+	top: 62.4074vh;
+	position: absolute;
+	overflow: visible;
+	background: rgb(255,221,0);
+	width: 13.6563vw;
+	height: 7vh;
+	border-radius: 40px;
+	white-space: nowrap;
+	line-height: 6.5222vh;
+	margin-top: -0.0463vh;
+	text-align: center;
+	font-family: Akrobat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.1979vw;
+	color: rgba(0,0,0,1);
+	transition: .45s;
+	opacity: .95;
+	text-transform: uppercase;
+}
+
+#chooseillegalflight:hover {
+	opacity: 1.0;
+	transform: scale(1.05);
+}
+
+#progg {
+	border: none;
+	top: 84vh;
+	left: 70vh;
+	color: rgb(255, 255, 255);
+	position: absolute;
+	overflow: visible;
+	text-align: center;
+	white-space: nowrap;
+	font-family: Akrobat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.3042vw;
+	text-transform: uppercase;
+}
+
+progress {
+	width: 30.625vw;
+	height: 2.8519vh;
+	border-radius: 0.1563vw;
+}
+
+progress[value]::-webkit-progress-bar {
+	background-color: rgba(255, 255, 255, 0.9);
+	border-radius: 30.1042vw;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+	background-color: rgb(255,221,0);
+	border-radius: 30.1042vw;
+	filter: drop-shadow(0px 0px 6px rgb(255,221,0));
+}
+
+#inner {
+	left: 47.85vw;
+	top: 86.8926vh;
+	position: absolute;
+	overflow: visible;
+	width: 13.3854vw;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Akrobat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.1979vw;
+	color: rgb(255, 255, 255);
+	filter: drop-shadow(0px 0px 2px rgb(0, 0, 0));
+}
+
+#boardingpassengers {
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.728);
+	color: white;
+	text-align: center;
+	font-style: normal;
+	font-family: Akrobat;
+	font-weight: bold;
+	font-size: 1.5vw;
+}
+
+#textv2 {
+	position: fixed;
+	top: 50vh;
+	left: 38vw;
+}
+
+#disembarkpassengers {
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.728);
+	color: white;
+	text-align: center;
+	font-style: normal;
+	font-family: Akrobat;
+	font-weight: bold;
+	font-size: 1.5vw;
+}
+
+#textv3 {
+	position: fixed;
+	top: 50vh;
+	left: 38vw;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="style.css"/>
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	<script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="pilot">
+		<img id="background" src="background.png" srcset="background.png 1x">
+			
+		<div id="headertext">
+			<span>PILOT </span><span style="font-style:normal;font-weight:normal;">JOB</span>
+		</div>
+		
+		<div id="availablelevel1">
+			<span>AVAILABLE FROM </span><span style="font-style:normal;font-weight:bold;">LEVEL 1</span>
+		</div>
+
+		<div id="availablelevel3">
+			<span>AVAILABLE FROM </span><span style="font-style:normal;font-weight:bold;">LEVEL 2</span>
+		</div>
+
+		<div id="legalproduct">
+			<span>LEGAL</span><br><span style="font-style:normal;font-weight:normal;">PRODUCT</span>
+		</div>
+
+		<div id="illegalproduct">
+			<span>ILLEGAL</span><br><span style="font-style:normal;font-weight:normal;">PRODUCT</span>
+		</div>
+
+		<div id="legaldescription">
+			<span>By transporting legal goods, you do not risk<br/>anything</span>
+		</div>
+
+		<div id="illegaldescription">
+			<span>Illegal goods may be of interest to law enforcement officers, be careful</span>
+		</div>
+
+		<div id="chooselegalflight">
+			<span>CHOOSE A FLIGHT</span>
+		</div>
+
+		<div id="chooseillegalflight">
+			<span>CHOOSE A FLIGHT</span>
+		</div>
+
+		<div id="progg">
+			<label for="whatlevel"><span id="levelwhat">LEVEL 1</span></label><br>
+			<progress id="whatlevel" value="50" max="100" class="progressBar"></progress>
+		</div>
+		<div id="inner">
+			<span id ="flightsnumber">1</span>/100
+		</div>
+	</div>
+	<div id="boardingpassengers">
+		<span id="textv2">Wait for passengers to board on the plane</span>
+	</div>
+	<div id="disembarkpassengers">
+		<span id="textv3">Wait for passengers to disembark from the plane</span>
+	</div>
+</body>
+</html>
