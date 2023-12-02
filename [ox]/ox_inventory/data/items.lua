@@ -114,7 +114,7 @@ return {
 	},
 
 	['atmrope'] = {
-		label = 'Paper Bag',
+		label = 'Reinforced Rope',
 		weight = 1,
 		stack = false,
 		close = false,
