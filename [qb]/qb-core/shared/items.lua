@@ -789,6 +789,14 @@ goldpan 					 = {name = 'goldpan', 			  	  		label = 'Gold Panning Tray', 		weig
 
 bottle 						 = {name = 'bottle', 			  	  		label = 'Empty Bottle', 			weight = 10, 		type = 'item', 		image = 'bottle.png', 				unique = false, 	useable = false, 	shouldClose = false, combinable = nil,   description = 'A glass bottle'},
 can 						 = {name = 'can', 			  	  			label = 'Empty Can', 				weight = 10, 		type = 'item', 		image = 'can.png', 					unique = false, 	useable = false, 	shouldClose = false, combinable = nil,   description = 'An empty can, good for recycling'},
+uwupurpleplush = {['name'] = 'uwupurpleplush', ['label'] = 'Purple Plush', ['weight'] = 200, ['type'] = 'item', ['image'] = 'uwupurpleplush.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'A purple UwU plush'},     
+uwugreenplush = {['name'] = 'uwugreenplush', ['label'] = 'Green Plush', ['weight'] = 200, ['type'] = 'item', ['image'] = 'uwugreenplush.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'A green UwU plush'},     
+uwublueplush = {['name'] = 'uwublueplush', ['label'] = 'Blue Plush', ['weight'] = 200, ['type'] = 'item', ['image'] = 'uwublueplush.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'A blue UwU plush'},    
+uwubrownplush = {['name'] = 'uwubrownplush', ['label'] = 'Brown Plush', ['weight'] = 200, ['type'] = 'item', ['image'] = 'uwubrownplush.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'A brown UwU plush'},     
+uwuyellowplush = {['name'] = 'uwuyellowplush', ['label'] = 'Yellow Plush', ['weight'] = 200, ['type'] = 'item', ['image'] = 'uwuyellowplush.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'A yellow UwU plush'},     
+uwuredplush = {['name'] = 'uwuredplush', ['label'] = 'Red Plush', ['weight'] = 200, ['type'] = 'item', ['image'] = 'uwuredplush.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'A red UwU plush'},     
+uwugreenrareplush = {['name'] = 'uwugreenrareplush', ['label'] = 'Rare Green Plush', ['weight'] = 200, ['type'] = 'item', ['image'] = 'uwugreenrareplush.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'A rare green UwU plush'},     
+uwupinkrareplush = {['name'] = 'uwupinkrareplush', ['label'] = 'Rare Pink Plush', ['weight'] = 200, ['type'] = 'item', ['image'] = 'uwupinkrareplush.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'A rare pink UwU plush'},
 
 
 }
