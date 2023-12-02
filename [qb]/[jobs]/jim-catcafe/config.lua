@@ -47,13 +47,21 @@ Config = {
 			{ name = "rice", price = 0, amount = 50, info = {}, type = "item", slot = 12, },
 			{ name = "sake", price = 0, amount = 50, info = {}, type = "item", slot = 13, },
 			{ name = "noodles", price = 0, amount = 50, info = {}, type = "item", slot = 14, },
+			{ name = "uwupurpleplush", price = 0, amount = 50, info = {}, type = "item", slot = 15, },
+			{ name = "uwugreenplush", price = 0, amount = 50, info = {}, type = "item", slot = 16, },
+			{ name = "uwublueplush", price = 0, amount = 50, info = {}, type = "item", slot = 17, },
+			{ name = "uwubrownplush", price = 0, amount = 50, info = {}, type = "item", slot = 18, },
+			{ name = "uwuyellowplush", price = 0, amount = 50, info = {}, type = "item", slot = 19, },
+			{ name = "uwuredplush", price = 0, amount = 50, info = {}, type = "item", slot = 20, },
+			{ name = "uwugreenrareplush", price = 0, amount = 50, info = {}, type = "item", slot = 21, },
+			{ name = "uwupinkrareplush", price = 0, amount = 50, info = {}, type = "item", slot = 22, },
 		},
 	},
 	Locations = {
 		{	zoneEnable = true,
 			job = "catcafe", -- Set this to the required job
 			label = "Cat Cafe",
-			autoClock = { enter = false, exit = true, },
+			autoClock = { enter = false, exit = false, },
 			zones = {
 				vec2(-591.15808105469, -1087.8620605469),
 				vec2(-563.33447265625, -1087.8508300781),
