@@ -53,7 +53,7 @@ Config.RealtorJobName = "realestate" -- Set your Real Estate job here
 -- Set this value to true if ur using qb-management
 -- and want the Money go straight into the Realestate Bank Account.
 -- Using different Boss Menu? -> replace the qb-management export
-Config.QBManagement = false
+Config.QBManagement = true
 
 -- Realtor Commisions based on job grade, the rest goes to the owner, if any.
 Config.Commissions = {
@@ -65,12 +65,12 @@ Config.Commissions = {
 }
 
 -- Set this value to false if you don't want to assign a starting apartment.
-Config.StartingApartment = false
+Config.StartingApartment = true
 
 Config.Apartments = {
     ["Integrity Way"] = {
         label = "Integrity Way",
-        door = { x = 269.73, y = -640.75, z = 42.02, h = 249.07, length = 1, width = 2 },
+        door = { x = 284.45, y = -641.47, z = 42.02, h = 160.0, length = 1, width = 2 },
         pos = {top = 50.2, left = 64.2},
         imgs = {
             {
