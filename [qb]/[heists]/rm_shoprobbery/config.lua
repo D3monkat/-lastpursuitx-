@@ -18,14 +18,14 @@ Config['ShopRobbery'] = {
     },
     ['rewardMoneys'] = {
         ['safecrack'] = function()
-            return math.random(50000, 75000) -- For safecrack money reward
+            return math.random(2500, 15000) -- For safecrack money reward
         end,
         ['till'] = function() -- For till money reward
-            return math.random(5000, 7500)
+            return math.random(300, 1500)
         end,
     },
     ['tillGrabTime'] = 15000, -- For grab till time (miliseconds)
-    ['clerkWeaponChance'] = 25, -- Chance that the clerk will get scared or pull a gun
+    ['clerkWeaponChance'] = 50, -- Chance that the clerk will get scared or pull a gun
     ['clerkWeapon'] = GetHashKey('weapon_remington'), -- Clerk weapon
     ['black_money'] = {  -- If change true, all moneys will convert to black. QBCore players can change itemName
         status = false,

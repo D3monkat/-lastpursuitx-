@@ -208,15 +208,15 @@ QBCore.Commands.Add('callsign', Lang:t('commands.callsign'), { { name = 'name', 
     Player.Functions.SetMetaData('callsign', table.concat(args, ' '))
 end)
 
-QBCore.Commands.Add('clearcasings', Lang:t('commands.clear_casign'), {}, false, function(source)
-    local src = source
-    local Player = QBCore.Functions.GetPlayer(src)
-    if Player.PlayerData.job.type == 'leo' and Player.PlayerData.job.onduty then
-        TriggerClientEvent('evidence:client:ClearCasingsInArea', src)
-    else
-        TriggerClientEvent('QBCore:Notify', src, Lang:t('error.on_duty_police_only'), 'error')
-    end
-end)
+-- QBCore.Commands.Add('clearcasings', Lang:t('commands.clear_casign'), {}, false, function(source)
+--     local src = source
+--     local Player = QBCore.Functions.GetPlayer(src)
+--     if Player.PlayerData.job.type == 'leo' and Player.PlayerData.job.onduty then
+--         TriggerClientEvent('evidence:client:ClearCasingsInArea', src)
+--     else
+--         TriggerClientEvent('QBCore:Notify', src, Lang:t('error.on_duty_police_only'), 'error')
+--     end
+-- end)
 
 QBCore.Commands.Add('jail', Lang:t('commands.jail_player'), {}, false, function(source)
     local src = source
@@ -239,15 +239,15 @@ QBCore.Commands.Add('unjail', Lang:t('commands.unjail_player'), { { name = 'id',
     end
 end)
 
-QBCore.Commands.Add('clearblood', Lang:t('commands.clearblood'), {}, false, function(source)
-    local src = source
-    local Player = QBCore.Functions.GetPlayer(src)
-    if Player.PlayerData.job.type == 'leo' and Player.PlayerData.job.onduty then
-        TriggerClientEvent('evidence:client:ClearBlooddropsInArea', src)
-    else
-        TriggerClientEvent('QBCore:Notify', src, Lang:t('error.on_duty_police_only'), 'error')
-    end
-end)
+-- QBCore.Commands.Add('clearblood', Lang:t('commands.clearblood'), {}, false, function(source)
+--     local src = source
+--     local Player = QBCore.Functions.GetPlayer(src)
+--     if Player.PlayerData.job.type == 'leo' and Player.PlayerData.job.onduty then
+--         TriggerClientEvent('evidence:client:ClearBlooddropsInArea', src)
+--     else
+--         TriggerClientEvent('QBCore:Notify', src, Lang:t('error.on_duty_police_only'), 'error')
+--     end
+-- end)
 
 QBCore.Commands.Add('seizecash', Lang:t('commands.seizecash'), {}, false, function(source)
     local src = source
@@ -468,23 +468,23 @@ QBCore.Commands.Add('takedrivinglicense', Lang:t('commands.drivinglicense'), {},
     end
 end)
 
-QBCore.Commands.Add('takedna', Lang:t('commands.takedna'), { { name = 'id', help = Lang:t('info.player_id') } }, true, function(source, args)
-    local src = source
-    local Player = QBCore.Functions.GetPlayer(src)
-    local OtherPlayer = QBCore.Functions.GetPlayer(tonumber(args[1]))
-    if not OtherPlayer or Player.PlayerData.job.name ~= 'police' or not Player.PlayerData.job.onduty then return end
-    if Player.Functions.RemoveItem('empty_evidence_bag', 1) then
-        local info = {
-            label = Lang:t('info.dna_sample'),
-            type = 'dna',
-            dnalabel = DnaHash(OtherPlayer.PlayerData.citizenid)
-        }
-        if not Player.Functions.AddItem('filled_evidence_bag', 1, false, info) then return end
-        TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['filled_evidence_bag'], 'add')
-    else
-        TriggerClientEvent('QBCore:Notify', src, Lang:t('error.have_evidence_bag'), 'error')
-    end
-end)
+-- QBCore.Commands.Add('takedna', Lang:t('commands.takedna'), { { name = 'id', help = Lang:t('info.player_id') } }, true, function(source, args)
+--     local src = source
+--     local Player = QBCore.Functions.GetPlayer(src)
+--     local OtherPlayer = QBCore.Functions.GetPlayer(tonumber(args[1]))
+--     if not OtherPlayer or Player.PlayerData.job.name ~= 'police' or not Player.PlayerData.job.onduty then return end
+--     if Player.Functions.RemoveItem('empty_evidence_bag', 1) then
+--         local info = {
+--             label = Lang:t('info.dna_sample'),
+--             type = 'dna',
+--             dnalabel = DnaHash(OtherPlayer.PlayerData.citizenid)
+--         }
+--         if not Player.Functions.AddItem('filled_evidence_bag', 1, false, info) then return end
+--         TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['filled_evidence_bag'], 'add')
+--     else
+--         TriggerClientEvent('QBCore:Notify', src, Lang:t('error.have_evidence_bag'), 'error')
+--     end
+-- end)
 
 RegisterNetEvent('police:server:SendTrackerLocation', function(coords, requestId)
     local Target = QBCore.Functions.GetPlayer(source)
@@ -539,18 +539,18 @@ QBCore.Functions.CreateCallback('police:server:isPlayerDead', function(_, cb, pl
     cb(Player.PlayerData.metadata['isdead'])
 end)
 
-QBCore.Functions.CreateCallback('police:GetPlayerStatus', function(_, cb, playerId)
-    local Player = QBCore.Functions.GetPlayer(playerId)
-    local statList = {}
-    if Player then
-        if PlayerStatus[Player.PlayerData.source] and next(PlayerStatus[Player.PlayerData.source]) then
-            for k in pairs(PlayerStatus[Player.PlayerData.source]) do
-                statList[#statList + 1] = PlayerStatus[Player.PlayerData.source][k].text
-            end
-        end
-    end
-    cb(statList)
-end)
+-- QBCore.Functions.CreateCallback('police:GetPlayerStatus', function(_, cb, playerId)
+--     local Player = QBCore.Functions.GetPlayer(playerId)
+--     local statList = {}
+--     if Player then
+--         if PlayerStatus[Player.PlayerData.source] and next(PlayerStatus[Player.PlayerData.source]) then
+--             for k in pairs(PlayerStatus[Player.PlayerData.source]) do
+--                 statList[#statList + 1] = PlayerStatus[Player.PlayerData.source][k].text
+--             end
+--         end
+--     end
+--     cb(statList)
+-- end)
 
 QBCore.Functions.CreateCallback('police:IsSilencedWeapon', function(source, cb, weapon)
     local Player = QBCore.Functions.GetPlayer(source)
@@ -941,81 +941,81 @@ RegisterNetEvent('police:server:Impound', function(plate, fullImpound, price, bo
     end
 end)
 
-RegisterNetEvent('evidence:server:UpdateStatus', function(data)
-    local src = source
-    PlayerStatus[src] = data
-end)
+-- RegisterNetEvent('evidence:server:UpdateStatus', function(data)
+--     local src = source
+--     PlayerStatus[src] = data
+-- end)
 
-RegisterNetEvent('evidence:server:CreateBloodDrop', function(citizenid, bloodtype, coords)
-    local bloodId = CreateBloodId()
-    BloodDrops[bloodId] = {
-        dna = citizenid,
-        bloodtype = bloodtype
-    }
-    TriggerClientEvent('evidence:client:AddBlooddrop', -1, bloodId, citizenid, bloodtype, coords)
-end)
+-- RegisterNetEvent('evidence:server:CreateBloodDrop', function(citizenid, bloodtype, coords)
+--     local bloodId = CreateBloodId()
+--     BloodDrops[bloodId] = {
+--         dna = citizenid,
+--         bloodtype = bloodtype
+--     }
+--     TriggerClientEvent('evidence:client:AddBlooddrop', -1, bloodId, citizenid, bloodtype, coords)
+-- end)
 
-RegisterNetEvent('evidence:server:CreateFingerDrop', function(coords)
-    local src = source
-    local Player = QBCore.Functions.GetPlayer(src)
-    local fingerId = CreateFingerId()
-    FingerDrops[fingerId] = Player.PlayerData.metadata['fingerprint']
-    TriggerClientEvent('evidence:client:AddFingerPrint', -1, fingerId, Player.PlayerData.metadata['fingerprint'], coords)
-end)
+-- RegisterNetEvent('evidence:server:CreateFingerDrop', function(coords)
+--     local src = source
+--     local Player = QBCore.Functions.GetPlayer(src)
+--     local fingerId = CreateFingerId()
+--     FingerDrops[fingerId] = Player.PlayerData.metadata['fingerprint']
+--     TriggerClientEvent('evidence:client:AddFingerPrint', -1, fingerId, Player.PlayerData.metadata['fingerprint'], coords)
+-- end)
 
-RegisterNetEvent('evidence:server:ClearBlooddrops', function(blooddropList)
-    if blooddropList and next(blooddropList) then
-        for _, v in pairs(blooddropList) do
-            TriggerClientEvent('evidence:client:RemoveBlooddrop', -1, v)
-            BloodDrops[v] = nil
-        end
-    end
-end)
+-- RegisterNetEvent('evidence:server:ClearBlooddrops', function(blooddropList)
+--     if blooddropList and next(blooddropList) then
+--         for _, v in pairs(blooddropList) do
+--             TriggerClientEvent('evidence:client:RemoveBlooddrop', -1, v)
+--             BloodDrops[v] = nil
+--         end
+--     end
+-- end)
 
-RegisterNetEvent('evidence:server:AddBlooddropToInventory', function(bloodId, bloodInfo)
-    local src = source
-    local Player = QBCore.Functions.GetPlayer(src)
-    if Player.Functions.RemoveItem('empty_evidence_bag', 1) then
-        if Player.Functions.AddItem('filled_evidence_bag', 1, false, bloodInfo) then
-            TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['filled_evidence_bag'], 'add')
-            TriggerClientEvent('evidence:client:RemoveBlooddrop', -1, bloodId)
-            BloodDrops[bloodId] = nil
-        end
-    else
-        TriggerClientEvent('QBCore:Notify', src, Lang:t('error.have_evidence_bag'), 'error')
-    end
-end)
+-- RegisterNetEvent('evidence:server:AddBlooddropToInventory', function(bloodId, bloodInfo)
+--     local src = source
+--     local Player = QBCore.Functions.GetPlayer(src)
+--     if Player.Functions.RemoveItem('empty_evidence_bag', 1) then
+--         if Player.Functions.AddItem('filled_evidence_bag', 1, false, bloodInfo) then
+--             TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['filled_evidence_bag'], 'add')
+--             TriggerClientEvent('evidence:client:RemoveBlooddrop', -1, bloodId)
+--             BloodDrops[bloodId] = nil
+--         end
+--     else
+--         TriggerClientEvent('QBCore:Notify', src, Lang:t('error.have_evidence_bag'), 'error')
+--     end
+-- end)
 
-RegisterNetEvent('evidence:server:AddFingerprintToInventory', function(fingerId, fingerInfo)
-    local src = source
-    local Player = QBCore.Functions.GetPlayer(src)
-    if Player.Functions.RemoveItem('empty_evidence_bag', 1) then
-        if Player.Functions.AddItem('filled_evidence_bag', 1, false, fingerInfo) then
-            TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['filled_evidence_bag'], 'add')
-            TriggerClientEvent('evidence:client:RemoveFingerprint', -1, fingerId)
-            FingerDrops[fingerId] = nil
-        end
-    else
-        TriggerClientEvent('QBCore:Notify', src, Lang:t('error.have_evidence_bag'), 'error')
-    end
-end)
+-- RegisterNetEvent('evidence:server:AddFingerprintToInventory', function(fingerId, fingerInfo)
+--     local src = source
+--     local Player = QBCore.Functions.GetPlayer(src)
+--     if Player.Functions.RemoveItem('empty_evidence_bag', 1) then
+--         if Player.Functions.AddItem('filled_evidence_bag', 1, false, fingerInfo) then
+--             TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['filled_evidence_bag'], 'add')
+--             TriggerClientEvent('evidence:client:RemoveFingerprint', -1, fingerId)
+--             FingerDrops[fingerId] = nil
+--         end
+--     else
+--         TriggerClientEvent('QBCore:Notify', src, Lang:t('error.have_evidence_bag'), 'error')
+--     end
+-- end)
 
-RegisterNetEvent('evidence:server:CreateCasing', function(weapon, coords)
-    local src = source
-    local Player = QBCore.Functions.GetPlayer(src)
-    local casingId = CreateCasingId()
-    local weaponInfo = QBCore.Shared.Weapons[weapon]
-    local serieNumber = nil
-    if weaponInfo then
-        local weaponItem = Player.Functions.GetItemByName(weaponInfo['name'])
-        if weaponItem then
-            if weaponItem.info and weaponItem.info ~= '' then
-                serieNumber = weaponItem.info.serie
-            end
-        end
-    end
-    TriggerClientEvent('evidence:client:AddCasing', -1, casingId, weapon, coords, serieNumber)
-end)
+-- RegisterNetEvent('evidence:server:CreateCasing', function(weapon, coords)
+--     local src = source
+--     local Player = QBCore.Functions.GetPlayer(src)
+--     local casingId = CreateCasingId()
+--     local weaponInfo = QBCore.Shared.Weapons[weapon]
+--     local serieNumber = nil
+--     if weaponInfo then
+--         local weaponItem = Player.Functions.GetItemByName(weaponInfo['name'])
+--         if weaponItem then
+--             if weaponItem.info and weaponItem.info ~= '' then
+--                 serieNumber = weaponItem.info.serie
+--             end
+--         end
+--     end
+--     TriggerClientEvent('evidence:client:AddCasing', -1, casingId, weapon, coords, serieNumber)
+-- end)
 
 RegisterNetEvent('police:server:UpdateCurrentCops', function()
     local amount = 0
@@ -1031,28 +1031,28 @@ RegisterNetEvent('police:server:UpdateCurrentCops', function()
     updatingCops = false
 end)
 
-RegisterNetEvent('evidence:server:ClearCasings', function(casingList)
-    if casingList and next(casingList) then
-        for _, v in pairs(casingList) do
-            TriggerClientEvent('evidence:client:RemoveCasing', -1, v)
-            Casings[v] = nil
-        end
-    end
-end)
+-- RegisterNetEvent('evidence:server:ClearCasings', function(casingList)
+--     if casingList and next(casingList) then
+--         for _, v in pairs(casingList) do
+--             TriggerClientEvent('evidence:client:RemoveCasing', -1, v)
+--             Casings[v] = nil
+--         end
+--     end
+-- end)
 
-RegisterNetEvent('evidence:server:AddCasingToInventory', function(casingId, casingInfo)
-    local src = source
-    local Player = QBCore.Functions.GetPlayer(src)
-    if Player.Functions.RemoveItem('empty_evidence_bag', 1) then
-        if Player.Functions.AddItem('filled_evidence_bag', 1, false, casingInfo) then
-            TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['filled_evidence_bag'], 'add')
-            TriggerClientEvent('evidence:client:RemoveCasing', -1, casingId)
-            Casings[casingId] = nil
-        end
-    else
-        TriggerClientEvent('QBCore:Notify', src, Lang:t('error.have_evidence_bag'), 'error')
-    end
-end)
+-- RegisterNetEvent('evidence:server:AddCasingToInventory', function(casingId, casingInfo)
+--     local src = source
+--     local Player = QBCore.Functions.GetPlayer(src)
+--     if Player.Functions.RemoveItem('empty_evidence_bag', 1) then
+--         if Player.Functions.AddItem('filled_evidence_bag', 1, false, casingInfo) then
+--             TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['filled_evidence_bag'], 'add')
+--             TriggerClientEvent('evidence:client:RemoveCasing', -1, casingId)
+--             Casings[casingId] = nil
+--         end
+--     else
+--         TriggerClientEvent('QBCore:Notify', src, Lang:t('error.have_evidence_bag'), 'error')
+--     end
+-- end)
 
 RegisterNetEvent('police:server:showFingerprint', function(playerId)
     local src = source

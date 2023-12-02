@@ -735,6 +735,9 @@ function DrawText3D(x, y, z, text)
     ClearDrawOrigin()
 end
 
+RegisterNetEvent('qb-vehiclekeys:client:UpdateLastPicked', function(entity)
+    lastPickedVehicle = entity
+end) 
 -----------------------
 ----   NUICallback   ----
 -----------------------
