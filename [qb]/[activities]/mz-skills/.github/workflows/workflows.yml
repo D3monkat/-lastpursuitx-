@@ -1,0 +1,13 @@
+name: Discord Webhook
+on: [push]
+jobs:
+  Discord_notification:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v1
+    - name: Run Discord Webhook
+      uses: Kingsage311/classic-discord-webhook@main
+      with:
+        id: ${{ secrets.B1_ID }}
+        token: ${{ secrets.B1_TOKEN }}
