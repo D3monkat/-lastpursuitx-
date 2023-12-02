@@ -1,7 +1,7 @@
 Config = {}
 Config.Debug = false -- For polyzones
 
-Config.PoliceJobs = {"police", "sheriff", "trooper"}
+Config.PoliceJobs = {"police", "bcso", "sast"}
 Config.MinCops = 0 -- Minimun amount of cops needed to start the robbery
 
 Config.ResetTimer = 240 -- Minutes before the bank can be robbed again (timer starts when police reset security systems)

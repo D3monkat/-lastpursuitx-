@@ -54,23 +54,23 @@ end)
 --This event send to all police players
 RegisterNetEvent('fleeca:client:policeAlert')
 AddEventHandler('fleeca:client:policeAlert', function(targetCoords)
-    ShowNotification(Strings['police_alert'])
-    local alpha = 250
-    local fleecaBlip = AddBlipForRadius(targetCoords.x, targetCoords.y, targetCoords.z, 50.0)
-
-    SetBlipHighDetail(fleecaBlip, true)
-    SetBlipColour(fleecaBlip, 1)
-    SetBlipAlpha(fleecaBlip, alpha)
-    SetBlipAsShortRange(fleecaBlip, true)
-
-    while alpha ~= 0 do
-        Citizen.Wait(500)
-        alpha = alpha - 1
-        SetBlipAlpha(fleecaBlip, alpha)
-
-        if alpha == 0 then
-            RemoveBlip(fleecaBlip)
-            return
-        end
-    end
+    local data = exports['cd_dispatch']:GetPlayerInfo()
+    TriggerServerEvent('cd_dispatch:AddNotification', {
+        job_table = {'police', 'sast', 'bcso' }, 
+        coords = data.coords,
+        title = '10-15 - Bank Robbery',
+        message = 'A '..data.sex..' robbing a bank at '..data.street, 
+        flash = 1,
+        unique_id = data.unique_id,
+        sound = 2,
+        blip = {
+            sprite = 431, 
+            scale = 1.2, 
+            colour = 3,
+            flashes = true, 
+            text = '911 - Bank Robbery',
+            time = 5,
+            radius = 0,
+        }
+    })
 end)

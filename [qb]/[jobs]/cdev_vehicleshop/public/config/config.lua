@@ -44,7 +44,7 @@ PublicSharedResourceConfig = {
     EnableTestDrive = true,
 
     -- ‍💨 Poof (disappear) test drive vehicle if it's not returned within the configured time
-    PoofTestDriveVehicle = false,
+    PoofTestDriveVehicle = true,
 
     -- ⚙️ Kill engine and make test drive vehicle undriveable if it's not returned within the configured time
     KillTestDriveVehicleEngine = true,

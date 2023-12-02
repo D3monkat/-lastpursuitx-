@@ -33,6 +33,8 @@ Config.DynamicDoors = true
 
 Config.PoliceJobNames = {  -- add multiple police jobs that are allowed to raid properties!
     "police",
+    "bcso",
+    "sast"
     -- "police2",
     -- "police3",
 }
@@ -63,7 +65,7 @@ Config.Commissions = {
 }
 
 -- Set this value to false if you don't want to assign a starting apartment.
-Config.StartingApartment = true
+Config.StartingApartment = false
 
 Config.Apartments = {
     ["Integrity Way"] = {
