@@ -718,6 +718,10 @@ green_gelato_cannabis = {name = 'green_gelato_cannabis', label = 'Green Gelato C
 opium = {name = 'opium', label = 'Opium', weight = 500, type = 'item', image = 'your_image.png', unique = false, useable = true, shouldClose = false, combinable = nil},
 cocaine = {name = 'cocaine', label = 'Cocaine', weight = 500, type = 'item', image = 'your_image.png', unique = false, useable = true, shouldClose = false, combinable = nil},
 atmrope = {name = 'atmrope', label = 'Steel lined rope', weight = 500, type = 'item', image = 'your_image.png', unique = false, useable = true, shouldClose = false, combinable = nil},
+-- Jim-Recycle Items
+recyclablematerial  = {name = 'recyclablematerial',   label = 'Recycle Box',      weight = 100, type = 'item', 		image = 'recyclablematerial.png',   unique = false, 	useable = false, 	shouldClose = false, combinable = nil,   description = 'A box of Recyclable Materials'},
+bottle              = {name = 'bottle',               label = 'Empty Bottle',     weight = 10,  type = 'item', 		image = 'bottle.png',               unique = false, 	useable = false, 	shouldClose = false, combinable = nil,   description = 'A glass bottle'},
+can                 = {name = 'can',                  label = 'Empty Can',        weight = 10,  type = 'item', 		image = 'can.png',                  unique = false, 	useable = false, 	shouldClose = false, combinable = nil,   description = 'An empty can, good for recycling'},
 
 
 }
