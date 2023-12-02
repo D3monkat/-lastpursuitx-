@@ -9,8 +9,8 @@ Config['UndergroundHeist'] = {
     },
     ['bagClothesID'] = 45,
     ['buyerFinishScene'] = true,
-    ['setjobForPolice'] = 'police', -- Setjob for check police count and police alert
-    ['requiredPoliceCount'] = 1, -- Required police count for start heist
+    ['setjobForPolice'] = 'leo', -- Setjob for check police count and police alert
+    ['requiredPoliceCount'] = 4, -- Required police count for start heist
     ['nextRob'] = 7200, -- Seconds for next heist
     ['requiredItems'] = { -- Add this items to database or shared. Don't change the order, you can change the item names
         'drill',

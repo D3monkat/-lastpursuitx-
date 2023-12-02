@@ -9,8 +9,8 @@ Config['FleecaHeist'] = {
     },
     ['bagClothesID'] = 45,
     ['buyerFinishScene'] = true,
-    ['setjobForPolice'] = 'police', -- Setjob for check police count and police alert.
-    ['requiredPoliceCount'] = 1, -- Required police count for start heist.
+    ['setjobForPolice'] = 'leo', -- Setjob for check police count and police alert.
+    ['requiredPoliceCount'] = 3, -- Required police count for start heist.
     ['cooldown'] = { -- If you set globalCooldown to true, players can rob one Fleeca in same time. Cooldown time is the time it takes to each Fleeca or global.
         globalCooldown = true,
         time = 7200,

@@ -12,7 +12,7 @@ AddEventHandler('vangelico:server:policeAlert', function(coords)
         local players = QBCore.Functions.GetPlayers()
         for i = 1, #players do
             local player = QBCore.Functions.GetPlayer(players[i])
-            if player.PlayerData.job.name == Config['VangelicoHeist']['setjobForPolice'] then
+            if player.PlayerData.job.type == Config['VangelicoHeist']['setjobForPolice'] then
                 TriggerClientEvent('vangelico:client:policeAlert', players[i], coords)
             end
         end

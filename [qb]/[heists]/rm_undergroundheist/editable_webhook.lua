@@ -12,7 +12,7 @@ AddEventHandler('undergroundheist:server:policeAlert', function(coords)
         local players = QBCore.Functions.GetPlayers()
         for i = 1, #players do
             local player = QBCore.Functions.GetPlayer(players[i])
-            if player.PlayerData.job.name == Config['UndergroundHeist']['setjobForPolice'] then
+            if player.PlayerData.job.type == Config['UndergroundHeist']['setjobForPolice'] then
                 TriggerClientEvent('undergroundheist:client:policeAlert', players[i], coords)
             end
         end

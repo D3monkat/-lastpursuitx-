@@ -12,7 +12,7 @@ AddEventHandler('fleeca:server:policeAlert', function(coords)
         local players = QBCore.Functions.GetPlayers()
         for i = 1, #players do
             local player = QBCore.Functions.GetPlayer(players[i])
-            if player.PlayerData.job.name == Config['FleecaHeist']['setjobForPolice'] then
+            if player.PlayerData.job.type == Config['FleecaHeist']['setjobForPolice'] then
                 TriggerClientEvent('fleeca:client:policeAlert', players[i], coords)
             end
         end
