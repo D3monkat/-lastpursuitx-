@@ -27,7 +27,8 @@ end
 
 local function PoliceCall()
     if Config.PoliceCallChance <= math.random(1, 100) then
-        TriggerServerEvent('police:server:policeAlert', 'Drug sale in progress')
+        -- TriggerServerEvent('police:server:policeAlert', 'Drug sale in progress')
+        exports['ps-dispatch']:DrugSale()
     end
 end
 

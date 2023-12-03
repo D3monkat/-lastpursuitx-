@@ -1,6 +1,6 @@
 Config = Config or {}
 Config.Dealers = {}
-Config.UseTarget = GetConvar('UseTarget', 'false') == 'true'
+Config.UseTarget = true
 Config.PoliceCallChance = 15
 
 Config.NotifyType = 'qb'
