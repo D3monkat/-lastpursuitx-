@@ -1,0 +1,40 @@
+Version 165 32
+{
+	Shaders
+	{
+		default.sps
+		{
+			DiffuseSampler *NULL*
+			HardAlphaBlend 1.0000000
+			UseTessellation 0.0000000
+		}
+		water_river.sps
+		{
+			FlowSampler *NULL*
+			FogSampler *NULL*
+			RippleBumpiness 0.3560000
+			RippleScale 0.0400000
+			RippleSpeed 0.0000000
+			SpecularFalloff 1118.0000000
+			SpecularIntensity 1.0000000
+		}
+	}
+	Skeleton null
+	LodGroup
+	{
+		High 9998.0
+		{
+			nteam_water\nteam_water_high.mesh 0
+		}
+		Med 9998.0
+		Low 9998.0
+		Vlow 9998.0
+		AABBMin 106.2088242 132.2775574 -4.5269470
+		AABBMax 715.0203857 1611.1649170 33.7008057
+		Radius 799.878
+		Center 410.6146240 871.7211914 14.5869293
+	}
+	Light null
+	Bound nteam_water\nteam_water.bound
+	Joints null
+}
