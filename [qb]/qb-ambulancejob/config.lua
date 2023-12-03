@@ -92,7 +92,8 @@ Config.Locations = { -- Edit the various interaction points for players or creat
 
 Config.AuthorizedVehicles = { -- Grade is key, don't add same vehicle in multiple grades. Higher rank can see lower
 	[0] = {
-        ["ambulance"] = "Ambulance"
+        ["emsnspeedo"] = "Ambulance",
+        ["clrgemscharger"] = "chief charger",
     }
 }
 
