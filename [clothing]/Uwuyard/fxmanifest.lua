@@ -5,7 +5,7 @@ game { 'gta5' }
 
 files {
   'mp_m_freemode_01_mp_m_uwuyard.meta',
-  'mp_f_freemode_01_mp_f_uwuyard.meta'
+  'mp_f_freemode_01_mp_f_uwuyard.meta',
   'stream/pedalternatevariations.meta'
 }
 
