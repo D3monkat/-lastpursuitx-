@@ -7,7 +7,7 @@ Config['ShopRobbery'] = {
         eventName = 'esx:getSharedObject', -- Only for ESX users.
     },
     ['setjobForPolice'] = 'leo', -- Setjob for check police count and police alert
-    ['requiredPoliceCount'] = 2, -- Required police count for start heist
+    ['requiredPoliceCount'] = 0, -- Required police count for start heist
     ['cooldown'] = { -- If you set globalCooldown to true, players can rob one shop in same time. Cooldown time is the time it takes to each shop or global.
         globalCooldown = true,
         time = 60,
