@@ -180,8 +180,8 @@ return {
 	VendingMachineDrinks = {
 		name = 'Vending Machine',
 		inventory = {
-			{ name = 'water', price = 10 },
-			{ name = 'cola', price = 10 },
+			{ name = 'water', price = 1 },
+			{ name = 'cola', price = 1 },
 		},
 		model = {
 			`prop_vend_soda_02`, `prop_vend_fridge01`, `prop_vend_water_01`, `prop_vend_soda_01`, `prop_watercooler`
