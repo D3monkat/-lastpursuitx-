@@ -37,24 +37,29 @@ Config.AlertShowInfo = 2 -- How many injuries a player must have before being al
 
 Config.Locations = { -- Edit the various interaction points for players or create new ones
     ["checking"] = {
-	    [1] = vector3(302.761, -584.269, 43.268), -- upper level pb
-	    [2] = vector3(351.914, -588.489, 28.847), -- lower level pb
+	    [1] = vector3(-435.52987670898, -325.58721923828, 34.948020935059),
+	    [2] = vector3(-254.54, 6331.78, 32.43), -- paleto
+	    [3] = vector3(1767.59, 3640.07, 34.85), -- sandy
     },
     ["duty"] = {
-        [1] = vector3(348.59, -587.34, 28.85), -- llpb
-        [2] = vector3(312.77, -586.21, 43.27), -- ulpb
+        [1] = vector3(-432.54626464844, -318.36764526367, 35.232421875),
+        [2] = vector3(-254.88, 6324.5, 32.58),
+        [3] = vector3(1766.86, 3643.29, 34.85),
     },
     ["vehicle"] = {
-        [1] = vector4(364.25, -568.76, 28.85, 66.86),
-        [2] = vector4(-234.28, 6329.16, 32.15, 222.5),
+        [1] = vector4(-502.92660522461, -331.02258300781, 34.754009246826, 87.874214172363),
+        [2] = vector4(-464.8, -330.02, 34.36, 9.48),
+        [3] = vector4(1766.2, 3627.14, 34.7, 300.91),
     },
     ["helicopter"] = {
         [1] = vector4(351.58, -587.45, 74.16, 160.5),
         [2] = vector4(-475.43, 5988.353, 31.716, 31.34),
+        [3] = vector4(1769.3, 3239.29, 42.13, 102.38),
     },
     ["armory"] = {
-        [1] = vector3(299.8, -578.3, 28.85),
+        [1] = vector3(-435.2978515625, -319.69650268555, 35.01766204834),
         [2] = vector3(-245.13, 6315.71, 32.82),
+        [3] = vector3(1785.17, 3653.0, 34.85),
     },
     ["roof"] = {
         [1] = vector4(338.5, -583.85, 74.16, 245.5),
@@ -63,21 +68,29 @@ Config.Locations = { -- Edit the various interaction points for players or creat
         [1] = vector3(298.74, -599.33, 43.29),
     },
     ["stash"] = {
-        [1] = vector3(309.78, -596.6, 43.29),
+        [1] = vector3(303.83, -600.29, 43.28),
     },
     ["beds"] = {
-        [1] = {coords = vector4(341.82, -575.89, 29.7, 155.52), taken = false, model = 1631638868},
-        [2] = {coords = vector4(345.51, -577.3, 29.7, 157.97), taken = false, model = 1631638868},
-        [3] = {coords = vector4(349.3, -578.74, 29.7, 161.74), taken = false, model = 2117668672},
-        [4] = {coords = vector4(352.87, -580.05, 29.7, 158.72), taken = false, model = 2117668672},
-        [5] = {coords = vector4(346.86, -595.49, 29.7, 337.04), taken = false, model = 2117668672},
-        [6] = {coords = vector4(343.28, -594.35, 29.7, 340.42), taken = false, model = -1091386327},
-        [7] = {coords = vector4(339.66, -592.99, 29.7, 337.05), taken = false, model = -1091386327},
-        [8] = {coords = vector4(336.11, -591.46, 29.7, 336.13), taken = false, model = -1091386327},
-	    --- paleto
+        [1] = {coords = vector4(-458.9977722168, -279.75314331055, 34.919715881348, 14.646488189697), taken = false, model = 1631638868},
+        [2] = {coords = vector4(-455.0641784668, -278.08395385742, 34.883617401123, 27.245252609253), taken = false, model = 1631638868},
+        [3] = {coords = vector4(-448.4411315918, -283.64779663086, 34.928035736084, 217.87612915039), taken = false, model = 2117668672},
+        [4] = {coords = vector4(-451.54547119141, -284.93655395508, 34.85209274292, 202.83651733398), taken = false, model = 2117668672},
+        [5] = {coords = vector4(-454.84634399414, -286.3459777832, 34.866130828857, 197.87550354004), taken = false, model = 2117668672},
+        [6] = {coords = vector4(-460.30142211914, -288.41146850586, 34.93607711792, 202.20596313477), taken = false, model = -1091386327},
+        [7] = {coords = vector4(-463.71264648438, -289.97244262695, 34.8815574646, 196.45761108398), taken = false, model = -1091386327},
+        [8] = {coords = vector4(-466.94741821289, -291.21655273438, 34.866039276123, 197.71726989746), taken = false, model = -1091386327},
+	--- paleto
 	    [9] = {coords = vector4(-252.43, 6312.25, 32.34, 313.48), taken = false, model = 2117668672},
         [10] = {coords = vector4(-247.04, 6317.95, 32.34, 134.64), taken = false, model = 2117668672},
         [11] = {coords = vector4(-255.98, 6315.67, 32.34, 313.91), taken = false, model = 2117668672},
+
+    ---- sandy Shores    
+	    [12] = {coords = vector4(1734.13, 3637.79, 35.69, 123.65), taken = false, model = 835950247},
+        [13] = {coords = vector4(1735.19, 3635.0, 35.69, 128.47), taken = false, model = 835950247},
+        [14] = {coords = vector4(1736.79, 3632.27, 35.69, 117.21), taken = false, model = 835950247},
+	    [15] = {coords = vector4(1738.5, 3629.36, 35.7, 122.58), taken = false, model = 835950247},
+        [16] = {coords = vector4(1740.07, 3626.66, 35.69, 119.5), taken = false, model = 835950247},
+        [17] = {coords = vector4(1741.23, 3624.57, 35.69, 118.09), taken = false, model = 835950247},
     },
     ["jailbeds"] = {
         [1] = {coords = vector4(1761.96, 2597.74, 45.66, 270.14), taken = false, model = 2117668672},
@@ -86,25 +99,89 @@ Config.Locations = { -- Edit the various interaction points for players or creat
         [4] = {coords = vector4(1771.85, 2591.85, 45.66, 91.51), taken = false, model = 2117668672},
     },
     ["stations"] = {
-        [1] = {label = Lang:t('info.pb_hospital'), coords = vector4(304.27, -600.33, 43.28, 272.249)}
-    }
+        [1] = {label = Lang:t('info.z_hospital'), coords = vector4(-466.55, -338.35, 34.37, 191.23)},
+        [2] = {label = Lang:t('info.sandy_hospital'), coords = vector4(1767.59, 3640.07, 34.85, 341.8)},
+        [3] = {label = Lang:t('info.paleto_hospital'), coords = vector4(-253.77, 6329.29, 32.43, 53.96)},
+    },
 }
 
-Config.AuthorizedVehicles = { -- Grade is key, don't add same vehicle in multiple grades. Higher rank can see lower
+Config.AuthorizedVehicles = { -- Vehicles players can use based on their ambulance job grade level
+	-- Grade 0
 	[0] = {
-        ["emsnspeedo"] = "Ambulance",
-        ["clrgemscharger"] = "chief charger",
-    }
+		["16ramambo"] = "2016 Ram Ambulance",
+	},
+	-- Grade 1
+	[1] = {
+		["16ramambo"] = "2016 Ram Ambulance",
+
+	},
+	-- Grade 2
+	[2] = {
+		["16ramambo"] = "2016 Ram Ambulance",
+	},
+	-- Grade 3
+	[3] = {
+		["16ramambo"] = "2016 Ram Ambulance",
+	},
+	-- Grade 4
+	[4] = {
+		["fire1"] = "2018 Chevrolet Tahoe Command",
+        	["16ramambo"] = "2016 Ram Ambulance",
+	}
 }
 
-Config.Items = { -- Grade is key, don't add same item in multiple grades. Higher rank can see lower
-    [0] = {
-        {name = "radio",                   price = 0, amount = 50, info = {}, type = "item"},
-        {name = "bandage",                 price = 0, amount = 50, info = {}, type = "item"},
-        {name = "painkillers",             price = 0, amount = 50, info = {}, type = "item"},
-        {name = "firstaid",                price = 0, amount = 50, info = {}, type = "item"},
-        {name = "weapon_flashlight",       price = 0, amount = 50, info = {}, type = "item"},
-        {name = "weapon_fireextinguisher", price = 0, amount = 50, info = {}, type = "item"},
+Config.Items = { -- Items found in the ambulance shop for players with the ambulance job to purchase
+    label = Lang:t('info.safe'),
+    slots = 30,
+    items = {
+        [1] = {
+            name = "radio",
+            price = 0,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 1,
+        },
+        [2] = {
+            name = "bandage",
+            price = 0,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 2,
+        },
+        [3] = {
+            name = "painkillers",
+            price = 0,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 3,
+        },
+        [4] = {
+            name = "firstaid",
+            price = 0,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 4,
+        },
+        [5] = {
+            name = "weapon_flashlight",
+            price = 0,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 5,
+        },
+        [6] = {
+            name = "weapon_fireextinguisher",
+            price = 0,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 6,
+        },
     }
 }
 
@@ -308,6 +385,34 @@ Config.BoneIndexes = { -- Correspond bone labels to their hash number
 }
 
 Config.Weapons = { -- Correspond weapon names to their class number
+ --[[ HIGH CALIBER ]]
+ [`WEAPON_DE`] = Config.WeaponClasses['HIGH_CALIBER'],
+ [`WEAPON_M4`] = Config.WeaponClasses['HIGH_CALIBER'],
+ [`WEAPON_HK416`] = Config.WeaponClasses['HIGH_CALIBER'],
+ [`WEAPON_AR15`] = Config.WeaponClasses['HIGH_CALIBER'],
+ [`WEAPON_AK47`] = Config.WeaponClasses['HIGH_CALIBER'],
+ [`WEAPON_M70`] = Config.WeaponClasses['HIGH_CALIBER'],
+ [`WEAPON_SCARH`] = Config.WeaponClasses['HIGH_CALIBER'],
+ [`WEAPON_MK14`] = Config.WeaponClasses['HIGH_CALIBER'],
+ [`WEAPON_M110`] = Config.WeaponClasses['HIGH_CALIBER'],
+ [`WEAPON_HUNTINGRIFLE`] = Config.WeaponClasses['HIGH_CALIBER'],
+ --[[ MEDIUM CALIBER ]]
+ [`WEAPON_UZI`] = Config.WeaponClasses['MEDIUM_CALIBER'],
+ [`WEAPON_MAC10`] = Config.WeaponClasses['MEDIUM_CALIBER'],
+ [`WEAPON_MP9`] = Config.WeaponClasses['MEDIUM_CALIBER'],
+ --[[ SMALL CALIBER ]]
+ [`WEAPON_GLOCK17`] = Config.WeaponClasses['SMALL_CALIBER'],
+ [`WEAPON_M9`] = Config.WeaponClasses['SMALL_CALIBER'],
+ [`WEAPON_M1911`] = Config.WeaponClasses['SMALL_CALIBER'],
+ [`WEAPON_FNX45`] = Config.WeaponClasses['SMALL_CALIBER'],
+ --[[ SHOTGUN ]]
+ [`WEAPON_REMINGTON`] = Config.WeaponClasses['SHOTGUN'],
+ [`WEAPON_MOSSBERG`] = Config.WeaponClasses['SHOTGUN'],
+ --[[ CUTTING ]]
+ [`WEAPON_SHIV`] = Config.WeaponClasses['CUTTING'],
+ [`WEAPON_KATANA`] = Config.WeaponClasses['CUTTING'],
+ --[[ HEAVY IMPACT ]]
+ [`WEAPON_SLEDGEHAMMER`] = Config.WeaponClasses['HEAVY_IMPACT'],
     [`WEAPON_STUNGUN`] = Config.WeaponClasses['NONE'],
     [`WEAPON_STUNGUN_MP`] = Config.WeaponClasses['NONE'],
     --[[ Small Caliber ]]--
