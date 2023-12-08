@@ -207,8 +207,8 @@ QBShared.Jobs = {
 			['4'] = { name = 'Manager', isboss = true, payment = 150 },
 		},
 	},
-	mechanic = {
-		label = 'LS Customs',
+	redline = {
+		label = 'Redline',
 		type = 'mechanic',
 		defaultDuty = true,
 		offDutyPay = false,
@@ -220,8 +220,8 @@ QBShared.Jobs = {
 			['4'] = { name = 'Manager', isboss = true, payment = 150 },
 		},
 	},
-	mechanic2 = {
-		label = 'LS Customs',
+	shoplux = {
+		label = 'Lux Mech',
 		type = 'mechanic',
 		defaultDuty = true,
 		offDutyPay = false,
