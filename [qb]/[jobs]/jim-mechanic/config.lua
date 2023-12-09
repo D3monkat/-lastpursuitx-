@@ -93,7 +93,7 @@ Config = {
 	},
 	Repairs = {	--Repair Related
 		FreeRepair = false,  		-- Are repairs free? True means yes
-		StashRepair = false, 		-- Enable for repair materials to be removed from a job stash (disabled if RequiresJob = false)
+		StashRepair = true, 		-- Enable for repair materials to be removed from a job stash (disabled if RequiresJob = false)
 
 		ExtraDamages = false,		-- When enabled, it will use the built in extra damage systems (Like qb-mechanicjobs functions)
 
@@ -136,7 +136,7 @@ Config = {
 	},
 	StoreCraft = {
 		Crafting = true, 			-- Set true to turn on crafting features
-		StashCraft = false,  		-- Set true to grab materials from mechaincs stash for crafting
+		StashCraft = true,  		-- Set true to grab materials from mechaincs stash for crafting
 		Stores = true, 				-- Set true to turn on shop store features
 
 		StashCraftTimeout = 15000, 	-- This controls the timeout of how long a stash is kept in the clients cache
