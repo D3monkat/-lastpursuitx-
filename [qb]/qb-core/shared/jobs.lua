@@ -233,7 +233,7 @@ QBShared.Jobs = {
 			['4'] = { name = 'Manager', isboss = true, payment = 150 },
 		},
 	},
-	mechanic3 = {
+	mechanic = {
 		label = 'LS Customs',
 		type = 'mechanic',
 		defaultDuty = true,
