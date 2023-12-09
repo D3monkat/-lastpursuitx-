@@ -120,6 +120,13 @@ Config.Models = { -- Any TV Models used on the map or in locations must be defin
         Scale = 0.085, 
         Offset = vector3(-1.02, -0.055, 1.04)
     },
+    [`prop_tv_stand_01`] = {
+        DefaultVolume = 0.5,
+        Range = 20.0,
+        Target = "tvscreen", -- Only use if prop has render-target name.
+        Scale = 0.085, 
+        Offset = vector3(-1.02, -0.055, 1.04)
+    },
 }
 
 Config.Locations = { -- REMOVE ALL IF NOT USING ONESYNC, OR IT SHALL BREAK.
