@@ -27,7 +27,7 @@ Config = {
 									-- Example-- --JobRoles = { "mechanic", "tuner" }
 	},
 	Overrides = {
-		ShowAllStash = false, 		-- If true, it will show the locations job stash if `StashRepair` or `StashCraft` is enabled or not
+		ShowAllStash = true, 		-- If true, it will show the locations job stash if `StashRepair` or `StashCraft` is enabled or not
 		CosmeticItemRemoval = true, -- If "true" items will be removed on successful application of a mod
 									-- If "false" items will not be removed on use.
 		updateServerDelay = 20, 	-- default 20 second database update delay from the LAST upgrade done to a vehicle
