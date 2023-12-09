@@ -95,71 +95,71 @@ Config.Locations[#Config.Locations+1] = { --[[ RFC LS CUSTOMS ]]--
         link = "",
         color = 16711680,
     }
-},
+}
 
--- Config.Locations[#Config.Locations+1] = { --[[ Lux ]]--
---     Enabled = true,
---     job = "shoplux",
---     zones = {
---         vec2(140.53567504882, -1110.80859375),
---         vec2(115.85746765136, -1110.6535644532),
---         vec2(115.85834503174, -1090.9049072266),
---         vec2(127.2694015503, -1090.9012451172),
---         vec2(129.41340637208, -1088.216796875),
---         vec2(140.53732299804, -1088.838256836)
---     },
---     autoClock = { enter = false, exit = false, },
---     stash = {
---         { coords = vec4(131.51, -1088.72, 29.2, 359.2), w = 0.6, d = 3.6, },
---     },
---     store = {
--- 		{ coords = vec4(139.72, -1100.41, 29.2, 268.31), w = 1.0, d = 1.4, },
--- 	},
---     crafting = {
---         { coords = vec4(139.79, -1108.8, 29.2, 273.61), w = 1.4, d = 2.2, },
---     },
---     clockin     = {
---         { coords = vec4(124.15, -1091.46, 29.2, 359.5), prop = false, },
---     },
---     carLift = {
---         -- { coords = vec4(-334.65, -136.87, 39.00, 340), use = false }, -- Bay 4 [GTA Prop]
---     },
---     manualRepair = {
---         { coords = vec4(120.62, -1090.83, 29.2, 182.64), prop = false, },
---     },
--- 	-- garage = { -- requires jim-jobgarge
---     --     spawn = vec4(-49.14, -1031.25, 27.76, 339.67),
---     --     out = vec4(-42.38, -1035.11, 28.52, 68.01),
---     --     list = { "towtruck", "panto", "slamtruck", "cheburek", "utillitruck3" },
---     --     prop = true, -- spawn a prop (if there isn't alreaady one available in the current MLO at the location)
---     -- },
---     payments = {
---         img = "<center><p><img src=https://i.imgur.com/74UVnCb.jpeg width=150px></p>",
---         { coords = vec4(133.77, -1088.93, 29.2, 177.89), prop = false },
---         { coords = vec4(-344.19, -125.77, 39.01, 340), prop = false },
---         { coords = vec4(-361.8, -100.09, 39.55, 340), prop = false },
---     },
---     -- Restrictions = { -- Remove what you DON'T what the location to be able to edit
---     --     Vehicle = { "Compacts", "Sedans", "SUVs", "Coupes", "Muscle", "Sports Classics", "Sports", "Super", "Motorcycles", "Off-road", "Industrial", "Utility", "Vans", "Cycles", "Service", "Emergency", "Commercial", },
---     --     Allow = { "tools", "cosmetics", "repairs", "nos", "perform" },
---     -- },
---     nosrefill = {
---         { coords = vec4(140.64, -1089.23, 29.2, 95.02) }
---     },
---     blip = {
---         coords = vec3(123.82, -1099.78, 29.2),
---         label = "Bennys Workshop",
---         color = 1,
---         sprite = 446,
---         disp = 6,
---         scale = 0.7,
---         cat = nil,
---     },
---     discord = {
---         link = "",
---         color = 16711680,
---     }
--- },
+Config.Locations[#Config.Locations+1] = { --[[ Lux ]]--
+    Enabled = true,
+    job = "shoplux",
+    zones = {
+        vec2(140.53567504882, -1110.80859375),
+        vec2(115.85746765136, -1110.6535644532),
+        vec2(115.85834503174, -1090.9049072266),
+        vec2(127.2694015503, -1090.9012451172),
+        vec2(129.41340637208, -1088.216796875),
+        vec2(140.53732299804, -1088.838256836)
+    },
+    autoClock = { enter = false, exit = false, },
+    stash = {
+        { coords = vec4(131.51, -1088.72, 29.2, 359.2), w = 0.6, d = 3.6, },
+    },
+    store = {
+		{ coords = vec4(139.72, -1100.41, 29.2, 268.31), w = 1.0, d = 1.4, },
+	},
+    crafting = {
+        { coords = vec4(139.79, -1108.8, 29.2, 273.61), w = 1.4, d = 2.2, },
+    },
+    clockin     = {
+        { coords = vec4(124.15, -1091.46, 29.2, 359.5), prop = false, },
+    },
+    carLift = {
+        -- { coords = vec4(-334.65, -136.87, 39.00, 340), use = false }, -- Bay 4 [GTA Prop]
+    },
+    manualRepair = {
+        { coords = vec4(120.62, -1090.83, 29.2, 182.64), prop = false, },
+    },
+	-- garage = { -- requires jim-jobgarge
+    --     spawn = vec4(-49.14, -1031.25, 27.76, 339.67),
+    --     out = vec4(-42.38, -1035.11, 28.52, 68.01),
+    --     list = { "towtruck", "panto", "slamtruck", "cheburek", "utillitruck3" },
+    --     prop = true, -- spawn a prop (if there isn't alreaady one available in the current MLO at the location)
+    -- },
+    payments = {
+        img = "<center><p><img src=https://i.imgur.com/74UVnCb.jpeg width=150px></p>",
+        { coords = vec4(133.77, -1088.93, 29.2, 177.89), prop = false },
+        { coords = vec4(-344.19, -125.77, 39.01, 340), prop = false },
+        { coords = vec4(-361.8, -100.09, 39.55, 340), prop = false },
+    },
+    -- Restrictions = { -- Remove what you DON'T what the location to be able to edit
+    --     Vehicle = { "Compacts", "Sedans", "SUVs", "Coupes", "Muscle", "Sports Classics", "Sports", "Super", "Motorcycles", "Off-road", "Industrial", "Utility", "Vans", "Cycles", "Service", "Emergency", "Commercial", },
+    --     Allow = { "tools", "cosmetics", "repairs", "nos", "perform" },
+    -- },
+    nosrefill = {
+        { coords = vec4(140.64, -1089.23, 29.2, 95.02) }
+    },
+    blip = {
+        coords = vec3(123.82, -1099.78, 29.2),
+        label = "Bennys Workshop",
+        color = 1,
+        sprite = 446,
+        disp = 6,
+        scale = 0.7,
+        cat = nil,
+    },
+    discord = {
+        link = "",
+        color = 16711680,
+    }
+}
 
 Config.Locations[#Config.Locations+1] = { --[[ REDLINE ]]--
     Enabled = true,
