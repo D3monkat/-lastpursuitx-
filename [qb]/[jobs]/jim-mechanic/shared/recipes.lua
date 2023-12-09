@@ -20,14 +20,6 @@ Crafting = {
 		{ ["tint_supplies"] = { ["iron"] = 1, } },
 		{ ["underglow_controller"] = { ["iron"] = 1, } },
 		{ ["cleaningkit"] = { ["rubber"] = 1, } },
-
-				-- Example : Delete me --
-		-- Support for multiple items in recipes --
-		-- Support for multiple resulting items --
-		-- Support to limit items to certain job roles --
-		{ ["cleaningkit"] = { ["rubber"] = 5, ["engine2"] = 1, ["plastic"] = 2 },
-				["amount"] = 2, ["job"] = { ["mechanic"] = 4, ["tuner"] = 4, } },
-				-- Example : Delete me --
 	},
 	Perform = {
 		{ ["turbo"] = { ["steel"] = 1, } },
