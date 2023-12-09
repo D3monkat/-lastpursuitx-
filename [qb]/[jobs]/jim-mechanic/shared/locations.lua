@@ -95,7 +95,7 @@ Config.Locations[#Config.Locations+1] = { --[[ RFC LS CUSTOMS ]]--
         link = "",
         color = 16711680,
     }
-},
+}
 
 Config.Locations[#Config.Locations+1] = { --[[ Lux ]]--
     Enabled = true,
@@ -159,10 +159,10 @@ Config.Locations[#Config.Locations+1] = { --[[ Lux ]]--
         link = "",
         color = 16711680,
     }
-},
+}
 
 Config.Locations[#Config.Locations+1] = { --[[ REDLINE ]]--
-    Enabled = false,
+    Enabled = true,
     job = "redline",
     zones = {
         vec2(-548.77136230469, -940.03454589844),
@@ -174,9 +174,9 @@ Config.Locations[#Config.Locations+1] = { --[[ REDLINE ]]--
         vec2(-587.48864746094, -913.96276855469),
         vec2(-587.51678466797, -939.09588623047)
     },
-    autoClock = { enter = true, exit = true, },
+    autoClock = { enter = true, exit = false, },
     stash = {
-        { coords = vec4(-589.87, -930.24, 27.92, 0), w = 5.5, d = 1.0 },
+        { coords = vec4(-576.94, -939.09, 23.89, 182.1), w = 5.5, d = 1.0 },
         { coords = vec4(-570.3, -911.4, 23.0, 357.94), w = 1.0, d = 4.0 },
         { coords = vec4(-568.68, -939.89, 23.0, 182.12), w = 1.0, d = 4.0 },
     },
