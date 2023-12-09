@@ -29,6 +29,20 @@ return {
 			{ loc = vec3(373.13, 326.29, 103.57), length = 0.6, width = 0.5, heading = 345.0, minZ = 103.57, maxZ = 103.97, distance = 1.5 },
 		}
 	},
+	SpecialtyTools = {
+		name = 'SpecialtyTools',
+		blip = {
+			id = 59, colour = 69, scale = 0.8
+		}, inventory = {
+			{ name = 'full_watering_can', price = 150 },
+			{ name = 'plant_tub', price = 300 },
+			{ name = 'finescale', price = 245 },
+			{ name = 'trimming_scissors', price = 125 },
+			{ name = 'bakingsoda', price = 675 },
+		}, locations = {
+			vector3(-1249.64, -1448.43, 4.37),
+		}, targets = {}
+	},
 
 	-- Liquor = {
 	-- 	name = 'Liquor Store',
@@ -186,5 +200,15 @@ return {
 		model = {
 			`prop_vend_soda_02`, `prop_vend_fridge01`, `prop_vend_water_01`, `prop_vend_soda_01`, `prop_watercooler`
 		}
-	}
+	},
+
+	WaterStations = {
+		name = 'Free Water',
+		inventory = {
+			{ name = 'water', price = 0 },
+		},
+		model = {
+			`prop_watercooler`
+		}
+	},
 }

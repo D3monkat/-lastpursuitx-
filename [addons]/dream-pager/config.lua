@@ -10,7 +10,7 @@ Config.GET_CORE  = exports['qb-core']:GetCoreObject()
 -- BEGIN CONFIG (You can edit these):
 Config.FRAMEWORK = 'qb' -- 'qb' | 'esx'
 
-Config.OPEN_PAGER_KEY = 'U'
+Config.OPEN_PAGER_KEY = 'F12'
 
 Config.PREFIX = '^6[^3dream-pager^6]^0'
 

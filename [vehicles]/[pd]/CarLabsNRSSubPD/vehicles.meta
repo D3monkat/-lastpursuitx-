@@ -15,7 +15,7 @@
       <animConvRoofName>null</animConvRoofName>
       <animConvRoofWindowsAffected />
       <ptfxAssetName>null</ptfxAssetName>
-      <audioNameHash>lg228nathemi64</audioNameHash>
+      <audioNameHash>lg221srt8hemi</audioNameHash>
       <layout>LAYOUT_STD_STRETCH</layout>
       <coverBoundOffsets>GRESLEY_COVER_OFFSET_INFO</coverBoundOffsets>
       <explosionInfo>EXPLOSION_INFO_DEFAULT</explosionInfo>
@@ -138,7 +138,7 @@
       <animConvRoofName>null</animConvRoofName>
       <animConvRoofWindowsAffected />
       <ptfxAssetName>null</ptfxAssetName>
-      <audioNameHash>VSTR</audioNameHash>
+      <audioNameHash>kc107hemipwagon4inch</audioNameHash>
       <layout>LAYOUT_STD_STRETCH</layout>
       <coverBoundOffsets>BISON_COVER_OFFSET_INFO</coverBoundOffsets>
       <explosionInfo>EXPLOSION_INFO_DEFAULT</explosionInfo>
@@ -266,7 +266,7 @@
       <animConvRoofName>null</animConvRoofName>
       <animConvRoofWindowsAffected />
       <ptfxAssetName>null</ptfxAssetName>
-      <audioNameHash>vstr</audioNameHash>
+      <audioNameHash>lg69patrolcharger</audioNameHash>
       <layout>LAYOUT_STD_STRETCH</layout>
       <coverBoundOffsets>BUFFALO_COVER_OFFSET_INFO</coverBoundOffsets>
       <explosionInfo>EXPLOSION_INFO_DEFAULT</explosionInfo>
@@ -394,7 +394,7 @@
       <animConvRoofName>null</animConvRoofName>
       <animConvRoofWindowsAffected />
       <ptfxAssetName>null</ptfxAssetName>
-      <audioNameHash>police</audioNameHash>
+      <audioNameHash>cvpiv8</audioNameHash>
       <layout>LAYOUT_STD_STRETCH</layout>
       <coverBoundOffsets>POLICE_COVER_OFFSET_INFO</coverBoundOffsets>
       <explosionInfo>EXPLOSION_INFO_DEFAULT</explosionInfo>
@@ -511,7 +511,7 @@
       <animConvRoofName>null</animConvRoofName>
       <animConvRoofWindowsAffected />
       <ptfxAssetName>null</ptfxAssetName>
-      <audioNameHash>baller3</audioNameHash>
+      <audioNameHash>ecoboostv6</audioNameHash>
       <layout>LAYOUT_STD_STRETCH</layout>
       <coverBoundOffsets>POLICE3_COVER_OFFSET_INFO</coverBoundOffsets>
       <explosionInfo>EXPLOSION_INFO_DEFAULT</explosionInfo>
@@ -602,13 +602,13 @@
         </Item>
       </drivers>
       <extraIncludes>
-        <Item> </Item>
+        <Item></Item>
         </extraIncludes>
       <doorsWithCollisionWhenClosed />
       <driveableDoors />
       <bumpersNeedToCollideWithMap value="false" />
       <needsRopeTexture value="false" />
-      <requiredExtras> </requiredExtras>
+      <requiredExtras></requiredExtras>
       <rewards />
       <cinematicPartCamera>
         <Item>WHEEL_FRONT_RIGHT_CAMERA</Item>
@@ -639,7 +639,7 @@
       <animConvRoofName>null</animConvRoofName>
       <animConvRoofWindowsAffected />
       <ptfxAssetName>null</ptfxAssetName>
-      <audioNameHash>vstr</audioNameHash>
+      <audioNameHash>fordvoodoo</audioNameHash>
       <layout>LAYOUT_STANDARD</layout>
       <coverBoundOffsets>DOMINATOR_COVER_OFFSET_INFO</coverBoundOffsets>
       <explosionInfo>EXPLOSION_INFO_DEFAULT</explosionInfo>
@@ -746,7 +746,7 @@
       <animConvRoofName>null</animConvRoofName>
       <animConvRoofWindowsAffected />
       <ptfxAssetName>null</ptfxAssetName>
-      <audioNameHash>vstr</audioNameHash>
+      <audioNameHash>lg81hcredeye</audioNameHash>
       <layout>LAYOUT_STANDARD</layout>
       <coverBoundOffsets>GAUNTLET_COVER_OFFSET_INFO</coverBoundOffsets>
       <explosionInfo>EXPLOSION_INFO_DEFAULT</explosionInfo>
@@ -857,7 +857,7 @@
       <animConvRoofName>null</animConvRoofName>
       <animConvRoofWindowsAffected />
       <ptfxAssetName>null</ptfxAssetName>
-      <audioNameHash>police</audioNameHash>
+      <audioNameHash>ecoboostv6</audioNameHash>
       <layout>LAYOUT_STD_STRETCH</layout>
       <coverBoundOffsets>POLICE3_COVER_OFFSET_INFO</coverBoundOffsets>
       <explosionInfo>EXPLOSION_INFO_DEFAULT</explosionInfo>
@@ -980,7 +980,7 @@
       <animConvRoofName>null</animConvRoofName>
       <animConvRoofWindowsAffected />
       <ptfxAssetName>null</ptfxAssetName>
-      <audioNameHash>fbi2</audioNameHash>
+      <audioNameHash>lg98tahoepol</audioNameHash>
       <layout>LAYOUT_STD_STRETCH</layout>
       <coverBoundOffsets>GRANGER_COVER_OFFSET_INFO</coverBoundOffsets>
       <explosionInfo>EXPLOSION_INFO_DEFAULT</explosionInfo>
@@ -1103,7 +1103,7 @@
       <animConvRoofName>null</animConvRoofName>
       <animConvRoofWindowsAffected />
       <ptfxAssetName>null</ptfxAssetName>
-      <audioNameHash>ninef</audioNameHash>
+      <audioNameHash>kc118ls3camst2sc</audioNameHash>
       <layout>LAYOUT_LOW_RESTRICTED</layout>
       <coverBoundOffsets>NINEF_COVER_OFFSET_INFO</coverBoundOffsets>
       <explosionInfo>EXPLOSION_INFO_DEFAULT</explosionInfo>
@@ -1296,13 +1296,13 @@
         </Item>
       </drivers>
           <extraIncludes>
-          <Item> </Item>
+          <Item></Item>
           </extraIncludes>
       <doorsWithCollisionWhenClosed/>
       <driveableDoors/>
       <bumpersNeedToCollideWithMap value="false"/>
       <needsRopeTexture value="false"/>
-      	<requiredExtras> </requiredExtras>
+      	<requiredExtras></requiredExtras>
       	<rewards />
       <cinematicPartCamera>
         <Item>WHEEL_REAR_LEFT_CAMERA</Item>
@@ -1675,7 +1675,7 @@
       <animConvRoofName>null</animConvRoofName>
       <animConvRoofWindowsAffected />
       <ptfxAssetName>null</ptfxAssetName>
-      <audioNameHash>comet3</audioNameHash>
+      <audioNameHash>gt3rstun</audioNameHash>
       <layout>LAYOUT_LOW_RESTRICTED</layout>
       <coverBoundOffsets>GROWLER_COVER_OFFSET_INFO</coverBoundOffsets>
       <explosionInfo>EXPLOSION_INFO_DEFAULT</explosionInfo>
@@ -1745,13 +1745,13 @@
       <additionalTrailers />
       <drivers />
       <extraIncludes>
-        <Item> </Item>
+        <Item></Item>
       </extraIncludes>
       <doorsWithCollisionWhenClosed />
       <driveableDoors />
       <bumpersNeedToCollideWithMap value="true" />
       <needsRopeTexture value="false" />
-      <requiredExtras> </requiredExtras>
+      <requiredExtras></requiredExtras>
       <rewards />
       <cinematicPartCamera>
         <Item>WHEEL_FRONT_RIGHT_CAMERA</Item>
@@ -1782,7 +1782,7 @@
       <animConvRoofName>null</animConvRoofName>
       <animConvRoofWindowsAffected />
       <ptfxAssetName>null</ptfxAssetName>
-      <audioNameHash>BISON</audioNameHash>
+      <audioNameHash>lg98tahoepol</audioNameHash>
       <layout>LAYOUT_STD_STRETCH</layout>
       <coverBoundOffsets>BISON_COVER_OFFSET_INFO</coverBoundOffsets>
       <explosionInfo>EXPLOSION_INFO_DEFAULT</explosionInfo>
@@ -1993,13 +1993,13 @@
       <additionalTrailers />
       <drivers />
       <extraIncludes>
-        <Item> </Item>
+        <Item></Item>
       </extraIncludes>
       <doorsWithCollisionWhenClosed />
       <driveableDoors />
       <bumpersNeedToCollideWithMap value="false" />
       <needsRopeTexture value="false" />
-      <requiredExtras> </requiredExtras>
+      <requiredExtras></requiredExtras>
       <rewards />
       <cinematicPartCamera>
         <Item>WHEEL_FRONT_RIGHT_CAMERA</Item>
@@ -2164,7 +2164,7 @@
       <animConvRoofName>null</animConvRoofName>
       <animConvRoofWindowsAffected />
       <ptfxAssetName>null</ptfxAssetName>
-      <audioNameHash>buffalo</audioNameHash>
+      <audioNameHash>lgcy01chargerv8</audioNameHash>
       <layout>LAYOUT_STD_STRETCH</layout>
       <coverBoundOffsets>BUFFALO_COVER_OFFSET_INFO</coverBoundOffsets>
       <explosionInfo>EXPLOSION_INFO_DEFAULT</explosionInfo>
@@ -2250,13 +2250,13 @@
       <additionalTrailers />
       <drivers />
       <extraIncludes>
-        <Item> </Item>
+        <Item></Item>
         </extraIncludes>
       <doorsWithCollisionWhenClosed />
       <driveableDoors />
       <bumpersNeedToCollideWithMap value="false" />
       <needsRopeTexture value="false" />
-      <requiredExtras> </requiredExtras>
+      <requiredExtras></requiredExtras>
       <rewards />
       <cinematicPartCamera>
         <Item>WHEEL_FRONT_RIGHT_CAMERA</Item>
@@ -2287,7 +2287,7 @@
       <animConvRoofName>null</animConvRoofName>
       <animConvRoofWindowsAffected />
       <ptfxAssetName>null</ptfxAssetName>
-      <audioNameHash>HABANERO</audioNameHash>
+      <audioNameHash>lg52musgt500v8</audioNameHash>
       <layout>LAYOUT_STD_LOWROOF</layout>
       <coverBoundOffsets>GROWLER_COVER_OFFSET_INFO</coverBoundOffsets>
       <explosionInfo>EXPLOSION_INFO_DEFAULT</explosionInfo>
@@ -2493,13 +2493,13 @@
         </Item>
       </drivers>
       <extraIncludes>
-        <Item> </Item>
+        <Item></Item>
       </extraIncludes>
       <doorsWithCollisionWhenClosed />
       <driveableDoors />
       <bumpersNeedToCollideWithMap value="false" />
       <needsRopeTexture value="false" />
-      <requiredExtras> </requiredExtras>
+      <requiredExtras></requiredExtras>
       <rewards />
       <cinematicPartCamera>
         <Item>WHEEL_FRONT_RIGHT_CAMERA</Item>
