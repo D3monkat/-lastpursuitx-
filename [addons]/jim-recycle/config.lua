@@ -12,13 +12,13 @@ Config = {
 	Notify = "qb",
 
 	Overrides = {
-		ScrapyardSeraching = true,
-		DumpsterDiving = true,
+		ScrapyardSeraching = false,
+		DumpsterDiving = false,
 		RecycleCenter = true,
 	},
 
 	ScrapyardSearching = {
-		Enable = true,
+		Enable = false,
 		searched = { }, -- No Touch
 		skillcheck = "qb-skillbar", --"qb-lock", "ps-ui", "qb-skillbar", "ox_lib", nil
 		models = { -- The mighty list of dumpters/trash cans
@@ -31,7 +31,7 @@ Config = {
 		searchTime = 3000,
 	},
 	DumpsterDiving = {
-		Enable = true,
+		Enable = false,
 		searched = { }, -- No Touch
 		skillcheck = "ox_lib", --"qb-lock", "ps-ui", "qb-skillbar", "ox_lib", nil
 		models = { -- The mighty list of dumpters/trash cans

@@ -3,7 +3,7 @@
 -- https://discord.gg/xKgQZ6wZvS
 
 Config = {
-	Debug = true, -- false to remove green boxes
+	Debug = false, -- false to remove green boxes
 
 	Lan = "en",
 	img = "qb-inventory/html/images/", -- Change this to your inventory's name and image folder
