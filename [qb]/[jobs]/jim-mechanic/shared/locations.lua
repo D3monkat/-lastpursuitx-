@@ -2,7 +2,7 @@ Config.Locations = Config.Locations or {}
 
 Config.Locations[#Config.Locations+1] = { --[[ RFC LS CUSTOMS ]]--
     Enabled = true,
-    job = "mechanic",
+    job = "redline",
     zones = {
         vec2(-357.11694335938, -138.5697479248),
         vec2(-350.16461181641, -150.59289550781),
@@ -163,7 +163,7 @@ Config.Locations[#Config.Locations+1] = { --[[ Lux ]]--
 
 Config.Locations[#Config.Locations+1] = { --[[ REDLINE ]]--
     Enabled = true,
-    job = "mechanic3",
+    job = "redline",
     zones = {
         vec2(-548.77136230469, -940.03454589844),
         vec2(-541.89007568359, -918.62713623047),

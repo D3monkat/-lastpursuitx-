@@ -22,7 +22,7 @@ Config = {
 		JobLocationRequired = true, -- Are the mecahanics locked to specific locations?
 		LocationBlips = true, 		-- Enable to grab the blip locations from locations.lua
 		CosmeticsJob = false, 		-- Do vehicle cosmetics require a mechanic job role?
-		JobRoles = {"shoplux", "mechanic3" }, -- These are the job roles who can use items if RequiresJob is enabled.
+		JobRoles = {"shoplux", "redline" }, -- These are the job roles who can use items if RequiresJob is enabled.
 									-- Add your extra job roles here or just leave as "mechanic"
 									-- Example-- --JobRoles = { "mechanic", "tuner" }
 	},
@@ -170,8 +170,7 @@ Config = {
 			["police"] = 0, -- Job and Job Grade
 			["bcso"] = 0, -- Job and Job Grade
 			["sast"] = 0, -- Job and Job Grade
-			["ambulance"] = 0,
-			["mechanic"] = 0,
+			["ambulance"] = 0
 		},
 		LockEmergency = true,  -- Enable this to lock make only "Emergency" (Class 18) vehicles to be used with the bench
 		Locations = {
