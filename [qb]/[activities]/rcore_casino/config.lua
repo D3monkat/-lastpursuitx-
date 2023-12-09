@@ -16,7 +16,7 @@ Config = {
 
     -- Xmas trees
     -- • configurable in xmas\xmas_cl.lua nad xmas\xmas_sv.lua
-    Xmas = false,
+    Xmas = true,
 
     -- Money Or Casino Chips? 
     MoneyInventoryItemName = nil, -- name of the money inventory item, set to nil, if you don't want to use inventory item as the money
