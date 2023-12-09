@@ -176,7 +176,9 @@ Config.Locations[#Config.Locations+1] = { --[[ REDLINE ]]--
     },
     autoClock = { enter = true, exit = false, },
     stash = {
-        { coords = vec4(-576.94, -939.09, 23.89, 182.1), w = 1.0, d = 1.0 },
+        { coords = vector4(-576.94, -939.09, 23.89, 182.1), w = 5.5, d = 1.0 },
+        { coords = vec4(-570.3, -911.4, 23.0, 357.94), w = 1.0, d = 4.0 },
+        { coords = vec4(-568.68, -939.89, 23.0, 182.12), w = 1.0, d = 4.0 },
     },
     store = {
         { coords = vec4(837.02, -808.22, 26.33, 90.0), w = 1.0, d = 1.4, },
