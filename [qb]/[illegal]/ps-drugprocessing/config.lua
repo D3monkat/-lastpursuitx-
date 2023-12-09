@@ -1,6 +1,6 @@
 Config = {}
 
-Config.KeyRequired = true
+Config.KeyRequired = false
 
 Config.Delays = {
 	WeedProcessing = 1000 * 10,
@@ -12,21 +12,21 @@ Config.Delays = {
 }
 
 Config.CircleZones = {
-	WeedField = {coords = vector3(2224.64, 5577.03, 53.85), name = ('Weed Farm'), radius = 100.0},
+	WeedField = {coords = vector3(3510.24, 2576.66, 9.61), name = ('Weed Farm'), radius = 100.0},
 	WeedProcessing = {coords = vector3(1038.33, -3204.44, -38.17), name = ('Weed Process'), radius = 100.0},
 	
 	MethProcessing = {coords = vector3(978.17, -147.98, -48.53), name = ('Meth Process'), radius = 20.0},
 	MethTemp = {coords = vector3(982.56, -145.59, -49.0), name = ('Meth Temperature'), radius = 20.0},
 	MethBag = {coords = vector3(987.81, -140.43, -49.0), name = ('Meth Bagging'), radius = 20.0},
-	HydrochloricAcidFarm = {coords = vector3(-1069.25, 4945.57, 212.18), name = ('Hydrochloric Acid'), radius = 100.0},
+	HydrochloricAcidFarm = {coords = vector3(1490.97, -2351.72, 73.17), name = ('Hydrochloric Acid'), radius = 100.0},
 
-	SulfuricAcidFarm = {coords = vector3(-3026.89, 3334.91, 10.04), name = ('Sulfuric Acid'), radius = 100.0},
-	SodiumHydroxideFarm = {coords = vector3(-389.35, -1874.85, 20.53), name = ('Sodium Hydroxide'), radius = 100.0},
+	SulfuricAcidFarm = {coords = vector3(1490.97, -2351.72, 73.17), name = ('Sulfuric Acid'), radius = 100.0},
+	SodiumHydroxideFarm = {coords = vector3(1490.97, -2351.72, 73.17), name = ('Sodium Hydroxide'), radius = 100.0},
 	
 	ChemicalsField = {coords = vector3(1264.97, 1803.96, 82.94), name = ('Chemicals'), radius = 100.0},
 	ChemicalsConvertionMenu = {coords = vector3(3536.71, 3662.63, 28.12), name = ('Chemicals Process'), radius = 100.0},
 
-	CokeField = {coords = vector3(2806.5, 4774.46, 46.98), name = ('Coke'), radius = 100.0},
+	CokeField = {coords = vector3(316.92, 4307.31, 47.26), name = ('Coke'), radius = 100.0},
 	CokeProcessing = {coords = vector3(1087.14, -3195.31, -38.99), name = ('Coke Process'), radius = 20.0}, 
 	CokePowder = {coords = vector3(1092.9, -3196.65, -38.99), name = ('Powder Cutting'), radius = 20.0},--vector3(1092.9, -3196.65, -38.99)
 	CokeBrick = {coords = vector3(1099.57, -3194.35, -38.99), name = ('Brick Up Packages'), radius = 20.0},--vector3(1099.57, -3194.35, -38.99)
