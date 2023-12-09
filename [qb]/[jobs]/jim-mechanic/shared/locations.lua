@@ -163,7 +163,7 @@ Config.Locations[#Config.Locations+1] = { --[[ Lux ]]--
 
 Config.Locations[#Config.Locations+1] = { --[[ REDLINE ]]--
     Enabled = true,
-    job = "redline",
+    job = "mechanic3",
     zones = {
         vec2(-548.77136230469, -940.03454589844),
         vec2(-541.89007568359, -918.62713623047),
