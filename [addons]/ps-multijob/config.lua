@@ -3,7 +3,7 @@ Config = Config or {}
 -- Side of the screen where you want the ui to be on. Can either be "left" or "right"
 Config.Side = "right"
 
-Config.MaxJobs = 3
+Config.MaxJobs = 10
 Config.IgnoredJobs = {
 	["unemployed"] = true,
 }
