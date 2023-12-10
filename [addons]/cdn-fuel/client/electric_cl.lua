@@ -291,7 +291,7 @@ if Config.ElectricVehicleCharging then
         else
             if Config.FuelDebug then print("Checking") end
             if AwaitingElectricCheck then
-                if Config.ElectricVehicles[vehiclename] and Config.ElectricVehicles[vehiclename].isElectric then
+                if Config.ElectricVehicles[vehiclename] then
                     AwaitingElectricCheck = false
                     FoundElectricVehicle = true
                     if Config.FuelDebug then print("^2"..current.. "^5 has been found. It ^2matches ^5the Player's Vehicle: ^2"..vehiclename..". ^5This means charging will be allowed.") end
