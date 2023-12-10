@@ -127,6 +127,9 @@ Config.ElectricVehicles = { -- List of Electric Vehicles in the Base Game.
     ["l150f"] = {
         isElectric = true,
     },
+    ["4Rings AI Race"] = {
+        isElectric = true,
+    },
     ["iwagen"] = {
         isElectric = true,
     },
@@ -186,6 +189,9 @@ Config.NoFuelUsage = { -- This is for you to put vehicles that you don't want to
         blacklisted = true
     },
     ["liquidair"] = {
+        blacklisted = true
+    },
+    ["4Rings AI Race"] = {
         blacklisted = true
     },
 }
