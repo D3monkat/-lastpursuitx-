@@ -48,7 +48,7 @@ end
 
 Config.Notify = "ox" -- Set this to either "qb" or "ox"
 
-Config.DebugPoly = true -- Used to check if your polyzone is correct, set to true if you want to see it
+Config.DebugPoly = false -- Used to check if your polyzone is correct, set to true if you want to see it
 Config.InventoryImg = "ox_inventory/web/images/" -- Change this to your inventory image path.
 
 Config.Levels = {
