@@ -3652,14 +3652,14 @@ return {
 		}
 	},
 
-	["veh_tint"] = {
-		label = "Tints",
+	["tint_supplies"] = {
+		label = "Tint Supplies",
 		weight = 1000,
 		stack = true,
 		close = true,
 		description = "Install vehicle tint",
 		client = {
-			image = "veh_tint.png",
+			image = "tint_supplies.png",
 		}
 	},
 
