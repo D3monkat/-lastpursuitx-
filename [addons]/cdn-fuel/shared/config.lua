@@ -52,8 +52,8 @@ Config.EmergencyServicesDiscount = {
 Config.Core = 'qb-core' -- Change this to your core resources (Ex: 'qbx-core' | 'qb-core'), must be qb based!
 Config.Ox = {
     Inventory = true, -- Uses OX_Inventory's metadata instead of QB-Inventory's.
-    Menu = true, -- Uses OX Libraries instead of qb-menu.
-    Input = true, -- Uses Ox Input Dialog instead of qb-input.
+    Menu = false, -- Uses OX Libraries instead of qb-menu.
+    Input = false, -- Uses Ox Input Dialog instead of qb-input.
     DrawText = true, -- Uses Ox DrawText instead of qb-core DrawText.
     Progress = true -- Uses Ox ProgressBar instead of progressbar.
 }
