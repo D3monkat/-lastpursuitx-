@@ -811,6 +811,30 @@ local Vehicles = {
     {model = 'vulture', name = 'vulture', brand = 'Lore', price = 20000, category = 'Lore', type = 'automobile', shop = 'pdm'}, 
     {model = 'zaskala128', name = 'zaskala128', brand = 'Lore', price = 20000, category = 'Lore', type = 'automobile', shop = 'pdm'}, 
 
+    -- Electric
+    {model = 'airace', name = 'airace', brand = 'Electric', price = 30000, category = 'Electric', type = 'automobile', shop = 'pdm'}, 
+    {model = 'bayere3', name = 'bayere3', brand = 'Electric', price = 30000, category = 'Electric', type = 'automobile', shop = 'pdm'}, 
+    {model = 'bayere8', name = 'bayere8', brand = 'Electric', price = 30000, category = 'Electric', type = 'automobile', shop = 'pdm'}, 
+    {model = 'bayerex', name = 'bayerex', brand = 'Electric', price = 30000, category = 'Electric', type = 'automobile', shop = 'pdm'}, 
+    {model = 'cyberquad', name = 'cyberquad', brand = 'Electric', price = 30000, category = 'Electric', type = 'automobile', shop = 'pdm'}, 
+    {model = 'cybertruck', name = 'cybertruck', brand = 'Electric', price = 30000, category = 'Electric', type = 'automobile', shop = 'pdm'}, 
+    {model = 'etramsportb', name = 'etramsportb', brand = 'Electric', price = 30000, category = 'Electric', type = 'automobile', shop = 'pdm'}, 
+    {model = 'l150f', name = 'l150f', brand = 'Electric', price = 30000, category = 'Electric', type = 'automobile', shop = 'pdm'}, 
+    {model = 'liquidair', name = 'liquidair', brand = 'Electric', price = 30000, category = 'Electric', type = 'automobile', shop = 'pdm'}, 
+    {model = 'marche', name = 'marche', brand = 'Electric', price = 30000, category = 'Electric', type = 'automobile', shop = 'pdm'}, 
+    {model = 'mbeve', name = 'mbeve', brand = 'Electric', price = 30000, category = 'Electric', type = 'automobile', shop = 'pdm'}, 
+    {model = 'mbevg', name = 'mbevg', brand = 'Electric', price = 30000, category = 'Electric', type = 'automobile', shop = 'pdm'}, 
+    {model = 'mbevs', name = 'mbevs', brand = 'Electric', price = 30000, category = 'Electric', type = 'automobile', shop = 'pdm'}, 
+    {model = 'medol3', name = 'medol3', brand = 'Electric', price = 30000, category = 'Electric', type = 'automobile', shop = 'pdm'}, 
+    {model = 'medols', name = 'medols', brand = 'Electric', price = 30000, category = 'Electric', type = 'automobile', shop = 'pdm'}, 
+    {model = 'medolsplaid', name = 'medolsplaid', brand = 'Electric', price = 30000, category = 'Electric', type = 'automobile', shop = 'pdm'}, 
+    {model = 'medolx', name = 'medolx', brand = 'Electric', price = 30000, category = 'Electric', type = 'automobile', shop = 'pdm'}, 
+    {model = 'medolxplaid', name = 'medolxplaid', brand = 'Electric', price = 30000, category = 'Electric', type = 'automobile', shop = 'pdm'}, 
+    {model = 'medoly', name = 'medoly', brand = 'Electric', price = 30000, category = 'Electric', type = 'automobile', shop = 'pdm'}, 
+    {model = 'roadstersport', name = 'roadstersport', brand = 'Electric', price = 30000, category = 'Electric', type = 'automobile', shop = 'pdm'}, 
+    {model = 'rsetramgt', name = 'rsetramgt', brand = 'Electric', price = 30000, category = 'Electric', type = 'automobile', shop = 'pdm'}, 
+    {model = 'semi', name = 'semi', brand = 'Electric', price = 30000, category = 'Electric', type = 'automobile', shop = 'pdm'}, 
+
 
 
 
