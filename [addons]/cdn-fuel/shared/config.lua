@@ -1,5 +1,5 @@
 Config = {}
-Config.FuelDebug = true -- Used for debugging, although there are not many areas in yet (Default: false) + Enables Setfuel Commands (0, 50, 100). 
+Config.FuelDebug = false -- Used for debugging, although there are not many areas in yet (Default: false) + Enables Setfuel Commands (0, 50, 100). 
 Config.PolyDebug = false -- Enables Polyzone Debugging to see PolyZones!
 Config.ShowNearestGasStationOnly = true -- When enabled, only the nearest gas stations will be shown on the map.
 Config.LeaveEngineRunning = false -- When true, the vehicle's engine will be left running upon exit if the player *HOLDS* F.
