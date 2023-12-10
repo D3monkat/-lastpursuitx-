@@ -4,7 +4,7 @@ local QBCore = exports['qb-core']:GetCoreObject() -- Change to core name
 Config.Locations = {
     {coords = vector3(94.97, -1977.03, 20.67), length = 5.5, width = 2, maxZ = 21.67, minZ = 19.47, heading = 321, job = nil, gang = "ballas", name = "ballas_crafting", configFile = Config.Gang},
     {coords = vector3(330.34, -2095.75, 18.24), length = 1.25, width = 0.4, maxZ = 19.64, minZ = 17.24, heading = 300, job = nil, gang = "vagos", name = "vagos_crafting", configFile = Config.Gang},
-    {coords = vector3(986.76, -153.24, 74.24), length = 2.2, width = 5.2, maxZ = 75.24, minZ = 73.24, heading = 75, job = nil, gang = "sons", name = "lost_crafting", configFile = Config.Gang},
+    {coords = vector3(986.76, -153.24, 74.24), length = 2.2, width = 5.2, maxZ = 75.24, minZ = 73.24, heading = 75, job = nil, gang = "lostmc", name = "lost_crafting", configFile = Config.Gang},
     {coords = vector3(3.57, -1423.66, 30.55), length = 1.3, width = 0.2, maxZ = 31.8, minZ = 29.55, heading = 0, job = nil, gang = "families", name = "gsf_crafting", configFile = Config.Gang},
     {coords = vector3(63.14, -1576.81, 29.6), length = 1, width = 1, maxZ = 30.6, minZ = 26.6, heading = 320, job = nil, gang = nil, name = "allvendingmachine_crafting", configFile = Config.VendingMachine},
     {coords = vector3(-2079.02, -340.48, 13.3), length = 1.9, width = 1.0, maxZ = 13.5, minZ = 12.3, heading = 85, job = "police", gang = nil, name = "police_crafting", configFile = Config.Police},

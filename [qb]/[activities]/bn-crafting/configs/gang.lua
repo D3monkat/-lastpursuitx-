@@ -1,7 +1,7 @@
 Config = Config or {}
 
 Config.Gang = {
-    [1] = {
+    [5] = {
         ["weapon_pistol50"] = {
             ["iron"] = 15,
             ["plastic"] = 225,
@@ -18,7 +18,7 @@ Config.Gang = {
             time = 1000
         },
     },
-    [2] = {
+    [6] = {
         ["weapon_smg"] = {
             ["aluminum"] = 500,
             ["rubber"] = 400,
