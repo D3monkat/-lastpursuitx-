@@ -124,7 +124,7 @@ Config.ElectricVehicles = { -- List of Electric Vehicles in the Base Game.
     ["surge"] = {
         isElectric = true,
     },
-    ["liquidair"] = {
+    ["l150f"] = {
         isElectric = true,
     },
     ["iwagen"] = {
