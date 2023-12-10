@@ -138,17 +138,6 @@ end)
 
 RegisterNetEvent('kevin-hunting:OpenShop', function()
     -- TriggerServerEvent('inventory:server:OpenInventory', 'shop', 'Hunting', Config.Items)
-    exports.ox_inventory:RegisterShop('TestShop', {
-        name = 'Test shop',
-        inventory = {
-            { name = 'burger', price = 10 },
-            { name = 'water', price = 10 },
-            { name = 'cola', price = 10 },
-        },
-        locations = {
-            vector3(-679.65, 5834.15, 17.33),
-        },
-    })
 end)
 
 RegisterNetEvent('kevin-hunting:GoHunt', function ()
@@ -166,7 +155,7 @@ RegisterNetEvent('kevin-hunting:alert', function ()
     else
         local data = exports['cd_dispatch']:GetPlayerInfo()
         TriggerServerEvent('cd_dispatch:AddNotification', {
-            job_table = {'police'},
+            job_table = {'police', 'bcso', 'sast'},
             coords = data.coords,
             title = '911 - Illegal Hunting',
             message = 'Hello someone just killed a protected animal.. hurry',
@@ -191,7 +180,7 @@ RegisterNetEvent('kevin-hunting:bigfootalert', function ()
     else
         local data = exports['cd_dispatch']:GetPlayerInfo()
         TriggerServerEvent('cd_dispatch:AddNotification', {
-            job_table = {'police'},
+            job_table = {'police', 'bcso', 'sast'},
             coords = data.coords,
             title = '911 - Illegal Hunting',
             message = 'Hello someone just killed a person in a bigfoot outfit.. hurry',

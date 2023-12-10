@@ -11,9 +11,9 @@ end
 Config.Debug = false -- enables debug poly for zones
 ----------
 ----------
-Config.Menu = 'qb-menu' -- (ox_lib, qb-menu, any qb-menu renamed resource)
-Config.Target = "qb-target" -- (ox_target, qb-target, qtarget, ny qb-target renamed resource)
-Config.InventoryType = 'qb' -- (qb, ox, lj, quasar, neither) What inventory you are using? if you are using a renamed inventory resource you can use that here as well for qb-inventory or lj-inventory renames only.
+Config.Menu = 'ox_lib' -- (ox_lib, qb-menu, any qb-menu renamed resource)
+Config.Target = "ox_target" -- (ox_target, qb-target, qtarget, ny qb-target renamed resource)
+Config.InventoryType = 'ox' -- (qb, ox, lj, quasar, neither) What inventory you are using? if you are using a renamed inventory resource you can use that here as well for qb-inventory or lj-inventory renames only.
 Config.Phone = "qb" -- (quasar) (renewed) (gks) (qb) (road) Whatever phone script you are using for email when a tournament starts. (event is "Pug:client:TournamentHasBecomeAvilable" in open.lua)
 ----------
 Config.FishingKey = 47 -- Key press to start fishing. Key id's can be found here: https://docs.fivem.net/docs/game-references/controls/
@@ -75,12 +75,12 @@ Config.Rod1AttemptsMin = 3 -- minimum ammout of times you need to do the skillch
 Config.Rod1AttemptsMax = 6 -- maximum ammout of times you need to do the skillcheck 
 ----------
 ----------
-Config.SkilledRodGame = 'qb-skillbar' -- (ps-ui) only change this if you have changed your skillbar file name or want to use ps-ui circles. Not just any minigame will work (if ps-ui then it will the Config.CircleSpeed2 settings)
+Config.SkilledRodGame = 'ps-ui' -- (ps-ui) only change this if you have changed your skillbar file name or want to use ps-ui circles. Not just any minigame will work (if ps-ui then it will the Config.CircleSpeed2 settings)
 Config.NeededAttemptsMin = 2 -- minimum ammout of times you need to do the skillcheck
 Config.NeededAttemptsMax = 3 -- maximum ammout of times you need to do the skillcheck
 ----------
 ----------
-Config.AllUsesPsUiLock = false -- make this true if you only want to use ps-ui lock for all fishing rod minigames
+Config.AllUsesPsUiLock = true -- make this true if you only want to use ps-ui lock for all fishing rod minigames
 -- First Fishing Rod (All PS-UI Lock)
 Config.CircleSpeed1 = 20 -- Speed the skillcheck for the first fishingrod is (This only matters if Config.AllUsesPsUiLock is true) [lower number is faster]
 Config.CirclesMin1 = 2 -- minimum ammout of times you need to do the skillcheck for the first fishingrod (This only matters if Config.AllUsesPsUiLock is true)
@@ -104,7 +104,7 @@ Config.NW_fishingGameRod3 = 'hard' -- Dificulty of fishing rod 3
 ----------
 --Professional Fishing Rod
 -- this doesnt matter if Config.AllUsesPsUiLock is true. You can disreguard it
-Config.ProfessionalRodGame = 'qb-lock' -- only change this if you have changed your qb-lock file name or if you are using ps-ui. Not just any minigame will work
+Config.ProfessionalRodGame = 'ps-ui' -- only change this if you have changed your qb-lock file name or if you are using ps-ui. Not just any minigame will work
 Config.CirclesMin = 4 -- minimum ammout of times you need to do the skillcheck
 Config.CirclesMax = 6 -- maximum ammout of times you need to do the skillcheck
 ----------
@@ -395,30 +395,30 @@ Config.SellFishies = {
 }
 
 Config.SellGems = {
-    ["diamond"] = {
-        pricemin = 1000,
-        pricemax = 3000,
-    },
-    ["emerald"] = {
-        pricemin = 1000,
-        pricemax = 31000,
-    },
-    ["sapphire"] = {
-        pricemin = 1000,
-        pricemax = 3000,
-    },
-    ["ruby"] = {
-        pricemin = 1000,
-        pricemax = 3000,
-    },
-    ["yellow-diamond"] = {
-        pricemin = 1000,
-        pricemax = 3000,
-    },
-    ["captainskull"] = {
-        pricemin = 4000,
-        pricemax = 10000,
-    },
+    -- ["diamond"] = {
+    --     pricemin = 1000,
+    --     pricemax = 3000,
+    -- },
+    -- ["emerald"] = {
+    --     pricemin = 1000,
+    --     pricemax = 31000,
+    -- },
+    -- ["sapphire"] = {
+    --     pricemin = 1000,
+    --     pricemax = 3000,
+    -- },
+    -- ["ruby"] = {
+    --     pricemin = 1000,
+    --     pricemax = 3000,
+    -- },
+    -- ["yellow-diamond"] = {
+    --     pricemin = 1000,
+    --     pricemax = 3000,
+    -- },
+    -- ["captainskull"] = {
+    --     pricemin = 4000,
+    --     pricemax = 10000,
+    -- },
 }
 
 Config.TreasureLocations =  {

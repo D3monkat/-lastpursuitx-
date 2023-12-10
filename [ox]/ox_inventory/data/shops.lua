@@ -76,6 +76,10 @@ return {
 			id = 402, colour = 69, scale = 0.8
 		}, inventory = {
 			{ name = 'phone', price = 1250 },
+			{ name = 'huntingbait', price = 150 },
+			{ name = 'ammo-sniper', price = 60 },
+			{ name = 'fishingrod', price = 45 },
+			{ name = 'fishingbait', price = 12 },
 		}, locations = {
 			vec3(2748.0, 3473.0, 55.67),
 			vec3(342.99, -1298.26, 32.51)
