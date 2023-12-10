@@ -79,7 +79,7 @@ return {
 			{ name = 'huntingbait', price = 150 },
 			{ name = 'ammo-sniper', price = 60 },
 			{ name = 'WEAPON_KNIFE', price = 200 },
-			{ name = 'weapon_huntingrifle', price = 1450 metadata = { registered = true }}
+			{ name = 'weapon_huntingrifle', price = 1450, metadata = { registered = true }}
 			{ name = 'fishingrod', price = 45 },
 			{ name = 'fishingbait', price = 12 },
 		}, locations = {
