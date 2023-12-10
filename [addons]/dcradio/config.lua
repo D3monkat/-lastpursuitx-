@@ -104,4 +104,4 @@ KeepEngineRunning = true
 
 -- This is for people on 2944. 2944 fucks with how the stations gets synced to other clients. This means that if a client sets the radio to RADIO_38_CUSTOM
 -- other clients think it got turned off. This "tries" to fix that bevaviour. But I wouldn't recommened running 2944
-Experimental = false
+Experimental = true
