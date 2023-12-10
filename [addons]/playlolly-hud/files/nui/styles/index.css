@@ -1,0 +1,230 @@
+@import "./responsive.css";
+
+/* GLOBAL */
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --white: #fff;
+  --gray10: #dbdbdb;
+  --gray20: rgba(0, 0, 0, 0.5);
+  --gray30: #f0f0f0;
+  --gray40: rgba(0, 0, 0, 0.2);
+  --gray50: rgba(255, 255, 255, 0.4);
+  --blue10: #007be4;
+  --black: #000;
+  --green: #25cb55;
+  --button-base: 500 1.25rem/1.5rem var(--font-family);
+  --button-toggle: 500 1.62rem/1.5rem var(--font-family);
+  --bottom-temperature: 500 2rem/2.43rem var(--font-family);
+  --navigator-header: 600 0.75rem/1.2rem var(--font-family);
+  --tracker-distance: 400 1.25rem/1.5rem var(--font-family);
+  --running-gear: 600 1rem/1.18rem var(--font-family);
+  --header-info: 500 1rem/1.18rem var(--font-family);
+  --runningHeader: 500 5rem/6.093rem var(--font-family);
+  --SliderValue: 600 1.5rem/1.82875rem var(--font-family);
+  --batteryPercentage: 70%;
+  --batteryColor: #25cb55;
+  --autopilotStatus: rgba(0, 0, 0, 0.5);
+  --crashAvoidanceStatus: rgba(0, 0, 0, 0.5);
+  --hudVisibility: none;
+  --tirePressureColor: #ffbd0a;
+}
+body {
+  font-size: 16px;
+  margin: 0;
+  display: var(--hudVisibility);
+  overflow: hidden;
+}
+
+/* LAYOUT */
+.layout {
+  display: grid;
+  grid-template-columns: 28.6875rem 1fr;
+  grid-template-areas: "side main" "footer footer";
+  min-inline-size: 85.375rem;
+}
+.runningPanel {
+  grid-area: side;
+  border-radius: 20px;
+}
+
+/* BATTERY */
+.battery {
+  inline-size: 3.75rem;
+  block-size: 1.25rem;
+  box-sizing: border-box;
+  padding: 0;
+  border: 2px solid black;
+  position: relative;
+}
+
+.batteryInCar {
+  inline-size: 3.75rem;
+  block-size: 1.25rem;
+  box-sizing: border-box;
+  padding: 0;
+  border: 2px solid var(--gray10);
+  position: relative;
+}
+
+.battery::after {
+  content: "";
+  block-size: 0.5rem;
+  inline-size: 0.1875rem;
+  background: var(--black);
+  position: absolute;
+  inset-block-start: calc(50% - 0.25rem);
+  inset-inline-end: -0.4rem;
+}
+
+.batteryInCar::after {
+  content: "";
+  block-size: 0.5rem;
+  inline-size: 0.1875rem;
+  background: var(--gray10);
+  position: absolute;
+  inset-block-start: calc(50% - 0.25rem);
+  inset-inline-end: -0.4rem;
+}
+
+.battery-percentage {
+  margin: 0;
+  block-size: 100%;
+  inline-size: var(--batteryPercentage);
+  background: var(--batteryColor);
+}
+
+/* RUNNING PANEL */
+.runningPanel {
+  background: var(--gray30);
+  color: var(--gray20);
+  padding-inline-end: 1.5rem;
+  padding-inline-start: 1.5rem;
+  font: var(--running-gear);
+}
+.runningPanel p {
+  margin: 0;
+}
+.runningPanel .important {
+  color: var(--black) !important;
+}
+.runningPanel .importantGear {
+  font-weight: bold;
+  color: var(--black) !important;
+}
+.runningPanel-dashboard {
+  margin-block-start: 2.5rem;
+}
+.runningPanel-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.runningPanel-speed {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font: var(--runningHeader);
+}
+.runningPanel-gearShift {
+  display: flex;
+  gap: 0.75rem;
+  width: 111px;
+  font: var(--running-gear);
+}
+.runningPanel-KM {
+  text-align: center;
+  width: 111px;
+}
+.runningPanel-charge {
+  display: flex;
+  gap: 0.625rem;
+  width: 111px;
+}
+
+/* VISUAL DRIVING */
+.visualBadgeRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.visualBadgeCenter {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#autopilotBadge path {
+  fill: var(--autopilotStatus);
+}
+
+#adaptiveLightingBadge path {
+  fill: var(--adaptiveLightingStatus);
+}
+
+#crashAvoidanceBadge path {
+  fill: var(--crashAvoidanceStatus);
+}
+
+#tirePressureBadge path {
+  fill: var(--tirePressureColor);
+}
+
+#autopilotSpeedBadge {
+  inline-size: 2.5rem;
+  block-size: 2.5rem;
+  box-sizing: border-box;
+  border: 3px solid var(--gray20);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.visual-driving {
+  position: relative;
+}
+
+.visual-driving--car {
+  padding-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#chargingIcon {
+  padding-top: 25px;
+  padding-bottom: 34px;
+  transform: scale(2);
+}
+
+#turnSignalLeft {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+#turnSignalRight {
+  margin-top: 20px;
+  padding-right: 20px;
+}
+
+#placeholderLeft {
+  margin-top: 20px;
+  padding-left: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+#placeholderRight {
+  margin-top: 20px;
+  padding-right: 20px;
+  width: 40px;
+  height: 40px;
+}

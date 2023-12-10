@@ -1,0 +1,16 @@
+body {
+  overflow: hidden;
+}
+#container {
+  margin: 0px auto;
+  text-align: center;
+  position: relative;
+  top: 600px;
+}
+#canvas {
+  position: absolute;
+  margin-left: -1000px;
+}
+#canvas2 {
+  position: absolute;
+}
