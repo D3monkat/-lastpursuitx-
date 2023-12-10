@@ -294,7 +294,7 @@ if Config.ElectricVehicleCharging then
                 if Config.ElectricVehicles[vehiclename] and Config.ElectricVehicles[vehiclename].isElectric then
                     AwaitingElectricCheck = false
                     FoundElectricVehicle = true
-                    if Config.FuelDebug then print("^2"..current.. "^5 has been found. It ^2matches ^5the Player's Vehicle: ^2"..vehiclename..". ^5This means charging will be allowed.") end
+                    -- if Config.FuelDebug then print("^2"..current.. "^5 has been found. It ^2matches ^5the Player's Vehicle: ^2"..vehiclename..". ^5This means charging will be allowed.") end
                     Wait(50)
                     goto ChargingMenu -- Attempt to go to the charging menu, now that we have found that there was an electric vehicle.
                 else
