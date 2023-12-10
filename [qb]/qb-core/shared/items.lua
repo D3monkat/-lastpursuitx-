@@ -968,7 +968,419 @@ weapon_colbaton 			 = {name = 'weapon_colbaton', 		 	  	label = 'PD Baton', 				
     ruby						 = {name = "ruby", 							label = "Ruby", 					weight = 2000, 		type = "item", 		image = "ruby.png", 				unique = false, 	useable = false, 	shouldClose = false,	   	combinable = nil,   description = "Gems are truly, truly, truly outrageous."},
     yellowdiamond               = {name = 'yellow-diamond',                label = 'Canary Diamond',                     weight = 3000,         type = 'item',         image = 'yellow-diamond.png',                 unique = false,         useable = true,     shouldClose = true,   combinable = nil,   description = 'Yellow is truly, truly, truly gorgeous..'},
     captainskull						 = {name = "captainskull", 							label = "Captain Skull", 					weight = 4000, 		type = "item", 		image = "captainskull.png", 				unique = false, 	useable = false, 	shouldClose = false,	   	combinable = nil,   description = "An old skull of a captain!"},
+    c4 = {
+        name = "c4",
+        label = "C4",
+        weight = 0,
+        type = "item",
+        image = "weapon_stickybomb.png",
+        unique = false,
+        useable = true,
+        shouldClose = false,
+        combinable = nil,
+        description = "C4 For mining"
+    },
     
+    copper_bar = {
+        name = "copper_bar",
+        label = "Copper Bar",
+        weight = 0,
+        type = "item",
+        image = "copper_bar.png",
+        unique = false,
+        useable = true,
+        shouldClose = false,
+        combinable = nil,
+        description = "Copper Bar made from melted copper ore"
+    },
+    gold_bar = {
+        name = "gold_bar",
+        label = "Gold Bar",
+        weight = 0,
+        type = "item",
+        image = "gold_bar.png",
+        unique = false,
+        useable = true,
+        shouldClose = false,
+        combinable = nil,
+        description = "Gold Bar made from melted Gold ore"
+    },
+    iron_bar = {
+        name = "iron_bar",
+        label = "Iron Bar",
+        weight = 0,
+        type = "item",
+        image = "iron_bar.png",
+        unique = false,
+        useable = true,
+        shouldClose = false,
+        combinable = nil,
+        description = "Iron Bar made from melted Iron ore"
+    },
+    tin_bar = {
+        name = "tin_bar",
+        label = "Tin Bar",
+        weight = 0,
+        type = "item",
+        image = "tin_bar.png",
+        unique = false,
+        useable = true,
+        shouldClose = false,
+        combinable = nil,
+        description = "Tin Bar made from melted Tin ore"
+    },
+    unshapped_copper = {
+        name = "unshapped_copper",
+        label = "Unshapped Copper",
+        weight = 0,
+        type = "item",
+        image = "unshapped_copper.png",
+        unique = false,
+        useable = true,
+        shouldClose = false,
+        combinable = nil,
+        description = "unshapped copper"
+    },
+    unshapped_gold = {
+        name = "unshapped_gold",
+        label = "Unshapped Gold",
+        weight = 0,
+        type = "item",
+        image = "unshapped_gold.png",
+        unique = false,
+        useable = true,
+        shouldClose = false,
+        combinable = nil,
+        description = "unshapped gold"
+    },
+    unshapped_iron = {
+        name = "unshapped_iron",
+        label = "Unshapped Iron",
+        weight = 0,
+        type = "item",
+        image = "unshapped_iron.png",
+        unique = false,
+        useable = true,
+        shouldClose = false,
+        combinable = nil,
+        description = "unshapped iron"
+    },
+    unshapped_tin = {
+        name = "unshapped_tin",
+        label = "Unshapped Tin",
+        weight = 0,
+        type = "item",
+        image = "unshapped_tin.png",
+        unique = false,
+        useable = true,
+        shouldClose = false,
+        combinable = nil,
+        description = "unshapped tin"
+    },
+    unwashed_copper = {
+        name = "unwashed_copper",
+        label = "Unwashed Copper",
+        weight = 0,
+        type = "item",
+        image = "unwashed_copper.png",
+        unique = false,
+        useable = true,
+        shouldClose = false,
+        combinable = nil,
+        description = "unwashed copper"
+    },
+    unwashed_gold = {
+        name = "unwashed_gold",
+        label = "Unwashed Gold",
+        weight = 0,
+        type = "item",
+        image = "unwashed_gold.png",
+        unique = false,
+        useable = true,
+        shouldClose = false,
+        combinable = nil,
+        description = "unwashed gold"
+    },
+    unwashed_iron = {
+        name = "unwashed_iron",
+        label = "Unwashed Iron",
+        weight = 0,
+        type = "item",
+        image = "unwashed_iron.png",
+        unique = false,
+        useable = true,
+        shouldClose = false,
+        combinable = nil,
+        description = "unwashed iron"
+    },
+    unwashed_tin = {
+        name = "unwashed_tin",
+        label = "Unwashed Tin",
+        weight = 0,
+        type = "item",
+        image = "unwashed_tin.png",
+        unique = false,
+        useable = true,
+        shouldClose = false,
+        combinable = nil,
+        description = "unwashed tin"
+    },
+    
+    aquamarine_unshapped = {
+        name = "aquamarine_unshapped",
+        label = "Aquamarine Unshapped",
+        weight = 0,
+        type = "item",
+        image = "aquamarine_unshapped.png",
+        unique = false,
+        useable = true,
+        shouldClose = false,
+        combinable = nil,
+        description = "aquamarine unshapped"
+    },
+    
+    aquamarine = {
+        name = "aquamarine",
+        label = "Aquamarine",
+        weight = 0,
+        type = "item",
+        image = "aquamarine.png",
+        unique = false,
+        useable = true,
+        shouldClose = false,
+        combinable = nil,
+        description = "aquamarine"
+    },
+    
+    greenberyl_unshapped = {
+        name = "greenberyl_unshapped",
+        label = "Greenberyl Unshapped",
+        weight = 0,
+        type = "item",
+        image = "greenberyl_unshapped.png",
+        unique = false,
+        useable = true,
+        shouldClose = false,
+        combinable = nil,
+        description = "greenberyl unshapped"
+    },
+    
+    greenberyl = {
+        name = "greenberyl",
+        label = "Green Beryl",
+        weight = 0,
+        type = "item",
+        image = "greenberyl.png",
+        unique = false,
+        useable = true,
+        shouldClose = false,
+        combinable = nil,
+        description = "greenberyl"
+    },
+    
+    ruby_unshapped = {
+        name = "ruby_unshapped",
+        label = "Ruby Unshapped",
+        weight = 0,
+        type = "item",
+        image = "ruby_unshapped.png",
+        unique = false,
+        useable = true,
+        shouldClose = false,
+        combinable = nil,
+        description = "ruby unshapped"
+    },
+    
+    ruby = {
+        name = "ruby",
+        label = "Ruby",
+        weight = 0,
+        type = "item",
+        image = "ruby.png",
+        unique = false,
+        useable = true,
+        shouldClose = false,
+        combinable = nil,
+        description = "ruby"
+    },
+    
+    unwashed_stone = {
+        name = "unwashed_stone",
+        label = "Unwashed Stone",
+        weight = 0,
+        type = "item",
+        image = "unwashed_stone.png",
+        unique = false,
+        useable = true,
+        shouldClose = false,
+        combinable = nil,
+        description = "unwashed stone"
+    },
+    
+    unshapped_coal = {
+        name = "unshapped_coal",
+        label = "Unshapped Coal",
+        weight = 0,
+        type = "item",
+        image = "unshapped_coal.png",
+        unique = false,
+        useable = true,
+        shouldClose = false,
+        combinable = nil,
+        description = "unshapped_coal"
+    },
+    
+    coal = {
+        name = "coal",
+        label = "Coal",
+        weight = 0,
+        type = "item",
+        image = "coal.png",
+        unique = false,
+        useable = true,
+        shouldClose = false,
+        combinable = nil,
+        description = "coal"
+    },
+    
+    ds_diamond = {
+        name = "ds_diamond",
+        label = "Diamond",
+        weight = 0,
+        type = "item",
+        image = "ds_diamond.png",
+        unique = false,
+        useable = true,
+        shouldClose = false,
+        combinable = nil,
+        description = "iamond"
+    },
+    
+    
+    ------------ New Mining Update Items
+    
+    unwashed_sulfur = {
+        name = "unwashed_sulfur",
+        label = "Unwashed Sulfur",
+        weight = 1000,
+        type = "item",
+        image = "unwashed_sulfur.png",
+        unique = false,
+        useable = true,
+        shouldClose = false,
+        combinable = nil,
+        description = "unwashed_sulfur"
+    },
+    unshapped_sulfur = {
+        name = "unshapped_sulfur",
+        label = "Ushapped Sulfur",
+        weight = 1000,
+        type = "item",
+        image = "unshapped_sulfur.png",
+        unique = false,
+        useable = true,
+        shouldClose = false,
+        combinable = nil,
+        description = "unshapped_sulfur"
+    },
+    
+    sulfur_bar = {
+        name = "sulfur_bar",
+        label = "Sulfur",
+        weight = 1000,
+        type = "item",
+        image = "sulfur_bar.png",
+        unique = false,
+        useable = true,
+        shouldClose = false,
+        combinable = nil,
+        description = "sulfurr"
+    },
+    unwashed_lead = {
+        name = "unwashed_lead",
+        label = "Unwashed Lead",
+        weight = 1000,
+        type = "item",
+        image = "unwashed_lead.png",
+        unique = false,
+        useable = true,
+        shouldClose = false,
+        combinable = nil,
+        description = "unwashed_lead"
+    },
+    unshapped_lead = {
+        name = "unshapped_lead",
+        label = "Unshapped Lead",
+        weight = 1000,
+        type = "item",
+        image = "unshapped_lead.png",
+        unique = false,
+        useable = true,
+        shouldClose = false,
+        combinable = nil,
+        description = "Unshapped Lead"
+    },
+    lead_ore = {
+        name = "lead_ore",
+        label = "Lead Ore",
+        weight = 1000,
+        type = "item",
+        image = "lead_ore.png",
+        unique = false,
+        useable = true,
+        shouldClose = false,
+        combinable = nil,
+        description = "lead ore"
+    },
+    bauxite = {
+        name = "bauxite",
+        label = "Bauxite",
+        weight = 1000,
+        type = "item",
+        image = "bauxite.png",
+        unique = false,
+        useable = true,
+        shouldClose = false,
+        combinable = nil,
+        description = "bauxite"
+    },
+    unshapped_bauxite = {
+        name = "unshapped_bauxite",
+        label = "Unshapped Bauxite",
+        weight = 1000,
+        type = "item",
+        image = "unshapped_bauxite.png",
+        unique = false,
+        useable = true,
+        shouldClose = false,
+        combinable = nil,
+        description = "unshapped_bauxite"
+    },
+    unwashed_bauxite = {
+        name = "unwashed_bauxite",
+        label = "Unwashed Bauxite",
+        weight = 1000,
+        type = "item",
+        image = "unwashed_bauxite.png",
+        unique = false,
+        useable = true,
+        shouldClose = false,
+        combinable = nil,
+        description = "unwashed_bauxite"
+    },
+    uncut_diamond = {
+        name = "uncut_diamond",
+        label = "Uncut Diamond",
+        weight = 1000,
+        type = "item",
+        image = "uncut_diamond.png",
+        unique = false,
+        useable = true,
+        shouldClose = false,
+        combinable = nil,
+        description = "uncut_diamond"
+    },
+
 
 
 }
