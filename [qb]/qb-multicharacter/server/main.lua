@@ -98,10 +98,12 @@ RegisterNetEvent('qb-multicharacter:server:createCharacter', function(data)
     newData.cid = data.cid
     newData.charinfo = data
     if QBCore.Player.Login(src, false, newData) then
+        exports['um-idcard']:CreateMetaLicense(src, {'id_card','driver_license'})
         if Config.StartingApartment then
             local randbucket = (GetPlayerPed(src) .. math.random(1,999))
             SetPlayerRoutingBucket(src, randbucket)
             print('^2[qb-core]^7 '..GetPlayerName(src)..' has succesfully loaded!')
+            exports['um-idcard']:CreateMetaLicense(src, {'id_card','driver_license'})
             QBCore.Commands.Refresh(src)
             loadHouseData()
             TriggerClientEvent("qb-multicharacter:client:closeNUI", src)

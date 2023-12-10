@@ -3637,6 +3637,38 @@ return {
 			image = "electronickit.png",
 		}
 	},
+	['id_card'] = {
+        label = 'ID Card',
+        weight = 0,
+        stack = false,
+        close = true,
+        description = "Your Description",
+        client = {image = 'idcard.png'}
+    },
+    ['driver_license'] = {
+        label = 'Drivers License',
+        weight = 0,
+        stack = false,
+        close = true,
+        description = "Your Description",
+        client = {image = 'driverlicense.png'}
+    },
+    ['weaponlicense'] = {
+        label = 'Weapon License',
+        weight = 0,
+        stack = false,
+        close = true,
+        description = "Your Description",
+        client = {image = 'weaponlicense.png'}
+    },
+    ['lawyerpass'] = {
+        label = 'Lawyer Pass',
+        weight = 0,
+        stack = false,
+        close = true,
+        description = "Your Description",
+        client = {image = 'lawyerpass.png'}
+    },
 
 	["dblchickenhornburger"] = {
 		label = "DBL Chicken HornBurger",
