@@ -11,7 +11,7 @@ CreateThread(function()
                 SetRichPresence('Players: ' .. result .. '/' .. Config.Discord.maxPlayers)
                 SetRichPresence('PursuitX | WIP')
             end)
-                SetDiscordRichPresenceAction(0, 'Comming soon!', 'https://discord.gg/playhaven')
+                SetDiscordRichPresenceAction(0, 'Comming soon! Join the Cord!', 'https://discord.playhavennetwork.com/')
 
         Wait(60000)
 end)
