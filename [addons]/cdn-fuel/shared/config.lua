@@ -185,6 +185,9 @@ Config.NoFuelUsage = { -- This is for you to put vehicles that you don't want to
     ["bmx"] = {
         blacklisted = true
     },
+    ["liquidair"] = {
+        blacklisted = true
+    },
 }
 
 Config.Classes = { -- Class multipliers. If you want SUVs to use less fuel, you can change it to anything under 1.0, and vise versa.
