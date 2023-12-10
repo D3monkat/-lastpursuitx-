@@ -207,6 +207,15 @@ QBShared.Jobs = {
 			['4'] = { name = 'Manager', isboss = true, payment = 150 },
 		},
 	},
+	shoppdm = {
+		label = 'Vehicle Dealer',
+		defaultDuty = true,
+		offDutyPay = false,
+		grades = {
+			['0'] = { name = 'Recruit', payment = 50 },
+			['100'] = { name = 'Showroom Sales', payment = 150 },
+		},
+	},
 	redline = {
 		label = 'Redline',
 		type = 'mechanic',
