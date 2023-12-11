@@ -8,7 +8,7 @@
       <modelName>cybertruck</modelName>
       <txdName>cybertruck</txdName>
       <handlingId>cybertruck</handlingId>
-      <gameName>Elon Cybertruck</gameName>
+      <gameName>cybertruck</gameName>
       <vehicleMakeName>Elon</vehicleMakeName>
       <expressionDictName>null</expressionDictName>
       <expressionName>null</expressionName>
@@ -135,7 +135,7 @@
       <modelName>cyberquad</modelName>
       <txdName>cyberquad</txdName>
       <handlingId>cyberquad</handlingId>
-      <gameName>Elon Cyberquad</gameName>
+      <gameName>cyberquad</gameName>
       <vehicleMakeName>Elon</vehicleMakeName>
       <expressionDictName>null</expressionDictName>
       <expressionName>null</expressionName>

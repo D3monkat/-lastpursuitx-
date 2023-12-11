@@ -1,0 +1,101 @@
+@media (width: 800px) and (height: 600px) {
+}
+
+@media (width: 1024px) and (height: 768px) {
+}
+
+@media (width: 1152px) and (height: 864px) {
+}
+
+@media (width: 1280px) and (height: 720px) {
+}
+
+@media (width: 1280px) and (height: 800px) {
+}
+
+@media (width: 1280px) and (height: 1024px) {
+}
+
+@media (width: 1600px) and (height: 900px) {
+}
+
+@media (width: 1600px) and (height: 1200px) {
+}
+
+@media (width: 1680px) and (height: 1050px) {
+}
+
+@media (width: 1920px) and (height: 1080px) {
+  #teslaHUD {
+    transform: scale(0.7);
+    transform-origin: 0 0;
+    margin-top: 730px;
+    margin-left: 1580px;
+  }
+}
+
+@media (width: 1920px) and (height: 1200px) {
+  #teslaHUD {
+    transform: scale(0.8);
+    transform-origin: 0 0;
+    margin-top: 800px;
+    margin-left: 1530px;
+  }
+}
+
+@media (width: 2048px) and (height: 1536px) {
+}
+
+@media (width: 2560px) and (height: 1080px) {
+  #teslaHUD {
+    transform: scale(0.7);
+    transform-origin: 0 0;
+    margin-top: 700px;
+    margin-left: 1580px;
+  }
+}
+
+@media (width: 2560px) and (height: 1440px) {
+  #teslaHUD {
+    transform: scale(0.7);
+    transform-origin: 0 0;
+    margin-top: 1060px;
+    margin-left: 1580px;
+  }
+}
+
+@media (width: 3200px) and (height: 1800px) {
+}
+
+@media (width: 3440px) and (height: 1440px) {
+  #teslaHUD {
+    transform: scale(0.8);
+    transform-origin: 0 0;
+    margin-top: 1000px;
+    margin-left: 2500px;
+  }
+}
+
+@media (width: 3840px) and (height: 1080px) {
+  #teslaHUD {
+    transform: scale(0.8);
+    transform-origin: 0 0;
+    margin-top: 690px;
+    margin-left: 490px;
+  }
+}
+
+@media (width: 3840px) and (height: 1620px) {
+}
+
+@media (width: 3840px) and (height: 2160px) {
+}
+
+@media (width: 5120px) and (height: 1440px) {
+  #teslaHUD {
+    transform: scale(1);
+    transform-origin: 0 0;
+    margin-top: 950px;
+    margin-left: 650px;
+  }
+}

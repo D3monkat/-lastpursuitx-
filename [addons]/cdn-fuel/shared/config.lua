@@ -127,6 +127,72 @@ Config.ElectricVehicles = { -- List of Electric Vehicles in the Base Game.
     ["l150f"] = {
         isElectric = true,
     },
+    ["liquidair"] = {
+        isElectric = true
+    },
+    ["airace"] = {
+        isElectric = true
+    },
+    ["etramsportb"] = {
+        isElectric = true
+    },
+    ["rsetramgt"] = {
+        isElectric = true
+    },
+    ["bayere3"] = {
+        isElectric = true
+    },
+    ["bayere8"] = {
+        isElectric = true
+    },
+    ["bayerex"] = {
+        isElectric = true
+    },
+    ["l150f"] = {
+        isElectric = true
+    },
+    ["marche"] = {
+        isElectric = true
+    },
+    ["cybertruck"] = {
+        isElectric = true
+    },
+    ["cyberquad"] = {
+        isElectric = true
+    },
+    ["medol3"] = {
+        isElectric = true
+    },
+    ["medols"] = {
+        isElectric = true
+    },
+    ["medolsplaid"] = {
+        isElectric = true
+    },
+    ["medolx"] = {
+        isElectric = true
+    },
+    ["medolxplaid"] = {
+        isElectric = true
+    },
+    ["medoly"] = {
+        isElectric = true
+    },
+    ["roadstersport"] = {
+        isElectric = true
+    },
+    ["semi"] = {
+        isElectric = true
+    },
+    ["mbeve"] = {
+        isElectric = true
+    },
+    ["mbevg"] = {
+        isElectric = true
+    },
+    ["mbevs"] = {
+        isElectric = true
+    },
     ["iwagen"] = {
         isElectric = true,
     },
@@ -186,6 +252,69 @@ Config.NoFuelUsage = { -- This is for you to put vehicles that you don't want to
         blacklisted = true
     },
     ["liquidair"] = {
+        blacklisted = true
+    },
+    ["airace"] = {
+        blacklisted = true
+    },
+    ["etramsportb"] = {
+        blacklisted = true
+    },
+    ["rsetramgt"] = {
+        blacklisted = true
+    },
+    ["bayere3"] = {
+        blacklisted = true
+    },
+    ["bayere8"] = {
+        blacklisted = true
+    },
+    ["bayerex"] = {
+        blacklisted = true
+    },
+    ["l150f"] = {
+        blacklisted = true
+    },
+    ["marche"] = {
+        blacklisted = true
+    },
+    ["cybertruck"] = {
+        blacklisted = true
+    },
+    ["cyberquad"] = {
+        blacklisted = true
+    },
+    ["medol3"] = {
+        blacklisted = true
+    },
+    ["medols"] = {
+        blacklisted = true
+    },
+    ["medolsplaid"] = {
+        blacklisted = true
+    },
+    ["medolx"] = {
+        blacklisted = true
+    },
+    ["medolxplaid"] = {
+        blacklisted = true
+    },
+    ["medoly"] = {
+        blacklisted = true
+    },
+    ["roadstersport"] = {
+        blacklisted = true
+    },
+    ["semi"] = {
+        blacklisted = true
+    },
+    ["mbeve"] = {
+        blacklisted = true
+    },
+    ["mbevg"] = {
+        blacklisted = true
+    },
+    ["mbevs"] = {
         blacklisted = true
     },
 }

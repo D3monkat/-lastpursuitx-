@@ -179,7 +179,7 @@ Config.Locations[#Config.Locations+1] = { --[[ REDLINE ]]--
         { coords = vec4(-576.54, -938.91, 23.89, 2.67), w = 5.5, d = 1.0 },
     },
     store = {
-        { coords = vec4(837.02, -808.22, 26.33, 90.0), w = 1.0, d = 1.4, },
+        { coords = vec4(-590.56, -939.01, 28.14, 274.17), w = 1.0, d = 1.4, },
     },
     crafting = {
         { coords = vec4(-584.08, -939.58, 23.0, 270.0), w = 4.0, d = 1.0 },
