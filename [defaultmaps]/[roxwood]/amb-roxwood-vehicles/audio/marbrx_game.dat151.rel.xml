@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dat151>
+ <Version value="9813679" />
+ <Items>
+  <Item type="Vehicle" ntOffset="364059">
+   <Name>marbella</Name>
+   <Flags value="0x91004A28" />
+   <Engine>hash_75E361AC</Engine>
+   <EngineGranular>hash_5E83390F</EngineGranular>
+   <Horns>hash_A4ACD2B1</Horns>
+   <DoorOpen>hash_A83F5613</DoorOpen>
+   <DoorClose>hash_7134E777</DoorClose>
+   <TrunkOpen>hash_85EBAC44</TrunkOpen>
+   <TrunkClose>hash_50DB730D</TrunkClose>
+   <Unk08>null_sound</Unk08>
+   <Unk09 value="0.5" />
+   <SuspensionUp>hash_7CEDC837</SuspensionUp>
+   <SuspensionDown>hash_4AEF38F3</SuspensionDown>
+   <SuspensionUpFrequency value="0.4" />
+   <SuspensionDownFrequency value="1" />
+   <Collision>hash_00C2FB47</Collision>
+   <Unk15 value="0" />
+   <Unk16 value="0" />
+   <Unk17 value="0" />
+   <ScannerParams>marbella_scanner_params</ScannerParams>
+   <JumpLandIntact>hash_A5EB71C0</JumpLandIntact>
+   <JumpLandLoose>hash_1AF1FCAC</JumpLandLoose>
+   <Unk21 value="31" />
+   <Unk22 value="36" />
+   <RadioFlags value="0x0E010102" />
+   <IndicatorOn>hash_5073584F</IndicatorOn>
+   <IndicatorOff>hash_E380773F</IndicatorOff>
+   <Handbrake>hash_F2B35109</Handbrake>
+   <Unk27 value="1" />
+   <Unk28 value="3" />
+   <ParkingTones>hash_674E1F4D</ParkingTones>
+   <Unk29>hash_55FC0070</Unk29>
+   <Unk30>hash_795E90E6</Unk30>
+   <Unk31>hash_795E90E6</Unk31>
+   <Fire>hash_2FF627AC</Fire>
+   <StartupSequence>hash_B807DF3E</StartupSequence>
+   <Unk34>null_sound</Unk34>
+   <Unk35>hash_F52E6D86</Unk35>
+   <Unk36>hash_F52E6D86</Unk36>
+   <Unk37 value="6" />
+   <Unk38 value="3" />
+   <Unk39 />
+   <Unk40 value="0" />
+   <Sirens />
+   <Unk42 value="0" />
+   <Unk43 value="0" />
+   <Unk44 value="0" />
+   <Unk45>hash_0C3F6AD5</Unk45>
+   <Unk46>hash_359E05CB</Unk46>
+   <ForkSounds />
+   <TurretSounds />
+   <Unk49 value="8" />
+   <ScoopSounds />
+   <TowArmSounds />
+   <Unk52 value="0" />
+   <ElectricEngine />
+   <Unk54 value="0" />
+   <ReverseWarning>null_sound</ReverseWarning>
+   <EngineHealth value="2" />
+   <VehicleMaster>null_sound</VehicleMaster>
+   <ShutdownBeep>null_sound</ShutdownBeep>
+   <Unk59 value="1" />
+   <Unk60 value="0" />
+   <Unk61 value="1" />
+   <Unk62 value="0" />
+   <Unk63>null_sound</Unk63>
+   <Unk64 value="0" />
+   <Unk65 value="0" />
+   <Unk66 value="0" />
+   <ConvertibleRoof />
+   <Unk68>null_sound</Unk68>
+   <InteriorTones />
+   <Unk70 value="0" />
+   <Unk71>null_sound</Unk71>
+   <Unk72>null_sound</Unk72>
+  </Item>
+  <Item type="Vehicle" ntOffset="364059">
+   <Name>marbcoprx</Name>
+   <Flags value="0x91004A28" />
+   <Engine>hash_75E361AC</Engine>
+   <EngineGranular>hash_5E83390F</EngineGranular>
+   <Horns>hash_134DA50D</Horns>
+   <DoorOpen>hash_A83F5613</DoorOpen>
+   <DoorClose>hash_7134E777</DoorClose>
+   <TrunkOpen>hash_85EBAC44</TrunkOpen>
+   <TrunkClose>hash_50DB730D</TrunkClose>
+   <Unk08>null_sound</Unk08>
+   <Unk09 value="0.5" />
+   <SuspensionUp>hash_7CEDC837</SuspensionUp>
+   <SuspensionDown>hash_4AEF38F3</SuspensionDown>
+   <SuspensionUpFrequency value="0.4" />
+   <SuspensionDownFrequency value="1" />
+   <Collision>hash_00C2FB47</Collision>
+   <Unk15 value="0" />
+   <Unk16 value="0" />
+   <Unk17 value="0" />
+   <ScannerParams>marbcoprx_scanner_params</ScannerParams>
+   <JumpLandIntact>hash_A5EB71C0</JumpLandIntact>
+   <JumpLandLoose>hash_1AF1FCAC</JumpLandLoose>
+   <Unk21 value="31" />
+   <Unk22 value="36" />
+   <RadioFlags value="0x10020002" />
+   <IndicatorOn>hash_5073584F</IndicatorOn>
+   <IndicatorOff>hash_E380773F</IndicatorOff>
+   <Handbrake>hash_F2B35109</Handbrake>
+   <Unk27 value="1" />
+   <Unk28 value="3" />
+   <ParkingTones>hash_674E1F4D</ParkingTones>
+   <Unk29>hash_55FC0070</Unk29>
+   <Unk30>hash_795E90E6</Unk30>
+   <Unk31>hash_795E90E6</Unk31>
+   <Fire>hash_2FF627AC</Fire>
+   <StartupSequence>hash_B807DF3E</StartupSequence>
+   <Unk34>null_sound</Unk34>
+   <Unk35>hash_F52E6D86</Unk35>
+   <Unk36>hash_F52E6D86</Unk36>
+   <Unk37 value="6" />
+   <Unk38 value="3" />
+   <Unk39 />
+   <Unk40 value="0" />
+   <Sirens>hash_49DF3CF8</Sirens>
+   <Unk42 value="0" />
+   <Unk43 value="0" />
+   <Unk44 value="0" />
+   <Unk45>hash_0C3F6AD5</Unk45>
+   <Unk46>hash_359E05CB</Unk46>
+   <ForkSounds />
+   <TurretSounds />
+   <Unk49 value="8" />
+   <ScoopSounds />
+   <TowArmSounds />
+   <Unk52 value="0" />
+   <ElectricEngine />
+   <Unk54 value="0" />
+   <ReverseWarning>null_sound</ReverseWarning>
+   <EngineHealth value="3" />
+   <VehicleMaster>null_sound</VehicleMaster>
+   <ShutdownBeep>null_sound</ShutdownBeep>
+   <Unk59 value="1" />
+   <Unk60 value="0" />
+   <Unk61 value="1" />
+   <Unk62 value="0" />
+   <Unk63>null_sound</Unk63>
+   <Unk64 value="0" />
+   <Unk65 value="0" />
+   <Unk66 value="0" />
+   <ConvertibleRoof />
+   <Unk68>null_sound</Unk68>
+   <InteriorTones />
+   <Unk70 value="0" />
+   <Unk71>null_sound</Unk71>
+   <Unk72>null_sound</Unk72>
+  </Item>
+  <Item type="Vehicle" ntOffset="364059">
+   <Name>marbtaxirx</Name>
+   <Flags value="0x91004A28" />
+   <Engine>hash_75E361AC</Engine>
+   <EngineGranular>hash_5E83390F</EngineGranular>
+   <Horns>hash_134DA50D</Horns>
+   <DoorOpen>hash_A83F5613</DoorOpen>
+   <DoorClose>hash_7134E777</DoorClose>
+   <TrunkOpen>hash_85EBAC44</TrunkOpen>
+   <TrunkClose>hash_50DB730D</TrunkClose>
+   <Unk08>null_sound</Unk08>
+   <Unk09 value="0.5" />
+   <SuspensionUp>hash_7CEDC837</SuspensionUp>
+   <SuspensionDown>hash_4AEF38F3</SuspensionDown>
+   <SuspensionUpFrequency value="0.4" />
+   <SuspensionDownFrequency value="1" />
+   <Collision>hash_00C2FB47</Collision>
+   <Unk15 value="0" />
+   <Unk16 value="0" />
+   <Unk17 value="0" />
+   <ScannerParams>marbtaxirx_scanner_params</ScannerParams>
+   <JumpLandIntact>hash_A5EB71C0</JumpLandIntact>
+   <JumpLandLoose>hash_1AF1FCAC</JumpLandLoose>
+   <Unk21 value="31" />
+   <Unk22 value="36" />
+   <RadioFlags value="0x00010000" />
+   <IndicatorOn>hash_5073584F</IndicatorOn>
+   <IndicatorOff>hash_E380773F</IndicatorOff>
+   <Handbrake>hash_F2B35109</Handbrake>
+   <Unk27 value="1" />
+   <Unk28 value="3" />
+   <ParkingTones>hash_674E1F4D</ParkingTones>
+   <Unk29>hash_55FC0070</Unk29>
+   <Unk30>hash_795E90E6</Unk30>
+   <Unk31>hash_795E90E6</Unk31>
+   <Fire>hash_2FF627AC</Fire>
+   <StartupSequence>hash_B807DF3E</StartupSequence>
+   <Unk34>null_sound</Unk34>
+   <Unk35>hash_F52E6D86</Unk35>
+   <Unk36>hash_F52E6D86</Unk36>
+   <Unk37 value="6" />
+   <Unk38 value="3" />
+   <Unk39 />
+   <Unk40 value="0" />
+   <Sirens />
+   <Unk42 value="0" />
+   <Unk43 value="0" />
+   <Unk44 value="0" />
+   <Unk45>hash_0C3F6AD5</Unk45>
+   <Unk46>hash_359E05CB</Unk46>
+   <ForkSounds />
+   <TurretSounds />
+   <Unk49 value="8" />
+   <ScoopSounds />
+   <TowArmSounds />
+   <Unk52 value="0" />
+   <ElectricEngine />
+   <Unk54 value="0" />
+   <ReverseWarning>null_sound</ReverseWarning>
+   <EngineHealth value="2" />
+   <VehicleMaster>null_sound</VehicleMaster>
+   <ShutdownBeep>null_sound</ShutdownBeep>
+   <Unk59 value="1" />
+   <Unk60 value="0" />
+   <Unk61 value="1" />
+   <Unk62 value="0" />
+   <Unk63>null_sound</Unk63>
+   <Unk64 value="0" />
+   <Unk65 value="0" />
+   <Unk66 value="0" />
+   <ConvertibleRoof />
+   <Unk68>null_sound</Unk68>
+   <InteriorTones />
+   <Unk70 value="0" />
+   <Unk71>null_sound</Unk71>
+   <Unk72>null_sound</Unk72>
+  </Item>
+  <Item type="VehicleScannerParams" ntOffset="270765">
+   <Name>marbella_scanner_params</Name>
+   <Flags value="0xAAAAAAA8" />
+   <Params>
+    <Item>
+     <Manufacturer>police_scanner_manufacturer_willard_b</Manufacturer>
+     <Model>police_scanner_vehicle_category_4_door_sedan_b</Model>
+     <Category>police_scanner_vehicle_category_4_door_sedan_b</Category>
+     <ColorOverride>null_sound</ColorOverride>
+    </Item>
+   </Params>
+  </Item>
+  <Item type="VehicleScannerParams" ntOffset="270765">
+   <Name>marbcoprx_scanner_params</Name>
+   <Flags value="0xAAAAAAA8" />
+   <Params>
+    <Item>
+     <Manufacturer>police_scanner_manufacturer_willard_b</Manufacturer>
+     <Model>hash_9D156968</Model>
+     <Category>police_scanner_vehicle_category_police_sedan_b</Category>
+     <ColorOverride>null_sound</ColorOverride>
+    </Item>
+   </Params>
+  </Item>
+  <Item type="VehicleScannerParams" ntOffset="270765">
+   <Name>marbtaxirx_scanner_params</Name>
+   <Flags value="0xAAAAAAA8" />
+   <Params>
+    <Item>
+     <Manufacturer>police_scanner_manufacturer_willard_b</Manufacturer>
+     <Model>police_scanner_model_taxi_b </Model>
+     <Category>police_scanner_vehicle_category_4_door_sedan_b</Category>
+     <ColorOverride>null_sound</ColorOverride>
+    </Item>
+   </Params>
+  </Item>
+ </Items>
+</Dat151>

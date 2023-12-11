@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ===================================================================================================== -->
+<!-- ====================================== Set-up by Rollschuh2282 =============================== -->
+<!-- ==================================== DLC File Roxwood Version 1.0 Dev ===================================== -->
+<!-- ============= Property of the Ambitioneers Team | DO NOT DISTRIBUTE WITHOUT PERMISSION! ============= -->
+<!-- ===================================================================================================== -->
+<ScaleformPreallocation>
+  <!--4149653587 = amb_rox_02_cloth_int (amb_rox_02_clothing_int.rpf) -->
+  <movie name="int4149653587" peakSize="288" granularity="16" sfalloc="true">
+    <SFAlloc>
+      <Size value="16" />
+      <Count value="2" />
+    </SFAlloc>
+  </movie>
+  <!--3854835789 = amb_rox_02_gasstation (amb_rox_02_gas_station.rpf) -->
+  <movie name="INT3854835789" peakSize="288" granularity="16" sfalloc="true">
+  	<SFAlloc><Size value="32"/><Count value="1"/></SFAlloc>
+  	<SFAlloc><Size value="64"/><Count value="2"/></SFAlloc>
+  </movie>
+  <!--2931546930 = amb_rox_02_247 (amb_rox_02_supermarket.rpf) -->
+  <movie name="INT2931546930" peakSize="288" granularity="16" sfalloc="true">
+  	<SFAlloc><Size value="32"/><Count value="1"/></SFAlloc>
+  	<SFAlloc><Size value="64"/><Count value="2"/></SFAlloc>
+  </movie>
+  <!--402919104 = amb_rox_02_tattoo (amb_rox_02_tattoo_int.rpf) -->
+  <movie name="INT402919104" peakSize="288" granularity="16" sfalloc="true">
+  	<SFAlloc><Size value="32"/><Count value="1"/></SFAlloc>
+  	<SFAlloc><Size value="64"/><Count value="2"/></SFAlloc>
+	</movie>
+</ScaleformPreallocation>
+<!-- eof -->

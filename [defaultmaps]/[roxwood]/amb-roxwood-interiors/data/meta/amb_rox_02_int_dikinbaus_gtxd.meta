@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CMapParentTxds>
+  <txdRelationships>
+  <!-- bloxwudroxwud -->
+	<Item>
+      <parent>amb_rox_02_int_dikinbaus_txd</parent>
+      <child>amb_rox_02_int_dikinbaus_prop_doors_txd</child>
+    </Item>
+  <!-- bloxwudroxwud -->
+  </txdRelationships>
+</CMapParentTxds>

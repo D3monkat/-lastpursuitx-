@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<CMapTypes>
+  <archetypes>
+    <Item type="CBaseArchetypeDef">
+      <lodDist value="60" />
+      <flags value="0" />
+      <specialAttribute value="0" />
+      <bbMin x="-3.165763" y="-5.388903" z="0.0037453175" />
+      <bbMax x="3.190256" y="7.2720747" z="2.9367218" />
+      <bsCentre x="0.012246609" y="0.9415858" z="1.4702336" />
+      <bsRadius value="7.2336316" />
+      <hdTextureDist value="40" />
+      <name>amb_rox_01_garage_shell</name>
+      <textureDictionary>amb_rox_01_garage_shell</textureDictionary>
+      <assetType>ASSET_TYPE_DRAWABLE</assetType>
+      <assetName>amb_rox_01_garage_shell</assetName>
+    </Item>
+    <Item type="CMloArchetypeDef">
+      <lodDist value="60" />
+      <flags value="0" />
+      <specialAttribute value="0" />
+      <bbMin x="0.0" y="0.0" z="0.0" />
+      <bbMax x="0.0" y="0.0" z="0.0" />
+      <bsCentre x="0.0" y="0.0" z="0.0" />
+      <bsRadius value="0" />
+      <hdTextureDist value="40" />
+      <name>amb_rox_01_garage</name>
+      <textureDictionary>amb_rox_01_garage_shell</textureDictionary>
+      <physicsDictionary>amb_rox_01_garage_col</physicsDictionary>
+      <assetType>ASSET_TYPE_DRAWABLE</assetType>
+      <assetName>amb_rox_01_garage</assetName>
+      <mloFlags value="0" />
+      <entities>
+        <Item type="CEntityDef">
+          <archetypeName>amb_rox_01_garage_shell</archetypeName>
+          <flags value="0" />
+          <guid value="0" />
+          <position x="0.0" y="0.0" z="0.0" />
+          <rotation x="-0.0" y="-0.0" z="-0.0" w="1.0" />
+          <scaleXY value="1" />
+          <scaleZ value="1" />
+          <parentIndex value="-1" />
+          <lodDist value="200" />
+          <childLodDist value="0" />
+          <lodLevel>LODTYPES_DEPTH_ORPHANHD</lodLevel>
+          <numChildren value="0" />
+          <priorityLevel>PRI_REQUIRED</priorityLevel>
+          <ambientOcclusionMultiplier value="255" />
+          <artificialAmbientOcclusion value="255" />
+          <tintValue value="0" />
+        </Item>
+      </entities>
+      <rooms itemType="CMloRoomDef">
+        <Item>
+          <name>limbo</name>
+          <bbMin x="-3.165763" y="-5.388903" z="0.0037453175" />
+          <bbMax x="3.190256" y="7.2720747" z="2.9367218" />
+          <blend value="1" />
+          <timecycleName>int_gasstation</timecycleName>
+          <flags value="0" />
+          <portalCount value="3" />
+          <floorId value="0" />
+          <exteriorVisibiltyDepth value="-1" />
+          <attachedObjects>0</attachedObjects>
+        </Item>
+        <Item>
+          <name>workshop</name>
+          <bbMin x="-3.165763" y="-5.388903" z="0.0037453175" />
+          <bbMax x="3.190256" y="7.2720747" z="2.9367218" />
+          <blend value="1" />
+          <timecycleName>int_gasstation</timecycleName>
+          <flags value="0" />
+          <portalCount value="3" />
+          <floorId value="0" />
+          <exteriorVisibiltyDepth value="-1" />
+          <attachedObjects />
+        </Item>
+      </rooms>
+      <portals itemType="CMloPortalDef">
+        <Item>
+          <roomFrom value="1" />
+          <roomTo value="0" />
+          <flags value="0" />
+          <mirrorPriority value="0" />
+          <opacity value="0" />
+          <audioOcclusion value="0" />
+          <corners>
+            <Item>2.7664762,6.724777,0.020003308</Item>
+            <Item>2.7664762,6.724777,2.2294717</Item>
+            <Item>2.7664762,5.5751534,2.2294717</Item>
+            <Item>2.7664762,5.575154,0.020003308</Item>
+          </corners>
+          <attachedObjects />
+        </Item>
+        <Item>
+          <roomFrom value="1" />
+          <roomTo value="0" />
+          <flags value="0" />
+          <mirrorPriority value="0" />
+          <opacity value="0" />
+          <audioOcclusion value="0" />
+          <corners>
+            <Item>3.1321235,4.6489224,0.029666282</Item>
+            <Item>3.1321235,4.6489224,2.269016</Item>
+            <Item>3.1321235,0.48954245,2.269016</Item>
+            <Item>3.1321235,0.48954284,0.029666282</Item>
+          </corners>
+          <attachedObjects />
+        </Item>
+        <Item>
+          <roomFrom value="1" />
+          <roomTo value="0" />
+          <flags value="0" />
+          <mirrorPriority value="0" />
+          <opacity value="0" />
+          <audioOcclusion value="0" />
+          <corners>
+            <Item>3.1321235,-0.4895421,0.029666282</Item>
+            <Item>3.1321235,-0.48954245,2.269016</Item>
+            <Item>3.1321235,-4.6489224,2.269016</Item>
+            <Item>3.1321235,-4.6489224,0.029666267</Item>
+          </corners>
+          <attachedObjects />
+        </Item>
+      </portals>
+    </Item>
+  </archetypes>
+  <name>amb_rox_01_mb_garage_milo</name>
+</CMapTypes>

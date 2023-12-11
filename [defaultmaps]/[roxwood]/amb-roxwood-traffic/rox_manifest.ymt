@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CScenarioPointManifest>
+ <VersionNumber value="0" />
+ <RegionDefs>
+  <Item type="CScenarioPointRegionDef">
+   <Name>compcache:/amb-roxwood-traffic/stream/rox-scenarios/roxwood</Name>
+   <AABB>
+    <min x="-874.47" y="7108.07" z="91.82" />
+    <max x="-799.4" y="7303.06" z="222.77" />
+   </AABB>
+  </Item>
+</CScenarioPointManifest>

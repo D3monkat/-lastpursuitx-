@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CMapParentTxds>
+  <txdRelationships>
+    <Item>
+      <parent>1_amb_hosp_central_txd</parent>
+      <child>amb_hosp_central_txd</child>
+    </Item>
+    <Item>
+      <parent>2_amb_hosp_central_txd</parent>
+      <child>1_amb_hosp_central_txd</child>
+    </Item>
+    <Item>
+      <parent>3_amb_hosp_central_txd</parent>
+      <child>2_amb_hosp_central_txd</child>
+    </Item>
+    <Item>
+      <parent>4_amb_hosp_central_txd</parent>
+      <child>3_amb_hosp_central_txd</child>
+    </Item>
+    <Item>
+      <parent>5_amb_hosp_central_txd</parent>
+      <child>4_amb_hosp_central_txd</child>
+    </Item>
+    <Item>
+      <parent>6_amb_hosp_central_txd</parent>
+      <child>5_amb_hosp_central_txd</child>
+    </Item>
+    <Item>
+      <parent>7_amb_hosp_central_txd</parent>
+      <child>6_amb_hosp_central_txd</child>
+    </Item>
+    <Item>
+      <parent>8_amb_hosp_central_txd</parent>
+      <child>7_amb_hosp_central_txd</child>
+    </Item>
+  </txdRelationships>
+</CMapParentTxds>
