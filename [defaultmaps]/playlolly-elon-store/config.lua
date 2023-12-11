@@ -1,6 +1,6 @@
 Config = {
     blip = {
-        visibility = true,
+        visibility = false,
         name = "Elon Store",
         sprite = 326,
         color = 75,
