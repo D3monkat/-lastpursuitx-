@@ -18,7 +18,6 @@
 <div class="text-sm flex flex-col text-[#e8e8e8]">
   <div class="mx-4 mb-5 mt-3">
     <div class="float-right w-[25%]">
-      <PSLogo />
     </div>
     <div class="-mx-4 mb-4 text-2xl text-white">
       <p>Reset HUD </p>
