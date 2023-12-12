@@ -148,6 +148,7 @@ Config = {
 			{ name = "miningdrill",	price = 10000, amount = 50, info = {}, type = "item", slot = 7, },
 			{ name = "mininglaser",	price = 60000, amount = 5, info = {}, type = "item", slot = 8, },
 			{ name = "drillbit", price = 0, amount = 100, info = {}, type = "item", slot = 9, },
+			{ name = "c4", price = 1250, amount = 100, info = {}, type = "item", slot = 10, },
 		},
 	},
 }
