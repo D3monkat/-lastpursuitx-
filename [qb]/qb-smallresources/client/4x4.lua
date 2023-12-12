@@ -48,14 +48,11 @@ function Apply2WDEffects(vehicle)
     local defaultTopSpeed = GetVehicleHandlingFloat(vehicle, 'CHandlingData', 'fInitialDriveMaxFlatVel')
     SetVehicleHandlingField(vehicle, 'CHandlingData', 'fInitialDriveMaxFlatVel', defaultTopSpeed)
     
-    local defaultEnginePower = GetVehicleHandlingFloat(vehicle, 'CHandlingData', 'fEnginePowerMultiplier')
-    SetVehicleHandlingField(vehicle, 'CHandlingData', 'fEnginePowerMultiplier', defaultEnginePower)
-    
     -- You can reset any other effects here
 end
 
 function Apply4x4Effects(vehicle)
-    local newHandling = 0.400000
+    local newHandling = 0.500000
     SetVehicleHandlingField(vehicle, 'CHandlingData', 'fDriveBiasFront', newHandling)
     
     local newAcceleration = GetVehicleHandlingFloat(vehicle, 'CHandlingData', 'fInitialDriveForce') * 1.5
