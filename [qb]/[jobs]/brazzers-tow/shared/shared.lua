@@ -3,7 +3,7 @@ Config = Config or {}
 Config.Debug = false
 
 Config.Core = 'qb-core'
-Config.Target = 'ox-target' -- ox or resource name (ex. 'qb-target' )
+Config.Target = 'qb-target' -- ox or resource name (ex. 'qb-target' )
 Config.Fuel = 'cdn-fuel' -- ox or resource name (ex. 'qb-fuel' )
 Config.Menu = 'ox' -- 'ox' or resource name (ex. 'qb-menu')
 
