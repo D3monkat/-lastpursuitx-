@@ -354,97 +354,13 @@ Config.VehicleExtras = {
     icon = 'plus',
     items = {
         {
-            id = 'extra1',
-            title = 'Extra 1',
+            id = '4x4',
+            title = 'Toggle 4x4',
             icon = 'box-open',
-            type = 'client',
-            event = 'qb-radialmenu:client:setExtra',
+            type = 'command',
+            event = '4x4',
             shouldClose = false
-        }, {
-            id = 'extra2',
-            title = 'Extra 2',
-            icon = 'box-open',
-            type = 'client',
-            event = 'qb-radialmenu:client:setExtra',
-            shouldClose = false
-        }, {
-            id = 'extra3',
-            title = 'Extra 3',
-            icon = 'box-open',
-            type = 'client',
-            event = 'qb-radialmenu:client:setExtra',
-            shouldClose = false
-        }, {
-            id = 'extra4',
-            title = 'Extra 4',
-            icon = 'box-open',
-            type = 'client',
-            event = 'qb-radialmenu:client:setExtra',
-            shouldClose = false
-        }, {
-            id = 'extra5',
-            title = 'Extra 5',
-            icon = 'box-open',
-            type = 'client',
-            event = 'qb-radialmenu:client:setExtra',
-            shouldClose = false
-        }, {
-            id = 'extra6',
-            title = 'Extra 6',
-            icon = 'box-open',
-            type = 'client',
-            event = 'qb-radialmenu:client:setExtra',
-            shouldClose = false
-        }, {
-            id = 'extra7',
-            title = 'Extra 7',
-            icon = 'box-open',
-            type = 'client',
-            event = 'qb-radialmenu:client:setExtra',
-            shouldClose = false
-        }, {
-            id = 'extra8',
-            title = 'Extra 8',
-            icon = 'box-open',
-            type = 'client',
-            event = 'qb-radialmenu:client:setExtra',
-            shouldClose = false
-        }, {
-            id = 'extra9',
-            title = 'Extra 9',
-            icon = 'box-open',
-            type = 'client',
-            event = 'qb-radialmenu:client:setExtra',
-            shouldClose = false
-        }, {
-            id = 'extra10',
-            title = 'Extra 10',
-            icon = 'box-open',
-            type = 'client',
-            event = 'qb-radialmenu:client:setExtra',
-            shouldClose = false
-        }, {
-            id = 'extra11',
-            title = 'Extra 11',
-            icon = 'box-open',
-            type = 'client',
-            event = 'qb-radialmenu:client:setExtra',
-            shouldClose = false
-        }, {
-            id = 'extra12',
-            title = 'Extra 12',
-            icon = 'box-open',
-            type = 'client',
-            event = 'qb-radialmenu:client:setExtra',
-            shouldClose = false
-        }, {
-            id = 'extra13',
-            title = 'Extra 13',
-            icon = 'box-open',
-            type = 'client',
-            event = 'qb-radialmenu:client:setExtra',
-            shouldClose = false
-        }
+        },
     }
 }
 
@@ -573,6 +489,14 @@ Config.JobInteractions = {
             icon = 'bell',
             type = 'client',
             event = 'police:client:SendPoliceEmergencyAlert',
+            shouldClose = true
+        },
+        {
+            id = 'mdw',
+            title = 'EMDW',
+            icon = 'tablet',
+            type = 'command',
+            event = 'mdt',
             shouldClose = true
         }, {
             id = 'checkvehstatus',
@@ -703,6 +627,14 @@ Config.JobInteractions = {
             type = 'client',
             event = 'police:client:SendPoliceEmergencyAlert',
             shouldClose = true
+        },
+        {
+            id = 'mdw',
+            title = 'EMDW',
+            icon = 'tablet',
+            type = 'command',
+            event = 'mdt',
+            shouldClose = true
         }, {
             id = 'checkvehstatus',
             title = 'Check Tune Status',
@@ -831,6 +763,14 @@ Config.JobInteractions = {
             icon = 'bell',
             type = 'client',
             event = 'police:client:SendPoliceEmergencyAlert',
+            shouldClose = true
+        },
+        {
+            id = 'mdw',
+            title = 'EMDW',
+            icon = 'tablet',
+            type = 'command',
+            event = 'mdt',
             shouldClose = true
         }, {
             id = 'checkvehstatus',
