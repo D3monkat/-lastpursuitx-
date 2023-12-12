@@ -7,7 +7,7 @@ Config.Target = 'qb-target' -- ox or resource name (ex. 'qb-target' )
 Config.Fuel = 'cdn-fuel' -- ox or resource name (ex. 'qb-fuel' )
 Config.Menu = 'ox' -- 'ox' or resource name (ex. 'qb-menu')
 
-Config.NotificationStyle = 'phone' -- 'phone' for Renewed's Phone notifications | 'qbcore' for standard qbcore notifications
+Config.NotificationStyle = 'qbcore' -- 'phone' for Renewed's Phone notifications | 'qbcore' for standard qbcore notifications
 Config.TowTruck = 'flatbed' -- Tow truck model name
 Config.MarkedVehicleOnly = true -- Allow only marked vehicles to be towed and not random vehicles around the street [RECOMMENDED: TRUE]
 Config.CallTowThroughTarget = true -- Adds a global vehicle option to call tow drivers by targeting the vehicle entity
@@ -16,7 +16,7 @@ Config.UseTierVehicles = true -- If you want to use tier class system. This requ
 Config.SharedTierName = 'tier' -- [ABOVE MUST BE TRUE] Name of QBCore.Shared.Vehicles that targets the classes. For me personally I use 'category' but I know others may use 'tier' because of jl-laptop
 
 -- PHONE CONFIG --
-Config.RenewedPhone = true -- If you use Renewed's Phone then leave this to true else put false
+Config.RenewedPhone = false -- If you use Renewed's Phone then leave this to true else put false
 Config.Phone = 'qb-phone' -- If using Renewed's Phone then put your resource name here
 Config.OnlyLeader = true -- Allow only the leader of the group to sign into the tow job [RECOMMENDED: TRUE]
 Config.GroupLimit = 2 -- Amount of people allowed in a group to start a tow run/ get mission rewards
