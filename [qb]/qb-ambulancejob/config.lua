@@ -38,12 +38,12 @@ Config.AlertShowInfo = 2 -- How many injuries a player must have before being al
 Config.Locations = { -- Edit the various interaction points for players or create new ones
     ["checking"] = {
 	    [1] = vector3(-435.52987670898, -325.58721923828, 34.948020935059),
-	    [2] = vector3(-254.54, 6331.78, 32.43), -- paleto
+	    [2] = vector3(355.44, -1407.51, 32.99), -- ls central
 	    [3] = vector3(1767.59, 3640.07, 34.85), -- sandy
     },
     ["duty"] = {
         [1] = vector3(-432.54626464844, -318.36764526367, 35.232421875),
-        [2] = vector3(-254.88, 6324.5, 32.58),
+        [2] = vector3(354.98, -1410.46, 32.99), -- ls central
         [3] = vector3(1766.86, 3643.29, 34.85),
     },
     ["vehicle"] = {
@@ -79,10 +79,10 @@ Config.Locations = { -- Edit the various interaction points for players or creat
         [6] = {coords = vector4(-460.30142211914, -288.41146850586, 34.93607711792, 202.20596313477), taken = false, model = -1091386327},
         [7] = {coords = vector4(-463.71264648438, -289.97244262695, 34.8815574646, 196.45761108398), taken = false, model = -1091386327},
         [8] = {coords = vector4(-466.94741821289, -291.21655273438, 34.866039276123, 197.71726989746), taken = false, model = -1091386327},
-	--- paleto
-	    [9] = {coords = vector4(-252.43, 6312.25, 32.34, 313.48), taken = false, model = 2117668672},
-        [10] = {coords = vector4(-247.04, 6317.95, 32.34, 134.64), taken = false, model = 2117668672},
-        [11] = {coords = vector4(-255.98, 6315.67, 32.34, 313.91), taken = false, model = 2117668672},
+	--- ls central
+	    [9] = {coords = vector4(336.61, -1434.78, 30.88, 138.85), taken = false, model = 2117668672},
+        [10] = {coords = vector4(339.87, -1438.99, 31.09, 146.07), taken = false, model = 2117668672},
+        [11] = {coords = vector4(319.42, -1432.25, 30.75, 227.8), taken = false, model = 2117668672},
 
     ---- sandy Shores    
 	    [12] = {coords = vector4(1734.13, 3637.79, 35.69, 123.65), taken = false, model = 835950247},
@@ -100,7 +100,7 @@ Config.Locations = { -- Edit the various interaction points for players or creat
     },
     ["stations"] = {
         [1] = {label = Lang:t('info.z_hospital'), coords = vector4(-466.55, -338.35, 34.37, 191.23)},
-        [2] = {label = Lang:t('info.sandy_hospital'), coords = vector4(1767.59, 3640.07, 34.85, 341.8)},
+        [2] = {label = Lang:t('info.central_hospital'), coords = vector4(349.04, -1404.76, 32.99, 40.4)},
         [3] = {label = Lang:t('info.paleto_hospital'), coords = vector4(-253.77, 6329.29, 32.43, 53.96)},
     },
 }

@@ -173,10 +173,10 @@ return {
 		blip = {
 			id = 403, colour = 69, scale = 0.8
 		}, inventory = {
-			{ name = 'medikit', price = 26 },
-			{ name = 'bandage', price = 5 }
+			{ name = 'firstaid', price = 0 },
+			{ name = 'bandage', price = 0 }
 		}, locations = {
-			vec3(306.3687, -601.5139, 43.28406)
+			vec3(360.15, -1412.96, 32.99)
 		}, targets = {
 
 		}
