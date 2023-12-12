@@ -176,7 +176,8 @@ return {
 			{ name = 'firstaid', price = 0 },
 			{ name = 'bandage', price = 0 }
 		}, locations = {
-			vec3(360.15, -1412.96, 32.99)
+			vec3(360.15, -1412.96, 32.99),
+			vec3(-453.76, -308.49, 34.91)
 		}, targets = {
 
 		}
