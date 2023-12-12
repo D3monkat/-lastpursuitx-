@@ -3,7 +3,7 @@ Config = Config or {}
 Config.Debug = false
 
 Config.Core = 'qb-core'
-Config.Target = 'qb-target' -- ox or resource name (ex. 'qb-target' )
+Config.Target = 'ox-target' -- ox or resource name (ex. 'qb-target' )
 Config.Fuel = 'cdn-fuel' -- ox or resource name (ex. 'qb-fuel' )
 Config.Menu = 'ox' -- 'ox' or resource name (ex. 'qb-menu')
 
@@ -12,7 +12,7 @@ Config.TowTruck = 'flatbed' -- Tow truck model name
 Config.MarkedVehicleOnly = true -- Allow only marked vehicles to be towed and not random vehicles around the street [RECOMMENDED: TRUE]
 Config.CallTowThroughTarget = true -- Adds a global vehicle option to call tow drivers by targeting the vehicle entity
 
-Config.UseTierVehicles = true -- If you want to use tier class system. This requires extra steps so check readme
+Config.UseTierVehicles = false -- If you want to use tier class system. This requires extra steps so check readme
 Config.SharedTierName = 'tier' -- [ABOVE MUST BE TRUE] Name of QBCore.Shared.Vehicles that targets the classes. For me personally I use 'category' but I know others may use 'tier' because of jl-laptop
 
 -- PHONE CONFIG --
