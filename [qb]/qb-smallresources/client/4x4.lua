@@ -42,28 +42,12 @@ function Apply2WDEffects(vehicle)
     local newHandling = 0.000000 -- All power to rear wheels
     SetVehicleHandlingField(vehicle, 'CHandlingData', 'fDriveBiasFront', newHandling)
     
-    local defaultAcceleration = GetVehicleHandlingFloat(vehicle, 'CHandlingData', 'fInitialDriveForce')
-    SetVehicleHandlingField(vehicle, 'CHandlingData', 'fInitialDriveForce', defaultAcceleration)
-    
-    local defaultTopSpeed = GetVehicleHandlingFloat(vehicle, 'CHandlingData', 'fInitialDriveMaxFlatVel')
-    SetVehicleHandlingField(vehicle, 'CHandlingData', 'fInitialDriveMaxFlatVel', defaultTopSpeed)
-    
-    local defaultEnginePower = GetVehicleHandlingFloat(vehicle, 'CHandlingData', 'fEnginePowerMultiplier')
-    SetVehicleHandlingField(vehicle, 'CHandlingData', 'fEnginePowerMultiplier', defaultEnginePower)
-    
     -- You can reset any other effects here
 end
 
 function Apply4x4Effects(vehicle)
-    local newHandling = 0.400000
+    local newHandling = 0.500000
     SetVehicleHandlingField(vehicle, 'CHandlingData', 'fDriveBiasFront', newHandling)
-    
-    local newAcceleration = GetVehicleHandlingFloat(vehicle, 'CHandlingData', 'fInitialDriveForce') * 1.5
-    SetVehicleHandlingField(vehicle, 'CHandlingData', 'fInitialDriveForce', newAcceleration)
-    
-    -- Adjust top speed (not a perfect representation of power boost, but similar)
-    local newMaxSpeed = GetVehicleHandlingFloat(vehicle, 'CHandlingData', 'fInitialDriveMaxFlatVel') * 1.2
-    SetVehicleHandlingField(vehicle, 'CHandlingData', 'fInitialDriveMaxFlatVel', newMaxSpeed)
 end
 
 -- Automatically apply 4x4 mode effects when entering a suitable vehicle
