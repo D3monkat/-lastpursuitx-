@@ -2,7 +2,7 @@ local QBCore = exports['qb-core']:GetCoreObject()
 
 local function PullRepo()
     CreateThread(function()
-        local repoPath = '/root/PursuitX/resources/[core]'
+        local repoPath = '/root/pursuit/resources/[core]'
         local gitFetchCmd = "cd " .. repoPath .. " && git fetch"
         local gitPullCmd = "cd " .. repoPath .. " && git pull"
     
