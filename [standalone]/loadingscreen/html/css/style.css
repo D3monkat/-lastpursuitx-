@@ -1,5 +1,5 @@
 body {
-	background-color: #ffffff00;
+	background-color: #000000;
 }
 
 .fullscreen-bg {
@@ -10,6 +10,7 @@ body {
   left: 0;
   overflow: hidden;
   z-index: -100;
+  filter: brightness(.9);
 }
 
 .fullscreen-bg__video {
