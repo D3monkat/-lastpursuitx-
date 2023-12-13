@@ -897,7 +897,7 @@ if Config.UseTarget then
             exports['qb-target']:AddBoxZone("checking" .. k, vector3(v.x, v.y, v.z), 3.5, 2, {
                 name = "checking" .. k,
                 heading = -72,
-                debugPoly = true,
+                debugPoly = false,
                 minZ = v.z - 2,
                 maxZ = v.z + 2,
             }, {
