@@ -3,7 +3,6 @@ game 'gta5'
 -- f
 description 'QB-SmallResources'
 version '1.4.0'
-loadscreen 'html/index.html'
 shared_scripts {    
 	'@ox_lib/init.lua',
     '@qb-core/shared/locale.lua',
