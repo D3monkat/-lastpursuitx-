@@ -957,6 +957,10 @@ weapon_colbaton 			 = {name = 'weapon_colbaton', 		 	  	label = 'PD Baton', 				
     eelfish 			     = {name = 'eelfish', 			        label = 'Eel',             weight = 4000,      type = 'item',      image = 'eelfish.png',          unique = false,     useable = true,     shouldClose = true,    combinable = nil,   description = 'An eel.. pretty useless.'},
     swordfish 			     = {name = 'swordfish', 			        label = 'Sword Fish',             weight = 3000,      type = 'item',      image = 'swordfish.png',          unique = false,     useable = true,     shouldClose = true,    combinable = nil,   description = 'This has a giant ass needle for a face.'},
     tunafish 			     = {name = 'tuna-fish', 			        label = 'Tuna',             weight = 2000,      type = 'item',      image = 'tuna-fish.png',          unique = false,     useable = true,     shouldClose = true,    combinable = nil,   description = 'Chicken of the sea, but fucking massive.'},
+
+    	-- mt-clothingbag
+	clothing_bag  	= {name = "clothing_bag", 			label = "Clothing Bag", 								weight = 100, 		type = "item", 			image = "clothing_bag.png", 				unique = false, 	useable = true, 	shouldClose = true,    combinable = nil,   description = ""},
+
     
     -- chest items
     chestkey 			     = {name = 'chestkey', 			        label = 'Key',             weight = 1000,      type = 'item',      image = 'chestkey.png',          unique = false,     useable = true,     shouldClose = true,    combinable = nil,   description = 'A gold key.'},
