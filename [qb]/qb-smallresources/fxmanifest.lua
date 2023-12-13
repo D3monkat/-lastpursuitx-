@@ -3,7 +3,6 @@ game 'gta5'
 -- f
 description 'QB-SmallResources'
 version '1.4.0'
-loadscreen 'html/index.html'
 shared_scripts {    
 	'@ox_lib/init.lua',
     '@qb-core/shared/locale.lua',
@@ -25,13 +24,7 @@ data_file 'FIVEM_LOVES_YOU_341B23A2F0E0F131' 'popgroups.ymt'
 files {
     'events.meta',
     'popgroups.ymt',
-    'relationships.dat',
-    'html/index.html',
-	'html/assets/logo.png',
-    'html/css/style.css',
-	'html/js/main.js',
-    'html/assets/bgvideo.mp4',
-	'html/assets/music.mp3'
+    'relationships.dat'
 }
 
 lua54 'yes'
