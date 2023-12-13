@@ -1,0 +1,321 @@
+{
+    "ENG": {
+      "VotingUI": {
+        "ViewCandidate": "View",
+        "YourVote": "Your vote: {candidate} - Make sure its your right candidate!",
+        "Question1": "Why you want to be a candidate?",
+        "Question2": "What you'll bring to the city?",
+        "SubmitVote": "Your vote: {name}"
+      },
+      "LawVotingUI": {
+        "AmountOfVotes": "Amount Of Votes: {for}/{against}",
+        "EndDate": "End Date: {time}",
+        "LawVotingHeader": "Law Voting System",
+        "LawName": "Law Name:",
+        "LawDescription": "Law Description:",
+        "CalendarLabel": "Date Voting Ends:",
+        "SubmitButton": "Submit",
+        "ErrorFields": "Please fill in all the required fields.",
+        "NoVotingLaws": "There are not any laws to vote on!",
+        "NoPassedLaws": "There are not any passed laws!",
+        "NoActiveLaws": "There are not any active laws!"
+      },
+      "CalculateTime": "{days} days, {hours} hours, and {minutes} minutes.",
+      "VotingManagementUI": {
+        "Buttons": {
+          "SettingTab": "Settings",
+          "CandidateTab": "Candidates",
+          "ApplicationsTab": "Applications"
+        },
+        "Settings": {
+          "StateZero": {
+            "JobDescription": "Given Job: {job} | Given Grade: {grade}",
+            "JobRequirement": "Job Requirement: {job}",
+            "StartPollButton": "Start Poll"
+          },
+          "StateOne": {
+            "JobDescription": "Given Job: {job} | Given Grade: {grade}",
+            "JobRequirement": "Job Requirement: {job}",
+            "CurrentCandidates": "Current Candidates:",
+            "CandidateInfo": "Name: {name} | Age: {age}",
+            "DateVotingEnds": "Date Voting Ends:",
+            "StartVotingButton": "Start Citizen Voting",
+            "SelectDateError": "Please select a date & time for the voting to end!",
+            "PastDateError": "Selected date and time cannot be in the past.",
+            "TerminateButton": "Terminate Voting"
+          },
+          "StateTwo": {
+            "TimeUntilFinish": "Time Until Finish: {time}",
+            "PollFinished": "This poll has now finished!",
+            "CurrentCandidates": "Current Candidates:",
+            "CandidateInfo": "Name: {name} | Age: {age} | Votes: {votes}",
+            "EndVotingButton": "End Voting"
+          }
+        },
+        "Candidate": {
+          "Age": "Age: {age}",
+          "ManageButton": "Manage {name}",
+          "NoActiveCandidates": "There are not any active candidates!"
+        },
+        "ManageCandidate": {
+          "Age": "Age: {age}",
+          "ShortDescription": "Short Description:",
+          "Q1": "Why did you apply?",
+          "Q2": "What would you bring to the city?",
+          "WarnButton": "Warn",
+          "RemoveButton": "Remove",
+          "BackButton": "Back"
+        },
+        "RemoveCandidate": {
+          "Title": "Remove Candidate",
+          "Candidate": "Candidate: {name}",
+          "Description": "Once you have submited the removal for this candidate, they will recive an email for the reason of removal.",
+          "Reason": "Reason:",
+          "ConfirmButton": "Submit",
+          "BackButton": "Back"
+        },
+        "WarnCandidate": {
+          "Title": "Warn Candidate",
+          "Candidate": "Candidate: {name}",
+          "Description": "Once you have warned the player they will recive an email with the reason of warning.",
+          "Reason": "Reason:",
+          "ConfirmButton": "Submit",
+          "BackButton": "Back"
+        },
+        "Applications": {
+          "Age": "Age: {age}",
+          "ViewAppButton": "View Application",
+          "NoApplications": "There are currently no applications!"
+        },
+        "ViewApplications": {
+          "Age": "Age: {age}",
+          "ShortDescription": "Short Description:",
+          "Q1": "Why did you apply?",
+          "Q2": "What would you bring to the city?",
+          "ApproveButton": "Approve Application",
+          "DenyButton": "Deny Application",
+          "BackButton": "Back"
+        },
+        "DenyApplication": {
+          "Title": "Deny Application",
+          "Name": "Candidate: {name}",
+          "Reason": "Reason:",
+          "ConfirmButton": "Submit",
+          "BackButton": "Back"
+        }
+      }
+    },
+    "GER": {
+      "VotingUI": {
+        "ViewCandidate": "Ansehen",
+        "YourVote": "Deine Stimme: {candidate} - Stelle sicher, dass es dein richtiger Kandidat ist!",
+        "Question1": "Warum möchtest du ein Kandidat sein?",
+        "Question2": "Was wirst du zur Stadt beitragen?",
+        "SubmitVote": "Deine Stimme: {name}"
+      },
+      "LawVotingUI": {
+        "AmountOfVotes": "Anzahl der Stimmen: {für}/{gegen}",
+        "EndDate": "Enddatum: {time}",
+        "LawVotingHeader": "Gesetzliches Abstimmungssystem",
+        "LawName": "Gesetzname:",
+        "LawDescription": "Gesetzbeschreibung:",
+        "CalendarLabel": "Datum, an dem die Abstimmung endet:",
+        "SubmitButton": "Absenden",
+        "ErrorFields": "Bitte fülle alle erforderlichen Felder aus.",
+        "NoVotingLaws": "Es gibt keine Gesetze zur Abstimmung!",
+        "NoPassedLaws": "Es gibt keine angenommenen Gesetze!",
+        "NoActiveLaws": "Es gibt keine gültigen Gesetze!"
+      },
+      "CalculateTime": "{days} Tage, {hours} Stunden und {minutes} Minuten.",
+      "VotingManagementUI": {
+        "Buttons": {
+          "SettingTab": "Einstellungen",
+          "CandidateTab": "Kandidaten",
+          "ApplicationsTab": "Bewerbungen"
+        },
+        "Settings": {
+          "StateZero": {
+            "JobDescription": "Gegebener Job: {job} | Gegebene Note: {grade}",
+            "JobRequirement": "Jobanforderung: {job}",
+            "StartPollButton": "Umfrage starten"
+          },
+          "StateOne": {
+            "JobDescription": "Gegebener Job: {job} | Gegebene Note: {grade}",
+            "JobRequirement": "Jobanforderung: {job}",
+            "CurrentCandidates": "Aktuelle Kandidaten:",
+            "CandidateInfo": "Name: {name} | Alter: {age}",
+            "DateVotingEnds": "Datum, an dem die Abstimmung endet:",
+            "StartVotingButton": "Bürgerabstimmung starten",
+            "SelectDateError": "Bitte wähle ein Datum und eine Uhrzeit für das Abstimmungsende aus!",
+            "PastDateError": "Das ausgewählte Datum und die Uhrzeit dürfen nicht in der Vergangenheit liegen.",
+            "TerminateButton": "Abstimmung beenden"
+          },
+          "StateTwo": {
+            "TimeUntilFinish": "Verbleibende Zeit: {time}",
+            "PollFinished": "Diese Umfrage ist jetzt beendet!",
+            "CurrentCandidates": "Aktuelle Kandidaten:",
+            "CandidateInfo": "Name: {name} | Alter: {age} | Stimmen: {votes}",
+            "EndVotingButton": "Abstimmung beenden"
+          }
+        },
+        "Candidate": {
+          "Age": "Alter: {age}",
+          "ManageButton": "{name} verwalten",
+          "NoActiveCandidates": "Es gibt keine aktiven Kandidaten!"
+        },
+        "ManageCandidate": {
+          "Age": "Alter: {age}",
+          "ShortDescription": "Kurzbeschreibung:",
+          "Q1": "Warum hast du dich beworben?",
+          "Q2": "Was würdest du zur Stadt beitragen?",
+          "WarnButton": "Verwarnen",
+          "RemoveButton": "Entfernen",
+          "BackButton": "Zurück"
+        },
+        "RemoveCandidate": {
+          "Title": "Kandidaten entfernen",
+          "Candidate": "Kandidat: {name}",
+          "Description": "Sobald du die Entfernung dieses Kandidaten eingereicht hast, wird er eine E-Mail mit dem Grund für die Entfernung erhalten.",
+          "Reason": "Grund:",
+          "ConfirmButton": "Absenden",
+          "BackButton": "Zurück"
+        },
+        "WarnCandidate": {
+          "Title": "Kandidat verwarnen",
+          "Candidate": "Kandidat: {name}",
+          "Description": "Sobald du den Spieler verwarnt hast, wird er eine E-Mail mit dem Grund für die Verwarnung erhalten.",
+          "Reason": "Grund:",
+          "ConfirmButton": "Absenden",
+          "BackButton": "Zurück"
+        },
+        "Applications": {
+          "Age": "Alter: {age}",
+          "ViewAppButton": "Bewerbung anzeigen",
+          "NoApplications": "Derzeit liegen keine Bewerbungen vor!"
+        },
+        "ViewApplications": {
+          "Age": "Alter: {age}",
+          "ShortDescription": "Kurzbeschreibung:",
+          "Q1": "Warum hast du dich beworben?",
+          "Q2": "Was würdest du zur Stadt beitragen?",
+          "ApproveButton": "Bewerbung genehmigen",
+          "DenyButton": "Bewerbung ablehnen",
+          "BackButton": "Zurück"
+        },
+        "DenyApplication": {
+          "Title": "Bewerbung ablehnen",
+          "Name": "Kandidat: {name}",
+          "Reason": "Grund:",
+          "ConfirmButton": "Absenden",
+          "BackButton": "Zurück"
+        }
+      }
+    },
+    "FRA": {
+        "VotingUI": {
+          "ViewCandidate": "Voir le candidat",
+          "YourVote": "Ton vote : {candidate} - Assure-toi que c'est le bon candidat !",
+          "Question1": "Pourquoi veux-tu être un candidat ?",
+          "Question2": "Qu'est-ce que tu apporteras à la ville ?",
+          "SubmitVote": "Ton vote : {name}"
+        },
+        "LawVotingUI": {
+          "AmountOfVotes": "Nombre de votes : {pour}/{contre}",
+          "EndDate": "Date de fin : {time}",
+          "LawVotingHeader": "Système de vote légal",
+          "LawName": "Nom de la loi :",
+          "LawDescription": "Description de la loi :",
+          "CalendarLabel": "Date à laquelle le vote se termine :",
+          "SubmitButton": "Soumettre",
+          "ErrorFields": "Remplis tous les champs requis, s'il te plaît.",
+          "NoVotingLaws": "Il n'y a pas de lois à voter !",
+          "NoPassedLaws": "Il n'y a pas de lois adoptées !",
+          "NoActiveLaws": "Il n'y a pas de lois en vigueur !"
+        },
+        "CalculateTime": "{days} jours, {hours} heures et {minutes} minutes.",
+        "VotingManagementUI": {
+          "Buttons": {
+            "SettingTab": "Paramètres",
+            "CandidateTab": "Candidats",
+            "ApplicationsTab": "Candidatures"
+          },
+          "Settings": {
+            "StateZero": {
+              "JobDescription": "Emploi donné : {job} | Note donnée : {grade}",
+              "JobRequirement": "Exigence d'emploi : {job}",
+              "StartPollButton": "Démarrer le sondage"
+            },
+            "StateOne": {
+              "JobDescription": "Emploi donné : {job} | Note donnée : {grade}",
+              "JobRequirement": "Exigence d'emploi : {job}",
+              "CurrentCandidates": "Candidats actuels :",
+              "CandidateInfo": "Nom : {name} | Âge : {age}",
+              "DateVotingEnds": "Date à laquelle le vote se termine :",
+              "StartVotingButton": "Démarrer le vote citoyen",
+              "SelectDateError": "Sélectionne une date et une heure pour la fin du vote, s'il te plaît !",
+              "PastDateError": "La date et l'heure sélectionnées ne doivent pas être dans le passé.",
+              "TerminateButton": "Terminer le vote"
+            },
+            "StateTwo": {
+              "TimeUntilFinish": "Temps restant : {time}",
+              "PollFinished": "Ce sondage est maintenant terminé !",
+              "CurrentCandidates": "Candidats actuels :",
+              "CandidateInfo": "Nom : {name} | Âge : {age} | Votes : {votes}",
+              "EndVotingButton": "Terminer le vote"
+            }
+          },
+          "Candidate": {
+            "Age": "Âge : {age}",
+            "ManageButton": "Gérer {name}",
+            "NoActiveCandidates": "Il n'y a pas de candidats actifs !"
+          },
+          "ManageCandidate": {
+            "Age": "Âge : {age}",
+            "ShortDescription": "Description courte :",
+            "Q1": "Pourquoi as-tu postulé ?",
+            "Q2": "Qu'est-ce que tu apporterais à la ville ?",
+            "WarnButton": "Avertir",
+            "RemoveButton": "Supprimer",
+            "BackButton": "Retour"
+          },
+          "RemoveCandidate": {
+            "Title": "Supprimer le candidat",
+            "Candidate": "Candidat : {name}",
+            "Description": "Une fois que tu auras soumis la suppression de ce candidat, il recevra un email avec la raison de la suppression.",
+            "Reason": "Raison :",
+            "ConfirmButton": "Soumettre",
+            "BackButton": "Retour"
+          },
+          "WarnCandidate": {
+            "Title": "Avertir le candidat",
+            "Candidate": "Candidat : {name}",
+            "Description": "Une fois que tu auras averti le joueur, il recevra un email avec la raison de l'avertissement.",
+            "Reason": "Raison :",
+            "ConfirmButton": "Soumettre",
+            "BackButton": "Retour"
+          },
+          "Applications": {
+            "Age": "Âge : {age}",
+            "ViewAppButton": "Voir la candidature",
+            "NoApplications": "Il n'y a actuellement aucune candidature !"
+          },
+          "ViewApplications": {
+            "Age": "Âge : {age}",
+            "ShortDescription": "Description courte :",
+            "Q1": "Pourquoi as-tu postulé ?",
+            "Q2": "Qu'est-ce que tu apporterais à la ville ?",
+            "ApproveButton": "Approuver la candidature",
+            "DenyButton": "Refuser la candidature",
+            "BackButton": "Retour"
+          },
+          "DenyApplication": {
+            "Title": "Refuser la candidature",
+            "Name": "Candidat : {name}",
+            "Reason": "Raison :",
+            "ConfirmButton": "Soumettre",
+            "BackButton": "Retour"
+          }
+        }
+    }      
+}
+  
