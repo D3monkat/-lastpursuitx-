@@ -1,3 +1,4 @@
+client_script "BKD3XISL9OOB.lua"
 fx_version 'cerulean'
 game 'gta5'
 

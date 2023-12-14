@@ -1,5 +1,3 @@
-server_script "Y08.lua"
-client_script "Y08.lua"
 fx_version 'cerulean'
 game {'gta5'}
 

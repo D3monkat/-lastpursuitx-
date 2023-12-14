@@ -5107,4 +5107,2281 @@ return {
 			image = "painkillers.png",
 		}
 	},
+
+	["bread"] = {
+		label = "Bread",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "bread.png",
+		}
+	},
+
+	["beefquesadilla"] = {
+		label = "Beef Quesadilla",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "beefquesadilla.png",
+		}
+	},
+
+	["sapphire_earring"] = {
+		label = "Sapphire Earrings",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "sapphire_earring.png",
+		}
+	},
+
+	["liquidmix"] = {
+		label = "Liquid Chem Mix",
+		weight = 1500,
+		stack = true,
+		close = false,
+		description = "Chemicals, handle with care!",
+		client = {
+			image = "liquidmix.png",
+		}
+	},
+
+	["aquamarine_unshapped"] = {
+		label = "Aquamarine Unshapped",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "aquamarine unshapped",
+		client = {
+			image = "aquamarine_unshapped.png",
+		}
+	},
+
+	["recyclablematerial"] = {
+		label = "Recycle Box",
+		weight = 100,
+		stack = true,
+		close = false,
+		description = "A box of Recyclable Materials",
+		client = {
+			image = "recyclablematerial.png",
+		}
+	},
+
+	["steaktaco"] = {
+		label = "Steak Taco",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "steaktaco.png",
+		}
+	},
+
+	["silveringot"] = {
+		label = "Silver Ingot",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "silveringot.png",
+		}
+	},
+
+	["steakquesadilla"] = {
+		label = "Steak Quesadilla",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "steakquesadilla.png",
+		}
+	},
+
+	["stripedbass"] = {
+		label = "Striped Bass",
+		weight = 1000,
+		stack = true,
+		close = true,
+		description = "A Striped Bass",
+		client = {
+			image = "stripedbass.png",
+		}
+	},
+
+	["killerwhale"] = {
+		label = "Killer Whale",
+		weight = 7000,
+		stack = true,
+		close = true,
+		description = "This is a whole ass Shamu.",
+		client = {
+			image = "killerwhalemeat.png",
+		}
+	},
+
+	["eelfish"] = {
+		label = "Eel",
+		weight = 4000,
+		stack = true,
+		close = true,
+		description = "An eel.. pretty useless.",
+		client = {
+			image = "eelfish.png",
+		}
+	},
+
+	["gholfish"] = {
+		label = "Ghol",
+		weight = 1000,
+		stack = true,
+		close = true,
+		description = "A big Ghol",
+		client = {
+			image = "ghol-fish.png",
+		}
+	},
+
+	["steakburrito"] = {
+		label = "Steak Burrito",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "steakburrito.png",
+		}
+	},
+
+	["emerald_ring"] = {
+		label = "Emerald Ring",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "emerald_ring.png",
+		}
+	},
+
+	["uwugreenrareplush"] = {
+		label = "Rare Green Plush",
+		weight = 200,
+		stack = true,
+		close = true,
+		description = "A rare green UwU plush",
+		client = {
+			image = "uwugreenrareplush.png",
+		}
+	},
+
+	["unshapped_sulfur"] = {
+		label = "Ushapped Sulfur",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "unshapped_sulfur",
+		client = {
+			image = "unshapped_sulfur.png",
+		}
+	},
+
+	["beeftaco"] = {
+		label = "Beef Taco",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "beeftaco.png",
+		}
+	},
+
+	["wet_weed"] = {
+		label = "Moist Weed",
+		weight = 3000,
+		stack = true,
+		close = false,
+		description = "Wet weed that needs to be treated!",
+		client = {
+			image = "wet_weed.png",
+		}
+	},
+
+	["dicedtomatoes"] = {
+		label = "Diced Tomatoes",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "dicedtomatoes.png",
+		}
+	},
+
+	["diamond_earring"] = {
+		label = "Diamond Earrings",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "diamond_earring.png",
+		}
+	},
+
+	["weedplant_seedm"] = {
+		label = "Male Weed Seed",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "Male Weed Seed",
+		client = {
+			image = "weedplant_seed.png",
+		}
+	},
+
+	["bauxite"] = {
+		label = "Bauxite",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "bauxite",
+		client = {
+			image = "bauxite.png",
+		}
+	},
+
+	["beans"] = {
+		label = "Beans",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "beans.png",
+		}
+	},
+
+	["diamond_earring_silver"] = {
+		label = "Diamond Earrings Silver",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "diamond_earring_silver.png",
+		}
+	},
+
+	["chemicalvapor"] = {
+		label = "Chemical Vapors",
+		weight = 1500,
+		stack = true,
+		close = false,
+		description = "High Pressure Chemical Vapors, Explosive!",
+		client = {
+			image = "chemicalvapor.png",
+		}
+	},
+
+	["swordfish"] = {
+		label = "Sword Fish",
+		weight = 3000,
+		stack = true,
+		close = true,
+		description = "This has a giant ass needle for a face.",
+		client = {
+			image = "swordfish.png",
+		}
+	},
+
+	["gold_bar"] = {
+		label = "Gold Bar",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "Gold Bar made from melted Gold ore",
+		client = {
+			image = "gold_bar.png",
+		}
+	},
+
+	["uncut_diamond"] = {
+		label = "Uncut Diamond",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "uncut_diamond",
+		client = {
+			image = "uncut_diamond.png",
+		}
+	},
+
+	["coke"] = {
+		label = "Cocaine",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "Processed cocaine",
+		client = {
+			image = "coke.png",
+		}
+	},
+
+	["uwugreenplush"] = {
+		label = "Green Plush",
+		weight = 200,
+		stack = true,
+		close = true,
+		description = "A green UwU plush",
+		client = {
+			image = "uwugreenplush.png",
+		}
+	},
+
+	["thionyl_chloride"] = {
+		label = "Thionyl Chloride",
+		weight = 1500,
+		stack = true,
+		close = false,
+		description = "Chemicals, handle with care!",
+		client = {
+			image = "thionyl_chloride.png",
+		}
+	},
+
+	["uwupurpleplush"] = {
+		label = "Purple Plush",
+		weight = 200,
+		stack = true,
+		close = true,
+		description = "A purple UwU plush",
+		client = {
+			image = "uwupurpleplush.png",
+		}
+	},
+
+	["prisonrock"] = {
+		label = "Coarse Rock",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "A very big coarse rock",
+		client = {
+			image = "prisonrock.png",
+		}
+	},
+
+	["sapphire_necklace_silver"] = {
+		label = "Sapphire Necklace Silver",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "sapphire_necklace_silver.png",
+		}
+	},
+
+	["bottlemap"] = {
+		label = "Treasure Bottle",
+		weight = 1000,
+		stack = false,
+		close = true,
+		description = "looks very old.",
+		client = {
+			image = "bottlemap.png",
+		}
+	},
+
+	["unshapped_copper"] = {
+		label = "Unshapped Copper",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "unshapped copper",
+		client = {
+			image = "unshapped_copper.png",
+		}
+	},
+
+	["tostadashell"] = {
+		label = "Tostada Shell",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "tostadashell.png",
+		}
+	},
+
+	["tuna-fish"] = {
+		label = "Tuna",
+		weight = 2000,
+		stack = true,
+		close = true,
+		description = "Chicken of the sea, but fucking massive.",
+		client = {
+			image = "tuna-fish.png",
+		}
+	},
+
+	["unwashed_iron"] = {
+		label = "Unwashed Iron",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "unwashed iron",
+		client = {
+			image = "unwashed_iron.png",
+		}
+	},
+
+	["porktaco"] = {
+		label = "Pork Taco",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "porktaco.png",
+		}
+	},
+
+	["prisonwine_fermented"] = {
+		label = "Pruno",
+		weight = 1000,
+		stack = true,
+		close = true,
+		description = "This should give you a good buzz",
+		client = {
+			image = "prisonwine_fermented.png",
+		}
+	},
+
+	["unwashed_sulfur"] = {
+		label = "Unwashed Sulfur",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "unwashed_sulfur",
+		client = {
+			image = "unwashed_sulfur.png",
+		}
+	},
+
+	["unshapped_tin"] = {
+		label = "Unshapped Tin",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "unshapped tin",
+		client = {
+			image = "unshapped_tin.png",
+		}
+	},
+
+	["sapphire_ring"] = {
+		label = "Sapphire Ring",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "sapphire_ring.png",
+		}
+	},
+
+	["silverchain"] = {
+		label = "Silver Chain",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "silverchain.png",
+		}
+	},
+
+	["chickenburrito"] = {
+		label = "Chicken Burrito",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "chickenburrito.png",
+		}
+	},
+
+	["chickenquesadilla"] = {
+		label = "Chicken Quesadilla",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "chickenquesadilla.png",
+		}
+	},
+
+	["treasuremap"] = {
+		label = "Treasure Map",
+		weight = 500,
+		stack = false,
+		close = true,
+		description = "This could lead somewhere...",
+		client = {
+			image = "treasuremap.png",
+		}
+	},
+
+	["miningdrill"] = {
+		label = "Mining Drill",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "miningdrill.png",
+		}
+	},
+
+	["tigershark"] = {
+		label = "Tigershark",
+		weight = 7000,
+		stack = true,
+		close = true,
+		description = "There are bigger sharks but this is still impressive..",
+		client = {
+			image = "tigershark.png",
+		}
+	},
+
+	["chicken"] = {
+		label = "Chicken",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "chicken.png",
+		}
+	},
+
+	["emerald_earring"] = {
+		label = "Emerald Earrings",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "emerald_earring.png",
+		}
+	},
+
+	["emerald_necklace_silver"] = {
+		label = "Emerald Necklace Silver",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "emerald_necklace_silver.png",
+		}
+	},
+
+	["cookedsteak"] = {
+		label = "Cooked Steak",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "cookedsteak.png",
+		}
+	},
+
+	["unshapped_bauxite"] = {
+		label = "Unshapped Bauxite",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "unshapped_bauxite",
+		client = {
+			image = "unshapped_bauxite.png",
+		}
+	},
+
+	["chickentostada"] = {
+		label = "Chicken Tostada",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "chickentostada.png",
+		}
+	},
+
+	["catfish"] = {
+		label = "Catfish",
+		weight = 3000,
+		stack = true,
+		close = true,
+		description = "A Catfish",
+		client = {
+			image = "catfish.png",
+		}
+	},
+
+	["silverore"] = {
+		label = "Silver Ore",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "Silver Ore",
+		client = {
+			image = "silverore.png",
+		}
+	},
+
+	["weedplant_package"] = {
+		label = "Suspicious Package",
+		weight = 10000,
+		stack = false,
+		close = false,
+		description = "Suspicious Package",
+		client = {
+			image = "weedplant_package.png",
+		}
+	},
+
+	["cigs"] = {
+		label = "cigs",
+		weight = 0,
+		stack = true,
+		close = true,
+		description = "You old fart...",
+		client = {
+			image = "cigs.png",
+		}
+	},
+
+	["beeftostada"] = {
+		label = "Beef Tostada",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "beeftostada.png",
+		}
+	},
+
+	["methtray"] = {
+		label = "Meth Tray",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "make some meth",
+		client = {
+			image = "meth_tray.png",
+		}
+	},
+
+	["aquamarine"] = {
+		label = "Aquamarine",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "aquamarine",
+		client = {
+			image = "aquamarine.png",
+		}
+	},
+
+	["ironore"] = {
+		label = "Iron Ore",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "Iron, a base ore.",
+		client = {
+			image = "ironore.png",
+		}
+	},
+
+	["unwashed_lead"] = {
+		label = "Unwashed Lead",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "unwashed_lead",
+		client = {
+			image = "unwashed_lead.png",
+		}
+	},
+
+	["ruby_earring_silver"] = {
+		label = "Ruby Earrings Silver",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "ruby_earring_silver.png",
+		}
+	},
+
+	["finescale"] = {
+		label = "Fine Scale",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "Scale Used for Fine Powders and Materials.",
+		client = {
+			image = "finescale.png",
+		}
+	},
+
+	["avocado"] = {
+		label = "Avocado",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "avocado.png",
+		}
+	},
+
+	["pro-reel"] = {
+		label = "Pro Fishing Reel",
+		weight = 1000,
+		stack = false,
+		close = true,
+		description = "A professional fishing reel.",
+		client = {
+			image = "pro-reel.png",
+		}
+	},
+
+	["captainskull"] = {
+		label = "Captain Skull",
+		weight = 4000,
+		stack = true,
+		close = false,
+		description = "An old skull of a captain!",
+		client = {
+			image = "captainskull.png",
+		}
+	},
+
+	["goldfish"] = {
+		label = "Goldfish",
+		weight = 2000,
+		stack = true,
+		close = true,
+		description = "A Goldfish... I wonder how he got there...",
+		client = {
+			image = "goldfish.png",
+		}
+	},
+
+	["steaktorta"] = {
+		label = "Steak Torta",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "steaktorta.png",
+		}
+	},
+
+	["goldpan"] = {
+		label = "Gold Panning Tray",
+		weight = 10,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "goldpan.png",
+		}
+	},
+
+	["shreddedlettuce"] = {
+		label = "Shredded Lettuce",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "shreddedlettuce.png",
+		}
+	},
+
+	["can"] = {
+		label = "Empty Can",
+		weight = 10,
+		stack = true,
+		close = false,
+		description = "An empty can, good for recycling",
+		client = {
+			image = "can.png",
+		}
+	},
+
+	["copperore"] = {
+		label = "Copper Ore",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "Copper, a base ore.",
+		client = {
+			image = "copperore.png",
+		}
+	},
+
+	["mininglaser"] = {
+		label = "Mining Laser",
+		weight = 900,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "mininglaser.png",
+		}
+	},
+
+	["unwashed_copper"] = {
+		label = "Unwashed Copper",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "unwashed copper",
+		client = {
+			image = "unwashed_copper.png",
+		}
+	},
+
+	["prisonjuice"] = {
+		label = "Orange Juice",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "Regular Orange Juice",
+		client = {
+			image = "prisonjuice.png",
+		}
+	},
+
+	["prisonspoon"] = {
+		label = "Spoon",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "Cafeteria spoon",
+		client = {
+			image = "prisonspoon.png",
+		}
+	},
+
+	["weedplant_packedweed"] = {
+		label = "Packed Weed",
+		weight = 100,
+		stack = false,
+		close = false,
+		description = "Weed ready for sale",
+		client = {
+			image = "weedplant_weed.png",
+		}
+	},
+
+	["silverearring"] = {
+		label = "Silver Earrings",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "silver_earring.png",
+		}
+	},
+
+	["refriedbeans"] = {
+		label = "Refried Beans",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "refriedbeans.png",
+		}
+	},
+
+	["ruby_necklace_silver"] = {
+		label = "Ruby Necklace Silver",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "ruby_necklace_silver.png",
+		}
+	},
+
+	["fishingrod2"] = {
+		label = "Skilled Fishing Rod",
+		weight = 5000,
+		stack = false,
+		close = true,
+		description = "This rod is better than most, but not the best.",
+		client = {
+			image = "betterrod.png",
+		}
+	},
+
+	["porktostada"] = {
+		label = "Pork Tostada",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "porktostada.png",
+		}
+	},
+
+	["prisonfarmseeds"] = {
+		label = "Plant Seeds",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "Seeds, water, nutrition and love make happy plants",
+		client = {
+			image = "prisonfarmseeds.png",
+		}
+	},
+
+	["iron_bar"] = {
+		label = "Iron Bar",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "Iron Bar made from melted Iron ore",
+		client = {
+			image = "iron_bar.png",
+		}
+	},
+
+	["emerald_earring_silver"] = {
+		label = "Emerald Earrings Silver",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "emerald_earring_silver.png",
+		}
+	},
+
+	["diamond_ring_silver"] = {
+		label = "Diamond Ring Silver",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "diamond_ring_silver.png",
+		}
+	},
+
+	["unshapped_iron"] = {
+		label = "Unshapped Iron",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "unshapped iron",
+		client = {
+			image = "unshapped_iron.png",
+		}
+	},
+
+	["ruby_unshapped"] = {
+		label = "Ruby Unshapped",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "ruby unshapped",
+		client = {
+			image = "ruby_unshapped.png",
+		}
+	},
+
+	["unwashed_stone"] = {
+		label = "Unwashed Stone",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "unwashed stone",
+		client = {
+			image = "unwashed_stone.png",
+		}
+	},
+
+	["ruby"] = {
+		label = "Ruby",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "ruby",
+		client = {
+			image = "ruby.png",
+		}
+	},
+
+	["marijuana"] = {
+		label = "Marijuana",
+		weight = 500,
+		stack = true,
+		close = true,
+		description = "Some fine smelling buds.",
+		client = {
+			image = "marijuana.png",
+		}
+	},
+
+	["shreddedcheese"] = {
+		label = "Shredded Cheese",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "shreddedcheese.png",
+		}
+	},
+
+	["sulfur_bar"] = {
+		label = "Sulfur",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "sulfurr",
+		client = {
+			image = "sulfur_bar.png",
+		}
+	},
+
+	["cookedchicken"] = {
+		label = "Cooked Chicken",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "cookedchicken.png",
+		}
+	},
+
+	["unshapped_gold"] = {
+		label = "Unshapped Gold",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "unshapped gold",
+		client = {
+			image = "unshapped_gold.png",
+		}
+	},
+
+	["sulfuric_acid"] = {
+		label = "Sulfuric Acid",
+		weight = 1500,
+		stack = true,
+		close = false,
+		description = "Chemicals, handle with care!",
+		client = {
+			image = "sulfuric_acid.png",
+		}
+	},
+
+	["chemicals"] = {
+		label = "Chemicals",
+		weight = 1500,
+		stack = true,
+		close = false,
+		description = "Chemicals, handle with care...",
+		client = {
+			image = "chemicals.png",
+		}
+	},
+
+	["steak"] = {
+		label = "Steak",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "steak.png",
+		}
+	},
+
+	["c4"] = {
+		label = "C4",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "C4 For mining",
+		client = {
+			image = "weapon_stickybomb.png",
+		}
+	},
+
+	["goldore"] = {
+		label = "Gold Ore",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "Gold Ore",
+		client = {
+			image = "goldore.png",
+		}
+	},
+
+	["bluefish"] = {
+		label = "Bluefish",
+		weight = 1000,
+		stack = true,
+		close = true,
+		description = "One fish two fish redfish...",
+		client = {
+			image = "bluefish.png",
+		}
+	},
+
+	["weedplant_seedf"] = {
+		label = "Female Weed Seed",
+		weight = 0,
+		stack = true,
+		close = true,
+		description = "Female Weed Seed",
+		client = {
+			image = "weedplant_seed.png",
+		}
+	},
+
+	["lsd"] = {
+		label = "LSD",
+		weight = 500,
+		stack = true,
+		close = false,
+		description = "Lets get this party started!",
+		client = {
+			image = "lsd.png",
+		}
+	},
+
+	["rainbowtrout"] = {
+		label = "Rainbow Trout",
+		weight = 1000,
+		stack = true,
+		close = true,
+		description = "A colorful Trout",
+		client = {
+			image = "rainbow-trout.png",
+		}
+	},
+
+	["cookedpork"] = {
+		label = "Cooked Pork",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "cookedpork.png",
+		}
+	},
+
+	["diamond_necklace"] = {
+		label = "Diamond Necklace",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "diamond_necklace.png",
+		}
+	},
+
+	["tacoshell"] = {
+		label = "Taco Shell",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "tacoshell.png",
+		}
+	},
+
+	["redfish"] = {
+		label = "Redfish",
+		weight = 2000,
+		stack = true,
+		close = true,
+		description = "One fish two fish...",
+		client = {
+			image = "redfish.png",
+		}
+	},
+
+	["unshapped_lead"] = {
+		label = "Unshapped Lead",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "Unshapped Lead",
+		client = {
+			image = "unshapped_lead.png",
+		}
+	},
+
+	["stone"] = {
+		label = "Stone",
+		weight = 2000,
+		stack = true,
+		close = false,
+		description = "Stone woo",
+		client = {
+			image = "stone.png",
+		}
+	},
+
+	["groundbeef"] = {
+		label = "Ground Beef",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "groundbeef.png",
+		}
+	},
+
+	["treasurechest"] = {
+		label = "Treasure Chest",
+		weight = 5000,
+		stack = false,
+		close = true,
+		description = "Ye, Treasure mighty.",
+		client = {
+			image = "treasurechest.png",
+		}
+	},
+
+	["greenberyl_unshapped"] = {
+		label = "Greenberyl Unshapped",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "greenberyl unshapped",
+		client = {
+			image = "greenberyl_unshapped.png",
+		}
+	},
+
+	["uncut_sapphire"] = {
+		label = "Uncut Sapphire",
+		weight = 100,
+		stack = true,
+		close = false,
+		description = "A rough Sapphire",
+		client = {
+			image = "uncut_sapphire.png",
+		}
+	},
+
+	["prisonmeth"] = {
+		label = "Crank",
+		weight = 1000,
+		stack = true,
+		close = true,
+		description = "Prison made meth of low quality.",
+		client = {
+			image = "prisonmeth.png",
+		}
+	},
+
+	["ruby_earring"] = {
+		label = "Ruby Earrings",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "ruby_earring.png",
+		}
+	},
+
+	["stingraymeat"] = {
+		label = "Stingray",
+		weight = 2000,
+		stack = true,
+		close = true,
+		description = "Stingray Meat",
+		client = {
+			image = "stingraymeat.png",
+		}
+	},
+
+	["uncut_ruby"] = {
+		label = "Uncut Ruby",
+		weight = 100,
+		stack = true,
+		close = false,
+		description = "A rough Ruby",
+		client = {
+			image = "uncut_ruby.png",
+		}
+	},
+
+	["empty_watering_can"] = {
+		label = "Empty Watering Can",
+		weight = 500,
+		stack = false,
+		close = true,
+		description = "Empty watering can",
+		client = {
+			image = "watering_can.png",
+		}
+	},
+
+	["unwashed_gold"] = {
+		label = "Unwashed Gold",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "unwashed gold",
+		client = {
+			image = "unwashed_gold.png",
+		}
+	},
+
+	["largemouthbass"] = {
+		label = "Largemouth Bass",
+		weight = 3000,
+		stack = true,
+		close = true,
+		description = "Fish for Fishing.",
+		client = {
+			image = "largemouthbass.png",
+		}
+	},
+
+	["uwupinkrareplush"] = {
+		label = "Rare Pink Plush",
+		weight = 200,
+		stack = true,
+		close = true,
+		description = "A rare pink UwU plush",
+		client = {
+			image = "uwupinkrareplush.png",
+		}
+	},
+
+	["unwashed_bauxite"] = {
+		label = "Unwashed Bauxite",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "unwashed_bauxite",
+		client = {
+			image = "unwashed_bauxite.png",
+		}
+	},
+
+	["diamond_necklace_silver"] = {
+		label = "Diamond Necklace Silver",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "diamond_necklace_silver.png",
+		}
+	},
+
+	["unshapped_coal"] = {
+		label = "Unshapped Coal",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "unshapped_coal",
+		client = {
+			image = "unshapped_coal.png",
+		}
+	},
+
+	["sapphire"] = {
+		label = "Sapphire",
+		weight = 2000,
+		stack = true,
+		close = false,
+		description = "Gems are truly, truly, truly outrageous.",
+		client = {
+			image = "sapphire.png",
+		}
+	},
+
+	["full_watering_can"] = {
+		label = "Full Watering Can",
+		weight = 1000,
+		stack = false,
+		close = false,
+		description = "Watering can filled with water for watering plants",
+		client = {
+			image = "watering_can.png",
+		}
+	},
+
+	["chestkey"] = {
+		label = "Key",
+		weight = 1000,
+		stack = true,
+		close = true,
+		description = "A gold key.",
+		client = {
+			image = "chestkey.png",
+		}
+	},
+
+	["coal"] = {
+		label = "Coal",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "coal",
+		client = {
+			image = "coal.png",
+		}
+	},
+
+	["drillbit"] = {
+		label = "Drill Bit",
+		weight = 10,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "drillbit.png",
+		}
+	},
+
+	["yellow-diamond"] = {
+		label = "Canary Diamond",
+		weight = 3000,
+		stack = true,
+		close = true,
+		description = "Yellow is truly, truly, truly gorgeous..",
+		client = {
+			image = "yellow-diamond.png",
+		}
+	},
+
+	["poppyresin"] = {
+		label = "Poppy resin",
+		weight = 2000,
+		stack = true,
+		close = false,
+		description = "It sticks to your fingers when you handle it.",
+		client = {
+			image = "poppyresin.png",
+		}
+	},
+
+	["trimming_scissors"] = {
+		label = "Trimming Scissors",
+		weight = 1500,
+		stack = true,
+		close = false,
+		description = "Very Sharp Trimming Scissors",
+		client = {
+			image = "trimming_scissors.png",
+		}
+	},
+
+	["cheesequesadilla"] = {
+		label = "Cheese Quesadilla",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "cheesequesadilla.png",
+		}
+	},
+
+	["peppers"] = {
+		label = "Peppers",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "peppers.png",
+		}
+	},
+
+	["emerald_ring_silver"] = {
+		label = "Emerald Ring Silver",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "emerald_ring_silver.png",
+		}
+	},
+
+	["greenberyl"] = {
+		label = "Green Beryl",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "greenberyl",
+		client = {
+			image = "greenberyl.png",
+		}
+	},
+
+	["prisonbag"] = {
+		label = "Plastic Bag",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "A plastic bag",
+		client = {
+			image = "prisonbag.png",
+		}
+	},
+
+	["methkey"] = {
+		label = "Key A",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "Random Key, with \"Walter\" Engraved on the Back...",
+		client = {
+			image = "keya.png",
+		}
+	},
+
+	["cookedbeef"] = {
+		label = "Cooked Beef",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "cookedbeef.png",
+		}
+	},
+
+	["salmon"] = {
+		label = "Salmon",
+		weight = 2000,
+		stack = true,
+		close = true,
+		description = "A Salmon Fish",
+		client = {
+			image = "salmon.png",
+		}
+	},
+
+	["ruby_ring_silver"] = {
+		label = "Ruby Ring Silver",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "ruby_ring_silver.png",
+		}
+	},
+
+	["sapphire_ring_silver"] = {
+		label = "Sapphire Ring Silver",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "sapphire_ring_silver.png",
+		}
+	},
+
+	["uwublueplush"] = {
+		label = "Blue Plush",
+		weight = 200,
+		stack = true,
+		close = true,
+		description = "A blue UwU plush",
+		client = {
+			image = "uwublueplush.png",
+		}
+	},
+
+	["uwubrownplush"] = {
+		label = "Brown Plush",
+		weight = 200,
+		stack = true,
+		close = true,
+		description = "A brown UwU plush",
+		client = {
+			image = "uwubrownplush.png",
+		}
+	},
+
+	["sapphire_necklace"] = {
+		label = "Sapphire Necklace",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "sapphire_necklace.png",
+		}
+	},
+
+	["prisonwateringcan"] = {
+		label = "Watering Can",
+		weight = 1000,
+		stack = false,
+		close = false,
+		description = "Watering can with a Bolingbroke Penitentiary label.",
+		client = {
+			image = "prisonwateringcan.png",
+		}
+	},
+
+	["tortillas"] = {
+		label = "Tortillas",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "tortillas.png",
+		}
+	},
+
+	["copper_bar"] = {
+		label = "Copper Bar",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "Copper Bar made from melted copper ore",
+		client = {
+			image = "copper_bar.png",
+		}
+	},
+
+	["cocainekey"] = {
+		label = "Key B",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "Random Key, with a \"Razorblade\" Engraved on the Back...",
+		client = {
+			image = "keyb.png",
+		}
+	},
+
+	["veh_tint"] = {
+		label = "Tints",
+		weight = 1000,
+		stack = true,
+		close = true,
+		description = "Install vehicle tint",
+		client = {
+			image = "veh_tint.png",
+		}
+	},
+
+	["uwuyellowplush"] = {
+		label = "Yellow Plush",
+		weight = 200,
+		stack = true,
+		close = true,
+		description = "A yellow UwU plush",
+		client = {
+			image = "uwuyellowplush.png",
+		}
+	},
+
+	["hydrochloric_acid"] = {
+		label = "Hydrochloric Acid",
+		weight = 1500,
+		stack = true,
+		close = true,
+		description = "Chemicals, handle with care!",
+		client = {
+			image = "hydrochloric_acid.png",
+		}
+	},
+
+	["fishinglure"] = {
+		label = "Fishing Lure",
+		weight = 1000,
+		stack = true,
+		close = true,
+		description = "A colorful lure",
+		client = {
+			image = "beginnerlure.png",
+		}
+	},
+
+	["unwashed_tin"] = {
+		label = "Unwashed Tin",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "unwashed tin",
+		client = {
+			image = "unwashed_tin.png",
+		}
+	},
+
+	["pickaxe"] = {
+		label = "Pickaxe",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "pickaxe.png",
+		}
+	},
+
+	["weedplant_weed"] = {
+		label = "Dried Weed",
+		weight = 100,
+		stack = true,
+		close = false,
+		description = "Weed ready for packaging",
+		client = {
+			image = "weedplant_weed.png",
+		}
+	},
+
+	["fishingrod3"] = {
+		label = "Professional Rod",
+		weight = 5000,
+		stack = false,
+		close = true,
+		description = "S+ tier fishing rod!!",
+		client = {
+			image = "bestrod.png",
+		}
+	},
+
+	["beefburrito"] = {
+		label = "Beef Burrito",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "beefburrito.png",
+		}
+	},
+
+	["bakingsoda"] = {
+		label = "Baking Soda",
+		weight = 1500,
+		stack = true,
+		close = false,
+		description = "Household Baking Soda!",
+		client = {
+			image = "bakingsoda.png",
+		}
+	},
+
+	["coca_leaf"] = {
+		label = "Cocaine leaves",
+		weight = 1500,
+		stack = true,
+		close = false,
+		description = "Cocaine leaves that must be processed !",
+		client = {
+			image = "coca_leaf.png",
+		}
+	},
+
+	["prisonwine"] = {
+		label = "Pruno Mix",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "You should ferment this to get a good buzz",
+		client = {
+			image = "prisonwine.png",
+		}
+	},
+
+	["silver_ring"] = {
+		label = "Silver Ring",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "silver_ring.png",
+		}
+	},
+
+	["uncut_emerald"] = {
+		label = "Uncut Emerald",
+		weight = 100,
+		stack = true,
+		close = false,
+		description = "A rough Emerald",
+		client = {
+			image = "uncut_emerald.png",
+		}
+	},
+
+	["cheese"] = {
+		label = "Cheese",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "cheese.png",
+		}
+	},
+
+	["prisonfarmnutrition"] = {
+		label = "Plant Nutrition",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "Plant nutrition with a Bolingbroke Penitentiary label",
+		client = {
+			image = "prisonfarmnutrition.png",
+		}
+	},
+
+	["fishingrod"] = {
+		label = "Fishing Rod",
+		weight = 5000,
+		stack = false,
+		close = true,
+		description = "A fishing rod for adventures with friends!!",
+		client = {
+			image = "fishingrod.png",
+		}
+	},
+
+	["pork"] = {
+		label = "Pork",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "pork.png",
+		}
+	},
+
+	["emerald_necklace"] = {
+		label = "Emerald Necklace",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "emerald_necklace.png",
+		}
+	},
+
+	["tin_bar"] = {
+		label = "Tin Bar",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "Tin Bar made from melted Tin ore",
+		client = {
+			image = "tin_bar.png",
+		}
+	},
+
+	["prisonslushie"] = {
+		label = "Slushie",
+		weight = 1000,
+		stack = true,
+		close = true,
+		description = "Slushie",
+		client = {
+			image = "prisonslushie.png",
+		}
+	},
+
+	["sapphire_earring_silver"] = {
+		label = "Sapphire Earrings Silver",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "sapphire_earring_silver.png",
+		}
+	},
+
+	["uwuredplush"] = {
+		label = "Red Plush",
+		weight = 200,
+		stack = true,
+		close = true,
+		description = "A red UwU plush",
+		client = {
+			image = "uwuredplush.png",
+		}
+	},
+
+	["prisonsugar"] = {
+		label = "Sugar Pack",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "Plain old sugar",
+		client = {
+			image = "prisonsugar.png",
+		}
+	},
+
+	["gold_ring"] = {
+		label = "Gold Ring",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "gold_ring.png",
+		}
+	},
+
+	["fishinglure2"] = {
+		label = "Pro Fishing Lure",
+		weight = 1000,
+		stack = true,
+		close = true,
+		description = "A realistic lure",
+		client = {
+			image = "betterlure.png",
+		}
+	},
+
+	["bottle"] = {
+		label = "Empty Bottle",
+		weight = 10,
+		stack = true,
+		close = false,
+		description = "A glass bottle",
+		client = {
+			image = "bottle.png",
+		}
+	},
+
+	["plant_tub"] = {
+		label = "Plant Tub",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "Pot for planting plants",
+		client = {
+			image = "plant_tub.png",
+		}
+	},
+
+	["beefandbeanburrito"] = {
+		label = "Beef and Bean Burrito",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "beefandbeanburrito.png",
+		}
+	},
+
+	["lead_ore"] = {
+		label = "Lead Ore",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "lead ore",
+		client = {
+			image = "lead_ore.png",
+		}
+	},
+
+	["weedplant_branch"] = {
+		label = "Weed Branch",
+		weight = 10000,
+		stack = false,
+		close = false,
+		description = "Weed plant",
+		client = {
+			image = "weedplant_branch.png",
+		}
+	},
+
+	["goldearring"] = {
+		label = "Golden Earrings",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "gold_earring.png",
+		}
+	},
+
+	["beanandcheeseburrito"] = {
+		label = "Bean and Cheese Burrito",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "beanandcheeseburrito.png",
+		}
+	},
+
+	["ruby_ring"] = {
+		label = "Ruby Ring",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "ruby_ring.png",
+		}
+	},
+
+	["skill-reel"] = {
+		label = "Skill Fishing Reel",
+		weight = 1000,
+		stack = false,
+		close = true,
+		description = "A skilled fishing reel.",
+		client = {
+			image = "skill-reel.png",
+		}
+	},
+
+	["tacoseasoning"] = {
+		label = "Taco Seasoning",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "tacoseasoning.png",
+		}
+	},
+
+	["keya"] = {
+		label = "Labkey A",
+		weight = 0,
+		stack = false,
+		close = false,
+		description = "Labkey A..",
+		client = {
+			image = "keya.png",
+		}
+	},
+
+	["fishingbait"] = {
+		label = "Fish Bait",
+		weight = 1000,
+		stack = true,
+		close = true,
+		description = "Worm bait!",
+		client = {
+			image = "wormbait.png",
+		}
+	},
+
+	["ruby_necklace"] = {
+		label = "Ruby Necklace",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "ruby_necklace.png",
+		}
+	},
+
+	["heroin"] = {
+		label = "Heroin",
+		weight = 500,
+		stack = true,
+		close = false,
+		description = "Really addictive depressant...",
+		client = {
+			image = "heroin.png",
+		}
+	},
+
+	["lsa"] = {
+		label = "LSA",
+		weight = 500,
+		stack = true,
+		close = false,
+		description = "Almost ready to party...",
+		client = {
+			image = "lsa.png",
+		}
+	},
+
+	["prisonchemicals"] = {
+		label = "Chemicals",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "Some random chemicals",
+		client = {
+			image = "prisonchemicals.png",
+		}
+	},
+
+	["porktorta"] = {
+		label = "Pork Torta",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "porktorta.png",
+		}
+	},
+
+	["ds_diamond"] = {
+		label = "Diamond",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "iamond",
+		client = {
+			image = "ds_diamond.png",
+		}
+	},
+
+	["prisonfruit"] = {
+		label = "Fruit Mix",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "A mix of random fruits",
+		client = {
+			image = "prisonfruit.png",
+		}
+	},
+
+	["codfish"] = {
+		label = "Cod",
+		weight = 3000,
+		stack = true,
+		close = true,
+		description = "A cody fish",
+		client = {
+			image = "codfish.png",
+		}
+	},
+
+	["fish"] = {
+		label = "Fish",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "A Catfish",
+		client = {
+			image = "fish.png",
+		}
+	},
+
+	["goldingot"] = {
+		label = "Gold Ingot",
+		weight = 1000,
+		stack = true,
+		close = false,
+		description = "",
+		client = {
+			image = "goldingot.png",
+		}
+	},
+
+	["emerald"] = {
+		label = "Emerald",
+		weight = 3000,
+		stack = true,
+		close = false,
+		description = "Emerald",
+		client = {
+			image = "emerald.png",
+		}
+	},
+
+	["weedkey"] = {
+		label = "Key C",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "Random Key, with a \"Seed\" Engraved on the Back...",
+		client = {
+			image = "keyc.png",
+		}
+	},
+
+	["tacocrate"] = {
+		label = "Taco Crate",
+		weight = 1,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "tacocrate.png",
+		}
+	},
+
+	["clothing_bag"] = {
+		label = "Clothing Bag",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			image = "clothing_bag.png",
+		}
+	},
 }
