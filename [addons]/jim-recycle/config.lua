@@ -147,6 +147,7 @@ Config = {
 		"glass",
 		"bottle",
 		"can",
+		"ceramic",
 	},
 	RecycleAmounts = {
 		["Recycle"] = {
