@@ -161,16 +161,16 @@ Config.BlacklistedScenarios = {
 }
 
 Config.BlacklistedVehs = {
-    [`shamal`] = true,
+    [`shamal`] = false,
     [`luxor`] = false,
     [`luxor2`] = false,
-    [`jet`] = true,
-    [`lazer`] = true,
+    [`jet`] = false,
+    [`lazer`] = false,
     [`buzzard`] = true,
     [`buzzard2`] = true,
     [`annihilator`] = true,
     [`savage`] = true,
-    [`titan`] = true,
+    [`titan`] = false,
     [`rhino`] = true,
     [`firetruck`] = true,
     [`mule`] = true,
@@ -206,7 +206,7 @@ Config.BlacklistedVehs = {
     [`rrocket`] = true,
     [`ruiner2`] = true,
     [`deluxo`] = true,
-    [`cargoplane2`] = true,
+    [`cargoplane2`] = false,
     [`voltic2`] = true
 }
 
