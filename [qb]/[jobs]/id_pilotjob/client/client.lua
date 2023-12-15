@@ -467,7 +467,7 @@ RegisterNUICallback("legalroute", function(data)
     if foundSpawn then
         QBCore.Functions.SpawnVehicle(Config.LegalRoute.VehicleModel, function(veh)
             SetEntityHeading(veh, Config.PlaneSpawn.heading)
-            exports['LegacyFuel']:SetFuel(veh, 100.0)
+            exports['cdn-fuel']:SetFuel(veh, 100.0)
             TriggerEvent("vehiclekeys:client:SetOwner", QBCore.Functions.GetPlate(veh))
             SetVehicleEngineOn(veh, true, true)
             SetEntityAsMissionEntity(veh, true, true)
