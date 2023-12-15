@@ -1,9 +1,9 @@
 local WebHooks = {
-    ["exploit"] = "",
-    ["triggered"] = "",
-    ["report"] = "",
-    ["transcript"] = "",
-    ["bans"] = "",
+    ["exploit"] = "https://discord.com/api/webhooks/1185120786080612462/1TApofmCjOhG_F1t3Xgdcsjdl-B4xfduNuF8PM3Lp9c4MfFIuueR56e-hNEedgx_1aKX",
+    ["triggered"] = "https://discord.com/api/webhooks/1185120786080612462/1TApofmCjOhG_F1t3Xgdcsjdl-B4xfduNuF8PM3Lp9c4MfFIuueR56e-hNEedgx_1aKX",
+    ["report"] = "https://discord.com/api/webhooks/1185120786080612462/1TApofmCjOhG_F1t3Xgdcsjdl-B4xfduNuF8PM3Lp9c4MfFIuueR56e-hNEedgx_1aKX",
+    ["transcript"] = "https://discord.com/api/webhooks/1185120786080612462/1TApofmCjOhG_F1t3Xgdcsjdl-B4xfduNuF8PM3Lp9c4MfFIuueR56e-hNEedgx_1aKX",
+    ["bans"] = "https://discord.com/api/webhooks/1185120786080612462/1TApofmCjOhG_F1t3Xgdcsjdl-B4xfduNuF8PM3Lp9c4MfFIuueR56e-hNEedgx_1aKX",
 }
 
 function SendLogs(source, type, message)
