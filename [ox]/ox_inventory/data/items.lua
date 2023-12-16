@@ -7384,4 +7384,15 @@ return {
 			image = "clothing_bag.png",
 		}
 	},
+
+	["ceramic"] = {
+		label = "ceramic",
+		weight = 100,
+		stack = true,
+		close = false,
+		description = "you can probably use this for something",
+		client = {
+			image = "ceramic.png",
+		}
+	},
 }
