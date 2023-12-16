@@ -4,7 +4,7 @@ Config.DebguMode = true -- if true will enable debug mode
 
 Config.Framework = "QBCore" -- ESX or QBCore
 
-Config.RemoveInjuresWhenRevive = false -- if true when player revive will remove all injures else doctor will need to heal player
+Config.RemoveInjuresWhenRevive = true -- if true when player revive will remove all injures else doctor will need to heal player
 
 Config.OnlyWithAim = true -- if true player will need to aim to damage player else will damage player without aim
 
