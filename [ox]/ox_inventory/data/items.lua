@@ -7395,4 +7395,433 @@ return {
 			image = "ceramic.png",
 		}
 	},
+
+	["gummy_gelato_cbd"] = {
+		label = "CBD Gelato Gummy",
+		weight = 4,
+		stack = true,
+		close = true,
+		description = "A edible cbd gelato gummy bear!",
+		client = {
+			image = "gummy_gelato_cbd.png",
+		}
+	},
+
+	["weed_og-kush_cbd_joint"] = {
+		label = "CBD OG Kush Joint",
+		weight = 1,
+		stack = true,
+		close = false,
+		description = "Light up that og kush son!",
+		client = {
+			image = "weed_og-kush_cbd_joint.png",
+		}
+	},
+
+	["gummy_amnesia_cbd"] = {
+		label = "CBD Amnesia Gummy",
+		weight = 4,
+		stack = true,
+		close = true,
+		description = "A edible cbd og kush gummy bear!",
+		client = {
+			image = "gummy_amnesia_cbd.png",
+		}
+	},
+
+	["wwmenu"] = {
+		label = "White Widow Menu",
+		weight = 10,
+		stack = true,
+		close = true,
+		description = "A menu for the white widoe medical dispensary!",
+		client = {
+			image = "wwmenu.png",
+		}
+	},
+
+	["weed_white-widow_cbd_crop"] = {
+		label = "CBD White Widow Crop",
+		weight = 1200,
+		stack = true,
+		close = false,
+		description = "A crop of CBD White Widow",
+		client = {
+			image = "weed_white-widow_cbd_crop.png",
+		}
+	},
+
+	["weed_amnesia_cbd_joint"] = {
+		label = "CBD Amnesia Joint",
+		weight = 1,
+		stack = true,
+		close = false,
+		description = "Light up that amnesia son!",
+		client = {
+			image = "weed_amnesia_cbd_joint.png",
+		}
+	},
+
+	["gelatine"] = {
+		label = "Gelatine",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "A packet of gelatine, good for making sweets!",
+		client = {
+			image = "gelatine.png",
+		}
+	},
+
+	["weed_zkittlez_cbd"] = {
+		label = "CBD Zkittles 2g",
+		weight = 2,
+		stack = true,
+		close = false,
+		description = "A 2g bag of CBD Zkittlez!",
+		client = {
+			image = "weed_zkittlez_cbd.png",
+		}
+	},
+
+	["weed_amnesia_cbd"] = {
+		label = "CBD Amnesia 2g",
+		weight = 2,
+		stack = true,
+		close = false,
+		description = "A 2g bag of CBD Amnesia!",
+		client = {
+			image = "weed_amnesia_cbd.png",
+		}
+	},
+
+	["weed_skunk_cbd_crop"] = {
+		label = "CBD Skunk Crop",
+		weight = 1200,
+		stack = true,
+		close = false,
+		description = "A crop of CBD Skunk!",
+		client = {
+			image = "weed_skunk_cbd_crop.png",
+		}
+	},
+
+	["gummybearmould"] = {
+		label = "Gummy Bear Mould",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "A BPA free mould, shaped like a bear!",
+		client = {
+			image = "gummybearmould.png",
+		}
+	},
+
+	["weed_gelato_cbd"] = {
+		label = "CBD Gelato 2g",
+		weight = 2,
+		stack = true,
+		close = false,
+		description = "A 2g bag of CBD Gelato!",
+		client = {
+			image = "weed_gelato_cbd.png",
+		}
+	},
+
+	["weed_zkittlez_cbd_joint"] = {
+		label = "CBD Zkittlez Joint",
+		weight = 1,
+		stack = true,
+		close = false,
+		description = "Light up that zkittlez son!",
+		client = {
+			image = "weed_zkittlez_cbd_joint.png",
+		}
+	},
+
+	["drug_shears"] = {
+		label = "Trimming Shears",
+		weight = 200,
+		stack = true,
+		close = true,
+		description = "A set of high quality trimming shears.",
+		client = {
+			image = "drug_shears.png",
+		}
+	},
+
+	["weed_purple-haze_cbd_joint"] = {
+		label = "CBD Purple-Haze Joint",
+		weight = 1,
+		stack = true,
+		close = false,
+		description = "Light up that purple haze son!",
+		client = {
+			image = "weed_purple-haze_cbd_joint.png",
+		}
+	},
+
+	["weed_white-widow_cbd"] = {
+		label = "CBD White Widow 2g",
+		weight = 2,
+		stack = true,
+		close = false,
+		description = "A 2g bag of CBD White Widow!",
+		client = {
+			image = "weed_white-widow_cbd.png",
+		}
+	},
+
+	["weed_purple-haze_cbd_crop"] = {
+		label = "CBD Purple-Haze Crop",
+		weight = 1200,
+		stack = true,
+		close = false,
+		description = "A crop of CBD Purple-Haze!",
+		client = {
+			image = "weed_purple-haze_cbd_crop.png",
+		}
+	},
+
+	["weed_purple-haze_cbd"] = {
+		label = "CBD Purple-Haze 2g",
+		weight = 2,
+		stack = true,
+		close = false,
+		description = "A 2g bag of CBD Purple-Haze!",
+		client = {
+			image = "weed_purple-haze_cbd.png",
+		}
+	},
+
+	["weed_og-kush_cbd"] = {
+		label = "CBD OGKush 2g",
+		weight = 2,
+		stack = true,
+		close = false,
+		description = "A 2g bag of CBD OG Kush!",
+		client = {
+			image = "weed_og-kush_cbd.png",
+		}
+	},
+
+	["weed_gelato_cbd_crop"] = {
+		label = "CBD Gelato Crop",
+		weight = 1200,
+		stack = true,
+		close = false,
+		description = "A crop of CBD Gelato!",
+		client = {
+			image = "weed_gelato_cbd_crop.png",
+		}
+	},
+
+	["weed_skunk_cbd"] = {
+		label = "CBD Skunk 2g",
+		weight = 2,
+		stack = true,
+		close = false,
+		description = "A 2g bag of CBD Skunk!",
+		client = {
+			image = "weed_skunk_cbd.png",
+		}
+	},
+
+	["weed_zkittlez_cbd_crop"] = {
+		label = "CBD Zkittlez Crop",
+		weight = 1200,
+		stack = true,
+		close = false,
+		description = "A crop of CBD Zkittlez!",
+		client = {
+			image = "weed_zkittlez_cbd_crop.png",
+		}
+	},
+
+	["rawhoney"] = {
+		label = "Raw Honey",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "A jar of rawhoney, good for making sweets!",
+		client = {
+			image = "rawhoney.png",
+		}
+	},
+
+	["weed_gelato_cbd_joint"] = {
+		label = "CBD Gelato Joint",
+		weight = 1,
+		stack = true,
+		close = false,
+		description = "Light up that gelato son!",
+		client = {
+			image = "weed_gelato_cbd_joint.png",
+		}
+	},
+
+	["weed_white-widow_cbd_joint"] = {
+		label = "CBD White Widow Joint",
+		weight = 1,
+		stack = true,
+		close = false,
+		description = "Light up that white widow son!",
+		client = {
+			image = "weed_white-widow_cbd_joint.png",
+		}
+	},
+
+	["weed_ak47_cbd"] = {
+		label = "CBD AK47 2g",
+		weight = 2,
+		stack = true,
+		close = false,
+		description = "A 2g bag of CBD AK47!",
+		client = {
+			image = "weed_ak47_cbd.png",
+		}
+	},
+
+	["weed_amnesia_cbd_crop"] = {
+		label = "CBD Amnesia Crop",
+		weight = 1200,
+		stack = true,
+		close = false,
+		description = "A crop of CBD Amnesia!",
+		client = {
+			image = "weed_amnesia_cbd_crop.png",
+		}
+	},
+
+	["gummy_purple-haze_cbd"] = {
+		label = "CBD Purple-Haze Gummy",
+		weight = 4,
+		stack = true,
+		close = true,
+		description = "A edible cbd purple haze gummy bear!",
+		client = {
+			image = "gummy_purple-haze_cbd.png",
+		}
+	},
+
+	["weed_og-kush_cbd_crop"] = {
+		label = "CBD OG Kush Crop",
+		weight = 1200,
+		stack = true,
+		close = false,
+		description = "A crop of CBD OG Kush",
+		client = {
+			image = "weed_og-kush_cbd_crop.png",
+		}
+	},
+
+	["weed_ak47_cbd_crop"] = {
+		label = "CBD AK 47 Crop",
+		weight = 1200,
+		stack = true,
+		close = false,
+		description = "A crop of CBD AK47!",
+		client = {
+			image = "weed_ak47_cbd_crop.png",
+		}
+	},
+
+	["gummy_skunk_cbd"] = {
+		label = "CBD Skunk Gummy",
+		weight = 4,
+		stack = true,
+		close = true,
+		description = "A edible cbd skunk gummy bear!",
+		client = {
+			image = "gummy_skunk_cbd.png",
+		}
+	},
+
+	["gummy_white-widow_cbd"] = {
+		label = "CBD White-Widow Gummy",
+		weight = 4,
+		stack = true,
+		close = true,
+		description = "A edible cbd white widow gummy bear!",
+		client = {
+			image = "gummy_white-widow_cbd.png",
+		}
+	},
+
+	["weed_skunk_cbd_joint"] = {
+		label = "CBD Skunk Joint",
+		weight = 1,
+		stack = true,
+		close = false,
+		description = "Light up that skunk son!",
+		client = {
+			image = "weed_skunk_cbd_joint.png",
+		}
+	},
+
+	["drug_grinder"] = {
+		label = "Tobacco Grinder",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "A tobacco grinder or something more..",
+		client = {
+			image = "drug_grinder.png",
+		}
+	},
+
+	["rollingpapers"] = {
+		label = "Rolling Papers",
+		weight = 50,
+		stack = true,
+		close = true,
+		description = "Paper made specifically for encasing and smoking tobacco or cannabis.",
+		client = {
+			image = "rollingpapers.png",
+		}
+	},
+
+	["gummy_ak47_cbd"] = {
+		label = "CBD AK47 Gummy",
+		weight = 4,
+		stack = true,
+		close = true,
+		description = "A edible cbd ak47 gummy bear!",
+		client = {
+			image = "gummy_ak47_cbd.png",
+		}
+	},
+
+	["gummy_zkittlez_cbd"] = {
+		label = "CBD Zkittlez Gummy",
+		weight = 4,
+		stack = true,
+		close = true,
+		description = "A edible cbd zkittlez gummy bear!",
+		client = {
+			image = "gummy_zkittlez_cbd.png",
+		}
+	},
+
+	["weed_ak47_cbd_joint"] = {
+		label = "CBD AK 47 Joint",
+		weight = 1,
+		stack = true,
+		close = false,
+		description = "Light up that ak47 son!",
+		client = {
+			image = "weed_ak47_cbd_joint.png",
+		}
+	},
+
+	["gummy_og-kush_cbd"] = {
+		label = "CBD OG-Kush Gummy",
+		weight = 4,
+		stack = true,
+		close = true,
+		description = "A edible cbd og kush gummy bear!",
+		client = {
+			image = "gummy_og-kush_cbd.png",
+		}
+	},
 }
