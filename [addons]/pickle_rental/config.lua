@@ -27,7 +27,7 @@ Config.Locations = {
         },
         locations = {
             interact = {
-                coords = vector3(204.55, -805.88, 30.99),
+                coords = vector3(204.55, -805.88, 29.99),
                 heading = 85.3245,
                 ped = `ig_siemonyetarian` -- Set to nil to use markers.
             },
