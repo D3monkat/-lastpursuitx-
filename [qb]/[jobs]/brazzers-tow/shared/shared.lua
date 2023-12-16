@@ -3,7 +3,7 @@ Config = Config or {}
 Config.Debug = false
 
 Config.Core = 'qb-core'
-Config.Target = 'qb-target' -- ox or resource name (ex. 'qb-target' )
+Config.Target = 'ox' -- ox or resource name (ex. 'qb-target' )
 Config.Fuel = 'cdn-fuel' -- ox or resource name (ex. 'qb-fuel' )
 Config.Menu = 'ox' -- 'ox' or resource name (ex. 'qb-menu')
 
@@ -27,7 +27,7 @@ Config.JobGrade = 0 -- grade level to assign the player when signing in
 Config.ToggleDuty = true -- Toggle duty when signing in and signing out
 Config.DepositRequired = true -- If a deposit is required to take out a vehicle
 Config.DepositAmount = 100 -- If above is true, then set the amount here
-Config.CanRequestTow = {'police', 'somedumbjob'} -- All jobs here that can request a tow driver ( I don't recommend to put 'tow' here or people will farm your shit )
+Config.CanRequestTow = {'police', 'sast', 'bcso', 'somedumbjob'} -- All jobs here that can request a tow driver ( I don't recommend to put 'tow' here or people will farm your shit )
 
 Config.DepotLot = { -- Location
     vector3(-142.59, -1173.80, 23.76),

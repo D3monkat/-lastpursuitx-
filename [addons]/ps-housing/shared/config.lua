@@ -9,7 +9,7 @@ Config = {}
 -- If you're not utilizing ox_lib, it's time to question your approach.
 Config.Target = "ox" -- "ox" or "qb"
 Config.Notify = "ox" -- "ox" or "qb"
-Config.Radial = "ox" -- "ox" or "qb"
+Config.Radial = "qb" -- "ox" or "qb"
 Config.Inventory = "ox" -- "ox" or "qb"
 Config.Logs = "qb" -- "qb"
 
@@ -81,57 +81,57 @@ Config.Apartments = {
         shell = "Apartment Furnished",
     },
     
-    ["South Rockford Drive"] = {
-        label = "South Rockford Drive",
-        door = { x = -667.02, y = -1105.24, z = 14.63, h = 242.32, length = 1, width = 2 },
-        pos = {top = 58.5, left = 66.4},
-        imgs = {
-            {
-                url = "https://cdn.discordapp.com/attachments/1102801782452785162/1106154069426458665/integrity_1.webp",
-                label = "Outside",
-            },
-        },
-        shell = "Apartment Furnished",
-    },
+    -- ["South Rockford Drive"] = {
+    --     label = "South Rockford Drive",
+    --     door = { x = -667.02, y = -1105.24, z = 14.63, h = 242.32, length = 1, width = 2 },
+    --     pos = {top = 58.5, left = 66.4},
+    --     imgs = {
+    --         {
+    --             url = "https://cdn.discordapp.com/attachments/1102801782452785162/1106154069426458665/integrity_1.webp",
+    --             label = "Outside",
+    --         },
+    --     },
+    --     shell = "Apartment Furnished",
+    -- },
 
-    ['Morningwood Blvd'] = {
-        label = 'Morningwood Blvd',
-        door = { x = -1288.52, y = -430.51, z = 35.15, h = 124.81, length = 1, width = 2 },
-        pos = {top = 64.4, left = 62.9},
-        imgs = {
-            {
-                url = "https://media.discordapp.net/attachments/1081260007129092146/1125035016905298021/morningwood.webp?width=1280&height=671",
-                label = "Outside",
-            },
-        },
-        shell = "Apartment Furnished",
-    },
+    -- ['Morningwood Blvd'] = {
+    --     label = 'Morningwood Blvd',
+    --     door = { x = -1288.52, y = -430.51, z = 35.15, h = 124.81, length = 1, width = 2 },
+    --     pos = {top = 64.4, left = 62.9},
+    --     imgs = {
+    --         {
+    --             url = "https://media.discordapp.net/attachments/1081260007129092146/1125035016905298021/morningwood.webp?width=1280&height=671",
+    --             label = "Outside",
+    --         },
+    --     },
+    --     shell = "Apartment Furnished",
+    -- },
 
-    ['Tinsel Towers'] = {
-        label = 'Tinsel Towers',
-        door = { x = -619.29, y = 37.69, z = 43.59, h = 181.03, length = 1, width = 2 },
-        pos = {top = 58.1, left = 60.8},
-        imgs = {
-            {
-                url = "https://cdn.discordapp.com/attachments/1102801782452785162/1106154069426458665/integrity_1.webp",
-                label = "Outside",
-            },
-        },
-        shell = "Apartment Furnished",
-    },
+    -- ['Tinsel Towers'] = {
+    --     label = 'Tinsel Towers',
+    --     door = { x = -619.29, y = 37.69, z = 43.59, h = 181.03, length = 1, width = 2 },
+    --     pos = {top = 58.1, left = 60.8},
+    --     imgs = {
+    --         {
+    --             url = "https://cdn.discordapp.com/attachments/1102801782452785162/1106154069426458665/integrity_1.webp",
+    --             label = "Outside",
+    --         },
+    --     },
+    --     shell = "Apartment Furnished",
+    -- },
 
-    ['Fantastic Plaza'] = {
-        label = 'Fantastic Plaza',
-        door = { x = 291.517, y = -1078.674, z = 29.405, h = 270.75, length = 1, width = 2 },
-        pos = {top = 49.5, left = 66.2},
-        imgs = {
-            {
-                url = "https://media.discordapp.net/attachments/1081260007129092146/1125035016221638686/fantasticplaza.webp?width=1281&height=671",
-                label = "Outside",
-            },
-        },
-        shell = "Apartment Furnished",
-    }
+    -- ['Fantastic Plaza'] = {
+    --     label = 'Fantastic Plaza',
+    --     door = { x = 291.517, y = -1078.674, z = 29.405, h = 270.75, length = 1, width = 2 },
+    --     pos = {top = 49.5, left = 66.2},
+    --     imgs = {
+    --         {
+    --             url = "https://media.discordapp.net/attachments/1081260007129092146/1125035016221638686/fantasticplaza.webp?width=1281&height=671",
+    --             label = "Outside",
+    --         },
+    --     },
+    --     shell = "Apartment Furnished",
+    -- }
 }
 
 -- Shells provided by K4MB1 https://www.k4mb1maps.com/
