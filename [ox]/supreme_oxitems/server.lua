@@ -43,7 +43,6 @@ AddEventHandler('supreme_oxitem:addImage', function(name, url)
         f:write(imageData)
         f:close()
 	  end)
-	end
 end)
 
 
