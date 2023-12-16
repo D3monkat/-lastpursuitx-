@@ -109,7 +109,7 @@ local function closeTrunk()
 end
 
 local CraftingBenches = require 'modules.crafting.client'
-local Vehicles = data 'vehicles'
+local Vehicles = lib.load('data.vehicles')
 local Inventory = require 'modules.inventory.client'
 
 ---@param inv string?
@@ -331,7 +331,7 @@ RegisterNetEvent('ox_inventory:forceOpenInventory', function(left, right)
 	})
 end)
 
-local Animations = data 'animations'
+local Animations = lib.load('data.animations')
 local Items = require 'modules.items.client'
 local usingItem = false
 
@@ -1058,8 +1058,6 @@ RegisterNetEvent('ox_inventory:removeDrop', function(dropId)
 	end
 end)
 
-local uiLoaded = false
-
 ---@type function?
 local function setStateBagHandler(stateId)
 	AddStateBagChangeHandler('invOpen', stateId, function(_, _, value)
@@ -1238,7 +1236,7 @@ RegisterNetEvent('ox_inventory:setPlayerInventory', function(currentDrops, inven
 		end
 	end
 
-	for id, data in pairs(data('licenses')) do
+	for id, data in pairs(lib.load('data.licenses')) do
 		lib.points.new({
 			coords = data.coords,
 			distance = 16,
@@ -1251,7 +1249,7 @@ RegisterNetEvent('ox_inventory:setPlayerInventory', function(currentDrops, inven
 		})
 	end
 
-	while not uiLoaded do Wait(50) end
+	while not client.uiLoaded do Wait(50) end
 
 	SendNUIMessage({
 		action = 'init',
@@ -1495,27 +1493,35 @@ AddEventHandler('onResourceStop', function(resourceName)
 	end
 end)
 
-RegisterNetEvent('ox_inventory:viewInventory', function(data)
-	if data and invOpen == false then
-		data.type = 'admin'
-		plyState.invOpen = true
-		currentInventory = data
-		currentInventory.ignoreSecurityChecks = true
+RegisterNetEvent('ox_inventory:viewInventory', function(left, right)
+	if source == '' then return end
 
-		SendNUIMessage({
-			action = 'setupInventory',
-			data = {
-				rightInventory = currentInventory,
-			}
-		})
-		SetNuiFocus(true, true)
+	plyState.invOpen = true
 
-		if client.screenblur then TriggerScreenblurFadeIn(0) end
-	end
+	SetInterval(client.interval, 100)
+	SetNuiFocus(true, true)
+	SetNuiFocusKeepInput(true)
+	closeTrunk()
+
+	if client.screenblur then TriggerScreenblurFadeIn(0) end
+
+	currentInventory = right or defaultInventory
+	currentInventory.ignoreSecurityChecks = true
+    currentInventory.type = 'inspect'
+	left.items = PlayerData.inventory
+	left.groups = PlayerData.groups
+
+	SendNUIMessage({
+		action = 'setupInventory',
+		data = {
+			leftInventory = left,
+			rightInventory = currentInventory
+		}
+	})
 end)
 
 RegisterNUICallback('uiLoaded', function(_, cb)
-	uiLoaded = true
+	client.uiLoaded = true
 	cb(1)
 end)
 

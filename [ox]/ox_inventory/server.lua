@@ -232,7 +232,7 @@ exports('forceOpenInventory', function(playerId, invType, data)
 	end
 end)
 
-local Licenses = data 'licenses'
+local Licenses = lib.load('data.licenses')
 
 lib.callback.register('ox_inventory:buyLicense', function(source, id)
 	local license = Licenses[id]
@@ -530,7 +530,7 @@ lib.addCommand('clearevidence', {
 	local hasPermission = group and server.isPlayerBoss(source, group, grade)
 
 	if hasPermission then
-		MySQL.query('DELETE FROM ox_inventory WHERE name = ?', {('evidence-%s'):format(args.evidence)})
+		MySQL.query('DELETE FROM ox_inventory WHERE name = ?', {('evidence-%s'):format(args.locker)})
 	end
 end)
 
@@ -581,12 +581,5 @@ lib.addCommand('viewinv', {
 	},
 	restricted = 'group.admin',
 }, function(source, args)
-	local invId = tonumber(args.invId) or args.invId
-	local inventory = invId ~= source and Inventory(invId)
-	local playerInventory = Inventory(source)
-
-	if playerInventory and inventory then
-		playerInventory:openInventory(inventory)
-		TriggerClientEvent('ox_inventory:viewInventory', source, inventory)
-	end
+	Inventory.InspectInventory(source, tonumber(args.invId) or args.invId)
 end)

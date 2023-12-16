@@ -37,6 +37,7 @@ end
 
 if IsDuplicityVersion() then
     server = {
+        bulkstashsave = GetConvarInt('inventory:bulkstashsave', 1) == 1,
         loglevel = GetConvarInt('inventory:loglevel', 1),
         randomprices = GetConvarInt('inventory:randomprices', 0) == 1,
         randomloot = GetConvarInt('inventory:randomloot', 1) == 1,
@@ -136,25 +137,9 @@ local function spamError(err)
     error(err, 0)
 end
 
-CreateThread(function()
-    if shared.framework == 'ox' then
-        local file = ('imports/%s.lua'):format(lib.context)
-        local import = LoadResourceFile('ox_core', file)
-        local func, err = load(import, ('@@ox_core/%s'):format(file))
-
-        if not func or err then
-            shared.ready = false
-            return spamError(err)
-        end
-
-        func()
-
-        Ox = Ox or {}
-    end
-end)
-
 ---@param name string
 ---@return table
+---@deprecated
 function data(name)
     if shared.server and shared.ready == nil then return {} end
     local file = ('data/%s.lua'):format(name)
@@ -184,7 +169,7 @@ end
 local success, msg = lib.checkDependency('oxmysql', '2.7.3')
 
 if success then
-    success, msg = lib.checkDependency('ox_lib', '3.8.1')
+    success, msg = lib.checkDependency('ox_lib', '3.13.0')
 end
 
 if not success then
