@@ -2,7 +2,7 @@ Config = {}
 
 Config.DebguMode = true -- if true will enable debug mode 
 
-Config.Framework = "ESX" -- ESX or QBCore
+Config.Framework = "QBCore" -- ESX or QBCore
 
 Config.RemoveInjuresWhenRevive = false -- if true when player revive will remove all injures else doctor will need to heal player
 
@@ -14,7 +14,7 @@ Config.Key = 'i' -- key to open menu
 
 Config.AlwaysOpenHudKey = 'k' -- key to open hud
 
-Config.GetNameFromSQL = true -- if true will get name from sql else will get name from server (ESX)
+Config.GetNameFromSQL = false -- if true will get name from sql else will get name from server (ESX)
 
 Config.TreatFailRemoveItems = true -- if true will remove item from player inventory when treatment fail
 
