@@ -1,7 +1,6 @@
 
 RegisterServerEvent('supreme_oxitem:addItem')
 AddEventHandler('supreme_oxitem:addItem', function(name, label2, weight, stack, close, description)
-	if IsPlayerAceAllowed(source, "oxitems") then
 	local src = source
 	local path = GetResourcePath("ox_inventory")
 	path = path:gsub('//', '/')..'/data/items.lua'
@@ -38,7 +37,6 @@ end)
 
 RegisterServerEvent('supreme_oxitem:addImage')
 AddEventHandler('supreme_oxitem:addImage', function(name, url)
-	if IsPlayerAceAllowed(source, "oxitems") then
 	PerformHttpRequest(url, function (errorCode, imageData, resultHeaders)
 		local path = GetResourcePath("ox_inventory")
 		path = path:gsub('//', '/')..'/web/images/'..name..'.png'
@@ -51,9 +49,5 @@ end)
 
 
 RegisterCommand('oxdevtools', function(source)
-    if IsPlayerAceAllowed(source, "oxitems") then
         TriggerClientEvent("supreme_oxitems:openDevTools", source)
-	else
-		print('not allowed')
-    end
 end)

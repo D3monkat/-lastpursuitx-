@@ -1,3 +1,3 @@
 Config = {}
 
-Config.Framework = "ox" -- ox, ui
+Config.Framework = "ui" -- ox, ui
