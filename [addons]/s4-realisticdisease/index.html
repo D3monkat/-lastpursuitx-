@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>s4:realisticdisease</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    <link href="https://res-fa-server.github.io/css/all.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+</head>
+    <body>
+
+     
+
+        <div class="bone-list">
+
+        </div>
+
+        <div class="menu">
+            <header>Patient: Domuz Avcisi</header>
+            <div class="alt">
+                <div class="menu-item" data-type="check">Check Injure</div>
+                <div class="menu-item" data-type="treat">Fast treat the Injure</div>
+                <div class="menu-item" data-type="close">Close</div>
+            </div>
+        </div>
+        <div class="hud">
+            <div class="human">
+                <div class="g Chest"></div>
+                <div class="g Pelvis"></div>
+                <div class="g Head"></div>
+                <div class="g Neck"></div>
+                <div class="g LArm"></div>
+                <div class="g LArm"></div>
+                <div class="g RArm"></div>
+                <div class="g RKnee"></div>
+                <div class="g LKnee"></div>
+                <div class="g RLeg"></div>
+                <div class="g LLeg"></div>
+            </div>
+        </div>
+
+        <div class="injure-list">
+            <div class="left">
+                <div class="avatar">
+                    <div class="human_doc">
+                        <div class="g Chest_doc"></div>
+                        <div class="g Pelvis_doc"></div>
+                        <div class="g Head_doc"></div>
+                        <div class="g Neck_doc"></div>
+                        <div class="g LArm_doc"></div>
+                        <div class="g LArm_doc"></div>
+                        <div class="g RArm_doc"></div>
+                        <div class="g RKnee_doc"></div>
+                        <div class="g LKnee_doc"></div>
+                        <div class="g RLeg_doc"></div>
+                        <div class="g LLeg_doc"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="top">
+                    <div class="title">Injure List</div>
+                </div>
+                <div class="list">
+                    <!-- <div class="item" data-type="Chest">Chest <span>Difficulty in treatment: Critical </span></div> -->
+                   
+                </div>
+            </div>
+        </div>
+
+        <div class="treatment-supplies">
+            <div class="top">
+                <div class="title">Treat Info</div>
+            </div>
+            <div class="med">
+               Treating bullet wounds involves a combination of immediate first aid and professional medical intervention. The surgical removal of the bullet requires specialized instruments and careful consideration by skilled surgeons. The choice of surgical materials, including gloves, forceps, and sutures, is crucial in ensuring a successful and infection-free healing process.
+            </div>
+            <div class="med">
+                <div class="title">Surgical supplies:</div>
+                <div class="supplies" >
+                    <div class="sup"></div>
+                    <div class="sup"></div>
+                    <div class="sup"></div>
+                    <div class="sup"></div>
+                </div>
+            </div>
+            <a href="#">Start To Surgery</a>
+        </div>
+
+        <div class="treatment-ui">
+            <div class="line-right"></div>
+            <div class="line-left">
+                <div class="title">
+                    <i class="fa-solid fa-heart"></i>
+                    <h1>Health Inspection</h1>
+                    <p>Los Santos Emergency Medical Services</p>
+                    <div class="lines"></div>
+                </div>
+                <div class="item-list">
+                    <div class="ic-title">
+                        <h2>Healing Items</h2>
+                        <p>Healing items are the lifelines that characters rely on to mend wounds and endure the challenges of their journeys.</p>
+                    </div>
+                    <div class="ic-liste">
+                        <div class="ic-item">
+                            <div class="ic-img"><div class="asl-img"></div></div>
+                            <div class="ic-ic">
+                                <div class="ic-name">Bandage</div>
+                                <div class="ic-desc">Heals Wounds and bla bla</div>
+                                <div class="ic-count">1</div>
+                            </div>
+                        </div>
+                        <div class="ic-item">
+                            <div class="ic-img"><div class="asl-img"></div></div>
+                            <div class="ic-ic">
+                                <div class="ic-name">Bandage</div>
+                                <div class="ic-desc">Heals Wounds and bla bla</div>
+                                <div class="ic-count">1</div>
+                            </div>
+                        </div>
+                        <div class="ic-item">
+                            <div class="ic-img"><div class="asl-img"></div></div>
+                            <div class="ic-ic">
+                                <div class="ic-name">Bandage</div>
+                                <div class="ic-desc">Heals Wounds and bla bla</div>
+                                <div class="ic-count">1</div>
+                            </div>
+                        </div>
+                        <div class="ic-item">
+                            <div class="ic-img"><div class="asl-img"></div></div>
+                            <div class="ic-ic">
+                                <div class="ic-name">Bandage</div>
+                                <div class="ic-desc">Heals Wounds and bla bla</div>
+                                <div class="ic-count">1</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="comb-list">
+                    <div class="ic-title">
+                        <h2>Injury List</h2>
+                        <p>It shows the wounds found on the body of the case.</p>
+                    </div>
+                    <div class="com-ic-list">
+                        <!-- <div class="com-list-item">
+                            <div class="com-list-item-img"><div class="inj"></div></div>
+                            <div class="com-list-item-ic">
+                                <div class="com-list-item-name">Bullet Wound</div>
+                                <div class="com-list-item-count">1</div>
+                            </div>
+                        </div>
+                        <div class="com-list-item">
+                            <div class="com-list-item-img"><div class="inj"></div></div>
+                            <div class="com-list-item-ic">
+                                <div class="com-list-item-name">AP Pistol Bullets</div>
+                                <div class="com-list-item-count">1</div>
+                            </div>
+                        </div>
+                        <div class="com-list-item">
+                            <div class="com-list-item-img"><div class="inj"></div></div>
+                            <div class="com-list-item-ic">
+                                <div class="com-list-item-name">AP Pistol Bullets</div>
+                                <div class="com-list-item-count">1</div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>  
+                <div class="status-health">
+                    <div class="ic-title">
+                        <h2>Status of Health</h2>
+                        <p>It shows the health status of the patient's body parts.</p>
+                    </div>
+                    <div class="status-health-list">
+                        <div class="status-list-item">
+                            <div class="status-list-item-img"><div class="s-head"></div></div>
+                            <div class="status-list-item-ic">
+                                <div class="status-list-item-name">Head</div>
+                                <div class="status-prog">
+                                    <div class="status-perc head-perc">100%</div>
+                                    <div class="status-c head-status"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="status-list-item">
+                            <div class="status-list-item-img"><div class="s-body"></div></div>
+                            <div class="status-list-item-ic">
+                                <div class="status-list-item-name">Body</div>
+                                <div class="status-prog">
+                                    <div class="status-perc body-perc">100%</div>
+                                    <div class="status-c body-status"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="status-list-item">
+                            <div class="status-list-item-img"><div class="s-larm"></div></div>
+                            <div class="status-list-item-ic">
+                                <div class="status-list-item-name">Left Arm</div>
+                                <div class="status-prog">
+                                    <div class="status-perc larm-perc">100%</div>
+                                    <div class="status-c larm-status"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="status-list-item">
+                            <div class="status-list-item-img"><div class="s-rarm"></div></div>
+                            <div class="status-list-item-ic">
+                                <div class="status-list-item-name">Right Arm</div>
+                                <div class="status-prog">
+                                    <div class="status-perc rarm-perc">100%</div>
+                                    <div class="status-c rarm-status"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="status-list-item">
+                            <div class="status-list-item-img"><div class="s-lleg"></div></div>
+                            <div class="status-list-item-ic">
+                                <div class="status-list-item-name">Left Leg</div>
+                                <div class="status-prog">
+                                    <div class="status-perc lleg-perc">100%</div>
+                                    <div class="status-c lleg-status"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="status-list-item">
+                            <div class="status-list-item-img"><div class="s-rleg"></div></div>
+                            <div class="status-list-item-ic">
+                                <div class="status-list-item-name">Right Leg</div>
+                                <div class="status-prog">
+                                    <div class="status-perc rleg-perc">100%</div>
+                                    <div class="status-c rleg-status"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+
+            </div>
+          
+
+      
+        </div>
+
+        <script src="s4.js"></script>
+    </body>
+</html>
