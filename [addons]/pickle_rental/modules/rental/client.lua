@@ -144,11 +144,11 @@ end
 CreateThread(function()
     for i=1, #Locations do 
         local location = Locations[i]
-        if location.blip then 
-            local blip = location.blip
-            blip.location = location.locations.interact.coords
-            CreateBlip(blip)
-        end
+        -- if location.blip then 
+        --     local blip = location.blip
+        --     blip.location = location.locations.interact.coords
+        --     CreateBlip(blip)
+        -- end
     end
     while true do
         local wait = 1000

@@ -42,19 +42,19 @@ function CreateProp(modelHash, ...)
     return obj
 end
 
-function CreateBlip(data)
-    local x,y,z = table.unpack(data.location)
-    local blip = AddBlipForCoord(x, y, z)
-    SetBlipSprite(blip, data.id)
-    SetBlipDisplay(blip, data.display)
-    SetBlipScale(blip, data.scale)
-    SetBlipColour(blip, data.color)
-    SetBlipAsShortRange(blip, true)
-    BeginTextCommandSetBlipName("STRING")
-    AddTextComponentString(data.label)
-    EndTextCommandSetBlipName(blip)
-    return blip
-end
+-- function CreateBlip(data)
+--     local x,y,z = table.unpack(data.location)
+--     local blip = AddBlipForCoord(x, y, z)
+--     SetBlipSprite(blip, data.id)
+--     SetBlipDisplay(blip, data.display)
+--     SetBlipScale(blip, data.scale)
+--     SetBlipColour(blip, data.color)
+--     SetBlipAsShortRange(blip, true)
+--     BeginTextCommandSetBlipName("STRING")
+--     AddTextComponentString(data.label)
+--     EndTextCommandSetBlipName(blip)
+--     return blip
+-- end
 
 local interactTick = 0
 local interactCheck = false
