@@ -32,7 +32,6 @@ AddEventHandler('supreme_oxitem:addItem', function(name, label2, weight, stack, 
 )
 	file:write('},\n}')
 	file:close()
-end
 end)
 
 RegisterServerEvent('supreme_oxitem:addImage')
