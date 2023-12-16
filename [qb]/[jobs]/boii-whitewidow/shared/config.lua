@@ -19,7 +19,7 @@ Config.CoreSettings = {
     BossMenuEvent = 'qb-bossmenu:client:OpenMenu', -- Name of your boss menu event. Default; 'qb-bossmenu:client:OpenMenu'
     PhoneEvent = 'qb-phone:RefreshPhone', -- The name of your phone event this is needed for billing. Default; 'qb-phone:RefreshPhone'
     ClothingEvent = 'qb-clothing:client:openOutfitMenu', -- The name of your clothing event this is needed to open outfit menu. Default; 'qb-clothing:client:OpenOutfitMenu'
-    FuelEvent = 'playlolly-drive' -- The name of your fuel event. Default; playlolly-drive
+    FuelEvent = 'cdn-fuel' -- The name of your fuel event. Default; playlolly-drive
 }
 -- Blips
 Config.UseBlips = true -- Enable blips
