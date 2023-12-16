@@ -2,7 +2,7 @@ Config                  = {}
 Config.DynamicWeather   = false -- Set this to false if you don't want the weather to change automatically every 10 minutes.
 
 -- On server start
-Config.StartWeather     = 'XMAS' -- Default weather                       default: 'EXTRASUNNY'
+Config.StartWeather     = 'CLOUDS' -- Default weather                       default: 'EXTRASUNNY'
 Config.BaseTime         = 8 -- Time                                             default: 8
 Config.TimeOffset       = 0 -- Time offset                                      default: 0
 Config.FreezeTime       = false -- freeze time                                  default: false
