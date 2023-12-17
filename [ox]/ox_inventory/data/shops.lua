@@ -74,6 +74,9 @@ return {
 
 	widow = {
 		name = 'Widow Store',
+		groups = {
+			['whitewidow'] = 0
+		},
 		 inventory = {
 		 { name = 'lighter', price = 1 },
 		 { name = 'rollingpapers', price = 1 },
