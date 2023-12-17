@@ -47,7 +47,7 @@ Config = {
 	EnableOpeningHours = false, -- Enable opening hours? If disabled you can always open the pawnshop.
 	OpenHour = 9, -- From what hour should the pawnshop be open?
 	CloseHour = 21, -- From what hour should the pawnshop be closed?
-	PayAtDoor = 200, -- Set to nil stop turn this off, set to a number to enable
+	PayAtDoor = nil, -- Set to nil stop turn this off, set to a number to enable
 
 	propTable = { -- Table of crates that will spawn
 		"ex_Prop_Crate_Bull_SC_02",
