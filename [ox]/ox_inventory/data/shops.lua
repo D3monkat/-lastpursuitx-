@@ -144,9 +144,11 @@ return {
 			{ name = 'syringe', price = 5 },
 			{ name = 'tape', price = 5 },
 		}, locations = {
-			vector3(360.23, -1412.79, 32.99),
-			vector3(-455.67, -309.12, 34.91)
-		}, targets = {
+			vec3(360.23, -1412.79, 32.99),
+			vec3(-455.67, -309.12, 34.91)
+		}, targets = {			
+			{ loc = vec3(360.23, -1412.79, 32.99), length = 0.5, width = 3.0, heading = 270.0, minZ = 30.5, maxZ = 32.0, distance = 6 },
+			{ loc = vec3(-455.67, -309.12, 34.91), length = 0.5, width = 3.0, heading = 270.0, minZ = 30.5, maxZ = 32.0, distance = 6 },
 
 		}
 	},
