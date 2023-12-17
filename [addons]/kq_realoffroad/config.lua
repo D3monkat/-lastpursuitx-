@@ -21,19 +21,19 @@ Config.debug = false
 -- 100 = default
 -- Lower this value to make driving in deep surfaces (such as mud or deep sand) easier for ALL vehicles
 -- Raise this value to make driving in deep surfaces more difficult
-Config.generalDepthDifficulty = 100
+Config.generalDepthDifficulty = 150
 
 -- General speed of the vehicle sinking into the surface
 -- 100 = Default
 -- Lower this value to make all vehicles sink slower
 -- Raise this value to make all vehicles sink faster
-Config.generalSinkageSpeed = 100
+Config.generalSinkageSpeed = 200
 
 -- General loss of traction based on vehicle surface
 -- Vehicles will be more likely to skid on low traction surfaces
 -- Lower this value to decrease the general traction loss (make vehicles drift less on slippery surfaces)
 -- Raise this value to make vehicles lose more traction on slippery surfaces (make vehicles drift more on slippery surfaces)
-Config.generalTractionLoss = 100
+Config.generalTractionLoss = 150
 
 
 
@@ -196,7 +196,7 @@ Config.snow = {
 -- Options to decrease traction when its raining
 Config.rain = {
     enabled = true,
-    tractionLoss = 10,
+    tractionLoss = 25,
 }
 
 
