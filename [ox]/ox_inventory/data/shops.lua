@@ -132,10 +132,19 @@ return {
 		blip = {
 			id = 403, colour = 69, scale = 0.8
 		}, inventory = {
-			{ name = 'medikit', price = 26 },
-			{ name = 'bandage', price = 5 }
+			{ name = 'medikit', price = 5 },
+			{ name = 'bandage', price = 5 },
+			{ name = 'forceps', price = 5 },
+			{ name = 'gauze', price = 5 },
+			{ name = 'iodine', price = 5 },
+			{ name = 'pill', price = 5 },
+			{ name = 'surgical-gloves', price = 5 },
+			{ name = 'surgical-staple', price = 5 },
+			{ name = 'surgical-tray', price = 5 },
+			{ name = 'syringe', price = 5 },
+			{ name = 'tape', price = 5 },
 		}, locations = {
-			vec3(306.3687, -601.5139, 43.28406)
+			vector3(360.23, -1412.79, 32.99)
 		}, targets = {
 
 		}
