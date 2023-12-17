@@ -171,7 +171,7 @@ return {
 		inventory = {
 			{ name = 'lighter', price = 1 },
 			{ name = 'rollingpapers', price = 1 },
-			{ name = 'drug_grinder' price = 1 },
+			{ name = 'drug_grinder', price = 1 },
 			{ name = 'empty_weed_bag', price = 1 },
 			{ name = 'drug_shears', price = 50 },
 			{ name = 'gelatine', price = 1 },
