@@ -24,7 +24,7 @@ Shared.MinSpeed = 60 -- Minimum speed in MPH required to perform a hack
 Shared.LaptopAnimation = true -- Set to false if you don't want a tablet animation
 
 Shared.Permission = 'qbcore.god' -- The permission needed to use the createboost command (see ox_lib commands)
-Shared.MoneyType = 'crypto' -- The moneytype used to start a contract, make sure to edit your locales too
+Shared.MoneyType = 'bank' -- The moneytype used to start a contract, make sure to edit your locales too
 Shared.DownTrade = false -- Setting this to false stops players from sending contracts to players that don't have the boosting class for it.
 Shared.DisablePolice = true -- Setting this to true stops players with a police job to open the laptop and receive contracts
 Shared.MinCops = 0 -- Minimum cops required for the server to send contracts if CopsRequired option enabled
