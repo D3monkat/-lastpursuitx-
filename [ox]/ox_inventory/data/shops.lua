@@ -132,7 +132,7 @@ return {
 		blip = {
 			id = 403, colour = 69, scale = 0.8
 		}, inventory = {
-			{ name = 'medikit', price = 5 },
+			{ name = 'firstaid', price = 5 },
 			{ name = 'bandage', price = 5 },
 			{ name = 'forceps', price = 5 },
 			{ name = 'gauze', price = 5 },
@@ -140,7 +140,6 @@ return {
 			{ name = 'pill', price = 5 },
 			{ name = 'surgical-gloves', price = 5 },
 			{ name = 'surgical-staple', price = 5 },
-			{ name = 'surgical-tray', price = 5 },
 			{ name = 'syringe', price = 5 },
 			{ name = 'tape', price = 5 },
 		}, locations = {
