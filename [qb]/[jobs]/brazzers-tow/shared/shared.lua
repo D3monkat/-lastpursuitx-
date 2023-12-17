@@ -8,7 +8,7 @@ Config.Fuel = 'cdn-fuel' -- ox or resource name (ex. 'qb-fuel' )
 Config.Menu = 'ox' -- 'ox' or resource name (ex. 'qb-menu')
 
 Config.NotificationStyle = 'qbcore' -- 'phone' for Renewed's Phone notifications | 'qbcore' for standard qbcore notifications
-Config.TowTruck = 'Gtow' -- Tow truck model name
+Config.TowTruck = 'flatbed' -- Tow truck model name
 Config.MarkedVehicleOnly = true -- Allow only marked vehicles to be towed and not random vehicles around the street [RECOMMENDED: TRUE]
 Config.CallTowThroughTarget = true -- Adds a global vehicle option to call tow drivers by targeting the vehicle entity
 
