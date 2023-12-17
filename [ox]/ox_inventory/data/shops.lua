@@ -72,6 +72,24 @@ return {
 		}
 	},
 
+	widow = {
+		name = 'Widow Store',
+		 inventory = {
+		 { name = 'lighter', price = 1 },
+		 { name = 'rollingpapers', price = 1 },
+		 { name = 'drug_grinder' price = 1 },
+		 { name = 'empty_weed_bag', price = 1 },
+		 { name = 'drug_shears', price = 50 },
+		 { name = 'gelatine', price = 1 },
+		 { name = 'rawhoney', price = 1 },
+		 { name = 'wwmenu', price = 0 } 
+		}, locations = {
+			vector3(185.31, -236.3, 54.07),
+		}, targets = {
+			{ loc = vector3(185.31, -236.3, 54.07), length = 0.6, width = 3.0, heading = 336.0, minZ = 53.0, maxZ = 56.8, distance = 5.0 }
+		}
+	},
+
 	Ammunation = {
 		name = 'Ammunation',
 		blip = {
