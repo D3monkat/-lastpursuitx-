@@ -117,7 +117,7 @@ Config.OOCMessageWithoutCommand = true -- true: sends OOC message without comman
 --------------------------------
 -- [Me]
 
-Config.EnableMeCommand = true
+Config.EnableMeCommand = false
 
 Config.MeCommand = 'me'
 
@@ -220,7 +220,7 @@ Config.AnonymousIcon = 'fas fa-mask'
 --------------------------------
 -- [Twitch]
 
-Config.EnableTwitchCommand = true
+Config.EnableTwitchCommand = false
 
 Config.TwitchCommand = 'twitch'
 
@@ -234,7 +234,7 @@ Config.TwitchIcon = 'fab fa-twitch'
 --------------------------------
 -- [Youtube]
 
-Config.EnableYoutubeCommand = true
+Config.EnableYoutubeCommand = false
 
 Config.YoutubeCommand = 'youtube'
 
@@ -248,7 +248,7 @@ Config.YoutubeIcon = 'fab fa-youtube'
 --------------------------------
 -- [Twitter]
 
-Config.EnableTwitterCommand = true
+Config.EnableTwitterCommand = false
 
 Config.TwitterCommand = 'twitter'
 
@@ -257,7 +257,7 @@ Config.TwitterIcon = 'fab fa-twitter'
 --------------------------------
 -- [Police]
 
-Config.EnablePoliceCommand = true
+Config.EnablePoliceCommand = false
 
 Config.PoliceCommand = 'police'
 
@@ -268,7 +268,7 @@ Config.PoliceIcon = 'fas fa-bullhorn'
 --------------------------------
 -- [Ambulance]
 
-Config.EnableAmbulanceCommand = true
+Config.EnableAmbulanceCommand = false
 
 Config.AmbulanceCommand = 'ambulance'
 
