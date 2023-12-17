@@ -144,7 +144,8 @@ return {
 			{ name = 'syringe', price = 5 },
 			{ name = 'tape', price = 5 },
 		}, locations = {
-			vector3(360.23, -1412.79, 32.99)
+			vector3(360.23, -1412.79, 32.99),
+			vector3(-455.67, -309.12, 34.91)
 		}, targets = {
 
 		}
