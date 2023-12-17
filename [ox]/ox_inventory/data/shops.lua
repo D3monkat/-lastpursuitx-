@@ -7,6 +7,7 @@ return {
 			{ name = 'burger', price = 10 },
 			{ name = 'water', price = 10 },
 			{ name = 'cola', price = 10 },
+			{ name = 'phone', price = 1525 },
 		}, locations = {
 			vec3(25.7, -1347.3, 29.49),
 			vec3(-3038.71, 585.9, 7.9),
@@ -40,6 +41,7 @@ return {
 			{ name = 'water', price = 10 },
 			{ name = 'cola', price = 10 },
 			{ name = 'burger', price = 15 },
+			{ name = 'phone', price = 1525 },
 		}, locations = {
 			vec3(1135.808, -982.281, 46.415),
 			vec3(-1222.915, -906.983, 12.326),
@@ -63,7 +65,7 @@ return {
 		blip = {
 			id = 402, colour = 69, scale = 0.8
 		}, inventory = {
-			{ name = 'lockpick', price = 10 }
+			{ name = 'lockpick2', price = 10 }
 		}, locations = {
 			vec3(2748.0, 3473.0, 55.67),
 			vec3(342.99, -1298.26, 32.51)
