@@ -165,24 +165,6 @@ return {
 
 		}
 	},
-	
-	WeedStore = {
-		name = 'White Widow',
-		inventory = {
-			{ name = 'lighter', price = 1 },
-			{ name = 'rollingpapers', price = 1 },
-			{ name = 'drug_grinder' price = 1 },
-			{ name = 'empty_weed_bag', price = 1 },
-			{ name = 'drug_shears', price = 50 },
-			{ name = 'gelatine', price = 1 },
-			{ name = 'rawhoney', price = 1 },
-			{ name = 'wwmenu', price = 0 } 
-		}, locations = {
-			vector3(185.4, -236.08, 54.07)
-		}, targets = {
-
-		}
-	},
 
 	VendingMachineDrinks = {
 		name = 'Vending Machine',
