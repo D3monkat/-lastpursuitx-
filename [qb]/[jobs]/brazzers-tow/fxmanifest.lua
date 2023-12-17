@@ -18,7 +18,7 @@ server_scripts {
 
 shared_scripts {
 	'@qb-core/shared/locale.lua',
-	-- '@ox_lib/init.lua', -- IF YOU USING OX UNCOMMENT THIS
+	'@ox_lib/init.lua', -- IF YOU USING OX UNCOMMENT THIS
 	'shared/*.lua',
 }
 
