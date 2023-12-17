@@ -42,7 +42,7 @@ Config = {
     -- You can enable automated ptfx on emotes with the Auto flag here. 
     EnableAutoPtfx = false,
     -- You can enable the NSFW emotes here. Can be true, false or 'limited'
-    EnableNSFWEmotes = false,
+    EnableNSFWEmotes = true,
     -- You can enable the gang emotes here.
     EnableGangEmotes = true,
     -- You can enable the social movement emotes here.
