@@ -217,7 +217,7 @@ function Koci.Client.HUD:GetFuelExport()
         if Config.FrameWork == "esx" then
             return Koci.Framework.Math.Round(Entity(self.data.vehicle.entity).state.fuel or 0, 2)
         elseif Config.FrameWork == "qb" then
-            return Koci.Framework.Shared.Round(exports["cdn-fuel"]:GetFuel(self.data.vehicle.entity) or 0, 2)
+            return Koci.Framework.Shared.Round(exports["LegacyFuel"]:GetFuel(self.data.vehicle.entity) or 0, 2)
         end
     else
         local response = Koci.Utils:CustomFuelExport()

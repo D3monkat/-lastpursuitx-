@@ -6,7 +6,7 @@ function Utils.Functions:CustomFuelExport()
     --
     -- return exports['cdn-fuel']:GetFuel(vehicle)
     return Koci.Framework.Shared.Round(exports["cdn-fuel"]:GetFuel(self.data.vehicle.entity) or 0, 2)
-    return false
+    -- return false
 end
 
 local function SetVehicleCruiseControlState(state)
