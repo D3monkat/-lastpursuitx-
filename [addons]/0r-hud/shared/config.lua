@@ -8,10 +8,10 @@ Config.DebugPrint = false
 Config.Locale     = "en"
 
 -- ("esx" | "qb") -- > The latest version is always used.
-Config.FrameWork  = "esx"
+Config.FrameWork  = "qb"
 
 -- ("esx_notify" | "qb_notify" | "custom_notify") -- > System to be used
-Config.NotifyType = "esx_notify"
+Config.NotifyType = "qb_notify"
 
 Config.Settings   = {
     StatusBars = {
