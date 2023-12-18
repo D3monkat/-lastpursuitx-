@@ -4,8 +4,8 @@ function Utils.Functions:CustomFuelExport()
         return ESX.Math.Round(GetVehicleFuelLevel(HUD.Data.Vehicle), 2)
     ]]
     --
-    exports['cdn-fuel']:GetFuel(vehicle)
-    -- return false
+    -- return exports['cdn-fuel']:GetFuel(vehicle)
+    return false
 end
 
 local function SetVehicleCruiseControlState(state)
