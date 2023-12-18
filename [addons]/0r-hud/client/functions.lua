@@ -213,7 +213,7 @@ function Koci.Client.HUD:GetFuelExport()
         else
             return false
         end
-    elseif GetResourceState("cdn-fuel") == "started" then
+    elseif GetResourceState("LegacyFuel") == "started" then
         if Config.FrameWork == "esx" then
             return Koci.Framework.Math.Round(Entity(self.data.vehicle.entity).state.fuel or 0, 2)
         elseif Config.FrameWork == "qb" then
