@@ -48,7 +48,7 @@ Config.Settings   = {
     },
     VehicleHUD = {
         active = true,
-        kmH = true -- true = kmH, false = mpH
+        kmH = false -- true = kmH, false = mpH
     }
 }
 
