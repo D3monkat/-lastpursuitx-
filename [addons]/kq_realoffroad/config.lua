@@ -176,7 +176,7 @@ Config.depthHandlingQuality = {
         [11] = -10, -- Utility
         [12] = -5, -- Vans
         [17] = 10, -- Service
-        [18] = 10, -- Emergency
+        [18] = 85, -- Emergency
         [19] = 15, -- Military
         [20] = -5, -- Commercial
     }
