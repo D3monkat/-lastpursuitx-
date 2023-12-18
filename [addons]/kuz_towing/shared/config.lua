@@ -16,7 +16,7 @@ Config.towingCommand = 'tow'
 
 
 -- How long the towing rope should be (in meters) I highly recommend keeping it between 6 and 10 meters
-Config.ropeLength = 7
+Config.ropeLength = 10
 
 -- Time in seconds, how long it should take between each re-sync of the ropes, (30 seconds works well, for big servers you can make it higher)
 Config.ropeSyncDuration = 10
