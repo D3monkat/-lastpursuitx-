@@ -110,9 +110,9 @@ QBShared.Jobs = {
 			['16'] = { name = 'Major', payment = 708 },
 			['17'] = { name = 'Lieutenant Colonel', payment = 757 },
 			['18'] = { name = 'Colonel', payment = 810 },
-			['19'] = { name = 'Deputy Commissioner', payment = 867 },
-			['20'] = { name = 'Asst. Commissioner', payment = 928 },
-			['21'] = { name = 'Commissioner', payment = 993 },
+			['19'] = { name = 'Deputy Commissioner', payment = 867, bankAuth = true },
+			['20'] = { name = 'Asst. Commissioner', payment = 928, bankAuth = true },
+			['21'] = { name = 'Commissioner', payment = 993, bankAuth = true },
 			
 			
 		},
@@ -150,7 +150,7 @@ QBShared.Jobs = {
 			['1'] = { name = 'Novice', payment = 75 },
 			['2'] = { name = 'Experienced', payment = 100 },
 			['3'] = { name = 'Advanced', payment = 125 },
-			['4'] = { name = 'Manager', isboss = true, payment = 150 },
+			['4'] = { name = 'Manager', isboss = true, payment = 150, bankAuth = true },
         },
 	},
 	upnatom = {
@@ -207,7 +207,7 @@ QBShared.Jobs = {
 			['1'] = { name = 'Paramedic', payment = 75 },
 			['2'] = { name = 'Doctor', payment = 100 },
 			['3'] = { name = 'Surgeon', payment = 125 },
-			['4'] = { name = 'Chief', isboss = true, payment = 150 },
+			['4'] = { name = 'Chief', isboss = true, payment = 150, bankAuth = true },
 		},
 	},
 	realestate = {
