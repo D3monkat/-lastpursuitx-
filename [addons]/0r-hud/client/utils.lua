@@ -5,7 +5,7 @@ function Utils.Functions:CustomFuelExport()
     ]]
     --
     return exports['cdn-fuel']:GetFuel(vehicle)
-    return false
+    -- return false
 end
 
 local function SetVehicleCruiseControlState(state)
