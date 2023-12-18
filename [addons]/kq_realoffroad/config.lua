@@ -116,6 +116,9 @@ Config.blacklist = {
         'rhino',
         'scarab',
         'khanjali',
+        'polram',
+        'polraptor',
+        'tr_pdsilv'
     },
     classes = {
         [0] = false, -- Compacts
