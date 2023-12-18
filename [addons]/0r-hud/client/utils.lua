@@ -4,7 +4,7 @@ function Utils.Functions:CustomFuelExport()
         return ESX.Math.Round(GetVehicleFuelLevel(HUD.Data.Vehicle), 2)
     ]]
     --
-    exports["cdn-fuel"]:GetFuel
+    return exports['cdn-fuel']:GetFuel(vehicle)
     return false
 end
 
