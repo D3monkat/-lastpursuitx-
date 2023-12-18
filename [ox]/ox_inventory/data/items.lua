@@ -8015,4 +8015,565 @@ return {
 					close = true,
 					description = 'iodine',
 					},
+
+	["key1"] = {
+		label = "Casino Key 1",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "0x0x",
+		client = {
+			image = "key1.png",
+		}
+	},
+
+	["artlamp"] = {
+		label = "Art Lamp",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "Stolen Artwork",
+		client = {
+			image = "vanNecklace.png",
+		}
+	},
+
+	["armored_cat"] = {
+		label = "Armored Cat",
+		weight = 0,
+		stack = true,
+		close = true,
+		description = "Looks expensive to me o.o",
+		client = {
+			image = "armored_cat.png",
+		}
+	},
+
+	["paintingj"] = {
+		label = "Painting D",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "Stolen Artwork",
+		client = {
+			image = "paintingj.png",
+		}
+	},
+
+	["questing_mouse"] = {
+		label = "Quest Mouse",
+		weight = 0,
+		stack = true,
+		close = true,
+		description = "Looks expensive to me o.o",
+		client = {
+			image = "questing_mouse.png",
+		}
+	},
+
+	["hollow_knight"] = {
+		label = "Hollow Knight",
+		weight = 0,
+		stack = true,
+		close = true,
+		description = "Looks expensive to me o.o",
+		client = {
+			image = "hollow_knight.png",
+		}
+	},
+
+	["scrap2"] = {
+		label = "Scrap M",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "0x0x",
+		client = {
+			image = "blowtorch.png",
+		}
+	},
+
+	["arthorse"] = {
+		label = "Art Horse",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "Stolen Artwork",
+		client = {
+			image = "vanNecklace.png",
+		}
+	},
+
+	["fox"] = {
+		label = "Fox",
+		weight = 0,
+		stack = true,
+		close = true,
+		description = "Looks expensive to me o.o",
+		client = {
+			image = "fox.png",
+		}
+	},
+
+	["bolt_cutter"] = {
+		label = "Bolt Cutter",
+		weight = 100,
+		stack = false,
+		close = true,
+		description = "0x0x",
+		client = {
+			image = "weapon_stickybomb.png",
+		}
+	},
+
+	["gold"] = {
+		label = "Gold Bar",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "0x0x",
+		client = {
+			image = "blowtorch.png",
+		}
+	},
+
+	["scrap"] = {
+		label = "Scrap L",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "0x0x",
+		client = {
+			image = "blowtorch.png",
+		}
+	},
+
+	["gasmask"] = {
+		label = "gasmask",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "0x0x",
+		client = {
+			image = "gasmask.png",
+		}
+	},
+
+	["buttercup"] = {
+		label = "Buttercup",
+		weight = 0,
+		stack = true,
+		close = true,
+		description = "Looks expensive to me o.o",
+		client = {
+			image = "buttercup.png",
+		}
+	},
+
+	["hack_usb"] = {
+		label = "Hack USB",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "Handy software to shut down some systems",
+		client = {
+			image = "usb_device.png",
+		}
+	},
+
+	["dino_student"] = {
+		label = "Dino",
+		weight = 0,
+		stack = true,
+		close = true,
+		description = "Looks expensive to me o.o",
+		client = {
+			image = "dino_student.png",
+		}
+	},
+
+	["necklace"] = {
+		label = "Necklace",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "0x0x",
+		client = {
+			image = "blowtorch.png",
+		}
+	},
+
+	["vanbottle"] = {
+		label = "vanBottle",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "Stolen Artwork",
+		client = {
+			image = "vanBottle.png",
+		}
+	},
+
+	["paintingg"] = {
+		label = "Painting A",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "Stolen Artwork",
+		client = {
+			image = "paintingg.png",
+		}
+	},
+
+	["knight_cat"] = {
+		label = "Knight Cat",
+		weight = 0,
+		stack = true,
+		close = true,
+		description = "Looks expensive to me o.o",
+		client = {
+			image = "knight_cat.png",
+		}
+	},
+
+	["paintingh"] = {
+		label = "Painting C",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "Stolen Artwork",
+		client = {
+			image = "paintingh.png",
+		}
+	},
+
+	["vanpanther"] = {
+		label = "vanPanther",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "Stolen Artwork",
+		client = {
+			image = "vanPanther.png",
+		}
+	},
+
+	["pig_angel"] = {
+		label = "Angel Pig",
+		weight = 0,
+		stack = true,
+		close = true,
+		description = "Looks expensive to me o.o",
+		client = {
+			image = "pig_angel.png",
+		}
+	},
+
+	["videorecord"] = {
+		label = "Video Record",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "0x0x",
+		client = {
+			image = "key1.png",
+		}
+	},
+
+	["bubbles"] = {
+		label = "Bubbles",
+		weight = 0,
+		stack = true,
+		close = true,
+		description = "Looks expensive to me o.o",
+		client = {
+			image = "bubbles.png",
+		}
+	},
+
+	["paintingf"] = {
+		label = "Painting B",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "Stolen Artwork",
+		client = {
+			image = "paintingf.png",
+		}
+	},
+
+	["blowtorch"] = {
+		label = "blowtorch",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "0x0x",
+		client = {
+			image = "blowtorch.png",
+		}
+	},
+
+	["vandiamond"] = {
+		label = "vanDiamond",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "Stolen Artwork",
+		client = {
+			image = "vanDiamond.png",
+		}
+	},
+
+	["vanpogo"] = {
+		label = "vanPogo",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "Stolen Artwork",
+		client = {
+			image = "vanPogo.png",
+		}
+	},
+
+	["vannecklace"] = {
+		label = "vanNecklace",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "Stolen Artwork",
+		client = {
+			image = "vanNecklace.png",
+		}
+	},
+
+	["mickey_mouse"] = {
+		label = "Mickey Mouse",
+		weight = 0,
+		stack = true,
+		close = true,
+		description = "Looks expensive to me o.o",
+		client = {
+			image = "mickey_mouse.png",
+		}
+	},
+
+	["coke_pooch"] = {
+		label = "Coke Pooch",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "0x0x",
+		client = {
+			image = "blowtorch.png",
+		}
+	},
+
+	["pogo"] = {
+		label = "Pogo",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "Stolen Artwork",
+		client = {
+			image = "vanPogo.png",
+		}
+	},
+
+	["artskull"] = {
+		label = "Art Skull",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "Stolen Artwork",
+		client = {
+			image = "vanNecklace.png",
+		}
+	},
+
+	["big_drill"] = {
+		label = "big_drill",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "0x0x",
+		client = {
+			image = "big_drill.png",
+		}
+	},
+
+	["key2"] = {
+		label = "Casino Key 2",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "0x0x",
+		client = {
+			image = "key2.png",
+		}
+	},
+
+	["ring"] = {
+		label = "Ring",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "0x0x",
+		client = {
+			image = "blowtorch.png",
+		}
+	},
+
+	["artgun"] = {
+		label = "Art Gun",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "Stolen Artwork",
+		client = {
+			image = "vanNecklace.png",
+		}
+	},
+
+	["shark_boi"] = {
+		label = "Shark Boi",
+		weight = 0,
+		stack = true,
+		close = true,
+		description = "Looks expensive to me o.o",
+		client = {
+			image = "shark_boi.png",
+		}
+	},
+
+	["artegg"] = {
+		label = "Art Egg",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "Stolen Artwork",
+		client = {
+			image = "vanNecklace.png",
+		}
+	},
+
+	["cutter"] = {
+		label = "cutter",
+		weight = 5,
+		stack = true,
+		close = false,
+		description = "Cutter",
+		client = {
+			image = "cutter.png",
+		}
+	},
+
+	["c4_bomb"] = {
+		label = "C4",
+		weight = 100,
+		stack = false,
+		close = true,
+		description = "0x0x",
+		client = {
+			image = "weapon_stickybomb.png",
+		}
+	},
+
+	["weed_pooch"] = {
+		label = "Weed Pooch",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "0x0x",
+		client = {
+			image = "blowtorch.png",
+		}
+	},
+
+	["monkey_punk"] = {
+		label = "Monkey Punk",
+		weight = 0,
+		stack = true,
+		close = true,
+		description = "Looks expensive to me o.o",
+		client = {
+			image = "monkey_punk.png",
+		}
+	},
+
+	["goldwatch"] = {
+		label = "Gold Watch",
+		weight = 200,
+		stack = true,
+		close = false,
+		description = "0x0x",
+		client = {
+			image = "blowtorch.png",
+		}
+	},
+
+	["dino"] = {
+		label = "Dino",
+		weight = 0,
+		stack = true,
+		close = true,
+		description = "Looks expensive to me o.o",
+		client = {
+			image = "dino.png",
+		}
+	},
+
+	["thermite_bomb"] = {
+		label = "Thermite Bomb",
+		weight = 100,
+		stack = false,
+		close = true,
+		description = "0x0x",
+		client = {
+			image = "weapon_stickybomb.png",
+		}
+	},
+
+	["panther"] = {
+		label = "Panther",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "Stolen Artwork",
+		client = {
+			image = "vanPanther.png",
+		}
+	},
+
+	["bag"] = {
+		label = "Bag",
+		weight = 5,
+		stack = true,
+		close = false,
+		description = "Bag",
+		client = {
+			image = "bag.png",
+		}
+	},
+
+	["monky"] = {
+		label = "Monkey",
+		weight = 0,
+		stack = true,
+		close = true,
+		description = "Looks expensive to me o.o",
+		client = {
+			image = "monky.png",
+		}
+	},
+
+	["blossom"] = {
+		label = "Blossom",
+		weight = 0,
+		stack = true,
+		close = true,
+		description = "Looks expensive to me o.o",
+		client = {
+			image = "blossom.png",
+		}
+	},
 }
