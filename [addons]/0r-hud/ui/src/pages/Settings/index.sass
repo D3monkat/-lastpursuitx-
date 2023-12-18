@@ -1,0 +1,30 @@
+.setting-switch
+    --false: #E81B1B
+    --true: #05d78d
+    input[type=checkbox]
+        appearance: none
+        height: 32px
+        width: 3.5rem
+        background-color: #903437
+        position: relative
+        cursor: pointer
+        margin-top: 6px
+        &:checked
+            background-color: #005959
+
+    input[type=checkbox]::before
+        content: ''
+        display: block
+        height: 1.5rem
+        width: 1.5rem
+        transform: translate(-50%, -50%)
+        position: absolute
+        top: 50%
+        left: calc(1.9em/2)
+        background-color: var(--false)
+        border-radius: .2em
+        transition: .3s ease
+
+    input[type=checkbox]:checked::before
+        background-color: var(--true)
+        left: calc(100% - (1.9em/2))

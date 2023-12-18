@@ -1,0 +1,500 @@
+import React, { createContext, useState } from "react";
+import {
+  DataContextProps,
+  HelpGuideProps,
+  StatusBarsProps,
+  VehicleHudProps,
+} from "../types/DataProviderTypes";
+import { useNuiEvent } from "../hooks/useNuiEvent";
+import { debugData } from "../utils/debugData";
+import { fetchNui } from "../utils/fetchNui";
+
+debugData([
+  {
+    action: "UPDATE_HUD_VEHICLE",
+    data: {
+      show: false,
+    },
+  },
+]);
+debugData([
+  {
+    action: "SET_HUD_SETTINGS_HELP_GUIDES",
+    data: [
+      {
+        title: "Command: /hudclose <number>",
+        description: "Hidden any hud element.",
+      },
+      {
+        title: "Command: /hudopen <number>",
+        description: "Show any hud element.",
+      },
+    ],
+  },
+]);
+
+export const DataCtx = createContext<DataContextProps>({} as DataContextProps);
+
+export const DataProvider: React.FC<{ children: React.ReactNode }> = ({
+  children,
+}) => {
+  const [statusBars, setStatusBars] = useState<StatusBarsProps>({
+    voice: {
+      isTalking: false,
+      active: true,
+      color: "zinc",
+      isTalkingColor: "yellow",
+      microphone: true,
+      radio: false,
+      range: 2,
+    },
+    health: {
+      active: true,
+      color: "green",
+      progressLevel: 35,
+      autoHide: 100,
+    },
+    armor: {
+      active: true,
+      color: "blue",
+      progressLevel: 35,
+      autoHide: 100,
+    },
+    hunger: {
+      active: true,
+      color: "orange",
+      progressLevel: 35,
+      autoHide: 100,
+    },
+    thirst: {
+      active: true,
+      color: "cyan",
+      progressLevel: 35,
+      autoHide: 100,
+    },
+    stress: {
+      active: false,
+      color: "red",
+      progressLevel: 10,
+      autoHide: 100,
+    },
+    leaf: {
+      active: false,
+      color: "black",
+      progressLevel: 100,
+      autoHide: 100,
+    },
+    terminal: {
+      active: false,
+      color: "black",
+      progressLevel: 100,
+      autoHide: 100,
+    },
+    oxygen: {
+      active: true,
+      color: "cyan",
+      progressLevel: 35,
+      autoHide: 99,
+    },
+    stamina: {
+      active: true,
+      color: "orange",
+      progressLevel: 35,
+      autoHide: 100,
+    },
+  } as StatusBarsProps);
+
+  const [vehicleHud, setVehicleHud] = useState<VehicleHudProps>({
+    hidden: false,
+    show: false,
+    inVehicle: false,
+    speed: 1,
+    kmH: false,
+    fuel: {
+      level: 50,
+      max_level: 100,
+    },
+    cruiseControlStatus: false,
+    entity: -1,
+    gear: 2,
+    isPassenger: false,
+    isSeatbeltOn: false,
+    rpm: 200,
+    miniMaP: {
+      style: "square",
+    },
+    speedoMeter: {
+      fps: 30,
+    },
+  } as VehicleHudProps);
+
+  const [helpGuides, setHelpGuides] = useState<HelpGuideProps[]>(
+    [] as HelpGuideProps[]
+  );
+
+  useNuiEvent("SET_HUD_STATUS_BARS_ACTIVE", (newValues) => {
+    setStatusBars((prevState) => ({
+      ...prevState,
+      voice: {
+        ...prevState.voice,
+        active: newValues.voice.active,
+      },
+      health: {
+        ...prevState.health,
+        active: newValues.health.active,
+      },
+      armor: {
+        ...prevState.armor,
+        active: newValues.armor.active,
+      },
+      hunger: {
+        ...prevState.hunger,
+        active: newValues.hunger.active,
+      },
+      thirst: {
+        ...prevState.thirst,
+        active: newValues.thirst.active,
+      },
+      stress: {
+        ...prevState.stress,
+        active: newValues.stress.active,
+      },
+      leaf: {
+        ...prevState.leaf,
+        active: newValues.leaf.active,
+      },
+      terminal: {
+        ...prevState.terminal,
+        active: newValues.terminal.active,
+      },
+      oxygen: {
+        ...prevState.oxygen,
+        active: newValues.oxygen.active,
+      },
+      stamina: {
+        ...prevState.stamina,
+        active: newValues.stamina.active,
+      },
+    }));
+  });
+  useNuiEvent("SET_HUD_VEHICLE_ACTIVE", (newValues) => {
+    setVehicleHud((p) => ({
+      ...p,
+      hidden: !newValues.active,
+    }));
+  });
+  useNuiEvent("UPDATE_HUD_STATUS_BARS", (newValues) => {
+    setStatusBars((prevState) => ({
+      ...prevState,
+      voice: {
+        ...prevState.voice,
+        ...newValues.voice,
+      },
+      health: {
+        ...prevState.health,
+        progressLevel: newValues.health,
+      },
+      armor: {
+        ...prevState.armor,
+        progressLevel: newValues.armor,
+      },
+      hunger: {
+        ...prevState.hunger,
+        progressLevel: newValues.hunger,
+      },
+      thirst: {
+        ...prevState.thirst,
+        progressLevel: newValues.thirst,
+      },
+      stress: {
+        ...prevState.stress,
+        progressLevel: newValues.stress,
+      },
+      leaf: {
+        ...prevState.leaf,
+        progressLevel: newValues.leaf,
+      },
+      terminal: {
+        ...prevState.terminal,
+        progressLevel: newValues.terminal,
+      },
+      oxygen: {
+        ...prevState.oxygen,
+        progressLevel: newValues.oxygen,
+      },
+      stamina: {
+        ...prevState.stamina,
+        progressLevel: newValues.stamina,
+      },
+    }));
+  });
+  useNuiEvent("UPDATE_HUD_VEHICLE", (newValues) => {
+    setVehicleHud((p) => ({
+      ...p,
+      ...newValues,
+    }));
+  });
+  useNuiEvent("HIDDEN_HUD_ELEMENT", (data: any) => {
+    hiddenHudElement(data.code, data.element);
+  });
+  useNuiEvent("SHOW_HUD_ELEMENT", (data: any) => {
+    showHudElement(data.code, data.element);
+  });
+  useNuiEvent("LOAD_HUD_STORAGE", () => {
+    getSettings();
+  });
+  useNuiEvent("SET_HUD_SETTINGS_HELP_GUIDES", (data) => {
+    setHelpGuides(data);
+  });
+
+  const hiddenHudElement = (code: any, key: any) => {
+    if (code <= 10) {
+      setStatusBars((prevState: any) => ({
+        ...prevState,
+        [key]: {
+          ...prevState[key],
+          active: false,
+        },
+      }));
+    } else if (code == 11) {
+      setVehicleHud((p: any) => ({
+        ...p,
+        hidden: true,
+      }));
+    }
+  };
+  const showHudElement = (code: any, key: any) => {
+    if (code <= 10) {
+      setStatusBars((prevState: any) => ({
+        ...prevState,
+        [key]: {
+          ...prevState[key],
+          active: true,
+        },
+      }));
+    } else if (code == 11) {
+      setVehicleHud((p: any) => ({
+        ...p,
+        hidden: false,
+      }));
+    }
+  };
+
+  function handleLocalStorage(key: string, type: "set" | "get", newData?: any) {
+    if (localStorage) {
+      if (type === "get") {
+        if (localStorage.getItem(key) != null) {
+          return JSON.parse(localStorage.getItem(key) || "{}");
+        }
+        return false;
+      }
+      localStorage.setItem(key, JSON.stringify(newData));
+    } else {
+      return false;
+    }
+  }
+
+  const saveSettings = (type: string) => {
+    switch (type) {
+      case "hud":
+        handleLocalStorage("miniMap", "set", {
+          style: vehicleHud.miniMaP.style,
+        });
+        handleLocalStorage("speedoMeter", "set", {
+          fps: vehicleHud.speedoMeter.fps,
+        });
+        handleLocalStorage("health", "set", {
+          active: statusBars.health.active,
+          autoHide: statusBars.health.autoHide,
+          color: statusBars.health.color,
+        });
+        handleLocalStorage("armor", "set", {
+          active: statusBars.armor.active,
+          autoHide: statusBars.armor.autoHide,
+          color: statusBars.armor.color,
+        });
+        handleLocalStorage("hunger", "set", {
+          active: statusBars.hunger.active,
+          autoHide: statusBars.hunger.autoHide,
+          color: statusBars.hunger.color,
+        });
+        handleLocalStorage("thirst", "set", {
+          active: statusBars.thirst.active,
+          autoHide: statusBars.thirst.autoHide,
+          color: statusBars.thirst.color,
+        });
+        handleLocalStorage("oxygen", "set", {
+          active: statusBars.oxygen.active,
+          autoHide: statusBars.oxygen.autoHide,
+          color: statusBars.oxygen.color,
+        });
+        handleLocalStorage("stamina", "set", {
+          active: statusBars.stamina.active,
+          autoHide: statusBars.stamina.autoHide,
+          color: statusBars.stamina.color,
+        });
+        handleLocalStorage("stress", "set", {
+          active: statusBars.stress.active,
+          autoHide: statusBars.stress.autoHide,
+          color: statusBars.stress.color,
+        });
+        handleLocalStorage("terminal", "set", {
+          active: statusBars.terminal.active,
+          autoHide: statusBars.terminal.autoHide,
+          color: statusBars.terminal.color,
+        });
+        handleLocalStorage("leaf", "set", {
+          active: statusBars.leaf.active,
+          autoHide: statusBars.leaf.autoHide,
+          color: statusBars.leaf.color,
+        });
+        break;
+      default:
+        break;
+    }
+    fetchNui("OnSettingsSaved", {
+      status: true,
+      newVH: {
+        miniMap: {
+          style: vehicleHud.miniMaP.style,
+        },
+        speedoMeter: {
+          fps: vehicleHud.speedoMeter.fps,
+        },
+      },
+    });
+  };
+  const getSettings = () => {
+    setVehicleHud((p) => ({
+      ...p,
+      miniMaP: {
+        ...p.miniMaP,
+        style: handleLocalStorage("miniMap", "get").style || p.miniMaP.style,
+      },
+      speedoMeter: {
+        ...p.speedoMeter,
+        fps:
+          handleLocalStorage("speedoMeter", "get").style || p.speedoMeter.fps,
+      },
+    }));
+    setStatusBars((prevState) => ({
+      ...prevState,
+      health: {
+        ...prevState.health,
+        active:
+          typeof handleLocalStorage("health", "get").active == "boolean"
+            ? handleLocalStorage("health", "get").active
+            : prevState.health.active,
+        autoHide: handleLocalStorage("health", "get").autoHide
+          ? handleLocalStorage("health", "get").autoHide
+          : prevState.health.autoHide,
+        color: handleLocalStorage("health", "get").color
+          ? handleLocalStorage("health", "get").color
+          : prevState.health.color,
+      },
+      armor: {
+        ...prevState.armor,
+        active:
+          typeof handleLocalStorage("armor", "get").active == "boolean"
+            ? handleLocalStorage("armor", "get").active
+            : prevState.armor.active,
+        autoHide: handleLocalStorage("armor", "get").autoHide
+          ? handleLocalStorage("armor", "get").autoHide
+          : prevState.armor.autoHide,
+        color: handleLocalStorage("armor", "get").color
+          ? handleLocalStorage("armor", "get").color
+          : prevState.armor.color,
+      },
+      hunger: {
+        ...prevState.hunger,
+        active:
+          typeof handleLocalStorage("hunger", "get").active == "boolean"
+            ? handleLocalStorage("hunger", "get").active
+            : prevState.hunger.active,
+        autoHide: handleLocalStorage("hunger", "get").autoHide
+          ? handleLocalStorage("hunger", "get").autoHide
+          : prevState.hunger.autoHide,
+        color: handleLocalStorage("hunger", "get").color
+          ? handleLocalStorage("hunger", "get").color
+          : prevState.hunger.color,
+      },
+      thirst: {
+        ...prevState.thirst,
+        active:
+          typeof handleLocalStorage("thirst", "get").active == "boolean"
+            ? handleLocalStorage("thirst", "get").active
+            : prevState.thirst.active,
+        autoHide: handleLocalStorage("thirst", "get").autoHide
+          ? handleLocalStorage("thirst", "get").autoHide
+          : prevState.thirst.autoHide,
+        color: handleLocalStorage("thirst", "get").color
+          ? handleLocalStorage("thirst", "get").color
+          : prevState.thirst.color,
+      },
+      oxygen: {
+        ...prevState.oxygen,
+        active:
+          typeof handleLocalStorage("oxygen", "get").active == "boolean"
+            ? handleLocalStorage("oxygen", "get").active
+            : prevState.oxygen.active,
+        autoHide: handleLocalStorage("oxygen", "get").autoHide
+          ? handleLocalStorage("oxygen", "get").autoHide
+          : prevState.oxygen.autoHide,
+        color: handleLocalStorage("oxygen", "get").color
+          ? handleLocalStorage("oxygen", "get").color
+          : prevState.oxygen.color,
+      },
+      stamina: {
+        ...prevState.stamina,
+        active:
+          typeof handleLocalStorage("stamina", "get").active == "boolean"
+            ? handleLocalStorage("stamina", "get").active
+            : prevState.stamina.active,
+        autoHide: handleLocalStorage("stamina", "get").autoHide
+          ? handleLocalStorage("stamina", "get").autoHide
+          : prevState.stamina.autoHide,
+        color: handleLocalStorage("stamina", "get").color
+          ? handleLocalStorage("stamina", "get").color
+          : prevState.stamina.color,
+      },
+      stress: {
+        ...prevState.stress,
+        active:
+          typeof handleLocalStorage("stress", "get").active == "boolean"
+            ? handleLocalStorage("stress", "get").active
+            : prevState.stress.active,
+        autoHide: handleLocalStorage("stress", "get").autoHide
+          ? handleLocalStorage("stress", "get").autoHide
+          : prevState.stress.autoHide,
+        color: handleLocalStorage("stress", "get").color
+          ? handleLocalStorage("stress", "get").color
+          : prevState.stress.color,
+      },
+      terminal: {
+        ...prevState.terminal,
+        active:
+          typeof handleLocalStorage("terminal", "get").active == "boolean"
+            ? handleLocalStorage("terminal", "get").active
+            : prevState.terminal.active,
+      },
+      leaf: {
+        ...prevState.leaf,
+        active:
+          typeof handleLocalStorage("leaf", "get").active == "boolean"
+            ? handleLocalStorage("leaf", "get").active
+            : prevState.leaf.active,
+      },
+    }));
+  };
+
+  const value = {
+    statusBars,
+    vehicleHud,
+    setStatusBars,
+    setVehicleHud,
+    saveSettings,
+    helpGuides,
+  };
+
+  return <DataCtx.Provider value={value}>{children}</DataCtx.Provider>;
+};
