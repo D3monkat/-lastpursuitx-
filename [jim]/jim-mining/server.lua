@@ -26,7 +26,7 @@ RegisterServerEvent("jim-mining:Reward", function(data)
 		end
 	elseif data.wash then
 		TriggerEvent("jim-mining:server:toggleItem", false, "stone", data.cost, src)
-		for i = 1, math.random(1,2) do
+		for i = 1, math.random(1,10) do
 			TriggerEvent("jim-mining:server:toggleItem", true, Config.WashPool[math.random(1, #Config.WashPool)], amount, src)
 		end
 	elseif data.pan then

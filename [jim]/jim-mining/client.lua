@@ -396,7 +396,7 @@ end)
 local Washing = false
 RegisterNetEvent('jim-mining:WashStart', function(data) local Ped = PlayerPedId()
 	if Washing then return end
-	local cost = 1
+	local cost = 5
 	if HasItem("stone", cost) then
 		Washing = true
 		lockInv(true)
