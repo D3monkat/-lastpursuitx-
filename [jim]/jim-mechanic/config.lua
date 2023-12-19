@@ -262,9 +262,9 @@ Config = {
 		NosRefillCharge = 1000, 	-- amount in dollars required to refill a nos can
 
 		NosBoostPower = { 			-- NOS boost acceleration power
-			20.0, -- Level 1
-			35.0, -- Level 2
-			50.0, -- Level 3
+			10.0, -- Level 1
+			15.0, -- Level 2
+			20.0, -- Level 3
 		},
 
 		NitrousUseRate = 0.4, 		-- How fast the nitrous drains (halved for level1, doubled for level3)
