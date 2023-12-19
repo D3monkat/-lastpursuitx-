@@ -122,7 +122,7 @@ end)
 --     local deger = tonumber(amount)
 --     ExecuteSql("UPDATE ak4y_playtimeshop SET coin = coin + '"..deger.."' WHERE citizenid = '"..citizenId.."'")
 -- end)
-egisterNetEvent('ak4y-playTimeShop:addCoin')
+RegisterNetEvent('ak4y-playTimeShop:addCoin')
 AddEventHandler('ak4y-playTimeShop:addCoin', function(amount)
     local xPlayer = QBCore.Functions.GetPlayer(_source)
     local citizenId = xPlayer.PlayerData.citizenid
