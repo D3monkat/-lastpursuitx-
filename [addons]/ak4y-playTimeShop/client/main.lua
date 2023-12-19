@@ -41,6 +41,11 @@ AddEventHandler('kat:openthegates', function()
 openMenu()
 end)
 
+RegisterNetEvent('kat:youthought')
+AddEventHandler('kat:youthought', function()
+    QBCore.Functions.Notify('Why you tryin to steal goods from the city? Wrong Role!!!!!', 'error', 15000)
+end)
+
 
 RegisterCommand(AK4Y.OpenCommand, function()
     local Dperms = {"1186511422377709728","947973977580638240"}
