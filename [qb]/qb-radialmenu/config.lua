@@ -2,7 +2,7 @@ Config = {}
 Config.Keybind = 'F1' -- FiveM Keyboard, this is registered keymapping, so needs changed in keybindings if player already has this mapped.
 Config.Toggle = false -- use toggle mode. False requires hold of key
 Config.UseWhilstWalking = false -- use whilst walking
-Config.EnableExtraMenu = true
+Config.EnableExtraMenu = false
 Config.Fliptime = 15000
 
 Config.MenuItems = {
@@ -353,14 +353,6 @@ Config.VehicleExtras = {
     title = 'Vehicle Extras',
     icon = 'plus',
     items = {
-        {
-            id = '4x4',
-            title = 'Toggle 4x4',
-            icon = 'box-open',
-            type = 'command',
-            event = '4x4',
-            shouldClose = false
-        },
     }
 }
 
