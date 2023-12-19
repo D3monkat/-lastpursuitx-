@@ -44,7 +44,7 @@ end)
 
 RegisterCommand(AK4Y.OpenCommand, function()
     local Dperms = {"1186511422377709728","947973977580638240"}
-    local discordperms = exports.zdiscord:isRolePresent(source, Dperms);
+    local discordperms = exports.zdiscord:isRolePresent(source, "947973977580638240");
     if discordperms then
 	openMenu()
     else 

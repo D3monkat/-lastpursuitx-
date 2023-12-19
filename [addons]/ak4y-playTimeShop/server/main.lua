@@ -108,7 +108,7 @@ end)
 RegisterCommand('booststore', function(source)
 	local source = source    
     local Dperms = {"1186511422377709728","947973977580638240"}
-    local discordperms = exports.zdiscord:isRolePresent(source, Dperms);
+    local discordperms = exports.zdiscord:isRolePresent(source, "947973977580638240");
     if discordperms then
         TriggerClientEvent('kat:openthegates')
     end
@@ -130,7 +130,7 @@ AddEventHandler('ak4y-playTimeShop:addCoin', function(amount)
     local source = source
     local Dperms = {"1186511422377709728","947973977580638240"}
     -- Check if the player has the required Discord role
-    local discordperms = exports.zdiscord:isRolePresent(source, Dperms)
+    local discordperms = exports.zdiscord:isRolePresent(source, "947973977580638240")
 
     if discordperms then
     ExecuteSql("UPDATE ak4y_playtimeshop SET coin = coin + '"..deger.."' WHERE citizenid = '"..citizenId.."'")
