@@ -1,0 +1,173 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+            integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <div class="succesfullyArea">
+            <div class="succesNotify">Thanks for purchasing!</div>
+        </div>
+        <div class="notifySectionXX">
+            <div class="notifyArea"></div>
+        </div>
+        <div class="coinBuyArea">
+            <div class="coinBuyMain">
+                <div class="exitAreaBuy">
+                    <span id="exitText">EXIT</span>
+                    <span><i id="exitBttn" class="fa-sharp fa-solid fa-circle-xmark"></i></span>
+                </div>
+                <div class="coinListArea"></div>
+                <div class="redeemSection">
+                    <input
+                        type="text"
+                        class="writeTheCode"
+                        id="redeemCodeInput"
+                        value="REDEEM CODE..."
+                        onblur="if(this.value == '') { this.value='REDEEM CODE...'}"
+                        onfocus="if (this.value == 'REDEEM CODE...') {this.value=''}"
+                    />
+                    <div class="redeemOkButton">ACCEPT</div>
+                </div>
+            </div>
+        </div>
+        <div class="youWantBuySection">
+            <div class="wantGeneral">
+                <div class="wantText">FOR <span class="wantCoin">300 COINS</span>, DO YOU APPROVE <br />THE PURCHASE?</div>
+                <div class="wantRectangle"></div>
+                <div class="wantItemArea">
+                    <div class="wantItemName">BMW M5</div>
+                    <div class="wantItemCount">X1</div>
+                </div>
+                <div class="wantRectangle"></div>
+                <div class="wantItemButtonArea">
+                    <div class="wantButton" id="wantCancelButton">CANCEL</div>
+                    <div class="wantButton" id="wantBuyButton">BUY</div>
+                </div>
+            </div>
+        </div>
+        <div class="succesfullyPurchArea">
+            <div class="succesfullMain">
+                <div class="succesItemLabel">BMW M5</div>
+                <div class="succesItemImageArea">
+                    <img id="succesImg" src="./images/car.png" alt="" />
+                </div>
+                <div class="successfullyText">SUCCESSFULLY</div>
+                <div class="purchasedText">PURCHASED</div>
+            </div>
+        </div>
+        <div class="generalSection">
+            <div class="generalTopSection">
+                <div class="titleArea">
+                    <div class="titleImageArea">
+                        <img src="./images/clock.png" alt="" />
+                    </div>
+                    <div class="titleTextArea">
+                        <div class="title1">AK4Y</div>
+                        <div class="title2">Playtime</div>
+                    </div>
+                </div>
+                <div class="topFirstRectangle"></div>
+                <div class="profileArea">
+                    <div class="profilePhoto">
+                        <img id="profilePhotoX" src="./images/pp.png" alt="" />
+                    </div>
+                    <div class="profileTextArea">
+                        <div class="profileNameArea">
+                            <div class="firstName">BRENDEN</div>
+                            <div class="lastName">RANDALL</div>
+                        </div>
+                        <div class="profileCreditArea">
+                            <div class="creditIconArea">
+                                <img src="./images/coin.png" alt="" />
+                            </div>
+                            <div class="creditTextArea">
+                                <div class="creditCount">300</div>
+                                <div class="creditText">COIN</div>
+                            </div>
+                            <div class="addCreditButton">+</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nextRewardArea">
+                    <i id="clockIcon" class="fa-solid fa-clock"></i>
+                    <div class="rewardTextArea">
+                        <div class="rewardText1">FOR THE NEXT COIN REWARD</div>
+                        <div class="nextCoinTime">02h 25m 50s</div>
+                        <div class="rewardText3Area">
+                            <div class="rewardText5">REWARD :</div>
+                            <div class="rewardText6">10 COIN</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="exitButtonArea">
+                    <div class="exitText">EXIT</div>
+                    <div class="exitButtonBorder">
+                        <i id="exitIcon" class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="generalBottomSection">
+                <div class="bottomLeftWrapper">
+                    <img id="leftImage" src="./images/leftBorder.png" alt="" />
+                    <div class="rankingTextArea">
+                        <div class="weeklyText">TOP</div>
+                        <div class="rankingText">PLAYERS</div>
+
+                        <!-- <i id="clockIcon2" class="fa-solid fa-clock"></i>
+                        <div class="weeklyDay">3</div>
+                        <div class="weeklyDayText">day</div> -->
+                    </div>
+                    <div class="rankAreaRankList"></div>
+                    <div class="topTextArea">
+                        <div class="topText">TOP</div>
+                        <div class="text6">6</div>
+                    </div>
+                </div>
+                <div class="bottomRightWrapper">
+                    <img id="rightImage" src="./images/rightBox.png" alt="" />
+                    <div class="rightBoxTopArea">
+                        <div class="plyTmShopTextArea">
+                            <div class="playTmText">PLAYTIME</div>
+                            <div class="shpText">SHOP</div>
+                        </div>
+                        <div class="rightBoxRectangle"></div>
+                    </div>
+                    <div class="rightItemList"></div>
+                    <div class="rightItemBottomButtonArea">
+                        <div class="previousButton">
+                            <i id="arrowButton" class="fa-solid fa-arrow-left"></i>
+                            <div class="previousText">PREVIOUS PAGE</div>
+                        </div>
+                        <div class="pageArea">
+                            <div class="currentPage">1</div>
+                            <div class="totalPage">/ 1</div>
+                        </div>
+                        <div class="nextButton">
+                            <div class="nextText">NEXT PAGE</div>
+                            <i id="rightArrowButton" class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="categorySection"></div>
+            </div>
+        </div>
+        <script src="js/fontawesome.min.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <script src="js/progressbar.js"></script>
+        <script src="js/app.js?v=1"></script>
+    </body>
+</html>

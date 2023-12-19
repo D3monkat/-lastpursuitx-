@@ -1,0 +1,4148 @@
+@font-face {
+    font-family: "Acrom";
+    src: url("../font/Acrom-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "TT Norms";
+    src: url("../font/TTNorms-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url("../font/Rubik-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Rubik Bold";
+    src: url("../font/Rubik-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Rubik Light";
+    src: url("../font/Rubik-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../font/Inter-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: "Inter Thin";
+    src: url("../font/Inter-Thin.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Zabal";
+    src: url("../font/ZabalDEMO-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Zabal Bold";
+    src: url("../font/ZabalDEMO-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url("../font/Oswald-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Oswald Light";
+    src: url("../font/Oswald-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Oswald Bold";
+    src: url("../font/Oswald-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Nature";
+    src: url("../font/Nature.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* background-image: url("/html/images/referenceBG.png"); */
+    /* background-image: url("/html/images/referenceBG.png");
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.generalSection {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: radial-gradient(31.28% 54.15% at -3.2% 0%, rgba(255, 255, 255, 0.43) 0%, rgba(255, 255, 255, 0) 100%),
+        radial-gradient(114.44% 114.44% at -4.53% -4.49%, rgba(0, 117, 255, 0.63) 0%, rgba(0, 117, 255, 0) 100%),
+        linear-gradient(0deg, rgba(0, 78, 150, 0.43), rgba(0, 78, 150, 0.43)), rgba(23, 23, 23, 0.84);
+}
+
+.generalTopSection {
+    display: flex;
+    margin-top: 2.5%;
+    height: 23%;
+}
+
+.titleArea {
+    display: flex;
+    height: 80%;
+    margin-top: 1.5%;
+    min-width: 27%;
+    margin-left: 3.9%;
+}
+
+.titleImageArea {
+    height: 100%;
+    width: 40%;
+}
+
+.titleImageArea img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.succesfullyArea {
+    display: none;
+    z-index: 9876987987;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.succesNotify {
+    /* position: absolute; */
+    color: white;
+    font-family: Acrom;
+    font-size: 19px;
+    text-align: center;
+    padding: 1.5rem;
+    min-height: 4rem;
+    max-width: 25rem;
+    background: radial-gradient(105.91% 105.91% at 50% 100%, rgba(248, 202, 72, 0.33) 0%, rgba(0, 0, 0, 0) 100%), rgba(248, 202, 72, 0.18);
+    border: 1px solid rgba(248, 202, 72, 0.37);
+    box-shadow: 0px 0px 35px rgba(248, 202, 72, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.titleTextArea {
+    margin-top: 7.7%;
+    margin-left: -8%;
+    line-height: 65px;
+}
+
+.title1 {
+    text-shadow: 0px 0px 51px rgba(255, 255, 255, 0.22);
+    font-size: 105px;
+    margin-left: 3%;
+    font-family: "Oswald Bold";
+    color: #ffffff;
+}
+
+.title2 {
+    font-family: Nature;
+    font-size: 70px;
+    margin-left: -6%;
+    text-shadow: 0px 0px 51px #9ac2ff32;
+    color: #9ac2ff;
+}
+
+.topFirstRectangle {
+    background: rgba(255, 255, 255, 0.26);
+    height: 75%;
+    margin-top: 1.7%;
+    width: 4px;
+}
+
+.profileArea {
+    display: flex;
+    height: 60%;
+    margin-top: 2.6%;
+    min-width: 25%;
+    margin-left: 4.5%;
+}
+
+.profilePhoto {
+    overflow: hidden;
+    height: 55%;
+    margin-top: 8%;
+    width: 17%;
+    border-radius: 100px;
+    /* border: 1px solid rgba(0, 63, 111, 0.5); */
+    box-shadow: 0px 0px 51px rgba(16, 140, 255, 0.2);
+    /* background: rgba(255, 255, 255, 0.4); */
+}
+
+.profilePhoto img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.profileTextArea {
+    min-width: 65%;
+    margin-left: 5%;
+}
+
+.profileNameArea {
+    text-transform: uppercase;
+    margin-top: 10%;
+    display: flex;
+    color: #ffffff;
+    font-size: 35px;
+    text-shadow: 0px 0px 51px rgba(255, 255, 255, 0.42);
+    font-family: "Oswald";
+}
+
+.lastName {
+    font-family: Oswald Light;
+    margin-left: 2%;
+}
+
+.profileCreditArea {
+    display: flex;
+    /* background-color: red; */
+    height: 35%;
+}
+
+.creditIconArea {
+    background: linear-gradient(180deg, #e0b005 0%, rgba(255, 200, 0, 0) 140%);
+    border-radius: 6px;
+    height: 80%;
+    width: 14%;
+}
+
+.creditIconArea img {
+    height: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 80%;
+    object-fit: contain;
+}
+
+.creditTextArea {
+    background: #ffc700;
+    border-radius: 6px;
+    height: 80%;
+    min-width: 40%;
+    display: flex;
+    justify-content: center;
+    margin-left: 3.5%;
+    font-size: 18px;
+    line-height: 42px;
+}
+
+.creditCount {
+    font-family: Oswald;
+    color: rgba(0, 0, 0, 0.62);
+}
+
+.creditText {
+    font-family: Oswald Light;
+    margin-left: 2%;
+    color: rgba(0, 0, 0, 0.39);
+}
+
+.addCreditButton {
+    background: #ffc700;
+    color: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.31);
+    box-shadow: 0px 0px 51px rgba(255, 199, 0, 0.52);
+    border-radius: 65px;
+    height: 80%;
+    line-height: 43px;
+    width: 13%;
+    font-family: Oswald Light;
+    font-size: 45px;
+    text-align: center;
+    margin-left: 3%;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.addCreditButton:hover {
+    color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.41);
+    box-shadow: 0px 0px 51px rgba(255, 199, 0, 0.72);
+}
+
+.nextRewardArea {
+    display: flex;
+    text-shadow: 0px 0px 51px rgba(255, 255, 255, 0.3);
+    height: 60%;
+    margin-top: 3.4%;
+    margin-left: 4%;
+    width: 20%;
+}
+
+#clockIcon {
+    color: rgba(255, 255, 255, 0.83);
+    font-size: 40px;
+    margin-top: 10%;
+}
+
+.rewardTextArea {
+    font-family: "Oswald";
+    /* background-color: blue; */
+    height: 60%;
+    width: 86%;
+    margin-top: 6%;
+    margin-left: 5%;
+    font-size: 19px;
+}
+
+.rewardText1 {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.nextCoinTime {
+    color: #ffc800fa;
+}
+
+.rewardText5 {
+    color: rgba(255, 255, 255, 0.53);
+}
+
+.rewardText6 {
+    color: #ffd336d2;
+    font-family: Oswald Light;
+    margin-left: 1%;
+}
+
+.notifySectionXX {
+    z-index: 1489765;
+    display: none;
+    position: absolute;
+    /* height: 20%; */
+    width: 100%;
+    /* background-color: red; */
+}
+
+.notifyArea {
+    min-height: 4rem;
+    max-width: 30%;
+    margin: auto;
+    margin-top: 1rem;
+    background: radial-gradient(105.91% 105.91% at 50% 100%, rgba(255, 123, 123, 0.18) 0%, rgba(0, 0, 0, 0) 100%), rgba(255, 138, 138, 0.15);
+    border: 1px solid #ff8a8a;
+    box-shadow: 0px 0px 35px rgba(255, 138, 138, 0.42);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    /* line-height: 5rem; */
+    text-align: center;
+    padding: 1.5rem;
+    color: white;
+    font-family: Acrom;
+    /* transition: opacity 0.4s; */
+}
+
+.rewardText3Area {
+    margin-top: 0.5%;
+    font-size: 15px;
+    display: flex;
+}
+
+.exitButtonArea {
+    width: 10%;
+    /* background-color: red; */
+    height: 20%;
+    justify-content: flex-end;
+    display: flex;
+    font-family: Oswald;
+    line-height: 52px;
+    text-shadow: 0px 0px 51px rgba(255, 255, 255, 0.35);
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.exitButtonBorder {
+    margin-left: 10%;
+    width: 53px;
+    /* width: 16.5%; */
+    border: 2px solid rgba(255, 255, 255, 0.14);
+    border-radius: 12px;
+}
+
+#exitIcon {
+    color: rgba(255, 255, 255, 0.82);
+    height: 85%;
+    text-align: center;
+    margin-left: 8%;
+    margin-top: 8.2%;
+    width: 41px;
+    font-size: 20px;
+    line-height: 40px;
+    background: linear-gradient(180deg, rgba(255, 108, 108, 0) 0%, rgba(255, 108, 108, 0.841) 150%);
+    border: 1px solid rgba(114, 114, 114, 0.99);
+    border-radius: 8px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+#exitIcon:hover {
+    background: linear-gradient(180deg, rgba(255, 108, 108, 0) 0%, rgba(255, 108, 108, 0.841) 100%);
+}
+
+/* ! BOTTOM AREA END */
+
+.generalBottomSection {
+    height: 66%;
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.bottomLeftWrapper {
+    /* overflow: hidden; */
+    position: relative;
+    margin-right: 6%;
+    height: 97%;
+    width: 23%;
+}
+
+.bottomLeftWrapper img {
+    height: 100%;
+    width: 100%;
+}
+
+.bottomRightWrapper {
+    position: relative;
+    /* margin-left: 2%; */
+    height: 97%;
+    width: 55%;
+}
+
+.bottomRightWrapper img {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+#leftImage {
+    position: absolute;
+}
+
+#rightImage {
+    position: absolute;
+}
+
+.categorySection {
+    /* background-color: rgba(255, 192, 203, 0.175); */
+    height: 94%;
+    margin-left: 1%;
+    width: 4%;
+}
+
+.rankingTextArea {
+    z-index: 2;
+    display: flex;
+    width: 84%;
+    height: 10%;
+    margin-left: 8%;
+    margin-top: 9%;
+    font-family: Oswald;
+    color: #ffffffbf;
+    font-size: 37px;
+    text-shadow: 0px 0px 51px rgba(255, 255, 255, 0.45);
+    margin-bottom: 3%;
+}
+
+.weeklyText {
+    font-family: Oswald;
+    margin-right: 2%;
+    color: #9ac2ff;
+}
+
+#clockIcon2 {
+    color: #ffffffe5;
+    margin-top: 4.5%;
+    margin-left: 15%;
+    font-size: 19px;
+}
+
+.weeklyDay {
+    color: #ffffff;
+    margin-left: 2%;
+    margin-top: 3.7%;
+    font-size: 17px;
+}
+
+.weeklyDayText {
+    margin-top: 3.7%;
+    font-size: 17px;
+    margin-left: 1.2%;
+}
+
+.rankAreaRankList {
+    overflow: hidden;
+    height: 79%;
+}
+
+.rankItem {
+    display: flex;
+    font-size: 18px;
+    text-shadow: 0px 0px 51px rgba(255, 255, 255, 0.35);
+    height: 13%;
+    line-height: 69px;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: Oswald;
+    width: 84%;
+    margin-left: 8%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.222) 0%, rgba(255, 255, 255, 0) 134.06%);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+}
+
+.rankItem.first {
+    background: linear-gradient(180deg, rgba(255, 224, 63, 0.63) 0%, rgba(255, 224, 63, 0) 136.23%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.rankItem.second {
+    color: rgba(255, 255, 255, 0.6);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.62) 0%, rgba(255, 255, 255, 0) 139.86%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.rankItem.third {
+    color: rgba(255, 255, 255, 0.6);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.37) 0%, rgba(255, 255, 255, 0) 134.06%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.rankItem:not(:last-child) {
+    margin-bottom: 14px;
+}
+
+.topTextArea {
+    text-shadow: 0px 0px 51px rgba(255, 255, 255, 0.45);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 45px;
+    margin-top: -4%;
+    font-family: Oswald;
+}
+
+.text6 {
+    color: #9ac2ff;
+    margin-left: 2%;
+}
+
+.rankItemLeftArea {
+    text-transform: uppercase;
+    overflow: hidden;
+    display: flex;
+    width: 55%;
+    margin-left: 7%;
+}
+
+.rankItemRightArea {
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+    width: 32%;
+}
+
+.rankCount {
+    font-size: 30px;
+}
+
+.rankCount.first {
+    color: #f8ca48;
+    text-shadow: 0px 0px 19px rgba(248, 202, 72, 0.65);
+}
+
+.rankCount.second {
+    color: #e2ffcb;
+}
+
+.rankCount.third {
+    color: #ffffff;
+}
+
+.weeklyFirstName {
+    text-shadow: 0px 0px 51px rgba(255, 255, 255, 0.45);
+    margin-left: 7%;
+}
+
+.weeklyLastName {
+    text-shadow: 0px 0px 51px rgba(255, 255, 255, 0.45);
+    font-family: Oswald Light;
+    margin-left: 2%;
+}
+
+.weeklyFirstName.first {
+    color: #ffffff;
+}
+
+.weeklyLastName.first {
+    color: #ffffff;
+}
+
+.weeklyFirstName.second {
+    color: #ffffff;
+}
+
+.weeklyLastName.second {
+    color: #ffffff;
+}
+
+.weeklyFirstName.third {
+    color: #ffffff;
+}
+
+.weeklyLastName.third {
+    color: #ffffff;
+}
+
+.rankItemCoinImgArea {
+    margin-top: 15%;
+    /* background-color: red; */
+    width: 25%;
+    height: 50%;
+}
+
+.rankItemCoinImgArea img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.rankItemCoin {
+    color: #ffc2497b;
+    margin-left: 5%;
+    font-size: 17px;
+}
+
+.rankItemCoin.first {
+    color: #ffc349;
+}
+
+.rankItemCoin.second {
+    color: #ffc349;
+}
+
+.rankItemCoin.third {
+    color: #ffc349;
+}
+
+.rankItemCoinText.first {
+    color: #ffc249c0;
+}
+
+.rankItemCoinText.second {
+    color: #ffc249c0;
+}
+
+.rankItemCoinText.third {
+    color: #ffc249c0;
+}
+
+.rankItemCoinText {
+    font-size: 16px;
+    margin-left: 3%;
+    font-family: Oswald Light;
+    color: #ffc24994;
+}
+
+.rightBoxTopArea {
+    position: relative;
+    display: flex;
+    z-index: 1234;
+    width: 92%;
+    /* background-color: red; */
+    margin-left: 4.7%;
+    margin-top: 2%;
+    /* height: 7%; */
+}
+
+.plyTmShopTextArea {
+    display: flex;
+    height: 100%;
+    font-size: 35px;
+    text-shadow: 0px 0px 51px rgba(255, 255, 255, 0.45);
+    color: #89b8fd;
+    font-family: "Oswald";
+}
+
+.shpText {
+    margin-left: 3%;
+    color: #ffffffa8;
+}
+
+.rightBoxRectangle {
+    width: 73%;
+    height: 2px;
+    margin-left: 5%;
+    margin-top: 2.5%;
+    background: rgba(255, 255, 255, 0.51);
+}
+
+.rightItemList {
+    position: relative;
+    z-index: 123123;
+    margin-top: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 93.2%;
+    margin-left: 4.7%;
+    /* background-color: red; */
+    height: 84%;
+    gap: 15px;
+}
+
+.rightItem {
+    overflow: hidden;
+    height: 31%;
+    width: 23.2%;
+    background: linear-gradient(180deg, rgba(3, 28, 63, 0.5), rgba(4, 23, 72, 0.25)) padding-box,
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(126, 186, 255, 0)) border-box;
+    border: 1px solid transparent;
+    backdrop-filter: blur(2px);
+    border-radius: 8px;
+}
+
+.itemTopSection {
+    /* background-color: red; */
+    width: 85%;
+    margin-left: 7.5%;
+    margin-top: 4%;
+    height: 17%;
+    display: flex;
+    font-family: "Oswald";
+    color: #ffffff;
+    font-size: 18px;
+    text-shadow: 0px 0px 51px rgba(255, 255, 255, 0.45);
+}
+
+.rightItemName {
+    /* background-color: blue; */
+    min-width: 80%;
+}
+
+.rightItemCount {
+    line-height: 27px;
+    font-family: Oswald Light;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.53);
+    width: 20%;
+    justify-content: end;
+    text-align: end;
+}
+
+.itemImageArea {
+    height: 50%;
+    width: 70%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    margin-left: 15%;
+    /* background-color: red; */
+}
+
+.itemImageArea img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.itemBottomArea {
+    display: flex;
+    height: 24%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4.5px);
+}
+
+.itemCoinArea {
+    display: flex;
+    height: 100%;
+    width: 45%;
+    margin-left: 5%;
+    /* background-color: green; */
+}
+
+.coinImageArea {
+    margin-top: 8%;
+    height: 60%;
+    width: 40%;
+    /* background-color: red; */
+}
+
+.coinImageArea img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.itemCoinAmount {
+    font-family: Oswald;
+    color: #ffc349;
+    text-shadow: 0px 0px 51px rgba(255, 216, 41, 0.45);
+    line-height: 43px;
+    /* margin-left: 1%; */
+    font-size: 16px;
+}
+
+.itemCoinText {
+    font-family: Oswald Light;
+    text-shadow: 0px 0px 51px rgba(255, 216, 41, 0.45);
+    color: #ffc249a7;
+    line-height: 42px;
+    margin-left: 4%;
+    font-size: 15px;
+}
+
+.buyButton {
+    height: 60%;
+    width: 40%;
+    margin-top: 3.5%;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Oswald";
+    color: rgba(0, 0, 0, 0.65);
+    text-shadow: 0px 0px 51px rgba(19, 19, 19, 0.45);
+    line-height: 25px;
+    margin-left: 5%;
+    background: linear-gradient(180deg, rgba(139, 255, 144, 0.68) 0%, rgba(139, 255, 144, 0) 168.64%);
+    border: 1px solid rgba(131, 131, 131, 0.549);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buyButton:hover {
+    background: linear-gradient(180deg, rgba(139, 255, 144, 0.82) 0%, rgba(139, 255, 144, 0) 168.64%);
+}
+
+.rightItemBottomButtonArea {
+    position: relative;
+    z-index: 1233;
+    display: flex;
+    /* background-color: rgba(255, 0, 0, 0.093); */
+    height: 6%;
+    width: 55%;
+    margin: auto;
+    margin-top: 0.8%;
+}
+
+.previousButton {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(180deg, #a7a7a7b1 0%, rgba(167, 167, 167, 0) 171.02%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    width: 30%;
+    height: 100%;
+    line-height: 40px;
+    /* background-color: red; */
+    transition-duration: 0.4s;
+}
+
+.previousButton:hover {
+    background: linear-gradient(180deg, #a7a7a7e8 0%, rgba(167, 167, 167, 0) 171.02%);
+}
+
+.nextButton:hover {
+    background: linear-gradient(180deg, #a7a7a7e8 0%, rgba(167, 167, 167, 0) 171.02%);
+}
+
+.nextButton {
+    cursor: pointer;
+    background: linear-gradient(180deg, #a7a7a7b1 0%, rgba(167, 167, 167, 0) 171.02%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    line-height: 40px;
+    justify-content: center;
+}
+
+.pageArea {
+    display: flex;
+    color: #ffffff;
+    font-size: 26px;
+    line-height: 47px;
+    font-family: Oswald;
+    width: 40%;
+    justify-content: center;
+}
+
+#arrowButton {
+    margin-top: 5%;
+    /* margin-left: 10%; */
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.66);
+}
+
+#rightArrowButton {
+    margin-top: 5%;
+    /* margin-lef */
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.66);
+}
+
+.previousText {
+    font-size: 15px;
+    font-family: Oswald;
+    color: #ffffffc4;
+    margin-left: 8%;
+    /* text-align: center; */
+}
+
+.nextText {
+    font-size: 15px;
+    font-family: Oswald;
+    color: #ffffffc4;
+    margin-right: 8%;
+}
+
+.totalPage {
+    line-height: 52px;
+    font-size: 20px;
+    margin-left: 2%;
+    color: rgba(255, 255, 255, 0.548);
+}
+
+.categoryItem {
+    height: 11.5%;
+    text-align: center;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, rgba(255, 255, 255, 0.26) 100%);
+    border: 2px solid rgba(255, 255, 255, 0.42);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.categoryItem.active {
+    background: linear-gradient(180deg, rgba(5, 5, 5, 0) 0%, rgba(255, 255, 255, 0.85) 120%);
+}
+
+.categoryItem:hover {
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, rgba(255, 255, 255, 0.36) 100%);
+}
+
+.categoryItem:not(:last-child) {
+    margin-bottom: 30%;
+}
+
+#categoryIcon {
+    z-index: 123;
+    line-height: 78px;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.938);
+    /* justify-content: center; */
+}
+
+.coinBuyArea {
+    display: none;
+    z-index: 1234321;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(23, 23, 23, 0.1);
+    backdrop-filter: blur(2px);
+}
+
+.succesfullyPurchArea {
+    display: none;
+    z-index: 1234321;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(23, 23, 23, 0.1);
+    backdrop-filter: blur(2px);
+}
+
+.youWantBuySection {
+    display: none;
+    z-index: 1234321;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(23, 23, 23, 0.1);
+    backdrop-filter: blur(4px);
+}
+
+#exitBttn {
+    cursor: pointer;
+    color: rgb(189, 58, 58);
+    /* filter: drop-shadow(0px 0px 69px rgba(255, 0, 0, 0.31)); */
+}
+
+#exitBttn:hover {
+    color: rgb(196, 10, 10);
+}
+
+.exitAreaBuy {
+    /* background-color: rgba(0, 0, 0, 0.109); */
+    font-family: Oswald;
+    text-align: end;
+    color: rgb(25, 25, 25);
+    width: fit-content;
+    float: right;
+    font-size: 25px;
+    margin-right: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.coinBuyMain {
+    overflow: hidden;
+    position: absolute;
+    height: 75%;
+    width: 65%;
+    top: 50%;
+    left: 50%;
+    margin-left: -32.5%;
+    margin-top: -20%;
+    background: linear-gradient(0deg, rgba(59, 51, 22, 0.58), rgba(45, 40, 4, 0.6)) padding-box,
+        linear-gradient(to bottom, rgba(255, 235, 192, 0.423), rgba(198, 175, 24, 0.3)) border-box;
+    border: 2px solid transparent;
+    box-shadow: 0px 0px 184px rgba(233, 181, 0, 0.44);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+}
+
+.coinListArea {
+    /* background-color: red; */
+    height: 78%;
+    margin-top: 4%;
+    margin-left: 4.5%;
+    width: 92%;
+    display: flex;
+    gap: 30px;
+    overflow-y: auto;
+    flex-wrap: wrap;
+}
+
+.coinItem {
+    overflow: hidden;
+    height: 47%;
+    width: 31%;
+    /* background: linear-gradient(0deg, rgba(116, 104, 57, 0.48), rgba(48, 46, 30, 0.2)) padding-box,
+        linear-gradient(to bottom, rgba(255, 251, 21, 0.43), rgba(198, 175, 24, 0.3)) border-box; */
+    background: linear-gradient(0deg, rgba(242, 212, 102, 0) 0%, rgba(242, 212, 102, 0.61) 100%);
+    border: 1px solid #ffc800cd;
+    border-radius: 8px;
+}
+
+.coinNameArea {
+    display: flex;
+    /* background-color: red; */
+    /* height: 10%;
+    width: 10%; */
+    color: rgba(0, 0, 0, 0.75);
+    font-family: Oswald Bold;
+    font-size: 27px;
+    margin-left: 7%;
+    margin-top: 4%;
+}
+
+.coinBuyCoinText {
+    color: rgba(0, 0, 0, 0.52);
+    font-family: Oswald;
+    margin-left: 1%;
+}
+
+.coinBuyImageArea {
+    height: 50%;
+    /* background-color: red; */
+    margin-top: 3%;
+    margin-bottom: 7%;
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+.coinBottomSection {
+    display: flex;
+    height: 22%;
+    width: 100%;
+    background: #ffd87b;
+}
+
+.coinRealPrice {
+    font-family: Oswald;
+    font-size: 27px;
+    margin-left: 7%;
+    color: rgba(0, 0, 0, 0.75);
+    line-height: 60px;
+    /* margin-top: 20%; */
+}
+
+.coinBuyButton {
+    background: #45f78c;
+    height: 70%;
+    text-align: center;
+    line-height: 45px;
+    font-family: Oswald Bold;
+    color: rgba(0, 0, 0, 0.49);
+    margin-left: 18%;
+    margin-top: 2%;
+    width: 60%;
+    border: 1px solid rgba(0, 0, 0, 0.21);
+    border-radius: 6px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.coinBuyButton:hover {
+    color: rgba(0, 0, 0, 0.79);
+    background: #26f278;
+}
+
+.redeemSection {
+    display: flex;
+    background-color: rgba(207, 189, 106, 0.153);
+    height: 13%;
+    margin-top: 2%;
+}
+
+.writeTheCode {
+    z-index: 999123;
+    margin-top: 1.3%;
+    margin-left: 4.5%;
+    width: 61%;
+    height: 60%;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    font-family: Zabal;
+    color: #909090;
+    background: rgba(7, 7, 7, 0.7);
+    border: 1px solid rgba(248, 202, 72, 0.35);
+    border-radius: 5px;
+    outline: none;
+}
+
+.redeemOkButton {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 59px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.5);
+    background: #ffc700;
+    height: 60%;
+    width: 28%;
+    margin-left: 1.5%;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 1.3%;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.redeemOkButton:hover {
+    background: #ffe100;
+    filter: drop-shadow(0px 0px 69px rgba(255, 251, 0, 0.31));
+}
+
+.coinBuyImageArea img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.wantGeneral {
+    position: absolute;
+    height: 27%;
+    width: 35%;
+    top: 50%;
+    left: 50%;
+    margin-left: -17.5%;
+    margin-top: -10%;
+    background: linear-gradient(0deg, rgba(0, 21, 41, 0.53), #073e7c9f) padding-box,
+        linear-gradient(to bottom, rgba(127, 219, 255, 0.787), rgba(0, 119, 255, 0.1)) border-box;
+    border: 2px solid transparent;
+    /* backdrop-filter: blur(4px); */
+    border-radius: 15px;
+}
+
+.wantText {
+    margin-top: 5%;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 35px;
+    color: white;
+}
+
+.wantCoin {
+    color: #ffc700;
+}
+
+.wantItemArea {
+    display: flex;
+    color: rgba(255, 255, 255, 0.49);
+    justify-content: center;
+    font-family: Oswald Light;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 20px;
+}
+
+.wantRectangle {
+    height: 1px;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.wantItemButtonArea {
+    /* background-color: red; */
+    display: flex;
+    height: 20%;
+    width: 70%;
+    margin-top: 3%;
+    margin-left: 15%;
+}
+
+.wantButton {
+    font-family: "Oswald Bold";
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 25px;
+    width: 50%;
+    background: linear-gradient(179.49deg, #ea8383 0.45%, rgba(230, 98, 98, 0) 154.31%);
+    border-radius: 3px;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+#wantBuyButton {
+    background: linear-gradient(179.49deg, #62e687 0.45%, rgba(98, 230, 135, 0) 154.31%);
+}
+
+#wantCancelButton:hover {
+    color: rgba(0, 0, 0, 0.7);
+    background: linear-gradient(179.49deg, #e76060 0.45%, rgba(230, 98, 98, 0) 154.31%);
+    filter: drop-shadow(0px 0px 69px rgba(255, 68, 68, 0.31));
+}
+
+#wantBuyButton:hover {
+    color: rgba(0, 0, 0, 0.7);
+    background: linear-gradient(179.49deg, #2be961 0.45%, rgba(98, 230, 135, 0) 154.31%);
+    filter: drop-shadow(0px 0px 69px rgba(68, 255, 120, 0.21));
+}
+
+.wantButton:not(:last-child) {
+    margin-right: 2%;
+}
+
+.wantItemCount {
+    margin-left: 7%;
+    color: #ffffff;
+}
+
+.succesfullMain {
+    position: absolute;
+    height: 30%;
+    width: 15%;
+    top: 50%;
+    left: 50%;
+    margin-left: -7.5%;
+    margin-top: -10%;
+    background: linear-gradient(180deg, #00489bc6, #0077ff00) padding-box,
+        linear-gradient(to bottom, rgba(127, 219, 255, 0.7), rgba(126, 186, 255, 0)) border-box;
+    border: 2px solid transparent;
+    /* background: linear-gradient(180deg, #0075ff -26.08%, rgba(0, 117, 255, 0) 100%); */
+    border-radius: 10px;
+}
+
+.succesItemLabel {
+    font-family: Oswald;
+    text-align: center;
+    margin-top: 5%;
+    color: #ffffff;
+    font-size: 35px;
+}
+
+.succesItemImageArea {
+    /* background-color: red; */
+    height: 50%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.succesItemImageArea img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.successfullyText {
+    margin-top: 1%;
+    text-align: center;
+    font-family: Oswald;
+    color: #3cff8a;
+    font-size: 30px;
+    text-shadow: 0px 0px 63px rgba(59, 255, 138, 0.46);
+}
+
+.purchasedText {
+    text-align: center;
+    margin-top: -2%;
+    font-family: Oswald Light;
+    color: #3cff8aa7;
+    font-size: 27px;
+    text-shadow: 0px 0px 63px rgba(59, 255, 138, 0.46);
+}
+
+@media screen and (max-width: 1680px) and (max-height: 1050px) {
+    .title1 {
+        font-size: 105px;
+        margin-left: 3%;
+    }
+    .title2 {
+        font-size: 70px;
+        margin-left: -6%;
+    }
+    .profileNameArea {
+        margin-top: 10%;
+        font-size: 35px;
+    }
+    #clockIcon {
+        font-size: 40px;
+        margin-top: 10%;
+    }
+    .rewardTextArea {
+        height: 60%;
+        width: 86%;
+        margin-top: 6%;
+        margin-left: 5%;
+        font-size: 19px;
+    }
+    .rewardText3Area {
+        margin-top: 0.5%;
+        font-size: 15px;
+    }
+    .exitButtonArea {
+        width: 10%;
+        height: 20%;
+        line-height: 52px;
+        font-size: 25px;
+    }
+    #exitIcon {
+        height: 85%;
+        margin-left: 8%;
+        margin-top: 8.2%;
+        width: 41px;
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .rankingTextArea {
+        width: 84%;
+        height: 10%;
+        margin-left: 8%;
+        margin-top: 9%;
+        font-size: 37px;
+        margin-bottom: 3%;
+    }
+    #clockIcon2 {
+        margin-top: 4.5%;
+        margin-left: 15%;
+        font-size: 19px;
+    }
+    .weeklyDay {
+        margin-left: 2%;
+        margin-top: 3.7%;
+        font-size: 17px;
+    }
+    .weeklyDayText {
+        margin-top: 3.7%;
+        font-size: 17px;
+        margin-left: 1.2%;
+    }
+    .rankCount {
+        font-size: 30px;
+    }
+    .rankItem {
+        font-size: 19px;
+        height: 13%;
+        line-height: 69px;
+        width: 84%;
+        margin-left: 8%;
+    }
+    .rankItemCoinImgArea {
+        margin-top: 15%;
+        width: 25%;
+        height: 50%;
+    }
+    .rankItemCoin {
+        margin-left: 5%;
+        font-size: 17px;
+    }
+    .rankItemCoinText {
+        font-size: 16px;
+        margin-left: 3%;
+    }
+    .topTextArea {
+        font-size: 45px;
+        margin-top: -4%;
+    }
+    .plyTmShopTextArea {
+        height: 100%;
+        font-size: 35px;
+    }
+    .rightBoxRectangle {
+        width: 73%;
+        height: 2px;
+        margin-left: 5%;
+        margin-top: 2.5%;
+    }
+    .rightItem {
+        height: 31%;
+        width: 23.2%;
+    }
+    .itemTopSection {
+        width: 85%;
+        margin-left: 7.5%;
+        margin-top: 4%;
+        height: 17%;
+        font-size: 18px;
+    }
+    .rightItemCount {
+        line-height: 27px;
+        font-size: 14px;
+        width: 20%;
+    }
+    .itemImageArea {
+        height: 55%;
+        width: 85%;
+        margin-left: 7.5%;
+    }
+    .coinImageArea {
+        margin-top: 8%;
+        height: 60%;
+        width: 40%;
+    }
+    .itemCoinAmount {
+        line-height: 43px;
+        font-size: 16px;
+    }
+    .itemCoinText {
+        line-height: 42px;
+        margin-left: 4%;
+        font-size: 15px;
+    }
+    .exitButtonArea {
+        width: 10%;
+        height: 20%;
+        line-height: 52px;
+        font-size: 25px;
+    }
+    .exitButtonBorder {
+        margin-left: 10%;
+        width: 53px;
+    }
+    #categoryIcon {
+        line-height: 78px;
+        font-size: 25px;
+    }
+    .coinItem {
+        height: 47%;
+        width: 31%;
+    }
+    .coinNameArea {
+        font-size: 27px;
+        margin-left: 7%;
+        margin-top: 4%;
+    }
+    .coinBuyImageArea {
+        height: 50%;
+        margin-top: 3%;
+        margin-bottom: 7%;
+        width: 75%;
+        margin-left: 12.5%;
+    }
+    .coinRealPrice {
+        font-size: 27px;
+        margin-left: 7%;
+        line-height: 60px;
+    }
+    .coinBuyButton {
+        height: 70%;
+        line-height: 45px;
+        margin-left: 18%;
+        margin-top: 2%;
+        width: 60%;
+    }
+    .redeemOkButton {
+        font-size: 30px;
+        line-height: 59px;
+        height: 60%;
+        width: 28%;
+        margin-left: 1.5%;
+        margin-top: 1.3%;
+    }
+    .wantText {
+        margin-top: 5%;
+        font-size: 35px;
+    }
+    .wantItemArea {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-size: 20px;
+    }
+    .wantButton {
+        font-size: 25px;
+        width: 50%;
+        line-height: 60px;
+    }
+    .creditTextArea {
+        height: 80%;
+        min-width: 40%;
+        margin-left: 3.5%;
+        font-size: 18px;
+        line-height: 42px;
+    }
+
+    .addCreditButton {
+        height: 80%;
+        line-height: 43px;
+        width: 13%;
+        font-size: 45px;
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width: 1680px) and (max-height: 1200px) {
+    .title1 {
+        font-size: 105px;
+        margin-left: 3%;
+    }
+    .title2 {
+        font-size: 70px;
+        margin-left: -6%;
+    }
+    .profileNameArea {
+        margin-top: 10%;
+        font-size: 35px;
+    }
+    #clockIcon {
+        font-size: 40px;
+        margin-top: 10%;
+    }
+    .rewardTextArea {
+        height: 60%;
+        width: 86%;
+        margin-top: 6%;
+        margin-left: 5%;
+        font-size: 19px;
+    }
+    .rewardText3Area {
+        margin-top: 0.5%;
+        font-size: 15px;
+    }
+    .exitButtonArea {
+        width: 10%;
+        height: 20%;
+        line-height: 52px;
+        font-size: 25px;
+    }
+    #exitIcon {
+        height: 85%;
+        margin-left: 8%;
+        margin-top: 8.2%;
+        width: 41px;
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .rankingTextArea {
+        width: 84%;
+        height: 10%;
+        margin-left: 8%;
+        margin-top: 9%;
+        font-size: 31px;
+        margin-bottom: 3%;
+    }
+    #clockIcon2 {
+        margin-top: 4.5%;
+        margin-left: 15%;
+        font-size: 19px;
+    }
+    .weeklyDay {
+        margin-left: 2%;
+        margin-top: 3.7%;
+        font-size: 17px;
+    }
+    .weeklyDayText {
+        margin-top: 3.7%;
+        font-size: 17px;
+        margin-left: 1.2%;
+    }
+    .rankCount {
+        font-size: 26px;
+    }
+    .rankItem {
+        font-size: 17px;
+        height: 13%;
+        line-height: 69px;
+        width: 84%;
+        margin-left: 8%;
+    }
+    .rankItemCoinImgArea {
+        margin-top: 17%;
+        width: 25%;
+        height: 50%;
+    }
+    .rankItemCoin {
+        margin-left: 5%;
+        font-size: 17px;
+    }
+    .rankItemCoinText {
+        font-size: 16px;
+        margin-left: 3%;
+    }
+    .topTextArea {
+        font-size: 45px;
+        margin-top: -4%;
+    }
+    .plyTmShopTextArea {
+        height: 100%;
+        font-size: 35px;
+    }
+    .rightBoxRectangle {
+        width: 73%;
+        height: 2px;
+        margin-left: 5%;
+        margin-top: 2.5%;
+    }
+    .rightItem {
+        height: 31%;
+        width: 23.2%;
+    }
+    .itemTopSection {
+        width: 85%;
+        margin-left: 7.5%;
+        margin-top: 4%;
+        height: 17%;
+        font-size: 18px;
+    }
+    .rightItemCount {
+        line-height: 27px;
+        font-size: 14px;
+        width: 20%;
+    }
+    .itemImageArea {
+        height: 55%;
+        width: 85%;
+        margin-left: 7.5%;
+    }
+    .coinImageArea {
+        margin-top: 8%;
+        height: 60%;
+        width: 40%;
+    }
+    .itemCoinAmount {
+        line-height: 42px;
+        font-size: 16px;
+    }
+    .itemCoinText {
+        line-height: 42px;
+        margin-left: 4%;
+        font-size: 15px;
+    }
+    .exitButtonArea {
+        width: 10%;
+        height: 20%;
+        line-height: 52px;
+        font-size: 25px;
+    }
+    .exitButtonBorder {
+        margin-left: 10%;
+        width: 53px;
+    }
+    #categoryIcon {
+        line-height: 78px;
+        font-size: 25px;
+    }
+    .coinItem {
+        height: 47%;
+        width: 31%;
+    }
+    .coinNameArea {
+        font-size: 27px;
+        margin-left: 7%;
+        margin-top: 5%;
+    }
+    .coinBuyImageArea {
+        height: 50%;
+        margin-top: 3%;
+        margin-bottom: 7%;
+        width: 75%;
+        margin-left: 12.5%;
+    }
+    .coinRealPrice {
+        font-size: 27px;
+        margin-left: 7%;
+        line-height: 64px;
+    }
+    .coinBuyButton {
+        height: 70%;
+        line-height: 42px;
+        margin-left: 18%;
+        margin-top: 3%;
+        width: 60%;
+    }
+    .redeemOkButton {
+        font-size: 30px;
+        line-height: 59px;
+        height: 60%;
+        width: 28%;
+        margin-left: 1.5%;
+        margin-top: 1.3%;
+    }
+    .wantText {
+        margin-top: 5%;
+        font-size: 35px;
+    }
+    .wantItemArea {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-size: 20px;
+    }
+    .wantButton {
+        font-size: 25px;
+        width: 50%;
+        line-height: 60px;
+    }
+    .creditTextArea {
+        height: 80%;
+        min-width: 40%;
+        margin-left: 3.5%;
+        font-size: 18px;
+        line-height: 42px;
+    }
+
+    .addCreditButton {
+        height: 80%;
+        line-height: 40px;
+        width: 15%;
+        font-size: 45px;
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width: 1600px) and (max-height: 1024px) {
+    .title1 {
+        font-size: 105px;
+        margin-left: 3%;
+    }
+    .title2 {
+        font-size: 70px;
+        margin-left: -6%;
+    }
+    .profileNameArea {
+        margin-top: 10%;
+        font-size: 35px;
+    }
+    #clockIcon {
+        font-size: 40px;
+        margin-top: 10%;
+    }
+    .rewardTextArea {
+        height: 60%;
+        width: 86%;
+        margin-top: 6%;
+        margin-left: 5%;
+        font-size: 19px;
+    }
+    .rewardText3Area {
+        margin-top: 0.5%;
+        font-size: 15px;
+    }
+    .exitButtonArea {
+        width: 10%;
+        height: 20%;
+        line-height: 52px;
+        font-size: 25px;
+    }
+    #exitIcon {
+        height: 85%;
+        margin-left: 8%;
+        margin-top: 8.2%;
+        width: 41px;
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .rankingTextArea {
+        width: 84%;
+        height: 10%;
+        margin-left: 8%;
+        margin-top: 9%;
+        font-size: 31px;
+        margin-bottom: 3%;
+    }
+    #clockIcon2 {
+        margin-top: 4.5%;
+        margin-left: 15%;
+        font-size: 19px;
+    }
+    .weeklyDay {
+        margin-left: 2%;
+        margin-top: 3.7%;
+        font-size: 17px;
+    }
+    .weeklyDayText {
+        margin-top: 3.7%;
+        font-size: 17px;
+        margin-left: 1.2%;
+    }
+    .rankCount {
+        font-size: 26px;
+    }
+    .rankItem {
+        font-size: 16px;
+        height: 13%;
+        line-height: 69px;
+        width: 84%;
+        margin-left: 8%;
+    }
+    .rankItemCoinImgArea {
+        margin-top: 17%;
+        width: 25%;
+        height: 50%;
+    }
+    .rankItemCoin {
+        margin-left: 5%;
+        font-size: 17px;
+    }
+    .rankItemCoinText {
+        font-size: 16px;
+        margin-left: 3%;
+    }
+    .topTextArea {
+        font-size: 45px;
+        margin-top: -4%;
+    }
+    .plyTmShopTextArea {
+        height: 100%;
+        font-size: 35px;
+    }
+    .rightBoxRectangle {
+        width: 73%;
+        height: 2px;
+        margin-left: 5%;
+        margin-top: 2.5%;
+    }
+    .rightItem {
+        height: 31%;
+        width: 23.2%;
+    }
+    .itemTopSection {
+        width: 85%;
+        margin-left: 7.5%;
+        margin-top: 4%;
+        height: 17%;
+        font-size: 18px;
+    }
+    .rightItemCount {
+        line-height: 27px;
+        font-size: 14px;
+        width: 20%;
+    }
+    .itemImageArea {
+        height: 55%;
+        width: 85%;
+        margin-left: 7.5%;
+    }
+    .coinImageArea {
+        margin-top: 8%;
+        height: 60%;
+        width: 40%;
+    }
+    .itemCoinAmount {
+        line-height: 41px;
+        font-size: 16px;
+    }
+    .itemCoinText {
+        line-height: 42px;
+        margin-left: 4%;
+        font-size: 15px;
+    }
+    .exitButtonArea {
+        width: 10%;
+        height: 20%;
+        line-height: 52px;
+        font-size: 25px;
+    }
+    .exitButtonBorder {
+        margin-left: 10%;
+        width: 53px;
+    }
+    #categoryIcon {
+        line-height: 73px;
+        font-size: 25px;
+    }
+    .coinItem {
+        height: 47%;
+        width: 31%;
+    }
+    .coinNameArea {
+        font-size: 27px;
+        margin-left: 7%;
+        margin-top: 5%;
+    }
+    .coinBuyImageArea {
+        height: 50%;
+        margin-top: 3%;
+        margin-bottom: 7%;
+        width: 75%;
+        margin-left: 12.5%;
+    }
+    .coinRealPrice {
+        font-size: 27px;
+        margin-left: 7%;
+        line-height: 60px;
+    }
+    .coinBuyButton {
+        height: 70%;
+        line-height: 43px;
+        margin-left: 18%;
+        margin-top: 3%;
+        width: 60%;
+    }
+    .redeemOkButton {
+        font-size: 30px;
+        line-height: 59px;
+        height: 60%;
+        width: 28%;
+        margin-left: 1.5%;
+        margin-top: 1.3%;
+    }
+    .wantText {
+        margin-top: 5%;
+        font-size: 35px;
+    }
+    .wantItemArea {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-size: 20px;
+    }
+    .wantButton {
+        font-size: 25px;
+        width: 50%;
+        line-height: 60px;
+    }
+    .creditTextArea {
+        height: 80%;
+        min-width: 40%;
+        margin-left: 3.5%;
+        font-size: 18px;
+        line-height: 42px;
+    }
+
+    .addCreditButton {
+        height: 80%;
+        line-height: 40px;
+        width: 15%;
+        font-size: 45px;
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width: 1600px) and (max-height: 900px) {
+    .title1 {
+        font-size: 105px;
+        margin-left: 3%;
+    }
+    .title2 {
+        font-size: 70px;
+        margin-left: -6%;
+    }
+    .profileNameArea {
+        margin-top: 10%;
+        font-size: 35px;
+    }
+    #clockIcon {
+        font-size: 40px;
+        margin-top: 10%;
+    }
+    .rewardTextArea {
+        height: 60%;
+        width: 86%;
+        margin-top: 6%;
+        margin-left: 5%;
+        font-size: 19px;
+    }
+    .rewardText3Area {
+        margin-top: 0.5%;
+        font-size: 15px;
+    }
+    .exitButtonArea {
+        width: 10%;
+        height: 20%;
+        line-height: 52px;
+        font-size: 25px;
+    }
+    #exitIcon {
+        height: 85%;
+        margin-left: 8%;
+        margin-top: 8.2%;
+        width: 41px;
+        font-size: 20px;
+        line-height: 36px;
+    }
+    .rankingTextArea {
+        width: 84%;
+        height: 10%;
+        margin-left: 8%;
+        margin-top: 9%;
+        font-size: 32px;
+        margin-bottom: 3%;
+    }
+    #clockIcon2 {
+        margin-top: 4.5%;
+        margin-left: 15%;
+        font-size: 19px;
+    }
+    .weeklyDay {
+        margin-left: 2%;
+        margin-top: 3.7%;
+        font-size: 17px;
+    }
+    .weeklyDayText {
+        margin-top: 3.7%;
+        font-size: 17px;
+        margin-left: 1.2%;
+    }
+    .rankCount {
+        font-size: 22px;
+    }
+    .rankItem {
+        font-size: 15px;
+        height: 13%;
+        line-height: 60px;
+        width: 84%;
+        margin-left: 8%;
+    }
+    .rankItemCoinImgArea {
+        margin-top: 16%;
+        width: 25%;
+        height: 50%;
+    }
+    .rankItemCoin {
+        margin-left: 5%;
+        font-size: 16px;
+    }
+    .rankItemCoinText {
+        font-size: 16px;
+        margin-left: 3%;
+    }
+    .topTextArea {
+        font-size: 45px;
+        margin-top: -4%;
+    }
+    .plyTmShopTextArea {
+        height: 100%;
+        font-size: 35px;
+    }
+    .rightBoxRectangle {
+        width: 73%;
+        height: 2px;
+        margin-left: 5%;
+        margin-top: 2.5%;
+    }
+    .rightItem {
+        height: 31%;
+        width: 23.2%;
+    }
+    .itemTopSection {
+        width: 85%;
+        margin-left: 7.5%;
+        margin-top: 4%;
+        height: 17%;
+        font-size: 15px;
+    }
+    .rightItemCount {
+        line-height: 27px;
+        font-size: 12px;
+        width: 20%;
+    }
+    .itemImageArea {
+        height: 55%;
+        width: 85%;
+        margin-left: 7.5%;
+    }
+    .coinImageArea {
+        margin-top: 8%;
+        height: 60%;
+        width: 40%;
+    }
+    .itemCoinAmount {
+        line-height: 37px;
+        font-size: 15px;
+    }
+    .itemCoinText {
+        line-height: 37px;
+        margin-left: 4%;
+        font-size: 14px;
+    }
+    .exitButtonArea {
+        width: 10%;
+        height: 22%;
+        line-height: 52px;
+        font-size: 25px;
+    }
+    .exitButtonBorder {
+        margin-left: 10%;
+        width: 53px;
+    }
+    #categoryIcon {
+        line-height: 65px;
+        font-size: 25px;
+    }
+    .coinItem {
+        height: 47%;
+        width: 31%;
+    }
+    .coinNameArea {
+        font-size: 27px;
+        margin-left: 7%;
+        margin-top: 2%;
+    }
+    .coinBuyImageArea {
+        height: 50%;
+        margin-top: 3%;
+        margin-bottom: 7%;
+        width: 75%;
+        margin-left: 12.5%;
+    }
+    .coinRealPrice {
+        font-size: 27px;
+        margin-left: 7%;
+        line-height: 55px;
+    }
+    .coinBuyButton {
+        height: 70%;
+        line-height: 37px;
+        margin-left: 18%;
+        margin-top: 3%;
+        width: 60%;
+    }
+    .redeemOkButton {
+        font-size: 26px;
+        line-height: 53px;
+        height: 57%;
+        width: 28%;
+        margin-left: 1.5%;
+        margin-top: 1.3%;
+    }
+    .wantText {
+        margin-top: 5%;
+        font-size: 31px;
+    }
+    .wantItemArea {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-size: 16px;
+    }
+    .wantButton {
+        font-size: 22px;
+        width: 50%;
+        line-height: 52px;
+    }
+    .creditTextArea {
+        height: 80%;
+        min-width: 40%;
+        margin-left: 3.5%;
+        font-size: 18px;
+        line-height: 36px;
+    }
+
+    .addCreditButton {
+        height: 80%;
+        line-height: 36px;
+        width: 13%;
+        font-size: 45px;
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width: 1440px) and (max-height: 1050px) {
+    .title1 {
+        font-size: 105px;
+        margin-left: 3%;
+    }
+    .title2 {
+        font-size: 70px;
+        margin-left: -6%;
+    }
+    .profileNameArea {
+        margin-top: 10%;
+        font-size: 35px;
+    }
+    #clockIcon {
+        font-size: 40px;
+        margin-top: 10%;
+    }
+    .rewardTextArea {
+        height: 60%;
+        width: 86%;
+        margin-top: 6%;
+        margin-left: 5%;
+        font-size: 19px;
+    }
+    .rewardText3Area {
+        margin-top: 0.5%;
+        font-size: 15px;
+    }
+    .exitButtonArea {
+        width: 10%;
+        height: 20%;
+        line-height: 52px;
+        font-size: 25px;
+    }
+    #exitIcon {
+        height: 85%;
+        margin-left: 8%;
+        margin-top: 8.2%;
+        width: 41px;
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .rankingTextArea {
+        width: 84%;
+        height: 10%;
+        margin-left: 8%;
+        margin-top: 9%;
+        font-size: 27px;
+        margin-bottom: 3%;
+    }
+    #clockIcon2 {
+        margin-top: 4.5%;
+        margin-left: 15%;
+        font-size: 19px;
+    }
+    .weeklyDay {
+        margin-left: 2%;
+        margin-top: 3.7%;
+        font-size: 17px;
+    }
+    .weeklyDayText {
+        margin-top: 3.7%;
+        font-size: 17px;
+        margin-left: 1.2%;
+    }
+    .rankCount {
+        font-size: 22px;
+    }
+    .rankItem {
+        font-size: 13px;
+        height: 13%;
+        line-height: 69px;
+        width: 84%;
+        margin-left: 8%;
+    }
+    .rankItemCoinImgArea {
+        margin-top: 21%;
+        width: 25%;
+        height: 50%;
+    }
+    .rankItemCoin {
+        margin-left: 5%;
+        font-size: 17px;
+    }
+    .rankItemCoinText {
+        font-size: 16px;
+        margin-left: 3%;
+    }
+    .topTextArea {
+        font-size: 45px;
+        margin-top: -4%;
+    }
+    .plyTmShopTextArea {
+        height: 100%;
+        font-size: 35px;
+    }
+    .rightBoxRectangle {
+        width: 73%;
+        height: 2px;
+        margin-left: 5%;
+        margin-top: 2.5%;
+    }
+    .rightItem {
+        height: 31%;
+        width: 23.2%;
+    }
+    .itemTopSection {
+        width: 85%;
+        margin-left: 7.5%;
+        margin-top: 4%;
+        height: 17%;
+        font-size: 18px;
+    }
+    .rightItemCount {
+        line-height: 27px;
+        font-size: 14px;
+        width: 20%;
+    }
+    .itemImageArea {
+        height: 55%;
+        width: 85%;
+        margin-left: 7.5%;
+    }
+    .coinImageArea {
+        margin-top: 8%;
+        height: 60%;
+        width: 40%;
+    }
+    .itemCoinAmount {
+        line-height: 40px;
+        font-size: 16px;
+    }
+    .itemCoinText {
+        line-height: 42px;
+        margin-left: 4%;
+        font-size: 15px;
+    }
+    .exitButtonArea {
+        width: 10%;
+        height: 20%;
+        line-height: 52px;
+        font-size: 25px;
+    }
+    .exitButtonBorder {
+        margin-left: 10%;
+        width: 53px;
+    }
+    #categoryIcon {
+        line-height: 78px;
+        font-size: 25px;
+    }
+    .coinItem {
+        height: 47%;
+        width: 31%;
+    }
+    .coinNameArea {
+        font-size: 27px;
+        margin-left: 7%;
+        margin-top: 5%;
+    }
+    .coinBuyImageArea {
+        height: 50%;
+        margin-top: 3%;
+        margin-bottom: 10%;
+        width: 75%;
+        margin-left: 12.5%;
+    }
+    .coinRealPrice {
+        font-size: 27px;
+        margin-left: 7%;
+        line-height: 60px;
+    }
+    .coinBuyButton {
+        height: 70%;
+        line-height: 42px;
+        margin-left: 18%;
+        margin-top: 3%;
+        width: 58%;
+    }
+    .redeemOkButton {
+        font-size: 30px;
+        line-height: 59px;
+        height: 60%;
+        width: 28%;
+        margin-left: 1.5%;
+        margin-top: 1.3%;
+    }
+    .wantText {
+        margin-top: 5%;
+        font-size: 35px;
+    }
+    .wantItemArea {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-size: 20px;
+    }
+    .wantButton {
+        font-size: 25px;
+        width: 50%;
+        line-height: 60px;
+    }
+    .creditTextArea {
+        height: 80%;
+        min-width: 40%;
+        margin-left: 3.5%;
+        font-size: 18px;
+        line-height: 42px;
+    }
+
+    .addCreditButton {
+        height: 80%;
+        line-height: 39px;
+        width: 15%;
+        font-size: 45px;
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width: 1440px) and (max-height: 900px) {
+    .title1 {
+        font-size: 105px;
+        margin-left: 3%;
+    }
+    .title2 {
+        font-size: 70px;
+        margin-left: -6%;
+    }
+    .profileNameArea {
+        margin-top: 10%;
+        font-size: 35px;
+    }
+    #clockIcon {
+        font-size: 40px;
+        margin-top: 10%;
+    }
+    .rewardTextArea {
+        height: 60%;
+        width: 86%;
+        margin-top: 6%;
+        margin-left: 5%;
+        font-size: 19px;
+    }
+    .rewardText3Area {
+        margin-top: 0.5%;
+        font-size: 15px;
+    }
+    .exitButtonArea {
+        width: 10%;
+        height: 20%;
+        line-height: 52px;
+        font-size: 25px;
+    }
+    #exitIcon {
+        height: 85%;
+        margin-left: 8%;
+        margin-top: 8.2%;
+        width: 41px;
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .rankingTextArea {
+        width: 84%;
+        height: 10%;
+        margin-left: 8%;
+        margin-top: 9%;
+        font-size: 28px;
+        margin-bottom: 3%;
+    }
+    #clockIcon2 {
+        margin-top: 4.5%;
+        margin-left: 15%;
+        font-size: 19px;
+    }
+    .weeklyDay {
+        margin-left: 2%;
+        margin-top: 3.7%;
+        font-size: 17px;
+    }
+    .weeklyDayText {
+        margin-top: 3.7%;
+        font-size: 17px;
+        margin-left: 1.2%;
+    }
+    .rankCount {
+        font-size: 20px;
+    }
+    .rankItem {
+        font-size: 13px;
+        height: 13%;
+        line-height: 59px;
+        width: 84%;
+        margin-left: 8%;
+    }
+    .rankItemCoinImgArea {
+        margin-top: 17%;
+        width: 25%;
+        height: 50%;
+    }
+    .rankItemCoin {
+        margin-left: 5%;
+        font-size: 15px;
+    }
+    .rankItemCoinText {
+        font-size: 14px;
+        margin-left: 3%;
+    }
+    .topTextArea {
+        font-size: 45px;
+        margin-top: -4%;
+    }
+    .plyTmShopTextArea {
+        height: 100%;
+        font-size: 35px;
+    }
+    .rightBoxRectangle {
+        width: 73%;
+        height: 2px;
+        margin-left: 5%;
+        margin-top: 2.5%;
+    }
+    .rightItem {
+        height: 31%;
+        width: 23.2%;
+    }
+    .itemTopSection {
+        width: 85%;
+        margin-left: 7.5%;
+        margin-top: 4%;
+        height: 17%;
+        font-size: 16px;
+    }
+    .rightItemCount {
+        line-height: 27px;
+        font-size: 12px;
+        width: 20%;
+    }
+    .itemImageArea {
+        height: 55%;
+        width: 85%;
+        margin-left: 7.5%;
+    }
+    .coinImageArea {
+        margin-top: 8%;
+        height: 60%;
+        width: 40%;
+    }
+    .itemCoinAmount {
+        line-height: 38px;
+        font-size: 14px;
+    }
+    .itemCoinText {
+        line-height: 38px;
+        margin-left: 4%;
+        font-size: 13px;
+    }
+    .exitButtonArea {
+        width: 10%;
+        height: 24%;
+        line-height: 52px;
+        font-size: 25px;
+    }
+    .exitButtonBorder {
+        margin-left: 10%;
+        width: 53px;
+    }
+    #categoryIcon {
+        line-height: 63px;
+        font-size: 25px;
+    }
+    .coinItem {
+        height: 47%;
+        width: 31%;
+    }
+    .coinNameArea {
+        font-size: 27px;
+        margin-left: 7%;
+        margin-top: 4%;
+    }
+    .coinBuyImageArea {
+        height: 50%;
+        margin-top: 3%;
+        margin-bottom: 7%;
+        width: 75%;
+        margin-left: 12.5%;
+    }
+    .coinRealPrice {
+        font-size: 27px;
+        margin-left: 7%;
+        line-height: 53px;
+    }
+    .coinBuyButton {
+        height: 70%;
+        line-height: 37px;
+        margin-left: 18%;
+        margin-top: 2%;
+        width: 57%;
+    }
+    .redeemOkButton {
+        font-size: 25px;
+        line-height: 55px;
+        height: 60%;
+        width: 28%;
+        margin-left: 1.5%;
+        margin-top: 1.3%;
+    }
+    .wantText {
+        margin-top: 5%;
+        font-size: 31px;
+    }
+    .wantItemArea {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-size: 20px;
+    }
+    .wantButton {
+        font-size: 22px;
+        width: 50%;
+        line-height: 50px;
+    }
+    .creditTextArea {
+        height: 80%;
+        min-width: 40%;
+        margin-left: 3.5%;
+        font-size: 18px;
+        line-height: 42px;
+    }
+
+    .addCreditButton {
+        height: 80%;
+        line-height: 38px;
+        width: 15%;
+        font-size: 45px;
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width: 1366px) and (max-height: 768px) {
+    .title1 {
+        font-size: 105px;
+        margin-left: 3%;
+    }
+    .title2 {
+        font-size: 70px;
+        margin-left: -6%;
+    }
+    .profileNameArea {
+        margin-top: 10%;
+        font-size: 35px;
+    }
+    #clockIcon {
+        font-size: 40px;
+        margin-top: 10%;
+    }
+    .rewardTextArea {
+        height: 60%;
+        width: 86%;
+        margin-top: 6%;
+        margin-left: 5%;
+        font-size: 19px;
+    }
+    .rewardText3Area {
+        margin-top: 0.5%;
+        font-size: 15px;
+    }
+    .exitButtonArea {
+        width: 10%;
+        height: 20%;
+        line-height: 52px;
+        font-size: 25px;
+    }
+    #exitIcon {
+        height: 85%;
+        margin-left: 8%;
+        margin-top: 8.2%;
+        width: 41px;
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .rankingTextArea {
+        width: 84%;
+        height: 10%;
+        margin-left: 8%;
+        margin-top: 9%;
+        font-size: 26px;
+        margin-bottom: 3%;
+    }
+    #clockIcon2 {
+        margin-top: 4.5%;
+        margin-left: 15%;
+        font-size: 19px;
+    }
+    .weeklyDay {
+        margin-left: 2%;
+        margin-top: 3.7%;
+        font-size: 17px;
+    }
+    .weeklyDayText {
+        margin-top: 3.7%;
+        font-size: 17px;
+        margin-left: 1.2%;
+    }
+    .rankCount {
+        font-size: 18px;
+    }
+    .rankItem {
+        font-size: 13px;
+        height: 13%;
+        line-height: 49px;
+        width: 84%;
+        margin-left: 8%;
+    }
+    .rankItemCoinImgArea {
+        margin-top: 15%;
+        width: 25%;
+        height: 50%;
+    }
+    .rankItemCoin {
+        margin-left: 5%;
+        font-size: 13px;
+    }
+    .rankItemCoinText {
+        font-size: 11px;
+        margin-left: 3%;
+    }
+    .topTextArea {
+        font-size: 33px;
+        margin-top: -4%;
+    }
+    .plyTmShopTextArea {
+        height: 100%;
+        font-size: 35px;
+    }
+    .rightBoxRectangle {
+        width: 73%;
+        height: 2px;
+        margin-left: 5%;
+        margin-top: 2.5%;
+    }
+    .rightItem {
+        height: 31%;
+        width: 23.2%;
+    }
+    .itemTopSection {
+        width: 85%;
+        margin-left: 7.5%;
+        margin-top: 4%;
+        height: 17%;
+        font-size: 18px;
+    }
+    .rightItemCount {
+        line-height: 27px;
+        font-size: 14px;
+        width: 20%;
+    }
+    .itemImageArea {
+        height: 55%;
+        width: 85%;
+        margin-left: 7.5%;
+    }
+    .coinImageArea {
+        margin-top: 8%;
+        height: 60%;
+        width: 40%;
+    }
+    .itemCoinAmount {
+        line-height: 31px;
+        font-size: 12px;
+    }
+    .itemCoinText {
+        line-height: 31px;
+        margin-left: 4%;
+        font-size: 10px;
+    }
+    .exitButtonArea {
+        width: 10%;
+        height: 29%;
+        line-height: 52px;
+        font-size: 25px;
+    }
+    .exitButtonBorder {
+        margin-left: 10%;
+        width: 53px;
+    }
+    #categoryIcon {
+        line-height: 54px;
+        font-size: 25px;
+    }
+    .coinItem {
+        height: 46%;
+        width: 30%;
+    }
+    .coinNameArea {
+        font-size: 20px;
+        margin-left: 7%;
+        margin-top: 4%;
+    }
+    .coinBuyImageArea {
+        height: 50%;
+        margin-top: 3%;
+        margin-bottom: 7%;
+        width: 75%;
+        margin-left: 12.5%;
+    }
+    .coinRealPrice {
+        font-size: 24px;
+        margin-left: 7%;
+        line-height: 44px;
+    }
+    .coinBuyButton {
+        height: 70%;
+        line-height: 32px;
+        margin-left: 18%;
+        margin-top: 2%;
+        width: 60%;
+    }
+    .redeemOkButton {
+        font-size: 23px;
+        line-height: 47px;
+        height: 59%;
+        width: 28%;
+        margin-left: 1.5%;
+        margin-top: 1.3%;
+    }
+    .wantText {
+        margin-top: 5%;
+        font-size: 25px;
+    }
+    .wantItemArea {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-size: 16px;
+    }
+    .wantButton {
+        font-size: 22px;
+        width: 50%;
+        line-height: 46px;
+    }
+    .creditTextArea {
+        height: 80%;
+        min-width: 40%;
+        margin-left: 3.5%;
+        font-size: 18px;
+        line-height: 31px;
+    }
+
+    .addCreditButton {
+        height: 80%;
+        line-height: 33px;
+        width: 14%;
+        font-size: 45px;
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width: 1280px) and (max-height: 1024px) {
+    .title1 {
+        font-size: 105px;
+        margin-left: 3%;
+    }
+    .title2 {
+        font-size: 70px;
+        margin-left: -6%;
+    }
+    .profileNameArea {
+        margin-top: 10%;
+        font-size: 35px;
+    }
+    #clockIcon {
+        font-size: 40px;
+        margin-top: 10%;
+    }
+    .rewardTextArea {
+        height: 60%;
+        width: 86%;
+        margin-top: 6%;
+        margin-left: 5%;
+        font-size: 19px;
+    }
+    .rewardText3Area {
+        margin-top: 0.5%;
+        font-size: 15px;
+    }
+    .exitButtonArea {
+        width: 10%;
+        height: 20%;
+        line-height: 52px;
+        font-size: 25px;
+    }
+    #exitIcon {
+        height: 85%;
+        margin-left: 8%;
+        margin-top: 8.2%;
+        width: 41px;
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .rankingTextArea {
+        width: 84%;
+        height: 10%;
+        margin-left: 8%;
+        margin-top: 9%;
+        font-size: 23px;
+        margin-bottom: 3%;
+    }
+    #clockIcon2 {
+        margin-top: 4.5%;
+        margin-left: 15%;
+        font-size: 19px;
+    }
+    .weeklyDay {
+        margin-left: 2%;
+        margin-top: 3.7%;
+        font-size: 17px;
+    }
+    .weeklyDayText {
+        margin-top: 3.7%;
+        font-size: 17px;
+        margin-left: 1.2%;
+    }
+    .rankCount {
+        font-size: 24px;
+    }
+    .rankItem {
+        font-size: 12px;
+        height: 13%;
+        line-height: 69px;
+        width: 84%;
+        margin-left: 8%;
+    }
+    .rankItemCoinImgArea {
+        margin-top: 21%;
+        width: 25%;
+        height: 50%;
+    }
+    .rankItemCoin {
+        margin-left: 5%;
+        font-size: 15px;
+    }
+    .rankItemCoinText {
+        font-size: 14px;
+        margin-left: 3%;
+    }
+    .topTextArea {
+        font-size: 45px;
+        margin-top: 0%;
+    }
+    .plyTmShopTextArea {
+        height: 100%;
+        font-size: 35px;
+    }
+    .rightBoxRectangle {
+        width: 73%;
+        height: 2px;
+        margin-left: 5%;
+        margin-top: 2.5%;
+    }
+    .rightItem {
+        height: 31%;
+        width: 23.2%;
+    }
+    .itemTopSection {
+        width: 85%;
+        margin-left: 7.5%;
+        margin-top: 4%;
+        height: 17%;
+        font-size: 15px;
+    }
+    .rightItemCount {
+        line-height: 27px;
+        font-size: 13px;
+        width: 20%;
+    }
+    .itemImageArea {
+        height: 55%;
+        width: 85%;
+        margin-left: 7.5%;
+    }
+    .coinImageArea {
+        margin-top: 8%;
+        height: 60%;
+        width: 40%;
+    }
+    .itemCoinAmount {
+        line-height: 38px;
+        font-size: 13px;
+    }
+    .itemCoinText {
+        line-height: 38px;
+        margin-left: 4%;
+        font-size: 13px;
+    }
+    .exitButtonArea {
+        width: 10%;
+        height: 22%;
+        line-height: 52px;
+        font-size: 25px;
+    }
+    .exitButtonBorder {
+        margin-left: 10%;
+        width: 53px;
+    }
+    #categoryIcon {
+        line-height: 73px;
+        font-size: 25px;
+    }
+    .coinItem {
+        height: 47%;
+        width: 30%;
+    }
+    .coinNameArea {
+        font-size: 27px;
+        margin-left: 7%;
+        margin-top: 4%;
+    }
+    .coinBuyImageArea {
+        height: 50%;
+        margin-top: 3%;
+        margin-bottom: 13%;
+        width: 75%;
+        margin-left: 12.5%;
+    }
+    .coinRealPrice {
+        font-size: 27px;
+        margin-left: 7%;
+        line-height: 60px;
+    }
+    .coinBuyButton {
+        height: 70%;
+        line-height: 41px;
+        margin-left: 18%;
+        margin-top: 4%;
+        width: 55%;
+    }
+    .redeemOkButton {
+        font-size: 30px;
+        line-height: 59px;
+        height: 60%;
+        width: 28%;
+        margin-left: 1.5%;
+        margin-top: 1.3%;
+    }
+    .wantText {
+        margin-top: 5%;
+        font-size: 32px;
+    }
+    .wantItemArea {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-size: 20px;
+    }
+    .wantButton {
+        font-size: 25px;
+        width: 50%;
+        line-height: 60px;
+    }
+    .creditTextArea {
+        height: 80%;
+        min-width: 40%;
+        margin-left: 3.5%;
+        font-size: 18px;
+        line-height: 42px;
+    }
+
+    .addCreditButton {
+        height: 80%;
+        line-height: 39px;
+        width: 15%;
+        font-size: 45px;
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width: 1280px) and (max-height: 960px) {
+    .title1 {
+        font-size: 85px;
+        margin-left: 3%;
+    }
+    .title2 {
+        font-size: 57px;
+        margin-left: -6%;
+    }
+    .profileNameArea {
+        margin-top: 10%;
+        font-size: 35px;
+    }
+    #clockIcon {
+        font-size: 40px;
+        margin-top: 10%;
+    }
+    .rewardTextArea {
+        height: 60%;
+        width: 86%;
+        margin-top: 6%;
+        margin-left: 5%;
+        font-size: 19px;
+    }
+    .rewardText3Area {
+        margin-top: 0.5%;
+        font-size: 15px;
+    }
+    .exitButtonArea {
+        width: 10%;
+        height: 20%;
+        line-height: 52px;
+        font-size: 25px;
+    }
+    #exitIcon {
+        height: 85%;
+        margin-left: 8%;
+        margin-top: 8.2%;
+        width: 41px;
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .rankingTextArea {
+        width: 84%;
+        height: 10%;
+        margin-left: 8%;
+        margin-top: 9%;
+        font-size: 24px;
+        margin-bottom: 3%;
+    }
+    #clockIcon2 {
+        margin-top: 4.5%;
+        margin-left: 15%;
+        font-size: 19px;
+    }
+    .weeklyDay {
+        margin-left: 2%;
+        margin-top: 3.7%;
+        font-size: 17px;
+    }
+    .weeklyDayText {
+        margin-top: 3.7%;
+        font-size: 17px;
+        margin-left: 1.2%;
+    }
+    .rankCount {
+        font-size: 20px;
+    }
+    .rankItem {
+        font-size: 11px;
+        height: 13%;
+        line-height: 65px;
+        width: 84%;
+        margin-left: 8%;
+    }
+    .rankItemCoinImgArea {
+        margin-top: 21%;
+        width: 25%;
+        height: 50%;
+    }
+    .rankItemCoin {
+        margin-left: 5%;
+        font-size: 14px;
+    }
+    .rankItemCoinText {
+        font-size: 13px;
+        margin-left: 3%;
+    }
+    .topTextArea {
+        font-size: 31px;
+        margin-top: 2%;
+    }
+    .plyTmShopTextArea {
+        height: 100%;
+        font-size: 35px;
+    }
+    .rightBoxRectangle {
+        width: 73%;
+        height: 2px;
+        margin-left: 5%;
+        margin-top: 2.5%;
+    }
+    .rightItem {
+        height: 31%;
+        width: 23.2%;
+    }
+    .itemTopSection {
+        width: 85%;
+        margin-left: 7.5%;
+        margin-top: 4%;
+        height: 17%;
+        font-size: 14px;
+    }
+    .rightItemCount {
+        line-height: 22px;
+        font-size: 11px;
+        width: 20%;
+    }
+    .itemImageArea {
+        height: 55%;
+        width: 85%;
+        margin-left: 7.5%;
+    }
+    .coinImageArea {
+        margin-top: 8%;
+        height: 60%;
+        width: 40%;
+    }
+    .itemCoinAmount {
+        line-height: 37px;
+        font-size: 12px;
+    }
+    .itemCoinText {
+        line-height: 37px;
+        margin-left: 4%;
+        font-size: 12px;
+    }
+    .exitButtonArea {
+        width: 10%;
+        height: 20%;
+        line-height: 52px;
+        font-size: 25px;
+    }
+    .exitButtonBorder {
+        margin-left: 10%;
+        width: 53px;
+    }
+    #categoryIcon {
+        line-height: 67px;
+        font-size: 25px;
+    }
+    .coinItem {
+        height: 47%;
+        width: 30%;
+    }
+    .coinNameArea {
+        font-size: 27px;
+        margin-left: 7%;
+        margin-top: 4%;
+    }
+    .coinBuyImageArea {
+        height: 50%;
+        margin-top: 3%;
+        margin-bottom: 11%;
+        width: 75%;
+        margin-left: 12.5%;
+    }
+    .coinRealPrice {
+        font-size: 27px;
+        margin-left: 7%;
+        line-height: 60px;
+    }
+    .coinBuyButton {
+        height: 70%;
+        line-height: 41px;
+        margin-left: 18%;
+        margin-top: 4%;
+        width: 55%;
+    }
+    .redeemOkButton {
+        font-size: 30px;
+        line-height: 59px;
+        height: 60%;
+        width: 28%;
+        margin-left: 1.5%;
+        margin-top: 1.3%;
+    }
+    .wantText {
+        margin-top: 5%;
+        font-size: 29px;
+    }
+    .wantItemArea {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-size: 20px;
+    }
+    .wantButton {
+        font-size: 25px;
+        width: 50%;
+        line-height: 54px;
+    }
+    .creditTextArea {
+        height: 80%;
+        min-width: 40%;
+        margin-left: 3.5%;
+        font-size: 18px;
+        line-height: 42px;
+    }
+
+    .addCreditButton {
+        height: 80%;
+        line-height: 39px;
+        width: 14%;
+        font-size: 45px;
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width: 1280px) and (max-height: 800px) {
+    .title1 {
+        font-size: 85px;
+        margin-left: 3%;
+    }
+    .title2 {
+        font-size: 57px;
+        margin-left: -6%;
+    }
+    .profileNameArea {
+        margin-top: 10%;
+        font-size: 35px;
+    }
+    #clockIcon {
+        font-size: 40px;
+        margin-top: 10%;
+    }
+    .rewardTextArea {
+        height: 60%;
+        width: 86%;
+        margin-top: 6%;
+        margin-left: 5%;
+        font-size: 19px;
+    }
+    .rewardText3Area {
+        margin-top: 0.5%;
+        font-size: 15px;
+    }
+    .exitButtonArea {
+        width: 10%;
+        height: 20%;
+        line-height: 52px;
+        font-size: 25px;
+    }
+    #exitIcon {
+        height: 85%;
+        margin-left: 8%;
+        margin-top: 8.2%;
+        width: 41px;
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .rankingTextArea {
+        width: 84%;
+        height: 10%;
+        margin-left: 8%;
+        margin-top: 9%;
+        font-size: 24px;
+        margin-bottom: 3%;
+    }
+    #clockIcon2 {
+        margin-top: 4.5%;
+        margin-left: 15%;
+        font-size: 19px;
+    }
+    .weeklyDay {
+        margin-left: 2%;
+        margin-top: 3.7%;
+        font-size: 17px;
+    }
+    .weeklyDayText {
+        margin-top: 3.7%;
+        font-size: 17px;
+        margin-left: 1.2%;
+    }
+    .rankCount {
+        font-size: 20px;
+    }
+    .rankItem {
+        font-size: 11px;
+        height: 13%;
+        line-height: 54px;
+        width: 84%;
+        margin-left: 8%;
+    }
+    .rankItemCoinImgArea {
+        margin-top: 17%;
+        width: 25%;
+        height: 50%;
+    }
+    .rankItemCoin {
+        margin-left: 5%;
+        font-size: 14px;
+    }
+    .rankItemCoinText {
+        font-size: 13px;
+        margin-left: 3%;
+    }
+    .topTextArea {
+        font-size: 30px;
+        margin-top: -1%;
+    }
+    .plyTmShopTextArea {
+        height: 100%;
+        font-size: 35px;
+    }
+    .rightBoxRectangle {
+        width: 73%;
+        height: 2px;
+        margin-left: 5%;
+        margin-top: 2.5%;
+    }
+    .rightItem {
+        height: 31%;
+        width: 23.2%;
+    }
+    .itemTopSection {
+        width: 85%;
+        margin-left: 7.5%;
+        margin-top: 4%;
+        height: 17%;
+        font-size: 14px;
+    }
+    .rightItemCount {
+        line-height: 22px;
+        font-size: 11px;
+        width: 20%;
+    }
+    .itemImageArea {
+        height: 55%;
+        width: 85%;
+        margin-left: 7.5%;
+    }
+    .coinImageArea {
+        margin-top: 8%;
+        height: 60%;
+        width: 40%;
+    }
+    .itemCoinAmount {
+        line-height: 33px;
+        font-size: 12px;
+    }
+    .itemCoinText {
+        line-height: 33px;
+        margin-left: 4%;
+        font-size: 12px;
+    }
+    .exitButtonArea {
+        width: 10%;
+        height: 27%;
+        line-height: 52px;
+        font-size: 25px;
+    }
+    .exitButtonBorder {
+        margin-left: 10%;
+        width: 53px;
+    }
+    #categoryIcon {
+        line-height: 55px;
+        font-size: 25px;
+    }
+    .coinItem {
+        height: 46%;
+        width: 30%;
+    }
+    .coinNameArea {
+        font-size: 27px;
+        margin-left: 7%;
+        margin-top: 4%;
+    }
+    .coinBuyImageArea {
+        height: 50%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        width: 75%;
+        margin-left: 12.5%;
+    }
+    .coinRealPrice {
+        font-size: 24px;
+        margin-left: 7%;
+        line-height: 51px;
+    }
+    .coinBuyButton {
+        height: 70%;
+        line-height: 34px;
+        margin-left: 18%;
+        margin-top: 4%;
+        width: 55%;
+    }
+    .redeemOkButton {
+        font-size: 21px;
+        line-height: 49px;
+        height: 60%;
+        width: 28%;
+        margin-left: 1.5%;
+        margin-top: 1.3%;
+    }
+    .wantText {
+        margin-top: 5%;
+        font-size: 27px;
+    }
+    .wantItemArea {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-size: 17px;
+    }
+    .wantButton {
+        font-size: 22px;
+        width: 50%;
+        line-height: 46px;
+    }
+    .creditTextArea {
+        height: 80%;
+        min-width: 40%;
+        margin-left: 3.5%;
+        font-size: 18px;
+        line-height: 34px;
+    }
+
+    .addCreditButton {
+        height: 80%;
+        line-height: 33px;
+        width: 14%;
+        font-size: 45px;
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width: 1280px) and (max-height: 720px) {
+    .title1 {
+        font-size: 85px;
+        margin-left: 3%;
+    }
+    .title2 {
+        font-size: 57px;
+        margin-left: -6%;
+    }
+    .profileNameArea {
+        margin-top: 10%;
+        font-size: 35px;
+    }
+    #clockIcon {
+        font-size: 40px;
+        margin-top: 10%;
+    }
+    .rewardTextArea {
+        height: 60%;
+        width: 86%;
+        margin-top: 6%;
+        margin-left: 5%;
+        font-size: 19px;
+    }
+    .rewardText3Area {
+        margin-top: 0.5%;
+        font-size: 15px;
+    }
+    .exitButtonArea {
+        width: 10%;
+        height: 20%;
+        line-height: 52px;
+        font-size: 25px;
+    }
+    #exitIcon {
+        height: 85%;
+        margin-left: 8%;
+        margin-top: 8.2%;
+        width: 41px;
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .rankingTextArea {
+        width: 84%;
+        height: 10%;
+        margin-left: 8%;
+        margin-top: 9%;
+        font-size: 24px;
+        margin-bottom: 3%;
+    }
+    #clockIcon2 {
+        margin-top: 4.5%;
+        margin-left: 15%;
+        font-size: 19px;
+    }
+    .weeklyDay {
+        margin-left: 2%;
+        margin-top: 3.7%;
+        font-size: 17px;
+    }
+    .weeklyDayText {
+        margin-top: 3.7%;
+        font-size: 17px;
+        margin-left: 1.2%;
+    }
+    .rankCount {
+        font-size: 20px;
+    }
+    .rankItem {
+        font-size: 11px;
+        height: 13%;
+        line-height: 54px;
+        width: 84%;
+        margin-left: 8%;
+    }
+    .rankItemCoinImgArea {
+        margin-top: 17%;
+        width: 25%;
+        height: 50%;
+    }
+    .rankItemCoin {
+        margin-left: 5%;
+        font-size: 14px;
+    }
+    .rankItemCoinText {
+        font-size: 13px;
+        margin-left: 3%;
+    }
+    .topTextArea {
+        font-size: 30px;
+        margin-top: -1%;
+    }
+    .plyTmShopTextArea {
+        height: 100%;
+        font-size: 35px;
+    }
+    .rightBoxRectangle {
+        width: 73%;
+        height: 2px;
+        margin-left: 5%;
+        margin-top: 2.5%;
+    }
+    .rightItem {
+        height: 31%;
+        width: 23.2%;
+    }
+    .itemTopSection {
+        width: 85%;
+        margin-left: 7.5%;
+        margin-top: 4%;
+        height: 17%;
+        font-size: 14px;
+    }
+    .rightItemCount {
+        line-height: 22px;
+        font-size: 11px;
+        width: 20%;
+    }
+    .itemImageArea {
+        height: 55%;
+        width: 85%;
+        margin-left: 7.5%;
+    }
+    .coinImageArea {
+        margin-top: 8%;
+        height: 60%;
+        width: 40%;
+    }
+    .itemCoinAmount {
+        line-height: 33px;
+        font-size: 12px;
+    }
+    .itemCoinText {
+        line-height: 33px;
+        margin-left: 4%;
+        font-size: 12px;
+    }
+    .exitButtonArea {
+        width: 10%;
+        height: 27%;
+        line-height: 52px;
+        font-size: 25px;
+    }
+    .exitButtonBorder {
+        margin-left: 10%;
+        width: 53px;
+    }
+    #categoryIcon {
+        line-height: 55px;
+        font-size: 25px;
+    }
+    .coinItem {
+        height: 46%;
+        width: 30%;
+    }
+    .coinNameArea {
+        font-size: 27px;
+        margin-left: 7%;
+        margin-top: 4%;
+    }
+    .coinBuyImageArea {
+        height: 50%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        width: 75%;
+        margin-left: 12.5%;
+    }
+    .coinRealPrice {
+        font-size: 24px;
+        margin-left: 7%;
+        line-height: 51px;
+    }
+    .coinBuyButton {
+        height: 70%;
+        line-height: 34px;
+        margin-left: 18%;
+        margin-top: 4%;
+        width: 55%;
+    }
+    .redeemOkButton {
+        font-size: 21px;
+        line-height: 49px;
+        height: 60%;
+        width: 28%;
+        margin-left: 1.5%;
+        margin-top: 1.3%;
+    }
+    .wantText {
+        margin-top: 5%;
+        font-size: 27px;
+    }
+    .wantItemArea {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-size: 17px;
+    }
+    .wantButton {
+        font-size: 22px;
+        width: 50%;
+        line-height: 46px;
+    }
+    .creditTextArea {
+        height: 80%;
+        min-width: 40%;
+        margin-left: 3.5%;
+        font-size: 18px;
+        line-height: 34px;
+    }
+
+    .addCreditButton {
+        height: 80%;
+        line-height: 33px;
+        width: 14%;
+        font-size: 45px;
+        margin-left: 3%;
+    }
+}
+
+@media screen and (width: 2560px) and (height: 1440px) {
+    .title1 {
+        font-size: 117px;
+        margin-left: 3%;
+    }
+    .title2 {
+        font-size: 82px;
+        margin-left: -6%;
+    }
+    .profileNameArea {
+        margin-top: 10%;
+        font-size: 43px;
+    }
+    #clockIcon {
+        font-size: 40px;
+        margin-top: 10%;
+    }
+    .rewardTextArea {
+        height: 60%;
+        width: 86%;
+        margin-top: 6%;
+        margin-left: 5%;
+        font-size: 24px;
+    }
+    .rewardText3Area {
+        margin-top: 0.5%;
+        font-size: 21px;
+    }
+    .exitButtonArea {
+        width: 10%;
+        height: 20%;
+        line-height: 52px;
+        font-size: 25px;
+    }
+    #exitIcon {
+        height: 85%;
+        margin-left: 8%;
+        margin-top: 8.2%;
+        width: 41px;
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .rankingTextArea {
+        width: 84%;
+        height: 10%;
+        margin-left: 8%;
+        margin-top: 9%;
+        font-size: 50px;
+        margin-bottom: 3%;
+    }
+    #clockIcon2 {
+        margin-top: 4.5%;
+        margin-left: 15%;
+        font-size: 24px;
+    }
+    .weeklyDay {
+        margin-left: 2%;
+        margin-top: 3.7%;
+        font-size: 24px;
+    }
+    .weeklyDayText {
+        margin-top: 3.7%;
+        font-size: 23px;
+        margin-left: 1.2%;
+    }
+    .rankCount {
+        font-size: 37px;
+    }
+    .rankItem {
+        font-size: 26px;
+        height: 13%;
+        line-height: 92px;
+        width: 84%;
+        margin-left: 8%;
+    }
+    .rankItemCoinImgArea {
+        margin-top: 15%;
+        width: 25%;
+        height: 50%;
+    }
+    .rankItemCoin {
+        margin-left: 5%;
+        font-size: 24px;
+    }
+    .rankItemCoinText {
+        font-size: 24px;
+        margin-left: 3%;
+    }
+    .topTextArea {
+        font-size: 58px;
+        margin-top: -4%;
+    }
+    .plyTmShopTextArea {
+        height: 100%;
+        font-size: 44px;
+    }
+    .rightBoxRectangle {
+        width: 73%;
+        height: 2px;
+        margin-left: 5%;
+        margin-top: 2.5%;
+    }
+    .rightItem {
+        height: 31%;
+        width: 23.2%;
+    }
+    .itemTopSection {
+        width: 85%;
+        margin-left: 7.5%;
+        margin-top: 4%;
+        height: 17%;
+        font-size: 24px;
+    }
+    .rightItemCount {
+        line-height: 27px;
+        font-size: 21px;
+        width: 20%;
+    }
+    .itemImageArea {
+        height: 55%;
+        width: 85%;
+        margin-left: 7.5%;
+    }
+    .coinImageArea {
+        margin-top: 8%;
+        height: 60%;
+        width: 40%;
+    }
+    .itemCoinAmount {
+        line-height: 58px;
+        font-size: 23px;
+    }
+    .itemCoinText {
+        line-height: 56px;
+        margin-left: 4%;
+        font-size: 21px;
+    }
+    .exitButtonArea {
+        width: 10%;
+        height: 16%;
+        line-height: 52px;
+        font-size: 30px;
+    }
+    .exitButtonBorder {
+        margin-left: 10%;
+        width: 53px;
+    }
+    #categoryIcon {
+        line-height: 103px;
+        font-size: 37px;
+    }
+    .coinItem {
+        height: 47%;
+        width: 31%;
+    }
+    .coinNameArea {
+        font-size: 35px;
+        margin-left: 7%;
+        margin-top: 4%;
+    }
+    .coinBuyImageArea {
+        height: 50%;
+        margin-top: 3%;
+        margin-bottom: 7%;
+        width: 75%;
+        margin-left: 12.5%;
+    }
+    .coinRealPrice {
+        font-size: 36px;
+        margin-left: 7%;
+        line-height: 85px;
+    }
+    .coinBuyButton {
+        height: 70%;
+        font-size: 30px;
+        line-height: 60px;
+        margin-left: 18%;
+        margin-top: 2.5%;
+        width: 60%;
+    }
+    .redeemOkButton {
+        font-size: 38px;
+        line-height: 82px;
+        height: 60%;
+        width: 28%;
+        margin-left: 1.5%;
+        margin-top: 1.3%;
+    }
+    .wantText {
+        margin-top: 5%;
+        font-size: 43px;
+    }
+    .wantItemArea {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-size: 25px;
+    }
+    .wantButton {
+        font-size: 32px;
+        width: 50%;
+        line-height: 79px;
+    }
+    .creditTextArea {
+        height: 80%;
+        min-width: 40%;
+        margin-left: 3.5%;
+        font-size: 28px;
+        line-height: 57px;
+    }
+
+    .addCreditButton {
+        height: 80%;
+        line-height: 54px;
+        width: 13%;
+        font-size: 48px;
+        margin-left: 3%;
+    }
+}
+
+@media screen and (width: 3840px) and (height: 2160px) {
+    .title1 {
+        font-size: 167px;
+        margin-left: 3%;
+    }
+    .title2 {
+        font-size: 118px;
+        margin-left: -6%;
+    }
+    .profileNameArea {
+        margin-top: 10%;
+        font-size: 54px;
+    }
+    #clockIcon {
+        font-size: 68px;
+        margin-top: 11%;
+    }
+    .rewardTextArea {
+        height: 60%;
+        width: 86%;
+        margin-top: 6%;
+        margin-left: 5%;
+        font-size: 36px;
+    }
+    .rewardText3Area {
+        margin-top: 0.5%;
+        font-size: 35px;
+    }
+    .exitButtonArea {
+        width: 10%;
+        height: 20%;
+        line-height: 52px;
+        font-size: 25px;
+    }
+    #exitIcon {
+        height: 85%;
+        margin-left: 8%;
+        margin-top: 8.2%;
+        width: 62px;
+        font-size: 33px;
+        line-height: 62px;
+    }
+    .rankingTextArea {
+        width: 84%;
+        height: 10%;
+        margin-left: 8%;
+        margin-top: 9%;
+        font-size: 75px;
+        margin-bottom: 3%;
+    }
+    #clockIcon2 {
+        margin-top: 5.5%;
+        margin-left: 15%;
+        font-size: 39px;
+    }
+    .weeklyDay {
+        margin-left: 2%;
+        margin-top: 4.3%;
+        font-size: 36px;
+    }
+    .weeklyDayText {
+        margin-top: 4.5%;
+        font-size: 35px;
+        margin-left: 1.2%;
+    }
+    .rankCount {
+        font-size: 60px;
+    }
+    .rankItem {
+        font-size: 37px;
+        height: 13%;
+        line-height: 142px;
+        width: 84%;
+        margin-left: 8%;
+    }
+    .rankItemCoinImgArea {
+        margin-top: 15%;
+        width: 25%;
+        height: 50%;
+    }
+    .rankItemCoin {
+        margin-left: 5%;
+        font-size: 37px;
+    }
+    .rankItemCoinText {
+        font-size: 34px;
+        margin-left: 3%;
+    }
+    .topTextArea {
+        font-size: 87px;
+        margin-top: -4%;
+    }
+    .plyTmShopTextArea {
+        height: 100%;
+        font-size: 63px;
+    }
+    .rightBoxRectangle {
+        width: 73%;
+        height: 2px;
+        margin-left: 5%;
+        margin-top: 2.5%;
+    }
+    .rightItem {
+        height: 31%;
+        width: 23.2%;
+    }
+    .itemTopSection {
+        width: 85%;
+        margin-left: 7.5%;
+        margin-top: 4%;
+        height: 17%;
+        font-size: 34px;
+    }
+    .rightItemCount {
+        line-height: 34px;
+        font-size: 33px;
+        width: 20%;
+    }
+    .itemImageArea {
+        height: 55%;
+        width: 85%;
+        margin-left: 7.5%;
+    }
+    .coinImageArea {
+        margin-top: 8%;
+        height: 60%;
+        width: 40%;
+    }
+    .itemCoinAmount {
+        line-height: 80px;
+        font-size: 32px;
+    }
+    .itemCoinText {
+        line-height: 83px;
+        margin-left: 4%;
+        font-size: 29px;
+    }
+    .exitButtonArea {
+        width: 10%;
+        height: 16%;
+        line-height: 78px;
+        font-size: 46px;
+    }
+    .exitButtonBorder {
+        margin-left: 10%;
+        width: 76px;
+    }
+    #categoryIcon {
+        line-height: 158px;
+        font-size: 55px;
+    }
+    .coinItem {
+        height: 48%;
+        width: 32%;
+    }
+    .coinNameArea {
+        font-size: 53px;
+        margin-left: 7%;
+        margin-top: 4%;
+    }
+    .coinBuyImageArea {
+        height: 50%;
+        margin-top: 3%;
+        margin-bottom: 7%;
+        width: 75%;
+        margin-left: 12.5%;
+    }
+    .coinRealPrice {
+        font-size: 52px;
+        margin-left: 7%;
+        line-height: 132px;
+    }
+    .coinBuyButton {
+        height: 70%;
+        font-size: 43px;
+        line-height: 91px;
+        margin-left: 18%;
+        margin-top: 2.5%;
+        width: 60%;
+    }
+    .redeemOkButton {
+        font-size: 51px;
+        line-height: 125px;
+        height: 60%;
+        width: 28%;
+        margin-left: 1.5%;
+        margin-top: 1.3%;
+    }
+    .wantText {
+        margin-top: 5%;
+        font-size: 69px;
+    }
+    .wantItemArea {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-size: 40px;
+    }
+    .wantButton {
+        font-size: 53px;
+        width: 50%;
+        line-height: 122px;
+    }
+    .creditTextArea {
+        height: 80%;
+        min-width: 40%;
+        margin-left: 3.5%;
+        font-size: 40px;
+        line-height: 84px;
+    }
+
+    .addCreditButton {
+        height: 80%;
+        line-height: 86px;
+        width: 13%;
+        font-size: 77px;
+        margin-left: 3%;
+    }
+}
