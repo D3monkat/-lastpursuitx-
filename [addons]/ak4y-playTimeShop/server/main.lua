@@ -133,9 +133,12 @@ AddEventHandler('ak4y-playTimeShop:addCoin', function(amount)
     local source = source
     local Dperms = {"1186511422377709728","947973977580638240"}
     -- Check if the player has the required Discord role
-    local discordperms = exports.zdiscord:isRolePresent(source, "947973977580638240")
+    -- local discordperms = exports.zdiscord:isRolePresent(source, "947973977580638240")
+    local bool = exports.zdiscord:isRolePresent("947973977580638240", {
+        "1186511422377709728"
+    });
 
-    if discordperms then
+    if bool then
     ExecuteSql("UPDATE ak4y_playtimeshop SET coin = coin + '"..deger.."' WHERE citizenid = '"..citizenId.."'")
     end
 end)
