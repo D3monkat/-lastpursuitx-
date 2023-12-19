@@ -109,12 +109,9 @@ RegisterCommand('booststore', function(source, args, rawCommand)
     local source = source
 
     -- Check if the player has the required Discord role
-    local discordperms = exports.zdiscord:isRolePresent(source, "94797397758063824022");
-    local discordperms2 = exports.zdiscord:isRolePresent(source, "1186511422377709728");
+    local discordperms = exports.zdiscord:isRolePresent(source, "947973977580638240");
 
     if discordperms then
-        TriggerClientEvent('kat:openthegates', source) -- Pass the source as an argument to the client event
-    elseif discordperms2 then
         TriggerClientEvent('kat:openthegates', source) -- Pass the source as an argument to the client event
     else
         -- Optionally, you can notify the player that they don't have the required role
