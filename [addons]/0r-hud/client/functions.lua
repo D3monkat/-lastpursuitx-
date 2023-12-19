@@ -20,6 +20,25 @@ function Koci.Client:SendReactMessage(action, data)
     })
 end
 
+
+CreateThread(function()
+    while true do
+        if LocalPlayer.state.isLoggedIn then
+            local ped = PlayerPedId()
+            if IsPedInAnyVehicle(ped, false) and not IsThisModelABicycle(GetEntityModel(GetVehiclePedIsIn(ped, false))) and not isElectric(GetVehiclePedIsIn(ped, false)) then
+                if exports["cdn-fuel"]:GetFuel(GetVehiclePedIsIn(ped, false)) <= 20 then -- At 20% Fuel Left
+                    if Menu.isLowFuelChecked then
+                        TriggerServerEvent("InteractSound_SV:PlayOnSource", "pager", 0.10)
+                        QBCore.Functions.Notify(Lang:t("notify.low_fuel"), "error")
+                        Wait(60000) -- repeats every 1 min until empty
+                    end
+                end
+            end
+        end
+        Wait(10000)
+    end
+end)
+
 ---@param system ("esx_notify" | "qb_notify" | "custom_notify") System to be used
 ---@param type string inform / success / error
 ---@param title string Notification text

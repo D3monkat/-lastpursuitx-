@@ -10,8 +10,8 @@ AK4Y.Framework = "qb" -- qb / oldqb | qb = export system | oldqb = triggerevent 
 AK4Y.Mysql = "oxmysql" -- Check fxmanifest.lua when you change it! | ghmattimysql / oxmysql / mysql-async
 AK4Y.OpenCommand = "playtimeShop"
 AK4Y.DefaultGarage = "pillboxgarage" -- purchased vehicles will be sent to this garage
-AK4Y.RewardCoin = 25
-AK4Y.NeededPlayTime = 120 -- Minutes
+AK4Y.RewardCoin = 5
+AK4Y.NeededPlayTime = 10 -- Minutes
 
 AK4Y.Language = {
     title1 = "AK4Y",
