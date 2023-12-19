@@ -56,7 +56,7 @@ const BotStatusMessages = [
 // ACE PERMISSIONS
 const EnableAutoAcePermissions = true;
 const AutoAcePermissions = {
-    // "example": "000000000000000000",
+    "example": "1186511422377709728",
     "example2": [ "947973977580638240", "1186511422377709728"],
 };
 
