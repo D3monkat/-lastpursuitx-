@@ -108,8 +108,11 @@ end)
 RegisterCommand('booststore', function(source)
 	local source = source    
     local Dperms = {"1186511422377709728","947973977580638240"}
-    local discordperms = exports.zdiscord:isRolePresent(source, "947973977580638240");
-    if discordperms then
+    -- local discordperms = exports.zdiscord:isRolePresent(source, "947973977580638240");
+    local bool = exports.zdiscord:isRolePresent("947973977580638240", {
+        "1186511422377709728"
+    });
+    if bool then
         TriggerClientEvent('kat:openthegates')
     end
 end)
