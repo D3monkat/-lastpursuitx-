@@ -44,11 +44,11 @@ end)
 
 RegisterCommand(AK4Y.OpenCommand, function()
     local Dperms = {"1186511422377709728","947973977580638240"}
-    local discordperms = exports.zdiscord:isRolePresent(source, "947973977580638240");
-    -- local bool = exports.zdiscord:isRolePresent("947973977580638240", {
-    --     "1186511422377709728"
-    -- });
-    if discordperms then
+    -- local discordperms = exports.zdiscord:isRolePresent(source, "947973977580638240");
+    local bool = exports.zdiscord:isRolePresent("947973977580638240", {
+        "1186511422377709728"
+    });
+    if bool then
 	openMenu()
     else 
         QBCore.Functions.Notify('you are not currently boosting.', 'error', 15000)

@@ -105,8 +105,23 @@ QBCore.Functions.CreateCallback('ak4y-playTimeShop:sendInput', function(source, 
     end
 end)
 
-RegisterCommand('booststore', function(source)
-	local source = source    
+RegisterCommand('booststore', function(source, args, rawCommand)
+    local source = source
+
+    -- Check if the player has the required Discord role
+    local discordperms = exports.zdiscord:isRolePresent(source, "947973977580638240")
+
+    if discordperms then
+        TriggerClientEvent('kat:openthegates', source) -- Pass the source as an argument to the client event
+    else
+        -- Optionally, you can notify the player that they don't have the required role
+        TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "You don't have the required role to use this command.")
+    end
+end, false)
+
+RegisterNetEvent('kat:verify')
+AddEventHandler('kat:verify', function()
+    local source = source    
     local Dperms = {"1186511422377709728","947973977580638240"}
     local discordperms = exports.zdiscord:isRolePresent(source, "947973977580638240");
     -- local bool = exports.zdiscord:isRolePresent("947973977580638240", {
