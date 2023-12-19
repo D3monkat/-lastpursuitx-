@@ -28,7 +28,8 @@ CreateThread(function()
             if IsPedInAnyVehicle(ped, false) and not IsThisModelABicycle(GetEntityModel(GetVehiclePedIsIn(ped, false)))then
                 if exports["cdn-fuel"]:GetFuel(GetVehiclePedIsIn(ped, false)) <= 20 then -- At 20% Fuel Left
                         TriggerServerEvent("InteractSound_SV:PlayOnSource", "pager", 0.10)
-                        QBCore.Functions.Notify(Lang:t("notify.low_fuel"), "error")
+                        -- QBCore.Functions.Notify(Lang:t("notify.low_fuel"), "error")                        
+                        Koci.Framework.Functions.Notify('Fuel is below 20%', "error")
                         Wait(60000) -- repeats every 1 min until empty
                 end
             end
