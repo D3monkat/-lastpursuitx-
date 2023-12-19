@@ -123,21 +123,44 @@ return {
 
 	PoliceArmoury = {
 		name = 'Police Armoury',
-		groups = shared.police,
+		groups = {
+			['police'] = 0,
+			['bcso'] = 0,
+			['sast'] = 0,
+		},
 		blip = {
 			id = 110, colour = 84, scale = 0.8
 		}, inventory = {
-			{ name = 'ammo-9', price = 5, },
-			{ name = 'ammo-rifle', price = 5, },
-			{ name = 'WEAPON_FLASHLIGHT', price = 200 },
-			{ name = 'WEAPON_NIGHTSTICK', price = 100 },
-			{ name = 'WEAPON_PISTOL', price = 500, metadata = { registered = true, serial = 'POL' }, license = 'weapon' },
-			{ name = 'WEAPON_CARBINERIFLE', price = 1000, metadata = { registered = true, serial = 'POL' }, license = 'weapon', grade = 3 },
-			{ name = 'WEAPON_STUNGUN', price = 500, metadata = { registered = true, serial = 'POL'} }
+			{ name = 'ammo-9', price = 0, },
+			{ name = 'handcuffs', price = 0, },
+			{ name = 'radio', price = 0, },
+			{ name = 'empty_evidence_bag', price = 0, },
+			{ name = 'nikon', price = 0, },
+			{ name = 'sdcard', price = 0, },
+			{ name = 'gsrtestkit', price = 0, },
+			{ name = 'dnatestkit', price = 0, },
+			{ name = 'drugtestkit', price = 0, },
+			{ name = 'breathalyzer', price = 0, },
+			{ name = 'fingerprintreader', price = 0, },
+			{ name = 'accesstool', price = 0, },
+			{ name = 'fingerprintkit', price = 0, },
+			{ name = 'mikrosil', price = 0, },
+			{ name = 'fingerprinttape', price = 0, },
+			{ name = 'blox', price = 0, },
+			{ name = 'microfibercloth', price = 0, },
+			{ name = 'heavyarmor', price = 0, },
+			{ name = 'ammo-rifle', price = 0, },
+			{ name = 'WEAPON_FLASHLIGHT', price = 0 },
+			{ name = 'WEAPON_NIGHTSTICK', price = 0 },
+			{ name = 'WEAPON_PISTOL', price = 0, metadata = { registered = true, }, license = 'weapon' },
+			{ name = 'WEAPON_CARBINERIFLE', price = 0, metadata = { registered = true, }, license = 'weapon', grade = 3 },
+			{ name = 'WEAPON_STUNGUN', price = 0, metadata = { registered = true,} }
 		}, locations = {
-			vec3(451.51, -979.44, 30.68)
+			vector3(482.69, -995.27, 30.69),
+			vector3(1837.17, 3685.51, 34.19)
 		}, targets = {
-			{ loc = vec3(453.21, -980.03, 30.68), length = 0.5, width = 3.0, heading = 270.0, minZ = 30.5, maxZ = 32.0, distance = 6 }
+			{ loc = vector3(482.69, -995.27, 30.69), length = 0.5, width = 3.0, heading = 270.0, minZ = 30.5, maxZ = 32.0, distance = 6 },
+			{ loc = vector3(1837.17, 3685.51, 34.19), length = 0.5, width = 3.0, heading = 270.0, minZ = 33.5, maxZ = 36.0, distance = 6 }
 		}
 	},
 
@@ -187,11 +210,21 @@ return {
 	VendingMachineDrinks = {
 		name = 'Vending Machine',
 		inventory = {
-			{ name = 'water', price = 10 },
-			{ name = 'cola', price = 10 },
+			{ name = 'water', price = 1 },
+			{ name = 'cola', price = 1 },
 		},
 		model = {
-			`prop_vend_soda_02`, `prop_vend_fridge01`, `prop_vend_water_01`, `prop_vend_soda_01`
+			`prop_vend_soda_02`, `prop_vend_fridge01`, `prop_vend_water_01`, `prop_vend_soda_01`,
 		}
-	}
+	},
+
+	WaterStations = {
+		name = 'Free Water',
+		inventory = {
+			{ name = 'water', price = 0 },
+		},
+		model = {
+			`prop_watercooler`
+		}
+	},
 }
