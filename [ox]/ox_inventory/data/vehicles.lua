@@ -58,7 +58,7 @@ return {
 		[19] = {11, 88000},		-- Military
 		[20] = {11, 88000},		-- Commercial (trucks)
 		models = {
-			[`xa21`] = {11, 88000}
+			[`204sMustangGTD`] = {11, 999000},
 		}
 	},
 
