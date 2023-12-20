@@ -1,1 +1,0 @@
-Config.Webhook = "https://discord.com/api/webhooks/1164313727328329758/gk0cOEHQZ6xumFLQk529kFg7p-Y2q0uBgIClSrMsvNvr9ioXO6iuZAwuo0MHCRFkZyGH" -- Discord Webhook
