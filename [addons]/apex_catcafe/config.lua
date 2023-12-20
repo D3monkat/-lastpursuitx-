@@ -25,13 +25,13 @@ Config.Debug = false
 --╚█████╔╝╚██████╔╝██████╔╝    ███████║███████╗   ██║      ██║   ██║██║ ╚████║╚██████╔╝███████║
 -- ╚════╝  ╚═════╝ ╚═════╝     ╚══════╝╚══════╝   ╚═╝      ╚═╝   ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝
 
-Config.Name = "Cat Cafe"
+Config.Name = "Rex Diner"
 Config.Jobname = "catcafe"
 Config.Blips = {
     {
         enabled = true,
-        point = vector3(-582.49, -1062.94, 22.35),
-        sprite = 489,
+        point = vector3(2537.81, 2589.01, 38.5),
+        sprite = 819,
         scale = 0.8,
         colour = 61,
         title = Config.Name,
@@ -42,11 +42,11 @@ Config.Features = {
     RemoveNPCsFromLocation = true, -- Disable random NPCs spawning inside the club
     RemoveNPCsFromLocationSettings = {
         {
-            coords = vector3(-582.49, -1062.94, 22.35),
-            radius = 20.0,
+            coords = vector3(2537.81, 2589.01, 38.5),
+            radius = 30.0,
         },
     },
-    Office = true,
+    Office = false,
     OfficeSettings = {
         Target = {
             {
@@ -63,42 +63,42 @@ Config.Features = {
     DutySettings = {
         Target = {
             {
-                points = vector3(-594.29, -1053.32, 22.34),
-                heading = 0.0,
-                minZ = 22.34+0.1,
-                maxZ = 22.34+1.3,
+                points = vector3(2545.02, 2579.22, 38.5),
+                heading = 175.3,
+                minZ = 28.34+0.1,
+                maxZ = 32.34+1.3,
                 Size = {3.2, 0.2},
                 distance = 2.0,
             },
         },
     },
-    Wardrobe = true,
+    Wardrobe = false,
     WardrobeSettings = {
         Target = {
             {
-                points = vector3(-586.23, -1049.88, 22.34),
-                heading = 0.0,
-                minZ = 22.34-1,
-                maxZ = 22.34+1.2,
+                points = vector3(2542.6, 2583.14, 38.5),
+                heading = 357.25,
+                minZ = 28.34-1,
+                maxZ = 38.54+1.2,
                 Size = {2.45, 0.3},
                 distance = 2.0,
             },
         },
         ClothingStore = true,
-        ClothingStoreTrigger = "qb-clothing:client:openMenu",
+        ClothingStoreTrigger = "illenium-appearance:client:openClothingShop",
         --[[
             - qb-clothing:client:openMenu (default qbcore)
             - illenium-appearance:client:openClothingShop (illenium-appearance)
             - Or you can add your own trigger if you are using something else.
         ]]--
         OutfitMenu = true,
-        OutfitMenuTrigger = "qb-clothing:client:openOutfitMenu",
+        OutfitMenuTrigger = "illenium-appearance:client:openOutfitMenu",
         --[[
             - qb-clothing:client:openOutfitMenu (default qbcore)
             - illenium-appearance:client:openOutfitMenu (illenium-appearance)
             - Or you can add your own trigger if you are using something else.
         ]]--
-        PersonalLocker = true,
+        PersonalLocker = false,
     },
     Table = true,
     TableSettings = {
@@ -119,7 +119,7 @@ Config.Features = {
     IngredientsSettings = {
         shelves = {
             label = "Ingredients",
-            slots = 15,
+            slots = 18,
             items = {
                 { name = "sugar",           price = 5, amount = 50, info = {}, type = "item", slot = 1, },
                 { name = "cocoa_powder",    price = 5, amount = 50, info = {}, type = "item", slot = 2, },
@@ -373,12 +373,12 @@ Config.Features = {
 Config.AdditionalTargets = {
     Cuttingboard = {
         {
-            Coords = vector3(-591.06, -1063.19, 22.34),
+            Coords = vector3(2535.86, 2579.57, 38.5),
             Heading = 0.0,
             Size = {2.7, 0.75},
             Distance = 1.5,
-            minZ = 22.34-0.2,
-            maxZ = 22.34+0.3,
+            minZ = 28.53-0.2,
+            maxZ = 38.5+0.3,
         },
     },
     Prepareboard = {
