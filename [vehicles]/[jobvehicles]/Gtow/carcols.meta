@@ -2,7 +2,7 @@
 <CVehicleModelInfoVarGlobal>
   <Sirens>
 	<Item>
-      <id value="8432"/> <!--2012 Kenworth T440 made by Zeakor Designs-->
+      <id value="3218432"/> <!--2012 Kenworth T440 made by Zeakor Designs-->
       <name>2012 Kenworth T440</name>
       <timeMultiplier value="1.00000000"/>
       <lightFalloffMax value="125.00000000"/>
