@@ -49,4 +49,5 @@ Config.KeyboardBindings  = {
     { key = "K", helpText = "When police it shows the MDT CAN REBIND!" },
     { key = "Z", helpText = "Shows the inventory help dock at the bottom of your screen" },
     { key = "G", helpText = "Toggles your engine off/on" },
+    { key = "U", helpText = "Toggles RagDoll" },
 }
