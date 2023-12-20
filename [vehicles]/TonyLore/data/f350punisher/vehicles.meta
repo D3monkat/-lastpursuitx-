@@ -90,6 +90,7 @@
  			<trailers>
        		 <Item>boattrailer</Item>
     	    <Item>trailersmall</Item>
+    	    <Item>thauler</Item>
 	<Item>smtrailer</Item>
       </trailers>
 			<additionalTrailers />
