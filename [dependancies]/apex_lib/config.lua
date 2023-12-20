@@ -46,7 +46,7 @@ ApexConfig.Bossmenu = 'qb-bossmenu:client:OpenMenu'
     - qb-target
     - ox_target
 ]]--
-ApexConfig.Target = 'qb-target'
+ApexConfig.Target = 'ox_target'
 -------------------------------------
 
 -- MENU SYSTEMS
@@ -55,7 +55,7 @@ ApexConfig.Target = 'qb-target'
     - qb-menu
     - ox_lib
 ]]--
-ApexConfig.Menu = 'qb-menu'
+ApexConfig.Menu = 'ox_lib'
 -------------------------------------
 
 -- INPUT SYSTEMS
@@ -64,7 +64,7 @@ ApexConfig.Menu = 'qb-menu'
     - qb-input
     - ox_lib
 ]]--
-ApexConfig.Input = 'qb-input'
+ApexConfig.Input = 'ox_lib'
 -------------------------------------
 
 
@@ -78,7 +78,7 @@ ApexConfig.Input = 'qb-input'
     - ox_inventory
     - codem-inventory
 ]]--
-ApexConfig.Inventory = 'ps-inventory'
+ApexConfig.Inventory = 'ox_inventory'
 -------------------------------------
 
 -- PROGRESSBAR SYSTEMS
@@ -88,7 +88,7 @@ ApexConfig.Inventory = 'ps-inventory'
     - ox_lib
     - progressBars
 ]]--
-ApexConfig.Progressbar = 'qbcore'
+ApexConfig.Progressbar = 'ox_lib'
 -------------------------------------
 
 -- NOTIFICATION SYSTEMS
@@ -101,7 +101,7 @@ ApexConfig.Progressbar = 'qbcore'
     - codem-notification
     - ox_lib
 ]]--
-ApexConfig.Notification = 'apex_lib'
+ApexConfig.Notification = 'ox_lib'
 -------------------------------------
 
 -- PAYMENT SYSTEMS
@@ -134,7 +134,7 @@ ApexConfig.MDT = 'ps-mdt'
     - qs-dispatch
     - cd_dispatch
 ]]--
-ApexConfig.Dispatch = 'ps-dispatch'
+ApexConfig.Dispatch = 'cd_dispatch'
 -------------------------------------
 
 
@@ -146,7 +146,7 @@ ApexConfig.Dispatch = 'ps-dispatch'
     - gksphone
     - lb-phone
 ]]--
-ApexConfig.Phone = 'qb-phone'
+ApexConfig.Phone = 'lb-phone'
 -------------------------------------
 
 
@@ -163,7 +163,7 @@ ApexConfig.Phone = 'qb-phone'
     - ti_fuel
     - ox_fuel
 ]]--
-ApexConfig.Fuel = 'LegacyFuel'
+ApexConfig.Fuel = 'cdn-fuel'
 -------------------------------------
 
 
@@ -175,7 +175,7 @@ ApexConfig.Fuel = 'LegacyFuel'
     - jg-advancedgarages
     - qs-advancedgarages
 ]]--
-ApexConfig.Garage = 'qb-garage'
+ApexConfig.Garage = 'cd_garage'
 -------------------------------------
 
 
@@ -209,7 +209,7 @@ ApexConfig.Keylock = 'qb-vehiclekeys'
     - dpemotes
     - scully_emotemenu
 ]]--
-ApexConfig.EmoteMenu = 'rpemotes'
+ApexConfig.EmoteMenu = 'scully_emotemenu'
 -------------------------------------
 
 -- TEXT UI SYSTEMS
