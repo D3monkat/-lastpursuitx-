@@ -962,6 +962,17 @@ weapon_colbaton 			 = {name = 'weapon_colbaton', 		 	  	label = 'PD Baton', 				
     	-- mt-clothingbag
 	clothing_bag  	= {name = "clothing_bag", 			label = "Clothing Bag", 								weight = 100, 		type = "item", 			image = "clothing_bag.png", 				unique = false, 	useable = true, 	shouldClose = true,    combinable = nil,   description = ""},
 
+    --diner food
+    chocolatechippancake 		= {name = "chocolatechippancake",  	    label = "Chocolate chip Pancake",	weight = 100, 		type = "item", 		image = "ccpancake.png", 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "", ['hunger'] = math.random(20, 30) },
+    birthdaycakewaffle 			= {name = "birthdaycakewaffle",  	    label = "Birthday cake Waffles",	weight = 100, 		type = "item", 		image = "cakewaffle.png", 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "", ['hunger'] = math.random(20, 30) },
+    threeeggomelette 				= {name = "threeeggomelette",  	    	 	label = "3 Egg Omelette",		    weight = 100, 		type = "item", 		image = "omlette.png", 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "", ['hunger'] = math.random(20, 30) },
+    countryfriedsteak 		    = {name = "countryfriedsteak",      	label = "Country Fried Steak",      weight = 100, 		type = "item", 		image = "cfsteak.png", 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "", ['hunger'] = math.random(20, 30) },
+    pancakeset 					= {name = "pancakeset",  	    		label = "Pancake Set",			 	weight = 100, 		type = "item", 		image = "pancake.png", 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "", ['hunger'] = math.random(20, 30) },
+    chickencutletsandwich 		= {name = "chickencutletsandwich",  	label = "Chicken Cutlet Sandwich",	weight = 100, 		type = "item", 		image = "ccsandwich.png", 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "", ['hunger'] = math.random(20, 30) },
+    greeksaladbowl 				= {name = "greeksaladbowl",  	    	label = "Greek Salad Bowl",			weight = 100, 		type = "item", 		image = "gsalad.png", 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "", ['hunger'] = math.random(20, 30) },
+    ribeyesteak 				= {name = "ribeyesteak",  	    		label = "Rib Eye Steak",			weight = 100, 		type = "item", 		image = "ribeye.png", 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "", ['hunger'] = math.random(20, 30) },
+    chickentenderswfries 		= {name = "chickentenderswfries",  	    label = "Chickentenders with fries",weight = 100, 		type = "item", 		image = "tender.png", 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "", ['hunger'] = math.random(20, 30) },
+    halfpoundcheeseburger 		= {name = "halfpoundcheeseburger",  	label = "Halfpound Cheese Burger",	weight = 100, 		type = "item", 		image = "burger.png", 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "", ['hunger'] = math.random(20, 30) },
     
     -- chest items
     chestkey 			     = {name = 'chestkey', 			        label = 'Key',             weight = 1000,      type = 'item',      image = 'chestkey.png',          unique = false,     useable = true,     shouldClose = true,    combinable = nil,   description = 'A gold key.'},
