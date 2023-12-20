@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="scripts/ui.js"></script>
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>2na_loadingscreen</title>
+  </head>
+  <body>
+    <div class="container" theme="dark">
+      <div class="background">
+        <div class="wallpaper"></div>
+        <div class="fade"></div>
+        <div class="wave-container">
+          <img src="images/shapes/wave.png" />
+        </div>
+        <div class="colors">
+          <div class="theme-color"></div>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <div id="songPlayer"></div>
+
+        <div class="top-bar">
+          <div class="server-logo">
+            <img src="images/icons/2na.png" />
+          </div>
+          <div class="character-info">
+            <div class="character-text">
+              <div class="character-name">
+                <span>WELCOME</span>
+                <span id="player_name">Player</span>
+              </div>
+              <div class="character-id">
+                <strong>ID</strong>: <span id="player-id">8426</span>
+              </div>
+            </div>
+            <div class="character-photo">2NA</div>
+          </div>
+        </div>
+
+        <div class="interactive-menu">
+          <div class="upper-part">
+            <img src="images/icons/interactive.svg" />
+            <strong>INTERACTIVE</strong>MENU
+          </div>
+          <div class="menu-box rpvideo-box">
+            <div id="rpvideoPlayer"></div>
+            <img
+              class="menu-box-icon"
+              src="images/icons/youtube-red.svg"
+              alt=""
+            />
+            <div class="menu-box-bg"></div>
+            <div class="rpvideo-thumbnail">
+              <div
+                onclick="controlRPVideo(true)"
+                class="rpvideo-thumbnail-cover"
+              >
+                <img src="images/icons/youtube.svg" />
+              </div>
+            </div>
+            <div class="rpvideo-box-text">
+              <div class="rpvideo-box-text-title">
+                <img id="rpvideo-img" src="images/avatars/profile.png" alt="" />
+                <span id="rpvideo-title">0ResmonRP Trailer</span>
+              </div>
+              <div class="rpvideo-box-text-description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum
+                amet eius ex facilis cum et neque ea debitis! Cumque nostrum
+                laudantium vero ad assumenda repudiandae et velit, temporibus
+                quibusdam accusamus tenetur facilis, blanditiis labore rem iste
+                enim modi tempora magnam? Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Eum, non.
+              </div>
+            </div>
+          </div>
+          <div class="menu-box">
+            <img class="menu-box-icon" src="images/icons/click.svg" alt="" />
+            <div class="menu-box-bg"></div>
+            <div class="menu-box-upper">
+              <div class="menu-box-upper-icon">
+                <img src="images/icons/city-gallery.svg" />
+              </div>
+              <div class="menu-box-upper-text">
+                <div class="menu-box-title">CITY GALLERY</div>
+                <div class="menu-box-description">
+                  Take a look at city's images.
+                </div>
+              </div>
+            </div>
+            <div class="menu-box-hero-photo"></div>
+            <div class="menu-box-photos">
+              <img id="thumbnail-1" class="menu-box-photo" />
+              <div class="menu-box-photo-seperator"></div>
+              <img id="thumbnail-2" class="menu-box-photo" />
+              <div class="menu-box-photo-seperator"></div>
+              <img id="thumbnail-3" class="menu-box-photo" />
+              <div class="menu-box-photo-seperator"></div>
+              <img id="thumbnail-4" class="menu-box-photo" />
+              <div class="menu-box-photo-seperator"></div>
+              <img id="thumbnail-5" class="menu-box-photo" />
+            </div>
+          </div>
+          <div class="boxes">
+            <div class="menu-box music-player">
+              <img
+                onclick="toggleMusicBox()"
+                class="music-control-toggle"
+                src="images/icons/arrow.svg"
+              />
+              <div class="menu-box-bg"></div>
+              <div div class="music-thumbnail">
+                <img src="images/icons/example-song.png" />
+              </div>
+              <div class="music-progbar music-mini-progbar">
+                <div class="music-progbar-fill"></div>
+              </div>
+              <div class="music-player-right-part">
+                <div class="music-details">
+                  <div class="music-details-title">Song</div>
+                  <div class="music-details-artist">Unknown artist</div>
+                </div>
+
+                <div class="music-progress">
+                  <span id="music-timepassed">0.00</span>
+                  <div class="music-progbar">
+                    <div class="music-progbar-fill"></div>
+                  </div>
+                  <span id="music-timeremaining">0.00</span>
+                </div>
+                <div class="music-controls">
+                  <img
+                    id="music-control-backward"
+                    src="images/icons/backward.svg"
+                  />
+                  <img
+                    onclick="toggleMusicState(event);"
+                    id="music-control-pause"
+                    src="images/icons/pause.svg"
+                  />
+                  <img
+                    id="music-control-forward"
+                    src="images/icons/forward.svg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="menu-box new-update">
+              <div class="menu-box-bg"></div>
+              <div class="new-update-title">
+                <div class="new-update-title-left">
+                  <img src="images/icons/update.svg" />
+                  <p id="new_update-title">New Update v5.2.3</p>
+                </div>
+                <div
+                  onclick="closeNewUpdateBox()"
+                  class="new-update-title-right"
+                ></div>
+              </div>
+              <div id="new_update-description" class="new-update-description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi,
+                consequatur? Lorem ipsum dolor
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="display: none" class="settings-menu">
+          <div class="settings-menu-part">
+            <div class="settings-menu-part-text">
+              <img src="images/icons/background.svg" />
+              <strong>DARK</strong>MODE
+            </div>
+            <div
+              id="darkmode-slider"
+              data-id="darkmode"
+              onclick="sliderInputClick(event)"
+              class="settings-slider"
+              style="justify-content: flex-end"
+            >
+              <div class="settings-slider-input"></div>
+            </div>
+          </div>
+          <div class="settings-part-seperator"></div>
+          <div
+            style="justify-content: center; flex-direction: column"
+            class="settings-menu-part"
+          >
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+              "
+            >
+              <div class="settings-menu-part-text">
+                <img src="images/icons/colormode.svg" />
+                <strong>COLOR</strong>MODE
+              </div>
+              <div
+                id="colormode-slider"
+                data-id="colormode"
+                onclick="sliderInputClick(event)"
+                class="settings-slider"
+              >
+                <div class="settings-slider-input"></div>
+              </div>
+            </div>
+
+            <div class="settings-color-input">
+              <input
+                id="primary-color"
+                value="50"
+                onchange="colorInputChange(event)"
+                type="range"
+              />
+            </div>
+            <div class="settings-color-input">
+              <input
+                id="secondary-color"
+                value="50"
+                onchange="colorInputChange(event)"
+                type="range"
+              />
+            </div>
+          </div>
+
+          <div class="settings-part-seperator"></div>
+          <div
+            style="justify-content: center; flex-direction: column"
+            class="settings-menu-part"
+          >
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+              "
+            >
+              <div class="settings-menu-part-text">
+                <img src="images/icons/background.svg" />
+                <strong>BACK</strong>GROUND
+              </div>
+              <div
+                onclick="changeBackground(true)"
+                class="settings-menu-part-btn"
+              >
+                apply
+              </div>
+            </div>
+            <input id="input_background" type="text" />
+          </div>
+
+          <div class="settings-part-seperator"></div>
+
+          <div
+            style="justify-content: center; flex-direction: column"
+            class="settings-menu-part"
+          >
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+              "
+            >
+              <div class="settings-menu-part-text">
+                <img src="images/icons/background.svg" />
+                SONG
+              </div>
+              <div onclick="changeSong(true)" class="settings-menu-part-btn">
+                change
+              </div>
+            </div>
+            <input id="input_song" type="text" />
+          </div>
+        </div>
+
+        <div class="keyboard-menu">
+          <div class="keyboard-menu-title">
+            <img src="images/icons/focus.svg" />
+            <strong>KEYBOARD</strong>SETTINGS
+          </div>
+          <div class="keyboard">
+            <div class="keyboard-upper">
+              <div style="width: 9vh" class="keyboard-btn">ESC</div>
+              <div class="keyboard-btn">F1</div>
+              <div class="keyboard-btn">F2</div>
+              <div class="keyboard-btn">F3</div>
+              <div class="keyboard-btn">F4</div>
+              <div class="keyboard-btn">F5</div>
+              <div class="keyboard-btn">F6</div>
+              <div class="keyboard-btn">F7</div>
+              <div class="keyboard-btn">F8</div>
+              <div class="keyboard-btn">F9</div>
+              <div class="keyboard-btn">F10</div>
+              <div class="keyboard-btn">F11</div>
+              <div class="keyboard-btn">F12</div>
+              <div class="keyboard-btn">DEL</div>
+              <div key-id="HOME" class="keyboard-btn">
+                <img src="images/icons/home.svg" />
+              </div>
+            </div>
+            <div class="keyboard-line">
+              <div class="keyboard-btn">“</div>
+              <div class="keyboard-btn">1</div>
+              <div class="keyboard-btn">2</div>
+              <div class="keyboard-btn">3</div>
+              <div class="keyboard-btn">4</div>
+              <div class="keyboard-btn">5</div>
+              <div class="keyboard-btn">6</div>
+              <div class="keyboard-btn">7</div>
+              <div class="keyboard-btn">8</div>
+              <div class="keyboard-btn">9</div>
+              <div class="keyboard-btn">0</div>
+              <div class="keyboard-btn">?\*</div>
+              <div class="keyboard-btn">-\|</div>
+              <div
+                style="width: 6.4vh; justify-content: flex-end"
+                class="keyboard-btn"
+                key-id="BACKSPACE"
+              >
+                <img
+                  style="margin-right: 0.7vh"
+                  src="images/icons/backspace.svg"
+                />
+              </div>
+              <div key-id="INSERT" class="keyboard-btn">INS</div>
+            </div>
+            <div class="keyboard-line">
+              <div style="width: 8vh" class="keyboard-btn">TAB</div>
+              <div class="keyboard-btn">Q</div>
+              <div class="keyboard-btn">W</div>
+              <div class="keyboard-btn">E</div>
+              <div class="keyboard-btn">R</div>
+              <div class="keyboard-btn">T</div>
+              <div class="keyboard-btn">Y</div>
+              <div class="keyboard-btn">U</div>
+              <div class="keyboard-btn">I</div>
+              <div class="keyboard-btn">O</div>
+              <div class="keyboard-btn">P</div>
+              <div not-clickable class="keyboard-btn"></div>
+              <div not-clickable class="keyboard-btn"></div>
+              <div not-clickable class="keyboard-btn"></div>
+              <div key-id="PAGEUP" class="keyboard-btn">PG<br />UP</div>
+            </div>
+            <div class="keyboard-line">
+              <div key-id="CAPSLOCK" style="width: 9vh" class="keyboard-btn">
+                C.LOCK
+              </div>
+              <div class="keyboard-btn">A</div>
+              <div class="keyboard-btn">S</div>
+              <div class="keyboard-btn">D</div>
+              <div class="keyboard-btn">F</div>
+              <div class="keyboard-btn">G</div>
+              <div class="keyboard-btn">H</div>
+              <div class="keyboard-btn">J</div>
+              <div class="keyboard-btn">K</div>
+              <div class="keyboard-btn">L</div>
+              <div class="keyboard-btn">:</div>
+              <div class="keyboard-btn">,</div>
+              <div style="width: 7vh" class="keyboard-btn">ENTER</div>
+              <div class="keyboard-btn">END</div>
+            </div>
+            <div class="keyboard-line">
+              <div style="width: 10vh" class="keyboard-btn">SHIFT</div>
+              <div class="keyboard-btn">Z</div>
+              <div class="keyboard-btn">X</div>
+              <div class="keyboard-btn">C</div>
+              <div class="keyboard-btn">V</div>
+              <div class="keyboard-btn">B</div>
+              <div class="keyboard-btn">N</div>
+              <div class="keyboard-btn">M</div>
+              <div class="keyboard-btn">&lt;</div>
+              <div class="keyboard-btn">&gt;</div>
+              <div not-clickable class="keyboard-btn"></div>
+              <div style="width: 7vh" class="keyboard-btn">SHIFT</div>
+              <div key-id="ARROWUP" class="keyboard-btn">
+                <img src="images/icons/key_arrow.svg" />
+              </div>
+              <div key-id="PAGEDOWN" class="keyboard-btn">PG<br />DN</div>
+            </div>
+            <div class="keyboard-line">
+              <div style="width: 7vh" class="keyboard-btn">CTRL</div>
+              <div not-clickable class="keyboard-btn">
+                <img src="images/icons/windows.svg" />
+              </div>
+              <div class="keyboard-btn">ALT</div>
+              <div not-clickable class="keyboard-btn"></div>
+              <div style="width: 28vh" class="keyboard-btn">SPACE</div>
+              <div class="keyboard-btn">ALT</div>
+              <div not-clickable class="keyboard-btn"></div>
+              <div class="keyboard-btn">CTRL</div>
+              <div key-id="ARROWLEFT" class="keyboard-btn">
+                <img
+                  style="transform: rotate(-90deg)"
+                  src="images/icons/key_arrow.svg"
+                />
+              </div>
+              <div key-id="ARROWDOWN" class="keyboard-btn">
+                <img
+                  style="transform: rotate(180deg)"
+                  src="images/icons/key_arrow.svg"
+                />
+              </div>
+              <div key-id="ARROWRIGHT" class="keyboard-btn">
+                <img
+                  style="transform: rotate(90deg)"
+                  src="images/icons/key_arrow.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="keyboard-menu-help">
+            <div class="keyboard-menu-help-key">?</div>
+            <div class="keyboard-menu-help-description">
+              <div class="keyboard-menu-help-description-bg"></div>
+              <div class="keyboard-menu-help-description-text">
+                Click on any key to see its in-game function.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="progress-bar">
+          <div class="main-progress">
+            <div class="progressbar">
+              <div class="progressbar-filler">
+                <div class="progress-icon">
+                  <img src="images/icons/walkman-loading.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="game-progress">
+            <div class="interaction-buttons">
+              <img
+                onclick="toggleKeyboardMenu()"
+                class="interaction-button"
+                src="images/icons/keyboard.svg"
+              />
+              <img
+                onclick="toggleSettingsMenu()"
+                class="interaction-button"
+                src="images/icons/settings.svg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
