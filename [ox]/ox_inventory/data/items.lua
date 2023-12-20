@@ -8576,4 +8576,144 @@ return {
 			image = "blossom.png",
 		}
 	},
+
+	["ribeyesteak"] = {
+		label = "Rib Eye Steak",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			status = {
+				hunger = 30,
+			},
+			image = "ribeye.png",
+		}
+	},
+
+	["birthdaycakewaffle"] = {
+		label = "Birthday cake Waffles",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			status = {
+				hunger = 20,
+			},
+			image = "cakewaffle.png",
+		}
+	},
+
+	["halfpoundcheeseburger"] = {
+		label = "Halfpound Cheese Burger",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			status = {
+				hunger = 26,
+			},
+			image = "burger.png",
+		}
+	},
+
+	["chickentenderswfries"] = {
+		label = "Chickentenders with fries",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			status = {
+				hunger = 29,
+			},
+			image = "tender.png",
+		}
+	},
+
+	["greeksaladbowl"] = {
+		label = "Greek Salad Bowl",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			status = {
+				hunger = 26,
+			},
+			image = "gsalad.png",
+		}
+	},
+
+	["pancakeset"] = {
+		label = "Pancake Set",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			status = {
+				hunger = 21,
+			},
+			image = "pancake.png",
+		}
+	},
+
+	["chocolatechippancake"] = {
+		label = "Chocolate chip Pancake",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			status = {
+				hunger = 22,
+			},
+			image = "ccpancake.png",
+		}
+	},
+
+	["chickencutletsandwich"] = {
+		label = "Chicken Cutlet Sandwich",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			status = {
+				hunger = 27,
+			},
+			image = "ccsandwich.png",
+		}
+	},
+
+	["threeeggomelette"] = {
+		label = "3 Egg Omelette",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			status = {
+				hunger = 22,
+			},
+			image = "omlette.png",
+		}
+	},
+
+	["countryfriedsteak"] = {
+		label = "Country Fried Steak",
+		weight = 100,
+		stack = true,
+		close = true,
+		description = "",
+		client = {
+			status = {
+				hunger = 21,
+			},
+			image = "cfsteak.png",
+		}
+	},
 }
