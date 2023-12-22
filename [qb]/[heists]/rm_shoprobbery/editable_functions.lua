@@ -22,14 +22,15 @@ end)
 RegisterNetEvent('shoprobbery:client:policeAlert')
 AddEventHandler('shoprobbery:client:policeAlert', function(targetCoords)
     exports["ps-dispatch"]:CustomAlert({
+        message = locale('storerobbery'),
+        codeName = 'storerobbery',
+        code = '10-90',
+        icon = 'fas fa-store',
+        priority = 2,
         coords = targetCoords,
-        message = "Criminal Activity",
-        dispatchCode = "10-4 Rubber Ducky",
-        description = "Blip Name here",
-        radius = 0,
-        sprite = 64,
-        color = 2,
-        scale = 1.0,
-        length = 3,
+        gender = GetPlayerGender(),
+        street = GetStreetAndZone(coords),
+        camId = camId,
+        jobs = { 'leo' }
     })
 end)
