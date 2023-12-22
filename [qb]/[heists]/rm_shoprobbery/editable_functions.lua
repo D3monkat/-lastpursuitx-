@@ -29,7 +29,7 @@ AddEventHandler('shoprobbery:client:policeAlert', function(targetCoords)
         priority = 2,
         coords = targetCoords,
         gender = GetPlayerGender(),
-        street = GetStreetAndZone(coords),
+        street = GetStreetAndZone(targetCoords),
         camId = camId,
         jobs = { 'leo' }
     })
