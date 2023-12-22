@@ -21,7 +21,8 @@ client_scripts {
     "client/functions.lua",
     "client/events.lua",
     "client/nui.lua",
-    "client/threads.lua"
+    "client/threads.lua",
+    "client/compass.lua"
 }
 
 server_scripts {
