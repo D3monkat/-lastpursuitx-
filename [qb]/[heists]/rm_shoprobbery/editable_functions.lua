@@ -27,11 +27,11 @@ AddEventHandler('shoprobbery:client:policeAlert', function(targetCoords)
         description = "Store Robbery",
         code = '10-90',
         radius = 0,
-        sprite = 64,
+        sprite = 64161,
         color = 2,
         scale = 1.0,
         length = 3,
-        priority = 2,
+        priority = 1,
         coords = targetCoords,
         camId = camId,
         jobs = { 'leo' }
