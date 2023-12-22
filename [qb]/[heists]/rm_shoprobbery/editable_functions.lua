@@ -21,24 +21,15 @@ end)
 --This event send to all police players
 RegisterNetEvent('shoprobbery:client:policeAlert')
 AddEventHandler('shoprobbery:client:policeAlert', function(targetCoords)
-    exports['ps-dispatch']:StoreRobbery(camId)
-    ShowNotification(Strings['police_alert'])
-    local alpha = 250
-    local shopBlip = AddBlipForRadius(targetCoords.x, targetCoords.y, targetCoords.z, 50.0)
-
-    SetBlipHighDetail(shopBlip, true)
-    SetBlipColour(shopBlip, 1)
-    SetBlipAlpha(shopBlip, alpha)
-    SetBlipAsShortRange(shopBlip, true)
-
-    while alpha ~= 0 do
-        Citizen.Wait(500)
-        alpha = alpha - 1
-        SetBlipAlpha(shopBlip, alpha)
-
-        if alpha == 0 then
-            RemoveBlip(shopBlip)
-            return
-        end
-    end
+    exports["ps-dispatch"]:CustomAlert({
+        coords = targetCoords,
+        message = "Criminal Activity",
+        dispatchCode = "10-4 Rubber Ducky",
+        description = "Blip Name here",
+        radius = 0,
+        sprite = 64,
+        color = 2,
+        scale = 1.0,
+        length = 3,
+    })
 end)
