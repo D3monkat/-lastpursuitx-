@@ -20,25 +20,26 @@ end)
 --This event send to all police players
 RegisterNetEvent('shoprobbery:client:policeAlert')
 AddEventHandler('shoprobbery:client:policeAlert', function(targetCoords)
-    local data = exports['cd_dispatch']:GetPlayerInfo()
-    TriggerServerEvent('cd_dispatch:AddNotification', {
-        job_table = {'police', 'sast', 'bcso' }, 
-        coords = data.coords,
-        title = '10-15 - Store Robbery',
-        message = 'A '..data.sex..' robbing a store at '..data.street, 
-        flash = 0,
-        unique_id = data.unique_id,
-        sound = 1,
-        blip = {
-            sprite = 431, 
-            scale = 1.2, 
-            colour = 3,
-            flashes = true, 
-            text = '911 - Store Robbery',
-            time = 5,
-            radius = 0,
-        }
-    })
+    exports['ps-dispatch']:StoreRobbery(camId)
+    -- local data = exports['cd_dispatch']:GetPlayerInfo()
+    -- TriggerServerEvent('cd_dispatch:AddNotification', {
+    --     job_table = {'police', 'sast', 'bcso' }, 
+    --     coords = data.coords,
+    --     title = '10-15 - Store Robbery',
+    --     message = 'A '..data.sex..' robbing a store at '..data.street, 
+    --     flash = 0,
+    --     unique_id = data.unique_id,
+    --     sound = 1,
+    --     blip = {
+    --         sprite = 431, 
+    --         scale = 1.2, 
+    --         colour = 3,
+    --         flashes = true, 
+    --         text = '911 - Store Robbery',
+    --         time = 5,
+    --         radius = 0,
+    --     }
+    -- })
     
     -- ShowNotification(Strings['police_alert'])
     -- local alpha = 250
