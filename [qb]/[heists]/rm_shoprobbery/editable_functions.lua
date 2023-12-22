@@ -28,8 +28,6 @@ AddEventHandler('shoprobbery:client:policeAlert', function(targetCoords)
         icon = 'fas fa-store',
         priority = 2,
         coords = targetCoords,
-        gender = GetPlayerGender(),
-        street = GetStreetAndZone(targetCoords),
         camId = camId,
         jobs = { 'leo' }
     })
