@@ -156,7 +156,7 @@ local function StoreRobbery(camId)
     local coords = GetEntityCoords(cache.ped)
 
     local dispatchData = {
-        message = locale('storerobbery'),
+        message = 'Store Robbery',
         codeName = 'storerobbery',
         code = '10-90',
         icon = 'fas fa-store',

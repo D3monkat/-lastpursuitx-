@@ -22,7 +22,7 @@ end)
 RegisterNetEvent('shoprobbery:client:policeAlert')
 AddEventHandler('shoprobbery:client:policeAlert', function(targetCoords)
     exports["ps-dispatch"]:CustomAlert({
-        message = locale('storerobbery'),
+        message = 'Store Robbery',
         codeName = 'storerobbery',
         code = '10-90',
         icon = 'fas fa-store',
