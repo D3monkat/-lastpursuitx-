@@ -6,9 +6,9 @@ lua54 "yes"
 
 --[[ Resource Information ]]
 name "0r-hud"
-author "0-Resmon <aliko.>"
-version "1.0.0"
-description "0Resmon:HUD | NoPixel inspired"
+author "0-Resmon"
+version "1.1.0"
+description "0Resmon:HUD"
 
 --[[ Manifest ]]
 shared_scripts {
@@ -21,8 +21,7 @@ client_scripts {
     "client/functions.lua",
     "client/events.lua",
     "client/nui.lua",
-    "client/threads.lua",
-    "client/compass.lua"
+    "client/threads.lua"
 }
 
 server_scripts {
@@ -43,10 +42,13 @@ files {
 
 escrow_ignore {
     "locales/**/*",
-    "shared/**/*",
-    "client/**/*",
-    "server/**/*",
+    "shared/config.lua",
+    "shared/utils.lua",
+    "client/variables.lua",
+    "client/utils.lua",
+    "server/variables.lua",
+    "server/utils.lua",
+    "server/commands.lua",
     "ui/build/**/*",
+    "ui/public/**/*"
 }
-
-dependency '/assetpacks'

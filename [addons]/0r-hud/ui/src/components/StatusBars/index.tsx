@@ -6,10 +6,11 @@ import { IoMdWater } from "react-icons/io";
 import { RiBrainFill } from "react-icons/ri";
 import { FaTerminal } from "react-icons/fa";
 import { FaLeaf } from "react-icons/fa";
-import { IoRadio } from "react-icons/io5";
+import { FaHeadphones } from "react-icons/fa6";
 import { HexagonBar } from "../HexagonBar";
 import { SiOxygen } from "react-icons/si";
 import { FaRunning } from "react-icons/fa";
+import { GiBrokenShield } from "react-icons/gi";
 import useData from "../../hooks/useData";
 
 export const StatusBars = () => {
@@ -24,7 +25,7 @@ export const StatusBars = () => {
           (statusBars?.voice?.isTalking && statusBars?.voice?.isTalkingColor) ||
           statusBars?.voice?.color
         }
-        occupancy={80}
+        occupancy={100}
         hidden={!statusBars?.voice?.active}
       >
         <span>
@@ -32,7 +33,7 @@ export const StatusBars = () => {
             <FaHeadSideCough className={"text-white w-3.5 h-3.5"} />
           )}
           {statusBars?.voice?.radio && (
-            <IoRadio className={"text-white w-3.5 h-3.5"} />
+            <FaHeadphones className={"text-white w-3.5 h-3.5"} />
           )}
         </span>
         <div className="inherit"></div>
@@ -61,7 +62,11 @@ export const StatusBars = () => {
         }
       >
         <span>
-          <PiShieldFill className={"text-white w-3.5 h-3.5"} />
+          {statusBars?.armor?.progressLevel > 0 ? (
+            <PiShieldFill className={"text-white w-3.5 h-3.5"} />
+          ) : (
+            <GiBrokenShield className={"text-white w-3.5 h-3.5"} />
+          )}
         </span>
         <div className="inherit"></div>
       </HexagonBar>

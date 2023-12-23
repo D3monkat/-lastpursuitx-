@@ -53,10 +53,10 @@ const Settings = () => {
                 <div className="absolute shadow-settings_green shadow-[0_0_24px_8px] left-3 bottom-3"></div>
               </div>
               <div>
-                <h1 className="font-bold text-xl font-mono text-settings_green text-shadow shadow-settings_green">
+                <h1 className="font-bold text-xl font-[inherit] text-settings_green text-shadow shadow-settings_green">
                   {locale.settings_text_settings_menu}
                 </h1>
-                <h1 className="text-sm font-mono text-gray-400">
+                <h1 className="text-sm font-[inherit] text-gray-400">
                   {locale.settings_text_change_your_settings}
                 </h1>
               </div>
@@ -109,7 +109,7 @@ const Settings = () => {
                             )}
                           ></div>
                         </div>
-                        <div className="mt-auto m-3 mx-4 font-mono">
+                        <div className="mt-auto m-3 mx-4 font-[inherit]">
                           <div>
                             <h1
                               className={classNames(
@@ -162,7 +162,7 @@ const Settings = () => {
                             )}
                           />
                         </div>
-                        <div className="mt-auto m-3 mx-4 font-mono">
+                        <div className="mt-auto m-3 mx-4 font-[inherit]">
                           <div>
                             <h1
                               className={classNames(
@@ -228,7 +228,7 @@ const Settings = () => {
                             )}
                           ></div>
                         </div>
-                        <div className="mt-auto m-3 mx-4 font-mono">
+                        <div className="mt-auto m-3 mx-4 font-[inherit]">
                           <div>
                             <h1
                               className={classNames(
@@ -294,7 +294,7 @@ const Settings = () => {
                             )}
                           ></div>
                         </div>
-                        <div className="mt-auto m-3 mx-4 font-mono">
+                        <div className="mt-auto m-3 mx-4 font-[inherit]">
                           <div>
                             <h1
                               className={classNames(
@@ -329,7 +329,7 @@ const Settings = () => {
                     </button>
                   </div>
                 </div>
-                <div className="w-full overflow-auto h-[42rem] no-scrollbar">
+                <div className="w-full overflow-auto h-[42.5rem] no-scrollbar">
                   {/* Menü itemleri */}
                   {activePage == "hud" && <HudSettings />}
                   {activePage == "help_guides" && <HelpGuides />}

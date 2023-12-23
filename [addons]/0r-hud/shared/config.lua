@@ -1,19 +1,19 @@
 -- Configuration settings for the GPS system.
-Config            = {}
+Config                  = {}
 
 -- Debug print setting for displaying debug messages.
-Config.DebugPrint = false
+Config.DebugPrint       = false
 
 -- Locale setting for language localization.
-Config.Locale     = "en"
+Config.Locale           = "en"
 
 -- ("esx" | "qb") -- > The latest version is always used.
-Config.FrameWork  = "qb"
+Config.FrameWork        = "qb"
 
 -- ("esx_notify" | "qb_notify" | "custom_notify") -- > System to be used
-Config.NotifyType = "qb_notify"
+Config.NotifyType       = "qb_notify"
 
-Config.Settings   = {
+Config.Settings         = {
     StatusBars = {
         voice = {
             active = true
@@ -48,11 +48,15 @@ Config.Settings   = {
     },
     VehicleHUD = {
         active = true,
-        kmH = false -- true = kmH, false = mpH
-    }
+        kmH = true, -- true = kmH, false = mpH
+        lowFuelNotify = true,
+    },
+    Compass = {
+        active = true,
+    },
 }
 
-Config.HelpGuides = {
+Config.HelpGuides       = {
     [1] = {
         title = "Command: /hudclose <number>",
         description = "Hidden any hud element."
@@ -61,4 +65,23 @@ Config.HelpGuides = {
         title = "Command: /hudopen <number>",
         description = "Show any hud element."
     },
+}
+
+Config.ElectricVehicles = {
+    "Imorgon",
+    "Neon",
+    "Raiden",
+    "Cyclone",
+    "Voltic",
+    "Voltic2",
+    "Tezeract",
+    "Dilettante",
+    "Dilettante2",
+    "Airtug",
+    "Caddy",
+    "Caddy2",
+    "Caddy3",
+    "Surge",
+    "Khamelion",
+    "RCBandito"
 }

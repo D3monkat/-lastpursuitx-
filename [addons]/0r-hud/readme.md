@@ -9,4 +9,4 @@
 - Please check the locales folder for language translations.
 - Feel free to contact us with any problem/question. - 0Resmon -
 
-# Discord: aliko.
+# Discord: 0Resmon

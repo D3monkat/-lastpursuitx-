@@ -21,6 +21,10 @@ export const HexagonBar: React.FC<HexagonBarProps> = ({
     zinc: "bg-zinc-300/40",
     black: "bg-black/40",
     yellow: "bg-yellow-500/40",
+    amber: "bg-amber-500/40",
+    lime: "bg-lime-600/40",
+    emerald: "bg-emerald-600/40",
+    purple: "bg-purple-600/40",
   };
   const smallHexagonColor = {
     gray: "bg-gray-200/80",
@@ -32,6 +36,10 @@ export const HexagonBar: React.FC<HexagonBarProps> = ({
     zinc: "bg-zinc-400/80",
     black: "bg-black/80",
     yellow: "bg-yellow-300/80",
+    amber: "bg-amber-300/80",
+    lime: "bg-lime-300/80",
+    emerald: "bg-emerald-300/80",
+    purple: "bg-purple-300/80",
   };
   const inheritColor = {
     gray: "bg-gray-700",
@@ -43,6 +51,10 @@ export const HexagonBar: React.FC<HexagonBarProps> = ({
     zinc: "bg-zinc-300",
     black: "bg-black",
     yellow: "bg-yellow-500",
+    amber: "bg-amber-500",
+    lime: "bg-lime-600",
+    emerald: "bg-emerald-600",
+    purple: "bg-purple-600",
   };
   const animAftColor = {
     gray: "after:bg-gray-700",
@@ -53,7 +65,11 @@ export const HexagonBar: React.FC<HexagonBarProps> = ({
     red: "after:bg-red-800",
     zinc: "after:bg-zinc-500",
     black: "after:bg-black",
-    yellow: "atar:bg-yellow-500",
+    yellow: "after:bg-yellow-500",
+    amber: "after:bg-amber-500",
+    lime: "after:bg-lime-600",
+    emerald: "after:bg-emerald-600",
+    purple: "after:bg-purple-600",
   };
 
   const calculateHeight = (occ: any) => {
@@ -61,7 +77,7 @@ export const HexagonBar: React.FC<HexagonBarProps> = ({
   };
 
   return (
-    <div className="hexagon-container" hidden={hidden}>
+    <div className="hexagon-container !shadow-red-600" hidden={hidden}>
       <div
         className={classNames(
           "hexagon flex items-center justify-center",

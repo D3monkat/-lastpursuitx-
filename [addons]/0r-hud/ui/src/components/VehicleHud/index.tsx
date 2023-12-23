@@ -1,11 +1,14 @@
 import { BsFuelPumpFill } from "react-icons/bs";
 import { FaGear } from "react-icons/fa6";
+import { PiEngineFill } from "react-icons/pi";
+import { MdElectricBolt } from "react-icons/md";
 import useData from "../../hooks/useData";
 import classNames from "classnames";
 import "./index.sass";
 
 export const VehicleHud = () => {
   const { vehicleHud } = useData();
+
   const iRpm = 18;
 
   return (
@@ -13,17 +16,21 @@ export const VehicleHud = () => {
       {!vehicleHud?.hidden && vehicleHud?.show && !vehicleHud.isPassenger && (
         <div className="flex gap-2 justify-between">
           <div className="w-[120px]">
-            <div className="flex flex-col gap-1 relative bottom-1.5">
-              <div
-                hidden={vehicleHud?.isSeatbeltOn}
-                className="absolute -top-8"
-              >
-                <div className="w-7 h-7 animate-pulse">
-                  <img src="images/seat-belt.svg" alt="seat-belt" />
+            <div className="flex flex-col gap-1 relative">
+              <div className="flex gap-2 absolute -top-6">
+                <div hidden={vehicleHud?.isSeatbeltOn}>
+                  <div className="w-5 h-5 animate-pulse">
+                    <img src="images/seat-belt.svg" alt="seat-belt" />
+                  </div>
+                </div>
+                <div hidden={vehicleHud?.engineHealth > 300}>
+                  <div>
+                    <PiEngineFill className="w-5 h-5 text-orange-400 animate-pulse" />
+                  </div>
                 </div>
               </div>
-              <div>
-                <h1 className="text-white/60 font-semibold font-mono float-right">
+              <div className="relative bottom-1">
+                <h1 className="text-white/60 font-semibold font-[inherit] float-right">
                   {vehicleHud?.kmH ? "KMH" : "MPH"}
                 </h1>
               </div>
@@ -69,7 +76,7 @@ export const VehicleHud = () => {
                     <li
                       key={i}
                       className={classNames(
-                        "w-1 h-6 bg-[#2a2f30] rounded transition-all duration-200",
+                        "w-1 h-6 bg-[#2a2f30] rounded transition-[color,transform_.5s] duration-200",
                         {
                           "!bg-super_green shadow-super_green shadow-[0px_0px_2px_0px] animate-rpm":
                             i < 16 && i <= Math.round(vehicleHud.rpm * 16) + 1,
@@ -92,7 +99,12 @@ export const VehicleHud = () => {
           <div>
             <div className="flex flex-col items-center gap-1">
               <div>
-                <BsFuelPumpFill className="text-white w-3 h-3" />
+                {vehicleHud?.fuel?.type == "gasoline" && (
+                  <BsFuelPumpFill className="text-white w-4 h-4" />
+                )}
+                {vehicleHud?.fuel?.type == "electric" && (
+                  <MdElectricBolt className="text-white w-4 h-4 relative right-0.5" />
+                )}
               </div>
               <div>
                 <div className="w-1.5 h-[5.5rem] rounded-sm bg-gray-700/10 flex flex-col-reverse mr-1">
