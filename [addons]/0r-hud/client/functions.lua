@@ -20,23 +20,6 @@ function Koci.Client:SendReactMessage(action, data)
     })
 end
 
-
-CreateThread(function()
-    while true do
-        if LocalPlayer.state.isLoggedIn then
-            local ped = PlayerPedId()
-            if IsPedInAnyVehicle(ped, false) and not IsThisModelABicycle(GetEntityModel(GetVehiclePedIsIn(ped, false)))then
-                if exports["cdn-fuel"]:GetFuel(GetVehiclePedIsIn(ped, false)) <= 20 then -- At 20% Fuel Left
-                        TriggerServerEvent("InteractSound_SV:PlayOnSource", "pager", 0.10)                      
-                        Koci.Framework.Functions.Notify('Fuel is below 20%', "error")
-                        Wait(60000) -- repeats every 1 min until empty
-                end
-            end
-        end
-        Wait(10000)
-    end
-end)
-
 ---@param system ("esx_notify" | "qb_notify" | "custom_notify") System to be used
 ---@param type string inform / success / error
 ---@param title string Notification text
@@ -58,6 +41,9 @@ function Koci.Client:SendNotify(title, type, duration, icon, text)
     end
 end
 
+-- Close Radar
+DisplayRadar(false)
+
 --- Gets player data based on the configured framework.
 ---@return PlayerData table player data.
 function Koci.Client:GetPlayerData()
@@ -65,73 +51,6 @@ function Koci.Client:GetPlayerData()
         return Koci.Framework.GetPlayerData()
     elseif Config.FrameWork == "qb" then
         return Koci.Framework.Functions.GetPlayerData()
-    end
-end
-
--- Draws 3D text at the specified world coordinates.
----@param x (number) The X-coordinate of the text in the world.
----@param y (number) The Y-coordinate of the text in the world.
----@param z (number) The Z-coordinate of the text in the world.
----@param text (string) The text to be displayed.
-function Koci.Client:DrawText3D(coords, text)
-    SetTextScale(0.35, 0.35)
-    SetTextFont(4)
-    SetTextColour(255, 255, 255, 215)
-    SetTextEntry("STRING")
-    SetTextCentre(true)
-    AddTextComponentString(text)
-    SetDrawOrigin(coords.x, coords.y, coords.z, 0)
-    DrawText(0.0, 0.0)
-    local factor = (string.len(text)) / 370
-    DrawRect(0.0, 0.0 + 0.0125, 0.017 + factor, 0.03, 70, 134, 123, 75)
-    ClearDrawOrigin()
-end
-
---- Loads a model on the client.
----@param model number|string The model to load, specified as either a number or a string.
-function Koci.Client:LoadModel(model)
-    if HasModelLoaded(model) then
-        return
-    end
-    RequestModel(model)
-    while not HasModelLoaded(model) do
-        Wait(0)
-    end
-end
-
---- Displays a text UI based on the specified framework.
---- @param _type string (optional) The framework to use, defaults to Config.FrameWork if not provided.
---- @param message string The message to display in the text UI.
---- @param options table (optional) Additional options for displaying the text UI.
-function Koci.Client:ShowTextUI(_type, message, options)
-    _type = _type or Config.FrameWork
-    if _type == "qb" then
-        if not Utils.Functions:hasResource("qb-core") then
-            Utils.Functions:debugPrint("qb-core is not active on your server !")
-            return
-        end
-        exports["qb-core"]:DrawText(message, "right")
-    elseif _type == "ox" then
-        if not Utils.Functions:hasResource("ox_lib") then
-            Utils.Functions:debugPrint("ox_lib is not active on your server !")
-            return
-        end
-        if not options then
-            options = {
-                position = "left-center"
-            }
-        end
-        lib.showTextUI(message, options)
-    end
-end
-
---- Hides the currently displayed text UI.
-function Koci.Client:HideTextUI()
-    if Utils.Functions:hasResource("ox_lib") then
-        lib.hideTextUI()
-    end
-    if Utils.Functions:hasResource("qb-core") then
-        exports["qb-core"]:HideText()
     end
 end
 
@@ -149,6 +68,7 @@ function Koci.Client.HUD:Start(xPlayer)
         xPlayer = Koci.Client:GetPlayerData()
     end
     self:MainThick()
+    DisplayRadar(false)
     self:SetMiniMap(self.data.vehicle.miniMap.style)
     self.data.vehicle.kmh = Config.Settings.VehicleHUD.kmH
     Koci.Client:SendReactMessage("SET_HUD_STATUS_BARS_ACTIVE", Config.Settings.StatusBars)
@@ -158,7 +78,6 @@ function Koci.Client.HUD:Start(xPlayer)
     Koci.Client:SendReactMessage("LOAD_HUD_STORAGE")
     Wait(500)
     Koci.Client:SendReactMessage("setVisible", true)
-    DisplayRadar(false)
 end
 
 function Koci.Client.HUD:Toggle(state)
@@ -238,9 +157,6 @@ function Koci.Client.HUD:GetFuelExport()
         end
     else
         local response = Koci.Utils:CustomFuelExport()
-        if not response then
-            TriggerServerEvent("0r-hud:Server:ErrorHandle", _t("hud.export.fuel_missing"))
-        end
         return response
     end
 end
@@ -258,6 +174,8 @@ end
 function Koci.Client.HUD:ActivateVehicleHud(veh)
     self.data.vehicle.show = true
     self:fVehicleInfoThick(veh)
+    self:LowFuelThread(veh)
+    self:fVehicleCompassThick(veh)
 end
 
 function Koci.Client.HUD:UpdateVehicleHud(data)
@@ -267,14 +185,47 @@ function Koci.Client.HUD:UpdateVehicleHud(data)
     end
     if self.data.vehicle.speedoMeter.fps ~= data.speedoMeter.fps then
         self.data.vehicle.speedoMeter.fps = data.speedoMeter.fps
-        local w = 100
+        local w = 200
         if data.speedoMeter.fps == 15 then
             w = 200
         elseif data.speedoMeter.fps == 30 then
-            w = 100
+            w = 150
         elseif data.speedoMeter.fps == 60 then
-            w = 50
+            w = 100
         end
         self.data.vehicle.thick.wait = w
     end
+end
+
+function Koci.Client.HUD:CheckCrossRoads(entity)
+    local updateTick = GetGameTimer()
+    if self.data.compass.lastCrossRoadCheck == -1 or updateTick - self.data.compass.lastCrossRoadCheck > 1500 then
+        local pos = GetEntityCoords(entity)
+        local street1, street2 = GetStreetNameAtCoord(pos.x, pos.y, pos.z)
+        self.data.compass.lastCrossRoadCheck = updateTick
+        self.data.compass.crossRoad = {
+            street1 = GetStreetNameFromHashKey(street1),
+            street2 = GetStreetNameFromHashKey(street2)
+        }
+    end
+end
+
+function Koci.Client.HUD:HeadUpdate(entity)
+    local camRot = GetGameplayCamRot(0)
+    local heading = string.format("%.0f", (360.0 - ((camRot.z + 360.0) % 360.0)))
+    heading = tonumber(heading)
+    if heading == 360 then heading = 0 end
+    if heading ~= lastHeading then
+        self.data.compass.heading = heading
+    end
+    lastHeading = heading
+end
+
+function Koci.Client.HUD:CheckVehicleFuelType(vehicle)
+    for k, v in pairs(Config.ElectricVehicles) do
+        if vehicle == GetHashKey(v) then
+            return "electric"
+        end
+    end
+    return "gasoline"
 end

@@ -5,10 +5,14 @@ Koci.Callbacks = {}
 Koci.Client    = {
     HUD = {
         data = {
-            playerServerId = -1,
-            isVisible = false,
+            isVisible = true,
             bars = {
-                voice = {},
+                voice = {
+                    microphone = false,
+                    radio = false,
+                    isTalking = false,
+                    range = 1,
+                },
                 health = nil,
                 armor = nil,
                 hunger = nil,
@@ -19,13 +23,9 @@ Koci.Client    = {
                 terminal = nil,
                 leaf = nil,
             },
-            money = {
-                bank = 0,
-                cash = 0
-            },
             vehicle = {
                 thick = {
-                    wait = 100
+                    wait = 200
                 },
                 entity = nil,
                 kmH = Config.Settings.VehicleHUD.kmH,
@@ -38,6 +38,7 @@ Koci.Client    = {
                 fuel = {
                     level = 0,
                     max_level = 0,
+                    type = nil,
                 },
                 rpm = 0,
                 gear = nil,
@@ -45,8 +46,17 @@ Koci.Client    = {
                     style = "square"
                 },
                 speedoMeter = {
-                    fps = 30
+                    fps = 15
                 }
+            },
+            compass = {
+                show = false,
+                heading = 0,
+                lastCrossRoadCheck = -1,
+                crossRoad = {
+                    street1 = nil,
+                    street2 = nil
+                },
             }
         },
     }

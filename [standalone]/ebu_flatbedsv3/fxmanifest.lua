@@ -5,7 +5,7 @@ lua54 'yes'
 description 'Flatbeds Script v3'
 author 'Theebu'
 
-version '0.5.6'
+version '0.5.8'
 
 shared_scripts {
 	'config.lua',

@@ -11,7 +11,7 @@ import { fetchNui } from "../utils/fetchNui";
 debugData([
   {
     action: "setRouter",
-    data: "settings",
+    data: "home",
   },
 ]);
 

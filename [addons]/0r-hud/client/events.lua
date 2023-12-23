@@ -1,14 +1,7 @@
-AddEventHandler("onResourceStop", function(resource)
-    if resource == GetCurrentResourceName() then
-        -- ?
-    end
-end)
-
 AddEventHandler("onResourceStart", function(resource)
     if resource == GetCurrentResourceName() then
         Wait(1000)
         Koci.Client.HUD:Start()
-        Koci.Client.HUD.data.playerServerId = GetPlayerServerId(PlayerId())
     end
 end)
 
@@ -37,19 +30,40 @@ RegisterNetEvent("0r-hud:Client:ShowHudElement", function(element, code)
 end)
 -- @ --
 
+if GetResourceState("pma-voice") == "started" then
+    AddEventHandler("pma-voice:setTalkingMode", function(mode)
+        Koci.Client.HUD.data.bars.voice.range = mode
+    end)
+
+    AddEventHandler("pma-voice:radioActive", function(radioTalking)
+        Koci.Client.HUD.data.bars.voice.radio = radioTalking
+    end)
+
+    AddEventHandler("onResourceStart", function(resourceName)
+        if not resourceName == "pma-voice" then
+            return
+        end
+        Wait(1000)
+        Koci.Client.HUD.data.bars.voice.range = LocalPlayer.state.proximity.index
+    end)
+elseif GetResourceState("saltychat") == "started" then
+    AddEventHandler("SaltyChat_VoiceRangeChanged", function(range, index, availableVoiceRanges)
+        Koci.Client.HUD.data.bars.voice.range = index
+    end)
+    AddEventHandler("SaltyChat_RadioTrafficStateChanged",
+        function(primaryReceive, primaryTransmit, secondaryReceive, secondaryTransmit)
+            Koci.Client.HUD.data.bars.voice.radio = primaryTransmit or secondaryTransmit
+        end
+    )
+else
+    TriggerServerEvent("0r-hud:Server:ErrorHandle", "Setup your custom voice resource at: client/utils.lua")
+    Koci.Utils:CustomVoiceResource()
+end
+
 if Config.FrameWork == "esx" then
     RegisterNetEvent("esx:playerLoaded", function(xPlayer)
         Wait(1000)
         Koci.Client.HUD:Start(xPlayer)
-        Koci.Client.HUD.data.playerServerId = GetPlayerServerId(PlayerId())
-    end)
-
-    RegisterNetEvent("esx:setAccountMoney", function(account)
-        if account.name == "money" then    -- cash
-            Koci.Client.HUD.data.money.cash = account.money
-        elseif account.name == "bank" then -- bank
-            Koci.Client.HUD.data.money.bank = account.money
-        end
     end)
 
     RegisterNetEvent("esx:pauseMenuActive", function(state)
@@ -92,20 +106,17 @@ if Config.FrameWork == "qb" then
         Wait(1000)
         Koci.Client:SendReactMessage("LOAD_HUD_STORAGE")
         Koci.Client.HUD:Start(xPlayer)
-        Koci.Client.HUD.data.playerServerId = GetPlayerServerId(PlayerId())
     end)
 
-    RegisterNetEvent("QBCore:Client:OnMoneyChange", function()
-        local xPlayer = Koci.Client:GetPlayerData()
-        Koci.Client.HUD.data.money.cash = xPlayer.money.cash
-        Koci.Client.HUD.data.money.bank = xPlayer.money.bank
+    RegisterNetEvent("QBCore:Client:OnPlayerUnload", function()
+        Wait(1000)
+        Koci.Client.HUD:Toggle(false)
     end)
 
     RegisterNetEvent("hud:client:UpdateNeeds", function(newHunger, newThirst)
         Koci.Client.HUD.data.bars.hunger = newHunger
         Koci.Client.HUD.data.bars.thirst = newThirst
     end)
-
     RegisterNetEvent("hud:client:UpdateStress", function(newStress)
         Koci.Client.HUD.data.bars.stress = newStress
     end)

@@ -7,7 +7,11 @@ export type HexagonColors =
   | "red"
   | "zinc"
   | "yellow"
-  | "black";
+  | "black"
+  | "amber"
+  | "emerald"
+  | "purple"
+  | "lime";
 
 export type HexagonBarProps = {
   color?: HexagonColors;

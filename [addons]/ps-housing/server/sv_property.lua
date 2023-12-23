@@ -286,7 +286,7 @@ function Property:UpdateOwner(data)
     local totalAfterCommission = self.propertyData.price - commission
 
     if Config.QBManagement then
-        exports['qb-management']:AddMoney(Config.RealtorJobName, totalAfterCommission)
+        exports['Renewed-Banking']:addAccountMoney(Config.RealtorJobName, totalAfterCommission)
     else
         if prevPlayer ~= nil then
             Framework[Config.Notify].Notify(prevPlayer.PlayerData.source, "Sold Property: " .. self.propertyData.street .. " " .. self.property_id, "success")

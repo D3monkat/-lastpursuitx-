@@ -16,7 +16,7 @@ QBCore.Functions.CreateCallback('hhfw:docOnline', function(source, cb)
 
 	for i=1, #xPlayers, 1 do
 		local xPlayer = QBCore.Functions.GetPlayer(xPlayers[i])
-		if xPlayer.PlayerData.job.name == 'ambulance' then
+		if xPlayer.PlayerData.job.type == 'ems' then
 			doctor = doctor + 1
 		end
 	end
@@ -35,5 +35,6 @@ AddEventHandler('hhfw:charge', function()
 	else
 		xPlayer.Functions.RemoveMoney("bank", Config.Price)
 	end
-	TriggerEvent("qb-bossmenu:server:addAccountMoney", 'ambulance', Config.Price)
+	-- TriggerEvent("qb-bossmenu:server:addAccountMoney", 'ambulance', Config.Price)
+	exports['Renewed-Banking']:addAccountMoney('ambulance', Config.Price)
 end)

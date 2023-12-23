@@ -192,7 +192,8 @@ CreateThread(function()
                     end
 
                     if IsControlJustPressed(0, 47) and not emsNotified then
-                        TriggerServerEvent('hospital:server:ambulanceAlert', Lang:t('info.civ_down'))
+                        -- TriggerServerEvent('hospital:server:ambulanceAlert', Lang:t('info.civ_down'))
+                        exports['ps-dispatch']:DeceasedPerson()
                         emsNotified = true
                     end
                 end

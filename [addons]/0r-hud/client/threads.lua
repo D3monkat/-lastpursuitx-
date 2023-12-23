@@ -1,17 +1,17 @@
 CreateThread(function()
     while Koci.Framework == nil do
         Koci.Framework = Utils.Functions:GetFramework()
-        Wait(16)
+        Wait(100)
     end
 end)
 
 function Koci.Client.HUD:MainThick()
+    local playerId = PlayerId()
+    local playerPedId = PlayerPedId()
     CreateThread(function()
         while not playerLoaded() do
             Wait(500)
         end
-        local playerId = PlayerId()
-        local playerPedId = PlayerPedId()
         while playerLoaded() do
             local oxygen, stamina
             local isTalking = NetworkIsPlayerTalking(playerId)
@@ -24,6 +24,7 @@ function Koci.Client.HUD:MainThick()
             self.data.bars.terminal = 100 -- ?
             self.data.bars.leaf = 100     -- ?
             if Config.FrameWork == "qb" then
+                local _Player = Koci.Client:GetPlayerData()
                 local health = math.floor(
                     (GetEntityHealth(playerPedId) - 100) /
                     (GetEntityMaxHealth(playerPedId) - 100) *
@@ -31,87 +32,141 @@ function Koci.Client.HUD:MainThick()
                 )
                 if health > 100 then
                     health = 100
-                end
-                if health < 0 then
+                elseif health < 0 then
                     health = 0
                 end
                 self.data.bars.health = health
                 self.data.bars.armor = GetPedArmour(playerPedId)
+                self.data.bars.stress = _Player.metadata["stress"]
                 -- > Pause menu
-                if IsPauseMenuActive() and self.data.isVisible then
-                    Koci.Client.HUD:Toggle(false)
+                if IsPauseMenuActive() then
+                    local isVisible = self.data.isVisible
+                    if isVisible then
+                        Koci.Client.HUD:Toggle(false)
+                    end
+                else
+                    local isVisible = self.data.isVisible
+                    if not isVisible then
+                        Koci.Client.HUD:Toggle(true)
+                    end
                 end
             end
             -- > Vehicle HUD
             if Config.Settings.VehicleHUD.active then
                 if IsPedInAnyVehicle(playerPedId) then
-                    while self.data.vehicle.inVehicle and DoesEntityExist(vehicle) do
-                        Wait(200)
-                    end
-                    local vehicle = GetVehiclePedIsIn(playerPedId)
-                    if not IsThisModelABicycle(vehicle) then
-                        if not Koci.Client.HUD.data.vehicle.inVehicle then
-                            Koci.Client.HUD.data.vehicle.inVehicle = true
-                            Koci.Client.HUD.data.vehicle.entity = vehicle
-                            Koci.Client.HUD:ActivateVehicleHud(vehicle)
-                            DisplayRadar(true)
+                    if not self.data.vehicle.inVehicle then
+                        local vehicle = GetVehiclePedIsIn(playerPedId)
+                        if DoesEntityExist(vehicle) then
+                            if not IsThisModelABicycle(vehicle) then
+                                self.data.vehicle.inVehicle = true
+                                self.data.vehicle.entity = vehicle
+                                self.data.vehicle.fuel.type = self:CheckVehicleFuelType(GetEntityModel(vehicle))
+                                self.data.compass.show = true
+                                self:ActivateVehicleHud(vehicle)
+                                DisplayRadar(true)
+                            end
                         end
-                        Koci.Client.HUD.data.vehicle.fuel = {
-                            level = self:GetFuelExport() or 100,
-                            maxLevel = 100
-                        }
                     end
-                else
-                    if Koci.Client.HUD.data.vehicle.inVehicle then
-                        Koci.Client.HUD.data.vehicle.inVehicle = false
-                        Koci.Client.HUD.data.vehicle.entity = nil
-                        Koci.Client.HUD.data.vehicle.isPassenger = false
-                        Koci.Client.HUD.data.vehicle.show = false
-                        Koci.Client.HUD.data.vehicle.isSeatbeltOn = false
-                        Koci.Client.HUD.data.vehicle.cruiseControlStatus = false
-                        Koci.Client:SendReactMessage(
-                            "UPDATE_HUD_VEHICLE",
-                            Koci.Client.HUD.data.vehicle
-                        )
-                        DisplayRadar(false)
-                    end
+                elseif self.data.vehicle.inVehicle then
+                    self.data.vehicle.inVehicle = false
+                    self.data.vehicle.entity = nil
+                    self.data.vehicle.isPassenger = false
+                    self.data.vehicle.show = false
+                    self.data.vehicle.isSeatbeltOn = false
+                    self.data.vehicle.cruiseControlStatus = false
+                    self.data.compass.show = false
+                    Koci.Client:SendReactMessage(
+                        "UPDATE_HUD_VEHICLE",
+                        self.data.vehicle
+                    )
+                    Koci.Client:SendReactMessage(
+                        "UPDATE_HUD_COMPASS",
+                        self.data.compass
+                    )
+                    DisplayRadar(false)
                 end
             end
             Koci.Client:SendReactMessage(
                 "UPDATE_HUD_STATUS_BARS",
                 self.data.bars
             )
-            Wait(200)
+            Wait(250)
         end
     end)
 end
 
 function Koci.Client.HUD:fVehicleInfoThick(vehicle)
+    local playerPedId = PlayerPedId()
     CreateThread(function()
         while self.data.vehicle.inVehicle and DoesEntityExist(vehicle) do
-            local currentSpeed = GetEntitySpeed(vehicle)
-            local engineRunning = GetIsVehicleEngineRunning(vehicle)
-            local rpm = engineRunning and GetVehicleCurrentRpm(vehicle) or 0
-            local gear = engineRunning and GetVehicleCurrentGear(vehicle) or "N"
-            if gear == 0 then
-                gear = "R"
-            end
-            self.data.vehicle.speed = self.data.vehicle.kmh and math.floor(currentSpeed * 3.6) or
-                math.floor(currentSpeed * 2.236936
-                )
-            if rpm > 0.5 and self.data.vehicle.speed == 0 then
-                self.data.vehicle.speed = 1
-            end
-            self.data.vehicle.rpm = rpm
-            self.data.vehicle.gear = gear
-            self.data.vehicle.isPassenger = GetPedInVehicleSeat(vehicle, -1) ~= PlayerPedId()
+            self.data.vehicle.isPassenger = GetPedInVehicleSeat(vehicle, -1) ~= playerPedId
             if not self.data.vehicle.isPassenger then
+                local currentSpeed = GetEntitySpeed(vehicle)
+                local engineRunning = GetIsVehicleEngineRunning(vehicle)
+                local rpm = engineRunning and GetVehicleCurrentRpm(vehicle) or 0
+                local gear = engineRunning and GetVehicleCurrentGear(vehicle) or "N"
+                local engineHealth = engineRunning and math.floor(GetVehicleEngineHealth(vehicle)) or 1000
+                if engineHealth < 0 then
+                    engineHealth = 0
+                end
+                if gear == 0 then
+                    gear = "R"
+                end
+                self.data.vehicle.speed = self.data.vehicle.kmh and math.floor(currentSpeed * 3.6) or
+                    math.floor(currentSpeed * 2.236936
+                    )
+                if rpm > 0.5 and self.data.vehicle.speed == 0 then
+                    self.data.vehicle.speed = 1
+                end
+                self.data.vehicle.fuel.level = self:GetFuelExport() or 100
+                self.data.vehicle.fuel.max_level = 100
+                self.data.vehicle.rpm = rpm
+                self.data.vehicle.gear = gear
+                self.data.vehicle.engineHealth = engineHealth
                 Koci.Client:SendReactMessage(
                     "UPDATE_HUD_VEHICLE",
                     self.data.vehicle
                 )
+                Wait(self.data.vehicle.thick.wait)
+            else
+                Wait(1000)
             end
-            Wait(self.data.vehicle.thick.wait)
         end
     end)
+end
+
+function Koci.Client.HUD:fVehicleCompassThick(vehicle)
+    if Config.Settings.Compass.active then
+        local playerPedId = PlayerPedId()
+        CreateThread(function()
+            while self.data.vehicle.inVehicle and DoesEntityExist(vehicle) do
+                Koci.Client.HUD:CheckCrossRoads(playerPedId)
+                Koci.Client.HUD:HeadUpdate(playerPedId)
+                Koci.Client:SendReactMessage(
+                    "UPDATE_HUD_COMPASS",
+                    self.data.compass
+                )
+                Wait(100)
+            end
+        end)
+    end
+end
+
+function Koci.Client.HUD:LowFuelThread(vehicle)
+    if Config.Settings.VehicleHUD.lowFuelNotify then
+        local playerPedId = PlayerPedId()
+        CreateThread(function()
+            while self.data.vehicle.inVehicle and DoesEntityExist(vehicle) do
+                if playerLoaded() then
+                    if IsPedInAnyVehicle(playerPedId, false) and not IsThisModelABicycle(GetEntityModel(GetVehiclePedIsIn(playerPedId, false))) then
+                        if self:GetFuelExport() <= 20 then -- At 20% fuel left.
+                            Koci.Client:SendNotify(_t("notify.low_fuel"), "error")
+                            Wait(60000)
+                        end
+                    end
+                end
+                Wait(10000)
+            end
+        end)
+    end
 end

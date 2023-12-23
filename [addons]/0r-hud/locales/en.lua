@@ -26,6 +26,10 @@ return {
         settings_text_stress_icon = "Stress Icon",
         settings_text_terminal_icon = "Terminal Icon",
         settings_text_leaf_icon = "Leaf Icon",
+        settings_text_compass_hud = "Compass Hud",
+        settings_text_vehicle_hud = "Vehicle Hud",
+        settings_text_vehicle_position = "Vehicle Hud Position",
+        settings_text_color = "Color",
     },
     hud = {
         settings = {
@@ -56,5 +60,8 @@ return {
         export = {
             fuel_missing = "Setup your custom fuel resource at: client/utils.lua"
         }
+    },
+    notify = {
+        low_fuel = "Fuel level low !"
     }
 }

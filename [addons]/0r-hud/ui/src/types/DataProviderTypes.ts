@@ -76,10 +76,12 @@ export type VehicleHudProps = {
   cruiseControlStatus: boolean;
   inVehicle: boolean;
   fuel: {
+    type: "electric" | "gasoline";
     level: number;
     max_level: number;
   };
   speed: number;
+  engineHealth: number;
   rpm: number;
   gear: number | "N" | "R";
   miniMaP: {
@@ -87,6 +89,20 @@ export type VehicleHudProps = {
   };
   speedoMeter: {
     fps: number;
+  };
+  position: {
+    bottom: number;
+    left: number;
+  };
+};
+
+export type CompassHudProps = {
+  active: boolean;
+  show: boolean;
+  heading: number;
+  crossRoad: {
+    street1: string;
+    street2: string;
   };
 };
 
@@ -100,6 +116,8 @@ export type DataContextProps = {
   setVehicleHud: React.Dispatch<React.SetStateAction<VehicleHudProps>>;
   statusBars: StatusBarsProps;
   setStatusBars: React.Dispatch<React.SetStateAction<StatusBarsProps>>;
+  compassHud: CompassHudProps;
+  setCompassHud: React.Dispatch<React.SetStateAction<CompassHudProps>>;
   saveSettings: (type: string) => void;
   helpGuides: HelpGuideProps[];
 };

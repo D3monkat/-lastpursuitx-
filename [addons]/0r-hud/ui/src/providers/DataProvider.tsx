@@ -1,5 +1,6 @@
 import React, { createContext, useState } from "react";
 import {
+  CompassHudProps,
   DataContextProps,
   HelpGuideProps,
   StatusBarsProps,
@@ -13,10 +14,20 @@ debugData([
   {
     action: "UPDATE_HUD_VEHICLE",
     data: {
-      show: false,
+      show: true,
     },
   },
 ]);
+debugData([
+  {
+    action: "UPDATE_HUD_COMPASS",
+    data: {
+      show: true,
+      heading: 180,
+    },
+  },
+]);
+
 debugData([
   {
     action: "SET_HUD_SETTINGS_HELP_GUIDES",
@@ -57,7 +68,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({
     armor: {
       active: true,
       color: "blue",
-      progressLevel: 35,
+      progressLevel: 50,
       autoHide: 100,
     },
     hunger: {
@@ -113,10 +124,11 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({
     fuel: {
       level: 50,
       max_level: 100,
+      type: "gasoline",
     },
     cruiseControlStatus: false,
     entity: -1,
-    gear: 2,
+    gear: 1,
     isPassenger: false,
     isSeatbeltOn: false,
     rpm: 200,
@@ -124,9 +136,24 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({
       style: "square",
     },
     speedoMeter: {
-      fps: 30,
+      fps: 15,
     },
+    position: {
+      bottom: 0,
+      left: 0,
+    },
+    engineHealth: 1000,
   } as VehicleHudProps);
+
+  const [compassHud, setCompassHud] = useState<CompassHudProps>({
+    active: true,
+    show: false,
+    crossRoad: {
+      street1: "Istanbul",
+      street2: "Adana",
+    },
+    heading: 60,
+  } as CompassHudProps);
 
   const [helpGuides, setHelpGuides] = useState<HelpGuideProps[]>(
     [] as HelpGuideProps[]
@@ -230,6 +257,12 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({
   });
   useNuiEvent("UPDATE_HUD_VEHICLE", (newValues) => {
     setVehicleHud((p) => ({
+      ...p,
+      ...newValues,
+    }));
+  });
+  useNuiEvent("UPDATE_HUD_COMPASS", (newValues) => {
+    setCompassHud((p) => ({
       ...p,
       ...newValues,
     }));
@@ -348,6 +381,15 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({
           autoHide: statusBars.leaf.autoHide,
           color: statusBars.leaf.color,
         });
+        handleLocalStorage("vehicleHud", "set", {
+          position: {
+            bottom: vehicleHud.position.bottom || 0,
+            left: vehicleHud.position.left || 0,
+          },
+        });
+        handleLocalStorage("compassHud", "set", {
+          active: compassHud.active,
+        });
         break;
       default:
         break;
@@ -367,6 +409,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({
   const getSettings = () => {
     setVehicleHud((p) => ({
       ...p,
+      show: handleLocalStorage("vehicleHud", "get").show || p.show,
       miniMaP: {
         ...p.miniMaP,
         style: handleLocalStorage("miniMap", "get").style || p.miniMaP.style,
@@ -375,6 +418,16 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({
         ...p.speedoMeter,
         fps:
           handleLocalStorage("speedoMeter", "get").style || p.speedoMeter.fps,
+      },
+      position: {
+        bottom:
+          typeof handleLocalStorage("vehicleHud", "get") != "boolean"
+            ? handleLocalStorage("vehicleHud", "get").position?.bottom
+            : p?.position?.bottom,
+        left:
+          typeof handleLocalStorage("vehicleHud", "get") != "boolean"
+            ? handleLocalStorage("vehicleHud", "get").position?.left
+            : p?.position?.left,
       },
     }));
     setStatusBars((prevState) => ({
@@ -485,6 +538,10 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({
             : prevState.leaf.active,
       },
     }));
+    setCompassHud((p) => ({
+      ...p,
+      active: handleLocalStorage("compassHud", "get").active || p.active,
+    }));
   };
 
   const value = {
@@ -494,6 +551,8 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({
     setVehicleHud,
     saveSettings,
     helpGuides,
+    compassHud,
+    setCompassHud,
   };
 
   return <DataCtx.Provider value={value}>{children}</DataCtx.Provider>;

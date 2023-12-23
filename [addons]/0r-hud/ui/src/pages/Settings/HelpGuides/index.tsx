@@ -18,7 +18,7 @@ export const HelpGuides = () => {
               <h1 className="font-semibold text-base text-settings_green text-shadow-sm shadow-settings_green">
                 {hg.title}
               </h1>
-              <h1 className="text-sm font-mono text-gray-400">
+              <h1 className="text-sm font-[inherit] text-gray-400">
                 {hg.description}
               </h1>
             </div>
