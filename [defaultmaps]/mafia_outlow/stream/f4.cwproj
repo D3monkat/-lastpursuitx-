@@ -1,0 +1,21 @@
+<CodeWalkerProject>
+  <Name>New CodeWalker Project</Name>
+  <Version value="1" />
+  <YmapFilenames>
+    <Item>..\..\xds_int_weed1\int_weed1_milo_.ymap</Item>
+    <Item>hei_cs2_03_strm_1.ymap</Item>
+    <Item>hei_cs2_roadsb_strm_0.ymap</Item>
+    <Item>xdesigns_mafia_4.ymap</Item>
+    <Item>xdesigns_mafia_4_01.ymap</Item>
+    <Item>xdesigns_mafia_4_02.ymap</Item>
+    <Item>xdesigns_mafia_4_03.ymap</Item>
+    <Item>xdesigns_mafia_4_04.ymap</Item>
+  </YmapFilenames>
+  <YtypFilenames />
+  <YbnFilenames />
+  <YndFilenames />
+  <YnvFilenames />
+  <TrainsFilenames />
+  <ScenarioFilenames />
+  <AudioRelFilenames />
+</CodeWalkerProject>
