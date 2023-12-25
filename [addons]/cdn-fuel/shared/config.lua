@@ -1454,14 +1454,13 @@ Config.GasStations = { -- Configuration options for various gas station related 
     },
     [24] = {
         zones = {
-            vector2(2545.08, 2601.14),
-            vector2(2556.06, 2573.11),
-            vector2(2545.83, 2568.56),
-            vector2(2531.06, 2601.14),
-            vector2(2540.91, 2599.24)
+            vector2(2550.2258300781, 2597.7614746094),
+            vector2(2526.3679199219, 2598.7475585938),
+            vector2(2527.5034179688, 2625.3344726562),
+            vector2(2547.62890625, 2626.59765625)
         },
         minz = 36.94,
-        maxz = 38.94,
+        maxz = 40.94,
         pumpheightadd = 1.5, --  For Config.PumpHose
         pedmodel = "a_m_m_indian_01",
         cost = 100000,
@@ -1473,7 +1472,7 @@ Config.GasStations = { -- Configuration options for various gas station related 
             h = 113.52,
         },
         electriccharger = nil,
-        electricchargercoords = vector4(2545.81, 2586.18, 36.94, 83.74),
+        electricchargercoords = vector4(2561.03, 2598.54, 37.1, 77.59),
         label = "Rex's Diner Globe Oil",
     },
     [25] = {
