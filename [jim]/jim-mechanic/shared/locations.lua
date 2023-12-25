@@ -92,7 +92,7 @@ Config.Locations[#Config.Locations+1] = { --[[ RFC LS CUSTOMS ]]--
         cat = nil,
     },
     discord = {
-        link = "",
+        link = "https://discord.com/api/webhooks/1188891878037393458/WbuZlzqWjWAqJ1Pakw55JOGCac-YSTe01dqMjfQd79ISYZcodCkn8LsUPSOmMSLujqgE",
         color = 16711680,
     }
 }
@@ -156,7 +156,7 @@ Config.Locations[#Config.Locations+1] = { --[[ Lux ]]--
         cat = nil,
     },
     discord = {
-        link = "",
+        link = "https://discord.com/api/webhooks/1188891878037393458/WbuZlzqWjWAqJ1Pakw55JOGCac-YSTe01dqMjfQd79ISYZcodCkn8LsUPSOmMSLujqgE",
         color = 16711680,
     }
 }
@@ -223,7 +223,7 @@ Config.Locations[#Config.Locations+1] = { --[[ REDLINE ]]--
         cat = 10,
     },
     discord = {
-        link = "",
+        link = "https://discord.com/api/webhooks/1188891878037393458/WbuZlzqWjWAqJ1Pakw55JOGCac-YSTe01dqMjfQd79ISYZcodCkn8LsUPSOmMSLujqgE",
         color = 16711680,
     }
 }
