@@ -46,8 +46,12 @@ Koci.Client    = {
                     style = "square"
                 },
                 speedoMeter = {
-                    fps = 15
-                }
+                    fps = nil
+                },
+                type = 2,
+                lightsOn = false,
+                manualMode = false,
+                manualGear = "N"
             },
             compass = {
                 show = false,

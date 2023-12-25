@@ -25,3 +25,19 @@ export function debugLog(error: any, functionName?: string) {
   `;
   console.error(logMessage);
 }
+
+export const inheritColor = {
+  gray: "bg-gray-700",
+  green: "bg-green-700",
+  blue: "bg-blue-950",
+  orange: "bg-orange_bar",
+  cyan: "bg-cyan_bar",
+  red: "bg-red_bar",
+  zinc: "bg-zinc-300",
+  black: "bg-black",
+  yellow: "bg-yellow-500",
+  amber: "bg-amber-500",
+  lime: "bg-lime_bar",
+  emerald: "bg-emerald-600",
+  purple: "bg-purple-600",
+};

@@ -1,8 +1,7 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 import {
   CompassHudProps,
   DataContextProps,
-  HelpGuideProps,
   StatusBarsProps,
   VehicleHudProps,
 } from "../types/DataProviderTypes";
@@ -10,14 +9,6 @@ import { useNuiEvent } from "../hooks/useNuiEvent";
 import { debugData } from "../utils/debugData";
 import { fetchNui } from "../utils/fetchNui";
 
-debugData([
-  {
-    action: "UPDATE_HUD_VEHICLE",
-    data: {
-      show: true,
-    },
-  },
-]);
 debugData([
   {
     action: "UPDATE_HUD_COMPASS",
@@ -28,28 +19,13 @@ debugData([
   },
 ]);
 
-debugData([
-  {
-    action: "SET_HUD_SETTINGS_HELP_GUIDES",
-    data: [
-      {
-        title: "Command: /hudclose <number>",
-        description: "Hidden any hud element.",
-      },
-      {
-        title: "Command: /hudopen <number>",
-        description: "Show any hud element.",
-      },
-    ],
-  },
-]);
-
 export const DataCtx = createContext<DataContextProps>({} as DataContextProps);
 
 export const DataProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
   const [statusBars, setStatusBars] = useState<StatusBarsProps>({
+    type: 1,
     voice: {
       isTalking: false,
       active: true,
@@ -61,32 +37,32 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({
     },
     health: {
       active: true,
-      color: "green",
-      progressLevel: 35,
+      color: "red",
+      progressLevel: 100,
       autoHide: 100,
     },
     armor: {
       active: true,
       color: "blue",
-      progressLevel: 50,
+      progressLevel: 90,
       autoHide: 100,
     },
     hunger: {
       active: true,
       color: "orange",
-      progressLevel: 35,
+      progressLevel: 50,
       autoHide: 100,
     },
     thirst: {
       active: true,
       color: "cyan",
-      progressLevel: 35,
+      progressLevel: 20,
       autoHide: 100,
     },
     stress: {
       active: false,
       color: "red",
-      progressLevel: 10,
+      progressLevel: 0,
       autoHide: 100,
     },
     leaf: {
@@ -109,7 +85,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({
     },
     stamina: {
       active: true,
-      color: "orange",
+      color: "lime",
       progressLevel: 35,
       autoHide: 100,
     },
@@ -119,8 +95,9 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({
     hidden: false,
     show: false,
     inVehicle: false,
-    speed: 1,
+    speed: 100,
     kmH: false,
+    type: 2,
     fuel: {
       level: 50,
       max_level: 100,
@@ -131,17 +108,18 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({
     gear: 1,
     isPassenger: false,
     isSeatbeltOn: false,
-    rpm: 200,
+    rpm: 0.0,
     miniMaP: {
       style: "square",
     },
     speedoMeter: {
-      fps: 15,
+      fps: 30,
     },
     position: {
       bottom: 0,
       left: 0,
     },
+    lightsOn: false,
     engineHealth: 1000,
   } as VehicleHudProps);
 
@@ -155,9 +133,19 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({
     heading: 60,
   } as CompassHudProps);
 
-  const [helpGuides, setHelpGuides] = useState<HelpGuideProps[]>(
-    [] as HelpGuideProps[]
-  );
+  useEffect(() => {
+    fetchNui("OnVehicleHudChanged", {
+      silence: true,
+      newVH: {
+        miniMap: {
+          style: vehicleHud.miniMaP.style,
+        },
+        speedoMeter: {
+          fps: vehicleHud.speedoMeter.fps,
+        },
+      },
+    });
+  }, [vehicleHud.miniMaP, vehicleHud.speedoMeter]);
 
   useNuiEvent("SET_HUD_STATUS_BARS_ACTIVE", (newValues) => {
     setStatusBars((prevState) => ({
@@ -208,6 +196,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({
     setVehicleHud((p) => ({
       ...p,
       hidden: !newValues.active,
+      manualModeType: newValues.manualModeType,
     }));
   });
   useNuiEvent("UPDATE_HUD_STATUS_BARS", (newValues) => {
@@ -258,7 +247,23 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({
   useNuiEvent("UPDATE_HUD_VEHICLE", (newValues) => {
     setVehicleHud((p) => ({
       ...p,
-      ...newValues,
+      engineHealth: newValues?.engineHealth,
+      cruiseControlStatus: newValues?.cruiseControlStatus,
+      entity: newValues?.entity,
+      fuel: {
+        ...p.fuel,
+        ...newValues.fuel,
+      },
+      gear: newValues?.gear,
+      inVehicle: newValues?.inVehicle,
+      isPassenger: newValues?.isPassenger,
+      isSeatbeltOn: newValues?.isSeatbeltOn,
+      kmH: newValues?.kmH,
+      lightsOn: newValues?.lightsOn,
+      position: newValues?.position,
+      rpm: newValues?.rpm,
+      show: newValues?.show,
+      speed: newValues?.speed,
     }));
   });
   useNuiEvent("UPDATE_HUD_COMPASS", (newValues) => {
@@ -275,9 +280,6 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({
   });
   useNuiEvent("LOAD_HUD_STORAGE", () => {
     getSettings();
-  });
-  useNuiEvent("SET_HUD_SETTINGS_HELP_GUIDES", (data) => {
-    setHelpGuides(data);
   });
 
   const hiddenHudElement = (code: any, key: any) => {
@@ -317,7 +319,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({
     if (localStorage) {
       if (type === "get") {
         if (localStorage.getItem(key) != null) {
-          return JSON.parse(localStorage.getItem(key) || "{}");
+          return JSON.parse(localStorage.getItem(key) ?? "{}");
         }
         return false;
       }
@@ -326,7 +328,6 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({
       return false;
     }
   }
-
   const saveSettings = (type: string) => {
     switch (type) {
       case "hud":
@@ -383,41 +384,33 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({
         });
         handleLocalStorage("vehicleHud", "set", {
           position: {
-            bottom: vehicleHud.position.bottom || 0,
-            left: vehicleHud.position.left || 0,
+            bottom: vehicleHud?.position?.bottom ?? 0,
+            left: vehicleHud?.position?.left ?? 0,
           },
+          type: vehicleHud?.type ?? 2,
         });
         handleLocalStorage("compassHud", "set", {
           active: compassHud.active,
         });
+        handleLocalStorage("bars_type", "set", statusBars.type);
         break;
       default:
         break;
     }
-    fetchNui("OnSettingsSaved", {
-      status: true,
-      newVH: {
-        miniMap: {
-          style: vehicleHud.miniMaP.style,
-        },
-        speedoMeter: {
-          fps: vehicleHud.speedoMeter.fps,
-        },
-      },
-    });
+    fetchNui("OnSettingsSaved");
+    fetchNui("OnHideSettingsMenu");
   };
   const getSettings = () => {
     setVehicleHud((p) => ({
       ...p,
-      show: handleLocalStorage("vehicleHud", "get").show || p.show,
+      show: handleLocalStorage("vehicleHud", "get").show ?? p.show,
       miniMaP: {
         ...p.miniMaP,
-        style: handleLocalStorage("miniMap", "get").style || p.miniMaP.style,
+        style: handleLocalStorage("miniMap", "get").style ?? p.miniMaP.style,
       },
       speedoMeter: {
         ...p.speedoMeter,
-        fps:
-          handleLocalStorage("speedoMeter", "get").style || p.speedoMeter.fps,
+        fps: handleLocalStorage("speedoMeter", "get").fps ?? p.speedoMeter.fps,
       },
       position: {
         bottom:
@@ -429,9 +422,11 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({
             ? handleLocalStorage("vehicleHud", "get").position?.left
             : p?.position?.left,
       },
+      type: handleLocalStorage("vehicleHud", "get").type ?? p.type,
     }));
     setStatusBars((prevState) => ({
       ...prevState,
+      type: handleLocalStorage("bars_type", "get") || prevState.type,
       health: {
         ...prevState.health,
         active:
@@ -540,7 +535,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({
     }));
     setCompassHud((p) => ({
       ...p,
-      active: handleLocalStorage("compassHud", "get").active || p.active,
+      active: handleLocalStorage("compassHud", "get").active ?? p.active,
     }));
   };
 
@@ -550,7 +545,6 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({
     setStatusBars,
     setVehicleHud,
     saveSettings,
-    helpGuides,
     compassHud,
     setCompassHud,
   };

@@ -1,8 +1,9 @@
 import classNames from "classnames";
 import "./index.sass";
-import { HexagonBarProps } from "../../types/BasicTypes";
+import { StatusBarProps } from "../../types/BasicTypes";
+import { inheritColor } from "../../utils/misc";
 
-export const HexagonBar: React.FC<HexagonBarProps> = ({
+export const HexagonBar: React.FC<StatusBarProps> = ({
   color,
   children,
   occupancy,
@@ -15,14 +16,14 @@ export const HexagonBar: React.FC<HexagonBarProps> = ({
     gray: "bg-gray-500/30",
     green: "bg-green-500/40",
     blue: "bg-blue-700/50",
-    orange: "bg-orange-400/40",
-    cyan: "bg-cyan-500/40",
-    red: "bg-red-500/40",
+    orange: "bg-orange_bar/40",
+    cyan: "bg-cyan_bar/40",
+    red: "bg-red_bar/40",
     zinc: "bg-zinc-300/40",
     black: "bg-black/40",
     yellow: "bg-yellow-500/40",
     amber: "bg-amber-500/40",
-    lime: "bg-lime-600/40",
+    lime: "bg-lime_bar/40",
     emerald: "bg-emerald-600/40",
     purple: "bg-purple-600/40",
   };
@@ -30,44 +31,29 @@ export const HexagonBar: React.FC<HexagonBarProps> = ({
     gray: "bg-gray-200/80",
     green: "bg-green-500/80",
     blue: "bg-blue-500/80",
-    orange: "bg-orange-300/80",
-    cyan: "bg-cyan-300/80",
-    red: "bg-red-600/80",
+    orange: "bg-orange_bar/10",
+    cyan: "bg-cyan_bar/10",
+    red: "bg-red_bar/10",
     zinc: "bg-zinc-400/80",
     black: "bg-black/80",
     yellow: "bg-yellow-300/80",
     amber: "bg-amber-300/80",
-    lime: "bg-lime-300/80",
+    lime: "bg-lime_bar/10",
     emerald: "bg-emerald-300/80",
     purple: "bg-purple-300/80",
-  };
-  const inheritColor = {
-    gray: "bg-gray-700",
-    green: "bg-green-700",
-    blue: "bg-blue-950",
-    orange: "bg-orange-400",
-    cyan: "bg-cyan-500",
-    red: "bg-red-800",
-    zinc: "bg-zinc-300",
-    black: "bg-black",
-    yellow: "bg-yellow-500",
-    amber: "bg-amber-500",
-    lime: "bg-lime-600",
-    emerald: "bg-emerald-600",
-    purple: "bg-purple-600",
   };
   const animAftColor = {
     gray: "after:bg-gray-700",
     green: "after:bg-green-700",
     blue: "after:bg-blue-950",
-    orange: "after:bg-orange-400",
-    cyan: "after:bg-cyan-500",
-    red: "after:bg-red-800",
+    orange: "after:bg-orange_bar",
+    cyan: "after:bg-cyan_bar",
+    red: "after:bg-red_bar",
     zinc: "after:bg-zinc-500",
     black: "after:bg-black",
     yellow: "after:bg-yellow-500",
     amber: "after:bg-amber-500",
-    lime: "after:bg-lime-600",
+    lime: "after:bg-lime_bar",
     emerald: "after:bg-emerald-600",
     purple: "after:bg-purple-600",
   };
@@ -77,7 +63,7 @@ export const HexagonBar: React.FC<HexagonBarProps> = ({
   };
 
   return (
-    <div className="hexagon-container !shadow-red-600" hidden={hidden}>
+    <div className="hexagon-container" hidden={hidden}>
       <div
         className={classNames(
           "hexagon flex items-center justify-center",

@@ -1,6 +1,7 @@
 import { HexagonColors } from "./BasicTypes";
 
 export type StatusBarsProps = {
+  type: 1 | 2 | 3 | 4;
   voice: {
     active: boolean;
     color: HexagonColors;
@@ -70,6 +71,7 @@ export type VehicleHudProps = {
   hidden: boolean;
   entity: number;
   kmH: boolean;
+  type: 1 | 2 | 3;
   show: boolean;
   isSeatbeltOn: boolean;
   isPassenger: boolean;
@@ -94,6 +96,9 @@ export type VehicleHudProps = {
     bottom: number;
     left: number;
   };
+  lightsOn: boolean;
+  manualMode: boolean;
+  manualModeType: boolean;
 };
 
 export type CompassHudProps = {
@@ -106,11 +111,6 @@ export type CompassHudProps = {
   };
 };
 
-export type HelpGuideProps = {
-  title: string;
-  description: string;
-};
-
 export type DataContextProps = {
   vehicleHud: VehicleHudProps;
   setVehicleHud: React.Dispatch<React.SetStateAction<VehicleHudProps>>;
@@ -119,5 +119,4 @@ export type DataContextProps = {
   compassHud: CompassHudProps;
   setCompassHud: React.Dispatch<React.SetStateAction<CompassHudProps>>;
   saveSettings: (type: string) => void;
-  helpGuides: HelpGuideProps[];
 };

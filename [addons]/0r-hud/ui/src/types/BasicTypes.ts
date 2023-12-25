@@ -13,12 +13,14 @@ export type HexagonColors =
   | "purple"
   | "lime";
 
-export type HexagonBarProps = {
+export type StatusBarProps = {
   color?: HexagonColors;
   children?: React.ReactNode;
   occupancy?: number;
   hidden?: boolean;
   noAnim?: boolean;
+  icon?: React.ReactNode;
+  animDelay?: string;
 };
 
-export type SettingsPagesProps = "hud" | "help_guides" | "map" | "pause_menu";
+export type SettingsPagesProps = "hud" | "map" | "pause_menu";

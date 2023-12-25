@@ -104,8 +104,20 @@ function Koci.Client.HUD:fVehicleInfoThick(vehicle)
                 local currentSpeed = GetEntitySpeed(vehicle)
                 local engineRunning = GetIsVehicleEngineRunning(vehicle)
                 local rpm = engineRunning and GetVehicleCurrentRpm(vehicle) or 0
-                local gear = engineRunning and GetVehicleCurrentGear(vehicle) or "N"
+                local gear = nil
+                if self.data.vehicle.manualMode then
+                    if engineRunning then
+                        gear = self.data.vehicle.manualGear
+                    end
+                else
+                    gear = engineRunning and GetVehicleCurrentGear(vehicle) or "N"
+                end
                 local engineHealth = engineRunning and math.floor(GetVehicleEngineHealth(vehicle)) or 1000
+                local _, lowBeam, highBeam = GetVehicleLightsState(vehicle)
+                local lightsOn = false
+                if lowBeam == 1 or highBeam == 1 then
+                    lightsOn = true
+                end
                 if engineHealth < 0 then
                     engineHealth = 0
                 end
@@ -123,6 +135,15 @@ function Koci.Client.HUD:fVehicleInfoThick(vehicle)
                 self.data.vehicle.rpm = rpm
                 self.data.vehicle.gear = gear
                 self.data.vehicle.engineHealth = engineHealth
+                self.data.vehicle.lightsOn = lightsOn
+                if Config.Settings.Compass.active then
+                    Koci.Client.HUD:CheckCrossRoads(playerPedId)
+                    Koci.Client.HUD:HeadUpdate(playerPedId)
+                    Koci.Client:SendReactMessage(
+                        "UPDATE_HUD_COMPASS",
+                        self.data.compass
+                    )
+                end
                 Koci.Client:SendReactMessage(
                     "UPDATE_HUD_VEHICLE",
                     self.data.vehicle
@@ -133,23 +154,6 @@ function Koci.Client.HUD:fVehicleInfoThick(vehicle)
             end
         end
     end)
-end
-
-function Koci.Client.HUD:fVehicleCompassThick(vehicle)
-    if Config.Settings.Compass.active then
-        local playerPedId = PlayerPedId()
-        CreateThread(function()
-            while self.data.vehicle.inVehicle and DoesEntityExist(vehicle) do
-                Koci.Client.HUD:CheckCrossRoads(playerPedId)
-                Koci.Client.HUD:HeadUpdate(playerPedId)
-                Koci.Client:SendReactMessage(
-                    "UPDATE_HUD_COMPASS",
-                    self.data.compass
-                )
-                Wait(100)
-            end
-        end)
-    end
 end
 
 function Koci.Client.HUD:LowFuelThread(vehicle)
