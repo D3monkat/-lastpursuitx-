@@ -427,7 +427,7 @@ Config.AdditionalTargets = {
             Heading = 3.27,
             Size = {3.85, 0.6},
             Distance = 2.0,
-            minZ = 28.53.34-1,
+            minZ = 28.53,
             maxZ = 32.34+1.3,
         },
     },
