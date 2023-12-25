@@ -233,7 +233,7 @@ end
 
 function Koci.Client.HUD:ChangeGearMode(value)
     if Config.Settings.VehicleHUD.manualModeType then
-        if Koci.Utils:hasResource("HRSGears") then
+        if Koci.Utils:hasResource("hrsgears") then
             if not Koci.Client.HUD.data.vehicle.inVehicle then
                 if type(value) ~= nil then
                     Koci.Client.HUD.data.vehicle.manualMode = value
