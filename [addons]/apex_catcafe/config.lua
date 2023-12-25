@@ -374,7 +374,7 @@ Config.AdditionalTargets = {
     Cuttingboard = {
         {
             Coords = vector3(2535.86, 2579.57, 38.5),
-            Heading = 0.0,
+            Heading = 184.15,
             Size = {2.7, 0.75},
             Distance = 1.5,
             minZ = 28.53-0.2,
@@ -384,7 +384,7 @@ Config.AdditionalTargets = {
     Prepareboard = {
         {
             Coords = vector3(2536.27, 2580.07, 38.5),
-            Heading = 0.0,
+            Heading = 354.4,
             Size = {2.4, 0.6},
             Distance = 2.0,
             minZ = 28.53-0.2,
@@ -394,7 +394,7 @@ Config.AdditionalTargets = {
     Stove = {
         {
             Coords = vector3(2539.62, 2579.62, 38.5),
-            Heading = 0.0,
+            Heading = 272.09,
             Size = {1.05, 0.65},
             Distance = 1.5,
             minZ = 22.34-0.2,
@@ -404,7 +404,7 @@ Config.AdditionalTargets = {
     Oven = {
         {
             Coords = vector3(2540.15, 2580.26, 38.5),
-            Heading = 0.0,
+            Heading = 274.43,
             Size = {1.1, 0.2},
             Distance = 1.5,
             minZ = 28.34-1,
@@ -414,7 +414,7 @@ Config.AdditionalTargets = {
     Storage = {
         {
             Coords = vector3(2529.0, 2579.39, 38.5),
-            Heading = 0.0,
+            Heading = 178.84,
             Size = {2.4, 0.6},
             Distance = 2.0,
            minZ = 28.53-0.2,
@@ -424,7 +424,7 @@ Config.AdditionalTargets = {
     Ingredients = {
         {
             Coords = vector3(2529.12, 2582.72, 38.5),
-            Heading = 0.0,
+            Heading = 3.27,
             Size = {3.85, 0.6},
             Distance = 2.0,
             minZ = 28.53.34-1,
@@ -434,7 +434,7 @@ Config.AdditionalTargets = {
     Freezer = {
         {
             Coords = vector3(2535.64, 2582.65, 38.5),
-            Heading = 0.0,
+            Heading = 2.51,
             Size = {2.0, 0.6},
             Distance = 2.0,
             minZ = 28.34-1,
@@ -444,7 +444,7 @@ Config.AdditionalTargets = {
     DrinkMachine = {
         {
             Coords = vector3(2535.99, 2585.43, 38.66),
-            Heading = 0.0,
+            Heading = 183.78,
             Size = {0.75, 0.55},
             Distance = 1.5,
             minZ = 32.34-0.2,
