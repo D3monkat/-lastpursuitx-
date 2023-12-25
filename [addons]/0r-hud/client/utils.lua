@@ -1,7 +1,7 @@
-function Utils.Functions:CustomFuelExport()
+function Utils.Functions:CustomFuelExport(vehicle)
     --[[
         for example:
-        return ESX.Math.Round(GetVehicleFuelLevel(HUD.Data.Vehicle), 2)
+        return ESX.Math.Round(GetVehicleFuelLevel(vehicle), 2)
         Please don't forget to delete the following "ErrorHandle" event after setting !
     --]]
     TriggerServerEvent("0r-hud:Server:ErrorHandle", _t("hud.export.fuel_missing"))

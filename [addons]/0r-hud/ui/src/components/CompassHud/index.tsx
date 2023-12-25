@@ -31,10 +31,10 @@ export const CompassHud = () => {
               <div className="triangle-bottom absolute z-50"></div>
               <div className="relative m-[0_auto] font-medium text-white w-[240px]">
                 <svg className="directions transition-transform h-6 w-full">
-                  <text x="0" y="4.5" fill="white" text-anchor="middle">
+                  <text x="0" y="4.5" fill="white" textAnchor="middle">
                     N
                   </text>
-                  <text x="360" y="4.5" fill="white" text-anchor="middle">
+                  <text x="360" y="4.5" fill="white" textAnchor="middle">
                     N
                   </text>
                   <text
@@ -42,7 +42,7 @@ export const CompassHud = () => {
                     x="315"
                     y="4.5"
                     fill="white"
-                    text-anchor="middle"
+                    textAnchor="middle"
                   >
                     NW
                   </text>
@@ -51,7 +51,7 @@ export const CompassHud = () => {
                     x="-45"
                     y="4.5"
                     fill="white"
-                    text-anchor="middle"
+                    textAnchor="middle"
                   >
                     NW
                   </text>
@@ -61,7 +61,7 @@ export const CompassHud = () => {
                     x="45"
                     y="4.5"
                     fill="white"
-                    text-anchor="middle"
+                    textAnchor="middle"
                   >
                     NE
                   </text>
@@ -70,12 +70,12 @@ export const CompassHud = () => {
                     x="405"
                     y="4.5"
                     fill="white"
-                    text-anchor="middle"
+                    textAnchor="middle"
                   >
                     NE
                   </text>
 
-                  <text x="90" y="4.5" fill="white" text-anchor="middle">
+                  <text x="90" y="4.5" fill="white" textAnchor="middle">
                     E
                   </text>
                   <text
@@ -83,7 +83,7 @@ export const CompassHud = () => {
                     x="135"
                     y="4.5"
                     fill="white"
-                    text-anchor="middle"
+                    textAnchor="middle"
                   >
                     SE
                   </text>
@@ -92,7 +92,7 @@ export const CompassHud = () => {
                     x="180"
                     y="4.5"
                     fill="white"
-                    text-anchor="middle"
+                    textAnchor="middle"
                   >
                     SE
                   </text>
@@ -101,11 +101,11 @@ export const CompassHud = () => {
                     x="225"
                     y="4.5"
                     fill="white"
-                    text-anchor="middle"
+                    textAnchor="middle"
                   >
                     SW
                   </text>
-                  <text x="270" y="4.5" fill="white" text-anchor="middle">
+                  <text x="270" y="4.5" fill="white" textAnchor="middle">
                     W
                   </text>
                 </svg>

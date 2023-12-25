@@ -73,10 +73,8 @@ function Koci.Client.HUD:Start(xPlayer)
     self.data.vehicle.kmh = Config.Settings.VehicleHUD.kmH
     Koci.Client:SendReactMessage("SET_HUD_STATUS_BARS_ACTIVE", Config.Settings.StatusBars)
     Koci.Client:SendReactMessage("SET_HUD_VEHICLE_ACTIVE", Config.Settings.VehicleHUD)
-    Koci.Client:SendReactMessage("SET_HUD_SETTINGS_HELP_GUIDES", Config.HelpGuides)
-    Wait(500)
+    Wait(1000)
     Koci.Client:SendReactMessage("LOAD_HUD_STORAGE")
-    Wait(500)
     Koci.Client:SendReactMessage("setVisible", true)
 end
 
@@ -151,13 +149,17 @@ function Koci.Client.HUD:GetFuelExport()
         end
     elseif GetResourceState("cdn-fuel") == "started" then
         if Config.FrameWork == "esx" then
-            return Koci.Framework.Math.Round(Entity(self.data.vehicle.entity).state.fuel or 0, 2)
+            return Koci.Framework.Math.Round(exports["cdn-fuel"]:GetFuel(self.data.vehicle.entity) or 0, 2)
         elseif Config.FrameWork == "qb" then
             return Koci.Framework.Shared.Round(exports["cdn-fuel"]:GetFuel(self.data.vehicle.entity) or 0, 2)
         end
     else
-        local response = Koci.Utils:CustomFuelExport()
-        return response
+        local response = Koci.Utils:CustomFuelExport(self.data.vehicle.entity)
+        if Config.FrameWork == "esx" then
+            return Koci.Framework.Math.Round(response or 0, 2)
+        elseif Config.FrameWork == "qb" then
+            return Koci.Framework.Shared.Round(response or 0, 2)
+        end
     end
 end
 
@@ -175,7 +177,6 @@ function Koci.Client.HUD:ActivateVehicleHud(veh)
     self.data.vehicle.show = true
     self:fVehicleInfoThick(veh)
     self:LowFuelThread(veh)
-    self:fVehicleCompassThick(veh)
 end
 
 function Koci.Client.HUD:UpdateVehicleHud(data)
@@ -228,4 +229,28 @@ function Koci.Client.HUD:CheckVehicleFuelType(vehicle)
         end
     end
     return "gasoline"
+end
+
+function Koci.Client.HUD:ChangeGearMode(value)
+    if Config.Settings.VehicleHUD.manualModeType then
+        if Koci.Utils:hasResource("hrsgears") then
+            if not Koci.Client.HUD.data.vehicle.inVehicle then
+                if type(value) ~= nil then
+                    Koci.Client.HUD.data.vehicle.manualMode = value
+                else
+                    Koci.Client.HUD.data.vehicle.manualMode = not Koci.Client.HUD.data.vehicle.manualMode
+                end
+                TriggerEvent("hrsgears:SetManualMode", Koci.Client.HUD.data.vehicle.manualMode)
+                if Koci.Client.HUD.data.vehicle.manualMode then
+                    Koci.Client:SendNotify(_t("notify.opened_manual_mode"), "success")
+                else
+                    Koci.Client:SendNotify(_t("notify.closed_manual_mode"), "success")
+                end
+            else
+                Koci.Client:SendNotify(_t("notify.manual_mode_change_error"), "error")
+            end
+        else
+            Koci.Client:SendNotify(_t("notify.hrsgears_script_error"), "error")
+        end
+    end
 end

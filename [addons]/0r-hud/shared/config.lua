@@ -50,20 +50,10 @@ Config.Settings         = {
         active = true,
         kmH = false, -- true = kmH, false = mpH
         lowFuelNotify = true,
+        manualModeType = true
     },
     Compass = {
         active = true,
-    },
-}
-
-Config.HelpGuides       = {
-    [1] = {
-        title = "Command: /hudclose <number>",
-        description = "Hidden any hud element."
-    },
-    [2] = {
-        title = "Command: /hudopen <number>",
-        description = "Show any hud element."
     },
 }
 

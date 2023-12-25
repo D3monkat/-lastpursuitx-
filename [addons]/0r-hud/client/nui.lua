@@ -3,20 +3,25 @@ RegisterNUICallback("OnHideSettingsMenu", function(_, cb)
     cb(true)
 end)
 
+RegisterNUICallback("OnGearModeChanged", function(newMode, cb)
+    Wait(500)
+    Koci.Client.HUD:ChangeGearMode(newMode)
+    cb(true)
+end)
+
 RegisterNUICallback("loadLocaleFile", function(_, cb)
     Wait(1)
     Koci.Client:SendReactMessage("setLocale", locales.ui)
     cb(true)
 end)
 
-RegisterNUICallback("OnSettingsSaved", function(data, cb)
-    if data then
-        Koci.Client:SendNotify(_t("hud.settings.saved"))
-        local newVH = data.newVH
-        Koci.Client.HUD:UpdateVehicleHud(newVH)
-    else
-        Koci.Client:SendNotify(_t("hud.settings.not_saved"))
-    end
+RegisterNUICallback("OnSettingsSaved", function(_, cb)
+    Koci.Client:SendNotify(_t("hud.settings.saved"))
+    cb(true)
+end)
+
+RegisterNUICallback("OnVehicleHudChanged", function(data, cb)
+    Koci.Client.HUD:UpdateVehicleHud(data.newVH)
     cb(true)
 end)
 

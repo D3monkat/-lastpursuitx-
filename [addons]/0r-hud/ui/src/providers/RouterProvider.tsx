@@ -4,14 +4,11 @@ import { PageTypes, RouterProviderProps } from "../types/RouterProviderTypes";
 import Home from "../pages/Home";
 import Settings from "../pages/Settings";
 import { debugData } from "../utils/debugData";
-import { useVisibility } from "../hooks/useVisibility";
-import { isEnvBrowser } from "../utils/misc";
-import { fetchNui } from "../utils/fetchNui";
 
 debugData([
   {
     action: "setRouter",
-    data: "home",
+    data: "settings",
   },
 ]);
 
@@ -22,7 +19,6 @@ export const RouterCtx = createContext<RouterProviderProps>(
 export const RouterProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
-  const { visible } = useVisibility();
   const [router, setRouter] = useState<PageTypes>("home");
   const [page, setPage] = useState<React.ReactNode | null>(null);
 
@@ -32,20 +28,6 @@ export const RouterProvider: React.FC<{ children: React.ReactNode }> = ({
     if (router == "home") setPage(<Home />);
     if (router == "settings") setPage(<Settings />);
   }, [router]);
-
-  useEffect(() => {
-    if (!visible || router != "settings") return;
-    const keyHandler = (e: KeyboardEvent) => {
-      if (["Escape"].includes(e.code)) {
-        if (!isEnvBrowser()) {
-          fetchNui("OnHideSettingsMenu");
-          setRouter("home");
-        }
-      }
-    };
-    window.addEventListener("keydown", keyHandler);
-    return () => window.removeEventListener("keydown", keyHandler);
-  }, [router, visible]);
 
   const value = useMemo(() => {
     return {

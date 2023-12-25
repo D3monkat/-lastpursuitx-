@@ -1,5 +1,7 @@
+import classNames from "classnames";
 import useLocales from "../../hooks/useLocales";
 import { HexagonColors } from "../../types/BasicTypes";
+import { inheritColor } from "../../utils/misc";
 
 interface ColorSelectorProps {
   color: HexagonColors;
@@ -28,6 +30,10 @@ export const ColorSelector: React.FC<ColorSelectorProps> = ({
     "lime",
   ];
 
+  const colorCalculator = (color: HexagonColors): string => {
+    return inheritColor[color];
+  };
+
   const colorOptions: JSX.Element[] = [
     <option key="" value="" disabled>
       {locale.settings_text_color}
@@ -44,14 +50,22 @@ export const ColorSelector: React.FC<ColorSelectorProps> = ({
       <label htmlFor="colorSelector" className="sr-only">
         Color
       </label>
-      <select
-        id="colorSelector"
-        className="bg-[#005e5d] text-white text-xs py-1.5 ring-0 outline-none"
-        value={color}
-        onChange={handleOnChange}
-      >
-        {colorOptions}
-      </select>
+      <div className="flex justify-center items-center">
+        <div
+          className={classNames(
+            "h-[30px] w-full border border-[#2D2D2D]",
+            colorCalculator(color)
+          )}
+        ></div>
+        <select
+          id="colorSelector"
+          className="bg-[#272727] border border-[#2D2D2D] text-white text-[10px] py-1.5 ring-0 outline-none font-bold px-4"
+          value={color}
+          onChange={handleOnChange}
+        >
+          {colorOptions}
+        </select>
+      </div>
     </>
   );
 };

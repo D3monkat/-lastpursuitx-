@@ -28,6 +28,9 @@ RegisterNetEvent("0r-hud:Client:ShowHudElement", function(element, code)
         code = code
     })
 end)
+RegisterNetEvent("0r-hud:Client:SetManualGear", function(newGear)
+    Koci.Client.HUD.data.vehicle.manualGear = newGear
+end)
 -- @ --
 
 if GetResourceState("pma-voice") == "started" then
@@ -104,7 +107,6 @@ end
 if Config.FrameWork == "qb" then
     RegisterNetEvent("QBCore:Client:OnPlayerLoaded", function()
         Wait(1000)
-        Koci.Client:SendReactMessage("LOAD_HUD_STORAGE")
         Koci.Client.HUD:Start(xPlayer)
     end)
 

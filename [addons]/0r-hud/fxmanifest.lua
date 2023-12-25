@@ -7,7 +7,7 @@ lua54 "yes"
 --[[ Resource Information ]]
 name "0r-hud"
 author "0-Resmon"
-version "1.1.0"
+version "2.0.0"
 description "0Resmon:HUD"
 
 --[[ Manifest ]]
@@ -21,7 +21,8 @@ client_scripts {
     "client/functions.lua",
     "client/events.lua",
     "client/nui.lua",
-    "client/threads.lua"
+    "client/threads.lua",
+    "client/commands.lua",
 }
 
 server_scripts {
@@ -42,13 +43,10 @@ files {
 
 escrow_ignore {
     "locales/**/*",
-    "shared/config.lua",
-    "shared/utils.lua",
-    "client/variables.lua",
-    "client/utils.lua",
-    "server/variables.lua",
-    "server/utils.lua",
-    "server/commands.lua",
-    "ui/build/**/*",
-    "ui/public/**/*"
+    "shared/**/*",
+    "client/**/*",
+    "server/**/*",
+    "ui/**/*",
 }
+
+dependency '/assetpacks'

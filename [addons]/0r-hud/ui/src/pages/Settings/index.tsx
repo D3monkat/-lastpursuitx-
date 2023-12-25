@@ -1,341 +1,170 @@
-import { FaGear } from "react-icons/fa6";
-import { TbTableFilled } from "react-icons/tb";
-import { IoHelp } from "react-icons/io5";
-import { TbSettingsPause } from "react-icons/tb";
-import { FaMapLocationDot } from "react-icons/fa6";
-import classNames from "classnames";
 import { useEffect, useState } from "react";
 import { SettingsPagesProps } from "../../types/BasicTypes";
-import { HudSettings } from "./HudSettings";
 import useData from "../../hooks/useData";
 import "./index.sass";
-import Home from "../Home";
 import { fetchNui } from "../../utils/fetchNui";
 import useLocales from "../../hooks/useLocales";
-import { HelpGuides } from "./HelpGuides";
+import { HudSettings } from "./HudSettings";
+import Home from "../Home";
+import useRouter from "../../hooks/useRouter";
 
 const Settings = () => {
-  const { saveSettings } = useData();
+  const { saveSettings, vehicleHud, setVehicleHud } = useData();
   const { locale } = useLocales();
-
+  const { setRouter, router } = useRouter();
   const [activePage, setActivePage] = useState<SettingsPagesProps>("hud");
-
   const handleSaveSettings = () => {
     saveSettings(activePage);
+    setRouter("home");
   };
 
   useEffect(() => {
-    if (activePage == "map") {
-      const event = new KeyboardEvent("keydown", {
-        key: "Escape",
-        code: "Escape",
-      });
-      window.dispatchEvent(event);
-      fetchNui("openBigMap");
-    } else if (activePage == "pause_menu") {
-      const event = new KeyboardEvent("keydown", {
-        key: "Escape",
-        code: "Escape",
-      });
-      window.dispatchEvent(event);
-      fetchNui("openPauseMenu");
+    if (router == "settings") {
+      if (activePage == "map") {
+        setRouter("home");
+        fetchNui("OnHideSettingsMenu");
+        fetchNui("openBigMap");
+      } else if (activePage == "pause_menu") {
+        setRouter("home");
+        fetchNui("OnHideSettingsMenu");
+        fetchNui("openPauseMenu");
+      }
     }
-  }, [activePage]);
+  }, [activePage, router, setRouter]);
 
   return (
     <>
       <div className="h-full w-full flex items-center justify-center">
-        <div className="relative flex w-[50rem] h-[51rem] flex-col rounded-2xl bg-gradient-to-b from-settings/70 to-[#22283b]">
+        <div className="relative flex w-[50rem] h-[51rem] flex-col rounded-2xl bg-settings/[0.95] border-[2px] border-[#212121]">
           <div>
             <div className="p-4 text-start flex items-center gap-2">
               <div className="relative">
-                <FaGear className="w-6 h-6 text-settings_green" />
-                <div className="absolute shadow-settings_green shadow-[0_0_24px_8px] left-3 bottom-3"></div>
+                <img
+                  src="images/setting-icon.svg"
+                  alt="settings-icon"
+                  className="text-settings_green"
+                />
+                <div className="absolute shadow-settings_green shadow-[0_0_24px_4px] left-4 bottom-4"></div>
               </div>
               <div>
                 <h1 className="font-bold text-xl font-[inherit] text-settings_green text-shadow shadow-settings_green">
                   {locale.settings_text_settings_menu}
                 </h1>
-                <h1 className="text-sm font-[inherit] text-gray-400">
+                <h1 className="text-sm font-[inherit] text-[#757575]">
                   {locale.settings_text_change_your_settings}
                 </h1>
               </div>
               <div className="ml-auto">
                 <button
-                  className="bg-[#003c3f] p-1.5 px-8 brightness-110 hover:brightness-125 rounded-sm"
+                  className="bg-white p-1.5 px-4 rounded brightness-110 hover:brightness-125"
                   onClick={handleSaveSettings}
                 >
-                  <h1 className="text-sm text-settings_green">
+                  <h1 className="text-black font-extrabold uppercase">
                     {locale.settings_text_save}
                   </h1>
                 </button>
               </div>
             </div>
-            <hr className="border-white/10 mb-2" />
-            <div className="py-4 px-8 h-full">
-              <div className="flex gap-6 h-full">
-                <div>
-                  <div className="flex flex-col gap-2.5">
-                    <button
-                      onClick={() => setActivePage("hud")}
-                      className={classNames(
-                        "bg-gray-700 w-36 h-40 bg-opacity-80 transition-all group hover:bg-[#003c3f]",
-                        {
-                          "!bg-[#003c3f]": activePage == "hud",
-                        }
-                      )}
+            <hr className="border-[#212121] border" />
+          </div>
+          <div className="p-3">
+            <div className="flex gap-4 items-center mb-3">
+              <button
+                onClick={() => setActivePage("map")}
+                className="group transition-colors max-w-[220px] h-[92px] w-full border-[2px] border-[#212121] flex items-center justify-center text-center rounded bg-cover bg-no-repeat"
+                style={{ backgroundImage: `url("images/GTAV_Atlas.png")` }}
+              >
+                <div className="text-[#949EFF] font-bold uppercase group-hover:text-settings_green">
+                  <h1 className="text-3xl">{locale.settings_text_map}</h1>
+                  <h1 className="text-sm">{locale.settings_text_open_map}</h1>
+                </div>
+              </button>
+              <button
+                onClick={() => setActivePage("map")}
+                className="transition-colors max-w-[70px] h-[92px] rounded bg-cover bg-no-repeat w-full"
+                style={{
+                  backgroundImage: `url("images/game-settings-button.svg")`,
+                }}
+              />
+              <div className="flex flex-col gap-2 w-full">
+                <div className="flex justify-between items-center bg-[#212121] text-start rounded h-[42px] p-2 px-3">
+                  <div className="mr-2">
+                    <h1 className="font-bold text-white text-[13px]">
+                      {locale.settings_text_minimap_style}
+                    </h1>
+                    <h1 className="max-h-4 text-[9px] font-[inherit] text-[#757575] whitespace-nowrap text-ellipsis overflow-hidden">
+                      {locale.settings_text_choose_minimap_style}
+                    </h1>
+                  </div>
+                  <div>
+                    <label htmlFor="minimapstyle" className="sr-only">
+                      {locale.settings_text_minimap_style}
+                    </label>
+                    <select
+                      id="minimapstyle"
+                      className="bg-[#272727] text-white text-sm p-1 px-2 rounded-sm ring-0 outline-none"
+                      value={vehicleHud.miniMaP.style}
+                      onChange={(event) => {
+                        setVehicleHud((p) => ({
+                          ...p,
+                          miniMaP: {
+                            ...p.miniMaP,
+                            style: event.target.value as any,
+                          },
+                        }));
+                      }}
                     >
-                      <div className="flex flex-col w-full h-full">
-                        <div className="mt-6 mx-auto relative">
-                          <TbTableFilled
-                            className={classNames(
-                              "w-16 h-16 text-settings_gray group-hover:text-settings_green",
-                              {
-                                "!text-settings_green": activePage == "hud",
-                              }
-                            )}
-                          />
-                          <div
-                            className={classNames(
-                              "absolute left-8 bottom-7 group-hover:shadow-settings_green group-hover:shadow-[0_0_48px_14px]",
-                              {
-                                "shadow-settings_green shadow-[0_0_48px_14px]":
-                                  activePage == "hud",
-                              },
-                              {
-                                "shadow-settings_gray shadow-[0_0_48px_14px]":
-                                  activePage != "hud",
-                              }
-                            )}
-                          ></div>
-                        </div>
-                        <div className="mt-auto m-3 mx-4 font-[inherit]">
-                          <div>
-                            <h1
-                              className={classNames(
-                                "font-bold text-settings_gray group-hover:text-settings_green",
-                                {
-                                  "!text-settings_green": activePage == "hud",
-                                }
-                              )}
-                            >
-                              {locale.settings_text_hud}
-                            </h1>
-                            <h1 className="text-xs font-medium text-white/40 -mt-1">
-                              {locale.settings_text_settings}
-                            </h1>
-                          </div>
-                        </div>
-                        <div
-                          className={classNames(
-                            "w-full h-1 group-hover:bg-settings_green group-hover:shadow-settings_green group-hover:shadow-[0_0_8px_0px]",
-                            {
-                              "bg-settings_green shadow-settings_green shadow-[0_0_8px_0px]":
-                                activePage == "hud",
-                            },
-                            {
-                              "bg-white/30 shadow-white/30 shadow-[0_0_8px_0px]":
-                                activePage != "hud",
-                            }
-                          )}
-                        />
-                      </div>
-                    </button>
-                    <button
-                      onClick={() => setActivePage("help_guides")}
-                      className={classNames(
-                        "bg-gray-700 w-36 h-40 bg-opacity-80 transition-all group hover:bg-[#003c3f]",
-                        {
-                          "!bg-[#003c3f]": activePage == "help_guides",
-                        }
-                      )}
-                    >
-                      <div className="flex flex-col w-full h-full">
-                        <div className="mt-6 mx-auto relative">
-                          <IoHelp
-                            className={classNames(
-                              "w-14 h-14 text-settings_gray bg-settings_gray/40 rounded-3xl group-hover:text-settings_green gorup-hover:bg-settings_green/20",
-                              {
-                                "!text-settings_green !bg-settings_green/20":
-                                  activePage == "help_guides",
-                              }
-                            )}
-                          />
-                        </div>
-                        <div className="mt-auto m-3 mx-4 font-[inherit]">
-                          <div>
-                            <h1
-                              className={classNames(
-                                "font-bold text-settings_gray group-hover:text-settings_green",
-                                {
-                                  "!text-settings_green":
-                                    activePage == "help_guides",
-                                }
-                              )}
-                            >
-                              {locale.settings_text_help_guides}
-                            </h1>
-                            <h1 className="text-xs font-medium text-white/40 -mt-1">
-                              {locale.settings_text_settings}
-                            </h1>
-                          </div>
-                        </div>
-                        <div
-                          className={classNames(
-                            "w-full h-1 group-hover:bg-settings_green group-hover:shadow-settings_green group-hover:shadow-[0_0_8px_0px]",
-                            {
-                              "bg-settings_green shadow-settings_green shadow-[0_0_8px_0px]":
-                                activePage == "help_guides",
-                            },
-                            {
-                              "bg-white/30 shadow-white/30 shadow-[0_0_8px_0px]":
-                                activePage != "help_guides",
-                            }
-                          )}
-                        />
-                      </div>
-                    </button>
-                    <button
-                      onClick={() => setActivePage("map")}
-                      className={classNames(
-                        "bg-gray-700 w-36 h-40 bg-opacity-80 transition-all group hover:bg-[#003c3f]",
-                        {
-                          "!bg-[#003c3f]": activePage == "map",
-                        }
-                      )}
-                    >
-                      <div className="flex flex-col w-full h-full">
-                        <div className="mt-6 mx-auto relative">
-                          <FaMapLocationDot
-                            className={classNames(
-                              "w-16 h-16 text-settings_gray group-hover:text-settings_green",
-                              {
-                                "!text-settings_green": activePage == "map",
-                              }
-                            )}
-                          />
-                          <div
-                            className={classNames(
-                              "absolute left-8 bottom-7 group-hover:shadow-settings_green group-hover:shadow-[0_0_48px_14px]",
-                              {
-                                "shadow-settings_green shadow-[0_0_48px_14px]":
-                                  activePage == "map",
-                              },
-                              {
-                                "shadow-settings_gray shadow-[0_0_48px_14px]":
-                                  activePage != "map",
-                              }
-                            )}
-                          ></div>
-                        </div>
-                        <div className="mt-auto m-3 mx-4 font-[inherit]">
-                          <div>
-                            <h1
-                              className={classNames(
-                                "font-bold text-settings_gray group-hover:text-settings_green",
-                                {
-                                  "!text-settings_green": activePage == "map",
-                                }
-                              )}
-                            >
-                              {locale.settings_text_map}
-                            </h1>
-                            <h1 className="text-xs font-medium text-white/40 -mt-1">
-                              {locale.settings_text_open_map}
-                            </h1>
-                          </div>
-                        </div>
-                        <div
-                          className={classNames(
-                            "w-full h-1 group-hover:bg-settings_green group-hover:shadow-settings_green group-hover:shadow-[0_0_8px_0px]",
-                            {
-                              "bg-settings_green shadow-settings_green shadow-[0_0_8px_0px]":
-                                activePage == "map",
-                            },
-                            {
-                              "bg-white/30 shadow-white/30 shadow-[0_0_8px_0px]":
-                                activePage != "map",
-                            }
-                          )}
-                        />
-                      </div>
-                    </button>
-                    <button
-                      onClick={() => setActivePage("pause_menu")}
-                      className={classNames(
-                        "bg-gray-700 w-36 h-40 bg-opacity-80 transition-all group hover:bg-[#003c3f]",
-                        {
-                          "!bg-[#003c3f]": activePage == "pause_menu",
-                        }
-                      )}
-                    >
-                      <div className="flex flex-col w-full h-full">
-                        <div className="mt-6 mx-auto relative">
-                          <TbSettingsPause
-                            className={classNames(
-                              "w-16 h-16 text-settings_gray group-hover:text-settings_green",
-                              {
-                                "!text-settings_green":
-                                  activePage == "pause_menu",
-                              }
-                            )}
-                          />
-                          <div
-                            className={classNames(
-                              "absolute left-8 bottom-7 group-hover:shadow-settings_green group-hover:shadow-[0_0_48px_14px]",
-                              {
-                                "shadow-settings_green shadow-[0_0_48px_14px]":
-                                  activePage == "pause_menu",
-                              },
-                              {
-                                "shadow-settings_gray shadow-[0_0_48px_14px]":
-                                  activePage != "pause_menu",
-                              }
-                            )}
-                          ></div>
-                        </div>
-                        <div className="mt-auto m-3 mx-4 font-[inherit]">
-                          <div>
-                            <h1
-                              className={classNames(
-                                "font-bold text-settings_gray group-hover:text-settings_green",
-                                {
-                                  "!text-settings_green":
-                                    activePage == "pause_menu",
-                                }
-                              )}
-                            >
-                              {locale.settings_text_settings}
-                            </h1>
-                            <h1 className="text-xs font-medium text-white/40 -mt-1">
-                              {locale.settings_text_open_settings_menu}
-                            </h1>
-                          </div>
-                        </div>
-                        <div
-                          className={classNames(
-                            "w-full h-1 group-hover:bg-settings_green group-hover:shadow-settings_green group-hover:shadow-[0_0_8px_0px]",
-                            {
-                              "bg-settings_green shadow-settings_green shadow-[0_0_8px_0px]":
-                                activePage == "pause_menu",
-                            },
-                            {
-                              "bg-white/30 shadow-white/30 shadow-[0_0_8px_0px]":
-                                activePage != "pause_menu",
-                            }
-                          )}
-                        />
-                      </div>
-                    </button>
+                      <option value={""} disabled>
+                        {locale.settings_text_choose_minimap_style}
+                      </option>
+                      <option value="square">
+                        {locale.settings_text_minimap_square}
+                      </option>
+                      <option value="circle">
+                        {locale.settings_text_minimap_circle}
+                      </option>
+                    </select>
                   </div>
                 </div>
-                <div className="w-full overflow-auto h-[42.5rem] no-scrollbar">
-                  {/* Menü itemleri */}
-                  {activePage == "hud" && <HudSettings />}
-                  {activePage == "help_guides" && <HelpGuides />}
-                  {/* @ */}
+                <div className="flex justify-between items-center bg-[#212121] text-start rounded h-[42px] p-2 px-3">
+                  <div className="mr-2">
+                    <h1 className="font-bold text-white text-[13px]">
+                      {locale.settings_text_speedometerFPS}
+                    </h1>
+                    <h1 className="max-h-4 text-[9px] font-[inherit] text-[#757575]">
+                      {locale.settings_text_speedometer_desc}
+                    </h1>
+                  </div>
+                  <div>
+                    <label htmlFor="speedometerfps" className="sr-only">
+                      {locale.settings_text_speedometerFPS}
+                    </label>
+                    <select
+                      id="speedometerfps"
+                      className="bg-[#272727] text-white text-sm p-1 px-2 rounded-sm ring-0 outline-none"
+                      value={vehicleHud.speedoMeter.fps}
+                      onChange={(event) => {
+                        setVehicleHud((p) => ({
+                          ...p,
+                          speedoMeter: {
+                            fps: parseInt(event.target.value),
+                          },
+                        }));
+                      }}
+                    >
+                      <option value="" disabled>
+                        {locale.settings_text_speedometerFPS}
+                      </option>
+                      <option value={15}>15</option>
+                      <option value={30}>30</option>
+                      <option value={60}>60</option>
+                    </select>
+                  </div>
                 </div>
               </div>
+            </div>
+            <div className="w-full overflow-auto h-[38rem] no-scrollbar">
+              <HudSettings />
             </div>
           </div>
         </div>
