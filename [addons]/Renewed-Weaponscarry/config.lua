@@ -9,10 +9,10 @@ return {
         slot = 3,
     },
     -- Contraband
-    money = {
-        model = `prop_money_bag_01`,
-        slot = 3,
-    },
+    -- money = {
+    --     model = `prop_money_bag_01`,
+    --     slot = 3,
+    -- },
 
     -- Custom Weapons Tier 1
     weapon_assaultrifle  = {
