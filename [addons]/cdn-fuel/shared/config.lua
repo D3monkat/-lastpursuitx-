@@ -124,10 +124,10 @@ Config.ElectricVehicles = { -- List of Electric Vehicles in the Base Game.
     ["surge"] = {
         isElectric = true,
     },
-    ["l150f"] = {
+    ["f150l"] = {
         isElectric = true,
     },
-    ["liquidair"] = {
+    ["lucidair"] = {
         isElectric = true
     },
     ["airace"] = {
@@ -139,19 +139,19 @@ Config.ElectricVehicles = { -- List of Electric Vehicles in the Base Game.
     ["rsetramgt"] = {
         isElectric = true
     },
-    ["bayere3"] = {
+    ["bmwi3"] = {
         isElectric = true
     },
-    ["bayere8"] = {
+    ["bmwi8"] = {
         isElectric = true
     },
-    ["bayerex"] = {
+    ["bmwix"] = {
         isElectric = true
     },
     ["l150f"] = {
         isElectric = true
     },
-    ["marche"] = {
+    ["mache"] = {
         isElectric = true
     },
     ["cybertruck"] = {
@@ -160,22 +160,22 @@ Config.ElectricVehicles = { -- List of Electric Vehicles in the Base Game.
     ["cyberquad"] = {
         isElectric = true
     },
-    ["medol3"] = {
+    ["model3"] = {
         isElectric = true
     },
-    ["medols"] = {
+    ["models"] = {
         isElectric = true
     },
-    ["medolsplaid"] = {
+    ["modelsplaid"] = {
         isElectric = true
     },
-    ["medolx"] = {
+    ["modelx"] = {
         isElectric = true
     },
-    ["medolxplaid"] = {
+    ["modelxplaid"] = {
         isElectric = true
     },
-    ["medoly"] = {
+    ["modely"] = {
         isElectric = true
     },
     ["roadstersport"] = {
@@ -184,13 +184,13 @@ Config.ElectricVehicles = { -- List of Electric Vehicles in the Base Game.
     ["semi"] = {
         isElectric = true
     },
-    ["mbeve"] = {
+    ["mbeqe"] = {
         isElectric = true
     },
-    ["mbevg"] = {
+    ["mbeqg"] = {
         isElectric = true
     },
-    ["mbevs"] = {
+    ["mbeqs"] = {
         isElectric = true
     },
     ["iwagen"] = {
@@ -241,6 +241,21 @@ Config.ElectricVehicles = { -- List of Electric Vehicles in the Base Game.
     ["khamelion"] = {
         isElectric = true,
     },
+    ["godz22lightningwb"] = {
+        isElectric = true
+    },
+    ["godzbanshee"] = {
+        isElectric = true
+    },
+    ["godzbansheem"] = {
+        isElectric = true
+    },
+    ["godzhummerev"] = {
+        isElectric = true
+    },
+    ["godzmache1400"] = {
+        isElectric = true
+    },
 }
 Config.ElectricSprite = 620 -- This is for when the player is in an electric charger, the blips with change to this sprite. (Sprite with a car with a bolt going through it: 620)
 Config.ElectricChargerModel = true -- If you wish, you can set this to false to add your own props, or use a ymap for the props instead.
@@ -263,19 +278,34 @@ Config.NoFuelUsage = { -- This is for you to put vehicles that you don't want to
     ["rsetramgt"] = {
         blacklisted = true
     },
-    ["bayere3"] = {
+    ["godz22lightningwb"] = {
         blacklisted = true
     },
-    ["bayere8"] = {
+    ["godzbanshee"] = {
         blacklisted = true
     },
-    ["bayerex"] = {
+    ["godzbansheem"] = {
         blacklisted = true
     },
-    ["l150f"] = {
+    ["godzhummerev"] = {
         blacklisted = true
     },
-    ["marche"] = {
+    ["godzmache1400"] = {
+        blacklisted = true
+    },
+    ["bmwi3"] = {
+        blacklisted = true
+    },
+    ["bmwi8"] = {
+        blacklisted = true
+    },
+    ["bmwix"] = {
+        blacklisted = true
+    },
+    ["f150l"] = {
+        blacklisted = true
+    },
+    ["mache"] = {
         blacklisted = true
     },
     ["cybertruck"] = {
@@ -284,22 +314,22 @@ Config.NoFuelUsage = { -- This is for you to put vehicles that you don't want to
     ["cyberquad"] = {
         blacklisted = true
     },
-    ["medol3"] = {
+    ["model3"] = {
         blacklisted = true
     },
-    ["medols"] = {
+    ["models"] = {
         blacklisted = true
     },
-    ["medolsplaid"] = {
+    ["modelsplaid"] = {
         blacklisted = true
     },
-    ["medolx"] = {
+    ["modelx"] = {
         blacklisted = true
     },
-    ["medolxplaid"] = {
+    ["modelxplaid"] = {
         blacklisted = true
     },
-    ["medoly"] = {
+    ["modely"] = {
         blacklisted = true
     },
     ["roadstersport"] = {
@@ -308,13 +338,13 @@ Config.NoFuelUsage = { -- This is for you to put vehicles that you don't want to
     ["semi"] = {
         blacklisted = true
     },
-    ["mbeve"] = {
+    ["mbeqe"] = {
         blacklisted = true
     },
-    ["mbevg"] = {
+    ["mbeqg"] = {
         blacklisted = true
     },
-    ["mbevs"] = {
+    ["mbeqs"] = {
         blacklisted = true
     },
 }
