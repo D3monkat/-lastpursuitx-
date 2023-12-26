@@ -146,7 +146,7 @@ end)
 --[[ CRAFTING ]]--
 RegisterNetEvent('jim-catcafe:Crafting:MakeItem', function(data)
 	if not CraftLock then CraftLock = true else return end
-	local bartime = 5000
+	local bartime = 2000
 	if (data.amount and data.amount ~= 1) then data.craft["amount"] = data.amount
 		for k, v in pairs(data.craft[data.item]) do	data.craft[data.item][k] *= data.amount	end
 		bartime *= data.amount bartime *= 0.9
