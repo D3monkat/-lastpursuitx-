@@ -8716,4 +8716,34 @@ return {
 			image = "cfsteak.png",
 		}
 	},
+
+	["medikit"] = {
+		label = "Medikit",
+		weight = 500,
+		stack = true,
+		close = false,
+		client = {
+			image = "your_image.png",
+		}
+	},
+
+	["sponge"] = {
+		label = "Sponge",
+		weight = 500,
+		stack = true,
+		close = false,
+		client = {
+			image = "your_image.png",
+		}
+	},
+
+	["fixkit"] = {
+		label = "Fixkit",
+		weight = 500,
+		stack = true,
+		close = false,
+		client = {
+			image = "your_image.png",
+		}
+	},
 }
