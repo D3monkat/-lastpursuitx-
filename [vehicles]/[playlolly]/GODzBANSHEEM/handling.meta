@@ -5,7 +5,7 @@
   <HandlingData>
     <Item type="CHandlingData">
       <handlingName>GODzBANSHEEM</handlingName>
-      <fMass value="1.000000" />
+      <fMass value="2200.000000" />
       <fInitialDragCoeff value="0.700000" />
       <fPercentSubmerged value="85.000000" />
       <vecCentreOfMassOffset x="0.000000" y="0.180000" z="0.000000" />
