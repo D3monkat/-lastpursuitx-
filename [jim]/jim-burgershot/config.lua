@@ -17,7 +17,7 @@ Config = {
 	MultiCraft = true,
 	MultiCraftAmounts = { [1], [5], [10] },
 
-	JimConsumables = true, -- Enable this to disable this scripts control of food/drink items
+	JimConsumables = false, -- Enable this to disable this scripts control of food/drink items
 	JimShop = false, 		-- Enable this to use jim-shops for buying ingredients
 
 
@@ -64,7 +64,7 @@ Config = {
 				out = vec4(-1170.47, -900.8, 13.81, 29.65),
 				list = { "stalion2", "burrito3", }
 			},
-			MLO = "GABZ",
+			MLO = "GN",
 							--use "LP" if you are using Smallo's burgershot MLO
 							--use "RZ" if you are using NoPixels Paid burgershot MLO
 							--use "GN" if you are using GNMods burgershot MLO
