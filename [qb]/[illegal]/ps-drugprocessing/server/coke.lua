@@ -4,7 +4,7 @@ RegisterServerEvent('ps-drugprocessing:pickedUpCocaLeaf', function()
 	local src = source
 	local Player = QBCore.Functions.GetPlayer(src)
 
-	if Player.Functions.AddItem("coca_leaf", 1) then 
+	if Player.Functions.AddItem("coca_leaf", math.random(1,3)) then 
 		TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items["coca_leaf"], "add")
 		TriggerClientEvent('QBCore:Notify', src, Lang:t("success.coca_leaf"), "success")
 	else
