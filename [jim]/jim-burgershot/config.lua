@@ -17,7 +17,7 @@ Config = {
 	MultiCraft = true,
 	MultiCraftAmounts = { [1], [5], [10] },
 
-	JimConsumables = false, -- Enable this to disable this scripts control of food/drink items
+	JimConsumables = true, -- Enable this to disable this scripts control of food/drink items
 	JimShop = false, 		-- Enable this to use jim-shops for buying ingredients
 
 
