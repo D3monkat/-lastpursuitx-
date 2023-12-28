@@ -803,7 +803,7 @@ local Vehicles = {
     {model = 'RollatorTDB', name = 'RollatorTDB', brand = 'Lore', price = 20000, category = 'Lore', type = 'automobile', shop = 'pdm'}, 
     {model = 'schlagenstr', name = 'schlagenstr', brand = 'Lore', price = 20000, category = 'Lore', type = 'automobile', shop = 'pdm'}, 
     {model = 'sultanrsv8', name = 'sultanrsv8', brand = 'Lore', price = 20000, category = 'Lore', type = 'automobile', shop = 'pdm'}, 
-    {model = 'tempestaes', name = 'tempestaes', brand = 'Lore', price = 20000, category = 'Lore', type = 'automobile', shop = 'pdm'}, 
+    {model = 'tempestaes', name = 'tempestaes', brand = 'Lore', price = 20000, category = 'Tuner', type = 'automobile', shop = 'pdm'}, 
     {model = 'torerod', name = 'torerod', brand = 'Lore', price = 20000, category = 'Lore', type = 'automobile', shop = 'pdm'}, 
     {model = 'tulip3', name = 'tulip3', brand = 'Lore', price = 20000, category = 'Lore', type = 'automobile', shop = 'pdm'}, 
     {model = 'velox', name = 'velox', brand = 'Lore', price = 20000, category = 'Lore', type = 'automobile', shop = 'pdm'}, 
