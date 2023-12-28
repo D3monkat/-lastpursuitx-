@@ -29,7 +29,7 @@ main_siren_settings_masterswitch = true
 --	Enables users to rename siren tones, change siren options. (Cycle / Button) 
 park_kill_masterswitch = true
 --	Enables park kill functionality. Setting this to false will not allow users to change from default behaviour this. 
-park_kill_default = false
+park_kill_default = true
 --	Default setting for park kill mode. (default: true)
 airhorn_interrupt_masterswitch = true
 --	Enables ability to toggle air horn interrupt. Setting this to false will not allow users to change from default behaviour this. 
