@@ -175,6 +175,8 @@ Config.Gang = {
             xp = 9,
             time = 8000
         },
+    },
+    [14] = {
         ["weapon_marksmanpistol"] = {
             ["aluminum"] = 500,
             ["rubber"] = 300,

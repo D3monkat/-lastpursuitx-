@@ -118,7 +118,9 @@ Config.blacklist = {
         'khanjali',
         'polram',
         'polraptor',
-        'tr_pdsilv'
+        'tr_pdsilv',
+        'pltforklift',
+        'forklift',
     },
     classes = {
         [0] = false, -- Compacts
