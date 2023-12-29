@@ -16,7 +16,7 @@
       <animConvRoofName>null</animConvRoofName>
       <animConvRoofWindowsAffected />
       <ptfxAssetName>null</ptfxAssetName>
-      <audioNameHash>kc121harley08dyna</audioNameHash>
+      <audioNameHash>harleysound</audioNameHash>
       <layout>LAYOUT_BIKE_FREEWAY</layout>
       <coverBoundOffsets>NIGHTBLADE_COVER_OFFSET_INFO</coverBoundOffsets>
 	  <POVTuningInfo>DAEMON_POV_TUNING</POVTuningInfo>
