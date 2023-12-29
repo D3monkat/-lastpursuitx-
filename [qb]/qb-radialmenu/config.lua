@@ -298,54 +298,60 @@ Config.MenuItems = {
 }
 
 Config.VehicleDoors = {
-    id = 'vehicledoors',
-    title = 'Vehicle Doors',
-    icon = 'car-side',
-    items = {
-        {
-            id = 'door0',
-            title = 'Drivers door',
-            icon = 'car-side',
-            type = 'client',
-            event = 'qb-radialmenu:client:openDoor',
-            shouldClose = false
-        }, {
-            id = 'door4',
-            title = 'Hood',
-            icon = 'car',
-            type = 'client',
-            event = 'qb-radialmenu:client:openDoor',
-            shouldClose = false
-        }, {
-            id = 'door1',
-            title = 'Passengers door',
-            icon = 'car-side',
-            type = 'client',
-            event = 'qb-radialmenu:client:openDoor',
-            shouldClose = false
-        }, {
-            id = 'door3',
-            title = 'Right rear',
-            icon = 'car-side',
-            type = 'client',
-            event = 'qb-radialmenu:client:openDoor',
-            shouldClose = false
-        }, {
-            id = 'door5',
-            title = 'Trunk',
-            icon = 'car',
-            type = 'client',
-            event = 'qb-radialmenu:client:openDoor',
-            shouldClose = false
-        }, {
-            id = 'door2',
-            title = 'Left rear',
-            icon = 'car-side',
-            type = 'client',
-            event = 'qb-radialmenu:client:openDoor',
-            shouldClose = false
-        }
-    }
+    -- id = 'vehicledoors',
+    -- title = 'Vehicle Doors',
+    -- icon = 'car-side',
+    -- items = {
+    --     {
+    --         id = 'door0',
+    --         title = 'Drivers door',
+    --         icon = 'car-side',
+    --         type = 'client',
+    --         event = 'qb-radialmenu:client:openDoor',
+    --         shouldClose = false
+    --     }, {
+    --         id = 'door4',
+    --         title = 'Hood',
+    --         icon = 'car',
+    --         type = 'client',
+    --         event = 'qb-radialmenu:client:openDoor',
+    --         shouldClose = false
+    --     }, {
+    --         id = 'door1',
+    --         title = 'Passengers door',
+    --         icon = 'car-side',
+    --         type = 'client',
+    --         event = 'qb-radialmenu:client:openDoor',
+    --         shouldClose = false
+    --     }, {
+    --         id = 'door3',
+    --         title = 'Right rear',
+    --         icon = 'car-side',
+    --         type = 'client',
+    --         event = 'qb-radialmenu:client:openDoor',
+    --         shouldClose = false
+    --     }, {
+    --         id = 'door5',
+    --         title = 'Trunk',
+    --         icon = 'car',
+    --         type = 'client',
+    --         event = 'qb-radialmenu:client:openDoor',
+    --         shouldClose = false
+    --     }, {
+    --         id = 'door2',
+    --         title = 'Left rear',
+    --         icon = 'car-side',
+    --         type = 'client',
+    --         event = 'qb-radialmenu:client:openDoor',
+    --         shouldClose = false
+    --     }
+    -- }
+    id = 'carcontrol',
+    title = 'Car Control',
+    icon = 'car',
+    type = 'command',
+    event = 'carmenu',
+    shouldClose = true
 }
 
 Config.VehicleExtras = {
