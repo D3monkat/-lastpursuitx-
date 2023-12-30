@@ -15,9 +15,10 @@ import useData from "../../hooks/useData";
 import { CircleBar } from "../CircleBar";
 import { SquareBar } from "../SquareBar";
 import { CircleBarChart } from "../CircleBarChart";
+import { PiEngineFill } from "react-icons/pi";
 
 export const StatusBars = () => {
-  const { statusBars } = useData();
+  const { statusBars, vehicleHud } = useData();
 
   return (
     <>
@@ -54,7 +55,9 @@ export const StatusBars = () => {
             occupancy={statusBars?.health?.progressLevel}
             hidden={
               !statusBars?.health?.active ||
-              statusBars?.health?.progressLevel > statusBars?.health?.autoHide
+              (statusBars?.health?.autoHide < 100 &&
+                statusBars?.health?.progressLevel >
+                  statusBars?.health?.autoHide)
             }
           >
             <span>
@@ -68,7 +71,8 @@ export const StatusBars = () => {
             occupancy={statusBars?.armor?.progressLevel}
             hidden={
               !statusBars?.armor?.active ||
-              statusBars?.armor?.progressLevel > statusBars?.armor?.autoHide
+              (statusBars?.armor?.autoHide < 100 &&
+                statusBars?.armor?.progressLevel > statusBars?.armor?.autoHide)
             }
           >
             <span>
@@ -86,7 +90,9 @@ export const StatusBars = () => {
             occupancy={statusBars?.hunger?.progressLevel}
             hidden={
               !statusBars?.hunger?.active ||
-              statusBars?.hunger?.progressLevel > statusBars?.hunger?.autoHide
+              (statusBars?.hunger.autoHide < 100 &&
+                statusBars?.hunger?.progressLevel >
+                  statusBars?.hunger?.autoHide)
             }
           >
             <span>
@@ -100,7 +106,9 @@ export const StatusBars = () => {
             occupancy={statusBars?.thirst?.progressLevel}
             hidden={
               !statusBars?.thirst?.active ||
-              statusBars?.thirst?.progressLevel > statusBars?.thirst?.autoHide
+              (statusBars?.thirst?.autoHide < 100 &&
+                statusBars?.thirst?.progressLevel >
+                  statusBars?.thirst?.autoHide)
             }
           >
             <span>
@@ -114,7 +122,9 @@ export const StatusBars = () => {
             occupancy={statusBars?.oxygen?.progressLevel}
             hidden={
               !statusBars?.oxygen?.active ||
-              statusBars?.oxygen?.progressLevel > statusBars?.oxygen?.autoHide
+              (statusBars?.oxygen?.autoHide < 100 &&
+                statusBars?.oxygen?.progressLevel >
+                  statusBars?.oxygen?.autoHide)
             }
           >
             <span>
@@ -128,11 +138,38 @@ export const StatusBars = () => {
             occupancy={statusBars?.stamina?.progressLevel}
             hidden={
               !statusBars?.stamina?.active ||
-              statusBars?.stamina?.progressLevel > statusBars?.stamina?.autoHide
+              (statusBars?.stamina?.autoHide < 100 &&
+                statusBars?.stamina?.progressLevel >
+                  statusBars?.stamina?.autoHide)
             }
           >
             <span>
               <FaRunning className={"text-white w-3.5 h-3.5"} />
+            </span>
+            <div className="inherit"></div>
+          </HexagonBar>
+          {/* engine health */}
+          <HexagonBar
+            color={
+              vehicleHud.engineHealth > 599
+                ? "green"
+                : vehicleHud.engineHealth > 0
+                ? "orange"
+                : "red"
+            }
+            occupancy={vehicleHud.engineHealth / 10}
+            hidden={
+              vehicleHud.hidden ||
+              !vehicleHud.show ||
+              !statusBars.engineHealth.active ||
+              vehicleHud.engineHealth == 1000 ||
+              (statusBars?.engineHealth?.autoHide < 100 &&
+                vehicleHud.engineHealth / 10 >
+                  statusBars?.engineHealth?.autoHide)
+            }
+          >
+            <span>
+              <PiEngineFill className="w-3.5 h-3.5 text-white" />
             </span>
             <div className="inherit"></div>
           </HexagonBar>
@@ -142,7 +179,9 @@ export const StatusBars = () => {
             occupancy={statusBars?.stress?.progressLevel}
             hidden={
               !statusBars?.stress?.active ||
-              statusBars?.stress?.progressLevel > statusBars?.stress?.autoHide
+              (statusBars?.stress?.autoHide < 100 &&
+                statusBars?.stress?.progressLevel >
+                  statusBars?.stress?.autoHide)
             }
           >
             <span>
@@ -203,10 +242,15 @@ export const StatusBars = () => {
             occupancy={statusBars?.health?.progressLevel}
             hidden={
               !statusBars?.health?.active ||
-              statusBars?.health?.progressLevel > statusBars?.health?.autoHide
+              (statusBars?.health?.autoHide < 100 &&
+                statusBars?.health?.progressLevel >
+                  statusBars?.health?.autoHide)
             }
           >
-            <RiHeart3Fill className={"w-5 h-5"} />
+            <span>
+              <RiHeart3Fill className={"text-white w-3.5 h-3.5"} />
+            </span>
+            <div className="inherit"></div>
           </CircleBar>
           {/* armor */}
           <CircleBar
@@ -214,14 +258,18 @@ export const StatusBars = () => {
             occupancy={statusBars?.armor?.progressLevel}
             hidden={
               !statusBars?.armor?.active ||
-              statusBars?.armor?.progressLevel > statusBars?.armor?.autoHide
+              (statusBars?.armor?.autoHide < 100 &&
+                statusBars?.armor?.progressLevel > statusBars?.armor?.autoHide)
             }
           >
-            {statusBars?.armor?.progressLevel > 0 ? (
-              <PiShieldFill className={"w-5 h-5"} />
-            ) : (
-              <GiBrokenShield className={"w-5 h-5"} />
-            )}
+            <span>
+              {statusBars?.armor?.progressLevel > 0 ? (
+                <PiShieldFill className={"text-white w-3.5 h-3.5"} />
+              ) : (
+                <GiBrokenShield className={"text-white w-3.5 h-3.5"} />
+              )}
+            </span>
+            <div className="inherit"></div>
           </CircleBar>
           {/* hunger */}
           <CircleBar
@@ -229,10 +277,15 @@ export const StatusBars = () => {
             occupancy={statusBars?.hunger?.progressLevel}
             hidden={
               !statusBars?.hunger?.active ||
-              statusBars?.hunger?.progressLevel > statusBars?.hunger?.autoHide
+              (statusBars?.hunger.autoHide < 100 &&
+                statusBars?.hunger?.progressLevel >
+                  statusBars?.hunger?.autoHide)
             }
           >
-            <PiHamburgerFill className={"w-5 h-5"} />
+            <span>
+              <PiHamburgerFill className={"text-white w-3.5 h-3.5"} />
+            </span>
+            <div className="inherit"></div>
           </CircleBar>
           {/* thirst */}
           <CircleBar
@@ -240,10 +293,15 @@ export const StatusBars = () => {
             occupancy={statusBars?.thirst?.progressLevel}
             hidden={
               !statusBars?.thirst?.active ||
-              statusBars?.thirst?.progressLevel > statusBars?.thirst?.autoHide
+              (statusBars?.thirst?.autoHide < 100 &&
+                statusBars?.thirst?.progressLevel >
+                  statusBars?.thirst?.autoHide)
             }
           >
-            <IoMdWater className={"w-5 h-5"} />
+            <span>
+              <IoMdWater className={"text-white w-3.5 h-3.5"} />
+            </span>
+            <div className="inherit"></div>
           </CircleBar>
           {/* oxygen */}
           <CircleBar
@@ -251,10 +309,15 @@ export const StatusBars = () => {
             occupancy={statusBars?.oxygen?.progressLevel}
             hidden={
               !statusBars?.oxygen?.active ||
-              statusBars?.oxygen?.progressLevel > statusBars?.oxygen?.autoHide
+              (statusBars?.oxygen?.autoHide < 100 &&
+                statusBars?.oxygen?.progressLevel >
+                  statusBars?.oxygen?.autoHide)
             }
           >
-            <SiOxygen className={"w-5 h-5"} />
+            <span>
+              <SiOxygen className={"text-white w-3.5 h-3.5"} />
+            </span>
+            <div className="inherit"></div>
           </CircleBar>
           {/* stamina */}
           <CircleBar
@@ -262,10 +325,40 @@ export const StatusBars = () => {
             occupancy={statusBars?.stamina?.progressLevel}
             hidden={
               !statusBars?.stamina?.active ||
-              statusBars?.stamina?.progressLevel > statusBars?.stamina?.autoHide
+              (statusBars?.stamina?.autoHide < 100 &&
+                statusBars?.stamina?.progressLevel >
+                  statusBars?.stamina?.autoHide)
             }
           >
-            <FaRunning className={"w-5 h-5"} />
+            <span>
+              <FaRunning className={"text-white w-3.5 h-3.5"} />
+            </span>
+            <div className="inherit"></div>
+          </CircleBar>
+          {/* engine health */}
+          <CircleBar
+            color={
+              vehicleHud.engineHealth > 599
+                ? "green"
+                : vehicleHud.engineHealth > 0
+                ? "orange"
+                : "red"
+            }
+            occupancy={vehicleHud.engineHealth / 10}
+            hidden={
+              vehicleHud.hidden ||
+              !vehicleHud.show ||
+              !statusBars.engineHealth.active ||
+              vehicleHud.engineHealth == 1000 ||
+              (statusBars?.engineHealth?.autoHide < 100 &&
+                vehicleHud.engineHealth / 10 >
+                  statusBars?.engineHealth?.autoHide)
+            }
+          >
+            <span>
+              <PiEngineFill className="w-3.5 h-3.5 text-white" />
+            </span>
+            <div className="inherit"></div>
           </CircleBar>
           {/* stress */}
           <CircleBar
@@ -273,10 +366,15 @@ export const StatusBars = () => {
             occupancy={statusBars?.stress?.progressLevel}
             hidden={
               !statusBars?.stress?.active ||
-              statusBars?.stress?.progressLevel > statusBars?.stress?.autoHide
+              (statusBars?.stress?.autoHide < 100 &&
+                statusBars?.stress?.progressLevel >
+                  statusBars?.stress?.autoHide)
             }
           >
-            <RiBrainFill className={"w-5 h-5"} />
+            <span>
+              <RiBrainFill className={"text-white w-3.5 h-3.5"} />
+            </span>
+            <div className="inherit"></div>
           </CircleBar>
           {/* terminal */}
           <CircleBar
@@ -330,9 +428,10 @@ export const StatusBars = () => {
             occupancy={statusBars?.health?.progressLevel}
             hidden={
               !statusBars?.health?.active ||
-              statusBars?.health?.progressLevel > statusBars?.health?.autoHide
+              (statusBars?.health?.autoHide < 100 &&
+                statusBars?.health?.progressLevel >
+                  statusBars?.health?.autoHide)
             }
-            animDelay="150ms"
           >
             <span>
               <RiHeart3Fill className={"text-white w-3.5 h-3.5"} />
@@ -345,9 +444,9 @@ export const StatusBars = () => {
             occupancy={statusBars?.armor?.progressLevel}
             hidden={
               !statusBars?.armor?.active ||
-              statusBars?.armor?.progressLevel > statusBars?.armor?.autoHide
+              (statusBars?.armor?.autoHide < 100 &&
+                statusBars?.armor?.progressLevel > statusBars?.armor?.autoHide)
             }
-            animDelay="200ms"
           >
             <span>
               {statusBars?.armor?.progressLevel > 0 ? (
@@ -364,9 +463,10 @@ export const StatusBars = () => {
             occupancy={statusBars?.hunger?.progressLevel}
             hidden={
               !statusBars?.hunger?.active ||
-              statusBars?.hunger?.progressLevel > statusBars?.hunger?.autoHide
+              (statusBars?.hunger.autoHide < 100 &&
+                statusBars?.hunger?.progressLevel >
+                  statusBars?.hunger?.autoHide)
             }
-            animDelay="250ms"
           >
             <span>
               <PiHamburgerFill className={"text-white w-3.5 h-3.5"} />
@@ -379,9 +479,10 @@ export const StatusBars = () => {
             occupancy={statusBars?.thirst?.progressLevel}
             hidden={
               !statusBars?.thirst?.active ||
-              statusBars?.thirst?.progressLevel > statusBars?.thirst?.autoHide
+              (statusBars?.thirst?.autoHide < 100 &&
+                statusBars?.thirst?.progressLevel >
+                  statusBars?.thirst?.autoHide)
             }
-            animDelay="300ms"
           >
             <span>
               <IoMdWater className={"text-white w-3.5 h-3.5"} />
@@ -394,9 +495,10 @@ export const StatusBars = () => {
             occupancy={statusBars?.oxygen?.progressLevel}
             hidden={
               !statusBars?.oxygen?.active ||
-              statusBars?.oxygen?.progressLevel > statusBars?.oxygen?.autoHide
+              (statusBars?.oxygen?.autoHide < 100 &&
+                statusBars?.oxygen?.progressLevel >
+                  statusBars?.oxygen?.autoHide)
             }
-            animDelay="350ms"
           >
             <span>
               <SiOxygen className={"text-white w-3.5 h-3.5"} />
@@ -409,12 +511,38 @@ export const StatusBars = () => {
             occupancy={statusBars?.stamina?.progressLevel}
             hidden={
               !statusBars?.stamina?.active ||
-              statusBars?.stamina?.progressLevel > statusBars?.stamina?.autoHide
+              (statusBars?.stamina?.autoHide < 100 &&
+                statusBars?.stamina?.progressLevel >
+                  statusBars?.stamina?.autoHide)
             }
-            animDelay="400ms"
           >
             <span>
               <FaRunning className={"text-white w-3.5 h-3.5"} />
+            </span>
+            <div className="inherit"></div>
+          </SquareBar>
+          {/* engine health */}
+          <SquareBar
+            color={
+              vehicleHud.engineHealth > 599
+                ? "green"
+                : vehicleHud.engineHealth > 0
+                ? "orange"
+                : "red"
+            }
+            occupancy={vehicleHud.engineHealth / 10}
+            hidden={
+              vehicleHud.hidden ||
+              !vehicleHud.show ||
+              !statusBars.engineHealth.active ||
+              vehicleHud.engineHealth == 1000 ||
+              (statusBars?.engineHealth?.autoHide < 100 &&
+                vehicleHud.engineHealth / 10 >
+                  statusBars?.engineHealth?.autoHide)
+            }
+          >
+            <span>
+              <PiEngineFill className="w-3.5 h-3.5 text-white" />
             </span>
             <div className="inherit"></div>
           </SquareBar>
@@ -424,9 +552,10 @@ export const StatusBars = () => {
             occupancy={statusBars?.stress?.progressLevel}
             hidden={
               !statusBars?.stress?.active ||
-              statusBars?.stress?.progressLevel > statusBars?.stress?.autoHide
+              (statusBars?.stress?.autoHide < 100 &&
+                statusBars?.stress?.progressLevel >
+                  statusBars?.stress?.autoHide)
             }
-            animDelay="450ms"
           >
             <span>
               <RiBrainFill className={"text-white w-3.5 h-3.5"} />
@@ -488,10 +617,15 @@ export const StatusBars = () => {
             occupancy={statusBars?.health?.progressLevel}
             hidden={
               !statusBars?.health?.active ||
-              statusBars?.health?.progressLevel > statusBars?.health?.autoHide
+              (statusBars?.health?.autoHide < 100 &&
+                statusBars?.health?.progressLevel >
+                  statusBars?.health?.autoHide)
             }
           >
-            <RiHeart3Fill className={"w-5 h-5"} />
+            <span>
+              <RiHeart3Fill className={"text-white w-3.5 h-3.5"} />
+            </span>
+            <div className="inherit"></div>
           </CircleBarChart>
           {/* armor */}
           <CircleBarChart
@@ -499,14 +633,18 @@ export const StatusBars = () => {
             occupancy={statusBars?.armor?.progressLevel}
             hidden={
               !statusBars?.armor?.active ||
-              statusBars?.armor?.progressLevel > statusBars?.armor?.autoHide
+              (statusBars?.armor?.autoHide < 100 &&
+                statusBars?.armor?.progressLevel > statusBars?.armor?.autoHide)
             }
           >
-            {statusBars?.armor?.progressLevel > 0 ? (
-              <PiShieldFill className={"w-5 h-5"} />
-            ) : (
-              <GiBrokenShield className={"w-5 h-5"} />
-            )}
+            <span>
+              {statusBars?.armor?.progressLevel > 0 ? (
+                <PiShieldFill className={"text-white w-3.5 h-3.5"} />
+              ) : (
+                <GiBrokenShield className={"text-white w-3.5 h-3.5"} />
+              )}
+            </span>
+            <div className="inherit"></div>
           </CircleBarChart>
           {/* hunger */}
           <CircleBarChart
@@ -514,10 +652,15 @@ export const StatusBars = () => {
             occupancy={statusBars?.hunger?.progressLevel}
             hidden={
               !statusBars?.hunger?.active ||
-              statusBars?.hunger?.progressLevel > statusBars?.hunger?.autoHide
+              (statusBars?.hunger.autoHide < 100 &&
+                statusBars?.hunger?.progressLevel >
+                  statusBars?.hunger?.autoHide)
             }
           >
-            <PiHamburgerFill className={"w-5 h-5"} />
+            <span>
+              <PiHamburgerFill className={"text-white w-3.5 h-3.5"} />
+            </span>
+            <div className="inherit"></div>
           </CircleBarChart>
           {/* thirst */}
           <CircleBarChart
@@ -525,10 +668,15 @@ export const StatusBars = () => {
             occupancy={statusBars?.thirst?.progressLevel}
             hidden={
               !statusBars?.thirst?.active ||
-              statusBars?.thirst?.progressLevel > statusBars?.thirst?.autoHide
+              (statusBars?.thirst?.autoHide < 100 &&
+                statusBars?.thirst?.progressLevel >
+                  statusBars?.thirst?.autoHide)
             }
           >
-            <IoMdWater className={"w-5 h-5"} />
+            <span>
+              <IoMdWater className={"text-white w-3.5 h-3.5"} />
+            </span>
+            <div className="inherit"></div>
           </CircleBarChart>
           {/* oxygen */}
           <CircleBarChart
@@ -536,10 +684,15 @@ export const StatusBars = () => {
             occupancy={statusBars?.oxygen?.progressLevel}
             hidden={
               !statusBars?.oxygen?.active ||
-              statusBars?.oxygen?.progressLevel > statusBars?.oxygen?.autoHide
+              (statusBars?.oxygen?.autoHide < 100 &&
+                statusBars?.oxygen?.progressLevel >
+                  statusBars?.oxygen?.autoHide)
             }
           >
-            <SiOxygen className={"w-5 h-5"} />
+            <span>
+              <SiOxygen className={"text-white w-3.5 h-3.5"} />
+            </span>
+            <div className="inherit"></div>
           </CircleBarChart>
           {/* stamina */}
           <CircleBarChart
@@ -547,10 +700,40 @@ export const StatusBars = () => {
             occupancy={statusBars?.stamina?.progressLevel}
             hidden={
               !statusBars?.stamina?.active ||
-              statusBars?.stamina?.progressLevel > statusBars?.stamina?.autoHide
+              (statusBars?.stamina?.autoHide < 100 &&
+                statusBars?.stamina?.progressLevel >
+                  statusBars?.stamina?.autoHide)
             }
           >
-            <FaRunning className={"w-5 h-5"} />
+            <span>
+              <FaRunning className={"text-white w-3.5 h-3.5"} />
+            </span>
+            <div className="inherit"></div>
+          </CircleBarChart>
+          {/* engine health */}
+          <CircleBarChart
+            color={
+              vehicleHud.engineHealth > 599
+                ? "green"
+                : vehicleHud.engineHealth > 0
+                ? "orange"
+                : "red"
+            }
+            occupancy={vehicleHud.engineHealth / 10}
+            hidden={
+              vehicleHud.hidden ||
+              !vehicleHud.show ||
+              !statusBars.engineHealth.active ||
+              vehicleHud.engineHealth == 1000 ||
+              (statusBars?.engineHealth?.autoHide < 100 &&
+                vehicleHud.engineHealth / 10 >
+                  statusBars?.engineHealth?.autoHide)
+            }
+          >
+            <span>
+              <PiEngineFill className="w-3.5 h-3.5 text-white" />
+            </span>
+            <div className="inherit"></div>
           </CircleBarChart>
           {/* stress */}
           <CircleBarChart
@@ -558,10 +741,27 @@ export const StatusBars = () => {
             occupancy={statusBars?.stress?.progressLevel}
             hidden={
               !statusBars?.stress?.active ||
-              statusBars?.stress?.progressLevel > statusBars?.stress?.autoHide
+              (statusBars?.stress?.autoHide < 100 &&
+                statusBars?.stress?.progressLevel >
+                  statusBars?.stress?.autoHide)
             }
           >
-            <RiBrainFill className={"w-5 h-5"} />
+            <span>
+              <RiBrainFill className={"text-white w-3.5 h-3.5"} />
+            </span>
+            <div className="inherit"></div>
+          </CircleBarChart>
+          {/* terminal */}
+          <CircleBarChart
+            color={statusBars?.terminal?.color}
+            occupancy={statusBars?.terminal?.progressLevel}
+            hidden={!statusBars?.terminal?.active}
+            animDelay="500ms"
+          >
+            <span>
+              <FaTerminal className={"text-white w-3.5 h-3.5"} />
+            </span>
+            <div className="inherit"></div>
           </CircleBarChart>
           {/* terminal */}
           <CircleBarChart

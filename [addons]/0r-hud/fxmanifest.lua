@@ -8,7 +8,7 @@ lua54 "yes"
 name "0r-hud"
 author "0-Resmon"
 version "2.0.0"
-description "0Resmon:HUD"
+description "0Resmon:HUD | aliko."
 
 --[[ Manifest ]]
 shared_scripts {
@@ -43,10 +43,14 @@ files {
 
 escrow_ignore {
     "locales/**/*",
-    "shared/**/*",
-    "client/**/*",
-    "server/**/*",
-    "ui/**/*",
+    "shared/config.lua",
+    "shared/utils.lua",
+    "client/variables.lua",
+    "client/utils.lua",
+    "client/commands.lua",
+    "server/variables.lua",
+    "server/utils.lua",
+    "server/commands.lua",
+    "ui/build/**/*",
+    "ui/public/**/*"
 }
-
-dependency '/assetpacks'

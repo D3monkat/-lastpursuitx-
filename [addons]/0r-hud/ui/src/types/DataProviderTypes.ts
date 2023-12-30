@@ -65,6 +65,12 @@ export type StatusBarsProps = {
     progressLevel: number;
     autoHide: number;
   };
+  engineHealth: {
+    active: boolean;
+    color?: HexagonColors;
+    progressLevel: number;
+    autoHide: number;
+  };
 };
 
 export type VehicleHudProps = {

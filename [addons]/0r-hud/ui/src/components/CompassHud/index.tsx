@@ -88,13 +88,12 @@ export const CompassHud = () => {
                     SE
                   </text>
                   <text
-                    className="side"
                     x="180"
                     y="4.5"
                     fill="white"
                     textAnchor="middle"
                   >
-                    SE
+                    S
                   </text>
                   <text
                     className="side"

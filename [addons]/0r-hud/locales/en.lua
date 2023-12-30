@@ -37,6 +37,7 @@ return {
         settings_text_desc_vehicle_mode = "Change vehicle gear mode.",
         settings_text_manual_mode = "Manual",
         settings_text_oto_mode = "Oto",
+        settings_text_enginehealth_icon = "Engine Health",
     },
     hud = {
         settings = {

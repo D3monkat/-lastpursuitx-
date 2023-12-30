@@ -89,6 +89,11 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({
       progressLevel: 35,
       autoHide: 100,
     },
+    engineHealth: {
+      active: true,
+      progressLevel: 35,
+      autoHide: 100,
+    },
   } as StatusBarsProps);
 
   const [vehicleHud, setVehicleHud] = useState<VehicleHudProps>({
@@ -113,7 +118,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({
       style: "square",
     },
     speedoMeter: {
-      fps: 30,
+      fps: 15,
     },
     position: {
       bottom: 0,
@@ -260,7 +265,6 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({
       isSeatbeltOn: newValues?.isSeatbeltOn,
       kmH: newValues?.kmH,
       lightsOn: newValues?.lightsOn,
-      position: newValues?.position,
       rpm: newValues?.rpm,
       show: newValues?.show,
       speed: newValues?.speed,
@@ -382,12 +386,17 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({
           autoHide: statusBars.leaf.autoHide,
           color: statusBars.leaf.color,
         });
+        handleLocalStorage("engineHealth", "set", {
+          active: statusBars.engineHealth.active,
+          autoHide: statusBars.engineHealth.autoHide,
+          color: statusBars.engineHealth.color,
+        });
         handleLocalStorage("vehicleHud", "set", {
           position: {
-            bottom: vehicleHud?.position?.bottom ?? 0,
-            left: vehicleHud?.position?.left ?? 0,
+            bottom: vehicleHud?.position?.bottom || 0,
+            left: vehicleHud?.position?.left || 0,
           },
-          type: vehicleHud?.type ?? 2,
+          type: vehicleHud?.type || 2,
         });
         handleLocalStorage("compassHud", "set", {
           active: compassHud.active,
@@ -403,7 +412,6 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({
   const getSettings = () => {
     setVehicleHud((p) => ({
       ...p,
-      show: handleLocalStorage("vehicleHud", "get").show ?? p.show,
       miniMaP: {
         ...p.miniMaP,
         style: handleLocalStorage("miniMap", "get").style ?? p.miniMaP.style,
@@ -531,6 +539,13 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({
           typeof handleLocalStorage("leaf", "get").active == "boolean"
             ? handleLocalStorage("leaf", "get").active
             : prevState.leaf.active,
+      },
+      engineHealth: {
+        ...prevState.engineHealth,
+        active:
+          typeof handleLocalStorage("engineHealth", "get").active == "boolean"
+            ? handleLocalStorage("engineHealth", "get").active
+            : prevState.engineHealth.active,
       },
     }));
     setCompassHud((p) => ({

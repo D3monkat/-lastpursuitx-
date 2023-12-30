@@ -903,6 +903,79 @@ export const HudSettings = () => {
           </div>
         </div>
       </div>
+      <div className="mb-2 w-full">
+        <div className="flex justify-start items-center bg-setting/80 rounded-md h-20">
+          <div className="p-3 h-20 flex items-center border-r border-[rgba(217,217,217,0.1)]">
+            <img
+              src="images/custom_bar.svg"
+              alt="leaf-bar"
+              className="w-10 h-10"
+            />
+          </div>
+          <div className="px-3 py-3">
+            <h1 className="font-bold text-base text-white">
+              {locale.settings_text_enginehealth_icon}
+            </h1>
+            <h1 className="text-xs font-[inherit] text-[#757575] font-semibold">
+              {locale.settings_text_hideWhenMoreThen}
+            </h1>
+          </div>
+          <div className="flex h-20 gap-4 items-center ml-auto px-3 border-l border-[rgba(217,217,217,0.1)] py-3">
+            <div className="flex flex-col gap-2">
+              <div>
+                <label htmlFor="engineHealthI" className="sr-only">
+                  engineHealth
+                </label>
+                <div>
+                  <div className="pl-4 bg-[#272727] border border-[#2D2D2D] flex items-center justify-between gap-2">
+                    <div>
+                      <h1 className="text-[#808080] text-[11px]">
+                        {locale.settings_text_never_hide}
+                      </h1>
+                    </div>
+                    <div>
+                      <input
+                        id="engineHealthI"
+                        className="w-[56px] font-bold text-center text-[#808080] bg-[#3c3c3c] border border-[#484848] ring-0 outline-none"
+                        value={statusBars?.engineHealth?.autoHide}
+                        onChange={(event) => {
+                          setStatusBars((p) => ({
+                            ...p,
+                            engineHealth: {
+                              ...p.engineHealth,
+                              autoHide: parseInt(event.target.value) as number,
+                            },
+                          }));
+                        }}
+                        max={100}
+                        min={1}
+                        type="number"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <label className="setting-switch">
+                <input
+                  type="checkbox"
+                  checked={statusBars?.engineHealth?.active}
+                  onChange={() => {
+                    setStatusBars((p) => ({
+                      ...p,
+                      engineHealth: {
+                        ...p.engineHealth,
+                        active: !p.engineHealth?.active,
+                      },
+                    }));
+                  }}
+                />
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
       {vehicleHud.manualModeType && (
         <div className="mb-2 w-full">
           <div className="flex justify-start items-center bg-setting/80 rounded-md h-20">
@@ -969,11 +1042,11 @@ export const HudSettings = () => {
               <label className="setting-switch">
                 <input
                   type="checkbox"
-                  checked={compassHud.show}
+                  checked={compassHud.active}
                   onChange={() => {
                     setCompassHud((p) => ({
                       ...p,
-                      show: !p.show,
+                      active: !p.active,
                     }));
                   }}
                 />

@@ -45,6 +45,9 @@ Config.Settings         = {
         stamina = {
             active = true
         },
+        engineHealth = {
+            active = true
+        },
     },
     VehicleHUD = {
         active = true,
