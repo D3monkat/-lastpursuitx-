@@ -12,13 +12,13 @@ client_script 'staticEmitter.lua'
 
 files { 
         "staticEmitter.lua",
-        "audio/as_rex_diner_game.dat151.rel",
+        -- "audio/as_rex_diner_game.dat151.rel",
         "audio/as_rex_garage_game.dat151.rel",
 	    "gta5.meta",
  	    "as_rex_doortuning.ymt"
 }
 
-data_file "AUDIO_GAMEDATA" "audio/as_rex_diner_game.dat"
+-- data_file "AUDIO_GAMEDATA" "audio/as_rex_diner_game.dat"
 data_file "AUDIO_GAMEDATA" "audio/as_rex_garage_game.dat"
 
 escrow_ignore {
