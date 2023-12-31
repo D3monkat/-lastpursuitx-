@@ -377,6 +377,17 @@ return {
   			image = "sparetire.png",
   		}
   	},
+
+	  ["boombox"] = {
+		label = "Boombox",
+		weight = 0,
+		stack = false,
+		close = true,
+		description = "",
+		client = {
+			image = "boombox.png",
+		}
+	},
   
   	["weedplant_seedf"] = {
   		label = "Female Weed Seed",
