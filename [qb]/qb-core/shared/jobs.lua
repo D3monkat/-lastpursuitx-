@@ -277,6 +277,19 @@ QBShared.Jobs = {
 			['4'] = { name = 'Manager', isboss = true, payment = 150, bankAuth = true },
 		},
 	},
+	blueline = {
+		label = 'Blueline Towing',
+		type = 'mechanic',
+		defaultDuty = true,
+		offDutyPay = false,
+		grades = {
+			['0'] = { name = 'Recruit', payment = 50 },
+			['1'] = { name = 'Novice', payment = 75 },
+			['2'] = { name = 'Experienced', payment = 100 },
+			['3'] = { name = 'Manager', isboss = true, payment = 150, bankAuth = true }, 
+			['4'] = { name = 'Owner', isboss = true, payment = 150, bankAuth = true },
+		},
+	},
 	rexmech = {
 		label = 'Rexmech',
 		type = 'mechanic',
