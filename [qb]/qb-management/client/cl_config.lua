@@ -42,6 +42,9 @@ Config.BossMenuZones = {
     ['mechanic'] = {
         { coords = vector3(-339.53, -156.44, 44.59), length = 1.15, width = 2.6, heading = 353.0, minZ = 43.59, maxZ = 44.99 },
     },
+    ['rexmech'] = {
+        { coords = vector3(2533.01, 2639.51, 37.95), length = 1.15, width = 2.6, heading = 353.0, minZ = 36.59, maxZ = 39.99 },
+    },
 }
 
 Config.GangMenus = {
