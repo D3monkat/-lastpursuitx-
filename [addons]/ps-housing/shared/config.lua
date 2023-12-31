@@ -65,7 +65,7 @@ Config.Commissions = {
 }
 
 -- Set this value to false if you don't want to assign a starting apartment.
-Config.StartingApartment = false
+Config.StartingApartment = true
 
 Config.Apartments = {
     ["Integrity Way"] = {
