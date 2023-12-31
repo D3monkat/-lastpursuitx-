@@ -17,7 +17,7 @@ Config.esxSettings = {
 
 --- SETTINGS FOR QBCORE
 Config.qbSettings = {
-    enabled = false,
+    enabled = true,
     sqlDriver = 'oxmysql', -- oxmysql or ghmattimysql
     useNewQBExport = true, -- Make sure to uncomment the old export inside fxmanifest.lua if you're still using it
     oldOxmysql = false,
@@ -25,13 +25,13 @@ Config.qbSettings = {
 
 
 Config.target = {
-    enabled = false,
+    enabled = true,
     system = 'ox_target' -- 'qtarget' or 'qb-target' or 'ox_target' (Other systems might work as well)
 }
 
 -- Outfitbag command settings
 Config.command = {
-    enabled = true,
+    enabled = false,
     command = 'outfitbag',
     shortCommand = 'ob'
 }
