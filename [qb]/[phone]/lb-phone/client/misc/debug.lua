@@ -76,6 +76,19 @@ CreateThread(function()
         print((shouldEnable and "Enabled" or "Disabled") .. " flashlight")
     end)
 
+    registerDebugCommand("call", function(source, args)
+        exports["lb-phone"]:CreateCall({
+            number = args[1] or "1234567890",
+            videoCall = args[2] == "1" and true or false
+        })
+    end)
+
+    registerDebugCommand("callcompany", function(source, args)
+        exports["lb-phone"]:CreateCall({
+            company = args[1] or "police"
+        })
+    end)
+
     if Config.QBMailEvent then
         registerDebugCommand("qbmail", function()
             TriggerServerEvent('qb-phone:server:sendNewMail', {

@@ -1,8 +1,8 @@
-CreateThread(function()
-    if Config.Framework ~= "ox" then
-        return
-    end
+if Config.Framework ~= "ox" then
+    return
+end
 
+CreateThread(function()
     debugprint("Loading OX")
     while GetResourceState("ox_core") ~= "started" do
         debugprint("Waiting for ox_core to start")

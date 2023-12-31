@@ -1,9 +1,9 @@
+if Config.Framework ~= "qb" then
+    return
+end
+
 ---@diagnostic disable: param-type-mismatch
 CreateThread(function()
-    if Config.Framework ~= "qb" then
-        return
-    end
-
     local lib = exports.loaf_lib:GetLib()
 
     debugprint("Loading QB")
@@ -77,8 +77,8 @@ CreateThread(function()
         QB.Functions.SetVehicleProperties(vehicle, vehicleData.mods)
         TriggerEvent("vehiclekeys:client:SetOwner", QB.Functions.GetPlate(vehicle))
 
-        if GetResourceState("cdn-fuel") == "started" and vehicleData.fuel then
-            exports['cdn-fuel']:SetFuel(vehicle, vehicleData.fuel)
+        if GetResourceState("LegacyFuel") == "started" and vehicleData.fuel then
+            exports.LegacyFuel:SetFuel(vehicle, vehicleData.fuel)
         end
 
         SetModelAsNoLongerNeeded(model)

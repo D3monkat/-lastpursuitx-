@@ -1,3 +1,55 @@
+local function isResourceStartedOrStarting(resource)
+    local state = GetResourceState(resource)
+    return state == "started" or state == "starting"
+end
+
+if Config.HouseScript == "auto" then
+    Config.HouseScript = false
+
+    local houseScripts = {
+        "loaf_housing",
+        "qb-houses",
+        "qs-housing"
+    }
+
+    for i = 1, #houseScripts do
+        if isResourceStartedOrStarting(houseScripts[i]) then
+            Config.HouseScript = houseScripts[i]
+            break
+        end
+    end
+end
+
+if Config.Item.Unique and Config.Item.Inventory == "auto" then
+    local inventoryScripts = {
+        "ox_inventory",
+        "qb-inventory",
+        "lj-inventory",
+        "core_inventory",
+        "mf-inventory",
+        "qs-inventory"
+    }
+
+    for i = 1, #inventoryScripts do
+        if isResourceStartedOrStarting(inventoryScripts[i]) then
+            Config.Item.Inventory = inventoryScripts[i]
+            break
+        end
+    end
+end
+
+if Config.Framework == "auto" then
+    if isResourceStartedOrStarting("es_extended") then
+        Config.Framework = "esx"
+    elseif isResourceStartedOrStarting("qb-core") then
+        Config.Framework = "qb"
+    elseif isResourceStartedOrStarting("ox_core") then
+        Config.Framework = "ox"
+    else
+        Config.Framework = "standalone"
+    end
+end
+
 function debugprint(...)
     if Config.Debug then
         local data = {...}

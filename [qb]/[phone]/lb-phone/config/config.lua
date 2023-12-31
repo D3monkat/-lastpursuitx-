@@ -2,16 +2,17 @@ Config = {}
 Config.Debug = false -- Set to true to enable debug mode
 
 --[[ FRAMEWORK OPTIONS ]] --
-Config.Framework = "qb"
+Config.Framework = "auto"
 --[[
     Supported frameworks:
+        * auto: auto-detect framework (ONLY WORKS WITH THE ONE LISTED BELOW)
         * esx: es_extended, https://github.com/esx-framework/esx-legacy
         * qb: qb-core, https://github.com/qbcore-framework/qb-core
         * ox: ox_core, https://github.com/overextended/ox_core
         * standalone: no framework, note that framework specific apps will not work unless you implement the functions
 ]]
 Config.CustomFramework = false -- if set to true and you use standalone, you will be able to use framework specific apps
-Config.QBMailEvent = true -- if you want this script to listen for qb email events, enable this. NOTE: This allows players to send emails from the client.
+Config.QBMailEvent = true -- if you want this script to listen for qb email events, enable this.
 
 Config.Item = {}
 Config.Item.Require = true -- require a phone item to use the phone
@@ -21,6 +22,7 @@ Config.Item.Unique = false -- should each phone be unique? https://docs.lbphone.
 Config.Item.Inventory = "ox_inventory" --[[
     The inventory you use, IGNORE IF YOU HAVE Config.Item.Unique DISABLED.
     Supported:
+        * auto: auto-detect inventory (ONLY WORKS WITH THE ONE LISTED BELOW)
         * ox_inventory - https://github.com/overextended/ox_inventory
         * qb-inventory - https://github.com/qbcore-framework/qb-inventory
         * lj-inventory - https://github.com/loljoshie/lj-inventory
@@ -31,6 +33,8 @@ Config.Item.Inventory = "ox_inventory" --[[
 
 Config.DynamicIsland = true -- if enabled, the phone will have a Iphone 14 Pro inspired Dynamic Island.
 Config.SetupScreen = true -- if enabled, the phone will have a setup screen when the player first uses the phone.
+
+Config.AutoDeleteNotifications = false -- notifications that are more than X hours old, will be deleted. set to false to disable. if set to true, it will delete 1 week old notifications.
 
 Config.WhitelistApps = {
     -- ["test-app"] = {"police", "ambulance"}
@@ -69,9 +73,9 @@ Config.Companies.Services = {
         icon = "https://cdn-icons-png.flaticon.com/128/1032/1032989.png",
         canCall = true, -- if true, players can call the company
         canMessage = true, -- if true, players can message the company
-        bossRanks = {"chief"}, -- ranks that can manage the company
+        bossRanks = {"boss", "doctor"}, -- ranks that can manage the company
         location = {
-            name = "Zonah",
+            name = "Pillbox",
             coords = {
                 x = 304.2,
                 y = -587.0
@@ -129,24 +133,23 @@ Config.Companies.Management = {
     Promote = true, -- if true, the boss can promote employees
 }
 
-Config.CustomApps = { -- https://docs.lbphone.com/phone/custom-apps
-
-}
+Config.CustomApps = {} -- https://docs.lbphone.com/phone/custom-apps
 
 Config.Valet = {}
 Config.Valet.Enabled = true -- allow players to get their vehicles from the phone
 Config.Valet.Price = 100 -- price to get your vehicle
 
-Config.HouseScript = "ps-housing" --[[
+Config.HouseScript = "auto" --[[
     The housing script you use on your server
     Supported:
         * loaf_housing - https://store.loaf-scripts.com/package/4310850
         * qb-houses - https://github.com/qbcore-framework/qb-houses
+        * qs-housing - https://buy.quasar-store.com/package/5677308
 ]]
 
 --[[ VOICE OPTIONS ]] --
 Config.Voice = {}
-Config.Voice.CallEffects = true -- enable call effects while on speaker mode? (NOTE: This may create sound-issues if you have too many submixes registered in your server)
+Config.Voice.CallEffects = false -- enable call effects while on speaker mode? (NOTE: This may create sound-issues if you have too many submixes registered in your server)
 Config.Voice.System = "pma"
 --[[
     Supported voice systems:
@@ -175,18 +178,18 @@ Config.Voice.RecordNearby = true --[[
 
 --[[ PHONE OPTIONS ]] --
 Config.Locations = { -- Locations that'll appear in the maps app.
-    {
-        position = vector2(428.9, -984.5),
-        name = "LSPD",
-        description = "Los Santos Police Department",
-        icon = "https://cdn-icons-png.flaticon.com/512/7211/7211100.png",
-    },
-    {
-        position = vector2(304.2, -587.0),
-        name = "Pillbox",
-        description = "Pillbox Medical Hospital",
-        icon = "https://cdn-icons-png.flaticon.com/128/1032/1032989.png",
-    },
+    -- {
+    --     position = vector2(428.9, -984.5),
+    --     name = "LSPD",
+    --     description = "Los Santos Police Department",
+    --     icon = "https://cdn-icons-png.flaticon.com/512/7211/7211100.png",
+    -- },
+    -- {
+    --     position = vector2(304.2, -587.0),
+    --     name = "Pillbox",
+    --     description = "Pillbox Medical Hospital",
+    --     icon = "https://cdn-icons-png.flaticon.com/128/1032/1032989.png",
+    -- },
 }
 
 Config.Locales = { -- languages that the player can choose from when setting up a phone [Check the docs to see which languages the phone supports]
@@ -290,11 +293,11 @@ Config.MaxTransferAmount = 1000000 -- The maximum amount of money that can be tr
 Config.EnableMessagePay = true -- Allow players to pay other players via messages?
 Config.EnableVoiceMessages = true -- Allow players to send voice messages?
 
-Config.CityName = "PursuitCity" -- The name that's being used in the weather app etc.
-Config.RealTime = false -- if true, the time will use real life time depending on where the user lives, if false, the time will be the ingame time.
+Config.CityName = "Los Santos" -- The name that's being used in the weather app etc.
+Config.RealTime = true -- if true, the time will use real life time depending on where the user lives, if false, the time will be the ingame time.
 Config.CustomTime = false -- NOTE: disable Config.RealTime if using this. you can set this to a function that returns custom time, as a table: { hour = 0-24, minute = 0-60 }
 
-Config.EmailDomain = "Playhaven.net"
+Config.EmailDomain = "pursuitx.net"
 
 Config.DeleteMessages = true -- allow players to delete messages in the messages app?
 
@@ -337,7 +340,7 @@ Config.TwitterTrending = {}
 Config.TwitterTrending.Enabled = true -- show trending hashtags?
 Config.TwitterTrending.Reset = 7 * 24 -- How often should trending hashtags be reset on twitter? (in hours)
 
-Config.TwitterNotifications = false -- should everyone get a notification when someone tweets?
+Config.TwitterNotifications = true -- should everyone get a notification when someone tweets?
 
 Config.PromoteTwitter = {}
 Config.PromoteTwitter.Enabled = true -- should you be able to promote tweets?
@@ -412,7 +415,7 @@ Config.KeyBinds = {
     -- Find keybinds here: https://docs.fivem.net/docs/game-references/input-mapper-parameter-ids/keyboard/
     Open = { -- toggle the phone
         Command = "phone",
-        Bind = "F1",
+        Bind = "M",
         Description = "Open your phone"
     },
     Focus = { -- keybind to toggle the mouse cursor.

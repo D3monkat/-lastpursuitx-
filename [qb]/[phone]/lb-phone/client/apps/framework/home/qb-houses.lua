@@ -1,8 +1,8 @@
-CreateThread(function()
-    if Config.HouseScript ~= "qb-houses" then
-        return
-    end
+if Config.HouseScript ~= "qb-houses" then
+    return
+end
 
+CreateThread(function()
     while not loaded do
         Wait(500)
     end
@@ -58,7 +58,7 @@ CreateThread(function()
         local action = data.action
 
         if action == "getHomes" then
-            QB.Functions.TriggerCallback('qb-phone:server:GetPlayerHouses', function(houses)
+            QB.Functions.TriggerCallback("qb-phone:server:GetPlayerHouses", function(houses)
                 if not houses then
                     return cb({})
                 end
@@ -69,7 +69,7 @@ CreateThread(function()
             local houseData = data.houseData
             TriggerServerEvent("qb-houses:server:removeHouseKey", houseData.uniqueId, { citizenid = data.identifier, firstname = "", lastname = "" })
             Wait(500)
-            QB.Functions.TriggerCallback('qb-phone:server:GetPlayerHouses', function(houses)
+            QB.Functions.TriggerCallback("qb-phone:server:GetPlayerHouses", function(houses)
                 if not houses then
                     return cb({})
                 end
@@ -80,7 +80,7 @@ CreateThread(function()
             local houseData = data.houseData
             TriggerServerEvent("qb-houses:server:giveHouseKey", tonumber(data.source), houseData.uniqueId)
             Wait(500)
-            QB.Functions.TriggerCallback('qb-phone:server:GetPlayerHouses', function(houses)
+            QB.Functions.TriggerCallback("qb-phone:server:GetPlayerHouses", function(houses)
                 if not houses then
                     return cb({})
                 end
