@@ -134,6 +134,7 @@ Config = {
 		"aluminum",
 		"bottle",
 		"can",
+		"ceramic",
 	},
 	DumpItems = {
 		"bottle",
