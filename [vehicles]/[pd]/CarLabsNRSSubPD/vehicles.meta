@@ -101,13 +101,13 @@
       <additionalTrailers />
       <drivers />
       <extraIncludes>
-	  	<Item>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7</Item>
+	  	<Item></Item>
 	    </extraIncludes>
       <doorsWithCollisionWhenClosed />
       <driveableDoors />
       <bumpersNeedToCollideWithMap value="true" />
       <needsRopeTexture value="false" />
-      <requiredExtras>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7</requiredExtras>
+      <requiredExtras></requiredExtras>
       <rewards />
       <cinematicPartCamera>
         <Item>WHEEL_FRONT_RIGHT_CAMERA</Item>
@@ -229,13 +229,13 @@
         </Item>
       </drivers>
       <extraIncludes>
-	  	<Item>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7</Item>
+	  	<Item></Item>
 	  </extraIncludes>
       <doorsWithCollisionWhenClosed />
       <driveableDoors />
       <bumpersNeedToCollideWithMap value="false" />
       <needsRopeTexture value="false" />
-      <requiredExtras>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7</requiredExtras>
+      <requiredExtras></requiredExtras>
       <rewards />
       <cinematicPartCamera>
         <Item>WHEEL_FRONT_RIGHT_CAMERA</Item>
@@ -357,13 +357,13 @@
         </Item>
       </drivers>
       <extraIncludes>
-        <Item>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7</Item>
+        <Item></Item>
         </extraIncludes>
       <doorsWithCollisionWhenClosed />
       <driveableDoors />
       <bumpersNeedToCollideWithMap value="false" />
       <needsRopeTexture value="false" />
-      <requiredExtras>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7</requiredExtras>
+      <requiredExtras></requiredExtras>
       <rewards />
       <cinematicPartCamera>
         <Item>WHEEL_FRONT_RIGHT_CAMERA</Item>
@@ -476,13 +476,13 @@
       <additionalTrailers />
       <drivers />
       <extraIncludes>
-	  	<Item>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7</Item>
+	  	<Item></Item>
 	    </extraIncludes>
       <doorsWithCollisionWhenClosed />
       <driveableDoors />
       <bumpersNeedToCollideWithMap value="false" />
       <needsRopeTexture value="false" />
-      <requiredExtras>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7</requiredExtras>
+      <requiredExtras></requiredExtras>
       <rewards />
       <cinematicPartCamera>
         <Item>WHEEL_FRONT_RIGHT_CAMERA</Item>
@@ -602,13 +602,13 @@
         </Item>
       </drivers>
       <extraIncludes>
-        <Item>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7 EXTRA_8</Item>
+        <Item></Item>
         </extraIncludes>
       <doorsWithCollisionWhenClosed />
       <driveableDoors />
       <bumpersNeedToCollideWithMap value="false" />
       <needsRopeTexture value="false" />
-      <requiredExtras>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7 EXTRA_8</requiredExtras>
+      <requiredExtras></requiredExtras>
       <rewards />
       <cinematicPartCamera>
         <Item>WHEEL_FRONT_RIGHT_CAMERA</Item>
@@ -711,13 +711,13 @@
       <additionalTrailers />
       <drivers />
       <extraIncludes>
-        <Item>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7</Item>
+        <Item></Item>
         </extraIncludes>
       <doorsWithCollisionWhenClosed />
       <driveableDoors />
       <bumpersNeedToCollideWithMap value="false" />
       <needsRopeTexture value="false" />
-      <requiredExtras>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7</requiredExtras>
+      <requiredExtras></requiredExtras>
       <rewards />
       <cinematicPartCamera>
         <Item>WHEEL_FRONT_RIGHT_CAMERA</Item>
@@ -822,13 +822,13 @@
       <additionalTrailers />
       <drivers />
       <extraIncludes>
-        <Item>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7</Item>
+        <Item></Item>
         </extraIncludes>
       <doorsWithCollisionWhenClosed />
       <driveableDoors />
       <bumpersNeedToCollideWithMap value="false" />
       <needsRopeTexture value="false" />
-      <requiredExtras>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7</requiredExtras>
+      <requiredExtras></requiredExtras>
       <rewards />
       <cinematicPartCamera>
         <Item>WHEEL_FRONT_RIGHT_CAMERA</Item>
@@ -943,13 +943,13 @@
       <additionalTrailers />
       <drivers />
       <extraIncludes>
-	  	<Item>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7</Item>
+	  	<Item></Item>
 	    </extraIncludes>
       <doorsWithCollisionWhenClosed />
       <driveableDoors />
       <bumpersNeedToCollideWithMap value="false" />
       <needsRopeTexture value="false" />
-      <requiredExtras>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7</requiredExtras>
+      <requiredExtras></requiredExtras>
       <rewards />
       <cinematicPartCamera>
         <Item>WHEEL_FRONT_RIGHT_CAMERA</Item>
@@ -1066,13 +1066,13 @@
       <additionalTrailers />
       <drivers />
       <extraIncludes>
-        <Item>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7</Item>
+        <Item></Item>
       </extraIncludes>
       <doorsWithCollisionWhenClosed />
       <driveableDoors />
       <bumpersNeedToCollideWithMap value="false" />
       <needsRopeTexture value="false" />
-      <requiredExtras>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7</requiredExtras>
+      <requiredExtras></requiredExtras>
       <rewards />
       <cinematicPartCamera>
         <Item>WHEEL_FRONT_RIGHT_CAMERA</Item>
@@ -1179,13 +1179,13 @@
       <additionalTrailers />
       <drivers />
       <extraIncludes>
-        <Item>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7</Item>
+        <Item></Item>
       </extraIncludes>
       <doorsWithCollisionWhenClosed />
       <driveableDoors />
       <bumpersNeedToCollideWithMap value="false" />
       <needsRopeTexture value="false" />
-      <requiredExtras>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7</requiredExtras>
+      <requiredExtras></requiredExtras>
       <rewards />
       <cinematicPartCamera>
         <Item>WHEEL_FRONT_RIGHT_CAMERA</Item>
@@ -1296,13 +1296,13 @@
         </Item>
       </drivers>
           <extraIncludes>
-          <Item>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7 EXTRA_8</Item>
+          <Item></Item>
           </extraIncludes>
       <doorsWithCollisionWhenClosed/>
       <driveableDoors/>
       <bumpersNeedToCollideWithMap value="false"/>
       <needsRopeTexture value="false"/>
-      	<requiredExtras>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7 EXTRA_8</requiredExtras>
+      	<requiredExtras></requiredExtras>
       	<rewards />
       <cinematicPartCamera>
         <Item>WHEEL_REAR_LEFT_CAMERA</Item>
@@ -1410,13 +1410,13 @@
 			</Item>
 		</drivers>
       	<extraIncludes>
-        <Item>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7</Item>
+        <Item></Item>
         </extraIncludes>
 		<doorsWithCollisionWhenClosed/>
 		<driveableDoors/>
 		<bumpersNeedToCollideWithMap value="false"/>
 		<needsRopeTexture value="false"/>
-      	<requiredExtras>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7</requiredExtras>
+      	<requiredExtras></requiredExtras>
       	<rewards />
 		<cinematicPartCamera>
 			<Item>WHEEL_REAR_LEFT_CAMERA</Item>
@@ -1638,13 +1638,13 @@
       <additionalTrailers />
       <drivers />
       <extraIncludes>
-	  	<Item>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7</Item>
+	  	<Item></Item>
 	  </extraIncludes>
       <doorsWithCollisionWhenClosed />
       <driveableDoors />
       <bumpersNeedToCollideWithMap value="true" />
       <needsRopeTexture value="false" />
-      <requiredExtras>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7</requiredExtras>
+      <requiredExtras></requiredExtras>
       <rewards />
       <cinematicPartCamera>
         <Item>WHEEL_FRONT_RIGHT_CAMERA</Item>
@@ -1745,13 +1745,13 @@
       <additionalTrailers />
       <drivers />
       <extraIncludes>
-        <Item>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7 EXTRA_8</Item>
+        <Item></Item>
       </extraIncludes>
       <doorsWithCollisionWhenClosed />
       <driveableDoors />
       <bumpersNeedToCollideWithMap value="true" />
       <needsRopeTexture value="false" />
-      <requiredExtras>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7 EXTRA_8</requiredExtras>
+      <requiredExtras></requiredExtras>
       <rewards />
       <cinematicPartCamera>
         <Item>WHEEL_FRONT_RIGHT_CAMERA</Item>
@@ -1876,7 +1876,7 @@
       <additionalTrailers />
       <drivers />
       <extraIncludes>
-        <Item>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7</Item>
+        <Item></Item>
       </extraIncludes>
       <doorsWithCollisionWhenClosed>
         <Item>VEH_EXT_BOOT</Item>
@@ -1884,7 +1884,7 @@
       <driveableDoors />
       <bumpersNeedToCollideWithMap value="false" />
       <needsRopeTexture value="false" />
-      <requiredExtras>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7</requiredExtras>
+      <requiredExtras></requiredExtras>
       <rewards />
       <cinematicPartCamera>
         <Item>WHEEL_FRONT_RIGHT_CAMERA</Item>
@@ -1993,13 +1993,13 @@
       <additionalTrailers />
       <drivers />
       <extraIncludes>
-        <Item>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7 EXTRA_8</Item>
+        <Item></Item>
       </extraIncludes>
       <doorsWithCollisionWhenClosed />
       <driveableDoors />
       <bumpersNeedToCollideWithMap value="false" />
       <needsRopeTexture value="false" />
-      <requiredExtras>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7 EXTRA_8</requiredExtras>
+      <requiredExtras></requiredExtras>
       <rewards />
       <cinematicPartCamera>
         <Item>WHEEL_FRONT_RIGHT_CAMERA</Item>
@@ -2127,13 +2127,13 @@
         </Item>
       </drivers>
       <extraIncludes>
-        <Item>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7</Item>
+        <Item></Item>
         </extraIncludes>
       <doorsWithCollisionWhenClosed />
       <driveableDoors />
       <bumpersNeedToCollideWithMap value="false" />
       <needsRopeTexture value="false" />
-      <requiredExtras>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7</requiredExtras>
+      <requiredExtras></requiredExtras>
       <rewards />
       <cinematicPartCamera>
         <Item>WHEEL_FRONT_RIGHT_CAMERA</Item>
@@ -2250,13 +2250,13 @@
       <additionalTrailers />
       <drivers />
       <extraIncludes>
-        <Item>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7 EXTRA_8</Item>
+        <Item></Item>
         </extraIncludes>
       <doorsWithCollisionWhenClosed />
       <driveableDoors />
       <bumpersNeedToCollideWithMap value="false" />
       <needsRopeTexture value="false" />
-      <requiredExtras>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7 EXTRA_8</requiredExtras>
+      <requiredExtras></requiredExtras>
       <rewards />
       <cinematicPartCamera>
         <Item>WHEEL_FRONT_RIGHT_CAMERA</Item>
@@ -2357,13 +2357,13 @@
       <additionalTrailers />
       <drivers />
       <extraIncludes>
-	  	<Item>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7</Item>
+	  	<Item></Item>
 	    </extraIncludes>
       <doorsWithCollisionWhenClosed />
       <driveableDoors />
       <bumpersNeedToCollideWithMap value="false" />
       <needsRopeTexture value="false" />
-      <requiredExtras>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7</requiredExtras>
+      <requiredExtras></requiredExtras>
       <rewards />
       <cinematicPartCamera>
         <Item>WHEEL_FRONT_RIGHT_CAMERA</Item>
@@ -2493,13 +2493,13 @@
         </Item>
       </drivers>
       <extraIncludes>
-        <Item>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7 EXTRA_8</Item>
+        <Item></Item>
       </extraIncludes>
       <doorsWithCollisionWhenClosed />
       <driveableDoors />
       <bumpersNeedToCollideWithMap value="false" />
       <needsRopeTexture value="false" />
-      <requiredExtras>EXTRA_1 EXTRA_2 EXTRA_3 EXTRA_4 EXTRA_5 EXTRA_6 EXTRA_7 EXTRA_8</requiredExtras>
+      <requiredExtras></requiredExtras>
       <rewards />
       <cinematicPartCamera>
         <Item>WHEEL_FRONT_RIGHT_CAMERA</Item>
