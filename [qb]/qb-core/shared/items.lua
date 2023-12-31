@@ -423,6 +423,8 @@ QBShared.Items = {
 	ducttape =          {name = 'ducttape',         label = 'Duct Tape',			weight = 0, type = 'item',  image = 'bodyrepair.png',       unique = true,  useable = true, shouldClose = true, description = 'Good for quick fixes'},
 	mechboard =         {name = 'mechboard',        label = 'Mechanic Sheet',		weight = 0, type = 'item',  image = 'mechboard.png',        unique = true,  useable = true, shouldClose = true, description = ''},
 
+    boombox          = { name = 'boombox', label = 'Boombox', weight = 100, type = 'item', image = 'boombox.png', unique = true, useable = false, shouldClose = false, combinable = nil, description = 'A Boombox' },
+
 	--Performance
 	turbo =             {name = 'turbo',            label = 'Supercharger Turbo',	weight = 0, type = 'item',  image = 'turbo.png',            unique = true,  useable = true, shouldClose = true, description = 'Who doesnt need a 65mm Turbo??'},
 	car_armor =          {name = 'car_armor',		label = 'Vehicle Armor',		weight = 0, type = 'item',  image = 'car_armour.png',           unique = true,  useable = true, shouldClose = true, description = ''},
