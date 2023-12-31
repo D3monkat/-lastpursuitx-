@@ -15,7 +15,7 @@
       <animConvRoofName>null</animConvRoofName>
       <animConvRoofWindowsAffected />
       <ptfxAssetName>null</ptfxAssetName>
-      <audioNameHash>PHANTOM</audioNameHash>
+      <audioNameHash>phantom</audioNameHash>
       <layout>LAYOUT_RANGER_SANDKING</layout>
       <coverBoundOffsets>PHANTOM_COVER_OFFSET_INFO</coverBoundOffsets>
       <explosionInfo>EXPLOSION_INFO_TRUCK</explosionInfo>
