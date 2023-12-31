@@ -1,7 +1,7 @@
 -- Zones for Menues
 Config = Config or {}
 
-Config.UseTarget = GetConvar('UseTarget', 'false') == 'true' -- Use qb-target interactions (don't change this, go to your server.cfg and add `setr UseTarget true` to use this and just that from true to false or the other way around)
+Config.UseTarget = false -- Use qb-target interactions (don't change this, go to your server.cfg and add `setr UseTarget true` to use this and just that from true to false or the other way around)
 
 Config.BossMenus = {
     ['police'] = {
@@ -55,7 +55,7 @@ Config.BossMenuZones = {
 
 Config.GangMenus = {
     ['lostmc'] = {
-        vector3(0, 0, 0),
+        vector3(1002.23, -128.73, 74.06),
     },
     ['ballas'] = {
         vector3(0, 0, 0),
