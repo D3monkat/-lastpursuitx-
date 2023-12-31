@@ -1520,6 +1520,7 @@ weapon_colbaton 			 = {name = 'weapon_colbaton', 		 	  	label = 'PD Baton', 				
     scrap 				 	 	 = {name = 'scrap', 			    	    label = 'Scrap S', 			    	weight = 200, 	type = 'item', 		image = 'blowtorch.png', 			unique = false, 	useable = false, 	shouldClose = false,   combinable = nil,   description = '0x0x'},
     scrap2 				 	 	 = {name = 'scrap2', 			    	    label = 'Scrap M', 			    	weight = 200, 	type = 'item', 		image = 'blowtorch.png', 			unique = false, 	useable = false, 	shouldClose = false,   combinable = nil,   description = '0x0x'},
     scrap3 				 	 	 = {name = 'scrap', 			    	    label = 'Scrap L', 			    	weight = 200, 	type = 'item', 		image = 'blowtorch.png', 			unique = false, 	useable = false, 	shouldClose = false,   combinable = nil,   description = '0x0x'},
+	kq_outfitbag 			 	 = {name = "kq_outfitbag", 				    label = "Outfit bag",	 		    weight = 4000, 		type = "item", 		image = "kq_outfitbag.png", 	    unique = false, 	useable = true, 	shouldClose = true,    combinable = nil,   description = "Holds different outfits"},
 
 
 
