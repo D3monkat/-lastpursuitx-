@@ -1,55 +1,73 @@
 carMenuOpen = false
 RegisterKeyMapping(Config.Menu.Command, 'Open/close car menu', 'keyboard', Config.Menu.Keybind)
 RegisterCommand(Config.Menu.Command, function()
-    carMenuOpen = not carMenuOpen
-    SetNuiFocus(carMenuOpen, carMenuOpen)
-    local veh = GetVehiclePedIsIn(PlayerPedId(), false)
-    local doorData = {}
-    local doorNum = GetVehicleModelNumberOfSeats(GetEntityModel(veh)) - 1
-    for i = 0, doorNum do
-        local opened = false
-        if GetVehicleDoorAngleRatio(veh, i) > 0.0 then
-            opened = true
+    if IsPedInAnyVehicle(PlayerPedId(), false) then
+        carMenuOpen = not carMenuOpen
+        SetNuiFocus(carMenuOpen, carMenuOpen)
+        local veh = GetVehiclePedIsIn(PlayerPedId(), false)
+        local doorData = {}
+        local doorNum = GetVehicleModelNumberOfSeats(GetEntityModel(veh)) - 1
+        for i = 0, doorNum do
+            local opened = false
+            if GetVehicleDoorAngleRatio(veh, i) > 0.0 then
+                opened = true
+            end
+            table.insert(doorData, {
+                doorNum = tostring(i),
+                opened = opened
+            })
         end
-        table.insert(doorData, {
-            doorNum = tostring(i),
-            opened = opened
+        local mySeat = nil
+        if doorNum > 10 then
+            for i = -1, doorNum do
+                if GetPedInVehicleSeat(veh, i) == 0 then
+                else
+                    mySeat = i
+                end
+            end
+        elseif doorNum == 1 then
+            for i = -1, doorNum - 1 do
+                if GetPedInVehicleSeat(veh, i) == 0 then
+                else
+                    mySeat = i
+                end
+            end
+        else
+            for i = -1, doorNum - 2 do
+                if GetPedInVehicleSeat(veh, i) == 0 then
+                else
+                    mySeat = i
+                end
+            end
+        end
+        local retval, lights, highbeams = GetVehicleLightsState(veh)
+        local hoodOpen = false
+        if GetVehicleDoorAngleRatio(veh, 4) > 0.0 then
+            hoodOpen = true
+        end
+        local trunkOpen = false
+        if GetVehicleDoorAngleRatio(veh, 5) > 0.0 then
+            trunkOpen = true
+        end
+        local indicatorState = GetVehicleIndicatorLights(veh)
+        while mySeat == nil do Citizen.Wait(0) end
+        SendNUIMessage({
+            action = "openCarMenu", resourceName = GetCurrentResourceName(), state = carMenuOpen, align = Config.Menu.Align, carData = {
+                doorNum = GetVehicleModelNumberOfSeats(GetEntityModel(veh)),
+                doorData = doorData,
+                vehConvertible = IsVehicleAConvertible(veh, false),
+                vehConvertibleState = GetConvertibleRoofState(veh),
+                engineState = GetIsVehicleEngineRunning(veh),
+                playerSeat = mySeat,
+                intLightState = IsVehicleInteriorLightOn(veh),
+                lightsOn = lights,
+                highbeamsOn = highbeams,
+                trunk = trunkOpen,
+                hood = hoodOpen,
+                indicatorState = indicatorState
+            }
         })
     end
-    local mySeat = nil
-    for i = -1, doorNum - 2 do
-        if GetPedInVehicleSeat(veh, i) == 0 then
-        else
-            mySeat = i
-        end
-    end
-    local retval, lights, highbeams = GetVehicleLightsState(veh)
-    local hoodOpen = false
-    if GetVehicleDoorAngleRatio(veh, 4) > 0.0 then
-        hoodOpen = true
-    end
-    local trunkOpen = false
-    if GetVehicleDoorAngleRatio(veh, 5) > 0.0 then
-        trunkOpen = true
-    end
-    local indicatorState = GetVehicleIndicatorLights(veh)
-    while mySeat == nil do Citizen.Wait(0) end
-    SendNUIMessage({
-        action = "openCarMenu", resourceName = GetCurrentResourceName(), state = carMenuOpen, align = Config.Menu.Align, carData = {
-            doorNum = GetVehicleModelNumberOfSeats(GetEntityModel(veh)),
-            doorData = doorData,
-            vehConvertible = IsVehicleAConvertible(veh, false),
-            vehConvertibleState = GetConvertibleRoofState(veh),
-            engineState = GetIsVehicleEngineRunning(veh),
-            playerSeat = mySeat,
-            intLightState = IsVehicleInteriorLightOn(veh),
-            lightsOn = lights,
-            highbeamsOn = highbeams,
-            trunk = trunkOpen,
-            hood = hoodOpen,
-            indicatorState = indicatorState
-        }
-    })
 end)
 
 RegisterNUICallback('callback', function(data)
