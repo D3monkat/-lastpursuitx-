@@ -382,7 +382,7 @@ return {
 		label = "Boombox",
 		weight = 0,
 		stack = false,
-		close = false,
+		close = true,
 		description = "",
 		client = {
 			image = "boombox.png",
