@@ -131,6 +131,69 @@ Config.Locations[#Config.Locations+1] = { --[[ REDLINE ]]--
         color = 16711680,
     }
 }
+Config.Locations[#Config.Locations+1] = { --[[ GABZ LS TUNER SHOP ]]--
+	Enabled = true,
+	job = "mechanic",
+	zones = {
+		vec2(154.69816589355, -3007.0153808594),
+		vec2(120.64015197754, -3006.7275390625),
+		vec2(120.48593902588, -3051.8874511719),
+		vec2(154.61296081543, -3051.5419921875)
+	},
+	autoClock = { enter = true, exit = true, },
+	stash = {
+		{ coords = vec4(144.38, -3051.3, 7.04, 0.0), w = 0.6, d = 3.6, },
+		{ coords = vec4(128.45, -3007.83, 7.04, 0.0), w = 2.4, d = 3.5, },
+	},
+	store = {
+		{ coords = vec4(128.64, -3014.68, 7.04, 0.0), w = 1.6, d = 3.0, },
+	},
+	crafting = {
+		{ coords = vec4(136.71, -3051.29, 7.04, 0.0), w = 0.6, d = 1.0, },
+	},
+	clockin = {
+		{ coords = vec4(145.29, -3012.93, 6.94, 86.0), prop = true, },
+		{ coords = vec4(125.55, -3007.25, 6.94, 350.0), w = 0.4, d = 0.45, },
+	},
+	manualRepair = {
+		{ coords = vec4(121.0, -3047.69, 7.04, 270.11), prop = true, },
+	},
+	nosrefill = {
+		{ coords = vec4(121.17, -3044.73, 7.04, 268.96) },
+	},
+	carLift = {
+		{ coords = vec4(123.0, -3038.0, 7.04, 90.0), use = true, },
+		{ coords = vec4(123.0, -3044.0, 7.04, 90.0), use = true, },
+		{ coords = vector4(128.28, -3023.01, 7.04, 90.41) }
+	},
+	garage = {
+		spawn = vec4(163.22, -3009.31, 5.27, 89.72),
+		out = vec4(157.37, -3016.57, 7.04, 179.58),
+		list = { "towtruck", "panto", "slamtruck", "cheburek", "utillitruck3" },
+		prop = true,
+	},
+	payments = {
+		img = "https://static.wikia.nocookie.net/gtawiki/images/f/f2/GTAV-LSCustoms-Logo.png",
+		{ coords = vec4(146.44, -3014.09, 6.94, 195.0), prop = true, },
+	},
+	Restrictions = {
+		Vehicle = { "Compacts", "Sedans", "SUVs", "Coupes", "Muscle", "Sports Classics", "Sports", "Super", "Motorcycles", "Off-road", "Industrial", "Utility", "Vans", "Cycles", "Service", "Emergency", "Commercial", },
+		Allow = { "tools", "cosmetics", "repairs", "nos", "perform" },
+	},
+	blip = {
+		coords = vec3(139.91, -3023.83, 7.04),
+		label = "LS Tuner Shop",
+		color = 81,
+		sprite = 446,
+		disp = 6,
+		scale = 0.7,
+		cat = nil,
+	},
+	discord = {
+		link = "",
+		color = 2571775,
+	}
+}
 
 Config.Locations[#Config.Locations+1] = { --[[ RFC LS CUSTOMS ]]--
     Enabled = true,
