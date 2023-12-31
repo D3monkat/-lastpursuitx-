@@ -1,22 +1,22 @@
 -- Webhook for instapic posts, recommended to be a public channel
-INSTAPIC_WEBHOOK = "https://discord.com/api/webhooks/1179595734471942146/-F3ZyJj4lNOvy-K_1UNqtpy4fhqKfn1OjLGl3t945ojE6KdUSqcnrz6QZcIvg8ujPwj3"
+INSTAPIC_WEBHOOK = "https://discord.com/api/webhooks/1179595827027656866/dUixCnNSfodt4xlvsOHEb3t82XBMwwBj8ZYRLWaZhhwH-Rrsez6uUWIEVRDlCiiR9o4o"
 -- Webhook for birdy posts, recommended to be a public channel
 BIRDY_WEBHOOK = "https://discord.com/api/webhooks/1179595827027656866/dUixCnNSfodt4xlvsOHEb3t82XBMwwBj8ZYRLWaZhhwH-Rrsez6uUWIEVRDlCiiR9o4o"
 
 -- Discord webhook for server logs
 LOGS = {
-    Calls = "false", -- set to false to disable
-    Messages = "false",
-    InstaPic = "false",
-    Birdy = "false",
-    YellowPages = "false",
-    Marketplace = "false",
-    Mail = "false",
-    Wallet = "false",
-    DarkChat = "false",
-    Services = "false",
-    Crypto = "false",
-    Trendy = "false"
+    Calls = false, -- set to false to disable
+    Messages = false,
+    InstaPic = false,
+    Birdy = false,
+    YellowPages = false,
+    Marketplace = false,
+    Mail = false,
+    Wallet = false,
+    DarkChat = false,
+    Services = false,
+    Crypto = false,
+    Trendy = false
 }
 
 API_KEYS = {

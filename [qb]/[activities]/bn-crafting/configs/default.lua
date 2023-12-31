@@ -13,13 +13,13 @@ Config.Default = {
 ["bag"] = {
     ["aluminum"] = 10,  -- Amount of the material required, and the name of the material
     ["plastic"] = 20, -- You can add as many materials as you want.
-    xp = 5, -- Amount of XP you get for crafting this item
+    xp = 10, -- Amount of XP you get for crafting this item
     time = 1000 -- Time it takes to craft this item in milliseconds
 },
 ["drill"] = {
     ["aluminum"] = 10,  -- Amount of the material required, and the name of the material
     ["plastic"] = 20, -- You can add as many materials as you want.
-    xp = 5, -- Amount of XP you get for crafting this item
+    xp = 15, -- Amount of XP you get for crafting this item
     time = 1000 -- Time it takes to craft this item in milliseconds
 },
 },
@@ -27,7 +27,7 @@ Config.Default = {
 ["blowtorch"] = {
     ["aluminum"] = 10,  -- Amount of the material required, and the name of the material
     ["plastic"] = 20, -- You can add as many materials as you want.
-    xp = 5, -- Amount of XP you get for crafting this item
+    xp = 20, -- Amount of XP you get for crafting this item
     time = 1000 -- Time it takes to craft this item in milliseconds
 },
 },
@@ -35,7 +35,7 @@ Config.Default = {
 ["big_drill"] = {
     ["aluminum"] = 10,  -- Amount of the material required, and the name of the material
     ["plastic"] = 20, -- You can add as many materials as you want.
-    xp = 5, -- Amount of XP you get for crafting this item
+    xp = 25, -- Amount of XP you get for crafting this item
     time = 1000 -- Time it takes to craft this item in milliseconds
 },
 },

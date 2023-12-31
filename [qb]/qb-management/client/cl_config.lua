@@ -1,11 +1,17 @@
 -- Zones for Menues
 Config = Config or {}
 
-Config.UseTarget = GetConvar('UseTarget', 'false') == 'true' -- Use qb-target interactions (don't change this, go to your server.cfg and add `setr UseTarget true` to use this and just that from true to false or the other way around)
+Config.UseTarget = false -- Use qb-target interactions (don't change this, go to your server.cfg and add `setr UseTarget true` to use this and just that from true to false or the other way around)
 
 Config.BossMenus = {
     ['police'] = {
-        vector3(461.45, -986.2, 30.73),
+        vector3(460.8, -985.65, 30.73),
+    },
+    ['bcso'] = {
+        vector3(460.8, -985.65, 30.73),
+    },
+    ['sast'] = {
+        vector3(460.8, -985.65, 30.73),
     },
     ['ambulance'] = {
         vector3(-430.25, -323.18, 34.91),
@@ -42,11 +48,14 @@ Config.BossMenuZones = {
     ['mechanic'] = {
         { coords = vector3(-339.53, -156.44, 44.59), length = 1.15, width = 2.6, heading = 353.0, minZ = 43.59, maxZ = 44.99 },
     },
+    ['rexmech'] = {
+        { coords = vector3(2533.01, 2639.51, 37.95), length = 1.15, width = 2.6, heading = 353.0, minZ = 36.59, maxZ = 39.99 },
+    },
 }
 
 Config.GangMenus = {
     ['lostmc'] = {
-        vector3(0, 0, 0),
+        vector3(1002.23, -128.73, 74.06),
     },
     ['ballas'] = {
         vector3(0, 0, 0),

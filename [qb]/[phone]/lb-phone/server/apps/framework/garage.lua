@@ -24,19 +24,20 @@ lib.RegisterCallback("phone:garage:findCar", function(source, cb, plate)
     local phoneNumber = GetEquippedPhoneNumber(source)
 
     local out, vehicle = IsVehicleOut(plate)
-    if out then
-        cb(GetEntityCoords(vehicle))
-    else
-        if phoneNumber then
-            SendNotification(phoneNumber, {
-                source = source,
-                app = "Garage",
-                title = L("BACKEND.GARAGE.VALET"),
-                content = L("BACKEND.GARAGE.COULDNT_FIND"),
-            })
-        end
-        cb(false)
+    if out and vehicle then
+        return cb(GetEntityCoords(vehicle))
     end
+
+    if phoneNumber then
+        SendNotification(phoneNumber, {
+            source = source,
+            app = "Garage",
+            title = L("BACKEND.GARAGE.VALET"),
+            content = L("BACKEND.GARAGE.COULDNT_FIND"),
+        })
+    end
+
+    cb(false)
 end)
 
 lib.RegisterCallback("phone:garage:getVehicles", function(source, cb)

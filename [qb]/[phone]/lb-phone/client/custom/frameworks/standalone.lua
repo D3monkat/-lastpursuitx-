@@ -1,8 +1,8 @@
-CreateThread(function()
-    if Config.Framework ~= "standalone" then
-        return
-    end
+if Config.Framework ~= "standalone" then
+    return
+end
 
+CreateThread(function()
     while not NetworkIsSessionStarted() do
         Wait(500)
     end

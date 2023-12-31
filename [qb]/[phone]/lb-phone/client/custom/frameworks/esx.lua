@@ -1,12 +1,13 @@
-CreateThread(function()
-    if Config.Framework ~= "esx" then
-        return
-    end
+if Config.Framework ~= "esx" then
+    return
+end
 
+CreateThread(function()
     debugprint("Loading ESX")
     local export, ESX = pcall(function()
         return exports.es_extended:getSharedObject()
     end)
+
     if not export then
         while not ESX do
             TriggerEvent("esx:getSharedObject", function(obj)

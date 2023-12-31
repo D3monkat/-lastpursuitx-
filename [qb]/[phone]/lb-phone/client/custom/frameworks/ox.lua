@@ -1,3 +1,7 @@
+if Config.Framework ~= "ox" then
+    return
+end
+
 local playerLoaded
 AddEventHandler("onResourceStart", function(resourceName)
     if resourceName == GetCurrentResourceName() then
@@ -6,10 +10,6 @@ AddEventHandler("onResourceStart", function(resourceName)
 end)
 
 CreateThread(function()
-    if Config.Framework ~= "ox" then
-        return
-    end
-
     RegisterNetEvent("ox:playerLoaded", function()
         playerLoaded = true
     end)
