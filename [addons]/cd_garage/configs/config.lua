@@ -791,6 +791,20 @@ Config.Locations = {
         ShellType = '10cargarage_shell',
     },
 
+    {
+        Garage_ID = 'kitty', --PALETO
+        Type = 'car',
+        Dist = 10,
+        x_1 = -586.34, y_1 = -1101.42, z_1 = 22.18,
+        EventName1 = 'cd_garage:QuickChoose',
+        EventName2 = 'cd_garage:EnterGarage',
+        Name = UIText,
+        x_2 = -586.34, y_2 = -1101.42, z_2 = 22.18, h_2 = 360.0,
+        EnableBlip = true,
+        JobRestricted = nil,
+        ShellType = '10cargarage_shell',
+    },
+
 
 
 
