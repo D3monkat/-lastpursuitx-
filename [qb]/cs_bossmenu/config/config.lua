@@ -44,10 +44,22 @@ CodeStudio.No_Job = {           -- Default Job (Job to be given after fire)
 CodeStudio.Locations = {
     ['bossmenu'] = {
         ['police'] = {
-            vector4(448.25, -973.38, 30.69, 144),
+            vector4(460.73, -985.56, 30.73, 189.16),
+        },
+        ['sast'] = {
+            vector4(1834.39, 3677.01, 38.87, 119.42),
+        },
+        ['bcso'] = {
+            vector4(1824.83, 3672.17, 38.86, 294.65),
+        },
+        ['catcafe'] = {
+            vector4(-577.34, -1067.57, 26.61, 7.94),
         },
         ['ambulance'] = {
-            vector4(446.29, -978.88, 30.69, 123.06),
+            vector4(357.02, -1408.02, 32.99, 40.29),
+        },
+        ['burgershot'] = {
+            vector4(-1178.39, -895.83, 13.97, 142.05),
         },
     },
 
@@ -78,8 +90,12 @@ CodeStudio.QuickAction = {          -- Society Money Quick Actions
 
 CodeStudio.BossMenu = {
     --[job_name] = {rank1, rank2}
-    ['police'] = {3, 4},
-    ['ambulance'] = {1},
+    ['police'] = {4},
+    ['bcso'] = {10},
+    ['sast'] = {21},
+    ['ambulance'] = {4},
+    ['catcafe'] = {4},
+    ['burgershot'] = {4},
 }
 
 
@@ -88,6 +104,7 @@ CodeStudio.BossMenu = {
 
 CodeStudio.GangMenu = {
     ['lostmc'] = {3},
+    ['rno'] = {3},
 }
 
 
