@@ -8757,4 +8757,15 @@ return {
 			image = "your_image.png",
 		}
 	},
+
+	["kq_outfitbag"] = {
+		label = "Outfit bag",
+		weight = 4000,
+		stack = true,
+		close = true,
+		description = "Holds different outfits",
+		client = {
+			image = "kq_outfitbag.png",
+		}
+	},
 }
