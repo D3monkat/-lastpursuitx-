@@ -457,8 +457,6 @@ local Vehicles = {
     { model = 'blazer4',       name = 'Blazer Sport',                  brand = 'Annis',           price = 9250,    category = 'offroad',        type = 'automobile', shop = 'pdm' },
     { model = 'blazer5',       name = 'Blazer Aqua',                   brand = 'Nagasaki',        price = 40000,   category = 'offroad',        type = 'automobile', shop = 'pdm' },
     { model = 'brawler',       name = 'Brawler',                       brand = 'Annis',           price = 40000,   category = 'offroad',        type = 'automobile', shop = 'pdm' },
-    { model = 'caracara',      name = 'Caracara',                      brand = 'Vapid',           price = 60000,   category = 'offroad',        type = 'automobile', shop = 'pdm' },
-    { model = 'caracara2',     name = 'Caracara 4x4',                  brand = 'Vapid',           price = 80000,   category = 'offroad',        type = 'automobile', shop = 'pdm' },
     { model = 'dubsta3',       name = 'Dubsta 6x6',                    brand = 'Annis',           price = 34000,   category = 'offroad',        type = 'automobile', shop = 'pdm' },
     { model = 'dune',          name = 'Dune Buggy',                    brand = 'Annis',           price = 14000,   category = 'offroad',        type = 'automobile', shop = 'pdm' },
     { model = 'everon',        name = 'Everon',                        brand = 'Karin',           price = 60000,   category = 'offroad',        type = 'automobile', shop = 'pdm' },
