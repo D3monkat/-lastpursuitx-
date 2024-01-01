@@ -301,7 +301,7 @@ return {
   
   	["steel"] = {
   		label = "Steel",
-  		weight = 100,
+  		weight = 1,
   		stack = true,
   		close = false,
   		description = "Nice piece of metal that you can probably use for something",
@@ -600,7 +600,7 @@ return {
   
   	["metalscrap"] = {
   		label = "Metal Scrap",
-  		weight = 100,
+  		weight = 1,
   		stack = true,
   		close = false,
   		description = "You can probably make something nice out of this",
@@ -1454,7 +1454,7 @@ return {
   
   	["glass"] = {
   		label = "Glass",
-  		weight = 100,
+  		weight = 1,
   		stack = true,
   		close = false,
   		description = "It is very fragile, watch out",
@@ -3555,7 +3555,7 @@ return {
   
   	["rubber"] = {
   		label = "Rubber",
-  		weight = 100,
+  		weight = 1,
   		stack = true,
   		close = false,
   		description = "Rubber, I believe you can make your own rubber ducky with it :D",
@@ -3918,7 +3918,7 @@ return {
   
   	["plastic"] = {
   		label = "Plastic",
-  		weight = 100,
+  		weight = 1,
   		stack = true,
   		close = false,
   		description = "RECYCLE! - Greta Thunberg 2019",
@@ -5230,7 +5230,7 @@ return {
   
   	["aluminum"] = {
   		label = "Aluminium",
-  		weight = 100,
+  		weight = 1,
   		stack = true,
   		close = false,
   		description = "Nice piece of metal that you can probably use for something",
@@ -5296,7 +5296,7 @@ return {
   
   	["recyclablematerial"] = {
   		label = "Recycle Box",
-  		weight = 100,
+  		weight = 0,
   		stack = true,
   		close = false,
   		description = "A box of Recyclable Materials",
@@ -5329,7 +5329,7 @@ return {
   
   	["ceramic"] = {
   		label = "ceramic",
-  		weight = 100,
+  		weight = 250,
   		stack = true,
   		close = false,
   		description = "you can probably use this for something",
@@ -5351,7 +5351,7 @@ return {
   
   	["iron"] = {
   		label = "Iron",
-  		weight = 100,
+  		weight = 1,
   		stack = true,
   		close = false,
   		description = "Handy piece of metal that you can probably use for something",
@@ -5859,7 +5859,7 @@ return {
   
   	["copper"] = {
   		label = "Copper",
-  		weight = 100,
+  		weight = 1,
   		stack = true,
   		close = false,
   		description = "Nice piece of metal that you can probably use for something",
