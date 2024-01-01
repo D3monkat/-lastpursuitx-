@@ -31,3 +31,6 @@ files {
   'web/public/**/*',
   'locales/*.json'
 }
+
+provide 'qb-management'
+provide 'esx_society'
