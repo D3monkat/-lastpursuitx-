@@ -19,7 +19,7 @@ files {
 }
 
 -- data_file "AUDIO_GAMEDATA" "audio/as_rex_diner_game.dat"
-data_file "AUDIO_GAMEDATA" "audio/as_rex_garage_game.dat"
+-- data_file "AUDIO_GAMEDATA" "audio/as_rex_garage_game.dat"
 
 escrow_ignore {
     'stream/**/*.ytd',
