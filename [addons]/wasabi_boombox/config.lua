@@ -4,7 +4,7 @@
 
 Config = {}
 
-Config.checkForUpdates = true -- Check for Updates?
+Config.checkForUpdates = false -- Check for Updates?
 
 Config.BoomboxItem = 'boombox'
 
