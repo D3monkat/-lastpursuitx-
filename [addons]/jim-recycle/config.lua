@@ -118,6 +118,7 @@ Config = {
 		['aluminum'] = 3,
 		['bottle'] = 5,
 		['can'] = 5,
+		['ceramic'] = 7,
 	},
 	BottleBankTable = {
 		"bottle",
