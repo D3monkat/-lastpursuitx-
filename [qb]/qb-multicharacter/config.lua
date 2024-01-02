@@ -13,7 +13,7 @@ Config.PlayersNumberOfCharacters = { -- Define maximum amount of player characte
 }
 
 Config.PedCords = {
-    [1] = vector4(-973.61, 6550.66, 1.89, 269.0),
+    [1] = vector4(-973.61, 6554.66, 1.89, 269.0),
     [2] = vector4(-973.31, 6557.22, 1.89, 271.13),
     [3] = vector4(-973.38, 6560.51, 1.89, 271.07),
     [4] = vector4(-973.38, 6560.51, 1.89, 271.07),
