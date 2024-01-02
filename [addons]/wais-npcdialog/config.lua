@@ -47,10 +47,19 @@ Config.Peds = {
         },
         SellStuff = function()
             -- Your export or triggers here
-            TriggerClientEvent('kevin-hunting:HuntingMenu')   
+            TriggerEvent('kevin-hunting:HuntingMenu')   
         end,        
         Suppliesbuying = function()
-            exports.ox_inventory:openInventory('shop', { type = 'fishingstore', id = 1 }) 
+        exports['ox_inventory']:RegisterShop('baitandgear', {
+        name = "Bait and Gear",
+        inventory = {
+            { name = 'huntingbait', price = 50 },
+            { name = 'weapon_huntingrifle', price = 250},
+            { name = 'snp_ammo', price = 20 },
+            { name = 'fishingrod', price = 100 },
+            { name = 'fishingbait', price = 10 },
+        },
+    })
         end
     }
 }
