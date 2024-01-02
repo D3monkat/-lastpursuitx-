@@ -6,7 +6,7 @@
     <Item>
       <modelName>turismoc</modelName>
       <txdName>turismoc</txdName>
-      <handlingId>TURISMO2</handlingId>
+      <handlingId>turismoc</handlingId>
       <gameName>TURISMO2</gameName>
       <vehicleMakeName>GROTTI</vehicleMakeName>
       <expressionDictName>null</expressionDictName>
@@ -15,7 +15,7 @@
       <animConvRoofName>null</animConvRoofName>
       <animConvRoofWindowsAffected />
       <ptfxAssetName>null</ptfxAssetName>
-      <audioNameHash>turismoc</audioNameHash>
+      <audioNameHash>np01eurov10</audioNameHash>
       <layout>LAYOUT_LOW_RESTRICTED</layout>
       <coverBoundOffsets>TURISMO2_COVER_OFFSET_INFO</coverBoundOffsets>
       <explosionInfo>EXPLOSION_INFO_DEFAULT</explosionInfo>
