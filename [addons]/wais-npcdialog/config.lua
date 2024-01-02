@@ -69,9 +69,9 @@ Config.Peds = {
             ["selected"] = false, -- Don't touch this
         },
         },
-        -- setNewJob = function()
-        --     -- Your export or triggers here
-        -- end
+        setNewJob = function()
+            -- Your export or triggers here
+        end
     }
 }
 
