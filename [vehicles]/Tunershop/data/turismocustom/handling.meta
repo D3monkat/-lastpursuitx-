@@ -9,8 +9,8 @@
       <fPercentSubmerged value="85.000000" />
       <vecCentreOfMassOffset x="0.000000" y="-0.030000" z="-0.150000" />
       <vecInertiaMultiplier x="1.200000" y="1.200000" z="1.200000" />
-      <fDriveBiasFront value="0.000000" />
-      <nInitialDriveGears value="6" />
+      <fDriveBiasFront value="0.300000" />
+      <nInitialDriveGears value="7" />
       <fInitialDriveForce value="0.353000" />
       <fDriveInertia value="1.000000" />
       <fClutchChangeRateScaleUpShift value="2.400000" />
