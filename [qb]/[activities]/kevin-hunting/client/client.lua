@@ -140,7 +140,7 @@ RegisterNetEvent('kevin-hunting:OpenShop', function()
     -- TriggerServerEvent('inventory:server:OpenInventory', 'shop', 'Hunting', Config.Items)
 end)
 RegisterNetEvent('kat:OpenShop', function()
-    exports.ox_inventory:openInventory('shop', { type = 'General', id = 1})
+    exports.ox_inventory:openInventory('shop', { type = 'fishingstore', id = 1})
 end)
 
 RegisterNetEvent('kevin-hunting:GoHunt', function ()
