@@ -74,31 +74,6 @@ Config.Default = {
             xp = 3,
             time = 2000
         },
-        ["nvg"] = {
-            ["iron"] = 50,
-            ["plastic"] = 350,
-            ["glass"] = 125,
-            xp = 10,
-            time = 3500
-        },
-        ["racingtablet"] = {
-            ["glass"] = 150,
-            ["iron"] = 10,
-            ["plastic"] = 75,
-            ["copper"] = 200,
-            ["aluminum"] = 100,
-            xp = 25,
-            time = 5000
-        },
-        ["driftingtablet"] = {
-            ["glass"] = 150,
-            ["iron"] = 10,
-            ["plastic"] = 75,
-            ["copper"] = 200,
-            ["aluminum"] = 100,
-            xp = 25,
-            time = 5000
-        },
     },
     [5] = {
         ["bolt_cutter"] = {
