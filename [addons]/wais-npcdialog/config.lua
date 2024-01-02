@@ -65,7 +65,7 @@ Config.Peds = {
             ["event"] = "kevin-hunting:GoHunt", -- Event name
             ["server"] = false, -- Make this true if there will be a server side event trigger
             ["client"] = true, -- If there will be a client side event trigger, make it true
-            ["argument"] = "huntingrep", -- You can send only 1 argument and this can include framework variables.                   
+            ["argument"] = "", -- You can send only 1 argument and this can include framework variables.                   
             ["selected"] = false, -- Don't touch this
         },
         },
