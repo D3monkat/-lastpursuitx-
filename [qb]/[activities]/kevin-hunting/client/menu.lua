@@ -10,22 +10,9 @@ RegisterNetEvent('kevin-hunting:HuntingMenu', function (huntingrep)
         end,
         options = {
             {
-                title = 'Buy Supplies',
-                image = Config.HunterMenuInfo['huntingbait'][1],
-                event = 'kevin-hunting:OpenShop'
-            },
-            {
                 title = 'Go Hunting',
                 image = Config.HunterMenuInfo['hunterslogo'][1],
                 event = 'kevin-hunting:GoHunt',
-            },
-            {
-                title = 'Check Reputation',
-                description = '',
-                arrow = true,
-                metadata = {
-                    {label = 'Reputation', value = huntingrep},
-                }
             },
             {
                 title = 'Sell Carcasses',
