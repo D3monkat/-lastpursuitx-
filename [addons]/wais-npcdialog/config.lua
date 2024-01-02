@@ -44,10 +44,30 @@ Config.Peds = {
                 ["funcion_name"] = "SellStuff", -- Function name
                 ["selected"] = false, -- Don't touch this
             },
+            ["option3"] = {
+                ["button"] = 3, -- A, B, C, D or 1, 2, 3, 4, 
+                ["label"] = "Can i purchase a hunting license?", -- The answer to the option will appear in the person  
+                ["funcion_name"] = "SellStuff", -- Function name
+                ["selected"] = false, -- Don't touch this
+            },
+            ["option4"] = {
+                ["button"] = 4, -- A, B, C, D or 1, 2, 3, 4, 
+                ["label"] = "I am geared and ready to hunt!", -- The answer to the option will appear in the person  
+                ["funcion_name"] = "gohunting", -- Function name
+                ["selected"] = false, -- Don't touch this
+            },
         },
         SellStuff = function()
             -- Your export or triggers here
             TriggerEvent('kevin-hunting:HuntingMenu')   
+        end,     
+        licensestuff = function()
+            -- Your export or triggers here
+            TriggerEvent('kevin-hunting:BuyHuntingLicense')   
+        end,     
+        gohunting = function()
+            -- Your export or triggers here
+            TriggerEvent('kevin-hunting:GoHunt')   
         end,        
         Suppliesbuying = function()
             exports.ox_inventory:openInventory('shop', { type = 'baitandgear', id = 1 })
