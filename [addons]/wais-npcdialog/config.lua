@@ -11,7 +11,7 @@ Config.Peds = {
             ["type"] = 38,-- https://docs.fivem.net/docs/game-references/controls/
 
             ["key_label"] = "e", -- If type fivem is converted to index key, the name of the key must be entered "E"
-            ["text"] = "Talk to npc", -- Text that will appear when you approach the npc
+            ["text"] = "Talk to local", -- Text that will appear when you approach the npc
             ["icon"] = "fa-solid fa-people-arrows",
             ["distance"] = 2, -- Interactive distance
             
