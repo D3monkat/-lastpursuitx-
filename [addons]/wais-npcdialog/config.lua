@@ -30,7 +30,7 @@ Config.Peds = {
         ["firstname"] = "Buck", 
         ["lastname"] = "Jackson",
         },
-        ["title"] = "police", -- the text you want to appear maybe character task etc.
+        ["title"] = "Big Game Winner", -- the text you want to appear maybe character task etc.
         ["question"] = "Well, howdy there, partner! What can ol me do for ya today? I reckon Im your go-to fella when it comes to huntin and fishin gear. Yep, I specialize in all them outdoor goodies for huntin critters and catchin fish out in them waters. So, whats on your mind friend?", -- question or text
             ["options"] = {
             ["option1"] = {
