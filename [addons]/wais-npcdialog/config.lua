@@ -84,7 +84,7 @@ Config.Peds = {
              }, {
                 flags = 49,
              }, {}, {}, function() -- Done
-                TriggerEvent('kevin-hunting:BuyHuntingLicense')  
+                TriggerServerEvent('kevin-hunting:BuyHuntingLicense')  
              end, function() -- Cancel
                 QBCore.Functions.Notify("You chicken...", "error", 4500)
              end)
