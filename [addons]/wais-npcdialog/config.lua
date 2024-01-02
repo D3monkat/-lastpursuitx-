@@ -22,7 +22,7 @@ Config.Peds = {
             ["interactiveState"] = false, -- -- Don't touch this
             ["drawmarker_math"] = 46 -- It is part of a division process that magnifies the marker according to proximity and distance.
         },
-        -- ["animDict"] = "amb@code_human_police_investigate@idle_a",
+        ["animDict"] = "WORLD_HUMAN_CLIPBOARD_FACILITY",
         ["animName"] = "idle_b",
         ["name"] = { -- Ped name
             ["firstname"] = "Buck", 
