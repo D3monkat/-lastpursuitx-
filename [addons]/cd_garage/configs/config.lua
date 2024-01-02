@@ -805,6 +805,20 @@ Config.Locations = {
         ShellType = '10cargarage_shell',
     },
 
+    {
+        Garage_ID = 'BLT', --Blueline
+        Type = 'car',
+        Dist = 10,
+        x_1 = -359.11, y_1 = -124.0, z_1 = 38.7,
+        EventName1 = 'cd_garage:QuickChoose',
+        EventName2 = 'cd_garage:EnterGarage',
+        Name = UIText,
+        x_2 = -381.79, y_2 = -125.3, z_2 = 38.69, h_2 = 210.07,
+        EnableBlip = true,
+        JobRestricted = nil,
+        ShellType = '10cargarage_shell',
+    },
+
 
 
 
