@@ -43,7 +43,7 @@ Config.Peds = {
         },
         ["option2"] = {
             ["button"] = 2, -- A, B, C, D or 1, 2, 3, 4, 
-            ["label"] = "I would like to purchase a weapons license so im legal... I guess....", -- The answer to the option will appear in the person
+            ["label"] = "I would like to purchase a weapons license so im legal, I guess..", -- The answer to the option will appear in the person
             ["event"] = "kevin-hunting:BuyHuntingLicense", -- Event name
             ["server"] = true, -- Make this true if there will be a server side event trigger
             ["client"] = false, -- If there will be a client side event trigger, make it true
