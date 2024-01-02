@@ -76,15 +76,53 @@ Config.Peds = {
             -- TriggerEvent('kevin-hunting:HuntingMenu')   
         end,     
         licensestuff = function()
-            -- Your export or triggers here
-            TriggerEvent('kevin-hunting:BuyHuntingLicense')   
+            QBCore.Functions.Progressbar("Fiddle", "You spend the next 50 hours filling out paperwork.", 6500, false, true, {
+                disableMovement = false,
+                disableCarMovement = false,
+                disableMouse = false,
+                disableCombat = true,
+             }, {
+                flags = 49,
+             }, {}, {}, function() -- Done
+                TriggerEvent('kevin-hunting:BuyHuntingLicense')  
+             end, function() -- Cancel
+                QBCore.Functions.Notify("You chicken...", "error", 4500)
+             end)
         end,     
         gohunting = function()
+
+            QBCore.Functions.Progressbar("Fiddle", "The hunter goes in and lets PD know you are hunting.. I think..", 6500, false, true, {
+                disableMovement = false,
+                disableCarMovement = false,
+                disableMouse = false,
+                disableCombat = true,
+             }, {
+                flags = 49,
+             }, {}, {}, function() -- Done
+                TriggerEvent('kevin-hunting:GoHunt')    
+             end, function() -- Cancel
+                QBCore.Functions.Notify("You chicken...", "error", 4500)
+             end)
+
             -- Your export or triggers here
-            TriggerEvent('kevin-hunting:GoHunt')   
         end,        
         Suppliesbuying = function()
-            exports.ox_inventory:openInventory('shop', { type = 'baitandgear', id = 1 })
+            QBCore.Functions.Progressbar("Fiddle", "The hunter sighs and allows you to look at his wares.", 6500, false, true, {
+            disableMovement = false,
+            disableCarMovement = false,
+            disableMouse = false,
+            disableCombat = true,
+         }, {
+            flags = 49,
+         }, {}, {}, function() -- Done
+            exports.ox_inventory:openInventory('shop', { type = 'baitandgear', id = 1 })  
+         end, function() -- Cancel
+            QBCore.Functions.Notify("You chicken...", "error", 4500)
+         end)
+
+
+
+
         end
     }
 }
