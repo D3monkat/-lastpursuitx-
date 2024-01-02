@@ -265,7 +265,7 @@ QBShared.Jobs = {
 		},
 	},
 	shoptuner = {
-		label = 'Electric Vehicle Dealer',
+		label = 'Tuner Vehicle Dealer',
 		defaultDuty = true,
 		offDutyPay = false,
 		grades = {
