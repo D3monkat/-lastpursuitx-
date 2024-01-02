@@ -50,7 +50,14 @@ Config.Peds = {
             TriggerEvent('kevin-hunting:HuntingMenu')   
         end,        
         Suppliesbuying = function()
-        exports['ox_inventory']:RegisterShop('baitandgear', {
+            exports.ox_inventory:openInventory('shop', { type = 'baitandgear', id = 1 })
+        end
+    }
+}
+
+
+AddEventHandler('kat:is:god:shop', function()
+    exports['ox_inventory']:RegisterShop('baitandgear', {
         name = "Bait and Gear",
         inventory = {
             { name = 'huntingbait', price = 50 },
@@ -60,10 +67,7 @@ Config.Peds = {
             { name = 'fishingbait', price = 10 },
         },
     })
-        end
-    }
-}
-
+end)
 
 
 

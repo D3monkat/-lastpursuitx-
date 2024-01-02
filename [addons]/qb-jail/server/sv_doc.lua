@@ -21,8 +21,8 @@ if Config.Inventory == 'ox_inventory' then
                     sapr = 0,
                     sast = 0,
                 },
-            })            
-    exports['ox_inventory']:RegisterShop('baitandgear', {
+            })
+             exports['ox_inventory']:RegisterShop('baitandgear', {
         name = "Bait and Gear",
         inventory = {
             { name = 'huntingbait', price = 50 },
