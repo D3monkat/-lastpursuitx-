@@ -27,7 +27,7 @@ if Config.Inventory == 'ox_inventory' then
         inventory = {
             { name = 'huntingbait', price = 50 },
             { name = 'weapon_huntingrifle', price = 250},
-            { name = 'snp_ammo', price = 20 },
+            { name = 'ammo-sniper', price = 20 },
             { name = 'fishingrod', price = 100 },
             { name = 'fishingbait', price = 10 },
         },
