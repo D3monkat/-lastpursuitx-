@@ -15,7 +15,7 @@ Config.Peds = {
             ["icon"] = "fa-solid fa-people-arrows",
             ["distance"] = 2, -- Interactive distance
             
-            ["uiMarker"] = true, -- If you make it True, you will have a nice image on the screen, but I do not recommend it for resmon.
+            ["uiMarker"] = true, -- If you make itf True, you will have a nice image on the screen, but I do not recommend it for resmon.
             ["uiDrawText"] = true, -- If you make it True, you will have a nice text on the screen, but I do not recommend it for resmon.
 
             ["drawmarker_distance"] = 4,
@@ -25,28 +25,28 @@ Config.Peds = {
         ["animDict"] = "amb@code_human_police_investigate@idle_a",
         ["animName"] = "idle_b",
         ["name"] = { -- Ped name
-            ["firstname"] = "Frank", 
-            ["lastname"] = "Miller",
+            ["firstname"] = "Buck", 
+            ["lastname"] = "Jackson",
         },
-        ["title"] = "police", -- the text you want to appear maybe character task etc.
-        ["question"] = "You want to work with us? Being a cop is hard. You have to know the law well and know how to fight criminals. If you want to work with us as a trainee and learn many things from the beginning, I can say yes!", -- question or text
+        ["title"] = "Big Game Winner", -- the text you want to appear maybe character task etc.
+        ["question"] = "Well, howdy there, partner! What can ol' me do for ya today? I reckon I'm your go-to fella when it comes to huntin' and fishin' gear. Yep, I specialize in all them outdoor goodies for huntin' critters and catchin' fish out in them waters. So, what's on your mind, friend?", -- question or text
         ["options"] = {
             ["option1"] = {
                 ["button"] = 1, -- A, B, C, D or 1, 2, 3, 4, 
-                ["label"] = "Yes, Start as an assistant.", -- The answer to the option will appear in the person
-                ["event"] = "checkoption", -- Event name
+                ["label"] = "Can i look at your supplies?", -- The answer to the option will appear in the person
+                ["event"] = "kat:OpenShop", -- Event name
                 ["server"] = false, -- Make this true if there will be a server side event trigger
                 ["client"] = true, -- If there will be a client side event trigger, make it true
-                ["argument"] = "Hello World", -- You can send only 1 argument and this can include framework variables.                   
+                ["argument"] = "", -- You can send only 1 argument and this can include framework variables.                   
                 ["selected"] = false, -- Don't touch this
             },
             ["option2"] = {
                 ["button"] = 2, -- A, B, C, D or 1, 2, 3, 4, 
-                ["label"] = "I don't trust myself", -- The answer to the option will appear in the person
-                ["event"] = "", -- Event name
-                ["server"] = false, -- Make this true if there will be a server side event trigger
+                ["label"] = "I would like to purchase a weapons license so im legal... I guess....", -- The answer to the option will appear in the person
+                ["event"] = "kevin-hunting:BuyHuntingLicense", -- Event name
+                ["server"] = true, -- Make this true if there will be a server side event trigger
                 ["client"] = false, -- If there will be a client side event trigger, make it true
-                ["argument"] = "Hello World", -- You can send only 1 argument and this can include framework variables.                   
+                ["argument"] = "", -- You can send only 1 argument and this can include framework variables.                   
                 ["selected"] = false, -- Don't touch this
             },
         }
