@@ -161,7 +161,7 @@ Crafting = {
 		{ ["iron"] = { ["ironore"] = 1 } },
 		{ ["steel"] = { ["ironore"] = 1, ["carbon"] = 1 } },
 		{ ["aluminum"] = { ["can"] = 2, }, ['amount'] = 3 },
-		{ ["glass"] = { ["bottle"] = 2, }, ['amount'] = 2 },
+		{ ["glass"] = { ["bottle"] = 100, }, ['amount'] = 100 },
 	},
 	GemCut = {
 		{ ["emerald"] = { ["uncut_emerald"] = 1, } },
