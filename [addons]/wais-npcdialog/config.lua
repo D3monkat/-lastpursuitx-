@@ -49,6 +49,15 @@ Config.Peds = {
                 ["argument"] = "", -- You can send only 1 argument and this can include framework variables.                   
                 ["selected"] = false, -- Don't touch this
             },
+            ["option3"] = {
+                ["button"] = 3, -- A, B, C, D or 1, 2, 3, 4, 
+                ["label"] = "Can i sell my goods?", -- The answer to the option will appear in the person
+                ["event"] = "kevin-hunting:HuntingMenu", -- Event name
+                ["server"] = false, -- Make this true if there will be a server side event trigger
+                ["client"] = true, -- If there will be a client side event trigger, make it true
+                ["argument"] = "huntingrep", -- You can send only 1 argument and this can include framework variables.                   
+                ["selected"] = false, -- Don't touch this
+            },
         }
     }
 }
