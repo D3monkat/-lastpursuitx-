@@ -123,18 +123,18 @@ Config.Peds = {
 }
 
 
-AddEventHandler('kat:is:god:shop', function()
-    exports['ox_inventory']:RegisterShop('baitandgear', {
-        name = "Bait and Gear",
-        inventory = {
-            { name = 'huntingbait', price = 50 },
-            { name = 'weapon_huntingrifle', price = 250},
-            { name = 'ammo-sniper', price = 20 },
-            { name = 'fishingrod', price = 100 },
-            { name = 'fishingbait', price = 10 },
-        },
-    })
-end)
+-- AddEventHandler('kat:is:god:shop', function()
+--     exports['ox_inventory']:RegisterShop('baitandgear', {
+--         name = "Bait and Gear",
+--         inventory = {
+--             { name = 'huntingbait', price = 50 },
+--             { name = 'weapon_huntingrifle', price = 250},
+--             { name = 'ammo-sniper', price = 20 },
+--             { name = 'fishingrod', price = 100 },
+--             { name = 'fishingbait', price = 10 },
+--         },
+--     })
+-- end)
 
 
 

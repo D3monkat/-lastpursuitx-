@@ -22,16 +22,16 @@ if Config.Inventory == 'ox_inventory' then
                     sast = 0,
                 },
             })
-    --          exports['ox_inventory']:RegisterShop('baitandgear', {
-    --     name = "Bait and Gear",
-    --     inventory = {
-    --         { name = 'huntingbait', price = 50 },
-    --         { name = 'weapon_huntingrifle', price = 250},
-    --         { name = 'snp_ammo', price = 20 },
-    --         { name = 'fishingrod', price = 100 },
-    --         { name = 'fishingbait', price = 10 },
-    --     },
-    -- })
+             exports['ox_inventory']:RegisterShop('baitandgear', {
+        name = "Bait and Gear",
+        inventory = {
+            { name = 'huntingbait', price = 50 },
+            { name = 'weapon_huntingrifle', price = 250},
+            { name = 'ammo-sniper', price = 20 },
+            { name = 'fishingrod', price = 100 },
+            { name = 'fishingbait', price = 10 },
+        },
+    })
 
             
         end
