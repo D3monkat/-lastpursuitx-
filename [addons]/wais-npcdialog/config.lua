@@ -1,3 +1,4 @@
+local QBCore = exports['qb-core']:GetCoreObject()
 Config = {}
 
 Config.Peds = {
