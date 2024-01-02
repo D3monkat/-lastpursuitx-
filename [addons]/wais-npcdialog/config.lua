@@ -21,7 +21,56 @@ Config.Peds = {
             ["drawmarker_distance"] = 4,
             ["interactiveState"] = false, -- -- Don't touch this
             ["drawmarker_math"] = 46 -- It is part of a division process that magnifies the marker according to proximity and distance.
+        },  
+        ["modal_style"] = "question", -- warning, error, success, question or np
+        ["animDict"] = "amb@world_human_clipboard@male@idle_a",
+        ["animName"] = "idle_a",
+        ["name"] = { -- Ped name
+        ["firstname"] = "Buck", 
+        ["lastname"] = "Jackson",
         },
+        ["title"] = "police", -- the text you want to appear maybe character task etc.
+        ["question"] = "You want to work with us? Being a cop is hard. You have to know the law well and know how to fight criminals. If you want to work with us as a trainee and learn many things from the beginning, I can say yes!", -- question or text
+        ["options"] = {
+            ["option1"] = {
+                ["button"] = 1, -- A, B, C, D or 1, 2, 3, 4, 
+                ["label"] = "Can i look at supplies?", -- The answer to the option will appear in the person
+                ["funcion_name"] = "Suppliesbuying", -- Function name
+                ["selected"] = false, -- Don't touch this
+            },
+            ["option2"] = {
+                ["button"] = 2, -- A, B, C, D or 1, 2, 3, 4, 
+                ["label"] = "I would like to sell some meat to you.", -- The answer to the option will appear in the person  
+                ["funcion_name"] = "SellStuff", -- Function name
+                ["selected"] = false, -- Don't touch this
+            },
+        },
+        SellStuff = function()
+            -- Your export or triggers here
+            TriggerClientEvent('kevin-hunting:HuntingMenu')    
+        end
+        
+        Suppliesbuying = function()
+            -- Your export or triggers here 
+            exports.ox_inventory:openInventory('shop', { type = 'fishingstore', id = 1 }) 
+        end
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         ["modal_style"] = "question", -- warning, error, success, question or np
         ["animDict"] = "amb@world_human_clipboard@male@idle_a",
         ["animName"] = "idle_a",
