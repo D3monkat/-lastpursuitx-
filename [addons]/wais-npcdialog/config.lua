@@ -76,7 +76,7 @@ Config.Peds = {
             -- TriggerEvent('kevin-hunting:HuntingMenu')   
         end,     
         licensestuff = function()
-            QBCore.Functions.Progressbar("Fiddle", "You spend the next 50 hours filling out paperwork.", 6500, false, true, {
+            QBCore.Functions.Progressbar("Fiddle", "You fill out paperwork..", 6500, false, true, {
                 disableMovement = false,
                 disableCarMovement = false,
                 disableMouse = false,
@@ -91,7 +91,7 @@ Config.Peds = {
         end,     
         gohunting = function()
 
-            QBCore.Functions.Progressbar("Fiddle", "The hunter goes in and lets PD know you are hunting.. I think..", 6500, false, true, {
+            QBCore.Functions.Progressbar("Fiddle", "You get permission to hunt!", 6500, false, true, {
                 disableMovement = false,
                 disableCarMovement = false,
                 disableMouse = false,
@@ -107,7 +107,7 @@ Config.Peds = {
             -- Your export or triggers here
         end,        
         Suppliesbuying = function()
-            QBCore.Functions.Progressbar("Fiddle", "The hunter sighs and allows you to look at his wares.", 6500, false, true, {
+            QBCore.Functions.Progressbar("Fiddle", "You start looking around.", 6500, false, true, {
             disableMovement = false,
             disableCarMovement = false,
             disableMouse = false,
