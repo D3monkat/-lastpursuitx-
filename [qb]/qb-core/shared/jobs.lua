@@ -264,6 +264,15 @@ QBShared.Jobs = {
 			['100'] = { name = 'Showroom Sales', payment = 150 },
 		},
 	},
+	shoptuner = {
+		label = 'Electric Vehicle Dealer',
+		defaultDuty = true,
+		offDutyPay = false,
+		grades = {
+			['0'] = { name = 'Recruit', payment = 50 },
+			['100'] = { name = 'Showroom Sales', payment = 150 },
+		},
+	},
 	redline = {
 		label = 'Redline',
 		type = 'mechanic',
@@ -275,6 +284,20 @@ QBShared.Jobs = {
 			['2'] = { name = 'Experienced', payment = 100 },
 			['3'] = { name = 'Advanced', payment = 125 },
 			['4'] = { name = 'Manager', isboss = true, payment = 150, bankAuth = true },
+		},
+	},
+	tuner = {
+		label = 'Tuner Shop',
+		type = 'mechanic',
+		defaultDuty = true,
+		offDutyPay = false,
+		grades = {
+			['0'] = { name = 'Recruit', payment = 50 },
+			['1'] = { name = 'Novice', payment = 75 },
+			['2'] = { name = 'Experienced', payment = 100 },
+			['3'] = { name = 'Advanced', payment = 125 },
+			['4'] = { name = 'Manager', isboss = true, payment = 150, bankAuth = true },
+			['5'] = { name = 'Owner', isboss = true, payment = 175, bankAuth = true },
 		},
 	},
 	blueline = {
