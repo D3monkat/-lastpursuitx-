@@ -21,8 +21,7 @@ if Config.Inventory == 'ox_inventory' then
                     sapr = 0,
                     sast = 0,
                 },
-            })
-            
+            })            
     exports['ox_inventory']:RegisterShop('baitandgear', {
         name = "Bait and Gear",
         inventory = {
@@ -41,16 +40,16 @@ if Config.Inventory == 'ox_inventory' then
 end
 
 -- AddEventHandler('kat:is:god:shop', function()
-    exports['ox_inventory']:RegisterShop('baitandgear', {
-        name = "Bait and Gear",
-        inventory = {
-            { name = 'huntingbait', price = 50 },
-            { name = 'weapon_huntingrifle', price = 250},
-            { name = 'snp_ammo', price = 20 },
-            { name = 'fishingrod', price = 100 },
-            { name = 'fishingbait', price = 10 },
-        },
-    })
+    -- exports['ox_inventory']:RegisterShop('baitandgear', {
+    --     name = "Bait and Gear",
+    --     inventory = {
+    --         { name = 'huntingbait', price = 50 },
+    --         { name = 'weapon_huntingrifle', price = 250},
+    --         { name = 'snp_ammo', price = 20 },
+    --         { name = 'fishingrod', price = 100 },
+    --         { name = 'fishingbait', price = 10 },
+    --     },
+    -- })
 -- end)
 
 --- Commands
