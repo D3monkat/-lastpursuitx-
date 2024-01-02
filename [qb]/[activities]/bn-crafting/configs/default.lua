@@ -60,13 +60,6 @@ Config.Default = {
             xp = 7,
             time = 1500
         },
-        ["disruptor"] = {
-            ["iron"] = 225,
-            ["plastic"] = 120,
-            ["rubber"] = 100,
-            xp = 15,
-            time = 2000
-        },
     },
     [4] = {
         ["weapon_sledgehammer"] = {
