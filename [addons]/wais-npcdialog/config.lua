@@ -7,8 +7,8 @@ Config.Peds = {
         ["cam"] = vector4(-680.05, 5833.46, 17.73, 314.56), -- If the camera angle doesn't look right, give the heading a full negative value, e.g. -93.0 instead of 93.0. If this doesn't work, enter the heading value of the direction your pad is facing the npc!
         ["markerCoord"] = vector3(-680.1, 5833.48, 17.33),
         ["interactive"] = {
-            -- ["type"] = "target", -- or fivem keys https://docs.fivem.net/docs/game-references/controls/
-            ["type"] = 38, --https://docs.fivem.net/docs/game-references/controls/
+            ["type"] = "target", -- or fivem keys https://docs.fivem.net/docs/game-references/controls/
+            -- ["type"] = 38, --https://docs.fivem.net/docs/game-references/controls/
 
             ["key_label"] = "e", -- If type fivem is converted to index key, the name of the key must be entered "E"
             ["text"] = "Talk to npc", -- Text that will appear when you approach the npc
