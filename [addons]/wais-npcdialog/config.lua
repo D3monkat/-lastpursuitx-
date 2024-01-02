@@ -47,7 +47,7 @@ Config.Peds = {
             ["option3"] = {
                 ["button"] = 3, -- A, B, C, D or 1, 2, 3, 4, 
                 ["label"] = "Can i purchase a hunting license?", -- The answer to the option will appear in the person  
-                ["funcion_name"] = "SellStuff", -- Function name
+                ["funcion_name"] = "licensestuff", -- Function name
                 ["selected"] = false, -- Don't touch this
             },
             ["option4"] = {
@@ -58,8 +58,23 @@ Config.Peds = {
             },
         },
         SellStuff = function()
+            QBCore.Functions.Progressbar("Fiddle", "The Hunter is searching", 5000, false, true, {
+                disableMovement = false,
+                disableCarMovement = false,
+                disableMouse = false,
+                disableCombat = true,
+             }, {
+                animDict = "mp_suicide",
+                anim = "pill",
+                flags = 49,
+             }, {}, {}, function() -- Done
+                TriggerEvent('kevin-hunting:HuntingMenu')
+             end, function() -- Cancel
+                QBCore.Functions.Notify("You chicken...", "error", 4500)
+             end)
+
             -- Your export or triggers here
-            TriggerEvent('kevin-hunting:HuntingMenu')   
+            -- TriggerEvent('kevin-hunting:HuntingMenu')   
         end,     
         licensestuff = function()
             -- Your export or triggers here
