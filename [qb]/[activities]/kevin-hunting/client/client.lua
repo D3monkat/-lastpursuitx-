@@ -136,8 +136,24 @@ CreateThread(function ()
     })
 end)
 
+AddEventHandler('kat:is:god:shop', function()
+    exports['ox_inventory']:RegisterShop('baitandgear', {
+        name = "Bait and Gear",
+        inventory = {
+            { name = 'huntingbait', price = 50 },
+            { name = 'weapon_huntingrifle', price = 250},
+            { name = 'snp_ammo', price = 20 }, --- to do , NEeds 7.62 ammo
+            { name = 'fishingrod', price = 100 },
+            { name = 'fishingbait', price = 10 },
+        },
+    })
+end)
+
 RegisterNetEvent('kevin-hunting:OpenShop', function()
     -- TriggerServerEvent('inventory:server:OpenInventory', 'shop', 'Hunting', Config.Items)
+end)
+RegisterNetEvent('kat:OpenShop', function()
+    exports.ox_inventory:openInventory('shop', { type = 'fishingstore', id = 1})
 end)
 
 RegisterNetEvent('kevin-hunting:GoHunt', function ()

@@ -137,7 +137,7 @@ Config = {
 	StoreCraft = {
 		Crafting = true, 			-- Set true to turn on crafting features
 		StashCraft = true,  		-- Set true to grab materials from mechaincs stash for crafting
-		Stores = true, 				-- Set true to turn on shop store features
+		Stores = false, 				-- Set true to turn on shop store features
 
 		StashCraftTimeout = 15000, 	-- This controls the timeout of how long a stash is kept in the clients cache
 									-- Raising this speeds up crafting for users, but opens up exploits

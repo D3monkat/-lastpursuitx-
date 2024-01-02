@@ -434,9 +434,17 @@ local function useItem(data, cb)
 		end
 	end
 
+    if result then
+        TriggerEvent('ox_inventory:usedItem', slotData.name, slotData.slot, next(slotData.metadata) and slotData.metadata)
+    end
+
 	Wait(500)
     usingItem = false
 end
+
+AddEventHandler('ox_inventory:usedItem', function(name, slot, metadata)
+    TriggerServerEvent('ox_inventory:usedItemInternal', slot)
+end)
 
 AddEventHandler('ox_inventory:item', useItem)
 exports('useItem', useItem)
@@ -1719,7 +1727,7 @@ local swapActive = false
 
 ---Synchronise and validate all item movement between the NUI and server.
 RegisterNUICallback('swapItems', function(data, cb)
-    if swapActive or not invOpen or invBusy then return end
+    if swapActive or not invOpen or invBusy or usingItem then return cb(false) end
 
     swapActive = true
 

@@ -4,29 +4,16 @@ local QBCore = exports['qb-core']:GetCoreObject()
 RegisterNetEvent('kevin-hunting:HuntingMenu', function (huntingrep)
     lib.registerContext({
         id = 'mainmenu',
-        title = "Paleto Hunters",
+        title = "Game Master",
         onExit = function()
-            QBCore.Functions.Notify('Come again soon..', 'primary', 4500)
+            QBCore.Functions.Notify('Go get me bigger game....', 'primary', 5500)
         end,
         options = {
-            {
-                title = 'Buy Supplies',
-                image = Config.HunterMenuInfo['huntingbait'][1],
-                event = 'kevin-hunting:OpenShop'
-            },
-            {
-                title = 'Go Hunting',
-                image = Config.HunterMenuInfo['hunterslogo'][1],
-                event = 'kevin-hunting:GoHunt',
-            },
-            {
-                title = 'Check Reputation',
-                description = '',
-                arrow = true,
-                metadata = {
-                    {label = 'Reputation', value = huntingrep},
-                }
-            },
+            -- {
+            --     title = 'Go Hunting',
+            --     image = Config.HunterMenuInfo['hunterslogo'][1],
+            --     event = 'kevin-hunting:GoHunt',
+            -- },
             {
                 title = 'Sell Carcasses',
                 image = Config.HunterMenuInfo['deer'][3],

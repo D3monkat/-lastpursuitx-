@@ -1,17 +1,18 @@
+local QBCore = exports['qb-core']:GetCoreObject()
 Config = {}
 
 Config.Peds = {
     [1] = {
-        ["model"] = "s_m_y_cop_01",
-        ["coords"] = vector4(437.20, -978.73, 29.67, 185.0),
-        ["cam"] = vector4(437.25, -979.13, 31.30, 0.0), -- If the camera angle doesn't look right, give the heading a full negative value, e.g. -93.0 instead of 93.0. If this doesn't work, enter the heading value of the direction your pad is facing the npc!
-        ["markerCoord"] = vector3(437.25, -979.00, 30.85),
+        ["model"] = "ig_hunter",
+        ["coords"] = vector4(-679.38, 5834.06, 16.33, 135.24),
+        ["cam"] = vector4(-680.05, 5833.46, 17.73, 314.56), -- If the camera angle doesn't look right, give the heading a full negative value, e.g. -93.0 instead of 93.0. If this doesn't work, enter the heading value of the direction your pad is facing the npc!
+        ["markerCoord"] = vector3(-680.1, 5833.48, 17.33),
         ["interactive"] = {
-            ["type"] = "target", -- or fivem keys https://docs.fivem.net/docs/game-references/controls/
-            --["type"] = 38 https://docs.fivem.net/docs/game-references/controls/
+            -- ["type"] = "target", -- or fivem keys https://docs.fivem.net/docs/game-references/controls/
+            ["type"] = 38,-- https://docs.fivem.net/docs/game-references/controls/
 
             ["key_label"] = "e", -- If type fivem is converted to index key, the name of the key must be entered "E"
-            ["text"] = "Talk to npc", -- Text that will appear when you approach the npc
+            ["text"] = "Talk to local", -- Text that will appear when you approach the npc
             ["icon"] = "fa-solid fa-people-arrows",
             ["distance"] = 2, -- Interactive distance
             
@@ -21,34 +22,169 @@ Config.Peds = {
             ["drawmarker_distance"] = 4,
             ["interactiveState"] = false, -- -- Don't touch this
             ["drawmarker_math"] = 46 -- It is part of a division process that magnifies the marker according to proximity and distance.
-        },
-        ["animDict"] = "amb@code_human_police_investigate@idle_a",
-        ["animName"] = "idle_b",
+        },  
+        ["modal_style"] = "question", -- warning, error, success, question or np
+        ["animDict"] = "amb@world_human_clipboard@male@idle_a",
+        ["animName"] = "idle_a",
         ["name"] = { -- Ped name
-            ["firstname"] = "Frank", 
-            ["lastname"] = "Miller",
+        ["firstname"] = "Buck", 
+        ["lastname"] = "Jackson",
         },
-        ["title"] = "police", -- the text you want to appear maybe character task etc.
-        ["question"] = "You want to work with us? Being a cop is hard. You have to know the law well and know how to fight criminals. If you want to work with us as a trainee and learn many things from the beginning, I can say yes!", -- question or text
-        ["options"] = {
+        ["title"] = "Big Game Winner", -- the text you want to appear maybe character task etc.
+        ["question"] = "Well, howdy there, partner! What can ol me do for ya today? I reckon Im your go-to fella when it comes to huntin and fishin gear. Yep, I specialize in all them outdoor goodies for huntin critters and catchin fish out in them waters. So, whats on your mind friend?", -- question or text
+            ["options"] = {
             ["option1"] = {
                 ["button"] = 1, -- A, B, C, D or 1, 2, 3, 4, 
-                ["label"] = "Yes, Start as an assistant.", -- The answer to the option will appear in the person
-                ["event"] = "checkoption", -- Event name
-                ["server"] = false, -- Make this true if there will be a server side event trigger
-                ["client"] = true, -- If there will be a client side event trigger, make it true
-                ["argument"] = "Hello World", -- You can send only 1 argument and this can include framework variables.                   
+                ["label"] = "Can i look at supplies?", -- The answer to the option will appear in the person
+                ["funcion_name"] = "Suppliesbuying", -- Function name
                 ["selected"] = false, -- Don't touch this
             },
             ["option2"] = {
                 ["button"] = 2, -- A, B, C, D or 1, 2, 3, 4, 
-                ["label"] = "I don't trust myself", -- The answer to the option will appear in the person
-                ["event"] = "", -- Event name
-                ["server"] = false, -- Make this true if there will be a server side event trigger
-                ["client"] = false, -- If there will be a client side event trigger, make it true
-                ["argument"] = "Hello World", -- You can send only 1 argument and this can include framework variables.                   
+                ["label"] = "I would like to sell some meat to you.", -- The answer to the option will appear in the person  
+                ["funcion_name"] = "SellStuff", -- Function name
                 ["selected"] = false, -- Don't touch this
             },
-        }
+            ["option3"] = {
+                ["button"] = 3, -- A, B, C, D or 1, 2, 3, 4, 
+                ["label"] = "Can i purchase a hunting license?", -- The answer to the option will appear in the person  
+                ["funcion_name"] = "licensestuff", -- Function name
+                ["selected"] = false, -- Don't touch this
+            },
+            ["option4"] = {
+                ["button"] = 4, -- A, B, C, D or 1, 2, 3, 4, 
+                ["label"] = "I am geared and ready to hunt!", -- The answer to the option will appear in the person  
+                ["funcion_name"] = "gohunting", -- Function name
+                ["selected"] = false, -- Don't touch this
+            },
+        },
+        SellStuff = function()
+            QBCore.Functions.Progressbar("Fiddle", "The Hunter is getting their calculator out", 5000, false, true, {
+                disableMovement = false,
+                disableCarMovement = false,
+                disableMouse = false,
+                disableCombat = true,
+             }, {
+                flags = 49,
+             }, {}, {}, function() -- Done
+                TriggerEvent('kevin-hunting:HuntingMenu')
+             end, function() -- Cancel
+                QBCore.Functions.Notify("You chicken...", "error", 4500)
+             end) 
+        end,     
+        licensestuff = function()
+            QBCore.Functions.Progressbar("Fiddle", "You fill out paperwork..", 6500, false, true, {
+                disableMovement = false,
+                disableCarMovement = false,
+                disableMouse = false,
+                disableCombat = true,
+             }, {
+                flags = 49,
+             }, {}, {}, function() -- Done
+                TriggerServerEvent('kevin-hunting:BuyHuntingLicense')  
+             end, function() -- Cancel
+                QBCore.Functions.Notify("You chicken...", "error", 4500)
+             end)
+        end,     
+        gohunting = function()
+
+            QBCore.Functions.Progressbar("Fiddle", "You get permission to hunt!", 6500, false, true, {
+                disableMovement = false,
+                disableCarMovement = false,
+                disableMouse = false,
+                disableCombat = true,
+             }, {
+                flags = 49,
+             }, {}, {}, function() -- Done
+                TriggerEvent('kevin-hunting:GoHunt')    
+             end, function() -- Cancel
+                QBCore.Functions.Notify("You chicken...", "error", 4500)
+             end)
+        end,        
+        Suppliesbuying = function()
+            QBCore.Functions.Progressbar("Fiddle", "You start looking around.", 6500, false, true, {
+            disableMovement = false,
+            disableCarMovement = false,
+            disableMouse = false,
+            disableCombat = true,
+         }, {
+            flags = 49,
+         }, {}, {}, function() -- Done
+            exports.ox_inventory:openInventory('shop', { type = 'baitandgear', id = 1 })  
+         end, function() -- Cancel
+            QBCore.Functions.Notify("You chicken...", "error", 4500)
+         end)
+
+
+
+
+        end
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--         ["modal_style"] = "question", -- warning, error, success, question or np
+--         ["animDict"] = "amb@world_human_clipboard@male@idle_a",
+--         ["animName"] = "idle_a",
+--         ["name"] = { -- Ped name
+--         ["firstname"] = "Buck", 
+--         ["lastname"] = "Jackson",
+--     },
+--     ["title"] = "Big Game Winner", -- the text you want to appear maybe character task etc.
+--     ["question"] = "Well, howdy there, partner! What can ol me do for ya today? I reckon Im your go-to fella when it comes to huntin and fishin gear. Yep, I specialize in all them outdoor goodies for huntin critters and catchin fish out in them waters. So, whats on your mind friend?", -- question or text
+--     ["options"] = {
+--         ["option1"] = {
+--             ["button"] = 1, -- A, B, C, D or 1, 2, 3, 4, 
+--             ["label"] = "Can i look at your supplies?", -- The answer to the option will appear in the person
+--             ["event"] = "kat:OpenShop", -- Event name
+--             ["server"] = false, -- Make this true if there will be a server side event trigger
+--             ["client"] = true, -- If there will be a client side event trigger, make it true
+--             ["argument"] = "", -- You can send only 1 argument and this can include framework variables.                   
+--             ["selected"] = false, -- Don't touch this
+--         },
+--         ["option2"] = {
+--             ["button"] = 2, -- A, B, C, D or 1, 2, 3, 4, 
+--             ["label"] = "I would like to purchase a weapons license so im legal, I guess..", -- The answer to the option will appear in the person
+--             ["event"] = "kevin-hunting:BuyHuntingLicense", -- Event name
+--             ["server"] = true, -- Make this true if there will be a server side event trigger
+--             ["client"] = false, -- If there will be a client side event trigger, make it true
+--             ["argument"] = "", -- You can send only 1 argument and this can include framework variables.                   
+--             ["selected"] = false, -- Don't touch this
+--         },
+--         ["option3"] = {
+--             ["button"] = 3, -- A, B, C, D or 1, 2, 3, 4, 
+--             ["label"] = "Can i sell my goods?", -- The answer to the option will appear in the person
+--             ["event"] = "kevin-hunting:HuntingMenu", -- Event name
+--             ["server"] = false, -- Make this true if there will be a server side event trigger
+--             ["client"] = true, -- If there will be a client side event trigger, make it true
+--             ["argument"] = "huntingrep", -- You can send only 1 argument and this can include framework variables.                   
+--             ["selected"] = false, -- Don't touch this
+--         },
+--         ["option4"] = {
+--             ["button"] = 4, -- A, B, C, D or 1, 2, 3, 4, 
+--             ["label"] = "Its high noon! Lets Hunt!", -- The answer to the option will appear in the person
+--             ["event"] = "kevin-hunting:GoHunt", -- Event name
+--             ["server"] = false, -- Make this true if there will be a server side event trigger
+--             ["client"] = true, -- If there will be a client side event trigger, make it true
+--             ["argument"] = "", -- You can send only 1 argument and this can include framework variables.                   
+--             ["selected"] = false, -- Don't touch this
+--         },
+--         },
+--         setNewJob = function()
+--             -- Your export or triggers here
+--         end
+--     }
+-- }
+

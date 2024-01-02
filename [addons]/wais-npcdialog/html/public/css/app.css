@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap');
 
 body {
@@ -45,7 +45,6 @@ body {
 
 * {
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
 }
 
 :root {
@@ -82,15 +81,20 @@ body {
     padding: 2vh 3vh 3vh 3vh;
     background: var(--primary);
     animation: slide-in-fwd-bottom .4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
 }
+
 
 .modal-header {
     width: 100%;
     height: 5vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;    
     animation: slide-in-fwd-bottom .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    z-index: 10;
 }
 
 .npc-name {
@@ -106,13 +110,14 @@ body {
     color: white;
     font-size: 2.75vh;
     text-transform: capitalize;
+    font-weight: 700;
 }
 
-.npc-name > span:first-child {
+#fn {
     font-weight: 800;
 }
 
-.npc-name > span:last-child {
+#ln {
     font-weight: 400;
 }
 
@@ -140,11 +145,12 @@ body {
     align-items: flex-start;
     align-content: flex-start;
     justify-content: flex-start;
-    padding: .75vh 1.5vh .75vh 1.5vh;
+    padding: .75vh 1.5vh 1vh 1.5vh;
     position: relative;
     border-radius: .35vh;
     background: linear-gradient(180deg, #2c3e4da4 0%, #374E5E 50%, #2c3e4da4 100%);
     animation: slide-in-fwd-bottom .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    z-index: 10;
 }   
 
 .modal-text > span {
@@ -172,7 +178,7 @@ body {
     flex-wrap: wrap;
     gap: .75vh;
     animation: slide-in-fwd-bottom .58s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-
+    z-index: 10;
 }
 
 .button {
@@ -215,8 +221,16 @@ body {
     background: linear-gradient(180deg, #2c3e4d 0%, #374E5E 50%, #2c3e4d 100%);
 }
 
+.select-button.select.new {
+    animation:  none;
+}
+
 .select-button.select {
     animation: select .1s linear both;
+}
+
+.select-button.new:hover {
+    transform: scale(1.05);
 }
 
 @keyframes select {
@@ -285,6 +299,11 @@ body {
     transition: .2s ease-in-out all;
 }
 
+.marker > svg {
+    width: 100%;
+    height: 100%;
+}
+
 .interactive {
     width: fit-content;
     height: fit-content;
@@ -293,6 +312,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     zoom: 0.8;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .i-button {
@@ -303,7 +323,7 @@ body {
     align-items: center;
     justify-content: center;
     background: var(--i-button);
-    border: .35vh solid var(--i-button2);
+    border: .35vh solid transparent;
     position: relative;
     zoom: 0.9;
     box-shadow: 0px 0px .75vh var(--i-button2);
@@ -314,6 +334,7 @@ body {
     color: var(--text);
     text-shadow: 0px 0px .25vh var(--text);
     text-transform: uppercase;
+    font-weight: 500;
 }
 
 .bottom {
@@ -343,4 +364,36 @@ body {
     color: var(--text);
     text-shadow: 0px 0px .25vh var(--text);
     /* text-transform: capitalize; */
+}
+
+.modal-shadows {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.modal-shadow {
+    width: 100%;
+    height: 13vh;
+    position: absolute;
+    bottom: -3vh;
+    filter: blur(10vh);
+    margin-left: -5vh;
+}
+
+.modal-bottom-line {
+    width: 15vh;
+    height: .2vw;
+    border-radius: 1vh;
+    background: #fff;
+    box-shadow: 0px 0px .75vh rgba(255, 255, 255, 0.25);
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 38%;
 }
