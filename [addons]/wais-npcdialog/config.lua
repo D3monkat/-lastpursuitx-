@@ -31,8 +31,8 @@ Config.Peds = {
         ["lastname"] = "Jackson",
         },
         ["title"] = "police", -- the text you want to appear maybe character task etc.
-        ["question"] = "You want to work with us? Being a cop is hard. You have to know the law well and know how to fight criminals. If you want to work with us as a trainee and learn many things from the beginning, I can say yes!", -- question or text
-        ["options"] = {
+        ["question"] = "Well, howdy there, partner! What can ol me do for ya today? I reckon Im your go-to fella when it comes to huntin and fishin gear. Yep, I specialize in all them outdoor goodies for huntin critters and catchin fish out in them waters. So, whats on your mind friend?", -- question or text
+            ["options"] = {
             ["option1"] = {
                 ["button"] = 1, -- A, B, C, D or 1, 2, 3, 4, 
                 ["label"] = "Can i look at supplies?", -- The answer to the option will appear in the person
