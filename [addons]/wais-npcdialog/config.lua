@@ -70,10 +70,7 @@ Config.Peds = {
                 TriggerEvent('kevin-hunting:HuntingMenu')
              end, function() -- Cancel
                 QBCore.Functions.Notify("You chicken...", "error", 4500)
-             end)
-
-            -- Your export or triggers here
-            -- TriggerEvent('kevin-hunting:HuntingMenu')   
+             end) 
         end,     
         licensestuff = function()
             QBCore.Functions.Progressbar("Fiddle", "You fill out paperwork..", 6500, false, true, {
@@ -103,8 +100,6 @@ Config.Peds = {
              end, function() -- Cancel
                 QBCore.Functions.Notify("You chicken...", "error", 4500)
              end)
-
-            -- Your export or triggers here
         end,        
         Suppliesbuying = function()
             QBCore.Functions.Progressbar("Fiddle", "You start looking around.", 6500, false, true, {
@@ -134,7 +129,7 @@ AddEventHandler('kat:is:god:shop', function()
         inventory = {
             { name = 'huntingbait', price = 50 },
             { name = 'weapon_huntingrifle', price = 250},
-            { name = 'snp_ammo', price = 20 },
+            { name = 'ammo-sniper', price = 20 },
             { name = 'fishingrod', price = 100 },
             { name = 'fishingbait', price = 10 },
         },
