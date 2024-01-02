@@ -8,7 +8,7 @@ Config.Peds = {
         ["markerCoord"] = vector3(437.25, -979.00, 30.85),
         ["interactive"] = {
             -- ["type"] = "target", -- or fivem keys https://docs.fivem.net/docs/game-references/controls/
-            ["type"] = 38 --https://docs.fivem.net/docs/game-references/controls/
+            ["type"] = 38, --https://docs.fivem.net/docs/game-references/controls/
 
             ["key_label"] = "e", -- If type fivem is converted to index key, the name of the key must be entered "E"
             ["text"] = "Talk to npc", -- Text that will appear when you approach the npc
