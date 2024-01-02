@@ -4,9 +4,9 @@ local QBCore = exports['qb-core']:GetCoreObject()
 RegisterNetEvent('kevin-hunting:HuntingMenu', function (huntingrep)
     lib.registerContext({
         id = 'mainmenu',
-        title = "Paleto Hunters",
+        title = "Game Master",
         onExit = function()
-            QBCore.Functions.Notify('Come again soon..', 'primary', 4500)
+            QBCore.Functions.Notify('Go get me bigger game....', 'primary', 5500)
         end,
         options = {
             -- {
