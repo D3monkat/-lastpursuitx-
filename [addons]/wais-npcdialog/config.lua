@@ -2,10 +2,10 @@ Config = {}
 
 Config.Peds = {
     [1] = {
-        ["model"] = "s_m_y_cop_01",
-        ["coords"] = vector4(437.20, -978.73, 29.67, 185.0),
-        ["cam"] = vector4(437.25, -979.13, 31.30, 0.0), -- If the camera angle doesn't look right, give the heading a full negative value, e.g. -93.0 instead of 93.0. If this doesn't work, enter the heading value of the direction your pad is facing the npc!
-        ["markerCoord"] = vector3(437.25, -979.00, 30.85),
+        ["model"] = "ig_hunter",
+        ["coords"] = vector4(-679.38, 5834.06, -17.33, 135.24),
+        ["cam"] = vector4(-679.38, 5834.06, -17.33, 135.24), -- If the camera angle doesn't look right, give the heading a full negative value, e.g. -93.0 instead of 93.0. If this doesn't work, enter the heading value of the direction your pad is facing the npc!
+        ["markerCoord"] = vector4(-679.38, 5834.06, -17.33),
         ["interactive"] = {
             -- ["type"] = "target", -- or fivem keys https://docs.fivem.net/docs/game-references/controls/
             ["type"] = 38, --https://docs.fivem.net/docs/game-references/controls/
@@ -22,7 +22,7 @@ Config.Peds = {
             ["interactiveState"] = false, -- -- Don't touch this
             ["drawmarker_math"] = 46 -- It is part of a division process that magnifies the marker according to proximity and distance.
         },
-        ["animDict"] = "amb@code_human_police_investigate@idle_a",
+        -- ["animDict"] = "amb@code_human_police_investigate@idle_a",
         ["animName"] = "idle_b",
         ["name"] = { -- Ped name
             ["firstname"] = "Buck", 
