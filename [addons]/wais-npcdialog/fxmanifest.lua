@@ -5,7 +5,7 @@ game 'gta5'
 --[[ Resource Information ]]--
 
 Author 'Ayazwai#3900 - Wais Development'
-version '1.0.1'
+version '1.0.2'
 scriptname 'wais-npcdialog'
 
 --[[ Resource Information ]]--
