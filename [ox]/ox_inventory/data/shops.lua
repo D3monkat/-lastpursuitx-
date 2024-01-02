@@ -71,13 +71,21 @@ return {
 
 	fishingstore = {
 		name = 'Fishing and Hunting',
+		blip = {
+			id = 402, colour = 69, scale = 0.8
+		},
 		inventory = {
 			{ name = 'huntingbait', price = 50 },
 			{ name = 'weapon_huntingrifle', price = 250,}
 			{ name = 'snp_ammo', price = 20 },
 			{ name = 'fishingrod', price = 100 },
 			{ name = 'fishingbait', price = 10 },
-		},
+		}, locations = {
+			-- vec3(2748.0, 3473.0, 55.67),
+			-- vec3(342.99, -1298.26, 32.51)
+		}, targets = {
+			-- { loc = vec3(2746.8, 3473.13, 55.67), length = 0.6, width = 3.0, heading = 65.0, minZ = 55.0, maxZ = 56.8, distance = 3.0 }
+		}
 	},
 
 	widow = {
