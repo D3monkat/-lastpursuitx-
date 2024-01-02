@@ -9,11 +9,11 @@ RegisterNetEvent('kevin-hunting:HuntingMenu', function (huntingrep)
             QBCore.Functions.Notify('Come again soon..', 'primary', 4500)
         end,
         options = {
-            {
-                title = 'Go Hunting',
-                image = Config.HunterMenuInfo['hunterslogo'][1],
-                event = 'kevin-hunting:GoHunt',
-            },
+            -- {
+            --     title = 'Go Hunting',
+            --     image = Config.HunterMenuInfo['hunterslogo'][1],
+            --     event = 'kevin-hunting:GoHunt',
+            -- },
             {
                 title = 'Sell Carcasses',
                 image = Config.HunterMenuInfo['deer'][3],
