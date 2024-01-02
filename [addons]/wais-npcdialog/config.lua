@@ -59,14 +59,12 @@ Config.Peds = {
             },
         },
         SellStuff = function()
-            QBCore.Functions.Progressbar("Fiddle", "The Hunter is searching", 5000, false, true, {
+            QBCore.Functions.Progressbar("Fiddle", "The Hunter is getting their calculator out", 5000, false, true, {
                 disableMovement = false,
                 disableCarMovement = false,
                 disableMouse = false,
                 disableCombat = true,
              }, {
-                animDict = "mp_suicide",
-                anim = "pill",
                 flags = 49,
              }, {}, {}, function() -- Done
                 TriggerEvent('kevin-hunting:HuntingMenu')
