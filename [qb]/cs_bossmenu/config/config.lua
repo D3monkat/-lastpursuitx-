@@ -70,7 +70,7 @@ CodeStudio.Locations = {
     -- Only Edit Below If you are using QB
     ['gangmenu'] = {
         ['lostmc'] = {
-            vector4(85.69, -1959.65, 21.12, 223.76)
+            vector4(989.44, -135.94, 74.06, 57.03)
         }
     }
 }
