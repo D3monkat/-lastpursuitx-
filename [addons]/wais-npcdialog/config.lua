@@ -71,56 +71,56 @@ Config.Peds = {
 
 
 
-        ["modal_style"] = "question", -- warning, error, success, question or np
-        ["animDict"] = "amb@world_human_clipboard@male@idle_a",
-        ["animName"] = "idle_a",
-        ["name"] = { -- Ped name
-        ["firstname"] = "Buck", 
-        ["lastname"] = "Jackson",
-    },
-    ["title"] = "Big Game Winner", -- the text you want to appear maybe character task etc.
-    ["question"] = "Well, howdy there, partner! What can ol me do for ya today? I reckon Im your go-to fella when it comes to huntin and fishin gear. Yep, I specialize in all them outdoor goodies for huntin critters and catchin fish out in them waters. So, whats on your mind friend?", -- question or text
-    ["options"] = {
-        ["option1"] = {
-            ["button"] = 1, -- A, B, C, D or 1, 2, 3, 4, 
-            ["label"] = "Can i look at your supplies?", -- The answer to the option will appear in the person
-            ["event"] = "kat:OpenShop", -- Event name
-            ["server"] = false, -- Make this true if there will be a server side event trigger
-            ["client"] = true, -- If there will be a client side event trigger, make it true
-            ["argument"] = "", -- You can send only 1 argument and this can include framework variables.                   
-            ["selected"] = false, -- Don't touch this
-        },
-        ["option2"] = {
-            ["button"] = 2, -- A, B, C, D or 1, 2, 3, 4, 
-            ["label"] = "I would like to purchase a weapons license so im legal, I guess..", -- The answer to the option will appear in the person
-            ["event"] = "kevin-hunting:BuyHuntingLicense", -- Event name
-            ["server"] = true, -- Make this true if there will be a server side event trigger
-            ["client"] = false, -- If there will be a client side event trigger, make it true
-            ["argument"] = "", -- You can send only 1 argument and this can include framework variables.                   
-            ["selected"] = false, -- Don't touch this
-        },
-        ["option3"] = {
-            ["button"] = 3, -- A, B, C, D or 1, 2, 3, 4, 
-            ["label"] = "Can i sell my goods?", -- The answer to the option will appear in the person
-            ["event"] = "kevin-hunting:HuntingMenu", -- Event name
-            ["server"] = false, -- Make this true if there will be a server side event trigger
-            ["client"] = true, -- If there will be a client side event trigger, make it true
-            ["argument"] = "huntingrep", -- You can send only 1 argument and this can include framework variables.                   
-            ["selected"] = false, -- Don't touch this
-        },
-        ["option4"] = {
-            ["button"] = 4, -- A, B, C, D or 1, 2, 3, 4, 
-            ["label"] = "Its high noon! Lets Hunt!", -- The answer to the option will appear in the person
-            ["event"] = "kevin-hunting:GoHunt", -- Event name
-            ["server"] = false, -- Make this true if there will be a server side event trigger
-            ["client"] = true, -- If there will be a client side event trigger, make it true
-            ["argument"] = "", -- You can send only 1 argument and this can include framework variables.                   
-            ["selected"] = false, -- Don't touch this
-        },
-        },
-        setNewJob = function()
-            -- Your export or triggers here
-        end
-    }
-}
+--         ["modal_style"] = "question", -- warning, error, success, question or np
+--         ["animDict"] = "amb@world_human_clipboard@male@idle_a",
+--         ["animName"] = "idle_a",
+--         ["name"] = { -- Ped name
+--         ["firstname"] = "Buck", 
+--         ["lastname"] = "Jackson",
+--     },
+--     ["title"] = "Big Game Winner", -- the text you want to appear maybe character task etc.
+--     ["question"] = "Well, howdy there, partner! What can ol me do for ya today? I reckon Im your go-to fella when it comes to huntin and fishin gear. Yep, I specialize in all them outdoor goodies for huntin critters and catchin fish out in them waters. So, whats on your mind friend?", -- question or text
+--     ["options"] = {
+--         ["option1"] = {
+--             ["button"] = 1, -- A, B, C, D or 1, 2, 3, 4, 
+--             ["label"] = "Can i look at your supplies?", -- The answer to the option will appear in the person
+--             ["event"] = "kat:OpenShop", -- Event name
+--             ["server"] = false, -- Make this true if there will be a server side event trigger
+--             ["client"] = true, -- If there will be a client side event trigger, make it true
+--             ["argument"] = "", -- You can send only 1 argument and this can include framework variables.                   
+--             ["selected"] = false, -- Don't touch this
+--         },
+--         ["option2"] = {
+--             ["button"] = 2, -- A, B, C, D or 1, 2, 3, 4, 
+--             ["label"] = "I would like to purchase a weapons license so im legal, I guess..", -- The answer to the option will appear in the person
+--             ["event"] = "kevin-hunting:BuyHuntingLicense", -- Event name
+--             ["server"] = true, -- Make this true if there will be a server side event trigger
+--             ["client"] = false, -- If there will be a client side event trigger, make it true
+--             ["argument"] = "", -- You can send only 1 argument and this can include framework variables.                   
+--             ["selected"] = false, -- Don't touch this
+--         },
+--         ["option3"] = {
+--             ["button"] = 3, -- A, B, C, D or 1, 2, 3, 4, 
+--             ["label"] = "Can i sell my goods?", -- The answer to the option will appear in the person
+--             ["event"] = "kevin-hunting:HuntingMenu", -- Event name
+--             ["server"] = false, -- Make this true if there will be a server side event trigger
+--             ["client"] = true, -- If there will be a client side event trigger, make it true
+--             ["argument"] = "huntingrep", -- You can send only 1 argument and this can include framework variables.                   
+--             ["selected"] = false, -- Don't touch this
+--         },
+--         ["option4"] = {
+--             ["button"] = 4, -- A, B, C, D or 1, 2, 3, 4, 
+--             ["label"] = "Its high noon! Lets Hunt!", -- The answer to the option will appear in the person
+--             ["event"] = "kevin-hunting:GoHunt", -- Event name
+--             ["server"] = false, -- Make this true if there will be a server side event trigger
+--             ["client"] = true, -- If there will be a client side event trigger, make it true
+--             ["argument"] = "", -- You can send only 1 argument and this can include framework variables.                   
+--             ["selected"] = false, -- Don't touch this
+--         },
+--         },
+--         setNewJob = function()
+--             -- Your export or triggers here
+--         end
+--     }
+-- }
 
