@@ -1103,6 +1103,7 @@ local Vehicles = {
 {model = 'sunrise1', name = 'sunrise1', brand = 'Tuner', price = 20000, category = 'Tuner', type = 'automobile', shop = 'tuner'},
 {model = 'turismoc', name = 'turismoc', brand = 'Tuner', price = 20000, category = 'Tuner', type = 'automobile', shop = 'tuner'},
 {model = 'supergts', name = 'supergts', brand = 'Tuner', price = 20000, category = 'Tuner', type = 'automobile', shop = 'tuner'},
+{model = 'sultanrsv8', name = 'V8 Sultan', brand = 'Tuner', price = 20000, category = 'Tuner', type = 'automobile', shop = 'tuner'},
 {model = 'zrgpr', name = 'zrgpr', brand = 'Tuner', price = 20000, category = 'Tuner', type = 'automobile', shop = 'tuner'},
 {model = 'rmod911gt3', name = '911 GT3', brand = 'Tuner', price = 1, category = 'Tuner', type = 'automobile', shop = 'tuner'},
 {model = 'tempestaes', name = 'tempestaes', brand = 'Tuner', price = 20000, category = 'Tuner', type = 'automobile', shop = 'tuner'},
