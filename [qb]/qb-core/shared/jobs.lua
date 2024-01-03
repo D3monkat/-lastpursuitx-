@@ -68,7 +68,7 @@ QBShared.Jobs = {
 			['9'] = { name = 'Commander', isboss = true, payment = 150 },
 			['10'] = { name = 'Deputy Chief', payment = 50 },
 			['11'] = { name = 'Assistant Chief', payment = 75 },
-			['12'] = { name = 'Chief Of Police', payment = 100 },
+			['12'] = { name = 'Chief Of Police', payment = 150, isboss = true, bankAuth = true },
 		},
 	},
 	
