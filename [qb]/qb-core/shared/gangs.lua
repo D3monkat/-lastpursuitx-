@@ -4,10 +4,13 @@ QBShared.Gangs = {
     lostmc = {
         label = 'The Lost MC',
         grades = {
-            ['0'] = { name = 'Recruit' },
-            ['1'] = { name = 'Enforcer' },
-            ['2'] = { name = 'Shot Caller' },
-            ['3'] = { name = 'Boss', isboss = true },
+            ['0'] = { name = 'Prospect' },
+            ['1'] = { name = 'Patch Member' },
+            ['2'] = { name = 'Road Captain' },
+            ['3'] = { name = 'Enforcer' },
+            ['4'] = { name = 'Sgt At Arms' },
+            ['5'] = { name = 'Vice President', isboss = true },
+            ['6'] = { name = 'President', isboss = true },
         },
     },
     ballas = {
