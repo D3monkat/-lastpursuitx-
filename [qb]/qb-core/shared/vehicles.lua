@@ -1085,7 +1085,7 @@ local Vehicles = {
 {model = 'gauntlet6str', name = 'gauntlet6str', brand = 'Tuner', price = 20000, category = 'Tuner', type = 'automobile', shop = 'tuner'}, 
 {model = 'godzdbtaco', name = 'godzdbtaco', brand = 'Tuner', price = 20000, category = 'Tuner', type = 'automobile', shop = 'tuner'}, 
 {model = 'hachurac', name = 'hachurac', brand = 'Tuner', price = 20000, category = 'Tuner', type = 'automobile', shop = 'tuner'}, 
-{model = 'hoonie', name = 'Jucid 1of1', brand = 'Tuner', price = 1, category = 'Tuner', type = 'automobile', shop = 'tuner'}, 
+{model = 'hoonie', name = 'hoonie', brand = 'Tuner', price = 20000, category = 'Tuner', type = 'automobile', shop = 'tuner'}, 
 {model = 'coquette4c', name = 'Coquette Widebody', brand = 'Tuner', price = 1, category = 'Tuner', type = 'automobile', shop = 'tuner'}, 
 {model = 'impalass', name = 'impalass', brand = 'Tuner', price = 20000, category = 'Tuner', type = 'automobile', shop = 'tuner'}, 
 {model = 'italigton', name = 'italigton', brand = 'Tuner', price = 20000, category = 'Tuner', type = 'automobile', shop = 'tuner'}, 
@@ -1104,7 +1104,7 @@ local Vehicles = {
 {model = 'turismoc', name = 'turismoc', brand = 'Tuner', price = 20000, category = 'Tuner', type = 'automobile', shop = 'tuner'},
 {model = 'supergts', name = 'supergts', brand = 'Tuner', price = 20000, category = 'Tuner', type = 'automobile', shop = 'tuner'},
 {model = 'zrgpr', name = 'zrgpr', brand = 'Tuner', price = 20000, category = 'Tuner', type = 'automobile', shop = 'tuner'},
-{model = 'mf1c', name = 'mf1c', brand = 'Tuner', price = 20000, category = 'Tuner', type = 'automobile', shop = 'tuner'},
+{model = 'rmod911gt3', name = '911 GT3', brand = 'Tuner', price = 1, category = 'Tuner', type = 'automobile', shop = 'tuner'},
 {model = 'tempestaes', name = 'tempestaes', brand = 'Tuner', price = 20000, category = 'Tuner', type = 'automobile', shop = 'tuner'},
 
 
