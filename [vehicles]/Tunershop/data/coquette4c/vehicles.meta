@@ -6,7 +6,7 @@
     <Item>
       <modelName>coquette4c</modelName>
       <txdName>coquette4c</txdName>
-      <handlingId>COQUETTE4C</handlingId>
+      <handlingId>jcoquette</handlingId>
       <gameName>COQUETTE4C</gameName>
       <vehicleMakeName>INVERTO</vehicleMakeName>
       <expressionDictName>null</expressionDictName>
