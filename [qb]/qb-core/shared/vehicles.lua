@@ -1073,6 +1073,28 @@ local Vehicles = {
 {model = 'z32', name = 'z32', brand = 'Nissan', price = 18915, category = 'Nissan', type = 'automobile', shop = 'pdm'}, 
 {model = 'z419', name = 'z419', brand = 'BMW', price = 84103, category = 'BMW', type = 'automobile', shop = 'pdm'}, 
 {model = 'zentenario', name = 'zentenario', brand = 'Lambo', price = 2899000, category = 'Lambo', type = 'automobile', shop = 'pdm'}, 
+{model = 'ap2', name = 'S2000', brand = 'Honda', price = 32000, category = 'Honda', type = 'automobile', shop = 'pdm'}, 
+{model = 'ast', name = 'ast', brand = 'Aston Martin', price = 125000, category = 'Aston Martin', type = 'automobile', shop = 'pdm'}, 
+{model = 'audquattros', name = 'quattros', brand = 'Audi', price = 50000, category = 'Audi', type = 'automobile', shop = 'pdm'}, 
+{model = 'bbentayga', name = 'bentayga', brand = 'Bentley', price = 195000, category = 'Bentley', type = 'automobile', shop = 'pdm'}, 
+{model = 'bigtex20', name = 'bigtex20', brand = 'Trailer', price = 15000, category = 'Trailer', type = 'automobile', shop = 'pdm'}, 
+{model = 'bigtex40', name = 'bigtex40', brand = 'Trailer', price = 20000, category = 'Trailer', type = 'automobile', shop = 'pdm'}, 
+{model = 'bmci', name = 'M5', brand = 'BMW', price = 30000, category = 'BMW', type = 'automobile', shop = 'pdm'},  
+{model = 'bolide', name = 'Bolide', brand = 'Bugatti', price = 4370200, category = 'Bugatti', type = 'automobile', shop = 'pdm'}, 
+{model = 'brz', name = 'BRZ', brand = 'Subaru', price = 30000, category = 'Subaru', type = 'automobile', shop = 'pdm'}, 
+{model = 'c6320', name = 'C63', brand = 'Mercedes', price = 50000, category = 'Mercedes', type = 'automobile', shop = 'pdm'}, 
+{model = 'c7', name = 'C7', brand = 'Cheverolet', price = 90000, category = 'Cheverolet', type = 'automobile', shop = 'pdm'}, 
+{model = 'cam8tun', name = 'Camary', brand = 'Toyota', price = 30000, category = 'Toyota', type = 'automobile', shop = 'pdm'}, 
+{model = 'camrs17', name = 'Camaro', brand = 'Chevrolet', price = 30000, category = 'Chevrolet', type = 'automobile', shop = 'pdm'}, 
+{model = 'caprice89w', name = 'caprice89w', brand = 'Chevrolet', price = 10000, category = 'Chevrolet', type = 'automobile', shop = 'pdm'}, 
+{model = 'cats', name = 'ctsv', brand = 'Cadillac', price = 86000, category = 'Cadillac', type = 'automobile', shop = 'pdm'}, 
+{model = 'cesc21', name = 'Escalade', brand = 'Cadillac', price = 81000, category = 'Cadillac', type = 'automobile', shop = 'pdm'}, 
+{model = 'cgt', name = 'Carrera GT', brand = 'Porsche', price = 1300000, category = 'Porsche', type = 'automobile', shop = 'pdm'}, 
+{model = 'cgts', name = 'Contential GTS', brand = 'Bentley', price = 235000, category = 'Bentley', type = 'automobile', shop = 'pdm'}, 
+{model = 'chauler', name = 'car hauler', brand = 'Trailer', price = 10000, category = 'Trailer', type = 'automobile', shop = 'pdm'}, 
+{model = 'chevyss', name = 'chevyss', brand = 'Chevrolet', price = 30000, category = 'Chevrolet', type = 'automobile', shop = 'pdm'}, 
+{model = 'chibs', name = 'chibs', brand = 'Harley', price = 30000, category = 'Harley', type = 'automobile', shop = 'pdm'}, 
+{model = 'chr20', name = 'Hellcat', brand = 'Dodge', price = 77000, category = 'Dodge', type = 'automobile', shop = 'pdm'}, 
 
 -- Tuner
 {model = '91prem', name = '91prem', brand = 'Tuner', price = 20000, category = 'Tuner', type = 'automobile', shop = 'tuner'}, 
@@ -1107,6 +1129,9 @@ local Vehicles = {
 {model = 'zrgpr', name = 'zrgpr', brand = 'Tuner', price = 20000, category = 'Tuner', type = 'automobile', shop = 'tuner'},
 {model = 'rmod911gt3', name = '911 GT3', brand = 'Tuner', price = 1, category = 'Tuner', type = 'automobile', shop = 'tuner'},
 {model = 'tempestaes', name = 'tempestaes', brand = 'Tuner', price = 20000, category = 'Tuner', type = 'automobile', shop = 'tuner'},
+{model = 'RVFF', name = 'RVFF', brand = 'Tuner', price = 20000, category = 'Tuner', type = 'automobile', shop = 'tuner'},
+{model = 'radiantvff', name = 'radiantvff', brand = 'Tuner', price = 20000, category = 'Tuner', type = 'automobile', shop = 'tuner'},
+
 
 
 
