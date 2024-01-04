@@ -1108,7 +1108,7 @@ local Vehicles = {
 {model = 'godzdbtaco', name = 'godzdbtaco', brand = 'Tuner', price = 20000, category = 'Tuner', type = 'automobile', shop = 'tuner'}, 
 {model = 'hachurac', name = 'hachurac', brand = 'Tuner', price = 20000, category = 'Tuner', type = 'automobile', shop = 'tuner'}, 
 {model = 'hoonie', name = 'hoonie', brand = 'Tuner', price = 20000, category = 'Tuner', type = 'automobile', shop = 'tuner'}, 
-{model = 'coquette4c', name = 'Coquette Widebody', brand = 'Tuner', price = 1, category = 'Tuner', type = 'automobile', shop = 'tuner'}, 
+{model = 'coquette4c', name = 'Coquette Widebody', brand = 'Tuner', price = 75000, category = 'Tuner', type = 'automobile', shop = 'tuner'}, 
 {model = 'impalass', name = 'impalass', brand = 'Tuner', price = 20000, category = 'Tuner', type = 'automobile', shop = 'tuner'}, 
 {model = 'italigton', name = 'italigton', brand = 'Tuner', price = 20000, category = 'Tuner', type = 'automobile', shop = 'tuner'}, 
 {model = 'jestgpr', name = 'jestgpr', brand = 'Tuner', price = 20000, category = 'Tuner', type = 'automobile', shop = 'tuner'}, 
