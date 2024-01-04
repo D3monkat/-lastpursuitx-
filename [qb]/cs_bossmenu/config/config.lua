@@ -107,7 +107,7 @@ CodeStudio.BossMenu = {
 -- This option is only for QB based server other servers can simply register gangs in CodeStudio.BossMenu
 
 CodeStudio.GangMenu = {
-    ['lostmc'] = {3},
+    ['lostmc'] = {5, 6},
     ['rno'] = {3},
 }
 
