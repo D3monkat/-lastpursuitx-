@@ -100,6 +100,7 @@
       <wheelType>VWT_SUV</wheelType>
       <trailers>
         <Item>boattrailer</Item>
+        <Item>thauler</Item>
         <Item>trailersmall</Item>
       </trailers>
       <additionalTrailers>
