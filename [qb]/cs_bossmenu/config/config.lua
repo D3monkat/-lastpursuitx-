@@ -93,7 +93,7 @@ CodeStudio.QuickAction = {          -- Society Money Quick Actions
 
 CodeStudio.BossMenu = {
     --[job_name] = {rank1, rank2}
-    ['police'] = {4},
+    ['police'] = {12},
     ['bcso'] = {10},
     ['sast'] = {21},
     ['ambulance'] = {4},
