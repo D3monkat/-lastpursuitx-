@@ -3,8 +3,8 @@
 <CVehicleModelInfoVarGlobal>
   <Kits>
 	<Item>
-      <kitName>854_coquette4c_modkit</kitName>
-      <id value="854" />
+      <kitName>85464_coquette4c_modkit</kitName>
+      <id value="85464" />
       <kitType>MKT_SPECIAL</kitType>
       <visibleMods>
 <!-- Nitrous -->
