@@ -262,6 +262,15 @@ QBShared.Jobs = {
 			['100'] = { name = 'Showroom Sales', payment = 150 },
 		},
 	},
+	shopkatsmotors = {
+		label = 'Vehicle Dealer Kats',
+		defaultDuty = true,
+		offDutyPay = false,
+		grades = {
+			['0'] = { name = 'Recruit', payment = 50 },
+			['100'] = { name = 'Showroom Sales', payment = 150 },
+		},
+	},
 	shoptesla = {
 		label = 'Electric Vehicle Dealer',
 		defaultDuty = true,
