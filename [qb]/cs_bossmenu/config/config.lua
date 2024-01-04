@@ -93,7 +93,7 @@ CodeStudio.QuickAction = {          -- Society Money Quick Actions
 
 CodeStudio.BossMenu = {
     --[job_name] = {rank1, rank2}
-    ['police'] = {4},
+    ['police'] = {12},
     ['bcso'] = {10},
     ['sast'] = {21},
     ['ambulance'] = {4},
@@ -107,7 +107,7 @@ CodeStudio.BossMenu = {
 -- This option is only for QB based server other servers can simply register gangs in CodeStudio.BossMenu
 
 CodeStudio.GangMenu = {
-    ['lostmc'] = {3},
+    ['lostmc'] = {5, 6},
     ['rno'] = {3},
 }
 

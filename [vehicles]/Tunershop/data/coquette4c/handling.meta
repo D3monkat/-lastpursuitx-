@@ -3,7 +3,7 @@
 <CHandlingDataMgr>
   <HandlingData>
     <Item type="CHandlingData">
-      <handlingName>COQUETTE4C</handlingName>
+      <handlingName>jcoquette</handlingName>
       <fMass value="1600.000000" />
 	  <fDownforceModifier value="225.0" />
       <fInitialDragCoeff value="9.000000" />
