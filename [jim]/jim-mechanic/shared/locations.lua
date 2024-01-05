@@ -133,7 +133,7 @@ Config.Locations[#Config.Locations+1] = { --[[ REDLINE ]]--
 }
 Config.Locations[#Config.Locations+1] = { --[[ GABZ LS TUNER SHOP ]]--
 	Enabled = true,
-	job = "tuner",
+	job = "shoptuner",
 	zones = {
 		vec2(154.69816589355, -3007.0153808594),
 		vec2(120.64015197754, -3006.7275390625),
