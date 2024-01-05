@@ -25,7 +25,7 @@
         </Item> 
       </colors>
       <kits>
-        <Item>789127_rmod911gt3_modkit</Item>
+        <Item>6349_rmod911gt3_modkit</Item>
       </kits>
       <windowsWithExposedEdges />
       <plateProbabilities>
@@ -36,7 +36,7 @@
           </Item>
         </Probabilities>
       </plateProbabilities>
-      <lightSettings value="789127" />
+      <lightSettings value="6349" />
       <sirenSettings value="0" />
     </Item>
   </variationData>
