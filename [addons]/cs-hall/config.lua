@@ -2502,7 +2502,7 @@ config = {
                 ['height'] = nil,
         
                 ['polygons'] = {
-                    ['applyLowPassFilterOutside'] = true,
+                    ['applyLowPassFilterOutside'] = false,
                     ['invertLowPassApplication'] = false,
                     ['hideReplacersOutside'] = true,
         
@@ -2538,7 +2538,20 @@ config = {
             },
         
             ['monitors'] = nil,
-            ['screens'] = nil,
+            ['screens'] = {
+                {
+                    ['hash'] = 'h4_prop_battle_club_screen',
+                    ['position'] = vector3(-343.994, -128.976, 41.827),
+                    ['rotation'] = nil,
+                    ['heading'] = 251.35,
+                    ['lodDistance'] = nil,
+
+                    ['advance'] = {
+                        ['durationMs'] = 15000,
+                        ['position'] = vector3(-343.994, -128.976, 41.827)
+                    }
+                }
+            },
         
             ['spotlights'] = nil,
         
