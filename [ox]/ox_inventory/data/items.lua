@@ -4129,7 +4129,7 @@ return {
 		close = true,
 		description = "Install vehicle tint",
 		client = {
-			image = "veh_tint.png",
+			image = "tint.png",
 		}
 	},
   
