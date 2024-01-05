@@ -2537,21 +2537,9 @@ config = {
                 ['ba_prop_battle_club_projector'] = 'script_rt_club_projector'
             },
         
-            ['monitors'] = {
-                {
-                    ['hash'] = 'h4_prop_battle_club_screen',
-                    ['position'] = vector3(-343.994, -128.976, 41.827),
-                    ['rotation'] = nil,
-                    ['heading'] = 63.51,
-                    ['lodDistance'] = ,
-
-                    ['advance'] = {
-                        ['durationMs'] = 15000,
-                        ['position'] = vector3(-343.994, -128.976, 41.827)
-                    }
-                }
-            },
-        
+            ['monitors'] = nil,
+            ['screens'] = nil,
+             
             ['spotlights'] = nil,
         
             ['smokers'] = nil,
