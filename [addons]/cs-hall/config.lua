@@ -2502,7 +2502,7 @@ config = {
                 ['height'] = nil,
         
                 ['polygons'] = {
-                    ['applyLowPassFilterOutside'] = true,
+                    ['applyLowPassFilterOutside'] = false,
                     ['invertLowPassApplication'] = false,
                     ['hideReplacersOutside'] = true,
         
@@ -2538,7 +2538,20 @@ config = {
             },
         
             ['monitors'] = nil,
-            ['screens'] = nil,
+            ['screens'] = {
+                {
+                    ['hash'] = 'v_ilev_cin_screen',
+                    ['position'] = vector3(-351.055, -147.893, 43.231),
+                    ['rotation'] = nil,
+                    ['heading'] = 310.47,
+                    ['lodDistance'] = 250,
+
+                    ['advance'] = {
+                        ['durationMs'] = 15000,
+                        ['position'] = vector3(103.27879333496, -1292.5457763672, 31.71610946655)
+                    }
+                }
+            },
         
             ['spotlights'] = nil,
         
