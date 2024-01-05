@@ -3,8 +3,8 @@
 <CVehicleModelInfoVarGlobal>
 	<Kits>
     <Item>
-      <kitName>15106_radiant_vff_modkit</kitName>
-      <id value="15106" />
+      <kitName>15426_radiant_vff_modkit</kitName>
+      <id value="15426" />
       <kitType>MKT_SPECIAL</kitType>
       <visibleMods>
 				<Item><!--BOOST STARTS HERE-->

@@ -1,8 +1,8 @@
 <CVehicleModelInfoVarGlobal>    
   <Kits>
 	<Item>                                
-      <kitName>650_jester5_modkit</kitName>
-      <id value="650" />	 	  
+      <kitName>650753_jester5_modkit</kitName>
+      <id value="650753" />	 	  
       <kitType>MKT_SPECIAL</kitType>
       <visibleMods>
 		 <Item>																		<!--FRONT BUMPERS -->

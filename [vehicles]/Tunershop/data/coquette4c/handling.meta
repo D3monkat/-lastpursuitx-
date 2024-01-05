@@ -3,20 +3,20 @@
 <CHandlingDataMgr>
   <HandlingData>
     <Item type="CHandlingData">
-      <handlingName>jcoquette</handlingName>
+      <handlingName>coquette4c</handlingName>
       <fMass value="1600.000000" />
 	  <fDownforceModifier value="225.0" />
-      <fInitialDragCoeff value="9.000000" />
+      <fInitialDragCoeff value="10.000000" />
       <fPercentSubmerged value="85.000000" />
       <vecCentreOfMassOffset x="0.000000" y="0.00000" z="0.00000" />
       <vecInertiaMultiplier x="1.200000" y="1.200000" z="1.500000" />
       <fDriveBiasFront value="0.000000" />
-      <nInitialDriveGears value="8" />
+      <nInitialDriveGears value="7" />
       <fInitialDriveForce value="0.32125" />
-      <fDriveInertia value="1.000000" />
+      <fDriveInertia value="1.200000" />
       <fClutchChangeRateScaleUpShift value="2.400000" />
       <fClutchChangeRateScaleDownShift value="2.200000" />
-      <fInitialDriveMaxFlatVel value="180.000000" />
+      <fInitialDriveMaxFlatVel value="200.000000" />
       <fBrakeForce value="1.400000" />
       <fBrakeBiasFront value="0.550000" />
       <fHandBrakeForce value="0.625000" />
