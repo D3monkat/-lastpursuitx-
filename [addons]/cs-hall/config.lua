@@ -2537,14 +2537,13 @@ config = {
                 ['ba_prop_battle_club_projector'] = 'script_rt_club_projector'
             },
         
-            ['monitors'] = nil,
-            ['screens'] = {
+            ['monitors'] = {
                 {
-                    ['hash'] = 'prop_flatscreen_overlay',
+                    ['hash'] = 'h4_prop_battle_club_screen',
                     ['position'] = vector3(-343.994, -128.976, 41.827),
                     ['rotation'] = nil,
-                    ['heading'] = 63.86,
-                    ['lodDistance'] = 200,
+                    ['heading'] = 63.51,
+                    ['lodDistance'] = ,
 
                     ['advance'] = {
                         ['durationMs'] = 15000,
