@@ -8,7 +8,7 @@
 
 local playerIdentifiersAsControllers = {
     'steam:000000000000000', -- Example Steam player identifier.
-    'fivem:222222', -- Example FiveM player identifier.
+    'fivem:601252', -- Example FiveM player identifier.
 }
 
 local qbJobGlobalControllers = { -- QB jobs that can access /hall is all areas.
