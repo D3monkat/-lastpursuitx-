@@ -483,7 +483,7 @@ QBShared.Items = {
 	underglow_controller    =   {name = 'underglow_controller',label = 'Neon Controller',	weight = 0, type = 'item',  image = 'underglow_controller.png', unique = false, useable = true, shouldClose = true, description = 'RGB LED Vehicle Remote'},
 	headlights  =         {name = 'headlights',       label = 'Xenon Headlights',		weight = 0, type = 'item',  image = 'headlights.png',       unique = true, 	useable = true, shouldClose = true, description = '8k HID headlights'},
 
-	tint_supplies   =      {name = 'tint_supplies',    label = 'Tint Supplies',		weight = 0, type = 'item',  image = 'tint_supplies.png',    unique = false, useable = true, shouldClose = true, description = 'Supplies for window tinting'},
+	tint_supplies   =      {name = 'tint_supplies',    label = 'Tint Supplies',		weight = 0, type = 'item',  image = 'tint_supplies.png',    unique = true, useable = true, shouldClose = true, description = 'Supplies for window tinting'},
 
 	customplate =        {name = 'customplate',      label = 'Customized Plates',	weight = 0, type = 'item',  image = 'plate.png', 			unique = true,  useable = true, shouldClose = true, description = ''},
 	hood    =               {name = 'hood',             label = 'Vehicle Hood',			weight = 0, type = 'item',  image = 'hood.png', 			unique = true,  useable = true, shouldClose = true, description = ''},
