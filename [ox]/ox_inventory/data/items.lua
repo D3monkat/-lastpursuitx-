@@ -4121,6 +4121,17 @@ return {
   			image = "veh_tint.png",
   		}
   	},
+
+	  ["tint_supplies"] = {
+		label = "Tint",
+		weight = 1000,
+		stack = true,
+		close = true,
+		description = "Install vehicle tint",
+		client = {
+			image = "veh_tint.png",
+		}
+	},
   
   	["advancedrepairkit"] = {
   		label = "Advanced Repairkit",
