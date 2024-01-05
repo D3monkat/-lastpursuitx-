@@ -2538,20 +2538,7 @@ config = {
             },
         
             ['monitors'] = nil,
-            ['screens'] = {
-                {
-                    ['hash'] = 'v_ilev_cin_screen',
-                    ['position'] = vector3(-351.055, -147.893, 43.231),
-                    ['rotation'] = nil,
-                    ['heading'] = 310.47,
-                    ['lodDistance'] = 150,
-
-                    ['advance'] = {
-                        ['durationMs'] = 15000,
-                        ['position'] = vector3(-344.34, -129.16, 41.68)
-                    }
-                }
-            },
+            ['screens'] = nil,
         
             ['spotlights'] = nil,
         
