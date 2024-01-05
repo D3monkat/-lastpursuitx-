@@ -2544,11 +2544,11 @@ config = {
                     ['position'] = vector3(-351.055, -147.893, 43.231),
                     ['rotation'] = nil,
                     ['heading'] = 310.47,
-                    ['lodDistance'] = 250,
+                    ['lodDistance'] = 150,
 
                     ['advance'] = {
                         ['durationMs'] = 15000,
-                        ['position'] = vector3(103.27879333496, -1292.5457763672, 31.71610946655)
+                        ['position'] = vector3(-344.34, -129.16, 41.68)
                     }
                 }
             },
