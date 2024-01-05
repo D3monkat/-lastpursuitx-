@@ -182,7 +182,7 @@ Config.Locations[#Config.Locations+1] = { --[[ GABZ LS TUNER SHOP ]]--
 	},
 	blip = {
 		coords = vec3(139.91, -3023.83, 7.04),
-		label = "LS Tuner Shop",
+		label = "TunerShop",
 		color = 81,
 		sprite = 446,
 		disp = 6,
