@@ -2,7 +2,7 @@
 <CVehicleModelInfoVarGlobal>    
 	<Sirens>
     <Item>
-      <id value="97635"/> <!--2024 Hummer EV made by Unknown Modifications-->
+      <id value="75302"/> <!--2024 Hummer EV made by Unknown Modifications-->
       <name>24humev</name>
       <timeMultiplier value="1.00000000"/>
       <lightFalloffMax value="125.00000000"/>
