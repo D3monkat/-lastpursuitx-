@@ -2544,7 +2544,7 @@ config = {
                     ['position'] = vector3(-343.994, -128.976, 41.827),
                     ['rotation'] = nil,
                     ['heading'] = 251.35,
-                    ['lodDistance'] = nil,
+                    ['lodDistance'] = 200,
 
                     ['advance'] = {
                         ['durationMs'] = 15000,
