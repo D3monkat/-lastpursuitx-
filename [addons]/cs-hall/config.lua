@@ -2540,10 +2540,10 @@ config = {
             ['monitors'] = nil,
             ['screens'] = {
                 {
-                    ['hash'] = 'h4_prop_battle_club_screen',
+                    ['hash'] = 'prop_flatscreen_overlay',
                     ['position'] = vector3(-343.994, -128.976, 41.827),
                     ['rotation'] = nil,
-                    ['heading'] = 251.35,
+                    ['heading'] = 63.86,
                     ['lodDistance'] = 200,
 
                     ['advance'] = {
