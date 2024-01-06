@@ -121,6 +121,7 @@ Config.blacklist = {
         'tr_pdsilv',
         'pltforklift',
         'forklift',
+        '24humev',
     },
     classes = {
         [0] = false, -- Compacts
