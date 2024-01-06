@@ -99,7 +99,7 @@ CodeStudio.BossMenu = {
     ['ambulance'] = {4},
     ['catcafe'] = {4},
     ['burgershot'] = {4},
-    ['blueline'] = {4},
+    ['blueline'] = {5},
 }
 
 

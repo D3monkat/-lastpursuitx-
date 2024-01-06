@@ -29,7 +29,7 @@ Config.POSTAL_BOSS_ANIMATION = 'WORLD_HUMAN_SMOKING'
 Config.DROP_OFF_PED_HASH = 's_m_y_construct_01'
 
 -- GoPostal Van hash & spawn location
-Config.POSTAL_VEHICLE_HASH         = 'boxville2'
+Config.POSTAL_VEHICLE_HASH         = 'boxville4'
 Config.POSTAL_VEHICLE_SPAWN_COORDS = vec4(130.4967, 88.7683, 82.1197, 248.5475)
 
 -- Pay multiplier for the job. Increase this for players to be compensated higher for their work
