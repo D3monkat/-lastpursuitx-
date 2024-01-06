@@ -60,7 +60,7 @@ QBShared.Jobs = {
 			['1'] = { name = 'Officer', payment = 235 },
 			['2'] = { name = 'Officer 2', payment = 240 },
 			['3'] = { name = 'Corporal', payment = 257 },
-			['4'] = { name = 'Sergeant', isboss = true, payment = 275 },
+			['4'] = { name = 'Sergeant', payment = 275 },
 			['5'] = { name = 'Detective', payment = 294 },
 			['6'] = { name = 'Lead Detective', payment = 315 },
 			['7'] = { name = 'Lieutenant', payment = 337 },
@@ -358,7 +358,6 @@ QBShared.Jobs = {
 		},
 	},
 	beeker = {
-		label = 'Beekers Garage',
 		type = 'mechanic',
 		defaultDuty = true,
 		offDutyPay = false,
