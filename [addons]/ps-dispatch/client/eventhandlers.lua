@@ -117,40 +117,4 @@ AddEventHandler('gameEventTriggered', function(name, args)
         end
     end)
 end)
-
-local SpeedingEvents = {
-    'CEventShockingCarChase',
-    'CEventShockingDrivingOnPavement',
-    'CEventShockingBicycleOnPavement',
-    'CEventShockingMadDriverBicycle',
-    'CEventShockingMadDriverExtreme',
-    'CEventShockingEngineRevved',
-    'CEventShockingInDangerousVehicle'
-}
-
-local SpeedTrigger = 0
-for i = 1, #SpeedingEvents do
-    local event = SpeedingEvents[i]
-    AddEventHandler(event, function(_, ped)
-        WaitTimer('Speeding', function()
-            local currentTime = GetGameTimer()
-            if currentTime - SpeedTrigger < 10000 then
-                return
-            end
-            if cache.ped ~= ped then return end
-
-            if PlayerData.job.type == 'leo' then
-                if not Config.Debug then
-                    return
-                end
-            end
-            
-            if GetEntitySpeed(cache.vehicle) * 3.6 < (80 + math.random(0, 20)) then return end
-
-            if cache.ped ~= GetPedInVehicleSeat(cache.vehicle, -1) then return end
-
-            exports['ps-dispatch']:SpeedingVehicle()
-            SpeedTrigger = GetGameTimer()
-        end)
-    end)
 end
