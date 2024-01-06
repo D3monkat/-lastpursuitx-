@@ -157,7 +157,7 @@ QBShared.Jobs = {
 			['1'] = { name = 'Novice', payment = 276 },
 			['2'] = { name = 'Experienced', payment = 317 },
 			['3'] = { name = 'Advanced', payment = 365 },
-			['4'] = { name = 'Manager', isboss = true, payment = 419, bankAuth = true },
+			['4'] = { name = 'Manager', isboss = true, payment = 420, bankAuth = true },
         },
 	},
 	upnatom = {
