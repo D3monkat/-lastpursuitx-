@@ -8,7 +8,7 @@
 
 local playerIdentifiersAsControllers = {
     'steam:000000000000000', -- Example Steam player identifier.
-    'fivem:000000', -- Example FiveM player identifier.
+    'fivem:601252', -- Example FiveM player identifier.
 }
 
 function CanAccessControllerInterface(source, plate)
