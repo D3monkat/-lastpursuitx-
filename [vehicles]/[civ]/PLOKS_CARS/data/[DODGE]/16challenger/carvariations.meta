@@ -126,13 +126,13 @@
         </Item>
       </colors>
       <kits>
-        <Item>409_16challenger_modkit</Item>
+        <Item>4397_16challenger_modkit</Item>
       </kits>
       <windowsWithExposedEdges />
       <plateProbabilities>
         <Probabilities />
       </plateProbabilities>
-      <lightSettings value="409" />
+      <lightSettings value="4397" />
       <sirenSettings value="0" />
     </Item>
   </variationData>
