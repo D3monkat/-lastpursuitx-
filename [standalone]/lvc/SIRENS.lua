@@ -118,6 +118,7 @@ SIREN_ASSIGNMENTS = {
 	['emstahoe'] = { 27, 28, 29, 30, },
 	['emstahoe21'] = { 27, 28, 29, 30, },
 	['emsraptor'] = { 27, 28, 29, 30, },
+	['24humev'] = { 27, 28, 29, 30, },
 	
 	--LSPD--
 	['tr_pdvic'] = { 33, 34, 35, 36, },
