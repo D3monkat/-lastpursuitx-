@@ -172,7 +172,7 @@ QBShared.Jobs = {
         },
 	},
 	hornys = {
-		label = "Horny's",
+		label = "Hornys",
 		defaultDuty = true,
 		grades = {
             ['0'] = { name = 'Recruit', payment = 50 },
