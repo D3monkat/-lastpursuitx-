@@ -2,8 +2,8 @@
 <CVehicleModelInfoVarGlobal>    
   <Kits>
     <Item>
-      <kitName>409_16challenger_modkit</kitName>
-      <id value="409" />	 	  
+      <kitName>4397_16challenger_modkit</kitName>
+      <id value="4397" />	 	  
       <kitType>MKT_SPORT</kitType>
       <visibleMods>
 	  <Item>
