@@ -86,7 +86,7 @@ config = {
             ['enabled'] = true,
             ['range'] = 128.0,
             ['autoAdjustTime'] = false,
-            ['maxVolumePercent'] = 50,
+            ['maxVolumePercent'] = 200,
 
             ['idleWallpaperUrl'] = 'https://cfx-nui-' .. GetCurrentResourceName() .. '/client/dui/images/wallpaper.png',
 
