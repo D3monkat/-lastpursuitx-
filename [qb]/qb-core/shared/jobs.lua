@@ -358,7 +358,7 @@ QBShared.Jobs = {
 		},
 	},
 	beeker = {
-		label = 'Beeker\'s Garage',
+		label = 'Beekers Garage',
 		type = 'mechanic',
 		defaultDuty = true,
 		offDutyPay = false,
@@ -371,7 +371,7 @@ QBShared.Jobs = {
 		},
 	},
 	bennys = {
-		label = 'Benny\'s Original Motor Works',
+		label = 'Bennys Original Motor Works',
 		type = 'mechanic',
 		defaultDuty = true,
 		offDutyPay = false,
