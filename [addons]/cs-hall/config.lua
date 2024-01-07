@@ -570,6 +570,26 @@ config = {
                 {
                     ['hash'] = 'ba_prop_battle_club_speaker_large',
                     ['visible'] = false,
+                    ['position'] = vector3(134.53, -1301.93, 21.39),
+                    ['rotation'] = nil,
+                    ['heading'] = 74.98,
+                    ['lodDistance'] = nil,
+                    ['soundOffset'] = vector3(0.0, 0.0, 1.4),
+                    ['directionOffset'] = nil,
+                    ['maxDistance'] = 52.0,
+                    ['refDistance'] = 16.0,
+                    ['rolloffFactor'] = 1.25,
+                    ['coneInnerAngle'] = 90,
+                    ['coneOuterAngle'] = 180,
+                    ['coneOuterGain'] = 0.5,
+                    ['fadeDurationMs'] = 250,
+                    ['volumeMultiplier'] = 1.0,
+                    ['lowPassGainReductionPercent'] = 15
+                },
+
+                {
+                    ['hash'] = 'ba_prop_battle_club_speaker_large',
+                    ['visible'] = false,
                     ['position'] = vector3(134.44, -1302.06, 23.43),
                     ['rotation'] = nil,
                     ['heading'] = 88.3,
