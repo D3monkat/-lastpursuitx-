@@ -72,8 +72,8 @@ exports['Renewed-Banking']:removeAccountMoney(account, amount)
 # QBCore additional Installation Steps 
 ## qb-managment conversion
 ```lua
-exports['Renewed-Banking']:getAccountMoney => exports['Renewed-Banking']:getAccountMoney
-exports['Renewed-Banking']:addAccountMoney => exports['Renewed-Banking']:addAccountMoney
+exports['qb-management']:GetAccount => exports['Renewed-Banking']:getAccountMoney
+exports['qb-management']:AddMoney => exports['Renewed-Banking']:addAccountMoney
 exports['qb-management']:RemoveMoney => exports['Renewed-Banking']:removeAccountMoney
 exports['qb-management']:GetGangAccount=> exports['Renewed-Banking']:getAccountMoney
 exports['qb-management']:AddGangMoney=> exports['Renewed-Banking']:addAccountMoney
