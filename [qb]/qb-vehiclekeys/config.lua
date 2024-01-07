@@ -10,13 +10,13 @@ Config.RemoveLockpickAdvanced = 0.2 -- Chance to remove advanced lockpick on fai
 Config.LockPickDoorEvent = function()
     loadAnimDict("veh@break_in@0h@p_m_one@")
     TaskPlayAnim(PlayerPedId(), "veh@break_in@0h@p_m_one@", "low_force_entry_ds", 3.0, 3.0, -1, 16, 0, 0, 0, 0)
+    exports['ps-dispatch']:VehicleTheft(vehicle)
     
     local success = lib.skillCheck({'easy', 'easy', {areaSize = 60, speedMultiplier = 1}, 'medium'}, {'w', 'a', 's', 'd'})
 
     if success then
         LockpickFinishCallback(success)
     else
-        AttemptPoliceAlert("carjack")
         TriggerServerEvent('hud:server:GainStress', math.random(1, 4))
         TriggerEvent("QBCore:Notify", "You failed to lockpick.", "error")
     end
