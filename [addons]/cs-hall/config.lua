@@ -101,25 +101,20 @@ config = {
                     ['entries'] = {
                         {
                             ['height'] = {
-                                ['min'] = 27.0,
-                                ['max'] = 32.0
+                                ['min'] = 20.0,
+                                ['max'] = 39.0
                             },
         
                             ['points'] = {
-                                vector2(139.37, -1286.14),
-                                vector2(136.05, -1279.98),
-                                vector2(133.24, -1275.47),
-                                vector2(128.67, -1276.76),
-                                vector2(121.51, -1278.23),
-                                vector2(114.19, -1278.97),
-                                vector2(110.07, -1280.59),
-                                vector2(100.52, -1282.48),
-                                vector2(101.44, -1285.23),
-                                vector2(104.67, -1290.09),
-                                vector2(114.25, -1305.41),
-                                vector2(126.52, -1298.37),
-                                vector2(124.38, -1295.31),
-                                vector2(129.06, -1292.22)
+                                vector2(129.15467834472, -1298.496459961),
+                                vector2(114.77442932128, -1306.5447998046),
+                                vector2(116.29252624512, -1308.9362792968),
+                                vector2(100.94010162354, -1317.7283935546),
+                                vector2(84.832145690918, -1289.9853515625),
+                                vector2(93.469841003418, -1284.8178710938),
+                                vector2(99.935501098632, -1282.1805419922),
+                                vector2(134.00451660156, -1275.411743164),
+                                vector2(142.40451049804, -1290.5163574218)
                             }
                         }
                     }
@@ -139,6 +134,7 @@ config = {
                 ['h4_prop_battle_club_projector'] = 'script_rt_club_projector'
             },
 
+
             ['monitors'] = {
                 {
                     ['hash'] = 'ba_prop_battle_club_screen_02',
@@ -152,14 +148,14 @@ config = {
             ['screens'] = {
                 {
                     ['hash'] = 'h4_prop_battle_club_screen',
-                    ['position'] = vector3(119.56, -1298.4, 32.53),
+                    ['position'] = vector3(102.96, -1311.3, 24.48),
                     ['rotation'] = nil,
-                    ['heading'] = 206.84,
+                    ['heading'] = 27.69,
                     ['lodDistance'] = nil,
 
                     ['advance'] = {
                         ['durationMs'] = 15000,
-                        ['position'] = vector3(119.56, -1298.4, 33.53)
+                        ['position'] = vector3(102.96, -1311.3, 24.48)
                     },
                 },
 
@@ -176,6 +172,7 @@ config = {
                     }
                 }
             },
+
 
             ['spotlights'] = {
                 {
@@ -333,9 +330,9 @@ config = {
                 {
                     ['hash'] = 'ba_prop_battle_club_speaker_large',
                     ['visible'] = false,
-                    ['position'] = vector3(124.15, -1295.75, 28.52),
+                    ['position'] = vector3(116.72, -1300.61, 30.05),
                     ['rotation'] = nil,
-                    ['heading'] = 207.95,
+                    ['heading'] = 27.99,
                     ['lodDistance'] = nil,
                     ['soundOffset'] = vector3(0.0, 0.0, 1.4),
                     ['directionOffset'] = nil,
@@ -353,13 +350,93 @@ config = {
                 {
                     ['hash'] = 'ba_prop_battle_club_speaker_large',
                     ['visible'] = false,
-                    ['position'] = vector3(116.43, -1300.22, 28.52),
+                    ['position'] = vector3(111.06, -1297.19, 32.19),
                     ['rotation'] = nil,
-                    ['heading'] = 215.77,
+                    ['heading'] = 311.85,
                     ['lodDistance'] = nil,
                     ['soundOffset'] = vector3(0.0, 0.0, 1.4),
                     ['directionOffset'] = nil,
-                    ['maxDistance'] = 32.0,
+                    ['maxDistance'] = 52.0,
+                    ['refDistance'] = 16.0,
+                    ['rolloffFactor'] = 1.25,
+                    ['coneInnerAngle'] = 90,
+                    ['coneOuterAngle'] = 180,
+                    ['coneOuterGain'] = 0.5,
+                    ['fadeDurationMs'] = 250,
+                    ['volumeMultiplier'] = 1.0,
+                    ['lowPassGainReductionPercent'] = 15
+                },
+
+                {
+                    ['hash'] = 'ba_prop_battle_club_speaker_large',
+                    ['visible'] = false,
+                    ['position'] = vector3(100.79, -1282.75, 31.92),
+                    ['rotation'] = nil,
+                    ['heading'] = 265.95,
+                    ['lodDistance'] = nil,
+                    ['soundOffset'] = vector3(0.0, 0.0, 1.4),
+                    ['directionOffset'] = nil,
+                    ['maxDistance'] = 52.0,
+                    ['refDistance'] = 16.0,
+                    ['rolloffFactor'] = 1.25,
+                    ['coneInnerAngle'] = 90,
+                    ['coneOuterAngle'] = 180,
+                    ['coneOuterGain'] = 0.5,
+                    ['fadeDurationMs'] = 250,
+                    ['volumeMultiplier'] = 1.0,
+                    ['lowPassGainReductionPercent'] = 15
+                },
+
+                {
+                    ['hash'] = 'ba_prop_battle_club_speaker_large',
+                    ['visible'] = false,
+                    ['position'] = vector3(133.56, -1276.2, 31.87),
+                    ['rotation'] = nil,
+                    ['heading'] = 141.54,
+                    ['lodDistance'] = nil,
+                    ['soundOffset'] = vector3(0.0, 0.0, 1.4),
+                    ['directionOffset'] = nil,
+                    ['maxDistance'] = 52.0,
+                    ['refDistance'] = 16.0,
+                    ['rolloffFactor'] = 1.25,
+                    ['coneInnerAngle'] = 90,
+                    ['coneOuterAngle'] = 180,
+                    ['coneOuterGain'] = 0.5,
+                    ['fadeDurationMs'] = 250,
+                    ['volumeMultiplier'] = 1.0,
+                    ['lowPassGainReductionPercent'] = 15
+                },
+
+                {
+                    ['hash'] = 'ba_prop_battle_club_speaker_large',
+                    ['visible'] = false,
+                    ['position'] = vector3(139.49, -1285.9, 25.4),
+                    ['rotation'] = nil,
+                    ['heading'] = 85.0,
+                    ['lodDistance'] = nil,
+                    ['soundOffset'] = vector3(0.0, 0.0, 1.4),
+                    ['directionOffset'] = nil,
+                    ['maxDistance'] = 52.0,
+                    ['refDistance'] = 16.0,
+                    ['rolloffFactor'] = 1.25,
+                    ['coneInnerAngle'] = 90,
+                    ['coneOuterAngle'] = 180,
+                    ['coneOuterGain'] = 0.5,
+                    ['fadeDurationMs'] = 250,
+                    ['volumeMultiplier'] = 1.0,
+                    ['lowPassGainReductionPercent'] = 15
+                },
+
+                {
+                    ['hash'] = 'ba_prop_battle_club_speaker_large',
+                    ['visible'] = false,
+                    ['position'] = vector3(129.83, -1287.44, 24.25),
+                    ['rotation'] = nil,
+                    ['heading'] = 88.46,
+                    ['lodDistance'] = nil,
+                    ['soundOffset'] = vector3(0.0, 0.0, 1.4),
+                    ['directionOffset'] = nil,
+                    ['maxDistance'] = 52.0,
                     ['refDistance'] = 16.0,
                     ['rolloffFactor'] = 1.25,
                     ['coneInnerAngle'] = 90,
@@ -369,6 +446,208 @@ config = {
                     ['volumeMultiplier'] = 1.0,
                     ['lowPassGainReductionPercent'] = 15
                 }
+
+                {
+                    ['hash'] = 'ba_prop_battle_club_speaker_large',
+                    ['visible'] = false,
+                    ['position'] = vector3(130.5, -1295.46, 24.33),
+                    ['rotation'] = nil,
+                    ['heading'] = 68.54,
+                    ['lodDistance'] = nil,
+                    ['soundOffset'] = vector3(0.0, 0.0, 1.4),
+                    ['directionOffset'] = nil,
+                    ['maxDistance'] = 52.0,
+                    ['refDistance'] = 16.0,
+                    ['rolloffFactor'] = 1.25,
+                    ['coneInnerAngle'] = 90,
+                    ['coneOuterAngle'] = 180,
+                    ['coneOuterGain'] = 0.5,
+                    ['fadeDurationMs'] = 250,
+                    ['volumeMultiplier'] = 1.0,
+                    ['lowPassGainReductionPercent'] = 15
+                },
+
+                {
+                    ['hash'] = 'ba_prop_battle_club_speaker_large',
+                    ['visible'] = false,
+                    ['position'] = vector3(115.53, -1304.34, 23.92),
+                    ['rotation'] = nil,
+                    ['heading'] = 349.17,
+                    ['lodDistance'] = nil,
+                    ['soundOffset'] = vector3(0.0, 0.0, 1.4),
+                    ['directionOffset'] = nil,
+                    ['maxDistance'] = 52.0,
+                    ['refDistance'] = 16.0,
+                    ['rolloffFactor'] = 1.25,
+                    ['coneInnerAngle'] = 90,
+                    ['coneOuterAngle'] = 180,
+                    ['coneOuterGain'] = 0.5,
+                    ['fadeDurationMs'] = 250,
+                    ['volumeMultiplier'] = 1.0,
+                    ['lowPassGainReductionPercent'] = 15
+                },
+
+                {
+                    ['hash'] = 'ba_prop_battle_club_speaker_large',
+                    ['visible'] = false,
+                    ['position'] = vector3(121.24, -1279.01, 23.77),
+                    ['rotation'] = nil,
+                    ['heading'] = 165.08,
+                    ['lodDistance'] = nil,
+                    ['soundOffset'] = vector3(0.0, 0.0, 1.4),
+                    ['directionOffset'] = nil,
+                    ['maxDistance'] = 52.0,
+                    ['refDistance'] = 16.0,
+                    ['rolloffFactor'] = 1.25,
+                    ['coneInnerAngle'] = 90,
+                    ['coneOuterAngle'] = 180,
+                    ['coneOuterGain'] = 0.5,
+                    ['fadeDurationMs'] = 250,
+                    ['volumeMultiplier'] = 1.0,
+                    ['lowPassGainReductionPercent'] = 15
+                },
+
+                {
+                    ['hash'] = 'ba_prop_battle_club_speaker_large',
+                    ['visible'] = false,
+                    ['position'] = vector3(108.95, -1293.26, 23.84),
+                    ['rotation'] = nil,
+                    ['heading'] = 344.52,
+                    ['lodDistance'] = nil,
+                    ['soundOffset'] = vector3(0.0, 0.0, 1.4),
+                    ['directionOffset'] = nil,
+                    ['maxDistance'] = 52.0,
+                    ['refDistance'] = 16.0,
+                    ['rolloffFactor'] = 1.25,
+                    ['coneInnerAngle'] = 90,
+                    ['coneOuterAngle'] = 180,
+                    ['coneOuterGain'] = 0.5,
+                    ['fadeDurationMs'] = 250,
+                    ['volumeMultiplier'] = 1.0,
+                    ['lowPassGainReductionPercent'] = 15
+                },
+
+                {
+                    ['hash'] = 'ba_prop_battle_club_speaker_large',
+                    ['visible'] = false,
+                    ['position'] = vector3(109.69, -1277.32, 23.73),
+                    ['rotation'] = nil,
+                    ['heading'] = 161.22,
+                    ['lodDistance'] = nil,
+                    ['soundOffset'] = vector3(0.0, 0.0, 1.4),
+                    ['directionOffset'] = nil,
+                    ['maxDistance'] = 52.0,
+                    ['refDistance'] = 16.0,
+                    ['rolloffFactor'] = 1.25,
+                    ['coneInnerAngle'] = 90,
+                    ['coneOuterAngle'] = 180,
+                    ['coneOuterGain'] = 0.5,
+                    ['fadeDurationMs'] = 250,
+                    ['volumeMultiplier'] = 1.0,
+                    ['lowPassGainReductionPercent'] = 15
+                },
+
+                {
+                    ['hash'] = 'ba_prop_battle_club_speaker_large',
+                    ['visible'] = false,
+                    ['position'] = vector3(117.25, -1272.47, 23.25),
+                    ['rotation'] = nil,
+                    ['heading'] = 164.68,
+                    ['lodDistance'] = nil,
+                    ['soundOffset'] = vector3(0.0, 0.0, 1.4),
+                    ['directionOffset'] = nil,
+                    ['maxDistance'] = 52.0,
+                    ['refDistance'] = 16.0,
+                    ['rolloffFactor'] = 1.25,
+                    ['coneInnerAngle'] = 90,
+                    ['coneOuterAngle'] = 180,
+                    ['coneOuterGain'] = 0.5,
+                    ['fadeDurationMs'] = 250,
+                    ['volumeMultiplier'] = 1.0,
+                    ['lowPassGainReductionPercent'] = 15
+                },
+
+                {
+                    ['hash'] = 'ba_prop_battle_club_speaker_large',
+                    ['visible'] = false,
+                    ['position'] = vector3(134.44, -1302.06, 23.43),
+                    ['rotation'] = nil,
+                    ['heading'] = 88.3,
+                    ['lodDistance'] = nil,
+                    ['soundOffset'] = vector3(0.0, 0.0, 1.4),
+                    ['directionOffset'] = nil,
+                    ['maxDistance'] = 52.0,
+                    ['refDistance'] = 16.0,
+                    ['rolloffFactor'] = 1.25,
+                    ['coneInnerAngle'] = 90,
+                    ['coneOuterAngle'] = 180,
+                    ['coneOuterGain'] = 0.5,
+                    ['fadeDurationMs'] = 250,
+                    ['volumeMultiplier'] = 1.0,
+                    ['lowPassGainReductionPercent'] = 15
+                },
+
+                {
+                    ['hash'] = 'ba_prop_battle_club_speaker_large',
+                    ['visible'] = false,
+                    ['position'] = vector3(126.43, -1306.42, 23.95),
+                    ['rotation'] = nil,
+                    ['heading'] = 75.71,
+                    ['lodDistance'] = nil,
+                    ['soundOffset'] = vector3(0.0, 0.0, 1.4),
+                    ['directionOffset'] = nil,
+                    ['maxDistance'] = 52.0,
+                    ['refDistance'] = 16.0,
+                    ['rolloffFactor'] = 1.25,
+                    ['coneInnerAngle'] = 90,
+                    ['coneOuterAngle'] = 180,
+                    ['coneOuterGain'] = 0.5,
+                    ['fadeDurationMs'] = 250,
+                    ['volumeMultiplier'] = 1.0,
+                    ['lowPassGainReductionPercent'] = 15
+                },
+
+                {
+                    ['hash'] = 'ba_prop_battle_club_speaker_large',
+                    ['visible'] = false,
+                    ['position'] = vector3(103.89, -1288.91, 21.39),
+                    ['rotation'] = nil,
+                    ['heading'] = 154.16,
+                    ['lodDistance'] = nil,
+                    ['soundOffset'] = vector3(0.0, 0.0, 1.4),
+                    ['directionOffset'] = nil,
+                    ['maxDistance'] = 52.0,
+                    ['refDistance'] = 16.0,
+                    ['rolloffFactor'] = 1.25,
+                    ['coneInnerAngle'] = 90,
+                    ['coneOuterAngle'] = 180,
+                    ['coneOuterGain'] = 0.5,
+                    ['fadeDurationMs'] = 250,
+                    ['volumeMultiplier'] = 1.0,
+                    ['lowPassGainReductionPercent'] = 15
+                },
+
+                {
+                    ['hash'] = 'ba_prop_battle_club_speaker_large',
+                    ['visible'] = false,
+                    ['position'] = vector3(97.56, -1314.36, 24.47),
+                    ['rotation'] = nil,
+                    ['heading'] = 339.64,
+                    ['lodDistance'] = nil,
+                    ['soundOffset'] = vector3(0.0, 0.0, 1.4),
+                    ['directionOffset'] = nil,
+                    ['maxDistance'] = 52.0,
+                    ['refDistance'] = 16.0,
+                    ['rolloffFactor'] = 1.25,
+                    ['coneInnerAngle'] = 90,
+                    ['coneOuterAngle'] = 180,
+                    ['coneOuterGain'] = 0.5,
+                    ['fadeDurationMs'] = 250,
+                    ['volumeMultiplier'] = 1.0,
+                    ['lowPassGainReductionPercent'] = 15
+                },
+
+
             }
         },
 
