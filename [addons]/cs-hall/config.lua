@@ -134,46 +134,6 @@ config = {
                 ['h4_prop_battle_club_projector'] = 'script_rt_club_projector'
             },
 
-
-            ['monitors'] = {
-                {
-                    ['hash'] = 'ba_prop_battle_club_screen_02',
-                    ['position'] = vector3(109.34, -1296.68, 31.22),
-                    ['rotation'] = nil,
-                    ['heading'] = 120.39,
-                    ['lodDistance'] = nil
-                }
-            },
-
-            ['screens'] = {
-                {
-                    ['hash'] = 'h4_prop_battle_club_screen',
-                    ['position'] = vector3(102.96, -1311.3, 24.48),
-                    ['rotation'] = nil,
-                    ['heading'] = 27.69,
-                    ['lodDistance'] = nil,
-
-                    ['advance'] = {
-                        ['durationMs'] = 15000,
-                        ['position'] = vector3(102.96, -1311.3, 24.48)
-                    },
-                },
-
-                {
-                    ['hash'] = 'prop_strip_pole_01',
-                    ['position'] = vector3(103.27879333496, -1292.5457763672, 33.45863571167),
-                    ['rotation'] = nil,
-                    ['heading'] = 120.0,
-                    ['lodDistance'] = nil,
-
-                    ['advance'] = {
-                        ['durationMs'] = 15000,
-                        ['position'] = vector3(103.27879333496, -1292.5457763672, 31.61610946655)
-                    }
-                }
-            },
-
-
             ['spotlights'] = {
                 {
                     ['soundSyncType'] = SOUND_SYNC_TYPE.HIGH_MID,
@@ -445,7 +405,7 @@ config = {
                     ['fadeDurationMs'] = 250,
                     ['volumeMultiplier'] = 1.0,
                     ['lowPassGainReductionPercent'] = 15
-                },
+                }
 
                 {
                     ['hash'] = 'ba_prop_battle_club_speaker_large',
@@ -553,26 +513,6 @@ config = {
                     ['position'] = vector3(117.25, -1272.47, 23.25),
                     ['rotation'] = nil,
                     ['heading'] = 164.68,
-                    ['lodDistance'] = nil,
-                    ['soundOffset'] = vector3(0.0, 0.0, 1.4),
-                    ['directionOffset'] = nil,
-                    ['maxDistance'] = 52.0,
-                    ['refDistance'] = 16.0,
-                    ['rolloffFactor'] = 1.25,
-                    ['coneInnerAngle'] = 90,
-                    ['coneOuterAngle'] = 180,
-                    ['coneOuterGain'] = 0.5,
-                    ['fadeDurationMs'] = 250,
-                    ['volumeMultiplier'] = 1.0,
-                    ['lowPassGainReductionPercent'] = 15
-                },
-
-                {
-                    ['hash'] = 'ba_prop_battle_club_speaker_large',
-                    ['visible'] = false,
-                    ['position'] = vector3(134.53, -1301.93, 21.39),
-                    ['rotation'] = nil,
-                    ['heading'] = 74.98,
                     ['lodDistance'] = nil,
                     ['soundOffset'] = vector3(0.0, 0.0, 1.4),
                     ['directionOffset'] = nil,
