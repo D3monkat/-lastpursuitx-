@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fwClipSetManager>
+  <clipSets>
+    <Item type="fwClipSet" key="clipset@veh@low@prototipo@front_ds@enter_exit">
+      <fallbackId>clipset@veh@low@ds@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@low@prototipo@front_ds@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@veh@low@prototipo@front_ps@enter_exit">
+      <fallbackId>clipset@veh@low@ps@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@low@prototipo@front_ps@enter_exit</clipDictionaryName>
+      <clipItems />
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@veh@low@le7b@front_ds@enter_exit">
+      <fallbackId>clipset@veh@low@prototipo@front_ds@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@low@gullwing@front_ds@enter_exit</clipDictionaryName>
+      <clipItems>
+        <Item type="fwClipItem" key="d_close_in" />
+        <Item type="fwClipItem" key="d_close_out" />
+        <Item type="fwClipItem" key="get_out" />
+      </clipItems>
+      <moveNetworkFlags />
+    </Item>
+    <Item type="fwClipSet" key="clipset@veh@low@le7b@front_ps@enter_exit">
+      <fallbackId>clipset@veh@low@prototipo@front_ps@enter_exit</fallbackId>
+      <clipDictionaryName>anim@veh@low@gullwing@front_ps@enter_exit</clipDictionaryName>
+      <clipItems>
+        <Item type="fwClipItem" key="d_close_in" />
+        <Item type="fwClipItem" key="d_close_out" />
+        <Item type="fwClipItem" key="get_out" />
+      </clipItems>
+      <moveNetworkFlags />
+    </Item>
+  </clipSets>
+  <clipDictionaryMetadatas>
+	<Item key="anim@veh@low@prototipo@front_ds@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>	
+	<Item key="anim@veh@low@prototipo@front_ps@enter_exit">
+      <streamingPolicy>SP_STREAMING</streamingPolicy>
+      <memoryGroup>MG_Vehicle</memoryGroup>
+      <streamingPriority>SP_Medium</streamingPriority>
+    </Item>
+  </clipDictionaryMetadatas>
+</fwClipSetManager>
