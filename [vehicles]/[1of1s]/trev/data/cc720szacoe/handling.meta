@@ -4,7 +4,7 @@
   <HandlingData>
     <Item type="CHandlingData">
       <handlingName>cc720szacoe</handlingName>
-      <fMass value="3550.0" />
+      <fMass value="1511" />
 			<fInitialDragCoeff value="2.2" />
 			<fDownforceModifier value="1.25" />
 			<fPercentSubmerged value="85.0" />
