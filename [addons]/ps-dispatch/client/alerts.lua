@@ -121,6 +121,14 @@ local function SpeedingVehicle()
         doors = vehicle.doors,
         jobs = { 'leo' }
     }
+    alertmsg = false
+    alertTitle = false 
+    alertCallCode = "5-10" 
+    DispatchedJob = {"bcso", "police", "sast"} 
+    includeSuspect = false 
+    YourData = {coords = coords} 
+    
+    TriggerEvent("Syn_Dispatcher:client:ReportCriminalActivity",alertmsg,alertTitle,alertCallCode,DispatchedJob, includeSuspect,YourData)
 
     TriggerServerEvent('ps-dispatch:server:notify', dispatchData)
 end
