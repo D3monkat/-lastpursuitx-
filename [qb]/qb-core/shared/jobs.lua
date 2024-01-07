@@ -60,7 +60,7 @@ QBShared.Jobs = {
 			['1'] = { name = 'Officer', payment = 235 },
 			['2'] = { name = 'Officer 2', payment = 240 },
 			['3'] = { name = 'Corporal', payment = 257 },
-			['4'] = { name = 'Sergeant', isboss = true, payment = 275 },
+			['4'] = { name = 'Sergeant', payment = 275 },
 			['5'] = { name = 'Detective', payment = 294 },
 			['6'] = { name = 'Lead Detective', payment = 315 },
 			['7'] = { name = 'Lieutenant', payment = 337 },
@@ -157,7 +157,7 @@ QBShared.Jobs = {
 			['1'] = { name = 'Novice', payment = 276 },
 			['2'] = { name = 'Experienced', payment = 317 },
 			['3'] = { name = 'Advanced', payment = 365 },
-			['4'] = { name = 'Manager', isboss = true, payment = 419, bankAuth = true },
+			['4'] = { name = 'Manager', isboss = true, payment = 420, bankAuth = true },
         },
 	},
 	upnatom = {
@@ -172,7 +172,7 @@ QBShared.Jobs = {
         },
 	},
 	hornys = {
-		label = "Horny's",
+		label = "Hornys",
 		defaultDuty = true,
 		grades = {
             ['0'] = { name = 'Recruit', payment = 50 },
@@ -358,7 +358,6 @@ QBShared.Jobs = {
 		},
 	},
 	beeker = {
-		label = 'Beeker\'s Garage',
 		type = 'mechanic',
 		defaultDuty = true,
 		offDutyPay = false,
@@ -371,7 +370,7 @@ QBShared.Jobs = {
 		},
 	},
 	bennys = {
-		label = 'Benny\'s Original Motor Works',
+		label = 'Bennys Original Motor Works',
 		type = 'mechanic',
 		defaultDuty = true,
 		offDutyPay = false,
