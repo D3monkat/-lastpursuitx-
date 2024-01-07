@@ -8,7 +8,8 @@
 
 local playerIdentifiersAsControllers = {
     'steam:000000000000000', -- Example Steam player identifier.
-    'fivem:601252', -- Example FiveM player identifier.
+    'fivem:601252',
+    'license:987a822c2c37b741fe7730121a6b3ce0c3f33de3', -- Example FiveM player identifier.
 }
 
 local qbJobGlobalControllers = { -- QB jobs that can access /hall is all areas.
@@ -22,6 +23,10 @@ local qbJobAreaControllers = { -- QB jobs that can access /hall is specific area
         {'blueline', 0}, -- QB "unicorn" job with 2 grade level can access "vanilla_unicorn" area.
         'blueline' -- QB "dj" job can access /hall in "vanilla_unicorn" regardless of grade level.
     },
+    ['fiv3devs_vu'] = {
+        {'nightclub', 0},
+        'nightclub'
+    }
 }
 
 local qbCoreFramework = nil
