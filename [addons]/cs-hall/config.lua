@@ -89,8 +89,8 @@ config = {
             },
 
             ['area'] = {
-                ['range'] = 128.0,
-                ['center'] = vector3(103.64, -1292.14, 29.2),
+                ['range'] = 300.0,
+                ['center'] = vector3(118.55, -1290.08, 28.44),
                 ['height'] = nil,
 
                 ['polygons'] = {
