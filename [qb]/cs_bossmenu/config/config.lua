@@ -64,6 +64,9 @@ CodeStudio.Locations = {
         ['blueline'] = {
             vector4(-348.54, -131.14, 42.04, 345.92),
         },
+        ['nightclub'] = {
+            vector4(137.05, -1289.24, 29.25, 65.99),
+        },
     },
 
 
@@ -71,6 +74,9 @@ CodeStudio.Locations = {
     ['gangmenu'] = {
         ['lostmc'] = {
             vector4(989.44, -135.94, 74.06, 57.03)
+        },
+        ['ballas'] = {
+            vector4(-78.11, -1832.67, 27.02, 235.13)
         }
     }
 }
@@ -109,6 +115,7 @@ CodeStudio.BossMenu = {
 CodeStudio.GangMenu = {
     ['lostmc'] = {5, 6},
     ['rno'] = {3},
+    ['ballas'] = {3}
 }
 
 
