@@ -280,6 +280,15 @@ QBShared.Jobs = {
 			['100'] = { name = 'Showroom Sales', payment = 317 },
 		},
 	},
+	nightclub = {
+		label = 'Nightclub',
+		defaultDuty = true,
+		offDutyPay = false,
+		grades = {
+			['0'] = { name = 'Renter', payment = 240 },
+			['1'] = { name = 'Owner', payment = 317 },
+		},
+	},
 	shoptuner = {
 		label = 'Tuner Vehicle Dealer',
 		defaultDuty = true,

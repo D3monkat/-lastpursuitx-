@@ -64,6 +64,9 @@ CodeStudio.Locations = {
         ['blueline'] = {
             vector4(-348.54, -131.14, 42.04, 345.92),
         },
+        ['nightclub'] = {
+            vector4(137.05, -1289.24, 29.25, 65.99),
+        },
     },
 
 
