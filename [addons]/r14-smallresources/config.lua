@@ -37,7 +37,7 @@ Config.VehicleImprovements = {
     },
     SeatCommand = {
         Enabled = true,
-        CheckHarness = true, -- set to true if you want to check if a player has a harness before switching
+        CheckHarness = false, -- set to true if you want to check if a player has a harness before switching
         HarnessCheck = function() -- if you have a third party seatbelt resource, use this function to retrieve the current harness status
             return exports['qb-smallresources']:HasHarness()
         end,
