@@ -405,7 +405,7 @@ config = {
                     ['fadeDurationMs'] = 250,
                     ['volumeMultiplier'] = 1.0,
                     ['lowPassGainReductionPercent'] = 15
-                }
+                },
 
                 {
                     ['hash'] = 'ba_prop_battle_club_speaker_large',
