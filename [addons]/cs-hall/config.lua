@@ -63,360 +63,315 @@ config = {
 
         -- This entry does not require an extra map.
 
-    -- Addon for Fiv3Dev
-    ['fiv3devs_vu'] = {
-        ['enabled'] = true,
-        ['autoAdjustTime'] = true,
-        ['idleWallpaperUrl'] = 'https://cfx-nui-' .. GetCurrentResourceName() .. '/client/dui/images/wallpaper.png',
-        ['maxVolumePercent'] = 150,
-        ['smokeFxMultiplier'] = 3,
-        ['smokeTimeoutMs'] = 5000,
-        ['sparklerFxMultiplier'] = 1,
-        ['sparklerTimeoutMs'] = 1500,
-        ['delayBetweenSmokeChainMs'] = 1500,
-        ['delayToTriggerBassEffectsAfterPlayingMs'] = 2500,
-        ['featureDelayWithControllerInterfaceClosedMs'] = 500,
+        ['fivedevs_vanilla_unicorn'] = {
+            ['enabled'] = true,
+            ['autoAdjustTime'] = false,
+            ['idleWallpaperUrl'] = 'https://cdn.discordapp.com/attachments/1080187767511847045/1135839700729475082/Untitled_design.gif',
+            ['maxVolumePercent'] = 100,
+            ['smokeFxMultiplier'] = 3,
+            ['smokeTimeoutMs'] = 5000,
+            ['sparklerFxMultiplier'] = 1,
+            ['sparklerTimeoutMs'] = 1500,
+            ['delayBetweenSmokeChainMs'] = 1500,
+            ['delayToTriggerBassEffectsAfterPlayingMs'] = 2500,
+            ['featureDelayWithControllerInterfaceClosedMs'] = 500,
 
-        ['bass'] = {
-            ['smoke'] = {
-                ['cooldownMs'] = 30000,
-                ['colorWithDynamicSpotlights'] = true
+            ['bass'] = {
+                ['smoke'] = {
+                    ['cooldownMs'] = 30000,
+                    ['colorWithDynamicSpotlights'] = true
+                },
+
+                ['sparklers'] = {
+                    ['cooldownMs'] = 30000,
+                    ['colorWithDynamicSpotlights'] = true
+                }
             },
 
-            ['sparklers'] = {
-                ['cooldownMs'] = 30000,
-                ['colorWithDynamicSpotlights'] = true
-            }
-        },
+            ['area'] = {
+                ['range'] = 128.0,
+                ['center'] = vector3(103.64, -1292.14, 29.2),
+                ['height'] = nil,
 
-        ['area'] = {
-            ['range'] = 128.0,
-            ['center'] = vector3(116.66, -1292.19, 29.26),
-            ['height'] = nil,
-            ['polygons'] = {
-                ['applyLowPassFilterOutside'] = true,
-                ['invertLowPassApplication'] = false,
-                ['hideReplacersOutside'] = true,
+                ['polygons'] = {
+                    ['applyLowPassFilterOutside'] = true,
+                    ['invertLowPassApplication'] = false,
+                    ['hideReplacersOutside'] = true,
 
-                ['entries'] = {
-                    {
-                        ['height'] = {
-                            ['min'] = 27.0,
-                            ['max'] = 32.0
-                        },
-    
-                        ['points'] = {
-                            vector2(100.46200561523, -1318.8612060547),
-                            vector2(150.20361328125, -1290.8416748047),
-                            vector2(140.05995178223, -1272.6883544922),
-                            vector2(91.981887817383, -1281.8354492188),
-                            vector2(82.283477783203, -1287.5427246094)
+                    ['entries'] = {
+                        {
+                            ['height'] = {
+                                ['min'] = 27.0,
+                                ['max'] = 32.0
+                            },
+        
+                            ['points'] = {
+                                vector2(139.37, -1286.14),
+                                vector2(136.05, -1279.98),
+                                vector2(133.24, -1275.47),
+                                vector2(128.67, -1276.76),
+                                vector2(121.51, -1278.23),
+                                vector2(114.19, -1278.97),
+                                vector2(110.07, -1280.59),
+                                vector2(100.52, -1282.48),
+                                vector2(101.44, -1285.23),
+                                vector2(104.67, -1290.09),
+                                vector2(114.25, -1305.41),
+                                vector2(126.52, -1298.37),
+                                vector2(124.38, -1295.31),
+                                vector2(129.06, -1292.22)
+                            }
                         }
                     }
                 }
-            }
-        },
-
-        ['disableEmitters'] = {
-            'LOS_SANTOS_VANILLA_UNICORN_01_STAGE',
-            'LOS_SANTOS_VANILLA_UNICORN_02_MAIN_ROOM',
-            'LOS_SANTOS_VANILLA_UNICORN_03_BACK_ROOM'
-        },
-
-        ['scaleform'] = nil,
-
-        ['replacers'] = {
-            ['ba_prop_battle_club_screen'] = 'script_rt_club_tv',
-            ['h4_prop_battle_club_projector'] = 'script_rt_club_projector'
-        },
-
-        ['monitors'] = {
-            {
-                ['hash'] = 'ba_prop_battle_club_screen_02',
-                ['position'] = vector3(125.42, -1297.32, 31.50),
-                ['rotation'] = nil,
-                ['heading'] = 300.0,
-                ['lodDistance'] = nil,
-            }
-        },
-
-        ['screens'] = {
-            {
-                ['hash'] = 'h4_prop_battle_club_screen',
-                ['position'] = vector3(106.15, -1291.81, 32.10),
-                ['rotation'] = nil,
-                ['heading'] = 120.0,
-                ['lodDistance'] = nil,
-
-                ['advance'] = {
-                    ['durationMs'] = 15000,
-                    ['position'] = vector3(106.15, -1291.81, 32.10)
-                },
             },
 
-            {
-                ['hash'] = 'prop_strip_pole_01',
-                ['position'] = vector3(106.15, -1291.81, 32.10),
-                ['rotation'] = nil,
-                ['heading'] = 120.0,
-                ['lodDistance'] = nil,
+            ['disableEmitters'] = {
+                'LOS_SANTOS_VANILLA_UNICORN_01_STAGE',
+                'LOS_SANTOS_VANILLA_UNICORN_02_MAIN_ROOM',
+                'LOS_SANTOS_VANILLA_UNICORN_03_BACK_ROOM'
+            },
 
-                ['advance'] = {
-                    ['durationMs'] = 15000,
-                    ['position'] = vector3(106.15, -1291.81, 32.10)
+            ['scaleform'] = nil,
+
+            ['replacers'] = {
+                ['ba_prop_battle_club_screen'] = 'script_rt_club_tv',
+                ['h4_prop_battle_club_projector'] = 'script_rt_club_projector'
+            },
+
+            ['monitors'] = {
+                {
+                    ['hash'] = 'ba_prop_battle_club_screen_02',
+                    ['position'] = vector3(109.34, -1296.68, 31.22),
+                    ['rotation'] = nil,
+                    ['heading'] = 120.39,
+                    ['lodDistance'] = nil
+                }
+            },
+
+            ['screens'] = {
+                {
+                    ['hash'] = 'h4_prop_battle_club_screen',
+                    ['position'] = vector3(119.56, -1298.4, 32.53),
+                    ['rotation'] = nil,
+                    ['heading'] = 206.84,
+                    ['lodDistance'] = nil,
+
+                    ['advance'] = {
+                        ['durationMs'] = 15000,
+                        ['position'] = vector3(119.56, -1298.4, 33.53)
+                    },
+                },
+
+                {
+                    ['hash'] = 'prop_strip_pole_01',
+                    ['position'] = vector3(103.27879333496, -1292.5457763672, 33.45863571167),
+                    ['rotation'] = nil,
+                    ['heading'] = 120.0,
+                    ['lodDistance'] = nil,
+
+                    ['advance'] = {
+                        ['durationMs'] = 15000,
+                        ['position'] = vector3(103.27879333496, -1292.5457763672, 31.61610946655)
+                    }
+                }
+            },
+
+            ['spotlights'] = {
+                {
+                    ['soundSyncType'] = SOUND_SYNC_TYPE.HIGH_MID,
+                    ['hash'] = 'cs_prop_hall_spotlight',
+                    ['position'] = vector3(119.69, -1282.76, 32.90),
+                    ['rotation'] = nil,
+                    ['heading'] = 357.17,
+                    ['lodDistance'] = nil,
+                    ['color'] = {255, 1, 1}
+                },
+
+                {
+                    ['soundSyncType'] = SOUND_SYNC_TYPE.HIGH_MID,
+                    ['hash'] = 'cs_prop_hall_spotlight',
+                    ['position'] = vector3(108.9, -1288.73, 32.90),
+                    ['rotation'] = nil,
+                    ['heading'] = 60.91,
+                    ['lodDistance'] = nil,
+                    ['color'] = {255, 255, 0}
+                },
+
+                {
+                    ['soundSyncType'] = SOUND_SYNC_TYPE.HIGH_MID,
+                    ['hash'] = 'cs_prop_hall_spotlight',
+                    ['position'] = vector3(116.74, -1300.65, 32.90),
+                    ['rotation'] = nil,
+                    ['heading'] = 236.77,
+                    ['lodDistance'] = nil,
+                    ['color'] = {3, 83, 255}
+                },
+
+                {
+                    ['soundSyncType'] = SOUND_SYNC_TYPE.HIGH_MID,
+                    ['hash'] = 'cs_prop_hall_spotlight',
+                    ['position'] = vector3(122.73, -1297.07, 32.90),
+                    ['rotation'] = nil,
+                    ['heading'] = 177.46,
+                    ['lodDistance'] = nil,
+                    ['color'] = {15, 3, 255}
+                },
+
+                {
+                    ['soundSyncType'] = SOUND_SYNC_TYPE.HIGH_MID,
+                    ['hash'] = 'cs_prop_hall_spotlight',
+                    ['position'] = vector3(123.6, -1288.43, 32.10),
+                    ['rotation'] = nil,
+                    ['heading'] = 300.00,
+                    ['lodDistance'] = nil,
+                    ['color'] = {255, 5, 190}
+                }
+            },
+
+            ['smokers'] = {
+                {
+                    ['hash'] = 'ba_prop_club_smoke_machine',
+                    ['visible'] = false,
+    
+                    ['fx'] = {
+                        ['library'] = 'scr_ba_club',
+                        ['effect'] = 'scr_ba_club_smoke_machine',
+                    },
+
+                    ['position'] = vector3(110.45, -1298.54, 28.42),
+                    ['rotation'] = nil,
+                    ['heading'] = 283.82,
+                    ['lodDistance'] = nil,
+                    ['color'] = {255, 0, 255}
+                },
+
+                {
+                    ['hash'] = 'ba_prop_club_smoke_machine',
+                    ['visible'] = false,
+    
+                    ['fx'] = {
+                        ['library'] = 'scr_ba_club',
+                        ['effect'] = 'scr_ba_club_smoke_machine',
+                    },
+
+                    ['position'] = vector3(108.2, -1295.15, 28.42),
+                    ['rotation'] = nil,
+                    ['heading'] = 293.63,
+                    ['lodDistance'] = nil,
+                    ['color'] = {255, 0, 255}
+                }
+            },
+
+            ['sparklers'] = {
+                {
+                    ['hash'] = 'prop_cs_pour_tube',
+                    ['visible'] = true,
+    
+                    ['fx'] = {
+                        ['library'] = 'scr_ih_club',
+                        ['effect'] = 'scr_ih_club_sparkler',
+                    },
+
+                    ['position'] = vector3(118.94, -1290.43, 28.43),
+                    ['rotation'] = nil,
+                    ['heading'] = 0.0,
+                    ['lodDistance'] = nil,
+                    ['color'] = {175, 0, 175}
+                },
+
+                {
+                    ['hash'] = 'prop_cs_pour_tube',
+                    ['visible'] = true,
+    
+                    ['fx'] = {
+                        ['library'] = 'scr_ih_club',
+                        ['effect'] = 'scr_ih_club_sparkler',
+                    },
+
+                    ['position'] = vector3(119.59, -1291.61, 28.43),
+                    ['rotation'] = nil,
+                    ['heading'] = 0.0,
+                    ['lodDistance'] = nil,
+                    ['color'] = {175, 0, 175}
+                },
+
+                {
+                    ['hash'] = 'prop_cs_pour_tube',
+                    ['visible'] = true,
+    
+                    ['fx'] = {
+                        ['library'] = 'scr_ih_club',
+                        ['effect'] = 'scr_ih_club_sparkler',
+                    },
+
+                    ['position'] = vector3(113.61, -1293.45, 28.43),
+                    ['rotation'] = nil,
+                    ['heading'] = 0.0,
+                    ['lodDistance'] = nil,
+                    ['color'] = {175, 0, 175}
+                },
+
+                {
+                    ['hash'] = 'prop_cs_pour_tube',
+                    ['visible'] = true,
+    
+                    ['fx'] = {
+                        ['library'] = 'scr_ih_club',
+                        ['effect'] = 'scr_ih_club_sparkler',
+                    },
+
+                    ['position'] = vector3(114.38, -1294.62, 28.43),
+                    ['rotation'] = nil,
+                    ['heading'] = 0.0,
+                    ['lodDistance'] = nil,
+                    ['color'] = {175, 0, 175}
+                }
+            },
+
+            ['speakers'] = {
+                {
+                    ['hash'] = 'ba_prop_battle_club_speaker_large',
+                    ['visible'] = false,
+                    ['position'] = vector3(124.15, -1295.75, 28.52),
+                    ['rotation'] = nil,
+                    ['heading'] = 207.95,
+                    ['lodDistance'] = nil,
+                    ['soundOffset'] = vector3(0.0, 0.0, 1.4),
+                    ['directionOffset'] = nil,
+                    ['maxDistance'] = 52.0,
+                    ['refDistance'] = 16.0,
+                    ['rolloffFactor'] = 1.25,
+                    ['coneInnerAngle'] = 90,
+                    ['coneOuterAngle'] = 180,
+                    ['coneOuterGain'] = 0.5,
+                    ['fadeDurationMs'] = 250,
+                    ['volumeMultiplier'] = 1.0,
+                    ['lowPassGainReductionPercent'] = 15
+                },
+
+                {
+                    ['hash'] = 'ba_prop_battle_club_speaker_large',
+                    ['visible'] = false,
+                    ['position'] = vector3(116.43, -1300.22, 28.52),
+                    ['rotation'] = nil,
+                    ['heading'] = 215.77,
+                    ['lodDistance'] = nil,
+                    ['soundOffset'] = vector3(0.0, 0.0, 1.4),
+                    ['directionOffset'] = nil,
+                    ['maxDistance'] = 32.0,
+                    ['refDistance'] = 16.0,
+                    ['rolloffFactor'] = 1.25,
+                    ['coneInnerAngle'] = 90,
+                    ['coneOuterAngle'] = 180,
+                    ['coneOuterGain'] = 0.5,
+                    ['fadeDurationMs'] = 250,
+                    ['volumeMultiplier'] = 1.0,
+                    ['lowPassGainReductionPercent'] = 15
                 }
             }
         },
 
-        ['spotlights'] = {
-            -- Left side of the stage by DJ
-            {
-                ['soundSyncType'] = SOUND_SYNC_TYPE.BASS,
-                ['hash'] = 'cs_prop_hall_spotlight',
-                ['position'] = vector3(116.19, -1300.87, 33.00),
-                ['rotation'] = nil,
-                ['heading'] = 212.33, 
-                ['lodDistance'] = nil,
-                ['color'] = {255, 1, 1}
-            },
-
-            {
-                ['soundSyncType'] = SOUND_SYNC_TYPE.MID,
-                ['hash'] = 'cs_prop_hall_spotlight',
-                ['position'] = vector3(118.15, -1299.63, 33.00),
-                ['rotation'] = nil,
-                ['heading'] = 230.13,
-                ['lodDistance'] = nil,
-                ['color'] = {255, 255, 0}
-            },
-
-            {
-                ['soundSyncType'] = SOUND_SYNC_TYPE.TREBLE,
-                ['hash'] = 'cs_prop_hall_spotlight',
-                ['position'] = vector3(119.84, -1298.6, 33.00),
-                ['rotation'] = nil,
-                ['heading'] = 170.33,
-                ['lodDistance'] = nil,
-                ['color'] = {3, 83, 255}
-            },
-
-            {
-                ['soundSyncType'] = SOUND_SYNC_TYPE.LOW_MID,
-                ['hash'] = 'cs_prop_hall_spotlight',
-                ['position'] = vector3(122.5, -1297.19, 33.00),
-                ['rotation'] = nil,
-                ['heading'] = 241.33,
-                ['lodDistance'] = nil,
-                ['color'] = {15, 3, 255}
-            },
-
-            -- By Entrance
-
-            {
-                ['soundSyncType'] = SOUND_SYNC_TYPE.LOW_MID,
-                ['hash'] = 'cs_prop_hall_spotlight',
-                ['position'] = vector3(128.96, -1287.26, 33.00),
-                ['rotation'] = nil,
-                ['heading'] = 260.00,
-                ['lodDistance'] = nil,
-                ['color'] = {15, 3, 255}
-            },
-
-            {
-                ['soundSyncType'] = SOUND_SYNC_TYPE.LOW_MID,
-                ['hash'] = 'cs_prop_hall_spotlight',
-                ['position'] = vector3(127.3, -1284.48, 33.00),
-                ['rotation'] = nil,
-                ['heading'] = 330.00,
-                ['lodDistance'] = nil,
-                ['color'] = {15, 3, 255}
-            },
-
-            -- Right Side of stage 
-            {
-                ['soundSyncType'] = SOUND_SYNC_TYPE.BASS,
-                ['hash'] = 'cs_prop_hall_spotlight',
-                ['position'] = vector3(109.49, -1288.51, 33.00),
-                ['rotation'] = nil,
-                ['heading'] = 12.33,
-                ['lodDistance'] = nil,
-                ['color'] = {255, 5, 190}
-            },
-            
-            {
-                ['soundSyncType'] = SOUND_SYNC_TYPE.MID,
-                ['hash'] = 'cs_prop_hall_spotlight',
-                ['position'] = vector3(112.24, -1286.99, 33.00),
-                ['rotation'] = nil,
-                ['heading'] = 51.33,
-                ['lodDistance'] = nil,
-                ['color'] = {255, 5, 190}
-            },
-
-            {
-                ['soundSyncType'] = SOUND_SYNC_TYPE.TREBLE,
-                ['hash'] = 'cs_prop_hall_spotlight',
-                ['position'] = vector3(114.59, -1285.58, 33.00),
-                ['rotation'] = nil,
-                ['heading'] = 72.33,
-                ['lodDistance'] = nil,
-                ['color'] = {255, 5, 190}
-            },
-
-            {
-                ['soundSyncType'] = SOUND_SYNC_TYPE.LOW_MID,
-                ['hash'] = 'cs_prop_hall_spotlight',
-                ['position'] = vector3(116.99, -1284.23, 33.00),
-                ['rotation'] = nil,
-                ['heading'] = 359.33,
-                ['lodDistance'] = nil,
-                ['color'] = {255, 5, 190}
-            }
-        },
-
-        ['smokers'] = {
-            {
-                ['hash'] = 'ba_prop_club_smoke_machine',
-                ['visible'] = false,
-
-                ['fx'] = {
-                    ['library'] = 'scr_ba_club',
-                    ['effect'] = 'scr_ba_club_smoke_machine',
-                },
-
-                ['position'] = vector3(107.87, -1294.47, 28.42),
-                ['rotation'] = nil,
-                ['heading'] = 292.46,
-                ['lodDistance'] = nil,
-                ['color'] = {255, 0, 255}
-            },
-
-            {
-                ['hash'] = 'ba_prop_club_smoke_machine',
-                ['visible'] = false,
-
-                ['fx'] = {
-                    ['library'] = 'scr_ba_club',
-                    ['effect'] = 'scr_ba_club_smoke_machine',
-                },
-
-                ['position'] = vector3(110.74, -1299.35, 28.42),
-                ['rotation'] = nil,
-                ['heading'] = 27.51,
-                ['lodDistance'] = nil,
-                ['color'] = {255, 0, 255}
-            },
-
-            {
-                ['hash'] = 'ba_prop_club_smoke_machine',
-                ['visible'] = false,
-
-                ['fx'] = {
-                    ['library'] = 'scr_ba_club',
-                    ['effect'] = 'scr_ba_club_smoke_machine',
-                },
-
-                ['position'] = vector3(110.8, -1290.3, 28.44),
-                ['rotation'] = nil,
-                ['heading'] = 226.48,
-                ['lodDistance'] = nil,
-                ['color'] = {255, 0, 255}
-            },
-
-            {
-                ['hash'] = 'ba_prop_club_smoke_machine',
-                ['visible'] = false,
-
-                ['fx'] = {
-                    ['library'] = 'scr_ba_club',
-                    ['effect'] = 'scr_ba_club_smoke_machine',
-                },
-
-                ['position'] = vector3(115.55, -1298.78, 28.44),
-                ['rotation'] = nil,
-                ['heading'] = 41.62,
-                ['lodDistance'] = nil,
-                ['color'] = {255, 0, 255}
-            }
-        },
-
-        ['sparklers'] = {
-            {
-                ['hash'] = 'prop_cs_pour_tube',
-                ['visible'] = true,
-
-                ['fx'] = {
-                    ['library'] = 'scr_ih_club',
-                    ['effect'] = 'scr_ih_club_sparkler',
-                },
-
-                ['position'] = vector3(108.95, -1296.0, 28.43),
-                ['rotation'] = nil,
-                ['heading'] = 0.0,
-                ['lodDistance'] = nil,
-                ['color'] = {175, 0, 175}
-            },
-
-            {
-                ['hash'] = 'prop_cs_pour_tube',
-                ['visible'] = true,
-
-                ['fx'] = {
-                    ['library'] = 'scr_ih_club',
-                    ['effect'] = 'scr_ih_club_sparkler',
-                },
-
-                ['position'] = vector3(109.81, -1297.39, 28.43),
-                ['rotation'] = nil,
-                ['heading'] = 0.0,
-                ['lodDistance'] = nil,
-                ['color'] = {175, 0, 175}
-            }
-
-        },
-
-        ['speakers'] = {
-            {
-                ['hash'] = 'ba_prop_battle_club_speaker_large',
-                ['visible'] = false,
-                ['position'] = vector3(116.74, -1300.61, 28.99),
-                ['rotation'] = nil,
-                ['heading'] = 215.22,
-                ['lodDistance'] = nil,
-                ['soundOffset'] = vector3(0.0, 0.0, 1.4),
-                ['directionOffset'] = nil,
-                ['maxDistance'] = 32.0,
-                ['refDistance'] = 16.0,
-                ['rolloffFactor'] = 1.25,
-                ['coneInnerAngle'] = 90,
-                ['coneOuterAngle'] = 180,
-                ['coneOuterGain'] = 0.5,
-                ['fadeDurationMs'] = 250,
-                ['volumeMultiplier'] = 1.0,
-                ['lowPassGainReductionPercent'] = 15
-            },
-
-            {
-                ['hash'] = 'ba_prop_battle_club_speaker_large',
-                ['visible'] = false,
-                ['position'] = vector3(124.24, -1296.32, 28.98),
-                ['rotation'] = nil,
-                ['heading'] = 215.74,
-                ['lodDistance'] = nil,
-                ['soundOffset'] = vector3(0.0, 0.0, 1.4),
-                ['directionOffset'] = nil,
-                ['maxDistance'] = 32.0,
-                ['refDistance'] = 16.0,
-                ['rolloffFactor'] = 1.25,
-                ['coneInnerAngle'] = 90,
-                ['coneOuterAngle'] = 180,
-                ['coneOuterGain'] = 0.5,
-                ['fadeDurationMs'] = 250,
-                ['volumeMultiplier'] = 1.0,
-                ['lowPassGainReductionPercent'] = 15
-            }
-        }
-    },
 
     ['parking_cinema_large'] = {
     ['enabled'] = true,

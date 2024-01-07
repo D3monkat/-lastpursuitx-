@@ -23,7 +23,7 @@ local qbJobAreaControllers = { -- QB jobs that can access /hall is specific area
         {'blueline', 0}, -- QB "unicorn" job with 2 grade level can access "vanilla_unicorn" area.
         'blueline' -- QB "dj" job can access /hall in "vanilla_unicorn" regardless of grade level.
     },
-    ['fiv3devs_vu'] = {
+    ['fivedevs_vanilla_unicorn'] = {
         {'nightclub', 0},
         'nightclub'
     }
