@@ -63,6 +63,308 @@ config = {
 
         -- This entry does not require an extra map.
 
+        
+--  Party kawaii
+    ['party_kawaii_universestore'] = {
+        ['enabled'] = true,
+        ['permissions'] = false,
+        ['autoAdjustTime'] = false,
+        ['idleWallpaperUrl'] = 'https://as1.ftcdn.net/v2/jpg/05/59/26/68/1000_F_559266834_5AB7JDKaGhnjdPZ5ogBKmU3NHk0kidpk.jpg',
+        ['maxVolumePercent'] = 150,
+    
+    
+        ['area'] = {
+            ['range'] = 200.0,
+            ['center'] = vector3(-606.2399, 107.1919, 72.26459),
+            ['height'] = nil,
+            ['polygons'] = nil
+        },
+    
+        ['disableEmitters'] = nil,
+    
+        ['scaleform'] = nil,
+        ['replacers'] = {
+            ['ba_prop_battle_club_screen'] = 'script_rt_club_tv',
+            ['h4_prop_battle_club_projector'] = 'script_rt_club_projector'
+        },
+        
+        ['monitors'] = nil,   
+        ['screens'] = nil,
+        ['spotlights'] = nil,
+            
+        ['bass']  =  {
+         ['smoke'] = {
+                ['cooldownMs'] = 30000,
+                ['colorWithDynamicSpotlights'] = true
+            },
+         ['sparklers'] = {
+                ['cooldownMs'] = 30000,
+                ['colorWithDynamicSpotlights'] = true
+            },
+            
+        },
+        ['spotlights'] = {
+                           {  --1
+                    ['soundSyncType'] = SOUND_SYNC_TYPE.BASS,
+                    ['hash'] = 'cs_prop_hall_spotlight',
+                    ['position'] = vector3(-606.2221, 110.3594, 68.21099),
+                    ['rotation'] = vector3(0.0,  0, -90.0),
+                    ['heading'] = 140.0,
+                    ['lodDistance'] = nil,
+                    ['color'] = {255, 1, 1}
+                },
+    
+                {  ---2
+                    ['soundSyncType'] = SOUND_SYNC_TYPE.MID,
+                    ['hash'] = 'cs_prop_hall_spotlight',
+                    ['position'] = vector3(-606.2221, 107.2057, 68.21099),
+                    ['rotation'] = vector3(0.0,  0, -90.0),
+                    ['heading'] = 210.0,
+                    ['lodDistance'] = nil,
+                    ['color'] = {255, 255, 0}
+                },
+    
+                { ---3
+                    ['soundSyncType'] = SOUND_SYNC_TYPE.TREBLE,
+                    ['hash'] = 'cs_prop_hall_spotlight',
+                    ['position'] = vector3(-606.2221, 103.8119, 68.21099),
+                    ['rotation'] = vector3(0.0,  0, -90.0),
+                    ['heading'] = 210.0,
+                    ['lodDistance'] = nil,
+                    ['color'] = {3, 83, 255}
+                },
+    
+                {  --- 4
+                    ['soundSyncType'] = SOUND_SYNC_TYPE.LOW_MID,
+                    ['hash'] = 'cs_prop_hall_spotlight',
+                    ['position'] = vector3(-606.2221, 110.3594, 72.41982),
+                    ['rotation'] = vector3(0.0,  0, -90.0),
+                    ['heading'] = 30.0,
+                    ['lodDistance'] = nil,
+                    ['color'] = {15, 3, 255}
+                },
+                {  --5
+                    ['soundSyncType'] = SOUND_SYNC_TYPE.BASS,
+                    ['hash'] = 'cs_prop_hall_spotlight',
+                    ['position'] = vector3(-606.2221, 107.2057, 72.41982),
+                    ['rotation'] = vector3(0.0,  0, -90.0),
+                    ['heading'] = 120.0,
+                    ['lodDistance'] = nil,
+                    ['color'] = {255, 1, 1}
+                },
+    
+                {  ---6
+                    ['soundSyncType'] = SOUND_SYNC_TYPE.MID,
+                    ['hash'] = 'cs_prop_hall_spotlight',
+                    ['position'] = vector3(-606.2221, 103.8119, 72.41982),
+                    ['rotation'] = vector3(0.0,  0, -90.0),
+                    ['heading'] = 210.0,
+                    ['lodDistance'] = nil,
+                    ['color'] = {255, 255, 0}
+                },
+    
+                { ---7
+                    ['soundSyncType'] = SOUND_SYNC_TYPE.TREBLE,
+                    ['hash'] = 'cs_prop_hall_spotlight',
+                    ['position'] = vector3(-601.7, 107.1337, 68.35337),
+                    ['rotation'] = vector3(0.0,  0, -90.0),
+                    ['heading'] = 210.0,
+                    ['lodDistance'] = nil,
+                    ['color'] = {3, 83, 255}
+                },
+    
+                {  --- 8
+                    ['soundSyncType'] = SOUND_SYNC_TYPE.LOW_MID,
+                    ['hash'] = 'cs_prop_hall_spotlight',
+                    ['position'] = vector3(-601.7477, 102.6589, 68.35337),
+                    ['rotation'] = vector3(0.0,  0, -90.0),
+                    ['heading'] = 30.0,
+                    ['lodDistance'] = nil,
+                    ['color'] = {15, 3, 255}
+                },
+                {  --9
+                    ['soundSyncType'] = SOUND_SYNC_TYPE.BASS,
+                    ['hash'] = 'cs_prop_hall_spotlight',
+                    ['position'] = vector3(-601.8414, 98.29521, 68.35337),
+                    ['rotation'] = vector3(0.0,  0, -90.0),
+                    ['heading'] = 120.0,
+                    ['lodDistance'] = nil,
+                    ['color'] = {255, 1, 1}
+                },
+    
+                {  ---10
+                    ['soundSyncType'] = SOUND_SYNC_TYPE.MID,
+                    ['hash'] = 'cs_prop_hall_spotlight',
+                    ['position'] = vector3(-601.9572, 93.80285, 68.35337),
+                    ['rotation'] = vector3(0.0,  0, -90.0),
+                    ['heading'] = 210.0,
+                    ['lodDistance'] = nil,
+                    ['color'] = {255, 255, 0}
+                },
+    
+                { ---11
+                    ['soundSyncType'] = SOUND_SYNC_TYPE.TREBLE,
+                    ['hash'] = 'cs_prop_hall_spotlight',
+                    ['position'] = vector3(-601.9572, 89.26273, 68.35337),
+                    ['rotation'] = vector3(0.0,  0, -90.0),
+                    ['heading'] = 210.0,
+                    ['lodDistance'] = nil,
+                    ['color'] = {3, 83, 255}
+                },
+    
+    
+                
+            },
+    
+         ['smokers'] = {
+             {
+                 ['hash'] = 'ba_prop_club_smoke_machine',
+                 ['visible'] = true,
+    
+                 ['fx'] = {
+                     ['library'] = 'scr_ba_club',
+                     ['effect'] = 'scr_ba_club_smoke_machine',
+                 },
+    
+                 ['position'] = vector3(-606.6436, 104.0199, 63.55949),
+                 ['rotation'] = vector3(0.0, 0.0, -90),
+                 ['heading'] = 90.0,
+                 ['color'] = {253, 122, 255}
+             },
+                          {
+                 ['hash'] = 'ba_prop_club_smoke_machine',
+                 ['visible'] = true,
+    
+                 ['fx'] = {
+                     ['library'] = 'scr_ba_club',
+                     ['effect'] = 'scr_ba_club_smoke_machine',
+                 },
+    
+                 ['position'] = vector3(-606.6436, 110.3185, 63.55949),
+                 ['rotation'] = vector3(0.0, 0.0, -90),
+                 ['heading'] = 90.0,
+                 ['color'] = {253, 122, 255}
+             }
+                      
+         },
+    
+          ['sparklers'] = {
+              { --1
+                  ['hash'] = 'prop_cs_pour_tube',
+                  ['visible'] = true,
+    
+                  ['fx'] = {
+                     ['library'] = 'scr_ih_club',
+                     ['effect'] = 'scr_ih_club_sparkler',
+                 },
+    
+                  ['position'] = vector3(-609.2957, 103.6496, 63.44432),
+                  ['rotation'] = nil,
+                  ['heading'] = 0.0,
+                  ['lodDistance'] = nil,
+                  ['color'] = {90, 173, 22}
+              },
+              { --2
+                  ['hash'] = 'prop_cs_pour_tube',
+                  ['visible'] = true,
+    
+                  ['fx'] = {
+                     ['library'] = 'scr_ih_club',
+                     ['effect'] = 'scr_ih_club_sparkler',
+                 },
+    
+                  ['position'] = vector3(-609.2957, 110.5706, 63.44432),
+                  ['rotation'] = nil,
+                  ['heading'] = 0.0,
+                  ['lodDistance'] = nil,
+                  ['color'] = {90, 173, 22}
+              },
+              { --3
+                  ['hash'] = 'prop_cs_pour_tube',
+                  ['visible'] = true,
+    
+                  ['fx'] = {
+                     ['library'] = 'scr_ih_club',
+                     ['effect'] = 'scr_ih_club_sparkler',
+                 },
+    
+                  ['position'] = vector3(-609.2957, 109.2633, 63.44432),
+                  ['rotation'] = nil,
+                  ['heading'] = 0.0,
+                  ['lodDistance'] = nil,
+                  ['color'] = {90, 173, 22}
+              },
+              { --4
+                  ['hash'] = 'prop_cs_pour_tube',
+                  ['visible'] = true,
+    
+                  ['fx'] = {
+                     ['library'] = 'scr_ih_club',
+                     ['effect'] = 'scr_ih_club_sparkler',
+                 },
+    
+                  ['position'] = vector3(-609.2957, 105.0706, 63.44432),
+                  ['rotation'] = nil,
+                  ['heading'] = 0.0,
+                  ['lodDistance'] = nil,
+                  ['color'] = {90, 173, 22}
+              },
+              { --5
+                  ['hash'] = 'prop_cs_pour_tube',
+                  ['visible'] = true,
+    
+                  ['fx'] = {
+                     ['library'] = 'scr_ih_club',
+                     ['effect'] = 'scr_ih_club_sparkler',
+                 },
+    
+                  ['position'] = vector3(-609.2957, 106.3649, 63.44432),
+                  ['rotation'] = nil,
+                  ['heading'] = 0.0,
+                  ['lodDistance'] = nil,
+                  ['color'] = {90, 173, 22}
+              },
+              { --6
+                  ['hash'] = 'prop_cs_pour_tube',
+                  ['visible'] = true,
+    
+                  ['fx'] = {
+                     ['library'] = 'scr_ih_club',
+                     ['effect'] = 'scr_ih_club_sparkler',
+                 },
+    
+                  ['position'] = vector3(-609.2957, 108.1087, 63.44432),
+                  ['rotation'] = nil,
+                  ['heading'] = 0.0,
+                  ['lodDistance'] = nil,
+                  ['color'] = {90, 173, 22}
+              }, 	  
+          },
+           
+    
+        ['speakers'] = {
+            {
+                ['hash'] = 'xs_propintarena_speakers_01a',
+                ['visible'] = false,
+                ['position'] = vector3(-606.2221, 110.3594, 68.21099),
+                ['rotation'] = nil,
+                ['heading'] = 141.38,
+                ['lodDistance'] = nil,
+                ['soundOffset'] = nil,
+                ['distanceOffset'] = nil,
+                ['maxDistance'] = 110.0,
+                ['refDistance'] = 55.0,
+                ['rolloffFactor'] = 1.25,
+                ['coneInnerAngle'] = 90,
+                ['coneOuterAngle'] = 180,
+                ['coneOuterGain'] = 0.5,
+                ['fadeDurationMs'] = 250,
+                ['volumeMultiplier'] = 2.0,
+                ['lowPassGainReductionPercent'] = 15
+            }
+        },
+    },
+        
         ['fivedevs_vanilla_unicorn'] = {
             ['enabled'] = true,
             ['autoAdjustTime'] = false,
@@ -872,266 +1174,6 @@ config = {
                     ['fadeDurationMs'] = 250,
                     ['volumeMultiplier'] = 1.0,
                     ['lowPassGainReductionPercent'] = 15
-                }
-            }
-        },
-
-        --BahamasFiv3Devs
- 
-        ['bahamas'] = {
-            ['enabled'] = true,
- 
-            ['idleWallpaperUrl'] = 'https://files.criticalscripts.shop/cs-hall-dui/wallpaper.png',
- 
-            ['bass'] = {
-                ['smoke'] = {
-                    ['cooldownMs'] = 30000,
-                    ['colorWithDynamicSpotlights'] = true
-                },
- 
-                ['sparklers'] = {
-                    ['cooldownMs'] = 30000,
-                    ['colorWithDynamicSpotlights'] = true
-                }
-            },
- 
-            ['monitors'] = {
-                {
-                    ['hash'] = 'ba_prop_battle_club_screen_02',
-                    ['position'] = vector3(-1389.61, -608.01, 33.35),
-                    ['heading'] = 130.15
-                }
-            },
- 
-            ['area'] = {
-                ['range'] = 98,
-                ['center'] = vector3(-1389.96, -608.3, 33.3),
- 
-                ['polygons'] = {
-                    ['applyLowPassFilterOutside'] = true,
- 
-                    ['entries'] = {
-                        {
-                            ['height'] = {
-                                ['min'] = 10.0,
-                                ['max'] = 95.0
-                            },
- 
-                            ['points'] = {
-                                vector2(-1390.62, -625.92),
-                                vector2(-1400.90, -625.93),
-                                vector2(-1408.39, -618.41),
-                                vector2(-1407.66, -612.85),
-                                vector2(-1410.20, -611.30),
-                                vector2(-1414.874, -605.04),
-                                vector2(-1385.51, -585.58),
-                                vector2(-1382.25, -585.88),
-                                vector2(-1381.33, -589.43),
-                                vector2(-1384.67, -597.15),
-                                vector2(-1381.975, -596.0469),
-                                vector2(-1375.698, -597.2661),
-                                vector2(-1370.95, -605.67),
-                                vector2(-1371.55, -609.83),
-                                vector2(-1374.091, -613.4977),
-                                vector2(-1374.451, -622.2185),
-                                vector2(-1375.85, -626.24),
-                                vector2(-1374.40,-629.07),
-                                vector2(-1380.51,-633.21),
-                                vector2(-1387.91, -628.9114)
-                            }
-                        }
-                    }
-                }
-            },
- 
-            ['replacers'] = {
-                ['ba_prop_battle_club_screen'] = 'script_rt_club_tv',
-                ['ba_prop_battle_club_projector'] = 'script_rt_club_projector'
-            },
- 
-            ['spotlights'] = {
-                {
-                    ['soundSyncType'] = SOUND_SYNC_TYPE.HIGH_MID,
-                    ['hash'] = 'cs_prop_hall_spotlight',
-                    ['position'] = vector3(-1379.76, -602.28, 37.62),
-                    ['heading'] = 291.03,
-                    ['color'] = {255, 5, 190}
-                },
- 
-                {
-                    ['soundSyncType'] = SOUND_SYNC_TYPE.MID,
-                    ['hash'] = 'cs_prop_hall_spotlight',
-                    ['position'] = vector3(-1385.82, -614.77, 40.03),
-                    ['heading'] = 174.81,
-                    ['color'] = {255, 255, 0}
-                },
- 
-                {
-                    ['soundSyncType'] = SOUND_SYNC_TYPE.TREBLE,
-                    ['hash'] = 'cs_prop_hall_spotlight',
-                    ['position'] = vector3(-1392.31, -617.31, 40.45),
-                    ['heading'] = 127.57,
-                    ['color'] = {3, 83, 255}
-                },
- 
-                {
-                    ['soundSyncType'] = SOUND_SYNC_TYPE.LOW_MID,
-                    ['hash'] = 'cs_prop_hall_spotlight',
-                    ['position'] = vector3(-1398.66, -599.48, 40.07),
-                    ['heading'] = 83,
-                    ['color'] = {15, 3, 255}
-                },
- 
-                {
-                    ['soundSyncType'] = SOUND_SYNC_TYPE.BASS,
-                    ['hash'] = 'cs_prop_hall_spotlight',
-                    ['position'] = vector3(-1392.28, -591.87, 39.64),
-                    ['heading'] = 5.12,
-                    ['color'] = {255, 1, 1}
-                },
- 
-                {
-                    ['soundSyncType'] = SOUND_SYNC_TYPE.HIGH_MID,
-                    ['hash'] = 'cs_prop_hall_spotlight',
-                    ['position'] = vector3(-1373.31, -608.23, 37.51),
-                    ['heading'] = 254.73,
-                    ['color'] = {255, 5, 190}
-                },
- 
-                {
-                    ['soundSyncType'] = SOUND_SYNC_TYPE.BASS,
-                    ['hash'] = 'cs_prop_hall_spotlight',
-                    ['position'] = vector3(-1380.38, -598.45, 37.2),
-                    ['heading'] = 277.49,
-                    ['color'] = {255, 1, 44}
-                }
- 
-            },
- 
-            ['smokers'] = {
-                {
-                    ['hash'] = 'ba_prop_club_smoke_machine',
-                    ['visible'] = true,
- 
-                    ['fx'] = {
-                        ['library'] = 'scr_ba_club',
-                        ['effect'] = 'scr_ba_club_smoke_machine',
-                    },
- 
-                    ['position'] = vector3(-1385.77, -609.7, 30.15),
-                    ['heading'] = 104.2,
-                    ['color'] = {255, 215, 83}
-                },
- 
-                {
-                    ['hash'] = 'ba_prop_club_smoke_machine',
-                    ['visible'] = true,
- 
-                    ['fx'] = {
-                        ['library'] = 'scr_ba_club',
-                        ['effect'] = 'scr_ba_club_smoke_machine',
-                    },
- 
-                    ['position'] = vector3(-1391.5, -604.2, 30.04),
-                    ['heading'] = 185.11,
-                    ['color'] = {255, 215, 83}
-                },
- 
-                {
-                    ['hash'] = 'ba_prop_club_smoke_machine',
-                    ['visible'] = true,
- 
-                    ['fx'] = {
-                        ['library'] = 'scr_ba_club',
-                        ['effect'] = 'scr_ba_club_smoke_machine',
-                    },
- 
-                    ['position'] = vector3(-1391.17, -607.68, 37.7),
-                    ['heading'] = 356.85,
-                    ['color'] = {255, 215, 83}
-                },
- 
- 
-                {
-                    ['hash'] = 'ba_prop_club_smoke_machine',
-                    ['visible'] = false,
- 
-                    ['fx'] = {
-                        ['library'] = 'scr_ba_club',
-                        ['effect'] = 'scr_ba_club_smoke_machine',
-                    },
- 
-                    ['position'] = vector3(-1375.0, -604.84, 33.65),
-                    ['heading'] = 279.25,
-                    ['color'] = {255, 215, 83}
-                },
- 
- 
-                {
-                    ['hash'] = 'ba_prop_club_smoke_machine',
-                    ['visible'] = false,
- 
-                    ['fx'] = {
-                        ['library'] = 'scr_ba_club',
-                        ['effect'] = 'scr_ba_club_smoke_machine',
-                    },
- 
-                    ['position'] = vector3(-1399.64, -596.2, 33.3),
-                    ['heading'] = 83.42,
-                    ['color'] = {255, 215, 83}
-                }
- 
-            },
- 
-            ['sparklers'] = {
-                {
-                    ['hash'] = 'prop_cs_pour_tube',
-                    ['visible'] = true,
- 
-                    ['fx'] = {
-                        ['library'] = 'scr_ih_club',
-                        ['effect'] = 'scr_ih_club_sparkler',
-                    },
- 
-                    ['position'] = vector3(-1392.22, -604.32, 32.39),
-                    ['heading'] = 0.0,
-                    ['color'] = {255, 215, 0}
-                },
- 
-                {
-                    ['hash'] = 'prop_cs_pour_tube',
-                    ['visible'] = true,
- 
-                    ['fx'] = {
-                        ['library'] = 'scr_ih_club',
-                        ['effect'] = 'scr_ih_club_sparkler',
-                    },
- 
-                    ['position'] = vector3(-1387.39, -605.8, 32.36),
-                    ['heading'] = 0.0,
-                    ['color'] = {255, 215, 0}
-                }
-            },
- 
-            ['speakers'] = {
-                {
-                    ['hash'] = 'ba_prop_battle_club_speaker_small',
-                    ['visible'] = false,
-                    ['position'] = vector3(-1399.78, -625.57, 34.76),
-                    ['heading'] = 155.71,
-                    ['soundOffset'] = vector3(0, 0, 1.0),
-                    ['refDistance'] = 30.0,
-                    ['lowPassGainReductionPercent'] = 0
-                },
- 
-                {
-                    ['hash'] = 'ba_prop_battle_club_speaker_small',
-                    ['visible'] = false,
-                    ['position'] = vector3(-1390.97, -590.46, 29.8),
-                    ['heading'] = 348.7,
-                    ['soundOffset'] = vector3(0, 0, 1.0),
-                    ['refDistance'] = 20.0,
-                    ['lowPassGainReductionPercent'] = 0
                 }
             }
         },
@@ -2503,8 +2545,446 @@ config = {
             }
         },
 
-        ['cat_cafe'] = {
+        ['gabz_bahamas'] = {
             ['enabled'] = true,
+
+            --['idleWallpaperUrl'] = 'https://files.criticalscripts.shop/cs-hall-dui/wallpaper.png',
+            ['idleWallpaperUrl'] = 'https://cdn.discordapp.com/attachments/897679482230542407/1042451024989933708/Untitled__500__240_px___400__240_px___3__AdobeExpress.gif',
+
+            ['bass'] = {
+                ['smoke'] = {
+                    ['cooldownMs'] = 30000,
+                    ['colorWithDynamicSpotlights'] = true
+                },
+
+                ['sparklers'] = {
+                    ['cooldownMs'] = 30000,
+                    ['colorWithDynamicSpotlights'] = true
+                }
+            },
+
+            ['monitors'] = {
+                {
+                    ['hash'] = 'ba_prop_battle_club_screen_02',
+                    ['position'] = vector3(-1374.62, -606.27, 32.59),
+                    ['heading'] = 300.32180786133
+                }
+            },
+
+            ['area'] = {
+                ['range'] = 80,
+                ['center'] = vector3(-1389.88, -616.29, 30.71),
+
+                ['polygons'] = {
+                    ['applyLowPassFilterOutside'] = true,
+
+                    ['entries'] = {
+                        {
+                            ['height'] = {
+                                ['min'] = 28.0,
+                                ['max'] = 35.0
+                            },
+
+                            ['points'] = {
+                                vector2(-1393.2158, -591.4385),
+                                vector2(-1390.1388, -596.2726),
+                                vector2(-1393.0000, -598.7607),
+                                vector2(-1389.1501, -605.6030),
+                                vector2(-1380.9458, -600.4941),
+                                vector2(-1377.2175, -605.4868),
+                                vector2(-1376.5146, -606.7695),
+                                vector2(-1373.5714, -607.1315),
+                                vector2(-1373.6136, -606.8812),
+                                vector2(-1374.5880, -608.4337),
+                                vector2(-1371.3943, -613.6541),
+                                vector2(-1379.3060, -619.4830),
+                                vector2(-1380.2322, -619.0524),
+                                vector2(-1376.9164, -624.1046),
+                                vector2(-1379.6473, -626.1050),
+                                vector2(-1378.4934, -627.9241),
+                                vector2(-1390.3518, -635.9399),
+                                vector2(-1390.0446, -634.2211),
+                                vector2(-1393.8784, -635.1125),
+                                vector2(-1413.1132, -604.1365)
+                            }
+                        }
+                    }
+                }
+            },
+
+            ['replacers'] = {
+                ['ba_prop_battle_club_screen'] = 'script_rt_club_tv',
+                ['ba_prop_battle_club_projector'] = 'script_rt_club_projector'
+            },
+
+            ['spotlights'] = {
+                {
+                    ['soundSyncType'] = SOUND_SYNC_TYPE.HIGH_MID,
+                    ['hash'] = 'cs_prop_hall_spotlight', --stage
+                    ['position'] = vector3(-1383.01, -630.08, 33.43),
+                    ['heading'] = 210.13468170166,
+                    ['color'] = {255, 138, 255} --pink
+                },
+
+                {
+                    ['soundSyncType'] = SOUND_SYNC_TYPE.TREBLE,
+                    ['hash'] = 'cs_prop_hall_spotlight', --stage
+                    ['position'] = vector3(-1374.81, -615.817, 33.30),
+                    ['heading'] = 220.00,
+                    ['color'] = {140, 210, 255} --blue
+                },
+
+                {
+                    ['soundSyncType'] = SOUND_SYNC_TYPE.MID,
+                    ['hash'] = 'cs_prop_hall_spotlight',
+                    ['position'] = vector3(-1387.27, -604.46, 33.38),
+                    ['heading'] = 355.00,
+                    ['color'] = {255, 138, 255} --pink
+                },
+
+                {
+                    ['soundSyncType'] = SOUND_SYNC_TYPE.MID,
+                    ['hash'] = 'cs_prop_hall_spotlight',
+                    ['position'] = vector3(-1377.68, -618.27, 33.38),
+                    ['heading'] = 265.00,
+                    ['color'] = {140, 210, 255} --blue
+                },
+
+                {
+                    ['soundSyncType'] = SOUND_SYNC_TYPE.TREBLE,
+                    ['hash'] = 'cs_prop_hall_spotlight',
+                    ['position'] = vector3(-1383.54, -602.27, 33.30),
+                    ['heading'] = 30.00,
+                    ['color'] = {255, 138, 255} --pink
+                },
+
+                {
+                    ['soundSyncType'] = SOUND_SYNC_TYPE.LOW_MID,
+                    ['hash'] = 'cs_prop_hall_spotlight',
+                    ['position'] = vector3(-1389.845, -623.00, 33.00),
+                    ['heading'] = 96.77075195312,
+                    ['color'] = {140, 210, 255} --blue
+                },
+
+                {
+                    ['soundSyncType'] = SOUND_SYNC_TYPE.BASS,
+                    ['hash'] = 'cs_prop_hall_spotlight',
+                    ['position'] = vector3(-1398.417, -598.812, 32.50), --bar entrance
+                    ['heading'] = 30.50,
+                    ['color'] = {255, 138, 255} --pink
+                },
+
+                {
+                    ['soundSyncType'] = SOUND_SYNC_TYPE.BASS,
+                    ['hash'] = 'cs_prop_hall_spotlight',
+                    ['position'] = vector3(-1406.901, -600.901, 33.00), --bar left side
+                    ['heading'] = 30.00,
+                    ['color'] = {255, 138, 255} --pink
+                },
+
+                {
+                    ['soundSyncType'] = SOUND_SYNC_TYPE.BASS,
+                    ['hash'] = 'cs_prop_hall_spotlight',
+                    ['position'] = vector3(-1397.693, -599.14, 32.5), --entrance
+                    ['heading'] = 135.00,
+                    ['color'] = {140, 210, 255} --blue
+                },
+
+                {
+                    ['soundSyncType'] = SOUND_SYNC_TYPE.TREBLE,
+                    ['hash'] = 'cs_prop_hall_spotlight',
+                    ['position'] = vector3(-1411.191, -603.072, 33.0), --pole stage bar
+                    ['heading'] = 39.00,
+                    ['color'] = {140, 210, 255} --blue
+                },
+
+                {
+                    ['soundSyncType'] = SOUND_SYNC_TYPE.LOW_MID,
+                    ['hash'] = 'cs_prop_hall_spotlight',
+                    ['position'] = vector3(-1406.352, -608.35, 33.0), --OVER BOOTH TO POLES
+                    ['heading'] = 79.00,
+                    ['color'] = {255, 138, 255} --PINK
+                },
+
+                {
+                    ['soundSyncType'] = SOUND_SYNC_TYPE.LOW_MID,
+                    ['hash'] = 'cs_prop_hall_spotlight',
+                    ['position'] = vector3(-1400.265, -617.74, 33.0), --OVER BOOTH TO POLES 2
+                    ['heading'] = 115.00,
+                    ['color'] = {255, 138, 255} --PINK
+                },
+
+                {
+                    ['soundSyncType'] = SOUND_SYNC_TYPE.HIGH_MID,
+                    ['hash'] = 'cs_prop_hall_spotlight',
+                    ['position'] = vector3(-1401.592, -621.248, 33.0), --OVER BENCH 1
+                    ['heading'] = 115.00,
+                    ['color'] = {140, 210, 255} --blue
+                },
+
+                {
+                    ['soundSyncType'] = SOUND_SYNC_TYPE.HIGH_MID,
+                    ['hash'] = 'cs_prop_hall_spotlight',
+                    ['position'] = vector3(-1396.051, -629.868, 33.0), --OVER BENCH 2
+                    ['heading'] = 150.00,
+                    ['color'] = {140, 210, 255} --blue
+                },
+
+                {
+                    ['soundSyncType'] = SOUND_SYNC_TYPE.BASS,
+                    ['hash'] = 'cs_prop_hall_spotlight',
+                    ['position'] = vector3(-1391.87, -615.83, 33.00),
+                    ['heading'] = 51.84906005859,
+                    ['color'] = {140, 210, 255} --blue
+                }
+            },
+
+            ['smokers'] = {
+                {
+                    ['hash'] = 'ba_prop_club_smoke_machine',
+                    ['visible'] = true,
+
+                    ['fx'] = {
+                        ['library'] = 'scr_ba_club',
+                        ['effect'] = 'scr_ba_club_smoke_machine',
+                    },
+
+                    ['position'] = vector3(-1376.32, -605.31, 30.32),
+                    ['heading'] = 250.489730834961,
+                    ['color'] = {255, 138, 255} --pink
+                },
+
+                {
+                    ['hash'] = 'ba_prop_club_smoke_machine',
+                    ['visible'] = true,
+
+                    ['fx'] = {
+                        ['library'] = 'scr_ba_club',
+                        ['effect'] = 'scr_ba_club_smoke_machine',
+                    },
+
+                    ['position'] = vector3(-1374.45, -608.31, 30.32),
+                    ['heading'] = 345.489730834961,
+                    ['color'] = {140, 210, 255} --blue
+                },
+
+                {
+                    ['hash'] = 'ba_prop_club_smoke_machine',
+                    ['visible'] = true,
+
+                    ['fx'] = {
+                        ['library'] = 'scr_ba_club',
+                        ['effect'] = 'scr_ba_club_smoke_machine',
+                    },
+
+                    ['position'] = vector3(-1382.99, -621.4, 28.90),
+                    ['heading'] = 273.489730834961,
+                    ['color'] = {255, 138, 255} --pink
+                },
+
+                {
+                    ['hash'] = 'ba_prop_club_smoke_machine',
+                    ['visible'] = true,
+
+                    ['fx'] = {
+                        ['library'] = 'scr_ba_club',
+                        ['effect'] = 'scr_ba_club_smoke_machine',
+                    },
+
+                    ['position'] = vector3(-1389.52, -626.11, 28.90),
+                    ['heading'] = 152.489730834961,
+                    ['color'] = {140, 210, 255} --blue
+                },
+
+                {
+                    ['hash'] = 'ba_prop_club_smoke_machine',
+                    ['visible'] = true,
+
+                    ['fx'] = {
+                        ['library'] = 'scr_ba_club',
+                        ['effect'] = 'scr_ba_club_smoke_machine',
+                    },
+
+                    ['position'] = vector3(-1391.71, -607.85, 28.90),
+                    ['heading'] = 330.489730834961,
+                    ['color'] = {255, 138, 255} --pink
+                },
+
+                {
+                    ['hash'] = 'ba_prop_club_smoke_machine',
+                    ['visible'] = true,
+
+                    ['fx'] = {
+                        ['library'] = 'scr_ba_club',
+                        ['effect'] = 'scr_ba_club_smoke_machine',
+                    },
+
+                    ['position'] = vector3(-1398.67, -612.04, 28.90),
+                    ['heading'] = 83.2324018478394,
+                    ['color'] = {140, 210, 255} --blue
+                }
+            },
+
+            ['sparklers'] = {
+                {
+                    ['hash'] = 'prop_cs_pour_tube',
+                    ['visible'] = true,
+
+                    ['fx'] = {
+                        ['library'] = 'scr_ih_club',
+                        ['effect'] = 'scr_ih_club_sparkler',
+                    },
+
+                    ['position'] = vector3(-1377.31, -604.74, 30.92),
+                    ['heading'] = 0.0,
+                    ['color'] = {255, 215, 0}
+                },
+
+                {
+                    ['hash'] = 'prop_cs_pour_tube',
+                    ['visible'] = true,
+
+                    ['fx'] = {
+                        ['library'] = 'scr_ih_club',
+                        ['effect'] = 'scr_ih_club_sparkler',
+                    },
+
+                    ['position'] = vector3(-1374.41, -609.22, 30.92),
+                    ['heading'] = 0.0,
+                    ['color'] = {255, 215, 0}
+                }
+            },
+
+            ['speakers'] = {
+                {
+                    ['hash'] = 'ba_prop_battle_club_speaker_small',
+                    ['visible'] = true,
+                    ['position'] = vector3(-1378.71, -602.13, 30.92),
+                    ['heading'] = 300.55068969727,
+                    ['soundOffset'] = vector3(0, 0, 1.0),
+                    ['refDistance'] = 20.0,
+                    ['lowPassGainReductionPercent'] = 0
+                },
+
+                {
+                    ['hash'] = 'ba_prop_battle_club_speaker_small',
+                    ['visible'] = true,
+                    ['position'] = vector3(-1373.01, -611.03, 30.94),
+                    ['heading'] = 300.89999389648,
+                    ['soundOffset'] = vector3(0, 0, 1.0),
+                    ['refDistance'] = 20.0,
+                    ['lowPassGainReductionPercent'] = 0
+                },
+
+                {
+                    ['hash'] = 'ba_prop_battle_club_speaker_small',
+                    ['visible'] = false,
+                    ['position'] = vector3(-1399.42, -603.63, 30.32),
+                    ['heading'] = 203.55068969727,
+                    ['soundOffset'] = vector3(0, 0, 1.0),
+                    ['refDistance'] = 20.0,
+                    ['lowPassGainReductionPercent'] = 0
+                },
+
+                {
+                    ['hash'] = 'ba_prop_battle_club_speaker_small',
+                    ['visible'] = false,
+                    ['position'] = vector3(-1392.01, -635.27, 30.32),
+                    ['heading'] = 349.89999389648,
+                    ['soundOffset'] = vector3(0, 0, 1.0),
+                    ['refDistance'] = 20.0,
+                    ['lowPassGainReductionPercent'] = 0
+                },
+
+                {
+                    ['hash'] = 'ba_prop_battle_club_speaker_small',
+                    ['visible'] = false,
+                    ['position'] = vector3(-1395.83, -631.66, 30.99),
+                    ['heading'] = 83.89999389648,
+                    ['soundOffset'] = vector3(0, 0, 1.0),
+                    ['refDistance'] = 20.0,
+                    ['lowPassGainReductionPercent'] = 0
+                }
+            }
+        },
+
+        ['uwucafe']={
+            ['enabled']=true,
+            ['autoAdjustTime'] = true,
+            ['maxVolumePercent'] = 100,
+            ['area']={
+                ['range'] = 25,
+                ['center'] = vec3(-580.235, -1060.512, 22.347),
+                ['polygons'] = {
+                    ['applyLowPassFilterOutside'] = true,
+
+                    ['entries'] = {
+                        {
+                            ['height'] = {
+                                ['min'] = 21.5,
+                                ['max'] = 25.0
+                            },
+        
+                            ['points'] = {
+                                vector2(-572.70556640625, -1068.6639404297),
+                                vector2(-574.89697265625, -1069.0395507813),
+                                vector2(-587.18908691406, -1069.0395507813),
+                                vector2(-587.48895263672, -1064.5407714844),
+                                vector2(-591.44683837891, -1064.5455322266),
+                                vector2(-591.44683837891, -1054.30078125),
+                                vector2(-587.18908691406, -1054.6967773438),
+                                vector2(-587.18835449219, -1051.5379638672),
+                                vector2(-584.29486083984, -1051.5308837891),
+                                vector2(-584.29486083984, -1048.7022705078),
+                                vector2(-581.64312744141, -1048.6951904297),
+                                vector2(-581.6416015625, -1049.9976806641),
+                                vector2(-575.91772460938, -1049.9869384766),
+                                vector2(-575.91180419922, -1048.6951904297),
+                                vector2(-566.30938720703, -1048.7015380859),
+                                vector2(-566.28204345703, -1050.6121826172),
+                                vector2(-568.17401123047, -1050.6049804688),
+                                vector2(-570.84423828125, -1050.7213134766),
+                                vector2(-570.79809570313, -1057.5396728516)
+                            }
+                        }
+                    }
+                }
+            },
+            ['speakers'] = {
+                {
+                    ['hash'] = 'ba_prop_battle_club_speaker_large',
+                    ['visible'] = false,
+                    ['position'] = vec3(-579.082, -1050.0, 24.973),
+                    ['heading'] = 356.57,
+                    ['soundOffset'] = vector3(0, 0, 0),
+                    ['refDistance'] = 32.0,
+                    ['lodDistance'] = 256.0,
+                    ['coneInnerAngle'] = 90,
+                    ['coneOuterAngle'] = 180,
+                    ['coneOuterGain'] = 0.5,
+                    ['fadeDurationMs'] = 250,
+                    ['volumeMultiplier'] = 1.0,
+                },
+ 
+                {
+                    ['hash'] = 'ba_prop_battle_club_speaker_large',
+                    ['visible'] = false,
+                    ['position'] = vec3(-581.075, -1069.043, 24.843),
+                    ['heading'] = 186.48,
+                    ['soundOffset'] = vector3(0, 0, 0),
+                    ['refDistance'] = 32.0,
+                    ['lodDistance'] = 256.0,
+                    ['coneInnerAngle'] = 90,
+                    ['coneOuterAngle'] = 180,
+                    ['coneOuterGain'] = 0.5,
+                    ['fadeDurationMs'] = 250,
+                    ['volumeMultiplier'] = 1.0,
+                },
+            },
+        },
+
+        ['cat_cafe'] = {
+            ['enabled'] = false,
             ['autoAdjustTime'] = false,
             ['idleWallpaperUrl'] = 'https://cfx-nui-' .. GetCurrentResourceName() .. '/client/dui/images/wallpaper.png',
             ['maxVolumePercent'] = 150,
@@ -3436,265 +3916,7 @@ config = {
                 }
             },
 
-        --BahamasFiv3Devs
- 
-    ['bahamas'] = {
-        ['enabled'] = false,
 
-        ['idleWallpaperUrl'] = 'https://files.criticalscripts.shop/cs-hall-dui/wallpaper.png',
-
-        ['bass'] = {
-            ['smoke'] = {
-                ['cooldownMs'] = 30000,
-                ['colorWithDynamicSpotlights'] = true
-            },
-
-            ['sparklers'] = {
-                ['cooldownMs'] = 30000,
-                ['colorWithDynamicSpotlights'] = true
-            }
-        },
-
-        ['monitors'] = {
-            {
-                ['hash'] = 'ba_prop_battle_club_screen_02',
-                ['position'] = vector3(-1389.61, -608.01, 33.35),
-                ['heading'] = 130.15
-            }
-        },
-
-        ['area'] = {
-            ['range'] = 98,
-            ['center'] = vector3(-1389.96, -608.3, 33.3),
-
-            ['polygons'] = {
-                ['applyLowPassFilterOutside'] = true,
-
-                ['entries'] = {
-                    {
-                        ['height'] = {
-                            ['min'] = 10.0,
-                            ['max'] = 95.0
-                        },
-
-                        ['points'] = {
-                            vector2(-1390.62, -625.92),
-                            vector2(-1400.90, -625.93),
-                            vector2(-1408.39, -618.41),
-                            vector2(-1407.66, -612.85),
-                            vector2(-1410.20, -611.30),
-                            vector2(-1414.874, -605.04),
-                            vector2(-1385.51, -585.58),
-                            vector2(-1382.25, -585.88),
-                            vector2(-1381.33, -589.43),
-                            vector2(-1384.67, -597.15),
-                            vector2(-1381.975, -596.0469),
-                            vector2(-1375.698, -597.2661),
-                            vector2(-1370.95, -605.67),
-                            vector2(-1371.55, -609.83),
-                            vector2(-1374.091, -613.4977),
-                            vector2(-1374.451, -622.2185),
-                            vector2(-1375.85, -626.24),
-                            vector2(-1374.40,-629.07),
-                            vector2(-1380.51,-633.21),
-                            vector2(-1387.91, -628.9114)
-                        }
-                    }
-                }
-            }
-        },
-
-        ['replacers'] = {
-            ['ba_prop_battle_club_screen'] = 'script_rt_club_tv',
-            ['ba_prop_battle_club_projector'] = 'script_rt_club_projector'
-        },
-
-        ['spotlights'] = {
-            {
-                ['soundSyncType'] = SOUND_SYNC_TYPE.HIGH_MID,
-                ['hash'] = 'cs_prop_hall_spotlight',
-                ['position'] = vector3(-1379.76, -602.28, 37.62),
-                ['heading'] = 291.03,
-                ['color'] = {255, 5, 190}
-            },
-
-            {
-                ['soundSyncType'] = SOUND_SYNC_TYPE.MID,
-                ['hash'] = 'cs_prop_hall_spotlight',
-                ['position'] = vector3(-1385.82, -614.77, 40.03),
-                ['heading'] = 174.81,
-                ['color'] = {255, 255, 0}
-            },
-
-            {
-                ['soundSyncType'] = SOUND_SYNC_TYPE.TREBLE,
-                ['hash'] = 'cs_prop_hall_spotlight',
-                ['position'] = vector3(-1392.31, -617.31, 40.45),
-                ['heading'] = 127.57,
-                ['color'] = {3, 83, 255}
-            },
-
-            {
-                ['soundSyncType'] = SOUND_SYNC_TYPE.LOW_MID,
-                ['hash'] = 'cs_prop_hall_spotlight',
-                ['position'] = vector3(-1398.66, -599.48, 40.07),
-                ['heading'] = 83,
-                ['color'] = {15, 3, 255}
-            },
-
-            {
-                ['soundSyncType'] = SOUND_SYNC_TYPE.BASS,
-                ['hash'] = 'cs_prop_hall_spotlight',
-                ['position'] = vector3(-1392.28, -591.87, 39.64),
-                ['heading'] = 5.12,
-                ['color'] = {255, 1, 1}
-            },
-
-            {
-                ['soundSyncType'] = SOUND_SYNC_TYPE.HIGH_MID,
-                ['hash'] = 'cs_prop_hall_spotlight',
-                ['position'] = vector3(-1373.31, -608.23, 37.51),
-                ['heading'] = 254.73,
-                ['color'] = {255, 5, 190}
-            },
-
-            {
-                ['soundSyncType'] = SOUND_SYNC_TYPE.BASS,
-                ['hash'] = 'cs_prop_hall_spotlight',
-                ['position'] = vector3(-1380.38, -598.45, 37.2),
-                ['heading'] = 277.49,
-                ['color'] = {255, 1, 44}
-            }
-
-        },
-
-        ['smokers'] = {
-            {
-                ['hash'] = 'ba_prop_club_smoke_machine',
-                ['visible'] = true,
-
-                ['fx'] = {
-                    ['library'] = 'scr_ba_club',
-                    ['effect'] = 'scr_ba_club_smoke_machine',
-                },
-
-                ['position'] = vector3(-1385.77, -609.7, 30.15),
-                ['heading'] = 104.2,
-                ['color'] = {255, 215, 83}
-            },
-
-            {
-                ['hash'] = 'ba_prop_club_smoke_machine',
-                ['visible'] = true,
-
-                ['fx'] = {
-                    ['library'] = 'scr_ba_club',
-                    ['effect'] = 'scr_ba_club_smoke_machine',
-                },
-
-                ['position'] = vector3(-1391.5, -604.2, 30.04),
-                ['heading'] = 185.11,
-                ['color'] = {255, 215, 83}
-            },
-
-            {
-                ['hash'] = 'ba_prop_club_smoke_machine',
-                ['visible'] = true,
-
-                ['fx'] = {
-                    ['library'] = 'scr_ba_club',
-                    ['effect'] = 'scr_ba_club_smoke_machine',
-                },
-
-                ['position'] = vector3(-1391.17, -607.68, 37.7),
-                ['heading'] = 356.85,
-                ['color'] = {255, 215, 83}
-            },
-
-
-            {
-                ['hash'] = 'ba_prop_club_smoke_machine',
-                ['visible'] = false,
-
-                ['fx'] = {
-                    ['library'] = 'scr_ba_club',
-                    ['effect'] = 'scr_ba_club_smoke_machine',
-                },
-
-                ['position'] = vector3(-1375.0, -604.84, 33.65),
-                ['heading'] = 279.25,
-                ['color'] = {255, 215, 83}
-            },
-
-
-            {
-                ['hash'] = 'ba_prop_club_smoke_machine',
-                ['visible'] = false,
-
-                ['fx'] = {
-                    ['library'] = 'scr_ba_club',
-                    ['effect'] = 'scr_ba_club_smoke_machine',
-                },
-
-                ['position'] = vector3(-1399.64, -596.2, 33.3),
-                ['heading'] = 83.42,
-                ['color'] = {255, 215, 83}
-            }
-
-        },
-
-        ['sparklers'] = {
-            {
-                ['hash'] = 'prop_cs_pour_tube',
-                ['visible'] = true,
-
-                ['fx'] = {
-                    ['library'] = 'scr_ih_club',
-                    ['effect'] = 'scr_ih_club_sparkler',
-                },
-
-                ['position'] = vector3(-1392.22, -604.32, 32.39),
-                ['heading'] = 0.0,
-                ['color'] = {255, 215, 0}
-            },
-
-            {
-                ['hash'] = 'prop_cs_pour_tube',
-                ['visible'] = true,
-
-                ['fx'] = {
-                    ['library'] = 'scr_ih_club',
-                    ['effect'] = 'scr_ih_club_sparkler',
-                },
-
-                ['position'] = vector3(-1387.39, -605.8, 32.36),
-                ['heading'] = 0.0,
-                ['color'] = {255, 215, 0}
-            }
-        },
-
-        ['speakers'] = {
-            {
-                ['hash'] = 'ba_prop_battle_club_speaker_small',
-                ['visible'] = false,
-                ['position'] = vector3(-1399.78, -625.57, 34.76),
-                ['heading'] = 155.71,
-                ['soundOffset'] = vector3(0, 0, 1.0),
-                ['refDistance'] = 30.0,
-                ['lowPassGainReductionPercent'] = 0
-            },
-
-            {
-                ['hash'] = 'ba_prop_battle_club_speaker_small',
-                ['visible'] = false,
-                ['position'] = vector3(-1390.97, -590.46, 29.8),
-                ['heading'] = 348.7,
-                ['soundOffset'] = vector3(0, 0, 1.0),
-                ['refDistance'] = 20.0,
-                ['lowPassGainReductionPercent'] = 0
-            }
-        }
-    },
 
         -- Below you can find a full config entry reference.
 

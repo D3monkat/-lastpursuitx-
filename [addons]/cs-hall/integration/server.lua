@@ -14,7 +14,7 @@ local playerIdentifiersAsControllers = {
 
 local qbJobGlobalControllers = { -- QB jobs that can access /hall is all areas.
     {'dj', 2}, -- QB "dj" job with 2 grade level can access /hall in all areas.
-    'catcafe', -- QB "dj" job can access /hall in all areas regardless of grade level.
+     -- QB "dj" job can access /hall in all areas regardless of grade level.
     'mechanic',
 }
 
@@ -26,6 +26,14 @@ local qbJobAreaControllers = { -- QB jobs that can access /hall is specific area
     ['fivedevs_vanilla_unicorn'] = {
         {'nightclub', 0},
         'nightclub'
+    },
+    ['party_kawaii_universestore'] = {
+        {'catcafe', 0},
+        'catcafe'
+    },
+    ['uwucafe'] = {
+        {'catcafe', 0},
+        'catcafe'
     }
 }
 
