@@ -3262,7 +3262,7 @@ config = {
                 },
             }
         },
-        ['blueline'] = {
+        ['shopbluelinecustoms'] = {
             ['enabled'] = true,
             ['autoAdjustTime'] = false,
             ['idleWallpaperUrl'] = 'https://cfx-nui-' .. GetCurrentResourceName() .. '/client/dui/images/wallpaper.png',
@@ -3289,7 +3289,7 @@ config = {
         
             ['area'] = {
                 ['range'] = 36.0,
-                ['center'] = vector3(-333.93, -134.34, 39.34),
+                ['center'] = vector3(-13.393, -1666.911, 29.491),
                 ['height'] = nil,
         
                 ['polygons'] = {
@@ -3305,15 +3305,12 @@ config = {
                             },
         
                             ['points'] = {
-                                vector2(-356.728, -138.26),
-                                vector2(-350.052, -150.356),
-                                vector2(-334.912, -168.418),
-                                vector2(-316.943, -162.325),
-                                vector2(-308.323, -123.81),
-                                vector2(-316.692, -107.156),
-                                vector2(-313.119, -95.559),
-                                vector2(-351.486, -81.595),
-                                vector2(-354.932, -133.447)
+                                vector2(9.178, -1664.905),
+                                vector2(-13.105, -1651.272),
+                                vector2(-27.376, -1670.562),
+                                vector2(-22.273, -1670.203),
+                                vector2(-10.791, -1679.204),
+                                vector2(0.715, -1674.726)
                             }
                         }
                     }
@@ -3339,7 +3336,7 @@ config = {
                 {
                     ['hash'] = 'ba_prop_battle_club_speaker_large',
                     ['visible'] = false,
-                    ['position'] = vector3(-320.44, -164.27, 40.99),
+                    ['position'] = vector3(4.291, -1670.719, 30.051),
                     ['rotation'] = nil,
                     ['heading'] = 200.19,
                     ['lodDistance'] = nil,
@@ -3359,7 +3356,7 @@ config = {
                 {
                     ['hash'] = 'ba_prop_battle_club_speaker_large',
                     ['visible'] = false,
-                    ['position'] = vector3(-307.73, -131.3, 40.99), --- vector3(-591.2, -1064.29, 24.84)
+                    ['position'] = vector3(-10.321, -1678.82, 30.615), --- vector3(-591.2, -1064.29, 24.84)
                     ['rotation'] = nil,
                     ['heading'] = 16.66,
                     ['lodDistance'] = nil,
@@ -3379,7 +3376,7 @@ config = {
                 {
                     ['hash'] = 'ba_prop_battle_club_speaker_large',
                     ['visible'] = false,
-                    ['position'] = vector3(-322.63, -118.58, 39.01), --- vector3(-591.2, -1064.29, 24.84)
+                    ['position'] = vector3(-23.748, -1664.491, 31.332), --- vector3(-591.2, -1064.29, 24.84)
                     ['rotation'] = nil,
                     ['heading'] = 151.7,
                     ['lodDistance'] = nil,
@@ -3399,7 +3396,7 @@ config = {
                 {
                     ['hash'] = 'ba_prop_battle_club_speaker_large',
                     ['visible'] = false,
-                    ['position'] = vector3(-353.55, -144.35, 39.01), --- vector3(-591.2, -1064.29, 24.84)
+                    ['position'] = vector3(-15.528, -1654.741, 32.401), --- vector3(-591.2, -1064.29, 24.84)
                     ['rotation'] = nil,
                     ['heading'] = 296.62,
                     ['lodDistance'] = nil,
