@@ -11,9 +11,7 @@ QBShared.Jobs = {
 	garbage = { label = 'Garbage', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Collector', payment = 50 } } },
 	vineyard = { label = 'Vineyard', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Picker', payment = 50 } } },
 	hotdog = { label = 'Hotdog', defaultDuty = true, offDutyPay = false, grades = { ['0'] = { name = 'Sales', payment = 50 } } },
-
-
-	whitewidow = {
+    whitewidow = {
 		label = 'White Widow',
 		defaultDuty = true,
 		offDutyPay = false,
@@ -50,8 +48,7 @@ QBShared.Jobs = {
             },
         },
 	},
-
-	police = {
+    police = {
 		label = 'Law Enforcement',
 		type = 'leo',
 		defaultDuty = true,
@@ -71,8 +68,7 @@ QBShared.Jobs = {
 			['12'] = { name = 'Chief Of Police', payment = 473, isboss = true, bankAuth = true },
 		},
 	},
-	
-    bcso = {
+	bcso = {
         label = 'Blaine County Sheriffs Office',
         type = "leo",
         defaultDuty = true,
@@ -91,8 +87,7 @@ QBShared.Jobs = {
 			['10'] = { name = 'Sheriff', payment = 473, isboss = true, bankAuth = true },
         },
     },
-
-	sast = {
+    sast = {
 		label = 'SAST',
 		type = 'leo',
 		defaultDuty = true,
@@ -122,8 +117,7 @@ QBShared.Jobs = {
 			['21'] = { name = 'Commissioner', payment = 993, bankAuth = true },	
 		},
 	},
-
-	beanmachine = {
+    beanmachine = {
 		label = 'Bean Machine',
 		defaultDuty = true,
 		grades = {
@@ -146,8 +140,7 @@ QBShared.Jobs = {
 			['4'] = { name = 'Manager', isboss = true, payment = 419, bankAuth = true  },
         },
 	},
-
-	catcafe = {
+    catcafe = {
 		label = 'Cat Cafe',
 		defaultDuty = true,
 		grades = {
@@ -200,9 +193,7 @@ QBShared.Jobs = {
             },
         },
     },
-
-
-	ambulance = {
+    ambulance = {
 		label = 'EMS',
 		type = 'ems',
 		defaultDuty = true,
