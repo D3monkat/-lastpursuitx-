@@ -2,7 +2,7 @@
 
 Config.Locations["galaxy"] = {
     zoneEnable = true,
-    job = "galaxy",
+    job = "nightclub",
     --gang = "lostmc",
     label = "Galaxy Nightclub",
     logo = "https://i.imgur.com/usIc09I.png",
