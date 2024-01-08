@@ -67,3 +67,16 @@ RegisterServerEvent("snipe-menu:server:wipePlayer", function(id)
         end
     end
 end)
+
+AddEventHandler('playerConnecting', function(playerName, setKickReason, deferrals)
+    deferrals.defer()
+    local playerId = source -- added
+    local isBanned, Reason = IsPlayerBanned(playerId) -- added
+    
+        
+    if isBanned then -- added
+        deferrals.done(Reason) -- added
+    else -- added
+        deferrals.done()
+    end -- added
+end)

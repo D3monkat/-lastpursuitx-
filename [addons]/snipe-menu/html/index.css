@@ -664,6 +664,38 @@ input[type="number"] {
   --user-report-active-text-color: rgb(26, 185, 134);
   --admin-player-resource-bg: rgba(0, 255, 0, 0.2);
 }
+[data-theme="Emerald Coast Roleplay"] {
+  --menu-base-border: #8706b1;
+  --light-text: #c4e4fb;
+  --menu-base-bg: rgba(21, 5, 86, 0.875);
+  --inner-menu-bg: rgba(18, 10, 54, 0.775);
+  --horizontal-nav-bar-active-bg: rgba(12, 8, 33, 0.788);
+  --clicked-pane-non-panel: rgba(214, 12, 236, 0.548);
+  --even-pane-panel: rgba(152, 8, 168, 0.425);
+  --odd-pane-panel: rgba(84, 9, 92, 0.425);
+  --panel-title-color: #c4e4fb;
+  --input-txt-color: #c4e4fb;
+  --panel-input-bg-color: rgba(156, 163, 175, 0.2);
+  --panel-btns-bg: rgba(156, 163, 175, 0.2);
+  --panel-btns-hover: #1f2937;
+  --panel-btns-disabled: #6b7280;
+  --spinner-outer-ring-bg: #6b7280;
+  --spinner-small-ring-color: rgba(15, 15, 15, 0.6);
+  --input-error-color: #dc2626;
+  --dropdown-menu-bg: rgba(75, 85, 99, 0.5);
+  --dropdown-menu-text: #e0e7ff;
+  --dropdown-menu-hover: #1f2937;
+  --dropdown-chevron: #e0e7ff;
+  --admin-settings-border-bottom: #4b5563;
+  --admin-settings-drop-down-bg: rgba(75, 85, 99, 0.3);
+  --admin-settings-drop-down-text: #e0e7ff;
+  --admin-settings-drop-down-hover: #1f2937;
+  --admin-settings-save-btn-hover-bg: #1f2937;
+  --admin-settings-save-btn-hover-bg-text: #ffffff;
+  --vertical-menu-icon-bg: #ffffff;
+  --vertical-menu-icon-bg-hover: #4b5563;
+  --admin-player-resource-bg: rgba(0, 255, 0, 0.2);
+}
 .admin-settings-search-bar {
   height: 3vw;
   border-bottom: 0.01vw solid var(--admin-settings-border-bottom);
@@ -1834,93 +1866,93 @@ video {
 
 
 @media screen and (width: 2560px) and (height: 1080px) {
-  .menu-base,
-  .inner {
-    height: 82.5vh;
+    .menu-base,
+    .inner {
+      height: 82.5vh;
+    }
+    .inner .item-rows {
+      height: 67.5vh;
+    }
+    .inner .body-wrapper .item-rows {
+      height: 64vh;
+    }
+    .report-send-message-wrapper {
+      top: 30vw;
+    }
   }
-  .inner .item-rows {
-    height: 67.5vh;
+  @media screen and (width: 3440px) and (height: 1440px) {
+    .menu-base,
+    .inner {
+      height: 82.5vh;
+    }
+    .inner .item-rows {
+      height: 67.5vh;
+    }
+    .inner .body-wrapper .item-rows {
+      height: 64vh;
+    }
+    .report-send-message-wrapper {
+      top: 29.5vw;
+    }
+    .admin-settings-show-drop-down {
+      max-height: 16.5vw;
+    }
+    .main-body .svelte-1dg44qv {
+      height: 28.5vw;
+    }
   }
-  .inner .body-wrapper .item-rows {
-    height: 64vh;
+  @media screen and (width: 3840px) and (height: 1080px) {
+    .expander {
+      margin-top: 2vw;
+    }
+    .menu-base {
+      margin-top: 2vw;
+      height: 24vw;
+    }
+    .inner {
+      height: 24vh;
+    }
+    .inner .itemrows {
+      height: 18vw;
+    }
+    .inner .main-body {
+      height: 23.5vw;
+    }
+    .inner .body-wrapper .item-rows,
+    .main-body {
+      height: 18vw;
+    }
+    .report-send-message-wrapper {
+      top: 13vw;
+    }
+    .inner .body-wrapper .item-rows {
+      height: 59vh;
+    }
+    .main-body {
+      height: 24vw;
+    }
+    .report-send-message-wrapper {
+      top: 19vw;
+    }
   }
-  .report-send-message-wrapper {
-    top: 30vw;
+  @media screen and (width: 3360px) and (height: 1440px) {
+    .menu-base,
+    .inner {
+      height: 82.5vh;
+    }
+    .inner .item-rows {
+      height: 67.5vh;
+    }
+    .inner .body-wrapper .item-rows {
+      height: 64vh;
+    }
+    .report-send-message-wrapper {
+      top: 29.5vw;
+    }
+    .admin-settings-show-drop-down {
+      height: 16.5vw;
+    }
+    .main-body .svelte-1dg44qv {
+      height: 28.5vw;
+    }
   }
-}
-@media screen and (width: 3440px) and (height: 1440px) {
-  .menu-base,
-  .inner {
-    height: 82.5vh;
-  }
-  .inner .item-rows {
-    height: 67.5vh;
-  }
-  .inner .body-wrapper .item-rows {
-    height: 64vh;
-  }
-  .report-send-message-wrapper {
-    top: 29.5vw;
-  }
-  .admin-settings-show-drop-down {
-    max-height: 16.5vw;
-  }
-  .main-body .svelte-1dg44qv {
-    height: 28.5vw;
-  }
-}
-@media screen and (width: 3840px) and (height: 1080px) {
-  .expander {
-    margin-top: 2vw;
-  }
-  .menu-base {
-    margin-top: 2vw;
-    height: 24vw;
-  }
-  .inner {
-    height: 24vh;
-  }
-  .inner .itemrows {
-    height: 18vw;
-  }
-  .inner .main-body {
-    height: 23.5vw;
-  }
-  .inner .body-wrapper .item-rows,
-  .main-body {
-    height: 18vw;
-  }
-  .report-send-message-wrapper {
-    top: 13vw;
-  }
-  .inner .body-wrapper .item-rows {
-    height: 59vh;
-  }
-  .main-body {
-    height: 24vw;
-  }
-  .report-send-message-wrapper {
-    top: 19vw;
-  }
-}
-@media screen and (width: 3360px) and (height: 1440px) {
-  .menu-base,
-  .inner {
-    height: 82.5vh;
-  }
-  .inner .item-rows {
-    height: 67.5vh;
-  }
-  .inner .body-wrapper .item-rows {
-    height: 64vh;
-  }
-  .report-send-message-wrapper {
-    top: 29.5vw;
-  }
-  .admin-settings-show-drop-down {
-    height: 16.5vw;
-  }
-  .main-body .svelte-1dg44qv {
-    height: 28.5vw;
-  }
-}
