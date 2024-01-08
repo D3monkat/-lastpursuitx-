@@ -1,7 +1,7 @@
 Config = {
 	Lan = "en", -- Pick your language file here
 	System = {
-		Debug = false, -- Set to true to show green debug boxes to help track any issues
+		Debug = true, -- Set to true to show green debug boxes to help track any issues
 
 		img = "ox_inventory/web/images/", 	-- Set this to the directory for your inventory image files
 											-- "ox_inventory/web/images/", "qb-inventory/html/images", "lj-inventory/html/images"
