@@ -275,7 +275,8 @@ QBShared.Jobs = {
 		offDutyPay = false,
 		grades = {
 			['0'] = { name = 'Renter', payment = 240 },
-			['1'] = { name = 'Owner', payment = 317 },
+			['1'] = { name = 'Security', payment = 250 },
+			['2'] = { name = 'Owner', payment = 317 },
 		},
 	},
 	shoptuner = {
