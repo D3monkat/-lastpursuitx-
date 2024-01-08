@@ -15,7 +15,7 @@
       <animConvRoofName>426</animConvRoofName>
       <animConvRoofWindowsAffected />
       <ptfxAssetName>null</ptfxAssetName>
-      <audioNameHash>MONSTER</audioNameHash>
+      <audioNameHash>gauntlet2</audioNameHash>
       <layout>LAYOUT_STD_HIGHWINDOW</layout>
       <coverBoundOffsets>SHERIFF_COVER_OFFSET_INFO</coverBoundOffsets>
       <explosionInfo>EXPLOSION_INFO_DEFAULT</explosionInfo>

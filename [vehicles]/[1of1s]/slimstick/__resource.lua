@@ -7,18 +7,6 @@ files {
 	'data/**/handling.meta',
 	'data/**/vehiclelayouts.meta',
 	'data/**/vehicles.meta',
-
- 
-
-	
-	'audioconfig/demonengine_game.dat151.rel',
-	'audioconfig/demonengine_sounds.dat54.rel',
-	
-	'sfx/dlc_demonengine/demonengine.awc',
-	'sfx/dlc_demonengine/demonengine.awc',
-	
-
-
 }
 
 	data_file 'VEHICLE_LAYOUTS_FILE'	'data/**/vehiclelayouts.meta'
@@ -26,13 +14,6 @@ files {
 	data_file 'VEHICLE_METADATA_FILE'	'data/**/vehicles.meta'
 	data_file 'CARCOLS_FILE'			'data/**/carcols.meta'
 	data_file 'VEHICLE_VARIATION_FILE'	'data/**/carvariations.meta'
-
-
 	
-	data_file 'AUDIO_GAMEDATA' 'audioconfig/demonengine_game.dat151'
-	data_file 'AUDIO_SOUNDDATA' 'audioconfig/demonengine_sounds.dat54'
-	data_file 'AUDIO_WAVEPACK' 'sfx/dlc_demonengine'
-	
-
-
-	client_script 'veh_label.lua'
+	-- specfiy the names of the items being added within this (same as in the lang file in a dlc pack(kinda, the formatting is different))
+client_script 'names.lua'
