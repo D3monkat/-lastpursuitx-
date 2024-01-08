@@ -831,7 +831,7 @@ local Vehicles = {
     {model = 'GODz22LIGHTNINGWB', name = 'GODz22LIGHTNINGWB', brand = 'Electric', price = 70000, category = 'Electric', type = 'automobile', shop = 'pdm'}, 
     {model = 'GODzBANSHEE', name = 'GODzBANSHEE', brand = 'Electric', price = 65000, category = 'Electric', type = 'automobile', shop = 'pdm'}, 
     {model = 'GODzBANSHEEM', name = 'GODzBANSHEEM', brand = 'Electric', price = 3510, category = 'Electric', type = 'automobile', shop = 'pdm'}, 
-    {model = 'GODzHUMMEREV', name = 'GODzHUMMEREV', brand = 'Electric', price = 3141310, category = 'Electric', type = 'automobile', shop = 'pdm'}, 
+    {model = 'GODzHUMMEREV', name = 'GODzHUMMEREV', brand = 'Electric', price = 96000, category = 'Electric', type = 'automobile', shop = 'pdm'}, 
     {model = 'GODzMACHE1400', name = 'GODzMACHE1400', brand = 'Electric', price = 75000, category = 'Electric', type = 'automobile', shop = 'pdm'}, 
 
     -- WIP
