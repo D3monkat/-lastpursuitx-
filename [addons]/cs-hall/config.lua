@@ -3414,6 +3414,158 @@ config = {
                 },
             }
         },
+        ['hornys'] = {
+            ['enabled'] = true,
+            ['autoAdjustTime'] = false,
+            ['idleWallpaperUrl'] = 'https://cfx-nui-' .. GetCurrentResourceName() .. '/client/dui/images/wallpaper.png',
+            ['maxVolumePercent'] = 150,
+            ['smokeFxMultiplier'] = 3,
+            ['smokeTimeoutMs'] = 5000,
+            ['sparklerFxMultiplier'] = 1,
+            ['sparklerTimeoutMs'] = 1500,
+            ['delayBetweenSmokeChainMs'] = 1500,
+            ['delayToTriggerBassEffectsAfterPlayingMs'] = 2500,
+            ['featureDelayWithControllerInterfaceClosedMs'] = 500,
+        
+            ['bass'] = {
+                ['smoke'] = {
+                    ['cooldownMs'] = 30000,
+                    ['colorWithDynamicSpotlights'] = true
+                },
+        
+                ['sparklers'] = {
+                    ['cooldownMs'] = 30000,
+                    ['colorWithDynamicSpotlights'] = true
+                }
+            },
+        
+            ['area'] = {
+                ['range'] = 26.0,
+                ['center'] = vector3(1243.595, -360.026, 69.629),
+                ['height'] = nil,
+        
+                ['polygons'] = {
+                    ['applyLowPassFilterOutside'] = false,
+                    ['invertLowPassApplication'] = false,
+                    ['hideReplacersOutside'] = true,
+        
+                    ['entries'] = {
+                        {
+                            ['height'] = {
+                                ['min'] = 37.0,
+                                ['max'] = 40.0
+                            },
+        
+                            ['points'] = {
+                                vector2(1233.451, -363.446),
+                                vector2(1250.249, -368.223),
+                                vector2(1254.859, -351.286),
+                                vector2(1251.593, -350.372),
+                                vector2(1250.168, -353.508),
+                                vector2(1238.015, -347.526)
+                            }
+                        }
+                    }
+                }
+            },
+        
+            ['disableEmitters'] = nil,
+            ['scaleform'] = nil,
+        
+            ['replacers'] = {
+                ['ba_prop_battle_club_screen'] = 'script_rt_club_tv',
+                ['ba_prop_battle_club_projector'] = 'script_rt_club_projector'
+            },
+        
+            ['monitors'] = nil,
+            ['screens'] = nil,
+             
+            ['spotlights'] = nil,
+        
+            ['smokers'] = nil,
+        
+            ['speakers'] = {
+                {
+                    ['hash'] = 'ba_prop_battle_club_speaker_large',
+                    ['visible'] = false,
+                    ['position'] = vector3(1234.041, -363.285, 70.121),
+                    ['rotation'] = nil,
+                    ['heading'] = 200.19,
+                    ['lodDistance'] = nil,
+                    ['soundOffset'] = vector3(0.0, 0.0, 1.0),
+                    ['directionOffset'] = nil,
+                    ['maxDistance'] = 50.0,
+                    ['refDistance'] = 24.0,
+                    ['rolloffFactor'] = 1.25,
+                    ['coneInnerAngle'] = 90,
+                    ['coneOuterAngle'] = 180,
+                    ['coneOuterGain'] = 0.5,
+                    ['fadeDurationMs'] = 250,
+                    ['volumeMultiplier'] = 1.0,
+                    ['lowPassGainReductionPercent'] = 0
+                },
+        
+                {
+                    ['hash'] = 'ba_prop_battle_club_speaker_large',
+                    ['visible'] = false,
+                    ['position'] = vector3(1250.316, -368.283, 70.309), --- vector3(-591.2, -1064.29, 24.84)
+                    ['rotation'] = nil,
+                    ['heading'] = 16.66,
+                    ['lodDistance'] = nil,
+                    ['soundOffset'] = vector3(0.0, 0.0, 1.0),
+                    ['directionOffset'] = nil,
+                    ['maxDistance'] = 50.0,
+                    ['refDistance'] = 24.0,
+                    ['rolloffFactor'] = 1.25,
+                    ['coneInnerAngle'] = 90,
+                    ['coneOuterAngle'] = 180,
+                    ['coneOuterGain'] = 0.5,
+                    ['fadeDurationMs'] = 250,
+                    ['volumeMultiplier'] = 1.0,
+                    ['lowPassGainReductionPercent'] = 0
+                },
+
+                {
+                    ['hash'] = 'ba_prop_battle_club_speaker_large',
+                    ['visible'] = false,
+                    ['position'] = vector3(1254.818, -351.269, 70.113), --- vector3(-591.2, -1064.29, 24.84)
+                    ['rotation'] = nil,
+                    ['heading'] = 151.7,
+                    ['lodDistance'] = nil,
+                    ['soundOffset'] = vector3(0.0, 0.0, 1.0),
+                    ['directionOffset'] = nil,
+                    ['maxDistance'] = 50.0,
+                    ['refDistance'] = 24.0,
+                    ['rolloffFactor'] = 1.25,
+                    ['coneInnerAngle'] = 90,
+                    ['coneOuterAngle'] = 180,
+                    ['coneOuterGain'] = 0.5,
+                    ['fadeDurationMs'] = 250,
+                    ['volumeMultiplier'] = 1.0,
+                    ['lowPassGainReductionPercent'] = 0
+                },
+        
+                {
+                    ['hash'] = 'ba_prop_battle_club_speaker_large',
+                    ['visible'] = false,
+                    ['position'] = vector3(1241.641, -349.918, 69.929), --- vector3(-591.2, -1064.29, 24.84)
+                    ['rotation'] = nil,
+                    ['heading'] = 296.62,
+                    ['lodDistance'] = nil,
+                    ['soundOffset'] = vector3(0.0, 0.0, 1.0),
+                    ['directionOffset'] = nil,
+                    ['maxDistance'] = 50.0,
+                    ['refDistance'] = 24.0,
+                    ['rolloffFactor'] = 1.25,
+                    ['coneInnerAngle'] = 90,
+                    ['coneOuterAngle'] = 180,
+                    ['coneOuterGain'] = 0.5,
+                    ['fadeDurationMs'] = 250,
+                    ['volumeMultiplier'] = 1.0,
+                    ['lowPassGainReductionPercent'] = 0
+                },
+            }
+        },
         ['tuners'] = {
             ['enabled'] = true,
             ['autoAdjustTime'] = false,
