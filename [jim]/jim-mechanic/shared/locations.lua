@@ -218,7 +218,7 @@ Config.Locations[#Config.Locations+1] = { --[[ RFC LS CUSTOMS ]]--
 		{ coords = vector4(3.22, -1665.81, 33.22, 332.7), w = 1.0, d = 1.4, },
 	},
     crafting = {
-        { coords = vector4(-13.68, -1656.67, 30.5, 314.1), w = 1.4, d = 2.2, },
+        { coords = vector4(-13.68, -1656.67, 29.41, 314.1), w = 1.4, d = 2.2, },
     },
     clockin     = {
         { coords = vector4(-23.08, -1663.35, 30.58, 33.63), prop = false, },
