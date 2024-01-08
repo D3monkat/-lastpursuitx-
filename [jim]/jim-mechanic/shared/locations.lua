@@ -199,8 +199,8 @@ Config.Locations[#Config.Locations+1] = { --[[ RFC LS CUSTOMS ]]--
     Enabled = true,
     job = "shopbluelinecustoms",
     zones = {
-        vector2(4.09, -1670.679),
-        vector2(-15.726, -1654.607),
+        vector2(8.903, -1664.435),
+        vector2(-12.887, -1651.701),
         vector2(-26.549, -1670.801),
         vector2(-36.086, -1678.162),
         vector2(-47.601, -1668.066),
