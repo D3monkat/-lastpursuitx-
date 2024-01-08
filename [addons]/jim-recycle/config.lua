@@ -153,8 +153,8 @@ Config = {
 	},
 	RecycleAmounts = {
 		["Recycle"] = {
-			Min = 2*10,
-			Max = 2*25,
+			Min = 10,
+			Max = 25,
 		},
 		["Trade"] = {
 			{ amount = 1, itemGive = 1, Min = 1, Max = 1, },
