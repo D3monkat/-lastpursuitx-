@@ -174,7 +174,7 @@ Config = {
 		},
 		LockEmergency = true,  -- Enable this to lock make only "Emergency" (Class 18) vehicles to be used with the bench
 		Locations = {
-			{ coords = vec4(451.05, -973.19, 25.7, 180.0), prop = true, }, -- MRPD UNDERGROUND PARKING
+			{ coords = vector4(457.42, -975.33, 25.71, 87.42), prop = true, }, -- MRPD UNDERGROUND PARKING
 			{ coords = vector4(1842.3, 3692.29, 33.97, 30.0), prop = true, }, -- sspd
 			{ coords = vector4(-483.23, -337.88, 34.5, 258.38), prop = true, }, -- zonah
 		},
