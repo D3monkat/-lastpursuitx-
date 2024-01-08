@@ -67,6 +67,9 @@ CodeStudio.Locations = {
         ['nightclub'] = {
             vector4(137.05, -1289.24, 29.25, 65.99),
         },
+        ['hornys'] = {
+            vector4(1238.311, -348.805, 69.082, 258.239),
+        },
     },
 
 
@@ -107,6 +110,7 @@ CodeStudio.BossMenu = {
     ['burgershot'] = {4},
     ['shopbluelinecustoms'] = {100},
     ['nightclub'] = {1},
+    ['hornys'] = {4},
 }
 
 
