@@ -206,7 +206,7 @@ Config.Locations[#Config.Locations+1] = { --[[ RFC LS CUSTOMS ]]--
         vector2(-47.601, -1668.066),
         vector2(-63.831, -1687.182),
         vector2(-54.333, -1697.307),
-        vector2(-12.09, -1680.206)
+        vector2(-4.992, -1681.592)
     },
     autoClock = { enter = false, exit = false, },
     stash = {
