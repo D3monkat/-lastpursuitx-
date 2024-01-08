@@ -119,9 +119,7 @@ QBShared.Jobs = {
 			['18'] = { name = 'Colonel', payment = 810 },
 			['19'] = { name = 'Deputy Commissioner', payment = 867, bankAuth = true },
 			['20'] = { name = 'Asst. Commissioner', payment = 928, bankAuth = true },
-			['21'] = { name = 'Commissioner', payment = 993, bankAuth = true },
-			
-			
+			['21'] = { name = 'Commissioner', payment = 993, bankAuth = true },	
 		},
 	},
 
