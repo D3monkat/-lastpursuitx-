@@ -230,7 +230,7 @@ Config.Locations[#Config.Locations+1] = { --[[ RFC LS CUSTOMS ]]--
         -- { coords = vec4(-316.65, -133.79, 39.00, 250), use = true }, -- Bay 1 [GTA Prop]
     },
     manualRepair = {
-        { coords = vector4(-25.32, -1685.7, 29.58, 28.55), prop = true, },
+        { coords = vector4(-25.32, -1685.7, 29.58, 28.55), prop = false, },
     },
 	-- garage = { -- requires jim-jobgarge
     --     spawn = vec4(-49.14, -1031.25, 27.76, 339.67),
@@ -240,7 +240,7 @@ Config.Locations[#Config.Locations+1] = { --[[ RFC LS CUSTOMS ]]--
     -- },
     payments = {
         img = "<center><p><img src=https://i.imgur.com/74UVnCb.jpeg width=150px></p>",
-        { coords = vector4(-12.4, -1654.24, 30.39, 228.87), prop = false },
+        { coords = vector4(-12.4, -1654.24, 29.89, 228.87), prop = false },
     },
     Restrictions = { -- Remove what you DON'T what the location to be able to edit
         Vehicle = { "Compacts", "Sedans", "SUVs", "Coupes", "Muscle", "Sports Classics", "Sports", "Super", "Motorcycles", "Off-road", "Industrial", "Utility", "Vans", "Cycles", "Service", "Emergency", "Commercial", },
