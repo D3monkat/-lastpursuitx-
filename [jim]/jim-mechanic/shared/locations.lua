@@ -197,7 +197,7 @@ Config.Locations[#Config.Locations+1] = { --[[ GABZ LS TUNER SHOP ]]--
 
 Config.Locations[#Config.Locations+1] = { --[[ RFC LS CUSTOMS ]]--
     Enabled = true,
-    job = "blueline",
+    job = "shopbluelinecustoms",
     zones = {
         vec2(-357.11694335938, -138.5697479248),
         vec2(-350.16461181641, -150.59289550781),

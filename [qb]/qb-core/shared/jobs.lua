@@ -325,7 +325,7 @@ QBShared.Jobs = {
 			['5'] = { name = 'Owner', isboss = true, payment = 483, bankAuth = true },
 		},
 	},
-	blueline = {
+	shopbluelinecustoms = {
 		label = 'Blueline Towing',
 		type = 'mechanic',
 		defaultDuty = true,
@@ -337,6 +337,7 @@ QBShared.Jobs = {
 			['3'] = { name = 'Advanced', payment = 365 },
 			['4'] = { name = 'Manager', isboss = true, payment = 419, bankAuth = true }, 
 			['5'] = { name = 'Owner', isboss = true, payment = 483, bankAuth = true },
+			['100'] = { name = 'Owner', isboss = true, payment = 483, bankAuth = true },
 		},
 	},
 	shoplux = {
