@@ -62,7 +62,7 @@ CodeStudio.Locations = {
             vector4(-1178.39, -895.83, 13.97, 142.05),
         },
         ['shopbluelinecustoms'] = {
-            vector4(-348.54, -131.14, 42.04, 345.92),
+            vector4(-12.63, -1651.78, 29.49, 195.8),
         },
         ['nightclub'] = {
             vector4(137.05, -1289.24, 29.25, 65.99),

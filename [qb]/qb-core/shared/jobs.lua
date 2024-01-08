@@ -316,7 +316,7 @@ QBShared.Jobs = {
 		},
 	},
 	shopbluelinecustoms = {
-		label = 'Blueline Towing',
+		label = 'Blueline Customs',
 		type = 'mechanic',
 		defaultDuty = true,
 		offDutyPay = false,

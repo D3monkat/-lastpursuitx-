@@ -211,31 +211,26 @@ Config.Locations[#Config.Locations+1] = { --[[ RFC LS CUSTOMS ]]--
     },
     autoClock = { enter = false, exit = false, },
     stash = {
-        { coords = vec4(-329.54, -112.39, 39.0-0.4, 340.92), w = 0.6, d = 3.6, },
-        { coords = vec4(-322.47, -114.78, 38.95-0.4, 343.93), w = 0.6, d = 3.6, },
+        { coords = vector4(-12.6, -1677.02, 29.5, 144.6), w = 0.8, d = 3.6, },
+        { coords = vector4(-7.52, -1657.34, 33.22, 315.33), w = 0.6, d = 3.6, },
     },
     store = {
-		{ coords = vec4(-334.64, -164.61, 39.01-0.4, 70.08), w = 1.0, d = 1.4, },
+		{ coords = vector4(3.22, -1665.81, 33.22, 332.7), w = 1.0, d = 1.4, },
 	},
     crafting = {
-        { coords = vec4(-314.61, -157.33, 39.04-0.4, 253.75), w = 1.4, d = 2.2, },
-        { coords = vec4(-310.28, -145.19, 39.12-0.4, 255.76), w = 1.4, d = 2.2, },
-        { coords = vec4(-306.29, -135.03, 39.11-0.4, 258.35), w = 1.4, d = 2.2, },
-        { coords = vec4(-319.82, -119.97, 38.81-0.4, 335.43), w = 1.4, d = 2.2, },
+        { coords = vector4(-13.68, -1656.67, 30.5, 314.1), w = 1.4, d = 2.2, },
     },
     clockin     = {
-        { coords = vec4(-345.9, -130.4, 38.94, 244.06), prop = false, },
-        { coords = vec4(-350.0, -150.9, 39.31, 160.92), prop = false, },
-        { coords = vec4(-347.52, -130.47, 41.9, 250), prop = false, },
+        { coords = vector4(-23.08, -1663.35, 30.58, 33.63), prop = false, },
     },
     carLift = {
         -- { coords = vec4(-334.65, -136.87, 39.00, 340), use = false }, -- Bay 4 [GTA Prop]
-        { coords = vec4(-324.56, -155.07, 39.00, 250), use = true }, -- Bay 3 [GTA Prop]
-        { coords = vec4(-320.22, -144.26, 39.00, 250), use = true }, -- Bay 2 [GTA Prop]
-        { coords = vec4(-316.65, -133.79, 39.00, 250), use = true }, -- Bay 1 [GTA Prop]
+        -- { coords = vec4(-324.56, -155.07, 39.00, 250), use = true }, -- Bay 3 [GTA Prop]
+        -- { coords = vec4(-320.22, -144.26, 39.00, 250), use = true }, -- Bay 2 [GTA Prop]
+        -- { coords = vec4(-316.65, -133.79, 39.00, 250), use = true }, -- Bay 1 [GTA Prop]
     },
     manualRepair = {
-        { coords = vector4(-337.34, -132.77, 38.98, 250), prop = false, },
+        { coords = vector4(-25.32, -1685.7, 29.58, 28.55), prop = true, },
     },
 	-- garage = { -- requires jim-jobgarge
     --     spawn = vec4(-49.14, -1031.25, 27.76, 339.67),
@@ -245,20 +240,18 @@ Config.Locations[#Config.Locations+1] = { --[[ RFC LS CUSTOMS ]]--
     -- },
     payments = {
         img = "<center><p><img src=https://i.imgur.com/74UVnCb.jpeg width=150px></p>",
-        { coords = vec4(-346.42, -131.81, 39.01, 340), prop = false },
-        { coords = vec4(-344.19, -125.77, 39.01, 340), prop = false },
-        { coords = vec4(-361.8, -100.09, 39.55, 340), prop = false },
+        { coords = vector4(-12.4, -1654.24, 30.39, 228.87), prop = false },
     },
     Restrictions = { -- Remove what you DON'T what the location to be able to edit
         Vehicle = { "Compacts", "Sedans", "SUVs", "Coupes", "Muscle", "Sports Classics", "Sports", "Super", "Motorcycles", "Off-road", "Industrial", "Utility", "Vans", "Cycles", "Service", "Emergency", "Commercial", },
         Allow = { "tools", "cosmetics", "repairs", "nos", "perform" },
     },
     nosrefill = {
-        { coords = vec4(-334.52, -114.66, 39.00, 161.14) }
+        { coords = vector4(-0.07, -1674.49, 26.92, 234.75) }
     },
     blip = {
-        coords = vec3(-360.24, -124.11, 38.09),
-        label = "Bennys Workshop",
+        coords = vector3(-54.03, -1691.89, 29.49),
+        label = "Blueline Towing",
         color = 1,
         sprite = 446,
         disp = 6,
