@@ -220,7 +220,7 @@ Config.Locations[#Config.Locations+1] = { --[[ RFC LS CUSTOMS ]]--
         { coords = vector4(-13.68, -1656.67, 29.41, 314.1), w = 1.4, d = 2.2, },
     },
     clockin     = {
-        { coords = vector4(-23.08, -1663.35, 30.58, 29.63), prop = false, },
+        { coords = vector4(-22.568, -1663.806, 29.496, 52.036), prop = false, },
     },
     carLift = {
         -- { coords = vec4(-334.65, -136.87, 39.00, 340), use = false }, -- Bay 4 [GTA Prop]
