@@ -3262,7 +3262,7 @@ config = {
                 },
             }
         },
-        ['blueline'] = {
+        ['shopbluelinecustoms'] = {
             ['enabled'] = true,
             ['autoAdjustTime'] = false,
             ['idleWallpaperUrl'] = 'https://cfx-nui-' .. GetCurrentResourceName() .. '/client/dui/images/wallpaper.png',
