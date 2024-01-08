@@ -1523,6 +1523,48 @@ weapon_colbaton 			 = {name = 'weapon_colbaton', 		 	  	label = 'PD Baton', 				
     scrap3 				 	 	 = {name = 'scrap', 			    	    label = 'Scrap L', 			    	weight = 200, 	type = 'item', 		image = 'blowtorch.png', 			unique = false, 	useable = false, 	shouldClose = false,   combinable = nil,   description = '0x0x'},
 	kq_outfitbag 			 	 = {name = "kq_outfitbag", 				    label = "Outfit bag",	 		    weight = 4000, 		type = "item", 		image = "kq_outfitbag.png", 	    unique = false, 	useable = true, 	shouldClose = true,    combinable = nil,   description = "Holds different outfits"},
 
+    --Cocktails
+	b52 		 				= {name = "b52",  	     				label = "B-52",	 					weight = 200, 		type = "item", 		image = "b52.png", 			unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "B-52 Cocktail", ['thirst'] = math.random(20, 30) },
+	brussian 		 			= {name = "brussian",  	     			label = "Black Russian",	 		weight = 200, 		type = "item", 		image = "brussian.png", 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "Black Russian Cocktail", ['thirst'] = math.random(20, 30) },
+	bkamikaze 				 	= {name = "bkamikaze",  	     		label = "Blue Kamikaze",	 		weight = 200, 		type = "item", 		image = "bkamikaze.png", 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "Blue Kamikaze Cocktail", ['thirst'] = math.random(20, 30) },
+	cappucc 				 	= {name = "cappucc",  	     			label = "Cappuccinotini",	 		weight = 200, 		type = "item", 		image = "cappucc.png", 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "Cappuccinotini Cocktail", ['thirst'] = math.random(20, 30) },
+	ccookie 				 	= {name = "ccookie",  	     			label = "Cranberry Cookie",	 		weight = 200, 		type = "item", 		image = "ccookie.png", 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "Cranberry Cookie Cocktail", ['thirst'] = math.random(20, 30) },
+	iflag 				 		= {name = "iflag",  	     			label = "Irish Flag",	 			weight = 200, 		type = "item", 		image = "iflag.png", 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "Irish Flag Cocktail", ['thirst'] = math.random(20, 30) },
+	kamikaze 				 	= {name = "kamikaze",  	     			label = "Kamikaze",	 				weight = 200, 		type = "item", 		image = "kamikaze.png", 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "Kamikase Cocktail", ['thirst'] = math.random(20, 30) },
+	sbullet 		 			= {name = "sbullet",  	     			label = "Silver Bullet",	 		weight = 200, 		type = "item", 		image = "sbullet.png", 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "Silver Bullet Cocktail", ['thirst'] = math.random(20, 30) },
+	voodoo 		 				= {name = "voodoo",  	     			label = "Voodoo",	 				weight = 200, 		type = "item", 		image = "voodoo.png", 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "Voodoo Cocktail", ['thirst'] = math.random(20, 30) },
+	woowoo 		 				= {name = "woowoo",  	     			label = "Woo Woo",	 				weight = 200, 		type = "item", 		image = "woowoo.png", 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "Woowoo Cocktail", ['thirst'] = math.random(20, 30) },
+
+--Drink Ingredients
+	orange 				 		= {name = "orange",  	     			label = "Orange",	 				weight = 200, 		type = "item", 		image = "orange.png", 		unique = false, 	useable = false, 	shouldClose = false,   	combinable = nil,   description = "An Orange." },
+	lime 				 		= {name = "lime",  	     				label = "Lime",	 					weight = 200, 		type = "item", 		image = "lime.png", 		unique = false, 	useable = false, 	shouldClose = false,   	combinable = nil,   description = "A Lime." },
+	chocolate 				 	= {name = "chocolate",  		     	label = "Chocolate",	 			weight = 200, 		type = "item", 		image = "chocolate.png", 	unique = false, 	useable = false, 	shouldClose = false,   	combinable = nil,   description = "Chocolate Bar", ['hunger'] = math.random(20, 30) },
+
+	cranberry 				 	= {name = "cranberry",  	     		label = "Cranberry Juice",	 		weight = 200, 		type = "item", 		image = "cranberry.png", 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "Cranberry Juice", ['thirst'] = math.random(20, 30) },
+	schnapps 				 	= {name = "schnapps",  	     			label = "Peach Schnapps",	 		weight = 200, 		type = "item", 		image = "schnapps.png", 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "A bottle of Peach Schnapps", ['thirst'] = math.random(20, 30) },
+	gin 					 	= {name = "gin",  	     				label = "Gin",	 					weight = 200, 		type = "item", 		image = "gin.png", 			unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "A bottle of Gin", ['thirst'] = math.random(20, 30) },
+	scotch 					 	= {name = "scotch",  	     			label = "Scotch",	 				weight = 200, 		type = "item", 		image = "scotch.png", 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "A bottle of Scotch", ['thirst'] = math.random(20, 30) },
+	rum 					 	= {name = "rum",  	     				label = "Rum",	 					weight = 200, 		type = "item", 		image = "rum.png", 			unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "A bottle of Rum", ['thirst'] = math.random(20, 30) },
+	icream 					 	= {name = "icream",  	     			label = "Irish Cream",	 			weight = 200, 		type = "item", 		image = "icream.png", 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "A bottle of Irish Cream Liquer", ['thirst'] = math.random(20, 30) },
+	amaretto 					= {name = "amaretto",  	     			label = "Amaretto",	 				weight = 200, 		type = "item", 		image = "amaretto.png", 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "A bottle of Amaretto", ['thirst'] = math.random(20, 30) },
+	curaco 						= {name = "curaco",  	     			label = "Curaco",	 				weight = 200, 		type = "item", 		image = "curaco.png", 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "A bottle of Curaco", ['thirst'] = math.random(20, 30) },
+
+	--BEERS
+	ambeer 						= {name = "ambeer",  	    	 		label = "AM Beer",		 			weight = 100, 		type = "item", 		image = "ambeer.png", 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "", ['thirst'] = math.random(40, 50) },
+	dusche 						= {name = "dusche",  	    	 		label = "Dusche Gold",		 		weight = 100, 		type = "item", 		image = "dusche.png", 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "", ['thirst'] = math.random(40, 50) },
+	logger 						= {name = "logger",  	    	 		label = "Logger Beer",		 		weight = 100, 		type = "item", 		image = "logger.png", 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "", ['thirst'] = math.random(40, 50) },
+	pisswasser 					= {name = "pisswasser",  	    	 	label = "Pißwasser",		 		weight = 100, 		type = "item", 		image = "pisswaser1.png", 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "", ['thirst'] = math.random(40, 50) },
+	pisswasser2 				= {name = "pisswasser2",  	    	 	label = "Pißwasser Stout",		 	weight = 100, 		type = "item", 		image = "pisswaser2.png", 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "", ['thirst'] = math.random(40, 50) },
+	pisswasser3 				= {name = "pisswasser3",  	    	 	label = "Pißwasser Pale Ale",		weight = 100, 		type = "item", 		image = "pisswaser3.png", 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "", ['thirst'] = math.random(40, 50) },
+
+--SODA
+	sprunk 						= {name = "sprunk",  	    	 		label = "Sprunk",		 			weight = 100, 		type = "item", 		image = "sprunk.png", 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "", ['thirst'] = math.random(20, 30) },
+	sprunklight 				= {name = "sprunklight",  	    	 	label = "Sprunk Light",		 		weight = 100, 		type = "item", 		image = "sprunklight.png", 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "", ['thirst'] = math.random(20, 30) },
+	ecola 						= {name = "ecola",  	    	 		label = "eCola",		 			weight = 100, 		type = "item", 		image = "ecola.png", 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "", ['thirst'] = math.random(20, 30) },
+	ecolalight 					= {name = "ecolalight",  	    	 	label = "eCola Light",		 		weight = 100, 		type = "item", 		image = "ecolalight.png", 	unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "", ['thirst'] = math.random(20, 30) },
+
+	crisps 						= {name = "crisps",  	    			label = "Crisps",					weight = 100, 		type = "item", 		image = "chips.png", 		unique = false, 	useable = true, 	shouldClose = true,   	combinable = nil,   description = "", ['hunger'] = math.random(20, 30) },
+
 
 
 }
