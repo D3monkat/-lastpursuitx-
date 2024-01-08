@@ -202,7 +202,7 @@ Config.Locations[#Config.Locations+1] = { --[[ RFC LS CUSTOMS ]]--
         vector2(8.903, -1664.435),
         vector2(-2.948, -1655.289),
         vector2(-13.096, -1651.391),
-        vector2(-26.549, -1670.801),
+        vector2(-27.342, -1668.105),
         vector2(-36.086, -1678.162),
         vector2(-47.601, -1668.066),
         vector2(-63.831, -1687.182),
