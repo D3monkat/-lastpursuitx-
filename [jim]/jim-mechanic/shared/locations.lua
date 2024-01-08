@@ -212,7 +212,6 @@ Config.Locations[#Config.Locations+1] = { --[[ RFC LS CUSTOMS ]]--
     autoClock = { enter = false, exit = false, },
     stash = {
         { coords = vector4(-12.6, -1677.02, 29.5, 144.6), w = 0.8, d = 3.6, },
-        { coords = vector4(-7.52, -1657.34, 33.22, 315.33), w = 0.6, d = 3.6, },
     },
     store = {
 		{ coords = vector4(3.22, -1665.81, 33.22, 332.7), w = 1.0, d = 1.4, },
@@ -221,7 +220,7 @@ Config.Locations[#Config.Locations+1] = { --[[ RFC LS CUSTOMS ]]--
         { coords = vector4(-13.68, -1656.67, 29.41, 314.1), w = 1.4, d = 2.2, },
     },
     clockin     = {
-        { coords = vector4(-23.08, -1663.35, 30.58, 33.63), prop = false, },
+        { coords = vector4(-23.08, -1663.35, 30.58, 31.63), prop = false, },
     },
     carLift = {
         -- { coords = vec4(-334.65, -136.87, 39.00, 340), use = false }, -- Bay 4 [GTA Prop]
