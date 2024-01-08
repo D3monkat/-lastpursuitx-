@@ -21,7 +21,7 @@ https://discord.gg/ZbmaduFFqv
 -- By Searching the phrase "--EDIT:" you can quickly move bewteen the most common customization locations in this config. 
 ]]
 Config = {
-    Framework = "ESX", -- "ESX" or "QB" EDIT in edit.lua
+    Framework = "QB", -- "ESX" or "QB" EDIT in edit.lua
     Debug = true,
     
     AutoReporting =true, -- Use auto reporting to generate reports of crimes^ check edit.lua for customizations.
