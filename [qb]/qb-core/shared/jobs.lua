@@ -175,11 +175,11 @@ QBShared.Jobs = {
 		label = "Hornys",
 		defaultDuty = true,
 		grades = {
-            ['0'] = { name = 'Recruit', payment = 50 },
-			['1'] = { name = 'Novice', payment = 75 },
-			['2'] = { name = 'Experienced', payment = 100 },
-			['3'] = { name = 'Advanced', payment = 125 },
-			['4'] = { name = 'Manager', isboss = true, payment = 150 },
+            ['0'] = { name = 'Recruit', payment = 240 },
+			['1'] = { name = 'Novice', payment = 275 },
+			['2'] = { name = 'Experienced', payment = 314 },
+			['3'] = { name = 'Advanced', payment = 325 },
+			['4'] = { name = 'Manager', isboss = true, payment = 350 },
         },
 	},
 	postop = {
