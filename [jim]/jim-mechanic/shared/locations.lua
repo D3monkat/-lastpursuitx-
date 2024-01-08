@@ -240,7 +240,7 @@ Config.Locations[#Config.Locations+1] = { --[[ RFC LS CUSTOMS ]]--
     -- },
     payments = {
         img = "<center><p><img src=https://i.imgur.com/74UVnCb.jpeg width=150px></p>",
-        { coords = vector4(-12.4, -1654.24, 29.89, 228.87), prop = false },
+        { coords = vector4(-12.4, -1654.24, 29.29, 228.87), prop = false },
     },
     Restrictions = { -- Remove what you DON'T what the location to be able to edit
         Vehicle = { "Compacts", "Sedans", "SUVs", "Coupes", "Muscle", "Sports Classics", "Sports", "Super", "Motorcycles", "Off-road", "Industrial", "Utility", "Vans", "Cycles", "Service", "Emergency", "Commercial", },

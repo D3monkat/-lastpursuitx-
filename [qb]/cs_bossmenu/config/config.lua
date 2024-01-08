@@ -105,7 +105,7 @@ CodeStudio.BossMenu = {
     ['ambulance'] = {4},
     ['catcafe'] = {4},
     ['burgershot'] = {4},
-    ['shopbluelinecustoms'] = {5},
+    ['shopbluelinecustoms'] = {100},
     ['nightclub'] = {1},
 }
 
