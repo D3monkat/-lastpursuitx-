@@ -6,7 +6,7 @@ Config = {
 	Debug = false, -- false to remove green boxes
 
 	Lan = "en",
-	img = "qb-inventory/html/images/", -- Change this to your inventory's name and image folder
+	img = "ox_inventory/web/images/", -- Change this to your inventory's name and image folder
 
 	Inv = "ox", -- set to "ox" if using OX Inventory
 	Menu = "ox", -- set to "ox" if using ox_lib context menus
