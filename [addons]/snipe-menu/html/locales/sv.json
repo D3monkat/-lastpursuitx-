@@ -234,6 +234,7 @@
     "dev_mode_side_panel" : "Dev Mode (Side Panel)",
     "debug_mode_side_panel": "Debug Mode (Side Panel)",
     "resources_side_panel" : "Resources (Side Panel)",
+    "reports_side_panel" : "Reports (Side Panel)",
     "copy_identifier_tooltip" : "Copy Identifier",
     "Give_Perms": "Give Permission",
     "Remove_Perms": "Remove Permission",
