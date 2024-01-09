@@ -3,8 +3,8 @@
 <CVehicleModelInfoVarGlobal>    
   <Kits>
 	<Item>
-      <kitName>826_italigton_modkit</kitName>
-      <id value="826" />
+      <kitName>3720_italigton_modkit</kitName>
+      <id value="3720" />
       <kitType>MKT_SPECIAL</kitType>
       <visibleMods>
 		<Item>
