@@ -59,7 +59,7 @@ Config = {
 	},
 	Locations = {
 		{	zoneEnable = true,
-			job = "catcafeuwu", -- Set this to the required job
+			job = "kittycafe", -- Set this to the required job
 			label = "Cat Cafe",
 			autoClock = { enter = false, exit = false, },
 			zones = {
