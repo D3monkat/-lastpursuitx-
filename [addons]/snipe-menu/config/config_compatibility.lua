@@ -4,19 +4,19 @@ Config.Debug = false -- set to true if you want to see debug messages in console
 -- use qs if you use qs inventory
 -- use ox if you use ox inventory (should be above version 2.9)
 -- use qsv2 is for quasar v2 inventory
-Config.Inventory = "qb" -- qb or qs or ox or qsv2
+Config.Inventory = "ox" -- qb or qs or ox or qsv2
 
 -- use qb-clothing if you use qb-clothing
 -- use fivem-appearance if you use fivem-appearance
 -- use esx_skin if you use esx_skin
 -- use illenium-appearance if you use illenium-appearance
-Config.Skin = "qb-clothing" -- qb-clothing || fivem-appearance || esx_skin || other
+Config.Skin = "illenium-appearance" -- qb-clothing || fivem-appearance || esx_skin || other
 
 -- use none if you dont use any of the mentioned phones (also set to none if you use quasar phone)
 -- lb is for lb-phone
 -- gks is for gks-phone
 -- renewed is for renewed qb phone (only for jobs)
-Config.Phone = "none" -- "none", "lb", "gks", "renewed"
+Config.Phone = "lb" -- "none", "lb", "gks", "renewed"
 
 -- use none if you dont use any of the mentioned options
 -- wasabi is for wasabi-ambulance
@@ -37,14 +37,14 @@ Config.WeatherScript = "none" -- "none", "cd_easytime"
 -- ox is for ox-fuel
 -- cdn is for cdn-fuel
 -- other is for other fuel scripts (you need to configure in cl_vehicles_customise.lua)
-Config.Fuel = "legacy" -- "ps" "ox" "other", "cdn", "legacy"
+Config.Fuel = "cdn" -- "ps" "ox" "other", "cdn", "legacy"
 
 -- garage
 -- none is for default ESX or QBCore garage
 -- cd is for cd_garage
 -- if you use any other paid garage system, the code is open in server/open/sv_vehicles.lua for you to edit queries.
 -- Make sure to try with none before making changes in the config or the sv_vehicles.lua file
-Config.Garage = "none" -- cd , none
+Config.Garage = "cd" -- cd , none
 
 Config.GarageTables = {
     ["QBCore"] = {
