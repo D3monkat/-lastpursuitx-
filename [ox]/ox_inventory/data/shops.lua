@@ -6,7 +6,7 @@ return {
 		}, inventory = {
 			{ name = 'phone', price = 1525 },
 			{ name = 'boombox', price = 500 },
-			{ name = 'bakingsoda', price = 250 },
+			{ name = 'bakingsoda', price = 5 },
 		}, locations = {
 			vec3(25.7, -1347.3, 29.49),
 			vec3(-3038.71, 585.9, 7.9),
