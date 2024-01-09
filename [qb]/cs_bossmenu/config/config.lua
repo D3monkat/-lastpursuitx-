@@ -47,7 +47,7 @@ CodeStudio.Locations = {
             vector4(460.73, -985.56, 30.73, 189.16),
         },
         ['sast'] = {
-            vector4(1834.39, 3677.01, 38.87, 119.42),
+            vector4(459.38, -978.11, 30.69, 173.06),
         },
         ['bcso'] = {
             vector4(1824.83, 3672.17, 38.86, 294.65),
@@ -62,10 +62,13 @@ CodeStudio.Locations = {
             vector4(-1178.39, -895.83, 13.97, 142.05),
         },
         ['shopbluelinecustoms'] = {
-            vector4(-348.54, -131.14, 42.04, 345.92),
+            vector4(-12.63, -1651.78, 29.49, 195.8),
         },
         ['nightclub'] = {
             vector4(137.05, -1289.24, 29.25, 65.99),
+        },
+        ['hornys'] = {
+            vector4(1238.311, -348.805, 69.082, 258.239),
         },
     },
 
@@ -105,8 +108,9 @@ CodeStudio.BossMenu = {
     ['ambulance'] = {4},
     ['catcafe'] = {4},
     ['burgershot'] = {4},
-    ['shopbluelinecustoms'] = {5},
+    ['shopbluelinecustoms'] = {100},
     ['nightclub'] = {1},
+    ['hornys'] = {4},
 }
 
 

@@ -6,12 +6,15 @@ function BennyOpen()
     end
 end
 
-
-function GiveKeys(plate)
+function GiveKeys(vehicle, plate)
+    
     if Config.Keys == "qb" then
         TriggerEvent("vehiclekeys:client:SetOwner", plate) -- change it to your own logic
     elseif Config.Keys == "cd" then
         TriggerEvent('cd_garage:AddKeys', plate)
+
+    elseif Config.Keys == "mk" then
+        exports["mk_vehiclekeys"]:AddKey(vehicle)
     else
         print("Snipe-Menu: You have selected other key system. Configure the event properly")
     end
@@ -47,7 +50,7 @@ function SpawnCar(carName, maxMods, seatVehicle)
         local netid = NetworkGetNetworkIdFromEntity(vehicle)
         SetVehicleHasBeenOwnedByPlayer(vehicle, true)
         SetNetworkIdCanMigrate(netid, true)
-        GiveKeys(GetVehicleNumberPlateText(vehicle))
+        GiveKeys(vehicle, GetVehicleNumberPlateText(vehicle))
         TriggerServerEvent("snipe-menu:server:sendLogs", "triggered", "Spawned a " .. carName)
         if maxMods then
             Wait(100)
@@ -82,7 +85,7 @@ end)
 RegisterNetEvent("snipe-menu:client:changePlate", function(newPlate)
     local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
     SetVehicleNumberPlateText(vehicle, newPlate)
-    GiveKeys(newPlate)
+    GiveKeys(vehicle, newPlate)
 end)
 
 RegisterNetEvent("snipe-menu:client:refuelVehicle", function()
@@ -90,9 +93,9 @@ RegisterNetEvent("snipe-menu:client:refuelVehicle", function()
         local ped = PlayerPedId()
         local vehicle = GetVehiclePedIsIn(ped, false)
         if vehicle ~= 0 then
-            -- exports["cdn-fuel"]:SetFuel(vehicle, 100.0)
+            -- exports["LegacyFuel"]:SetFuel(vehicle, 100.0)
             if Config.Fuel == "legacy" then
-                exports["cdn-fuel"]:SetFuel(vehicle, 100.0)
+                exports["LegacyFuel"]:SetFuel(vehicle, 100.0)
             elseif Config.Fuel == "ps" then
                 exports["ps-fuel"]:SetFuel(vehicle, 100.0)
             elseif Config.Fuel == "ox" then

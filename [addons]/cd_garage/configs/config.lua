@@ -809,11 +809,11 @@ Config.Locations = {
         Garage_ID = 'BLT', --Blueline
         Type = 'car',
         Dist = 10,
-        x_1 = -359.11, y_1 = -124.0, z_1 = 38.7,
+        x_1 = -46.69, y_1 = -1672.66, z_1 = 29.35,
         EventName1 = 'cd_garage:QuickChoose',
         EventName2 = 'cd_garage:EnterGarage',
         Name = UIText,
-        x_2 = -381.79, y_2 = -125.3, z_2 = 38.69, h_2 = 210.07,
+        x_2 = -45.93, y_2 = -1688.71, z_2 = 29.4, h_2 = 299.7,
         EnableBlip = true,
         JobRestricted = nil,
         ShellType = '10cargarage_shell',

@@ -27,7 +27,7 @@ Config.Objects = {
 
 Config.Locations = {
     ['duty'] = {
-        [1] = vector3(442.9, -982.08, 30.69),
+        [1] = vector3(453.57, -979.47, 30.69),
         [2] = vector3(1833.1, 3679.34, 34.19),
     },
     ['vehicle'] = {
@@ -43,13 +43,13 @@ Config.Locations = {
     ['trash'] = {
     },
     ['fingerprint'] = {
-        [1] = vector3(473.23, -1007.55, 26.27),
+        [1] = vector3(484.08, -991.96, 26.39),
         [2] = vector3(1817.55, 3674.13, 34.19),
     },
     ['evidence'] = {
     },
     ['stations'] = {
-        [1] = { label = 'Police Station', coords = vector4(428.23, -984.28, 29.76, 3.5) },
+        [1] = { label = 'Police Station', coords = vector4(484.08, -991.96, 26.39, 217.81) },
         [2] = { label = 'Police Station', coords = vector4(1817.55, 3674.13, 34.19, 203.46) },
     },
 }
