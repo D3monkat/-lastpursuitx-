@@ -38,6 +38,10 @@ local qbJobAreaControllers = { -- QB jobs that can access /hall is specific area
     ['hornys'] = {
         {'hornys', 0},
         'hornys'
+    },
+    ['shoptuner'] = {
+        {'shoptuner', 0},
+        'shoptuner'
     }
 }
 
