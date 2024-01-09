@@ -25,6 +25,7 @@ Config.CornerSellingDrugsList = {
     "cokebaggy",
     "methbaggy",
     "heroin",
+    "coke_brick",
     "puremethbaggy",
 }
 
@@ -62,16 +63,20 @@ Config.DrugsPrice = {
         max = 40,
     },
     ["heroin"] = {
-        min = 30,
-        max = 30,
+        min = 2000,
+        max = 2500,
+    },
+    ["coke_brick"] = {
+        min = 1500,
+        max = 1800,
     },
     ["methbaggy"] = {
-        min = 20,
-        max = 20,
+        min = 350,
+        max = 400,
     },
     ["puremethbaggy"] = {
-        min = 35,
-        max = 35,
+        min = 350,
+        max = 500,
     },
 }
 
