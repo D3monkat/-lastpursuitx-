@@ -65,7 +65,7 @@ Config = {
 		['bakery'] = { MinAmountforTicket = 50, PayPerTicket = 50, Commission = 0.10, },
 		['shopbluelinecustoms'] = { MinAmountforTicket = 50, PayPerTicket = 50, Commission = 0.50, },
 		['burgershot'] = { MinAmountforTicket = 50, PayPerTicket = 50 , Commission = 0.10, },
-		['catcafe'] = { MinAmountforTicket = 50, PayPerTicket = 50, Commission = 0.50, },
+		['kittycafe'] = { MinAmountforTicket = 50, PayPerTicket = 50, Commission = 0.50, },
 		['henhouse'] = { MinAmountforTicket = 50, PayPerTicket = 50, Commission = 0.10, },
 		['pizzathis'] = { MinAmountforTicket = 50, PayPerTicket = 50, Commission = 0.10, },
 		['popsdiner'] = { MinAmountforTicket = 50, PayPerTicket = 50, Commission = 0.10, },
