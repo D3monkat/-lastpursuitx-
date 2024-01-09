@@ -1,6 +1,6 @@
 Config = Config or {}
 Config.Dealers = {}
-Config.UseTarget = true
+Config.UseTarget = false
 Config.PoliceCallChance = 15
 
 Config.NotifyType = 'qb'
