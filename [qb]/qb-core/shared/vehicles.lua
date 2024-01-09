@@ -1136,7 +1136,8 @@ local Vehicles = {
 {model = 'rmod911gt3', name = '911 GT3', brand = 'Tuner', price = 1, category = 'Tuner', type = 'automobile', shop = 'tuner'},
 {model = 'tempestaes', name = 'tempestaes', brand = 'Tuner', price = 20000, category = 'Tuner', type = 'automobile', shop = 'tuner'},
 {model = 'RVFF', name = 'RVFF', brand = 'Tuner', price = 20000, category = 'Tuner', type = 'automobile', shop = 'tuner'},
-{model = 'radiantvff', name = 'radiantvff', brand = 'Tuner', price = 20000, category = 'Tuner', type = 'automobile', shop = 'tuner'},
+{model = 'urbn', name = 'Cullinan', brand = 'Tuner', price = 20000, category = 'Tuner', type = 'automobile', shop = 'tuner'},
+{model = 'gwopredeye', name = 'Redeye Charger', brand = 'Tuner', price = 20000, category = 'Tuner', type = 'automobile', shop = 'tuner'},
 
 --Drift
 {model = '180sx', name = '180sx', brand = 'Toyota', price = 30000, category = 'Drift', type = 'automobile', shop = 'pdm'}, 
