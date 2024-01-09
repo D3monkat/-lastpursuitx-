@@ -28,12 +28,12 @@ local qbJobAreaControllers = { -- QB jobs that can access /hall is specific area
         'nightclub'
     },
     ['party_kawaii_universestore'] = {
-        {'catcafe', 0},
-        'catcafe'
+        {'catcafeuwu', 0},
+        'catcafeuwu'
     },
     ['uwucafe'] = {
-        {'catcafe', 0},
-        'catcafe'
+        {'catcafeuwu', 0},
+        'catcafeuwu'
     },
     ['hornys'] = {
         {'hornys', 0},
