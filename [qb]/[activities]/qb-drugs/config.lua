@@ -63,12 +63,12 @@ Config.DrugsPrice = {
         max = 40,
     },
     ["heroin"] = {
-        min = 2000,
-        max = 2500,
+        min = 650,
+        max = 900,
     },
     ["coke_brick"] = {
-        min = 1500,
-        max = 1800,
+        min = 450,
+        max = 750,
     },
     ["methbaggy"] = {
         min = 350,
