@@ -140,8 +140,8 @@ QBShared.Jobs = {
 			['4'] = { name = 'Manager', isboss = true, payment = 419, bankAuth = true  },
         },
 	},
-    catcafeuwu = {
-		label = 'Cat Cafe',
+    kittycafe = {
+		label = 'Kitty Cafe',
 		defaultDuty = true,
 		grades = {
             ['0'] = { name = 'Recruit', payment = 240 },
