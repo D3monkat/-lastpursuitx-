@@ -263,14 +263,38 @@ Config.Teleports = {
         [1] = {
             poly = {coords = vector3(909.49, -1589.22, 30.51), heading = 92.24, length = 2, width = 2},
             allowVeh = false,
-            label = '[E] Enter Coke Processing'
+            label = '[E] Leave'
         },
         [2] = {
             poly = {coords = vector3(1088.81, -3187.57, -38.99), heading = 181.7, length = 2, width = 2},
             allowVeh = false,
-            label = '[E] Leave'
+            label = '[E] Enter Coke Processing'
         }
-    }
+    },
+    [3] = { --Meth Processing Enter/Exit
+        [1] = {
+        poly = {coords = vector3(969.27, -147.02, -46.4), heading = 272.51, length = 2, width = 2},
+        allowVeh = false,
+        label = 'Leave'
+        },
+        [2] = {
+        poly = {coords = vector3(-1187.14, -446.29, 43.91), heading = 126.13, length = 2, width = 2},
+        allowVeh = false,
+        label = 'Enter Meth Processing'
+        }
+    },
+    [4] = { --Weed Processing Enter/Exit
+        [1] = {
+        poly = {coords = vector3(1066.4, -3183.33, -39.16), heading = 93.27, length = 2, width = 2},
+        allowVeh = false,
+        label = 'Leave'
+        },
+        [2] = {
+        poly = {coords = vector3(102.39, 176.14, 104.71), heading = 338.22, length = 2, width = 2},
+        allowVeh = false,
+        label = '[E] Enter Weed Processing'
+        }
+    },
 }
 
 Config.CarWash = {
