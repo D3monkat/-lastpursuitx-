@@ -20,7 +20,7 @@ Config.CornerSellingDrugsList = {
     "weed_purple-haze",
     "weed_og-kush",
     "weed_amnesia",
-    "weed_ak47",
+    "lsd",
     "crack_baggy",
     "cokebaggy",
     "methbaggy",
