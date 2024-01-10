@@ -25,7 +25,7 @@ Config = {
     Debug = true,
     
     AutoReporting =true, -- Use auto reporting to generate reports of crimes^ check edit.lua for customizations.
-    PoliceJob = "police",
+    PoliceJob = {"police", "sast", "bcso"},
     FireDeptJob = "ambulance",
     AmbulanceJob = "ambulance",
 
