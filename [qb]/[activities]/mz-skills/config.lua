@@ -8,7 +8,7 @@ Config.UpdateFrequency = 300                -- Seconds interval between removing
 
 Config.Notifications = true                 -- Notification played when skill is added (set to "false" to disable)
 
-Config.NotifyType = 'okok'                  -- Notification type: 'qb' for QBCore notification, 'okok' for okokNotify
+Config.NotifyType = 'qb'                  -- Notification type: 'qb' for QBCore notification, 'okok' for okokNotify
 
 Config.Debug = false                        -- Set to "true" to print debugging messages
 
