@@ -60,6 +60,12 @@ Config.Default = {
             xp = 7,
             time = 1500
         },
+        ["weedkey"] = {
+            ["metalscrap"] = 75,
+            ["iron"] = 50,
+            xp = 7,
+            time = 1500
+        },
     },
     [4] = {
         ["weapon_sledgehammer"] = {
@@ -73,6 +79,12 @@ Config.Default = {
             ["glass"] = 550,
             xp = 3,
             time = 2000
+        },
+        ["cocainekey"] = {
+            ["metalscrap"] = 75,
+            ["iron"] = 50,
+            xp = 7,
+            time = 1500
         },
     },
     [5] = {
@@ -118,6 +130,12 @@ Config.Default = {
             xp = 15,
             time = 3500
         },
+        ["methkey"] = {
+            ["metalscrap"] = 75,
+            ["iron"] = 50,
+            xp = 7,
+            time = 1500
+        },   
     },
     [6] = {
         ["parachute"] = {
@@ -184,6 +202,12 @@ Config.Default = {
             xp = 20,
             time = 2500
         },
+        ["keya"] = {
+            ["metalscrap"] = 75,
+            ["iron"] = 50,
+            xp = 35,
+            time = 1500
+        },  
     },
     [7] = {
         ["boostingtablet"] = {
