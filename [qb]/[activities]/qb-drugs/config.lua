@@ -50,9 +50,9 @@ Config.DrugsPrice = {
         min = 18,
         max = 37,
     },
-    ["weed_ak47"] = {
-        min = 18,
-        max = 40,
+    ["lsd"] = {
+        min = 450,
+        max = 750,
     },
     ["crack_baggy"] = {
         min = 18,
@@ -72,7 +72,7 @@ Config.DrugsPrice = {
     },
     ["methbaggy"] = {
         min = 350,
-        max = 400,
+        max = 500,
     },
     ["puremethbaggy"] = {
         min = 350,
