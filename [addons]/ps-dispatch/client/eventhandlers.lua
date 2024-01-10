@@ -117,4 +117,3 @@ AddEventHandler('gameEventTriggered', function(name, args)
         end
     end)
 end)
-end
