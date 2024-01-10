@@ -135,7 +135,28 @@ Config.Default = {
             ["iron"] = 50,
             xp = 7,
             time = 1500
-        },   
+        },
+        ["weapon_de"] = {
+            ["iron"] = 15,
+            ["plastic"] = 225,
+            ["aluminum"] = 315,
+            ["rubber"] = 125,
+            xp = 7,
+            time = 1500
+        },
+        ["weapon_pistol"] = {
+            ["iron"] = 15,
+            ["plastic"] = 225,
+            ["aluminum"] = 315,
+            ["rubber"] = 125,
+            xp = 7,
+            time = 1500
+        },
+        ["pistol_ammo"] = {
+            ["iron"] = 35,
+            xp = 7,
+            time = 1500
+        },
     },
     [6] = {
         ["parachute"] = {
@@ -205,9 +226,38 @@ Config.Default = {
         ["keya"] = {
             ["metalscrap"] = 75,
             ["iron"] = 50,
+            xp = 7,
+            time = 1500
+        },
+        ["weapon_glock17c"] = {
+            ["aluminum"] = 400,
+            ["rubber"] = 300,
+            ["iron"] = 100,
+            ["plastic"] = 250,
             xp = 35,
             time = 1500
-        },  
+        },
+        ["weapon_glock18c"] = {
+            ["aluminum"] = 600,
+            ["rubber"] = 500,
+            ["iron"] = 280,
+            ["plastic"] = 420,
+            xp = 35,
+            time = 1500
+        },
+        ["weapon_mp5"] = {
+            ["aluminum"] = 800,
+            ["rubber"] = 600,
+            ["iron"] = 300,
+            ["plastic"] = 650,
+            xp = 45,
+            time = 8000
+        },
+        ["smg_ammo"] = {
+            ["iron"] = 35,
+            xp = 7,
+            time = 1500
+        },
     },
     [7] = {
         ["boostingtablet"] = {
@@ -273,6 +323,27 @@ Config.Default = {
             xp = 30,
             time = 5500
         },
+        ["weapon_remington"] = {
+            ["aluminum"] = 900,
+            ["rubber"] = 600,
+            ["iron"] = 200,
+            ["plastic"] = 550,
+            xp = 50,
+            time = 8000
+        },
+        ["weapon_bullpupshotgun"] = {
+            ["aluminum"] = 900,
+            ["rubber"] = 600,
+            ["iron"] = 200,
+            ["plastic"] = 550,
+            xp = 50,
+            time = 10000
+        },
+        ["shotgun_ammo"] = {
+            ["iron"] = 35,
+            xp = 7,
+            time = 1500
+        },
     },
     [8] = {
         ["big_drill"] = {
@@ -282,6 +353,14 @@ Config.Default = {
             ["iron"] = 120,
             xp = 50,
             time = 7500
+        },
+        ["weapon_mp9"] = {
+            ["aluminum"] = 800,
+            ["rubber"] = 600,
+            ["iron"] = 300,
+            ["plastic"] = 650,
+            xp = 45,
+            time = 8000
         },
     },
     [9] = {
@@ -324,6 +403,43 @@ Config.Default = {
             ["bandage"] = 50,
             xp = 55,
             time = 2500
+        },
+        ["weapon_militaryrifle"] = {
+            ["aluminum"] = 900,
+            ["rubber"] = 700,
+            ["iron"] = 400,
+            ["plastic"] = 750,
+            xp = 8,
+            time = 9000
+        },
+        ["weapon_hk416"] = {
+            ["aluminum"] = 900,
+            ["rubber"] = 700,
+            ["iron"] = 400,
+            ["plastic"] = 750,
+            xp = 8,
+            time = 9000
+        },
+        ["rifle_ammo"] = {
+            ["iron"] = 50,
+            xp = 7,
+            time = 1500
+        },
+        ["weapon_ak74"] = {
+            ["aluminum"] = 500,
+            ["rubber"] = 400,
+            ["iron"] = 100,
+            ["plastic"] = 450,
+            xp = 5,
+            time = 5000
+        },
+        ["weapon_aks74"] = {
+            ["ceramic"] = 100,
+            ["iron"] = 100,
+            ["plastic"] = 225,
+            ["aluminum"] = 500,
+            xp = 3,
+            time = 1000
         }
     }
 }
