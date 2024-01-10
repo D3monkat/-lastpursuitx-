@@ -1,6 +1,6 @@
 Config = {}
 
-Config.KeyRequired = true
+Config.KeyRequired = false
 
 Config.Delays = {
 	WeedProcessing = 1000 * 10,
