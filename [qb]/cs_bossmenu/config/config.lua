@@ -52,7 +52,7 @@ CodeStudio.Locations = {
         ['bcso'] = {
             vector4(1824.83, 3672.17, 38.86, 294.65),
         },
-        ['catcafe'] = {
+        ['kittycafe'] = {
             vector4(-577.34, -1067.57, 26.61, 7.94),
         },
         ['ambulance'] = {
