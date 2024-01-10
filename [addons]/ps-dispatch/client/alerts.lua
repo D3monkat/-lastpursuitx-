@@ -18,19 +18,6 @@ local function VehicleTheft()
         doors = vehicle.doors,
         jobs = { 'leo' }
     }
-
-    local meowdata = {
-        local coords2 = GetEntityCoords(cache.ped)
-        alertmsg = false
-        alertTitle = false 
-        alertCallCode = "5-04" 
-        DispatchedJob = {"police", "bcso", "sast"} 
-        includeSuspect = false 
-        YourData = {coords = coords2} 
-
-
-    }
-    TriggerEvent("Syn_Dispatcher:client:ReportCriminalActivity",alertmsg,alertTitle,alertCallCode,DispatchedJob, includeSuspect,YourData)
     TriggerServerEvent('ps-dispatch:server:notify', dispatchData)
 end
 exports('VehicleTheft', VehicleTheft)
